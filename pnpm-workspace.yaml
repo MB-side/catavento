@@ -1,0 +1,5 @@
+# pnpm 12 requires every dependency install script to be explicitly allowed or blocked.
+allowBuilds:
+  esbuild: true # verifies its platform binary; used by tsx and vitest
+  sharp: false # image optimisation is off in a static export
+  unrs-resolver: false
