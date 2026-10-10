@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+/* Design tokens (docs/06 §1). Names are binding; light theme only (D13). */
+@theme {
+  --color-ground: #eef2f5;
+  --color-surface: #ffffff;
+  --color-border: #d5dde4;
+  --color-border-strong: #c9d3dc;
+  --color-ink: #0f1b26;
+  --color-muted: #4b5a68;
+  --color-muted-strong: #3a4754;
+  --color-link: #1a3f94;
+  --color-link-hover: #0f2a66;
+  --color-action: #b8460b;
+  --color-action-tint: #fbede3;
+  --color-info-tint: #e3ecfa;
+  --color-in-range: #1f4fbf;
+  --color-marginal: #f0a04b;
+  --color-outside: #dce2e8;
+  --color-light-wind: #f3f6f8;
+  --color-notice-tint: #fcebd9;
+  --color-notice-text: #8a3a06;
+  --color-prototype-tint: #fbe7c6;
+  --color-prototype-text: #5b3a00;
+  --color-footer-link: #9cc0ff;
+
+  --font-sans: var(--font-barlow), system-ui, sans-serif;
+  --font-condensed: var(--font-barlow-condensed), system-ui, sans-serif;
+
+  --radius-card: 14px;
+  --radius-card-lg: 16px;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    color: var(--color-link);
+  }
+
+  a:hover {
+    color: var(--color-link-hover);
+  }
+
+  /* Visible focus everywhere (docs/06 §8). */
+  :focus-visible {
+    outline: 3px solid var(--color-link);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
