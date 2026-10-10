@@ -33,6 +33,8 @@
 | D28 | 2026-10-10 | `next.config` sets `basePath` only, not `assetPrefix` (deviation from docs/03 §4 wording) | `basePath` already prefixes `/_next` assets; a duplicate setting adds nothing |
 | D29 | 2026-10-10 | UI strings (`messages/en.json` with `t()`) and a minimal country loader (`lib/country.ts`) start in M0 rather than M1 | The layout and navigation written in M0 would otherwise need rewriting in M1 |
 | D30 | 2026-10-10 | A **content guard** runs after every build and fails it on banned wording (flyable, safe, good to go, "it's on", best site today), square-bracket placeholders, and misspellings of HouseThermal | Enforces docs/07 §1–2 and docs/01 §8 automatically |
+| D31 | 2026-10-10 | **No Clubs item in the main navigation** (desktop or phone). Sites are the entry point; each site page shows its steward (a club in Australia and New Zealand). Club pages and the clubs directory remain (reached from site pages and the country home). Supersedes the Clubs tab in D10 | Founder: the site must scale to countries where clubs don't manage sites |
+| D32 | 2026-10-10 | **"New to flying" is an ordinary navigation item**: the last desktop link and the fifth phone tab (replacing Clubs). The orange "New to flying" pill in the phone top bar is removed; the phone top bar holds search and the menu. Phone tabs: My Sites · Sites · What's on · Gear · New to flying. Supersedes the rest of D10 | Founder: the pill was far too prominent; a tab keeps New to flying visible on every screen without shouting |
 | D17 | 2026-10-09 | Domain pending: housethermal.com if available, else housethermal.fly (on sale 10 Nov 2026); prototype stays on the GitHub Pages URL until then | Availability not yet confirmed |
 
 ## Open conflicts

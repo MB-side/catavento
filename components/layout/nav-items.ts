@@ -1,7 +1,9 @@
-// Navigation structure (docs/01 §4, docs/06 §5). Section links point at the current country.
+// Navigation structure (docs/01 §4, docs/06 §5, as changed by D31–D32). Section links point at
+// the current country. Clubs is not a top-level section: stewards (usually clubs) are reached
+// from each site page, so the navigation works in countries where clubs don't manage sites.
 import type { MessageKey } from "@/lib/messages";
 
-export type NavIcon = "mySites" | "map" | "clubs" | "whatsOn" | "gear";
+export type NavIcon = "mySites" | "sites" | "whatsOn" | "gear" | "newToFlying";
 
 export interface NavItem {
   /** Message key for the label. */
@@ -16,19 +18,18 @@ export interface NavItem {
 export const desktopNav: NavItem[] = [
   { label: "nav.mySites", path: "/my-sites", global: true },
   { label: "nav.sites", path: "/sites" },
-  { label: "nav.clubs", path: "/clubs" },
   { label: "nav.whatsOn", path: "/whats-on" },
   { label: "nav.gear", path: "/gear" },
   { label: "nav.newToFlying", path: "/new-to-flying" },
 ];
 
-/** Phone bottom tab bar (D10): five tabs. New to flying is a pill in the phone top bar instead. */
+/** Phone bottom tab bar (D32): five tabs, the same sections as the desktop bar. */
 export const phoneTabs: NavItem[] = [
   { label: "nav.mySites", path: "/my-sites", global: true, icon: "mySites" },
-  { label: "nav.map", path: "/sites", icon: "map" },
-  { label: "nav.clubs", path: "/clubs", icon: "clubs" },
+  { label: "nav.sitesTab", path: "/sites", icon: "sites" },
   { label: "nav.whatsOn", path: "/whats-on", icon: "whatsOn" },
   { label: "nav.gear", path: "/gear", icon: "gear" },
+  { label: "nav.newToFlying", path: "/new-to-flying", icon: "newToFlying" },
 ];
 
 /** Phone menu (docs/06 §5). Country and Settings join in M1 and M5. */

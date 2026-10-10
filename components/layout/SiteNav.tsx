@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-import { CalendarDays, Map as MapIcon, Menu, Search, Star, Users, Wrench, X } from "lucide-react";
+import { CalendarDays, Compass, Map as MapIcon, Menu, Search, Star, Wrench, X } from "lucide-react";
 import { t } from "@/lib/messages";
 import { cn } from "@/lib/utils";
 import { desktopNav, isActive, navHref, phoneMenu, phoneTabs, type NavIcon } from "./nav-items";
@@ -53,7 +53,7 @@ export function SearchLink({ className }: { className?: string }) {
   );
 }
 
-/** Phone top bar: "New to flying" pill (always visible) and the menu. */
+/** Phone top bar: search and the menu. New to flying is a bottom tab (D32). */
 export function PhoneTopActions() {
   const { country, pathname } = useCurrentCountry();
   const menuRef = useRef<HTMLDetailsElement>(null);
@@ -66,10 +66,11 @@ export function PhoneTopActions() {
   return (
     <div className="flex items-center gap-2 lg:hidden">
       <Link
-        href={`/${country}/new-to-flying/`}
-        className="inline-flex min-h-11 items-center rounded-full bg-action px-4 text-[0.9375rem] font-semibold text-white hover:bg-action/90 hover:text-white"
+        href="/search/"
+        aria-label={t("nav.search")}
+        className="flex size-11 items-center justify-center rounded-[12px] border border-border-strong bg-surface text-ink hover:text-ink"
       >
-        {t("nav.newToFlying")}
+        <Search className="size-5" aria-hidden="true" />
       </Link>
       <details ref={menuRef} className="group relative">
         <summary
@@ -80,15 +81,6 @@ export function PhoneTopActions() {
           <X className="hidden size-5 group-open:block" aria-hidden="true" />
         </summary>
         <ul className="absolute right-0 z-30 mt-2 w-56 rounded-[12px] border border-border bg-surface p-2 shadow-lg">
-          <li>
-            <Link
-              href="/search/"
-              className="flex min-h-11 items-center gap-2 rounded-[10px] px-3 font-medium text-ink hover:bg-ground hover:text-ink"
-            >
-              <Search className="size-5" aria-hidden="true" />
-              {t("nav.search")}
-            </Link>
-          </li>
           {phoneMenu.map((item) => (
             <li key={item.label}>
               <Link
@@ -107,13 +99,13 @@ export function PhoneTopActions() {
 
 const tabIcons: Record<NavIcon, typeof Star> = {
   mySites: Star,
-  map: MapIcon,
-  clubs: Users,
+  sites: MapIcon,
   whatsOn: CalendarDays,
   gear: Wrench,
+  newToFlying: Compass,
 };
 
-/** Phone bottom tab bar (D10): five tabs, icons above labels, tabs ≥ 56 px tall. */
+/** Phone bottom tab bar (D32): five tabs, icons above labels, tabs ≥ 56 px tall. */
 export function BottomTabBar() {
   const { pathname, country } = useCurrentCountry();
   return (
@@ -131,7 +123,7 @@ export function BottomTabBar() {
                 href={navHref(item, country)}
                 aria-current={active ? "page" : undefined}
                 className={cn(
-                  "flex min-h-14 flex-col items-center justify-center gap-0.5 text-[0.75rem] font-semibold",
+                  "flex min-h-14 flex-col items-center justify-center gap-0.5 px-1 text-center text-[0.75rem] leading-tight font-semibold",
                   active ? "text-action hover:text-action" : "text-muted hover:text-ink",
                 )}
               >

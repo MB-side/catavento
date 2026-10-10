@@ -97,11 +97,22 @@ test("navigation reaches each section in the current country", async ({ page }) 
   await page.goto("nz/");
   if (isPhone(page)) {
     const tabs = page.getByRole("navigation", { name: "Sections" });
-    await tabs.getByRole("link", { name: "Clubs" }).click();
-    await expect(page).toHaveURL(/\/housethermal\/nz\/clubs\/$/);
-    await expect(tabs.getByRole("link", { name: "Clubs" })).toHaveAttribute("aria-current", "page");
-    await page.getByRole("link", { name: "New to flying" }).click();
-    await expect(page).toHaveURL(/\/housethermal\/nz\/new-to-flying\/$/);
+    for (const [label, path] of [
+      ["Sites", "nz/sites/"],
+      ["What's on", "nz/whats-on/"],
+      ["Gear", "nz/gear/"],
+      ["New to flying", "nz/new-to-flying/"],
+      ["My Sites", "my-sites/"],
+    ] as const) {
+      await tabs.getByRole("link", { name: label, exact: true }).click();
+      await expect(page).toHaveURL(new RegExp(`/housethermal/${path}$`));
+      await expect(tabs.getByRole("link", { name: label, exact: true })).toHaveAttribute(
+        "aria-current",
+        "page",
+      );
+    }
+    await page.getByRole("link", { name: "Search" }).click();
+    await expect(page).toHaveURL(/\/housethermal\/search\/$/);
     await page.getByLabel("Menu").click();
     await page.getByRole("link", { name: "About" }).first().click();
     await expect(page).toHaveURL(/\/housethermal\/about\/$/);
@@ -109,7 +120,6 @@ test("navigation reaches each section in the current country", async ({ page }) 
     const nav = page.getByRole("navigation", { name: "Main" });
     for (const [label, path] of [
       ["Sites & map", "nz/sites/"],
-      ["Clubs", "nz/clubs/"],
       ["What's on", "nz/whats-on/"],
       ["Gear", "nz/gear/"],
       ["New to flying", "nz/new-to-flying/"],
@@ -119,6 +129,15 @@ test("navigation reaches each section in the current country", async ({ page }) 
       await expect(page).toHaveURL(new RegExp(`/housethermal/${path}$`));
       await expect(nav.getByRole("link", { name: label })).toHaveAttribute("aria-current", "page");
     }
+  }
+});
+
+test("there is no Clubs section in the navigation (D31)", async ({ page }) => {
+  await page.goto("au/");
+  for (const name of ["Main", "Sections"]) {
+    await expect(
+      page.getByRole("navigation", { name }).getByRole("link", { name: "Clubs" }),
+    ).toHaveCount(0);
   }
 });
 
