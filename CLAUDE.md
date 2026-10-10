@@ -45,18 +45,22 @@ scope `docs/02` · architecture `docs/03` · data `docs/04` · sources and scrap
 
 ## Commands
 
-*(Fill in during M0 and keep current.)*
+Node 24 and pnpm 12. On the founder's Mac they live in `~/.local` (system Node is older), so prefix commands with `export PATH=$HOME/.local/opt/node/bin:$HOME/.local/bin:$PATH`.
 
 | Task | Command |
 |---|---|
 | Install | `pnpm install` |
-| Dev server | `pnpm dev` |
+| Dev server | `pnpm dev` (http://localhost:3000/housethermal/) |
 | Build data | `pnpm build:data` |
 | Run ingest (all / one provider) | `pnpm ingest` / `pnpm ingest --provider ansg` |
-| Build static site | `pnpm build` |
+| Build static site (+ content guard) | `pnpm build` |
+| Serve the build like GitHub Pages | `pnpm serve` (http://localhost:4173/housethermal/) |
 | Unit tests | `pnpm test` |
-| E2E tests | `pnpm test:e2e` |
-| Lint and typecheck | `pnpm lint && pnpm typecheck` |
+| E2E tests (against the build) | `pnpm test:e2e` |
+| Link check (against the build) | `pnpm check:links` |
+| Lint, format and typecheck | `pnpm lint && pnpm format:check && pnpm typecheck` |
+
+Workflows: `ci.yml` (checks every PR), `deploy.yml` (publishes `main`), `ingest.yml` (nightly data refresh; calls `deploy.yml`).
 
 ## Repo map
 

@@ -52,3 +52,15 @@
 **Won't (yet):** accounts, classifieds posting, enquiry forms, live wind numbers, alerts, payments or sponsored listings. These arrive in Iteration 2, when the site moves to a proper host with a database (see `docs/08`).
 
 GitHub Pages is fine for a non-commercial prototype, but its terms don't allow running an online business on it, so the move to the full stack happens before anything is monetised.
+
+---
+
+## Run locally
+
+The live site is published from GitHub automatically; you don't need to run anything yourself. For anyone working on the code:
+
+1. Install Node 24 and pnpm 12 (`corepack enable` or `npm install -g pnpm@12`).
+2. `pnpm install`
+3. `pnpm dev`, then open http://localhost:3000/housethermal/
+
+To check a production build exactly as GitHub Pages will serve it: `pnpm build && pnpm serve`, then open http://localhost:4173/housethermal/. `pnpm test` and `pnpm test:e2e` run the automated tests. The full command list is in `CLAUDE.md`.
