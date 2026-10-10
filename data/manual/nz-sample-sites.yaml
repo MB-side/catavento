@@ -1,0 +1,31 @@
+# Iteration 1 New Zealand sample. Coordinates and wind directions come from ParaglidingEarth (pge layer,
+# CC BY-SA 3.0 / ODbL 1.0) matched by name and region; if no confident match, leave the site without coordinates.
+# Steward facts below are from the cited sources; confirm with the club before launch.
+- name: Karioitahi Beach (HighSide)
+  region: NZ-AUK
+  steward: { legacyId: NZ-FP-001, role: flight_park }
+  alsoAdministeredBy: { legacyId: NZ-CLB-007, note: "Auckland club publishes the site guide" }
+  officialGuideUrl: https://www.cloudbase.org.nz/site-guide/flying-site-kariotahi
+  siteAccessNote: "Subscription pass required (day, week, month or season); funds go to developing the flight park."
+  stations: [station:holfuy:213]
+  source: https://www.paraglidingmap.com/sites/Russia
+- name: Port Hills
+  region: NZ-CAN
+  steward: { legacyId: NZ-CLB-005, role: club }
+  note: "Christchurch City Council licenses commercial paragliding operators on council land; the club regulates flying locally."
+  source: https://letstalk.ccc.govt.nz/port-hills-paragliding-licences
+- name: Te Mata Peak
+  region: NZ-HKB
+  steward: { legacyId: NZ-CLB-003, role: club }
+  note: "Local club safety officer cited in press coverage; confirm site management with the club."
+  source: https://www.pressreader.com/new-zealand/hawkes-bay-today/20210923/281487869492322
+- name: Mount Maunganui
+  region: NZ-BOP
+  steward: { legacyId: NZ-CLB-008, role: club }
+  note: "Bay of Plenty club lists a Mount Maunganui site liaison."
+  source: https://nzhgpa.org.nz/local-clubs/
+- name: Coronet Peak
+  region: NZ-OTA
+  steward: { role: unknown }
+  note: "Commercial tandem flying operates here; steward not yet confirmed. Shows the 'steward not listed' state."
+  source: https://nzpocketguide.com/5-breathtaking-places-to-try-paragliding-in-new-zealand/

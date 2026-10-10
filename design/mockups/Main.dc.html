@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>My Sites dashboard</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&amp;family=Barlow+Condensed:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#1A3F94}a:hover{color:#0F2A66}
+</style>
+</helmet>
+<div style="width: 390px; height: 1400px; box-sizing: border-box; background: #EEF2F5; color: #0F1B26; font-family: 'Barlow', system-ui, sans-serif; display: flex; flex-direction: column">
+
+<header style="padding: 14px 16px 4px 16px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+<div style="display: flex; align-items: center; gap: 10px">
+<span style="display: inline-flex; align-items: center; gap: 8px"><svg width="24" height="24" viewBox="0 0 28 28" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 23 L14 15 L24 23" stroke="#0F1B26" stroke-width="2.4"></path><path d="M8.5 12 C 8.5 14.4, 19.5 14.4, 19.5 12" stroke="#B8460B" stroke-width="2.2"></path><path d="M10.5 7.5 C 10.5 9.3, 17.5 9.3, 17.5 7.5" stroke="#B8460B" stroke-width="2.2"></path><circle cx="14" cy="3.6" r="1.7" fill="#B8460B" stroke="none"></circle></svg><span style="font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700; letter-spacing: 0.02em; color: #0F1B26">HouseThermal</span></span>
+<span style="font-size: 12px; font-weight: 600; color: #5B3A00; background: #FBE7C6; border-radius: 999px; padding: 3px 9px">Sample data</span>
+</div>
+<div style="display: flex; gap: 6px">
+<button aria-label="Menu: new to flying, schools, account" style="width: 44px; height: 44px; border-radius: 12px; border: 1px solid #C9D3DC; background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F1B26" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></svg></button>
+<button aria-label="Settings" style="width: 44px; height: 44px; border-radius: 12px; border: 1px solid #C9D3DC; background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0F1B26" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h10"></path><path d="M18 6h2"></path><circle cx="16" cy="6" r="2"></circle><path d="M4 12h2"></path><path d="M10 12h10"></path><circle cx="8" cy="12" r="2"></circle><path d="M4 18h12"></path><circle cx="18" cy="18" r="2"></circle></svg>
+</button>
+</div>
+</div>
+<div>
+<h1 style="margin: 0; font-size: 30px; font-weight: 700; line-height: 1.1">My Sites</h1>
+<div style="font-size: 14px; color: #4B5A68; margin-top: 4px">Friday 9 Oct · live wind updated 2 min ago</div>
+</div>
+</header>
+
+<main style="padding: 8px 16px 16px 16px; display: flex; flex-direction: column; gap: 14px; flex-grow: 1">
+
+<section aria-label="Since your last visit" style="display: flex; flex-wrap: wrap; gap: 8px">
+<a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 6px; min-height: 44px; box-sizing: border-box; padding: 0 12px; background: #FFFFFF; border: 1px solid #C9D3DC; border-radius: 12px; color: #0F1B26; font-size: 14px; font-weight: 600"><span style="background: #B8460B; color: #FFFFFF; border-radius: 999px; font-size: 12px; padding: 1px 7px">3</span>new listings near you</a>
+<a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 6px; min-height: 44px; box-sizing: border-box; padding: 0 12px; background: #FFFFFF; border: 1px solid #C9D3DC; border-radius: 12px; color: #0F1B26; font-size: 14px; font-weight: 600"><span style="background: #B8460B; color: #FFFFFF; border-radius: 999px; font-size: 12px; padding: 1px 7px">1</span>event this weekend</a>
+<a href="#" style="text-decoration: none; display: flex; align-items: center; gap: 6px; min-height: 44px; box-sizing: border-box; padding: 0 12px; background: #FFFFFF; border: 1px solid #C9D3DC; border-radius: 12px; color: #0F1B26; font-size: 14px; font-weight: 600"><span style="background: #B8460B; color: #FFFFFF; border-radius: 999px; font-size: 12px; padding: 1px 7px">1</span>notice for your sites</a>
+</section>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-size: 13px; font-weight: 600; color: #4B5A68; text-transform: uppercase; letter-spacing: 0.6px">Next 3 days · morning and afternoon</div>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; font-size: 13px; color: #4B5A68">
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 4px; background: {{inRange}}"></span>Forecast within site range</span>
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 4px; background: {{marginal}}"></span>Within 22.5°</span>
+<span style="display: flex; align-items: center; gap: 6px"><span style="width: 14px; height: 14px; border-radius: 4px; background: #DCE2E8; border: 1px solid #B7C2CC; box-sizing: border-box"></span>Outside</span>
+</div>
+</div>
+
+<section style="background: #FFFFFF; border: 1px solid #D5DDE4; border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px">
+<div>
+<h2 style="margin: 0; font-size: 20px; font-weight: 700"><a href="SitePage.dc.html" style="color: #0F1B26; text-decoration: none">Long Reef NE</a></h2>
+<div style="font-size: 14px; color: #4B5A68; margin-top: 2px">Northern Beaches, NSW · <a href="ClubPage.dc.html" style="color: #1A3F94; font-weight: 600">SPHGC</a></div>
+</div>
+<span style="font-size: 13px; font-weight: 600; color: #1A3F94; background: #E3ECFA; border-radius: 999px; padding: 4px 10px">Open</span>
+</div>
+<div style="display: flex; align-items: center; gap: 14px">
+<div style="width: 52px; height: 52px; border-radius: 999px; background: #EEF2F5; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0F1B26" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transform: rotate(248deg)"><path d="M12 20V4"></path><path d="M6 10l6-6 6 6"></path></svg>
+</div>
+<div style="flex-grow: 1">
+<div style="font-family: 'Barlow Condensed', sans-serif; font-size: 34px; font-weight: 700; line-height: 1">17<span style="font-size: 16px; font-weight: 600; color: #4B5A68"> km/h</span></div>
+<div style="font-size: 14px; color: #4B5A68">gusting 22 · from ENE</div>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 2px">
+<svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20" fill="#F3F6F8" stroke="#B7C2CC" stroke-width="1.5"></circle><path d="M24 24 L31.65 5.52 A20 20 0 0 1 42.48 16.35 Z" fill="{{inRange}}"></path><path d="M24 2 L24 7" stroke="#4B5A68" stroke-width="1.5"></path></svg>
+<span style="font-size: 12px; color: #4B5A68">NNE–ENE</span>
+</div>
+</div>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap">
+<span style="display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: #1A3F94"><span style="width: 8px; height: 8px; border-radius: 999px; background: {{inRange}}"></span>Live wind within site range</span>
+<a href="#" style="font-size: 13px; color: #1A3F94">SPHGC Long Reef station · 9 min ago</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; font-size: 12px; font-weight: 600; color: #4B5A68"><span>Sat 10</span><span>Sun 11</span><span>Mon 12</span></div>
+<div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 4px">
+<div style="background: {{marginal}}; color: #0F1B26; border-radius: 6px; height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; line-height: 1.05"><span>N</span><span style="font-size: 12px; font-weight: 500">14</span></div>
+<div style="background: {{inRange}}; color: #FFFFFF; border-radius: 6px; height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; line-height: 1.05"><span>NE</span><span style="font-size: 12px; font-weight: 500">20</span></div>
+<div style="background: #DCE2E8; color: #3A4754; border-radius: 6px; height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; line-height: 1.05"><span>SW</span><span style="font-size: 12px; font-weight: 500">16</span></div>
+<div style="background: #DCE2E8; color: #3A4754; border-radius: 6px; height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; line-height: 1.05"><span>S</span><span style="font-size: 12px; font-weight: 500">24</span></div>
+<div style="background: {{marginal}}; color: #0F1B26; border-radius: 6px; height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; line-height: 1.05"><span>E</span><span style="font-size: 12px; font-weight: 500">12</span></div>
+<div style="background: {{inRange}}; color: #FFFFFF; border-radius: 6px; height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; line-height: 1.05"><span>NE</span><span style="font-size: 12px; font-weight: 500">19</span></div>
+</div>
+</div>
+</section>
+
+<section style="background: #FFFFFF; border: 1px solid #D5DDE4; border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px">
+<div>
+<h2 style="margin: 0; font-size: 20px; font-weight: 700"><a href="#" style="color: #0F1B26; text-decoration: none">Long Reef SE</a></h2>
+<div style="font-size: 14px; color: #4B5A68; margin-top: 2px">Northern Beaches, NSW · <a href="ClubPage.dc.html" style="color: #1A3F94; font-weight: 600">SPHGC</a></div>
+</div>
+<span style="font-size: 13px; font-weight: 600; color: #1A3F94; background: #E3ECFA; border-radius: 999px; padding: 4px 10px">Open</span>
+</div>
+<div style="display: flex; align-items: center; gap: 14px">
+<div style="width: 52px; height: 52px; border-radius: 999px; background: #EEF2F5; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0F1B26" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="transform: rotate(248deg)"><path d="M12 20V4"></path><path d="M6 10l6-6 6 6"></path></svg>
+</div>
+<div style="flex-grow: 1">
+<div style="font-family: 'Barlow Condensed', sans-serif; font-size: 34px; font-weight: 700; line-height: 1">17<span style="font-size: 16px; font-weight: 600; color: #4B5A68"> km/h</span></div>
+<div style="font-size: 14px; color: #4B5A68">gusting 22 · from ENE</div>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 2px">
+<svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20" fill="#F3F6F8" stroke="#B7C2CC" stroke-width="1.5"></circle><path d="M24 24 L38.14 38.14 A20 20 0 0 1 24 44 Z" fill="{{inRange}}"></path><path d="M24 2 L24 7" stroke="#4B5A68" stroke-width="1.5"></path></svg>
+<span style="font-size: 12px; color: #4B5A68">S–SE</span>
+</div>
+</div>
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap">
+<span style="display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: #3A4754"><span style="width: 8px; height: 8px; border-radius: 999px; background: #9AA7B3"></span>Live wind outside site range</span>
+<a href="#" style="font-size: 13px; color: #1A3F94">SPHGC Long Reef station · 9 min ago</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; font-size: 12px; font-weight: 600; color: #4B5A68"><span>Sat 10</span><span>Sun 11</span><span>Mon 12</span></div>
+<div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 4px">
+<div style="background: #DCE2E8; color: #3A4754; border-radius: 6px; height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; line-height: 1.05"><span>N</span><span style="font-size: 12px; font-weight: 500">14</span></div>
+<div style="background: #DCE2E8; color: #3A4754; border-radius: 6px; height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; line-height: 1.05"><span>NE</span><span style="font-size: 12px; font-weight: 500">20</span></div>
+<div style="background: {{marginal}}; color: #0F1B26; border-radius: 6px; height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; line-height: 1.05"><span>SSW</span><span style="font-size: 12px; font-weight: 500">16</span></div>
+<div style="background: {{inRange}}; color: #FFFFFF; border-radius: 6px; height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; line-height: 1.05"><span>S</span><span style="font-size: 12px; font-weight: 500">24</span></div>
+<div style="background: #DCE2E8; color: #3A4754; border-radius: 6px; height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; line-height: 1.05"><span>E</span><span style="font-size: 12px; font-weight: 500">12</span></div>
+<div style="background: #DCE2E8; color: #3A4754; border-radius: 6px; height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; line-height: 1.05"><span>NE</span><span style="font-size: 12px; font-weight: 500">19</span></div>
+</div>
+</div>
+</section>
+
+<section style="background: #FFFFFF; border: 1px solid #D5DDE4; border-radius: 14px; padding: 16px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px">
+<div>
+<h2 style="margin: 0; font-size: 20px; font-weight: 700"><a href="#" style="color: #0F1B26; text-decoration: none">Manilla – Mt Borah</a></h2>
+<div style="font-size: 14px; color: #4B5A68; margin-top: 2px">New England, NSW · <a href="#" style="color: #1A3F94; font-weight: 600">Manilla Sky Sailors</a></div>
+</div>
+<span style="font-size: 13px; font-weight: 600; color: #1A3F94; background: #E3ECFA; border-radius: 999px; padding: 4px 10px">Open</span>
+</div>
+<div style="display: flex; align-items: center; gap: 14px">
+<div style="width: 52px; height: 52px; border-radius: 999px; background: #EEF2F5; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4B5A68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h12a3 3 0 1 0-3-3"></path><path d="M4 16h8a2.5 2.5 0 1 1-2.5 2.5"></path><path d="M4 8h5"></path></svg>
+</div>
+<div style="flex-grow: 1; display: flex; flex-direction: column; gap: 6px">
+<a href="#" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; box-sizing: border-box; padding: 0 12px; border-radius: 10px; border: 1px solid #C9D3DC; text-decoration: none; color: #1A3F94; font-size: 14px; font-weight: 600; align-self: flex-start">Open club station<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1A3F94" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v6H4V6h6"></path></svg></a>
+<div style="font-size: 13px; color: #4B5A68">Nearest BOM: Tamworth Airport, about 60 km · 21 km/h from NW</div>
+</div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 2px">
+<svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20" fill="{{inRange}}" stroke="#B7C2CC" stroke-width="1.5"></circle><path d="M24 2 L24 7" stroke="#4B5A68" stroke-width="1.5"></path></svg>
+<span style="font-size: 12px; color: #4B5A68">All</span>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; font-size: 12px; font-weight: 600; color: #4B5A68"><span>Sat 10</span><span>Sun 11</span><span>Mon 12</span></div>
+<div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 4px">
+<div style="background: {{inRange}}; color: #FFFFFF; border-radius: 6px; height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; line-height: 1.05"><span>NW</span><span style="font-size: 12px; font-weight: 500">11</span></div>
+<div style="background: {{inRange}}; color: #FFFFFF; border-radius: 6px; height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; line-height: 1.05"><span>W</span><span style="font-size: 12px; font-weight: 500">17</span></div>
+<div style="background: {{inRange}}; color: #FFFFFF; border-radius: 6px; height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; line-height: 1.05"><span>SW</span><span style="font-size: 12px; font-weight: 500">9</span></div>
+<div style="background: {{inRange}}; color: #FFFFFF; border-radius: 6px; height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; line-height: 1.05"><span>W</span><span style="font-size: 12px; font-weight: 500">26</span></div>
+<div style="background: {{inRange}}; color: #FFFFFF; border-radius: 6px; height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; line-height: 1.05"><span>E</span><span style="font-size: 12px; font-weight: 500">8</span></div>
+<div style="background: {{inRange}}; color: #FFFFFF; border-radius: 6px; height: 40px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 14px; line-height: 1.05"><span>NE</span><span style="font-size: 12px; font-weight: 500">15</span></div>
+</div>
+<div style="font-size: 12px; color: #4B5A68">Speeds shown in km/h. Set your own limits in Settings.</div>
+</div>
+</section>
+
+<button style="min-height: 56px; border-radius: 14px; border: 2px dashed #9AA7B3; background: transparent; color: #0F1B26; font-family: 'Barlow', system-ui, sans-serif; font-size: 16px; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0F1B26" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M5 12h14"></path></svg>Add a site
+</button>
+
+<a href="https://wheretofly.info" style="min-height: 52px; box-sizing: border-box; border-radius: 14px; background: #B8460B; color: #FFFFFF; text-decoration: none; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 8px">Check all 3 sites in Where To Fly<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"></path><path d="M20 4l-9 9"></path><path d="M18 14v6H4V6h6"></path></svg></a>
+
+<p style="margin: 0; font-size: 13px; line-height: 1.45; color: #3A4754; background: #E2E8EE; border-radius: 12px; padding: 12px 14px">Information only. Forecast direction is compared with each site's published wind range; speeds are shown but not judged. Always check the official site guide, the administering club and conditions on the day.</p>
+
+</main>
+
+<nav aria-label="Main" style="background: #FFFFFF; border-top: 1px solid #D5DDE4; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); padding: 6px 4px 10px 4px">
+<a href="Main.dc.html" aria-current="page" style="text-decoration: none; min-height: 56px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: #B8460B; font-size: 12px; font-weight: 700"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#B8460B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6-5.33-6-11a6 6 0 1 1 12 0c0 5.67-6 11-6 11z"></path><circle cx="12" cy="10" r="2"></circle></svg>My Sites</a>
+<a href="#" style="text-decoration: none; min-height: 56px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: #4B5A68; font-size: 12px; font-weight: 600"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4B5A68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"></path><path d="M9 4v14"></path><path d="M15 6v14"></path></svg>Map</a>
+<a href="ClubPage.dc.html" style="text-decoration: none; min-height: 56px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: #4B5A68; font-size: 12px; font-weight: 600"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4B5A68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"></circle><path d="M3 20a6 6 0 0 1 12 0"></path><path d="M16 5a3 3 0 0 1 0 6"></path><path d="M21 20a6 6 0 0 0-4-5.6"></path></svg>Clubs</a>
+<a href="#" style="text-decoration: none; min-height: 56px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: #4B5A68; font-size: 12px; font-weight: 600"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4B5A68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path><path d="M8 3v4"></path><path d="M16 3v4"></path></svg>What's on</a>
+<a href="#" style="text-decoration: none; min-height: 56px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: #4B5A68; font-size: 12px; font-weight: 600"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4B5A68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8L3 12z"></path><circle cx="7.5" cy="7.5" r="1.5"></circle></svg>Gear</a>
+</nav>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"inRange":{"editor":"color","default":"#1F4FBF","options":["#1F4FBF","#0B6E8F","#3B3FB6"]},"marginal":{"editor":"color","default":"#F0A04B","options":["#F0A04B","#F2C14E","#E8875A"]},"$preview":{"width":390,"height":1400}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      inRange: this.props.inRange ?? '#1F4FBF',
+      marginal: this.props.marginal ?? '#F0A04B'
+    };
+  }
+}
+</script>
+</body>
+</html>

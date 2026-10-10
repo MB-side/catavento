@@ -1,0 +1,14 @@
+# Published courses and prices only, each with its source. See docs/07 §6.
+- org: "Manilla Paragliding"          # resolve to the organisation ID during M1
+  type: licence_course
+  discipline: PG
+  title: "PG2 licence course (9+ days, live-in)"
+  priceFromAud: 2890
+  priceText: "A$2,890"
+  inclusions:
+    - "SAFA insurance component"
+    - "On-site cabin accommodation"
+    - "A$400 equipment credit"
+  url: "https://www.flymanilla.com/ManillaParaglidingSchool/tabid/141/Default.aspx"
+  sourceCheckedAt: "2026-10-08"
+  note: "Re-check before launch; prices change."
