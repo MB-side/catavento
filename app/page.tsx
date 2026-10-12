@@ -3,7 +3,8 @@ import Link from "next/link";
 import { ArrowRight, CalendarDays, Compass, Map as MapIcon, Search, Wrench } from "lucide-react";
 import { defaultCountrySegment } from "@/lib/country-codes";
 import { getEnabledCountries } from "@/lib/country";
-import { t, type MessageKey } from "@/lib/messages";
+import { getCounts, type CountryCounts } from "@/lib/data";
+import { t, tCount, type MessageKey } from "@/lib/messages";
 import { absoluteUrl, withBasePath } from "@/lib/paths";
 import { homeTitle } from "@/lib/seo";
 import { siteConfig } from "@/site.config";
@@ -13,21 +14,62 @@ export const metadata: Metadata = {
   alternates: { canonical: absoluteUrl("/") },
 };
 
-const sections: { label: MessageKey; text: MessageKey; path: string; Icon: typeof MapIcon }[] = [
-  { label: "nav.sites", text: "home.sites", path: "/sites", Icon: MapIcon },
+type CountKey = "counts.sites" | "counts.schools" | "counts.gear";
+
+const sections: {
+  label: MessageKey;
+  text: MessageKey;
+  path: string;
+  Icon: typeof MapIcon;
+  count?: [CountKey, keyof CountryCounts];
+}[] = [
+  {
+    label: "nav.sites",
+    text: "home.sites",
+    path: "/sites",
+    Icon: MapIcon,
+    count: ["counts.sites", "sites"],
+  },
   { label: "nav.whatsOn", text: "home.whatsOn", path: "/whats-on", Icon: CalendarDays },
-  { label: "nav.gear", text: "home.gear", path: "/gear", Icon: Wrench },
-  { label: "nav.newToFlying", text: "home.newToFlying", path: "/new-to-flying", Icon: Compass },
+  {
+    label: "nav.gear",
+    text: "home.gear",
+    path: "/gear",
+    Icon: Wrench,
+    count: ["counts.gear", "gear"],
+  },
+  {
+    label: "nav.newToFlying",
+    text: "home.newToFlying",
+    path: "/new-to-flying",
+    Icon: Compass,
+    count: ["counts.schools", "schools"],
+  },
 ];
 
+/** "27 clubs · 36 schools": only the counts that are above zero. */
+function countLine(counts: CountryCounts): string {
+  const parts: [CountKey | "counts.clubs", number][] = [
+    ["counts.sites", counts.sites],
+    ["counts.clubs", counts.clubs],
+    ["counts.schools", counts.schools],
+    ["counts.gear", counts.gear],
+  ];
+  return parts
+    .filter(([, n]) => n > 0)
+    .map(([key, n]) => tCount(key, n))
+    .join(" · ");
+}
+
 /**
- * Home: an overview for everyone (D37). Later milestones add, in order: live counts on the section
- * tiles (M1/M3), regions under each country (M3), a "Your sites" strip at the top for visitors
- * with saved sites on this device (M5, client-side only), and "Coming up" events (M6).
+ * Home: an overview for everyone (D37). Counts come from the data (M1) and appear once above zero.
+ * Later milestones add regions under each country (M3), a "Your sites" strip at the top for
+ * visitors with saved sites on this device (M5, client-side only), and "Coming up" events (M6).
  */
 export default function HomePage() {
   const country = defaultCountrySegment;
   const countries = getEnabledCountries();
+  const homeCounts = getCounts(country);
 
   return (
     <div className="flex flex-col gap-10">
@@ -72,7 +114,7 @@ export default function HomePage() {
           {t("home.sectionsHeading")}
         </h2>
         <ul className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {sections.map(({ label, text, path, Icon }) => (
+          {sections.map(({ label, text, path, Icon, count }) => (
             <li key={path}>
               <Link
                 href={`/${country}${path}/`}
@@ -83,6 +125,11 @@ export default function HomePage() {
                   {t(label)}
                 </span>
                 <span className="text-muted">{t(text)}</span>
+                {count && homeCounts[count[1]] > 0 && (
+                  <span className="mt-auto pt-1 text-[0.875rem] font-semibold text-muted-strong">
+                    {tCount(count[0], homeCounts[count[1]])}
+                  </span>
+                )}
               </Link>
             </li>
           ))}
@@ -111,6 +158,9 @@ export default function HomePage() {
                   </span>
                   <span className="block text-muted">
                     {t("home.nationalBody", { name: c.nationalBody.name })}
+                  </span>
+                  <span className="mt-1 block text-[0.875rem] font-semibold text-muted-strong">
+                    {countLine(getCounts(c.code))}
                   </span>
                 </span>
                 <ArrowRight className="size-6 shrink-0 text-action" aria-hidden="true" />

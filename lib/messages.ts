@@ -38,3 +38,14 @@ export function tOr(key: string, fallback: MessageKey, vars?: Record<string, str
   const template = lookup(en, key);
   return template === undefined ? t(fallback, vars) : format(template, vars);
 }
+
+const pluralRules = new Intl.PluralRules("en");
+
+/** Count with the right singular or plural form, e.g. tCount("counts.clubs", 1) → "1 club". */
+export function tCount(
+  base: "counts.sites" | "counts.clubs" | "counts.schools" | "counts.gear" | "counts.stations",
+  count: number,
+): string {
+  const form = pluralRules.select(count) === "one" ? "one" : "other";
+  return tOr(`${base}.${form}`, "counts.sites.other", { count: String(count) });
+}

@@ -1,26 +1,13 @@
-// Country configuration access (docs/03 §3). Server-side only: reads data/manual/countries.yaml
-// at build time. Client code uses lib/country-codes.ts instead.
+// Country configuration access (docs/03 §3). Server-side only: reads the validated countries.json
+// through lib/data. Client code uses lib/country-codes.ts instead.
 import "server-only";
-import { readFileSync } from "node:fs";
-import path from "node:path";
-import { parse } from "yaml";
 import { siteConfig } from "@/site.config";
-import { countriesFileSchema } from "./schemas";
+import { getCountries } from "@/lib/data";
 import type { Country, CountryCode } from "./types";
 
-const COUNTRIES_FILE = path.join(process.cwd(), "data", "manual", "countries.yaml");
-
-let cache: Country[] | undefined;
-
-/** Parses and validates a countries.yaml document. Exported for tests. */
-export function parseCountries(yamlText: string): Country[] {
-  return countriesFileSchema.parse(parse(yamlText));
-}
-
-/** Every country in countries.yaml, validated. */
+/** Every country in countries.yaml. */
 export function getAllCountries(): Country[] {
-  cache ??= parseCountries(readFileSync(COUNTRIES_FILE, "utf8"));
-  return cache;
+  return getCountries();
 }
 
 /** Countries that are both enabled in countries.yaml and listed in siteConfig.enabledCountries. */

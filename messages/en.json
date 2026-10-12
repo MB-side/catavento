@@ -136,11 +136,66 @@
   "notFound": {
     "title": "Page not found",
     "text": "We couldn't find that page. It may have moved while the prototype is being built.",
-    "home": "Go to the home page"
+    "home": "Go to the home page",
+    "metaTitle": "Page not found"
   },
   "coverage": {
     "label": "Sample coverage.",
     "text": "{country} is included as an early sample, so information here is incomplete.",
     "link": "Tell us what's missing."
+  },
+  "counts": {
+    "sites": {
+      "one": "{count} site",
+      "other": "{count} sites"
+    },
+    "clubs": {
+      "one": "{count} club",
+      "other": "{count} clubs"
+    },
+    "schools": {
+      "one": "{count} school",
+      "other": "{count} schools"
+    },
+    "gear": {
+      "one": "{count} shop or service centre",
+      "other": "{count} shops and service centres"
+    },
+    "stations": {
+      "one": "{count} weather station link",
+      "other": "{count} weather station links"
+    }
+  },
+  "sources": {
+    "intro": "Catavento brings together public information from many places. Every record shows where it came from and when it was checked. This page lists every source, what we use from it, how often we check it, and the credit we show.",
+    "tiersHeading": "How we treat each source",
+    "tierGreen": "Green",
+    "tierGreenText": "Public directories, openly licensed data and official services. We show the facts with a credit and a link.",
+    "tierAmber": "Amber",
+    "tierAmberText": "Public but run by volunteers, without published terms, or sensitive to traffic. We take only facts and short labels, link to the full content, check rarely, and tell the owner what we use.",
+    "tierRed": "Red",
+    "tierRedText": "Their terms don't allow automated collection, or the content needs a login. We collect nothing and only link to them.",
+    "uses": "What we use",
+    "method": "How",
+    "schedule": "How often",
+    "credit": "Credit shown",
+    "creditNote": "Words in italics are filled in for each record, for example the club's name.",
+    "licence": "Licence",
+    "countries": "Countries",
+    "allCountries": "All countries",
+    "website": "Website",
+    "notUsed": "Not used",
+    "providersHeading": "Sources",
+    "changesHeading": "Want something changed or removed?",
+    "changesText": "If you look after one of these sources and would like us to change or stop using anything, tell us and we'll act on it, usually within 24 hours.",
+    "changesLink": "Contact us",
+    "licenceNames": {
+      "facts": "Facts only",
+      "cc-by-sa-3.0": "CC BY-SA 3.0",
+      "odbl-1.0": "ODbL 1.0",
+      "cc-by-4.0": "CC BY 4.0",
+      "proprietary": "Owner's terms",
+      "unknown": "No published terms"
+    }
   }
 }
