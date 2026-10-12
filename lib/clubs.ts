@@ -5,3 +5,10 @@ import type { Organisation } from "./types";
 export function clubPath(org: Pick<Organisation, "country" | "slug">): string {
   return `/${org.country.toLowerCase()}/clubs/${org.slug}`;
 }
+
+/** Any organisation's page: clubs and associations have club pages, everyone else a profile. */
+export function orgPath(org: Pick<Organisation, "country" | "slug" | "kind">): string {
+  return org.kind === "club" || org.kind === "regional_association"
+    ? clubPath(org)
+    : `/${org.country.toLowerCase()}/directory/${org.slug}`;
+}
