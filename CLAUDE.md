@@ -1,10 +1,10 @@
-# CLAUDE.md · HouseThermal
+# CLAUDE.md · Catavento
 
 Standing instructions for every Claude Code session in this repository. Keep this file short and current; update the Commands section as the project evolves.
 
 ## What we're building
 
-**HouseThermal** is an independent hub for Australian free flight (paragliding, hang gliding, paramotoring): sites, the clubs that manage them, schools and tandem operators ("New to flying"), shops, events, and a personal "My Sites" view. **Current stage: Iteration 1, a static consultation prototype on GitHub Pages: Australia in full plus a small New Zealand sample, built global-ready.** Full spec: `docs/02-iteration-1-spec.md`.
+**Catavento** is an independent hub for Australian free flight (paragliding, hang gliding, paramotoring): sites, the clubs that manage them, schools and tandem operators ("New to flying"), shops, events, and a personal "My Sites" view. **Current stage: Iteration 1, a static consultation prototype on GitHub Pages: Australia in full plus a small New Zealand sample, built global-ready.** Full spec: `docs/02-iteration-1-spec.md`.
 
 ## Read first
 
@@ -32,7 +32,7 @@ scope `docs/02` · architecture `docs/03` · data `docs/04` · sources and scrap
 - **No invented facts and no `[placeholder]` text on deployed pages.** Use "Not published", "Ask the club" or "Contact the school".
 - **Accessibility:** WCAG 2.2 AA, real buttons and links, 44 px targets, text on every coloured outlook cell.
 - **Never import from `design/mockups/`.** They are visual references only.
-- **The name is always written HouseThermal** (one word, capital H and T) in UI text, metadata and code constants; never "House Thermal" or "Housethermal". Brand rules: `docs/01` §8 and `docs/06` §9.
+- **The name is always written Catavento** (one word, capital C only) in UI text, metadata and code constants; never "Cata-vento", "CataVento" or "Cata Vento". It replaced the working name HouseThermal (D33). Brand rules: `docs/01` §8 and `docs/06` §9.
 
 ## Code standards
 
@@ -45,18 +45,22 @@ scope `docs/02` · architecture `docs/03` · data `docs/04` · sources and scrap
 
 ## Commands
 
-*(Fill in during M0 and keep current.)*
+Node 24 and pnpm 12. On the founder's Mac they live in `~/.local` (system Node is older), so prefix commands with `export PATH=$HOME/.local/opt/node/bin:$HOME/.local/bin:$PATH`.
 
 | Task | Command |
 |---|---|
 | Install | `pnpm install` |
-| Dev server | `pnpm dev` |
+| Dev server | `pnpm dev` (http://localhost:3000/catavento/) |
 | Build data | `pnpm build:data` |
 | Run ingest (all / one provider) | `pnpm ingest` / `pnpm ingest --provider ansg` |
-| Build static site | `pnpm build` |
+| Build static site (+ content guard) | `pnpm build` |
+| Serve the build like GitHub Pages | `pnpm serve` (http://localhost:4173/catavento/) |
 | Unit tests | `pnpm test` |
-| E2E tests | `pnpm test:e2e` |
-| Lint and typecheck | `pnpm lint && pnpm typecheck` |
+| E2E tests (against the build) | `pnpm test:e2e` |
+| Link check (against the build) | `pnpm check:links` |
+| Lint, format and typecheck | `pnpm lint && pnpm format:check && pnpm typecheck` |
+
+Workflows: `ci.yml` (checks every PR), `deploy.yml` (publishes `main`), `ingest.yml` (nightly data refresh; calls `deploy.yml`).
 
 ## Repo map
 

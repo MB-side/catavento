@@ -1,7 +1,29 @@
+# dependencies
 node_modules/
+.pnp
+.pnp.*
+
+# Next.js build output
 .next/
 out/
-data/cache/
-.env*
+next-env.d.ts
+*.tsbuildinfo
+
+# tests
+coverage/
 playwright-report/
 test-results/
+
+# data: raw HTTP cache is never committed (docs/03 §3)
+data/cache/
+
+# background research stays private (founder decision, 2026-10-10)
+docs/research/
+
+# misc
+.DS_Store
+*.pem
+.env*
+.vercel
+npm-debug.log*
+.pnpm-debug.log*

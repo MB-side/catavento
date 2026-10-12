@@ -4,7 +4,7 @@
 
 ---
 
-You are the lead engineer for **HouseThermal** ("Paragliding and hang gliding, all in one place"), an independent website for Australian free flight: flying sites, the clubs that manage them, schools and tandem operators for people new to flying, shops, events, and a personal "My Sites" view pilots will open every day.
+You are the lead engineer for **Catavento** ("Paragliding and hang gliding, all in one place"), an independent website for Australian free flight: flying sites, the clubs that manage them, schools and tandem operators for people new to flying, shops, events, and a personal "My Sites" view pilots will open every day.
 
 This repository already contains the full project documentation and seed data. Your job is to build **Iteration 1: a static consultation prototype hosted on GitHub Pages**, covering Australia in full plus a small New Zealand sample that proves the site works for more than one country, which I will share with pilots, clubs, schools, SAFA and data owners for feedback. Later iterations will move the same app to Vercel and Supabase, so build in a way that keeps that path open.
 
@@ -49,7 +49,7 @@ Do not write code until I confirm the M0 plan.
 - Stewards are first-class: the steward panel ("Managed by" for clubs) on every site page and site ↔ club links both ways.
 - Country-neutral code: country rules come only from `data/manual/countries.yaml`; country-first URLs (`/au/...`, `/nz/...`); no SAFA wording on NZ pages.
 - The section for newcomers is called **"New to flying"** and covers both tandem flights and learning to fly.
-- The name is always **HouseThermal**, one word, paired with its descriptor in titles and share images (`docs/01` §8).
+- The name is always **Catavento**, one word, paired with its descriptor in titles and share images (`docs/01` §8).
 - WCAG 2.2 AA and the performance targets in `docs/02` §7.
 
 ## Technical notes to get right early

@@ -1,0 +1,146 @@
+{
+  "brand": {
+    "homeLink": "Catavento home"
+  },
+  "banner": {
+    "label": "Prototype notice",
+    "text": "Prototype for community feedback. Independent: not affiliated with {affiliations}. Information may be incomplete or out of date.",
+    "feedback": "Tell us what you think.",
+    "dismiss": "Hide this notice",
+    "affiliations": {
+      "AU": "SAFA, the Site Guide or any club",
+      "NZ": "NZHGPA or any club",
+      "default": "any national body, site guide or club"
+    }
+  },
+  "nav": {
+    "label": "Main",
+    "mySites": "My Sites",
+    "sites": "Sites & map",
+    "sitesTab": "Sites",
+    "whatsOn": "What's on",
+    "gear": "Gear",
+    "newToFlying": "New to flying",
+    "search": "Search",
+    "menu": "Menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to content",
+    "phoneTabs": "Sections"
+  },
+  "footer": {
+    "label": "Site information",
+    "about": "About",
+    "sources": "Sources and attribution",
+    "status": "Status",
+    "bot": "Bot policy",
+    "takedown": "Takedown",
+    "privacy": "Privacy",
+    "disclaimer": "Disclaimer",
+    "feedback": "Feedback",
+    "independence": "Catavento is an independent prototype. Information comes from public sources and is credited on every page."
+  },
+  "home": {
+    "intro": "One place for flying sites and who manages them, events, gear, and tandem flights and lessons for people new to flying.",
+    "searchLabel": "Search sites, clubs, schools and events",
+    "searchPlaceholder": "Site, club, school or town",
+    "searchButton": "Search",
+    "sectionsHeading": "What's here",
+    "sites": "Sites and who manages each one, on a map and in a list.",
+    "whatsOn": "Events, competitions and safety notices.",
+    "gear": "Where to buy, shops and service centres, and used gear.",
+    "newToFlying": "Tandem flights, learning to fly, and schools.",
+    "countriesHeading": "Browse by country",
+    "nationalBody": "National body: {name}",
+    "sampleLabel": "Sample",
+    "building": "This prototype is being built. Site counts, upcoming events and, for returning pilots, your saved sites will appear on this page as each part is finished.",
+    "whyTheNameLabel": "Why the name?"
+  },
+  "comingSoon": {
+    "text": "This section is being built for the prototype.",
+    "feedbackPrompt": "Something you'd like to see here?",
+    "feedbackLink": "Tell us"
+  },
+  "pages": {
+    "mySites": {
+      "title": "My Sites",
+      "summary": "Your saved sites with a 3-day wind direction outlook, stored only on this device."
+    },
+    "search": {
+      "title": "Search",
+      "summary": "Search sites, clubs, schools and events."
+    },
+    "about": {
+      "title": "About",
+      "summary": "What Catavento is, who runs it and how to give feedback."
+    },
+    "sources": {
+      "title": "Sources and attribution",
+      "summary": "Every source we use, how often we check it and how it is credited."
+    },
+    "status": {
+      "title": "Status",
+      "summary": "When each source was last checked and whether anything needs attention."
+    },
+    "bot": {
+      "title": "Bot policy",
+      "summary": "How CataventoBot collects public information politely, and how to opt out."
+    },
+    "takedown": {
+      "title": "Takedown",
+      "summary": "How to ask for information to be corrected or removed."
+    },
+    "privacy": {
+      "title": "Privacy",
+      "summary": "No accounts and no cookies: what stays on your device and which services your browser contacts."
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "summary": "What this information can and can't tell you."
+    },
+    "feedback": {
+      "title": "Feedback",
+      "summary": "Tell us what's useful, what's wrong and what's missing.",
+      "formLink": "Open the feedback form",
+      "emailIntro": "A short feedback form is being set up. Until then, please email us:",
+      "includePage": "If you're reporting a correction, include the page address so we can find it."
+    },
+    "countryHome": {
+      "title": "Flying in {country}",
+      "summary": "Sites, clubs, schools and events in {country}."
+    },
+    "sites": {
+      "title": "Sites & map",
+      "summary": "Flying sites on a map and in a list, with filters."
+    },
+    "clubs": {
+      "title": "Clubs",
+      "summary": "Clubs and the sites they manage, by region."
+    },
+    "whatsOn": {
+      "title": "What's on",
+      "summary": "Events and notices."
+    },
+    "gear": {
+      "title": "Gear",
+      "summary": "Where to buy, shops and service centres, and where to find used gear."
+    },
+    "newToFlying": {
+      "title": "New to flying",
+      "summary": "Try a tandem flight or learn to fly."
+    },
+    "visitingPilots": {
+      "title": "Visiting pilots",
+      "summary": "What you need to know to fly here as a visitor."
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "We couldn't find that page. It may have moved while the prototype is being built.",
+    "home": "Go to the home page"
+  },
+  "coverage": {
+    "label": "Sample coverage.",
+    "text": "{country} is included as an early sample, so information here is incomplete.",
+    "link": "Tell us what's missing."
+  }
+}

@@ -1,6 +1,6 @@
-# HouseThermal: Claude Code Starter Pack
+# Catavento: Claude Code Starter Pack
 
-**HouseThermal** · Paragliding and hang gliding, all in one place
+**Catavento** · Paragliding and hang gliding, all in one place
 
 **Pack version:** 1.2 · 9 October 2026 (adds the name and brand; Australia first with a New Zealand sample, global-ready)
 **Goal of this pack:** give Claude Code everything it needs to build **Iteration 1, the consultation prototype**: a working, mostly real, static website hosted free on GitHub Pages that you can show pilots, clubs, schools, SAFA and data owners for feedback.
@@ -41,7 +41,7 @@
 5. Paste the contents of `KICKOFF_PROMPT.md` as your first message.
 6. Claude Code will read the docs, summarise its understanding, list questions and propose a plan for the first milestone. **Answer the questions, approve the plan**, and it will build milestone by milestone, stopping for your review after each one.
 
-**Before you start, decide these (or accept the defaults in `docs/02`, section 10):** the domain (check housethermal.com; housethermal.fly goes on sale on 10 November 2026), the feedback form link, a contact email, and whether to turn on privacy-friendly analytics. The name, HouseThermal, is decided (`docs/01` §8).
+**Before you start, decide these (or accept the defaults in `docs/02`, section 10):** the domain (catavento.fly; .fly registration opens 11 November 2026, Sydney time), the feedback form link, a contact email, and whether to turn on privacy-friendly analytics. The name, Catavento, is decided (`docs/01` §8).
 
 ---
 
@@ -52,3 +52,15 @@
 **Won't (yet):** accounts, classifieds posting, enquiry forms, live wind numbers, alerts, payments or sponsored listings. These arrive in Iteration 2, when the site moves to a proper host with a database (see `docs/08`).
 
 GitHub Pages is fine for a non-commercial prototype, but its terms don't allow running an online business on it, so the move to the full stack happens before anything is monetised.
+
+---
+
+## Run locally
+
+The live site is published from GitHub automatically; you don't need to run anything yourself. For anyone working on the code:
+
+1. Install Node 24 and pnpm 12 (`corepack enable` or `npm install -g pnpm@12`).
+2. `pnpm install`
+3. `pnpm dev`, then open http://localhost:3000/catavento/
+
+To check a production build exactly as GitHub Pages will serve it: `pnpm build && pnpm serve`, then open http://localhost:4173/catavento/. `pnpm test` and `pnpm test:e2e` run the automated tests. The full command list is in `CLAUDE.md`.

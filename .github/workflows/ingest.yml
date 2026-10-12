@@ -1,0 +1,76 @@
+# The nightly refresh: collects public data, commits it if anything changed, then calls the
+# publisher (docs/03 §5). M0: providers don't exist yet, so runs collect nothing; the nightly
+# schedule is switched on in M2. Run it by hand with "force deploy" to test the hand-off.
+name: Ingest
+
+on:
+  # Switched on in M2 (02:30 AEST / 03:30 AEDT):
+  # schedule:
+  #   - cron: "30 16 * * *"
+  workflow_dispatch:
+    inputs:
+      provider:
+        description: Run one provider only (leave empty for all enabled providers)
+        type: string
+        required: false
+      force_deploy:
+        description: Publish even if no data changed
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ingest
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+      sha: ${{ steps.commit.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Run providers
+        env:
+          PROVIDER: ${{ inputs.provider }}
+        run: |
+          if [ -n "${PROVIDER:-}" ]; then pnpm ingest --provider "$PROVIDER"; else pnpm ingest; fi
+      - run: pnpm build:data
+      - name: Commit data changes
+        id: commit
+        run: |
+          if [ -n "$(git status --porcelain -- data/)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/
+            git commit -m "chore(data): ingest $(date -u +%Y-%m-%d)"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "No data changes."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    needs: ingest
+    if: needs.ingest.outputs.changed == 'true' || inputs.force_deploy
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/deploy.yml
+    with:
+      ref: ${{ needs.ingest.outputs.sha }}

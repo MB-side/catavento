@@ -1,0 +1,91 @@
+# The publisher: builds the site and puts it live on GitHub Pages (docs/03 §5).
+# Runs on every push to main, by hand, and when called by ingest.yml. Commits pushed by the
+# ingest bot (GITHUB_TOKEN) do not trigger other workflows, so ingest.yml calls this one directly
+# and passes the exact commit to build.
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  workflow_call:
+    inputs:
+      ref:
+        description: Commit to build (defaults to the commit that triggered the run)
+        type: string
+        required: false
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One deployment at a time; never cancel one that has started.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          # When called by ingest.yml, github.sha is the commit *before* the bot's data commit.
+          ref: ${{ inputs.ref || github.sha }}
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  smoke:
+    needs: deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check the live site
+        env:
+          PAGE_URL: ${{ needs.deploy.outputs.page_url }}
+        run: |
+          set -euo pipefail
+          base="${PAGE_URL%/}"
+          fetch() { curl -sS --retry 5 --retry-delay 10 --retry-all-errors -o "$2" -w '%{http_code}' "$1"; }
+
+          code=$(fetch "$base/" home.html)
+          [ "$code" = 200 ] || { echo "Home page returned $code"; exit 1; }
+          grep -q '<title>Catavento' home.html || { echo "Home page title missing"; exit 1; }
+
+          css=$(grep -o 'href="[^"]*\.css"' home.html | head -1 | sed 's/^href="//; s/"$//')
+          [ -n "$css" ] || { echo "No stylesheet linked from the home page"; exit 1; }
+          origin=$(echo "$base" | sed -E 's#^(https://[^/]+).*#\1#')
+          code=$(fetch "$origin$css" style.css)
+          [ "$code" = 200 ] || { echo "Stylesheet $css returned $code"; exit 1; }
+
+          code=$(fetch "$base/au/clubs/" clubs.html)
+          [ "$code" = 200 ] || { echo "Deep link /au/clubs/ returned $code"; exit 1; }
+
+          code=$(curl -sS -o notfound.html -w '%{http_code}' "$base/no-such-page/")
+          [ "$code" = 404 ] || { echo "Missing page returned $code, expected 404"; exit 1; }
+          grep -q 'Page not found' notfound.html || { echo "404 page not served"; exit 1; }
+
+          echo "Live site OK: $base/"

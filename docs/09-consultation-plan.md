@@ -38,15 +38,15 @@ Short, friendly, specific. Adjust per recipient.
 
 **To a data owner (Site Guide, Where To Fly, FreeFlightWx, ParaglidingEarth):**
 
-> Hi {name}, I'm building HouseThermal, an independent prototype hub for Australian free-flight pilots ({url}). It links to {your site} on every relevant page and shows only {what we use, e.g. site names, coordinates and the short facts fields} with a clear credit and link back. Nothing else is copied. It refreshes {nightly/weekly} at a low request rate and identifies itself as HouseThermalBot. If you'd like anything changed or removed, reply and I'll act within 24 hours. I'd also love your feedback, and to talk about doing this more officially if you're open to it. Thanks for everything you've built for the community. {your name}
+> Hi {name}, I'm building Catavento, an independent prototype hub for Australian free-flight pilots ({url}). It links to {your site} on every relevant page and shows only {what we use, e.g. site names, coordinates and the short facts fields} with a clear credit and link back. Nothing else is copied. It refreshes {nightly/weekly} at a low request rate and identifies itself as CataventoBot. If you'd like anything changed or removed, reply and I'll act within 24 hours. I'd also love your feedback, and to talk about doing this more officially if you're open to it. Thanks for everything you've built for the community. {your name}
 
 **To a club:**
 
-> Hi {name}, I've built HouseThermal, a prototype hub that brings together Australian flying sites, clubs, schools and events ({url}). Your club's page is here: {club page}. Each of your sites shows your club as the administering club, with your contact details as published by {source}, and asks visiting pilots to contact you before their first flight. Could you check it's right? I'd also value 10 minutes of your thoughts on what would make this genuinely useful for your members and visitors. {your name}
+> Hi {name}, I've built Catavento, a prototype hub that brings together Australian flying sites, clubs, schools and events ({url}). Your club's page is here: {club page}. Each of your sites shows your club as the administering club, with your contact details as published by {source}, and asks visiting pilots to contact you before their first flight. Could you check it's right? I'd also value 10 minutes of your thoughts on what would make this genuinely useful for your members and visitors. {your name}
 
 **To a school or tandem operator:**
 
-> Hi {name}, your {school/tandem business} is listed on HouseThermal, a prototype hub for Australian free flight ({listing url}), under our "New to flying" section for people looking for tandems and lessons. Could you check the details are right? I'm also keen to hear what would make enquiries from a site like this worthwhile for you. {your name}
+> Hi {name}, your {school/tandem business} is listed on Catavento, a prototype hub for Australian free flight ({listing url}), under our "New to flying" section for people looking for tandems and lessons. Could you check the details are right? I'm also keen to hear what would make enquiries from a site like this worthwhile for you. {your name}
 
 ## 6. Success signals to move to Iteration 2
 

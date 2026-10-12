@@ -4,7 +4,7 @@
 
 ## 1. One line
 
-**HouseThermal** · Paragliding and hang gliding, all in one place.
+**Catavento** · Paragliding and hang gliding, all in one place.
 
 The independent front door to free flight in Australia: every site, club, school, tandem operator, shop and event in one current, fast, well-attributed place, with a personal "My Sites" view that pilots open every day. **Australia first, New Zealand next, and built to work in any country.**
 
@@ -38,10 +38,12 @@ The independent front door to free flight in Australia: every site, club, school
 
 ## 4. Navigation and information architecture
 
-**Desktop top navigation (left to right):** My Sites · Sites & map · Clubs · What's on · Gear · New to flying
+**Desktop top navigation (left to right):** My Sites · Sites & map · What's on · Gear · New to flying
 
-**Phone bottom tab bar:** My Sites · Map · Clubs · What's on · Gear
-**Phone top bar:** hub name, a visible **"New to flying"** button, and a menu button (About, Sources, Feedback).
+**Phone bottom tab bar:** My Sites · Sites · What's on · Gear · New to flying
+**Phone top bar:** wordmark, search, and a menu button (Country, About, Sources, Status, Feedback, Settings).
+
+Clubs is not a top-level section (D31): sites are the entry point, and each site page shows its steward (a club in Australia and New Zealand). Club pages and the clubs directory are reached from site pages and each country's home page.
 
 Key relationships the IA must express everywhere:
 
@@ -94,15 +96,15 @@ Acquire through the one-off questions, retain through the daily and weekly ones,
 
 | Item | Decision |
 |---|---|
-| Name | **HouseThermal** |
-| Spelling | Always one word with capital H and T. Never "House Thermal" or "Housethermal" in UI, titles or code constants. ("House Thermal" is used only as a search alternate name in structured data.) |
+| Name | **Catavento** (D33; replaces HouseThermal) |
+| Spelling | Always one word, capital C only: **Catavento**. Never "Cata-vento", "CataVento" or "Cata Vento" in UI, titles or code constants |
 | Primary descriptor | **Paragliding and hang gliding, all in one place** |
 | Australian page-title descriptor (Iteration 1) | **Paragliding and hang gliding in Australia, all in one place** |
 | Future global descriptor | **Free flight, all in one place** (the name stays the same) |
-| Why the name | Every flying site has a *house thermal*: the reliable climb locals head for first. HouseThermal aims to be that dependable first stop for everything about flying. Exact copy: `docs/07` §9 |
-| Logo | A glider climbing in a thermal above a roofline: `docs/06` §9 |
-| Domain | To be confirmed: **housethermal.com** if available; otherwise **housethermal.fly** (.fly general availability from 10 November 2026). The prototype runs on the GitHub Pages URL until then |
+| Why the name | *Catavento* is Portuguese for pinwheel and literally means "catch the wind". A pinwheel is wind, a hub with everything turning around it, and wings circling in a thermal. It is easy to say in any language. Exact copy: `docs/07` §9 |
+| Logo | A pinwheel of eight gliders, paragliders and hang gliders alternating, circling a thermal: `docs/06` §9 |
+| Domain | **catavento.fly** (.fly registration opens 11 November 2026, Sydney time); **freeflight.fly** as an optional second address pointing to Catavento if the price is reasonable. The prototype runs on the GitHub Pages URL until then |
 
 **Why it works for newcomers too:** people new to flying search for what they want ("tandem paragliding Wollongong"), not for a brand, so plain-language New to flying and site pages carry discovery. The name only needs to be memorable after first contact, and the descriptor plus the one-line explanation turn the jargon into a welcome.
 
-**Search identity:** the one-word spelling is a distinct search term (the two-word phrase "house thermal" currently returns building-heating content). Reinforce it with consistent handles, `Organization` structured data (`name: HouseThermal`, `alternateName: House Thermal`), Google Search Console, and links from clubs and schools.
+**Search identity:** "catavento" is an everyday Portuguese word (pinwheel, weathervane), so pair it with the descriptor wherever it appears. Reinforce it with consistent handles, `Organization` structured data (`name: Catavento`), Google Search Console, and links from clubs and schools.

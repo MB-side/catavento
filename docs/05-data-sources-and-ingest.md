@@ -25,7 +25,7 @@ The hub aggregates publicly available information **with attribution**, and upgr
 ## 3. Fetcher rules (implemented once in `ingest/core/`)
 
 - Check and obey robots.txt for every host before fetching.
-- User agent: `HouseThermalBot/0.1 (+<siteUrl>/bot; <contactEmail>)`.
+- User agent: `CataventoBot/0.1 (+<siteUrl>/bot; <contactEmail>)`.
 - **One request at a time per host**, minimum 3 seconds apart (configurable per provider, never lower).
 - 30-second timeout, 2 retries with exponential backoff, then record a failure.
 - Conditional requests (`If-None-Match`, `If-Modified-Since`) and a raw-response cache in `data/cache/` (gitignored).
