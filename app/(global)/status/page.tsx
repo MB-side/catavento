@@ -80,6 +80,8 @@ function ProviderStatus({ provider, run }: { provider: Provider; run?: ProviderR
     rows.push([t("status.pausedReason"), collect.pausedReason]);
   const notes = run?.warnings ?? [];
   const notesForm = plural.select(notes.length) === "one" ? "one" : "other";
+  const info = run?.info ?? [];
+  const infoForm = plural.select(info.length) === "one" ? "one" : "other";
 
   return (
     <li
@@ -113,6 +115,20 @@ function ProviderStatus({ provider, run }: { provider: Provider; run?: ProviderR
           <ul className="mt-2 list-disc pl-5 text-[0.875rem] text-muted-strong">
             {notes.map((note, i) => (
               <li key={i}>{note}</li>
+            ))}
+          </ul>
+        </details>
+      )}
+      {info.length > 0 && (
+        <details className="mt-1">
+          <summary className="flex min-h-11 cursor-pointer items-center font-semibold underline underline-offset-4">
+            {tOr(`status.infoSummary.${infoForm}`, "status.infoSummary.other", {
+              count: String(info.length),
+            })}
+          </summary>
+          <ul className="mt-2 list-disc pl-5 text-[0.875rem] text-muted-strong">
+            {info.map((line, i) => (
+              <li key={i}>{line}</li>
             ))}
           </ul>
         </details>

@@ -5,6 +5,9 @@ import type { ProviderModule } from "../../core/runner";
 import { normaliseSites } from "./normalise";
 import { parseSiteGuideKml } from "./parse";
 
+/** Bump when parsing or normalising changes, so the next run re-reads the files. */
+export const READER_VERSION = 3;
+
 export const SITE_GUIDE_FILES = {
   open: "https://siteguide.org.au/Kml/Open",
   closed: "https://siteguide.org.au/Kml/Closed",
@@ -27,9 +30,10 @@ export const ansg: ProviderModule = {
   async collect(ctx) {
     const open = await ctx.fetcher.get(SITE_GUIDE_FILES.open);
     const closed = await ctx.fetcher.get(SITE_GUIDE_FILES.closed);
-    const contentHash = sha256(open.contentHash + closed.contentHash);
+    // The reader's version is part of the fingerprint, so improving it re-reads unchanged files.
+    const contentHash = sha256(`${READER_VERSION}:${open.contentHash}:${closed.contentHash}`);
     if (!ctx.force && contentHash === ctx.previous?.contentHash) {
-      return { unchanged: true, contentHash, records: [], invalid: 0, warnings: [] };
+      return { unchanged: true, contentHash, records: {}, invalid: 0, warnings: [] };
     }
 
     const a = parseSiteGuideKml(kmlText(open), "open");
@@ -37,9 +41,12 @@ export const ansg: ProviderModule = {
     const openUrls = new Set(a.sites.map((s) => s.siteGuideUrl));
     // A site in both files is treated as closed only if it isn't also listed as open.
     const parsed = [...a.sites, ...b.sites.filter((s) => !openUrls.has(s.siteGuideUrl))];
+    const country = ctx.countries[0];
+    if (ctx.countries.length !== 1 || !country)
+      throw new Error("The Site Guide covers one country");
     const { sites, warnings, invalid } = normaliseSites(parsed, {
-      country: ctx.country,
-      allowedRegions: ctx.allowedRegions,
+      country: country.code,
+      allowedRegions: country.regions,
       regions: ctx.regions,
       fetchedAt: open.fetchedAt,
       contentHash,
@@ -49,7 +56,7 @@ export const ansg: ProviderModule = {
     return {
       unchanged: false,
       contentHash,
-      records: sites,
+      records: { sites },
       invalid: invalid + a.skipped.length + b.skipped.length,
       warnings,
     };

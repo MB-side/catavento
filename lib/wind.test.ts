@@ -1,5 +1,12 @@
 import { describe, expect, it } from "vitest";
-import { classifyWind, compassPoint, distanceToArc, mergeArcs, parseWindRange } from "./wind";
+import {
+  classifyWind,
+  compassPoint,
+  coversAll,
+  distanceToArc,
+  mergeArcs,
+  parseWindRange,
+} from "./wind";
 
 describe("parseWindRange: docs/05 §5.1 examples", () => {
   it.each([
@@ -137,5 +144,33 @@ describe("helpers", () => {
     expect(compassPoint(0)).toBe("N");
     expect(compassPoint(68)).toBe("ENE");
     expect(compassPoint(359)).toBe("N");
+  });
+});
+
+describe("lists of compass points", () => {
+  it("labels joined-up points as the arc they make", () => {
+    expect(parseWindRange("N, NE, E")).toEqual({
+      ranges: [{ fromDeg: 337.5, toDeg: 112.5 }],
+      label: "NNW–ESE",
+      parsed: true,
+    });
+    expect(parseWindRange("SE, NW").label).toBe("ESE–SSE, WNW–NNW");
+    // S (157.5–202.5) and SSW (191.25–213.75) end halfway between SSW and SW: named inward.
+    expect(parseWindRange("S, SSW").label).toBe("SSE–SSW");
+  });
+
+  it("reads every compass point as all directions", () => {
+    expect(parseWindRange("N, NE, E, SE, S, SW, W, NW")).toEqual({
+      ranges: "all",
+      label: "All",
+      parsed: true,
+    });
+    expect(
+      coversAll([
+        { fromDeg: 0, toDeg: 180 },
+        { fromDeg: 180, toDeg: 360 },
+      ]),
+    ).toBe(true);
+    expect(coversAll([{ fromDeg: 0, toDeg: 180 }])).toBe(false);
   });
 });

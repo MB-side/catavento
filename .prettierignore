@@ -8,3 +8,6 @@ data/
 design/
 docs/
 *.md
+
+# Saved copies of source pages: kept as the sources publish them
+ingest/sources/*/fixtures/

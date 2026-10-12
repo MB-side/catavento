@@ -51,7 +51,11 @@ export function readInputs(root: string = process.cwd()): BuildInputs {
   const runs = existsSync(runsPath) ? runsFileSchema.parse(JSON.parse(readFileSync(runsPath, "utf8"))) : {};
 
   return {
-    ingestedSites: ingestFiles.flatMap((f) => f.records),
+    ingestedSites: ingestFiles.flatMap((f) => f.sites ?? []),
+    ingestedOrgs: ingestFiles.flatMap((f) => f.orgs ?? []),
+    ingestedEvents: ingestFiles.flatMap((f) => f.events ?? []),
+    ingestedNotices: ingestFiles.flatMap((f) => f.notices ?? []),
+    stewardEvidence: ingestFiles.flatMap((f) => f.stewardEvidence ?? []),
     runs,
     directoryRows: readCsv("directory.csv"),
     stationRows: readCsv("weather-stations.csv"),

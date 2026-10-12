@@ -4,6 +4,7 @@ import { z } from "zod";
 import type {
   BuildReport,
   Club,
+  CollectedOrg,
   Country,
   EventItem,
   Notice,
@@ -13,6 +14,7 @@ import type {
   Resource,
   Site,
   Station,
+  StewardEvidence,
   Brand,
   ProviderRun,
 } from "./types";
@@ -236,6 +238,7 @@ export const siteSchema = z.object({
   mainLandingName: z.string().optional(),
   stationIds: z.array(z.string()),
   wtfSlug: z.string().optional(),
+  pgeId: z.string().optional(),
   disciplines: z.array(disciplineSchema),
   layer: z.enum(["ansg", "pge", "manual"]),
   sources: z.array(sourceRefSchema).min(1),
@@ -290,6 +293,7 @@ export const eventSchema = z.object({
   regionCode: regionCode.optional(),
   location: latLon.optional(),
   organiserOrgId: z.string().optional(),
+  organiserName: z.string().optional(),
   url: httpUrl,
   sources: z.array(sourceRefSchema).min(1),
 }) satisfies z.ZodType<EventItem>;
@@ -305,6 +309,31 @@ export const noticeSchema = z.object({
   siteIds: z.array(z.string()).optional(),
   sources: z.array(sourceRefSchema).min(1),
 }) satisfies z.ZodType<Notice>;
+
+export const collectedOrgSchema = z.object({
+  id: z.string().min(1),
+  providerId: z.string().min(1),
+  kind: orgKindSchema,
+  name: z.string().min(1),
+  country: countryCode,
+  regionCode: regionCode.optional(),
+  locality: z.string().optional(),
+  postcode: z.string().optional(),
+  website: httpUrl.optional(),
+  emailPublic: z.email().optional(),
+  phonePublic: z.string().optional(),
+  disciplines: z.array(disciplineSchema),
+  associationName: z.string().optional(),
+  source: sourceRefSchema,
+}) satisfies z.ZodType<CollectedOrg>;
+
+export const stewardEvidenceSchema = z.object({
+  id: z.string().min(1),
+  orgId: z.string().min(1),
+  url: httpUrl,
+  siteIds: z.array(z.string()),
+  source: sourceRefSchema,
+}) satisfies z.ZodType<StewardEvidence>;
 
 export const brandSchema = z.object({
   id: z.string(),
@@ -424,6 +453,7 @@ export const providerRunSchema = z.object({
     .optional(),
   lastSuccessAt: z.iso.datetime({ offset: true }).optional(),
   contentHash: z.string().optional(),
+  info: z.array(z.string()).optional(),
 }) satisfies z.ZodType<ProviderRun>;
 
 export const buildReportSchema = z.object({
@@ -474,6 +504,7 @@ export const nzSampleSitesFileSchema = z.array(
     officialGuideUrl: httpUrl.optional(),
     siteAccessNote: z.string().optional(),
     stations: z.array(z.string()).optional(),
+    pgeIds: z.array(z.string().regex(/^\d+$/)).optional(),
     note: z.string().optional(),
     source: httpUrl,
   }),

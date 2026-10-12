@@ -1,0 +1,218 @@
+{
+  "providerId": "club-websites",
+  "fetchedAt": "2026-10-12T08:04:40.791Z",
+  "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf",
+  "events": [],
+  "notices": [
+    {
+      "id": "notice:club:3a6629345df4",
+      "title": "Sumner Rescue Training & Zephyr",
+      "date": "2026-06-09",
+      "url": "https://www.chgpc.org.nz/post/sumner-rescue-training-zephyr",
+      "country": "NZ",
+      "scope": "club",
+      "orgId": "org:nz:canterbury-club",
+      "sources": [
+        {
+          "providerId": "club-websites",
+          "url": "https://www.chgpc.org.nz/blog-feed.xml",
+          "fetchedAt": "2026-10-12T08:04:40.792Z",
+          "licence": "facts",
+          "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+        }
+      ]
+    },
+    {
+      "id": "notice:club:b06fd3b81946",
+      "title": "Deep dive: Cliffs & Castle Rock",
+      "date": "2026-04-29",
+      "url": "https://www.chgpc.org.nz/post/deep-dive-taylors-cliffs-gondola-castle-rock",
+      "country": "NZ",
+      "scope": "club",
+      "orgId": "org:nz:canterbury-club",
+      "sources": [
+        {
+          "providerId": "club-websites",
+          "url": "https://www.chgpc.org.nz/blog-feed.xml",
+          "fetchedAt": "2026-10-12T08:04:40.792Z",
+          "licence": "facts",
+          "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+        }
+      ]
+    },
+    {
+      "id": "notice:club:b1c9b608f15c",
+      "title": "Change to Club Radio Channel",
+      "date": "2026-10-06",
+      "url": "https://www.chgpc.org.nz/post/change-to-club-radio-channel",
+      "country": "NZ",
+      "scope": "club",
+      "orgId": "org:nz:canterbury-club",
+      "sources": [
+        {
+          "providerId": "club-websites",
+          "url": "https://www.chgpc.org.nz/blog-feed.xml",
+          "fetchedAt": "2026-10-12T08:04:40.792Z",
+          "licence": "facts",
+          "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+        }
+      ]
+    }
+  ],
+  "stewardEvidence": [
+    {
+      "id": "evidence:org:au:act-hang-gliding-and-paragliding-association:menu",
+      "orgId": "org:au:act-hang-gliding-and-paragliding-association",
+      "url": "https://acthpa.org/",
+      "siteIds": [
+        "site:au:act:lanyon",
+        "site:au:nsw:honeysuckle",
+        "site:au:nsw:lake-george-collector",
+        "site:au:nsw:lake-george-south-launch",
+        "site:au:nsw:one-tree-hill-gungahlin",
+        "site:au:nsw:spring-hill"
+      ],
+      "source": {
+        "providerId": "club-websites",
+        "url": "https://acthpa.org/",
+        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "licence": "facts",
+        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+      }
+    },
+    {
+      "id": "evidence:org:au:canungra-hang-gliding-club:menu",
+      "orgId": "org:au:canungra-hang-gliding-club",
+      "url": "https://www.flycanungra.com.au/",
+      "siteIds": [
+        "site:au:qld:beechmont-rosins-lookout",
+        "site:au:qld:flying-fox",
+        "site:au:qld:mt-tamborine"
+      ],
+      "source": {
+        "providerId": "club-websites",
+        "url": "https://www.flycanungra.com.au/",
+        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "licence": "facts",
+        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+      }
+    },
+    {
+      "id": "evidence:org:au:central-coast-sky-surfers:b1cb65b6",
+      "orgId": "org:au:central-coast-sky-surfers",
+      "url": "https://www.centralcoastskysurfers.com/flying-sites/",
+      "siteIds": [
+        "site:au:nsw:crackneck-lookout"
+      ],
+      "source": {
+        "providerId": "club-websites",
+        "url": "https://www.centralcoastskysurfers.com/flying-sites/",
+        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "licence": "facts",
+        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+      }
+    },
+    {
+      "id": "evidence:org:au:dynasoarers-hang-gliding-club:5cff4f41",
+      "orgId": "org:au:dynasoarers-hang-gliding-club",
+      "url": "https://www.dynasoarers.vhpa.org.au/sites.shtml",
+      "siteIds": [
+        "site:au:vic:portland"
+      ],
+      "source": {
+        "providerId": "club-websites",
+        "url": "https://www.dynasoarers.vhpa.org.au/sites.shtml",
+        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "licence": "facts",
+        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+      }
+    },
+    {
+      "id": "evidence:org:au:mid-north-coast-flyers:menu",
+      "orgId": "org:au:mid-north-coast-flyers",
+      "url": "https://mncf.tidyhq.com/",
+      "siteIds": [
+        "site:au:nsw:bartletts-reserve-ne-bonnys",
+        "site:au:nsw:grants-headland-se-bonnys",
+        "site:au:nsw:rocky-beach"
+      ],
+      "source": {
+        "providerId": "club-websites",
+        "url": "https://mncf.tidyhq.com/",
+        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "licence": "facts",
+        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+      }
+    },
+    {
+      "id": "evidence:org:au:north-east-victoria-hang-gliding-club:cfc30fbc",
+      "orgId": "org:au:north-east-victoria-hang-gliding-club",
+      "url": "https://www.nevhgc.net/sites",
+      "siteIds": [
+        "site:au:vic:mannys",
+        "site:au:vic:mt-buffalo-reeds-lookout-paraglider-launch",
+        "site:au:vic:mt-buffalo-the-gorge-hg-ramp",
+        "site:au:vic:murmungee",
+        "site:au:vic:mystic"
+      ],
+      "source": {
+        "providerId": "club-websites",
+        "url": "https://www.nevhgc.net/sites",
+        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "licence": "facts",
+        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+      }
+    },
+    {
+      "id": "evidence:org:au:south-australian-hang-gliding-paragliding-association:e5b2d8ff",
+      "orgId": "org:au:south-australian-hang-gliding-paragliding-association",
+      "url": "https://sites.google.com/site/sahpgahome/ourflyingsites",
+      "siteIds": [
+        "site:au:sa:barn-hill-the-bluff",
+        "site:au:sa:sellicks-beach",
+        "site:au:sa:tunkalilla"
+      ],
+      "source": {
+        "providerId": "club-websites",
+        "url": "https://sites.google.com/site/sahpgahome/ourflyingsites",
+        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "licence": "facts",
+        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+      }
+    },
+    {
+      "id": "evidence:org:au:stanwell-park-hang-gliding-paragliding-club:menu",
+      "orgId": "org:au:stanwell-park-hang-gliding-paragliding-club",
+      "url": "https://www.flystanwell.com.au/",
+      "siteIds": [
+        "site:au:nsw:stanwell-park-bald-hill"
+      ],
+      "source": {
+        "providerId": "club-websites",
+        "url": "https://www.flystanwell.com.au/",
+        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "licence": "facts",
+        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+      }
+    },
+    {
+      "id": "evidence:org:au:sunshine-coast-free-flyers-association:menu",
+      "orgId": "org:au:sunshine-coast-free-flyers-association",
+      "url": "https://www.freeflyers.com.au/",
+      "siteIds": [
+        "site:au:qld:buchys-at-gerrards-lookout",
+        "site:au:qld:mt-widgee",
+        "site:au:qld:point-cartwright",
+        "site:au:qld:rainbow-beach-carlo-sand-blow",
+        "site:au:qld:teewah-beach"
+      ],
+      "source": {
+        "providerId": "club-websites",
+        "url": "https://www.freeflyers.com.au/",
+        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "licence": "facts",
+        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+      }
+    }
+  ]
+}

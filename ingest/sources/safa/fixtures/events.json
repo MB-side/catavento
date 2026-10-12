@@ -1,0 +1,79 @@
+{
+  "events": [
+    {
+      "id": 64861,
+      "title": "50th anniversary of Free flight @ Stanwell Park",
+      "description": "<p>Event description that must not be copied.</p>",
+      "url": "https://safa.asn.au/event/50th-anniversary-of-free-flight-stanwell-park/",
+      "start_date": "2026-10-17 00:00:00",
+      "end_date": "2026-10-17 23:59:59",
+      "utc_start_date": "2026-10-16 13:00:00",
+      "utc_end_date": "2026-10-17 12:59:59",
+      "timezone": "Australia/Sydney",
+      "all_day": true,
+      "categories": [
+        {
+          "name": "Club",
+          "slug": "club"
+        },
+        {
+          "name": "Community",
+          "slug": "community"
+        },
+        {
+          "name": "NSW",
+          "slug": "nsw"
+        }
+      ],
+      "venue": {
+        "venue": "Stanwell Park Landing Zone",
+        "address": "1 Example Rd",
+        "city": "Stanwell Park",
+        "stateprovince": "NSW",
+        "province": "NSW",
+        "zip": "2508",
+        "country": "Australia"
+      },
+      "organizer": [
+        {
+          "organizer": "FlyStanwell Inc",
+          "website": "https://flystanwell.com/"
+        }
+      ]
+    },
+    {
+      "id": 66182,
+      "title": "Fly From Everest &#8211; End Polio Now Movie Event",
+      "description": "<p>Event description that must not be copied.</p>",
+      "url": "https://safa.asn.au/event/fly-from-everest-end-polio-now-movie-event/",
+      "start_date": "2026-10-17 19:00:00",
+      "end_date": "2026-10-17 22:00:00",
+      "utc_start_date": "2026-10-17 08:00:00",
+      "utc_end_date": "2026-10-17 11:00:00",
+      "timezone": "Australia/Sydney",
+      "all_day": false,
+      "categories": [
+        {
+          "name": "Community",
+          "slug": "community"
+        },
+        {
+          "name": "NSW",
+          "slug": "nsw"
+        }
+      ],
+      "venue": {
+        "venue": "Tradies Helensburgh",
+        "address": "1 Example Rd",
+        "city": "Helensburgh",
+        "stateprovince": "NSW",
+        "province": "NSW",
+        "zip": "2508",
+        "country": "Australia"
+      },
+      "organizer": []
+    }
+  ],
+  "total": 2,
+  "total_pages": 1
+}

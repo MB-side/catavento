@@ -4,6 +4,7 @@ import type {
   BuildReport,
   BuildWarning,
   Club,
+  CollectedOrg,
   Country,
   EventItem,
   Notice,
@@ -15,6 +16,7 @@ import type {
   Station,
   Brand,
   ProviderRun,
+  StewardEvidence,
   StewardRole,
 } from "@/lib/types";
 import {
@@ -32,7 +34,16 @@ import {
   type SampleSiteInput,
 } from "./merge";
 import { assignOrgIds, mapDirectory, mapStations, type CsvRow } from "./seed";
-import { dedupeSites, matchListedContacts } from "./sites";
+import { OrgMatcher } from "./match";
+import { mergeCollectedOrgs } from "./orgs";
+import { dedupeEvents } from "./events";
+import {
+  confirmStewards,
+  dedupeSites,
+  enrichFromPge,
+  matchListedContacts,
+  placeCommunitySites,
+} from "./sites";
 
 export interface CountryInput extends Omit<Country, "nationalBody"> {
   nationalBody: Omit<Country["nationalBody"], "orgId"> & { orgLegacyId: string };
@@ -40,6 +51,10 @@ export interface CountryInput extends Omit<Country, "nationalBody"> {
 
 export interface BuildInputs {
   ingestedSites: Site[];
+  ingestedOrgs: CollectedOrg[];
+  ingestedEvents: EventItem[];
+  ingestedNotices: Notice[];
+  stewardEvidence: StewardEvidence[];
   runs: Record<string, ProviderRun>;
   directoryRows: CsvRow[];
   stationRows: CsvRow[];
@@ -79,8 +94,17 @@ export function buildData(input: BuildInputs): BuildOutputs {
   const seed = mapDirectory(input.directoryRows, providerMap);
   warnings.push(...seed.warnings);
   const merged = applyOrgMerges(seed.orgs, input.orgMerges.merge, warnings);
-  const organisations = assignOrgIds(merged);
-  applyRelated(organisations, input.orgMerges.related, warnings);
+  const seedOrgs = assignOrgIds(merged);
+  applyRelated(seedOrgs, input.orgMerges.related, warnings);
+
+  // Collected directories (SAFA) refresh matching records and add the ones the seed lacks.
+  const matcher = new OrgMatcher(seedOrgs, input.clubAliases);
+  const { organisations, associationNames } = mergeCollectedOrgs(
+    input.ingestedOrgs,
+    seedOrgs,
+    matcher,
+    warnings,
+  );
 
   // Stations, with club owners matched only by exact alias.
   const { stations, warnings: stationWarnings } = mapStations(input.stationRows);
@@ -106,8 +130,15 @@ export function buildData(input: BuildInputs): BuildOutputs {
   // Sites: collected (Site Guide, later ParaglidingEarth) plus the hand-compiled NZ sample.
   const sampleSites = mapSampleSites(input.sampleSites, organisations, input.sampleSitesChecked, warnings);
   const collected = input.ingestedSites.map((s) => structuredClone(s));
-  const sites = dedupeSites([...collected, ...sampleSites], warnings);
+  const pgeSites = collected.filter((s) => s.layer === "pge");
+  input.sampleSites.forEach((sample, i) => {
+    const site = sampleSites[i];
+    if (site && sample.pgeIds?.length) enrichFromPge(site, sample.pgeIds, pgeSites, warnings);
+  });
+  const fullCountries = new Set(input.countries.filter((c) => c.coverage === "full").map((c) => c.code));
+  const sites = dedupeSites(placeCommunitySites([...collected, ...sampleSites], fullCountries), warnings);
   matchListedContacts(sites, organisations, input.clubAliases, warnings);
+  confirmStewards(sites, organisations, input.stewardEvidence, warnings);
   for (const [siteKey, steward] of Object.entries(input.siteStewards)) {
     const site = sites.find((s) => s.id === siteKey);
     if (!site) {
@@ -129,6 +160,34 @@ export function buildData(input: BuildInputs): BuildOutputs {
   }
 
   const withClubs = deriveClubs(organisations, sites, stations);
+  for (const club of withClubs) {
+    const assoc = associationNames.get(club.id);
+    if (club.kind !== "club" || !assoc) continue;
+    const hit = matcher.find(assoc.country, assoc.name)?.org;
+    if (hit?.kind === "regional_association") (club as Club).regionalAssociationId = hit.id;
+    else {
+      warnings.push({
+        code: "association-unmatched",
+        message: `${club.id}: association "${assoc.name}" matches no regional association`,
+        recordId: club.id,
+      });
+    }
+  }
+
+  // Events and notices from sources, with organisers linked only on an exact match.
+  // The national body's listing first, so its copy of an event is the one kept.
+  const nationalFirst = [...input.ingestedEvents].sort(
+    (a, b) => Number(a.sources[0]?.providerId === "club-websites") - Number(b.sources[0]?.providerId === "club-websites"),
+  );
+  const events = dedupeEvents(
+    nationalFirst.map((e) => {
+      if (e.organiserOrgId) return e;
+      const organiser = e.organiserName ? matcher.find(e.country, e.organiserName)?.org : undefined;
+      return organiser ? { ...e, organiserOrgId: organiser.id } : e;
+    }),
+    warnings,
+  );
+  const notices = [...input.ingestedNotices];
   const offerings = mapOfferings(input.offerings, withClubs, countries, providerMap, warnings);
 
   // Every country must exist in countries.yaml; every region code must belong to its country.
@@ -160,6 +219,8 @@ export function buildData(input: BuildInputs): BuildOutputs {
     resources: seed.resources.length,
     providers: input.providers.length,
     offerings: offerings.length,
+    events: events.length,
+    notices: notices.length,
   };
 
   return {
@@ -168,8 +229,8 @@ export function buildData(input: BuildInputs): BuildOutputs {
     organisations: withClubs.sort(byId),
     sites: sites.sort(byId),
     stations: stations.sort(byId),
-    events: [],
-    notices: [],
+    events: events.sort((a, b) => a.startDate.localeCompare(b.startDate) || a.id.localeCompare(b.id)),
+    notices: notices.sort((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id)),
     brands: [],
     offerings,
     resources: seed.resources.sort(byId),

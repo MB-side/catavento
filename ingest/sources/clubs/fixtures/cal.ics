@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+X-WR-TIMEZONE:Australia/Sydney
+BEGIN:VEVENT
+UID:1@exampleclub
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261123
+SUMMARY:Spring fly-in
+LOCATION:Mount Example\, NSW
+DESCRIPTION:Long description that must not be copied.
+URL:https://www.exampleclub.org.au/event/fly-in/
+END:VEVENT
+BEGIN:VEVENT
+UID:2@exampleclub
+DTSTART;TZID=Australia/Sydney:20261105T193000
+DTEND;TZID=Australia/Sydney:20261105T213000
+SUMMARY:Club meeting and
+  AGM
+END:VEVENT
+BEGIN:VEVENT
+UID:3@exampleclub
+DTSTART:20260701T090000Z
+SUMMARY:Winter social
+END:VEVENT
+END:VCALENDAR

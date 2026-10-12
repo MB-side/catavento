@@ -11,27 +11,36 @@ export interface GuardResult {
 export const MAX_DROP = 0.2;
 export const MAX_INVALID = 0.1;
 
+/**
+ * `validCount` counts the stable records (sites, directory entries) that the drop rule compares;
+ * `totalValid` counts every valid record, for the invalid-share rule. Without it, they're the same.
+ */
 export function changeGuard(input: {
   previousCount: number | undefined;
   validCount: number;
   invalidCount: number;
+  totalValid?: number;
 }): GuardResult {
-  const total = input.validCount + input.invalidCount;
-  if (total === 0) return { decision: "blocked_drop", reason: "No records found" };
-  if (input.invalidCount / total > MAX_INVALID) {
+  const total = (input.totalValid ?? input.validCount) + input.invalidCount;
+  if (input.invalidCount > 0 && input.invalidCount / total > MAX_INVALID) {
     return {
       decision: "blocked_invalid",
       reason: `${input.invalidCount} of ${total} records invalid (more than ${MAX_INVALID * 100}%)`,
     };
   }
-  if (input.previousCount === undefined || input.previousCount === 0) {
+  if (input.previousCount === undefined) {
+    if (total === 0) return { decision: "blocked_drop", reason: "No records found" };
     return { decision: "accepted_first_run", reason: "No earlier run to compare with" };
   }
+  if (input.previousCount === 0) return { decision: "accepted" };
   const drop = (input.previousCount - input.validCount) / input.previousCount;
   if (drop > MAX_DROP) {
     return {
       decision: "blocked_drop",
-      reason: `Records fell from ${input.previousCount} to ${input.validCount} (more than ${MAX_DROP * 100}%)`,
+      reason:
+        input.validCount === 0
+          ? "No records found"
+          : `Records fell from ${input.previousCount} to ${input.validCount} (more than ${MAX_DROP * 100}%)`,
     };
   }
   return { decision: "accepted" };

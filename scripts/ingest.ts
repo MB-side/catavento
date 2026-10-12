@@ -2,6 +2,10 @@
 //   pnpm ingest                       run every provider that is due
 //   pnpm ingest --provider ansg       run one provider if due
 //   pnpm ingest --provider ansg --force   run it now, even if paused or not due
+import { readFileSync } from "node:fs";
+import path from "node:path";
+import { z } from "zod";
+import { anyOrganisationSchema, siteSchema } from "@/lib/schemas";
 import { RegionLookup } from "../ingest/core/regions";
 import { runIngest } from "../ingest/core/runner";
 import { providerModules } from "../ingest/sources";
@@ -14,6 +18,9 @@ const value = (name: string) => {
   return i >= 0 ? args[i + 1] : undefined;
 };
 
+const readGenerated = (file: string): unknown =>
+  JSON.parse(readFileSync(path.join(process.cwd(), "data", "generated", file), "utf8"));
+
 async function main(): Promise<void> {
   const inputs = readInputs();
   const runs = await runIngest({
@@ -22,6 +29,11 @@ async function main(): Promise<void> {
     modules: providerModules,
     regions: RegionLookup.fromFile(),
     countriesRegions: new Map(inputs.countries.map((c) => [c.code, new Set(c.regions)])),
+    countryZones: new Map(inputs.countries.map((c) => [c.code, c.timezones[0] ?? "UTC"])),
+    directory: () => ({
+      organisations: z.array(anyOrganisationSchema).parse(readGenerated("organisations.json")),
+      sites: z.array(siteSchema).parse(readGenerated("sites.json")),
+    }),
     only: value("--provider"),
     force: flag("--force"),
   });

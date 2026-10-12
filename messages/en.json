@@ -253,7 +253,11 @@
       "blocked_drop": "Held back: more than 20% of records disappeared at once",
       "blocked_invalid": "Held back: more than 10% of records couldn't be read"
     },
-    "timeZoneNote": "Times are shown in Sydney time."
+    "timeZoneNote": "Times are shown in Sydney time.",
+    "infoSummary": {
+      "one": "Show what 1 website gave",
+      "other": "Show what each of {count} websites gave"
+    }
   },
   "bot": {
     "intro": "CataventoBot is the program that collects public information for Catavento. It is built to be a polite visitor: it takes only short facts, checks rarely, and stays away from anything it is asked not to read.",

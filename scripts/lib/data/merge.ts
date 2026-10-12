@@ -132,6 +132,7 @@ export interface SampleSiteInput {
   officialGuideUrl?: string;
   siteAccessNote?: string;
   stations?: string[];
+  pgeIds?: string[]; // ParaglidingEarth takeoffs that are this site, checked by hand
   note?: string;
   source: string;
 }

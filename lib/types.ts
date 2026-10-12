@@ -173,6 +173,7 @@ export interface Site {
   mainLandingName?: string;
   stationIds: string[];
   wtfSlug?: string;
+  pgeId?: string; // ParaglidingEarth site ID, for community-layer sites and pinned sample sites
   disciplines: Discipline[];
   layer: "ansg" | "pge" | "manual";
   sources: SourceRef[];
@@ -215,6 +216,7 @@ export interface EventItem {
   regionCode?: RegionCode;
   location?: { lat: number; lon: number };
   organiserOrgId?: string;
+  organiserName?: string; // as the source names it; linked to organiserOrgId only on an exact match
   url: string;
   sources: SourceRef[];
 }
@@ -323,6 +325,7 @@ export interface ProviderRun {
   guardDecision?: "accepted" | "accepted_first_run" | "blocked_drop" | "blocked_invalid";
   lastSuccessAt?: string;
   contentHash?: string;
+  info?: string[]; // neutral notes, e.g. what each club website gave
 }
 
 export interface BuildReport {
@@ -331,6 +334,33 @@ export interface BuildReport {
     warnings: BuildWarning[];
   };
   providers: Record<string, ProviderRun>;
+}
+
+/** An organisation as a source lists it, before it is matched to the directory (docs/05 §5.4). */
+export interface CollectedOrg {
+  id: string; // provider-scoped, e.g. "safa:club:CG"
+  providerId: string;
+  kind: OrgKind;
+  name: string;
+  country: CountryCode;
+  regionCode?: RegionCode;
+  locality?: string;
+  postcode?: string;
+  website?: string;
+  emailPublic?: string; // the contact published for the organisation, never committee members' (D53)
+  phonePublic?: string;
+  disciplines: Discipline[];
+  associationName?: string; // the regional association the source links it to
+  source: SourceRef;
+}
+
+/** A club's own web page naming sites: the second source that confirms a steward (D47). */
+export interface StewardEvidence {
+  id: string;
+  orgId: string;
+  url: string;
+  siteIds: string[];
+  source: SourceRef;
 }
 
 /** A site contact as listed by a site guide: a pointer to the steward, not proof (D47). */

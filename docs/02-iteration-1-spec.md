@@ -1,6 +1,6 @@
 # 02 · Iteration 1 Specification: Consultation Prototype
 
-**Status:** current · **Last updated:** 9 Oct 2026 · **Owner:** founder · **Builder:** Claude Code
+**Status:** current · **Last updated:** 12 Oct 2026 · **Owner:** founder · **Builder:** Claude Code
 
 ## 1. Purpose
 
@@ -8,7 +8,7 @@ Build a credible, mostly real, static website that the founder can share with pi
 
 1. The **index works**: real sites, clubs, schools, tandem operators and shops, correctly linked and attributed.
 2. The **daily habit is plausible**: My Sites with a 3-day wind-direction outlook is something pilots want to open.
-3. The **data pipeline works**: public sources refresh nightly without manual effort, with health checks.
+3. The **data pipeline works**: public sources refresh on their own schedules (weekly or monthly; D49) without manual effort, with health checks.
 4. The **design works beyond Australia**: a small New Zealand sample runs through the same code with its own national body, regions and rules.
 
 ## 2. Constraints
@@ -18,7 +18,7 @@ Build a credible, mostly real, static website that the founder can share with pi
 | Hosted on **GitHub Pages** (static files only, non-commercial use, deployments must finish within 10 minutes) | Next.js **static export**; no server code, no API routes, no database |
 | **No server-side collection of user data** | No accounts, no forms that post to us. My Sites lives in the browser's localStorage. Feedback goes to an external form |
 | **No transactions, no monetisation** | No sponsored slots live, no payments. A config flag can show clearly labelled *examples* during consultation |
-| Data refreshed by **scheduled GitHub Actions** | Ingest scripts run nightly, write JSON into the repo, and trigger a rebuild |
+| Data refreshed by **scheduled GitHub Actions** | A daily check-in runs the ingest scripts that are due, writes JSON into the repo, and triggers a rebuild |
 | Must not block **Iteration 2** (Vercel + Supabase) | Keep data access behind one module (`lib/data`), keep types in one place, and avoid static-export-only patterns that are hard to undo |
 
 ## 3. Scope
@@ -37,7 +37,7 @@ Build a credible, mostly real, static website that the founder can share with pi
 - **Search** (client-side) across sites, clubs and directory entries
 - **Share images** for site and club pages (generated at build time)
 - **Prototype banner**, **feedback links** on every page, **Sources**, **Status**, **Bot policy**, **Takedown**, **Privacy**, **Disclaimer** pages
-- **Nightly ingest** with change detection and a status report
+- **Scheduled ingest** (a daily check-in; each source on its own schedule) with change detection and a status report
 - Installable to the home screen (web app manifest)
 - **Country support**: country-first routes, country switcher, country configuration (`data/manual/countries.yaml`)
 - **New Zealand sample** (§5.14)
@@ -113,7 +113,7 @@ All routes are statically generated. `[country]` is a lowercase ISO country code
 Sections in order (phone and desktop; desktop uses two columns per mockup):
 
 1. Header: site name, region, chips (rating text as published, wind range, status), Save to My Sites, Share, "Official site details" (Site Guide link)
-2. **Steward panel** (high prominence): label by steward role (`docs/06` §6: "Managed by" for clubs, "Operated by" for flight parks and operators, "Site holder", "Access managed by", or the "not listed" state), steward name and logo placeholder, contact and website buttons (as published), safety officers and duty pilot (as published, otherwise "Ask the club"), site access (membership, passes or fees if published), steward notices, any secondary body (e.g. the club that publishes the guide for a flight park), the first-flight line (`docs/07` §2) and the country's national-body line from `countries.yaml`.
+2. **Steward panel** (high prominence): label by steward role, set only when a steward source confirms it (D47; a site guide's contact alone shows "Contact listed in the Site Guide") (`docs/06` §6: "Managed by" for clubs, "Operated by" for flight parks and operators, "Site holder", "Access managed by", or the "not listed" state), steward name and logo placeholder, contact and website buttons (as published), safety officers and duty pilot (as published, otherwise "Ask the club"), site access (membership, passes or fees if published), steward notices, any secondary body (e.g. the club that publishes the guide for a flight park), the first-flight line (`docs/07` §2) and the country's national-body line from `countries.yaml`.
 3. Wind window: rose with the published range
 4. Stations: each linked station with provider, ownership (e.g. "club station") and "Open live wind" button
 5. Next 3 days outlook grid plus links to Where To Fly, SkySight and Paragliding Map
@@ -195,7 +195,7 @@ Purpose: prove that a second country works through configuration and data alone.
 | S6 | As a prospective student, I compare schools | Compare up to 3 schools side by side; missing data reads "Not published" |
 | S7 | As anyone, I can see where information came from | Every record shows provider and last-checked date; `/sources` lists all providers with tier, licence and attribution |
 | S8 | As a data owner, I can ask for changes | `/takedown` and `/bot` explain the process and contact; every page has "Report a correction" |
-| S9 | As the founder, I can see if a source broke | Nightly ingest writes `_report.json`; a >20% drop or missing required fields blocks that provider's update and is shown on `/status` |
+| S9 | As the founder, I can see if a source broke | Each ingest run writes `_report.json`; a >20% drop or missing required fields blocks that provider's update and is shown on `/status` |
 | S10 | As a phone user, I can install the site | Valid manifest and icons; Lighthouse PWA installability passes |
 | S11 | As a visiting pilot in New Zealand, I see New Zealand's rules | NZ pages show the NZHGPA membership line, NZ regions and NZ local times in the outlook; a test asserts no SAFA wording on any `/nz/` page; the Sample coverage notice is visible |
 | S12 | As a pilot, I see who is responsible for a site, whatever kind of body it is | Karioitahi Beach shows "Operated by HighSide flight park" with the pass note and the Auckland club guide link; Port Hills shows "Managed by Canterbury club"; Coronet Peak shows the "steward not listed" state with a link to report it |
@@ -215,7 +215,7 @@ Purpose: prove that a second country works through configuration and data alone.
 |---|---|---|
 | **M0** | Scaffold: Next.js static export, TypeScript strict, Tailwind, shadcn/ui, ESLint/Prettier, Vitest, Playwright, CI and Pages deploy workflows, prototype banner, base layout and navigation | A placeholder home page is live on GitHub Pages; CI green |
 | **M1** | Data layer and seed: types and Zod schemas (`docs/04`), **country config**, CSV seed import (both countries), manual overrides, `lib/data`, provider registry, country-first routing skeleton, UI strings in one messages file, `/sources` page | Build generates pages from JSON for AU and NZ; schema tests pass; `/sources` lists every provider |
-| **M2** | Ingest pipeline: framework, SAFA schools/clubs/events/notices, Site Guide sites and launches, ParaglidingEarth gap-filler (AU) and NZ sample matching, wind-range parser, de-duplication, change guard, fixtures, nightly workflow, `/status` | A manual workflow run updates `data/generated/` and redeploys; parser and guard tests pass |
+| **M2** | Ingest pipeline: framework, SAFA schools/clubs/events/notices, Site Guide sites and launches, ParaglidingEarth gap-filler (AU) and NZ sample matching, wind-range parser, de-duplication, change guard, fixtures, scheduled workflow (daily check-in), `/status` | A manual workflow run updates `data/generated/` and redeploys; parser and guard tests pass |
 | **M3** | Sites: map and list, state pages, site pages with Managed by panel, stations, Site Guide facts, sources, share images, JSON-LD | Every AU site with exact coordinates and the five NZ sample sites have pages; spot-check of the anchor sites (`docs/09` §4) matches the Site Guide; S12 passes |
 | **M4** | Clubs: directory, club pages, site ↔ club links, Follow club | Every club in the SAFA and NZHGPA directories has a page; every site with a club steward links to it and back; S11 passes |
 | **M5** | My Sites and outlook: storage, dashboard, Open-Meteo fetch, classification, Where To Fly link, share-my-list, manifest | S1, S2, S4 and S10 pass in Playwright |
@@ -224,7 +224,7 @@ Purpose: prove that a second country works through configuration and data alone.
 
 ## 9. Definition of done (Iteration 1)
 
-All milestones signed off; nightly ingest has run successfully for 7 consecutive days; `/status` green or with understood warnings; the founder has shared the site with at least one club and one school (`docs/09`).
+All milestones signed off; the daily ingest check-in has run successfully for 7 consecutive days; `/status` green or with understood warnings; the founder has shared the site with at least one club and one school (`docs/09`).
 
 ## 10. Founder decisions (defaults Claude Code may assume)
 

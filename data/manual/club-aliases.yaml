@@ -7,6 +7,10 @@ AU:
   "Stanwell Park Hang Gliding & Paragliding Club (FlyStanwell)": CLB-021
   "Stanwell Park Hang Gliding & Paragliding Club": CLB-021
   "FlyStanwell": CLB-021
+  # SAFA's spellings (safa.asn.au club directory and club pages, checked 2026-10-12).
+  "New South Wales Hang Gliding and Paragliding Association Inc.": REG-004
+  "Victorian HG and PG Association": REG-008
+  "Sky Surf Paragliding (Canberra)": SCH-026
   # Site Guide contacts (siteguide.org.au, checked 2026-10-12). Keys may be a spelling or a web
   # address (without "https://www."). Each web address below spells out the club's own name.
   "BMHGC": CLB-002 # Blue Mountains Hang Gliding Club

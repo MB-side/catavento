@@ -71,12 +71,32 @@ function rangeArc(a: Point, b: Point): WindArc {
   return cw(ba, bb) <= 180 ? { fromDeg: ba, toDeg: bb } : { fromDeg: bb, toDeg: ba };
 }
 
-function nameAt(deg: number): string {
-  const i = Math.round(norm(deg) / 22.5) % 16;
+/** "NNW–ESE, SSW" style label for arcs, naming each end by its nearest 16-point direction. */
+export function labelArcs(arcs: WindArc[] | "all"): string {
+  if (arcs === "all") return "All";
+  return arcs.map((a) => `${nameAt(a.fromDeg, "from")}–${nameAt(a.toDeg, "to")}`).join(", ");
+}
+
+/**
+ * The nearest 16-point name. An arc end exactly halfway between two names is named inward
+ * (`end` "from" rounds clockwise, "to" anticlockwise), so a label never claims more than the arc.
+ */
+function nameAt(deg: number, end?: "from" | "to"): string {
+  const x = norm(deg) / 22.5;
+  const half = Math.abs(x - Math.floor(x) - 0.5) < 1e-9;
+  const i =
+    (half && end === "from" ? Math.ceil(x) : half && end === "to" ? Math.floor(x) : Math.round(x)) %
+    16;
   return POINTS_16[i] ?? "N";
 }
 
-/** Merges overlapping or touching arcs on the circle. */
+/** Arcs that together cover every direction, e.g. all eight compass points. */
+export function coversAll(arcs: WindArc[]): boolean {
+  const merged = mergeArcs(arcs);
+  return merged.length === 1 && merged[0]?.fromDeg === 0 && merged[0]?.toDeg === 360;
+}
+
+/** Merges overlapping or touching arcs on the circle. A full circle comes back as 0–360. */
 export function mergeArcs(arcs: WindArc[]): WindArc[] {
   if (arcs.length <= 1) return arcs;
   // Unroll each arc into [start, end] with end >= start, then merge on a line, then wrap.
@@ -97,6 +117,7 @@ export function mergeArcs(arcs: WindArc[]): WindArc[] {
     first[1] = Math.max(first[1], last[1] - 360);
     merged.pop();
   }
+  if (merged.some(([a, b]) => b - a >= 360)) return [{ fromDeg: 0, toDeg: 360 }];
   return merged.map(([a, b]) => ({ fromDeg: norm(a), toDeg: norm(b) }));
 }
 
@@ -170,7 +191,12 @@ export function parseWindRange(text: string | undefined): ParsedWind {
     arcs.push(arc);
     labels.push(EIGHT_POINT.has(p) ? `${nameAt(arc.fromDeg)}–${nameAt(arc.toDeg)}` : p);
   }
-  return { ranges: mergeArcs(arcs), label: labels.join(", "), parsed: true };
+  const merged = mergeArcs(arcs);
+  if (coversAll(arcs)) return { ranges: "all", label: "All", parsed: true };
+  // Several pieces that join up are labelled as the arcs they make, e.g. "N, NE, E" → "NNW–ESE".
+  const label =
+    parts.length > 1 && merged.length < arcs.length ? labelArcs(merged) : labels.join(", ");
+  return { ranges: merged, label, parsed: true };
 }
 
 export type WindClass = "within" | "marginal" | "outside" | "light";

@@ -1,14 +1,16 @@
 {
   "build": {
     "counts": {
-      "organisations": 102,
-      "clubs": 38,
+      "organisations": 108,
+      "clubs": 44,
       "schools": 44,
-      "sites": 251,
+      "sites": 400,
       "stations": 29,
       "resources": 27,
       "providers": 24,
-      "offerings": 1
+      "offerings": 1,
+      "events": 3,
+      "notices": 40
     },
     "warnings": [
       {
@@ -37,16 +39,534 @@
         "recordId": "INF-021"
       },
       {
-        "code": "contact-unmatched",
-        "message": "Site Guide contact \"Central Coast Sky Surfers\" (1 site) matches no organisation; add it to club-aliases.yaml if certain"
+        "code": "org-added",
+        "message": "safa:club:CC \"Central Coast Sky Surfers Inc\" matches nothing in the directory; added as org:au:central-coast-sky-surfers",
+        "recordId": "org:au:central-coast-sky-surfers"
       },
       {
-        "code": "contact-unmatched",
-        "message": "Site Guide contact \"MNCF\" (7 sites) matches no organisation; add it to club-aliases.yaml if certain"
+        "code": "org-added",
+        "message": "safa:club:MN \"Mid North Coast Flyers Inc\" matches nothing in the directory; added as org:au:mid-north-coast-flyers",
+        "recordId": "org:au:mid-north-coast-flyers"
       },
       {
-        "code": "contact-unmatched",
-        "message": "Site Guide contact \"Wicked Wings Para/Hang Gliding Club\" (3 sites) matches no organisation; add it to club-aliases.yaml if certain"
+        "code": "org-added",
+        "message": "safa:club:STF \"Surf & Turf Flyers\" matches nothing in the directory; added as org:au:surf-turf-flyers",
+        "recordId": "org:au:surf-turf-flyers"
+      },
+      {
+        "code": "org-added",
+        "message": "safa:club:TM \"Manilla Skysailors Inc\" matches nothing in the directory; added as org:au:manilla-skysailors",
+        "recordId": "org:au:manilla-skysailors"
+      },
+      {
+        "code": "org-added",
+        "message": "safa:club:UMFFI \"Upper Murray Free Flyers Inc\" matches nothing in the directory; added as org:au:upper-murray-free-flyers",
+        "recordId": "org:au:upper-murray-free-flyers"
+      },
+      {
+        "code": "org-added",
+        "message": "safa:club:WW \"Wicked Wings Toowoomba/Killarney HG & PG Club Inc\" matches nothing in the directory; added as org:au:wicked-wings-toowoomba-killarney-hg-pg-club",
+        "recordId": "org:au:wicked-wings-toowoomba-killarney-hg-pg-club"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:act:canberra-lanyon duplicates site:au:act:lanyon (58 m); kept the latter",
+        "recordId": "site:au:act:canberra-lanyon"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:blackheath duplicates site:au:nsw:mt-blackheath (12 m); kept the latter",
+        "recordId": "site:au:nsw:blackheath"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:canberra-lake-george-gearys-gap duplicates site:au:nsw:lake-george-gearys-gap (72 m); kept the latter",
+        "recordId": "site:au:nsw:canberra-lake-george-gearys-gap"
+      },
+      {
+        "code": "dedupe-near",
+        "message": "site:au:nsw:canberra-pig-hill is 284 m from site:au:nsw:pig-hill; check by hand",
+        "recordId": "site:au:nsw:canberra-pig-hill"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:canberra-spring-range duplicates site:au:nsw:spring-hill (88 m); kept the latter",
+        "recordId": "site:au:nsw:canberra-spring-range"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:catherine-hill-bay duplicates site:au:nsw:catherine-hill-bay-cathos (11 m); kept the latter",
+        "recordId": "site:au:nsw:catherine-hill-bay"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:cooks-terrace-10814 duplicates site:au:nsw:cooks-terrace (7 m); kept the latter",
+        "recordId": "site:au:nsw:cooks-terrace-10814"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:crackneck-lookout-7270 duplicates site:au:nsw:crackneck-lookout (0 m); kept the latter",
+        "recordId": "site:au:nsw:crackneck-lookout-7270"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:hickson-st duplicates site:au:nsw:merewether-hickson-street-lookout (44 m); kept the latter",
+        "recordId": "site:au:nsw:hickson-st"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:hill-60-11987 duplicates site:au:nsw:hill-60 (110 m); kept the latter",
+        "recordId": "site:au:nsw:hill-60-11987"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:honeysuckle-13239 duplicates site:au:nsw:honeysuckle (104 m); kept the latter",
+        "recordId": "site:au:nsw:honeysuckle-13239"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:indian-head-11571 duplicates site:au:nsw:indian-head (19 m); kept the latter",
+        "recordId": "site:au:nsw:indian-head-11571"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:lake-st-clair duplicates site:au:nsw:glennies-ridge-lake-st-clair-little-europe (100 m); kept the latter",
+        "recordId": "site:au:nsw:lake-st-clair"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:lennox-head-4642 duplicates site:au:nsw:lennox-head (58 m); kept the latter",
+        "recordId": "site:au:nsw:lennox-head-4642"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:little-europe duplicates site:au:nsw:glennies-ridge-lake-st-clair-little-europe (33 m); kept the latter",
+        "recordId": "site:au:nsw:little-europe"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:long-reef-ne-10809 duplicates site:au:nsw:long-reef-ne (15 m); kept the latter",
+        "recordId": "site:au:nsw:long-reef-ne-10809"
+      },
+      {
+        "code": "dedupe-near",
+        "message": "site:au:nsw:long-reef-northfacing is 386 m from site:au:nsw:long-reef-ne; check by hand",
+        "recordId": "site:au:nsw:long-reef-northfacing"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:long-reef-se-18779 duplicates site:au:nsw:long-reef-se (4 m); kept the latter",
+        "recordId": "site:au:nsw:long-reef-se-18779"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:manilla-mt-borah-4632 duplicates site:au:nsw:manilla-mt-borah (51 m); kept the latter",
+        "recordId": "site:au:nsw:manilla-mt-borah-4632"
+      },
+      {
+        "code": "dedupe-near",
+        "message": "site:au:nsw:mona-vale-18871 is 387 m from site:au:nsw:mona-vale; check by hand",
+        "recordId": "site:au:nsw:mona-vale-18871"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:montecollum duplicates site:au:nsw:montes (200 m); kept the latter",
+        "recordId": "site:au:nsw:montecollum"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:moonies duplicates site:au:nsw:moonee-moonee (10 m); kept the latter",
+        "recordId": "site:au:nsw:moonies"
+      },
+      {
+        "code": "dedupe-near",
+        "message": "site:au:nsw:mt-cambewarra is 273 m from site:au:nsw:cambewarra; check by hand",
+        "recordId": "site:au:nsw:mt-cambewarra"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:mt-ovens duplicates site:au:nsw:mount-ovens (58 m); kept the latter",
+        "recordId": "site:au:nsw:mt-ovens"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:mt-rankin duplicates site:au:nsw:mount-rankin (95 m); kept the latter",
+        "recordId": "site:au:nsw:mt-rankin"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:n-e-bonny-hills duplicates site:au:nsw:bartletts-reserve-ne-bonnys (31 m); kept the latter",
+        "recordId": "site:au:nsw:n-e-bonny-hills"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:ne-heaton duplicates site:au:nsw:nne-heaton-lookout (139 m); kept the latter",
+        "recordId": "site:au:nsw:ne-heaton"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:newport-18874 duplicates site:au:nsw:newport (19 m); kept the latter",
+        "recordId": "site:au:nsw:newport-18874"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:north-brother duplicates site:au:nsw:north-brother-lookout (9 m); kept the latter",
+        "recordId": "site:au:nsw:north-brother"
+      },
+      {
+        "code": "dedupe-near",
+        "message": "site:au:nsw:possum-shoot is 332 m from site:au:nsw:possums; check by hand",
+        "recordId": "site:au:nsw:possum-shoot"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:s-e-bonny-hills duplicates site:au:nsw:grants-headland-se-bonnys (39 m); kept the latter",
+        "recordId": "site:au:nsw:s-e-bonny-hills"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:s-e-middle-brother duplicates site:au:nsw:middle-brother (58 m); kept the latter",
+        "recordId": "site:au:nsw:s-e-middle-brother"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:s-w-middle-brother duplicates site:au:nsw:middle-brother (241 m); kept the latter",
+        "recordId": "site:au:nsw:s-w-middle-brother"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:stanwell-park duplicates site:au:nsw:stanwell-park-bald-hill (24 m); kept the latter",
+        "recordId": "site:au:nsw:stanwell-park"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:strzelecki duplicates site:au:nsw:strzelecki-lookout (11 m); kept the latter",
+        "recordId": "site:au:nsw:strzelecki"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:table-rock-se duplicates site:au:nsw:table-rock (158 m); kept the latter",
+        "recordId": "site:au:nsw:table-rock-se"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:nsw:warriewood-14223 duplicates site:au:nsw:warriewood (47 m); kept the latter",
+        "recordId": "site:au:nsw:warriewood-14223"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:qld:beechmont duplicates site:au:qld:beechmont-rosins-lookout (181 m); kept the latter",
+        "recordId": "site:au:qld:beechmont"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:qld:dalby duplicates site:au:qld:dalby-aerodrome (110 m); kept the latter",
+        "recordId": "site:au:qld:dalby"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:qld:eungella-22198 duplicates site:au:qld:eungella (35 m); kept the latter",
+        "recordId": "site:au:qld:eungella-22198"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:qld:gerrards-lookout duplicates site:au:qld:buchys-at-gerrards-lookout (55 m); kept the latter",
+        "recordId": "site:au:qld:gerrards-lookout"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:qld:hinchcliffe-launch duplicates site:au:qld:hinchcliffes-harts-flattop (242 m); kept the latter",
+        "recordId": "site:au:qld:hinchcliffe-launch"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:qld:ma-ma duplicates site:au:qld:ma-ma-creek (174 m); kept the latter",
+        "recordId": "site:au:qld:ma-ma"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:qld:mt-tamborine-brisbane duplicates site:au:qld:mt-tamborine (14 m); kept the latter",
+        "recordId": "site:au:qld:mt-tamborine-brisbane"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:qld:mt-widgee-11971 duplicates site:au:qld:mt-widgee (0 m); kept the latter",
+        "recordId": "site:au:qld:mt-widgee-11971"
+      },
+      {
+        "code": "dedupe-near",
+        "message": "site:au:qld:rainbow-beach is 287 m from site:au:qld:rainbow-beach-carlo-sand-blow; check by hand",
+        "recordId": "site:au:qld:rainbow-beach"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:qld:sunrise-beach-22970 duplicates site:au:qld:sunrise-beach (39 m); kept the latter",
+        "recordId": "site:au:qld:sunrise-beach-22970"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:qld:teewah-launch duplicates site:au:qld:teewah-beach (67 m); kept the latter",
+        "recordId": "site:au:qld:teewah-launch"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:sa:cape-jervis-11371 duplicates site:au:sa:cape-jervis (173 m); kept the latter",
+        "recordId": "site:au:sa:cape-jervis-11371"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:sa:sellicks-cliffs duplicates site:au:sa:sellicks-beach (24 m); kept the latter",
+        "recordId": "site:au:sa:sellicks-cliffs"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:sa:tunkalilla-beach duplicates site:au:sa:tunkalilla (47 m); kept the latter",
+        "recordId": "site:au:sa:tunkalilla-beach"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:bells-beach-13704 duplicates site:au:vic:bells-beach-winkipop (7 m); kept the latter",
+        "recordId": "site:au:vic:bells-beach-13704"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:bishops-rocks duplicates site:au:vic:portland (45 m); kept the latter",
+        "recordId": "site:au:vic:bishops-rocks"
+      },
+      {
+        "code": "dedupe-near",
+        "message": "site:au:vic:cairns-bay-14653 is 389 m from site:au:vic:cairns-bay; check by hand",
+        "recordId": "site:au:vic:cairns-bay-14653"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:cape-liptrap-15952 duplicates site:au:vic:cape-liptrap (135 m); kept the latter",
+        "recordId": "site:au:vic:cape-liptrap-15952"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:closed-site duplicates site:au:vic:dunvegan-road-phillip-island (98 m); kept the latter",
+        "recordId": "site:au:vic:closed-site"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:corryong-mt-elliot duplicates site:au:vic:mt-elliot (77 m); kept the latter",
+        "recordId": "site:au:vic:corryong-mt-elliot"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:discovery-bay duplicates site:au:vic:portland (33 m); kept the latter",
+        "recordId": "site:au:vic:discovery-bay"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:donna-buang duplicates site:au:vic:mt-donna-buang (136 m); kept the latter",
+        "recordId": "site:au:vic:donna-buang"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:flinders duplicates site:au:vic:flinders-golf-club (69 m); kept the latter",
+        "recordId": "site:au:vic:flinders"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:flinders-monument-15461 duplicates site:au:vic:flinders-monument (29 m); kept the latter",
+        "recordId": "site:au:vic:flinders-monument-15461"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:gordon-22859 duplicates site:au:vic:gordon (42 m); kept the latter",
+        "recordId": "site:au:vic:gordon-22859"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:great-missendon duplicates site:au:vic:great-missenden-previously-known-as-landscape (33 m); kept the latter",
+        "recordId": "site:au:vic:great-missendon"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:gundowring duplicates site:au:vic:gundowring-savhill (48 m); kept the latter",
+        "recordId": "site:au:vic:gundowring"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:johanna-11756 duplicates site:au:vic:johanna (221 m); kept the latter",
+        "recordId": "site:au:vic:johanna-11756"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:kilcunda-14656 duplicates site:au:vic:kilcunda (14 m); kept the latter",
+        "recordId": "site:au:vic:kilcunda-14656"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:marriners-lookout-14608 duplicates site:au:vic:marriners-lookout (146 m); kept the latter",
+        "recordId": "site:au:vic:marriners-lookout-14608"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:mount-emu duplicates site:au:vic:mt-emu (60 m); kept the latter",
+        "recordId": "site:au:vic:mount-emu"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:mt-ben-nevis duplicates site:au:vic:ben-nevis (175 m); kept the latter",
+        "recordId": "site:au:vic:mt-ben-nevis"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:mt-broughton-thistle-hille duplicates site:au:vic:mt-broughton-thistle-hill (68 m); kept the latter",
+        "recordId": "site:au:vic:mt-broughton-thistle-hille"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:mt-dandenong-15967 duplicates site:au:vic:mt-dandenong (15 m); kept the latter",
+        "recordId": "site:au:vic:mt-dandenong-15967"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:mt-lonarch-13702 duplicates site:au:vic:mt-lonarch (145 m); kept the latter",
+        "recordId": "site:au:vic:mt-lonarch-13702"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:mt-tarrengower-23013 duplicates site:au:vic:mt-tarrengower (13 m); kept the latter",
+        "recordId": "site:au:vic:mt-tarrengower-23013"
+      },
+      {
+        "code": "dedupe-near",
+        "message": "site:au:vic:murrells-beach is 341 m from site:au:vic:portland; check by hand",
+        "recordId": "site:au:vic:murrells-beach"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:mystic-bright duplicates site:au:vic:mystic (55 m); kept the latter",
+        "recordId": "site:au:vic:mystic-bright"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:ocean-grove-18176 duplicates site:au:vic:ocean-grove (38 m); kept the latter",
+        "recordId": "site:au:vic:ocean-grove-18176"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:portsea-14274 duplicates site:au:vic:portsea (56 m); kept the latter",
+        "recordId": "site:au:vic:portsea-14274"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:red-bluff-22856 duplicates site:au:vic:red-bluff (43 m); kept the latter",
+        "recordId": "site:au:vic:red-bluff-22856"
+      },
+      {
+        "code": "dedupe-near",
+        "message": "site:au:vic:shoreham-15405 is 274 m from site:au:vic:shoreham; check by hand",
+        "recordId": "site:au:vic:shoreham-15405"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:southside duplicates site:au:vic:bells-beach (36 m); kept the latter",
+        "recordId": "site:au:vic:southside"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:sunnyside-13715 duplicates site:au:vic:sunnyside (3 m); kept the latter",
+        "recordId": "site:au:vic:sunnyside-13715"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:tawonga-gap-23900 duplicates site:au:vic:tawonga-gap (50 m); kept the latter",
+        "recordId": "site:au:vic:tawonga-gap-23900"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:teddys-lookout-22957 duplicates site:au:vic:teddys-lookout (11 m); kept the latter",
+        "recordId": "site:au:vic:teddys-lookout-22957"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:vic:thirteenth-beach duplicates site:au:vic:barwon-heads-13th-beach (169 m); kept the latter",
+        "recordId": "site:au:vic:thirteenth-beach"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:wa:80-meter-dunes duplicates site:au:wa:wagga-80m-dunes (0 m); kept the latter",
+        "recordId": "site:au:wa:80-meter-dunes"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:wa:bunbury-back-beach-21425 duplicates site:au:wa:bunbury-back-beach (20 m); kept the latter",
+        "recordId": "site:au:wa:bunbury-back-beach-21425"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:wa:contos duplicates site:au:wa:conto-springs (55 m); kept the latter",
+        "recordId": "site:au:wa:contos"
+      },
+      {
+        "code": "dedupe-near",
+        "message": "site:au:wa:greenhills-pennys-tow-paddock-near-york is 286 m from site:au:wa:york-greenhills-towing; check by hand",
+        "recordId": "site:au:wa:greenhills-pennys-tow-paddock-near-york"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:wa:humphries-paddock duplicates site:au:wa:york-greenhills-towing (11 m); kept the latter",
+        "recordId": "site:au:wa:humphries-paddock"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:wa:mosman-park-perth duplicates site:au:wa:mosman-park (200 m); kept the latter",
+        "recordId": "site:au:wa:mosman-park-perth"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:wa:mount-rennie-18186 duplicates site:au:wa:mount-rennie (49 m); kept the latter",
+        "recordId": "site:au:wa:mount-rennie-18186"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:wa:mt-bakewell-top-launches duplicates site:au:wa:mount-bakewell-top-launches (190 m); kept the latter",
+        "recordId": "site:au:wa:mt-bakewell-top-launches"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:wa:mutton-bird-beach duplicates site:au:wa:muttonbird-beach (167 m); kept the latter",
+        "recordId": "site:au:wa:mutton-bird-beach"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:wa:rabbit-hill duplicates site:au:wa:yallingup-rabbit-hill (72 m); kept the latter",
+        "recordId": "site:au:wa:rabbit-hill"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:wa:sand-patch-11906 duplicates site:au:wa:sand-patch (184 m); kept the latter",
+        "recordId": "site:au:wa:sand-patch-11906"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:wa:sand-patch-peak duplicates site:au:wa:sand-patch (177 m); kept the latter",
+        "recordId": "site:au:wa:sand-patch-peak"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:wa:serpentine-4663 duplicates site:au:wa:serpentine (245 m); kept the latter",
+        "recordId": "site:au:wa:serpentine-4663"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:wa:shelley-beach-10096 duplicates site:au:wa:shelley-beach (1 m); kept the latter",
+        "recordId": "site:au:wa:shelley-beach-10096"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:wa:the-range-toodyay-6777 duplicates site:au:wa:the-range-toodyay (0 m); kept the latter",
+        "recordId": "site:au:wa:the-range-toodyay-6777"
+      },
+      {
+        "code": "dedupe-merged",
+        "message": "site:au:wa:wozzas-knob-geraldton duplicates site:au:wa:wozzas-knob (98 m); kept the latter",
+        "recordId": "site:au:wa:wozzas-knob-geraldton"
       },
       {
         "code": "contact-dropped",
@@ -55,18 +575,22 @@
       {
         "code": "contact-dropped",
         "message": "2 unmatched Site Guide contacts not shown (link to wind.willyweather.com.au)"
+      },
+      {
+        "code": "association-unmatched",
+        "message": "org:au:cairns-hang-gliding-club: association \"North Queensland Hang Gliding Association\" matches no regional association",
+        "recordId": "org:au:cairns-hang-gliding-club"
       }
     ]
   },
   "providers": {
     "ansg": {
       "status": "warning",
-      "startedAt": "2026-10-12T04:33:46.462Z",
-      "finishedAt": "2026-10-12T04:33:53.417Z",
+      "startedAt": "2026-10-12T05:17:22.673Z",
+      "finishedAt": "2026-10-12T05:17:29.582Z",
       "recordsFound": 246,
       "recordsChanged": 246,
       "warnings": [
-        "No earlier run to compare with",
         "Barn Hill (The Bluff): wind directions not readable (\"none\")",
         "Bartletts Reserve - NE Bonnys: wind directions not readable (\"none\")",
         "Bungan: wind directions not readable (\"none\")",
@@ -115,9 +639,83 @@
         "Warrigal Rocks: wind directions not readable (\"none\")",
         "Wolgan: wind directions not readable (\"NE, HG < 5 knots\")"
       ],
-      "guardDecision": "accepted_first_run",
-      "lastSuccessAt": "2026-10-12T04:33:53.417Z",
-      "contentHash": "7fb23a4f3db752d2e7dc53ff1e56547f6886fcf7c64dbfe86f4451dee3f5079f"
+      "guardDecision": "accepted",
+      "lastSuccessAt": "2026-10-12T05:17:29.582Z",
+      "contentHash": "74086d55fa6111d842cd5c054a58aa05e6f54223c1f6659e75ba8b77396ecf53"
+    },
+    "safa": {
+      "status": "ok",
+      "startedAt": "2026-10-12T05:19:06.992Z",
+      "finishedAt": "2026-10-12T05:21:57.741Z",
+      "recordsFound": 111,
+      "recordsChanged": 111,
+      "warnings": [],
+      "guardDecision": "accepted",
+      "lastSuccessAt": "2026-10-12T05:21:57.741Z",
+      "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+    },
+    "pge": {
+      "status": "ok",
+      "startedAt": "2026-10-12T05:17:29.909Z",
+      "finishedAt": "2026-10-12T05:17:39.796Z",
+      "recordsFound": 388,
+      "recordsChanged": 388,
+      "warnings": [],
+      "guardDecision": "accepted",
+      "lastSuccessAt": "2026-10-12T05:17:39.796Z",
+      "contentHash": "8de5ce5faf3023c2eeab2a64ff6ee47a0bc027d059f2d3026bfe417765f011b9"
+    },
+    "club-websites": {
+      "status": "warning",
+      "startedAt": "2026-10-12T08:04:40.791Z",
+      "finishedAt": "2026-10-12T08:08:45.345Z",
+      "recordsFound": 12,
+      "recordsChanged": 18,
+      "warnings": [
+        "Skyhigh Paragliding Club Inc: website not read (robots.txt does not allow https://skyhighparagliding.org.au/)",
+        "Southern Microlight Club Inc: website not read (robots.txt does not allow https://www.southernmicrolightclub.com.au/)",
+        "The Pico Club Incorporated: website not read (robots.txt does not allow https://www.thepico.com.au/)",
+        "Western Victorian Hang Gliding Club Inc: website not read (robots.txt does not allow https://www.wvhgc.tidyhq.com/)",
+        "Wicked Wings Toowoomba/Killarney HG & PG Club Inc: website not read (robots.txt does not allow https://wickedwings.com.au/)",
+        "Hawkes Bay club: website not read (robots.txt does not allow https://www.soarhawkesbay.co.nz)"
+      ],
+      "guardDecision": "accepted",
+      "lastSuccessAt": "2026-10-12T08:08:45.345Z",
+      "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf",
+      "info": [
+        "ACT Hang-gliding and Paragliding Association (ACTHPA): its website names 6 of the 6 sites listed for it",
+        "Blue Mountains Hang Gliding Club Inc: nothing to collect",
+        "Cairns Hang Gliding Club Inc: nothing to collect",
+        "Canungra Hang Gliding Club Inc: its website names 3 of the 4 sites listed for it",
+        "Central Coast Sky Surfers Inc: its website names 1 of the 1 sites listed for it",
+        "Dynasoarers Hang Gliding Club Inc: its website names 1 of the 1 sites listed for it",
+        "Hang Gliding & Paragliding Association of Western Australia (HGAWA): nothing to collect",
+        "Illawarra Gliding Club Inc: nothing to collect",
+        "Manilla Skysailors Inc: nothing to collect",
+        "Melbourne Hang Gliding Club Inc: nothing to collect",
+        "Mid North Coast Flyers Inc: its website names 3 of the 7 sites listed for it",
+        "Newcastle Hang Gliding Club Inc: nothing to collect",
+        "Newcastle Paragliding Club: nothing to collect",
+        "North East Victoria Hang Gliding Club Inc: its website names 5 of the 5 sites listed for it",
+        "North Queensland Hang Gliding Association: nothing to collect",
+        "North Queensland Regional Association (NQRA): nothing to collect",
+        "Northern Rivers Hang Gliding and Paragliding Club Inc: nothing to collect",
+        "NSW Hang-gliding and Paragliding Association (NSWHPA): nothing to collect",
+        "Paradise Flyers QLD: nothing to collect",
+        "Queensland Sports Aviators (QSA): nothing to collect",
+        "South Australian Hang Gliding & Paragliding Association (SAHPGA): its website names 3 of the 5 sites listed for it",
+        "Stanwell Park Hang Gliding & Paragliding Club (FlyStanwell): its website names 1 of the 1 sites listed for it",
+        "Sunshine Coast Free Flyers Association: its website names 5 of the 5 sites listed for it",
+        "Sydney Paragliding and Hang Gliding Club (SPHGC): nothing to collect",
+        "Tasmanian Hang-gliding and Paragliding Association (THPA): nothing to collect",
+        "Victorian Hang-gliding and Paragliding Association (VHPA): nothing to collect",
+        "Auckland club: nothing to collect",
+        "Bay of Plenty club: nothing to collect",
+        "Canterbury club: 3 news",
+        "Southern club: nothing to collect",
+        "Tasman club: nothing to collect",
+        "Wellington club: nothing to collect"
+      ]
     }
   }
 }
