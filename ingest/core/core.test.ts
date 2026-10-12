@@ -31,6 +31,23 @@ describe("changeGuard", () => {
       "blocked_drop",
     );
   });
+
+  it("lets events and notices come and go, checking only their validity", () => {
+    // No stable records before or now, and no events this week: fine.
+    expect(
+      changeGuard({ previousCount: 0, validCount: 0, invalidCount: 0, totalValid: 0 }),
+    ).toEqual({
+      decision: "accepted",
+    });
+    // Directory steady, events dropped from 30 to 2: fine.
+    expect(
+      changeGuard({ previousCount: 40, validCount: 40, invalidCount: 0, totalValid: 42 }).decision,
+    ).toBe("accepted");
+    // But unreadable records count against every kind.
+    expect(
+      changeGuard({ previousCount: 40, validCount: 40, invalidCount: 6, totalValid: 42 }).decision,
+    ).toBe("blocked_invalid");
+  });
 });
 
 /** A fake web: maps URLs to responses and records the request headers. */
@@ -178,7 +195,7 @@ describe("runIngest", () => {
       collect: async () => ({
         unchanged: false,
         contentHash: `h${count}`,
-        records: Array.from({ length: count }, (_, i) => site(i)),
+        records: { sites: Array.from({ length: count }, (_, i) => site(i)) },
         invalid: 0,
         warnings: [],
       }),
@@ -208,9 +225,9 @@ describe("runIngest", () => {
       contentHash: "h10",
     });
     const kept = JSON.parse(readFileSync(path.join(root, "data/ingest/test.json"), "utf8")) as {
-      records: Site[];
+      sites: Site[];
     };
-    expect(kept.records).toHaveLength(10);
+    expect(kept.sites).toHaveLength(10);
   });
 
   it("records a failure without touching the last good copy", async () => {

@@ -333,6 +333,33 @@ export interface BuildReport {
   providers: Record<string, ProviderRun>;
 }
 
+/** An organisation as a source lists it, before it is matched to the directory (docs/05 §5.4). */
+export interface CollectedOrg {
+  id: string; // provider-scoped, e.g. "safa:club:CG"
+  providerId: string;
+  kind: OrgKind;
+  name: string;
+  country: CountryCode;
+  regionCode?: RegionCode;
+  locality?: string;
+  postcode?: string;
+  website?: string;
+  emailPublic?: string; // only the organisation's own published contact, never a person's (D53)
+  phonePublic?: string;
+  disciplines: Discipline[];
+  associationName?: string; // the regional association the source links it to
+  source: SourceRef;
+}
+
+/** A club's own web page naming sites: the second source that confirms a steward (D47). */
+export interface StewardEvidence {
+  id: string;
+  orgId: string;
+  url: string;
+  siteIds: string[];
+  source: SourceRef;
+}
+
 /** A site contact as listed by a site guide: a pointer to the steward, not proof (D47). */
 export interface ListedContact {
   name: string;

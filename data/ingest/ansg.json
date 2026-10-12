@@ -2,7 +2,7 @@
   "providerId": "ansg",
   "fetchedAt": "2026-10-12T04:33:46.462Z",
   "contentHash": "7fb23a4f3db752d2e7dc53ff1e56547f6886fcf7c64dbfe86f4451dee3f5079f",
-  "records": [
+  "sites": [
     {
       "id": "site:au:act:lanyon",
       "slug": "lanyon",

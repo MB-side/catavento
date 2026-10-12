@@ -4,6 +4,7 @@ import type {
   BuildReport,
   BuildWarning,
   Club,
+  CollectedOrg,
   Country,
   EventItem,
   Notice,
@@ -15,6 +16,7 @@ import type {
   Station,
   Brand,
   ProviderRun,
+  StewardEvidence,
   StewardRole,
 } from "@/lib/types";
 import {
@@ -40,6 +42,10 @@ export interface CountryInput extends Omit<Country, "nationalBody"> {
 
 export interface BuildInputs {
   ingestedSites: Site[];
+  ingestedOrgs: CollectedOrg[];
+  ingestedEvents: EventItem[];
+  ingestedNotices: Notice[];
+  stewardEvidence: StewardEvidence[];
   runs: Record<string, ProviderRun>;
   directoryRows: CsvRow[];
   stationRows: CsvRow[];

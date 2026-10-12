@@ -3,25 +3,64 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { z } from "zod";
-import { providerRunSchema, siteSchema } from "@/lib/schemas";
-import type { Provider, ProviderRun, Site } from "@/lib/types";
+import {
+  collectedOrgSchema,
+  eventSchema,
+  noticeSchema,
+  providerRunSchema,
+  siteSchema,
+  stewardEvidenceSchema,
+} from "@/lib/schemas";
+import type {
+  CollectedOrg,
+  EventItem,
+  Notice,
+  Organisation,
+  Provider,
+  ProviderRun,
+  Site,
+  StewardEvidence,
+} from "@/lib/types";
 import { PoliteFetcher } from "./fetcher";
 import { changeGuard, isBlocked } from "./guard";
 import type { RegionLookup } from "./regions";
 
+/** A country a provider collects for, with the region codes allowed there. */
+export interface CountryScope {
+  code: string;
+  regions: ReadonlySet<string>;
+}
+
+/** What the site already knows, for providers that look things up against it (club websites). */
+export interface Directory {
+  organisations: Organisation[];
+  sites: Site[];
+}
+
 export interface ProviderContext {
   fetcher: PoliteFetcher;
   regions: RegionLookup;
-  country: string;
-  allowedRegions: ReadonlySet<string>;
+  countries: CountryScope[];
+  directory: () => Directory;
   previous?: ProviderRun;
+  previousRecords?: IngestRecords;
   force: boolean;
+  now: Date;
+}
+
+/** Everything a provider can collect. Each kind is optional. */
+export interface IngestRecords {
+  sites?: Site[];
+  orgs?: CollectedOrg[];
+  events?: EventItem[];
+  notices?: Notice[];
+  stewardEvidence?: StewardEvidence[];
 }
 
 export interface CollectResult {
   unchanged: boolean;
   contentHash: string;
-  records: Site[];
+  records: IngestRecords;
   invalid: number;
   warnings: string[];
 }
@@ -35,10 +74,29 @@ export const ingestFileSchema = z.object({
   providerId: z.string(),
   fetchedAt: z.iso.datetime({ offset: true }),
   contentHash: z.string(),
-  records: z.array(siteSchema),
+  sites: z.array(siteSchema).optional(),
+  orgs: z.array(collectedOrgSchema).optional(),
+  events: z.array(eventSchema).optional(),
+  notices: z.array(noticeSchema).optional(),
+  stewardEvidence: z.array(stewardEvidenceSchema).optional(),
 });
 export type IngestFile = z.infer<typeof ingestFileSchema>;
 export const runsFileSchema = z.record(z.string(), providerRunSchema);
+
+const KINDS = ["sites", "orgs", "events", "notices", "stewardEvidence"] as const;
+// Sites and directories are stable, so a sudden drop means a broken source. Events, notices and
+// evidence come and go naturally, so only their validity is checked.
+const STABLE_KINDS = ["sites", "orgs"] as const;
+
+const count = (r: IngestRecords | undefined, kinds: readonly (keyof IngestRecords)[]) =>
+  kinds.reduce((n, k) => n + (r?.[k]?.length ?? 0), 0);
+
+function recordIds(r: IngestRecords | undefined): Map<string, string> {
+  const out = new Map<string, string>();
+  for (const k of KINDS)
+    for (const rec of r?.[k] ?? []) out.set(`${k}|${rec.id}`, JSON.stringify(rec));
+  return out;
+}
 
 const HOUR = 3_600_000;
 
@@ -58,6 +116,7 @@ export interface RunOptions {
   modules: ProviderModule[];
   regions: RegionLookup;
   countriesRegions: Map<string, Set<string>>;
+  directory?: () => Directory;
   only?: string;
   force?: boolean;
   fetcher?: PoliteFetcher;
@@ -75,6 +134,7 @@ export async function runIngest(opts: RunOptions): Promise<Record<string, Provid
   const fetcher = opts.fetcher ?? new PoliteFetcher();
   const now = opts.now ?? (() => new Date());
   const log = opts.log ?? console.log;
+  const directory = opts.directory ?? (() => ({ organisations: [], sites: [] }));
 
   for (const mod of opts.modules) {
     const provider = opts.providers.find((p) => p.id === mod.id);
@@ -90,12 +150,14 @@ export async function runIngest(opts: RunOptions): Promise<Record<string, Provid
       );
       continue;
     }
-    // Country-specific providers name exactly one country in providers.yaml.
-    const country = provider.countries.length === 1 ? provider.countries[0] : undefined;
-    if (!country || country === "*") {
-      log(`${mod.id}: skipped (collector needs a single country in providers.yaml)`);
-      continue;
-    }
+    // "*" means every country in countries.yaml.
+    const codes = provider.countries.includes("*")
+      ? [...opts.countriesRegions.keys()]
+      : provider.countries;
+    const countries = codes.map((code) => ({
+      code,
+      regions: opts.countriesRegions.get(code) ?? new Set<string>(),
+    }));
 
     const startedAt = now().toISOString();
     const file = path.join(dir, `${mod.id}.json`);
@@ -107,17 +169,19 @@ export async function runIngest(opts: RunOptions): Promise<Record<string, Provid
       const result = await mod.collect({
         fetcher,
         regions: opts.regions,
-        country,
-        allowedRegions: opts.countriesRegions.get(country) ?? new Set(),
+        countries,
+        directory,
         previous: last,
+        previousRecords: previousFile,
         force: !!opts.force,
+        now: now(),
       });
       if (result.unchanged) {
         run = {
           status: "unchanged",
           startedAt,
           finishedAt: now().toISOString(),
-          recordsFound: previousFile?.records.length ?? 0,
+          recordsFound: count(previousFile, KINDS),
           recordsChanged: 0,
           warnings: last?.warnings ?? [],
           guardDecision: last?.guardDecision,
@@ -126,17 +190,19 @@ export async function runIngest(opts: RunOptions): Promise<Record<string, Provid
         };
       } else {
         const guard = changeGuard({
-          previousCount: previousFile?.records.length,
-          validCount: result.records.length,
+          previousCount: previousFile ? count(previousFile, STABLE_KINDS) : undefined,
+          validCount: count(result.records, STABLE_KINDS),
           invalidCount: result.invalid,
+          totalValid: count(result.records, KINDS),
         });
         const warnings = [...(guard.reason ? [guard.reason] : []), ...result.warnings];
+        const found = count(result.records, KINDS);
         if (isBlocked(guard.decision)) {
           run = {
             status: "blocked",
             startedAt,
             finishedAt: now().toISOString(),
-            recordsFound: result.records.length,
+            recordsFound: found,
             recordsChanged: 0,
             warnings,
             guardDecision: guard.decision,
@@ -144,24 +210,29 @@ export async function runIngest(opts: RunOptions): Promise<Record<string, Provid
             contentHash: last?.contentHash,
           };
         } else {
-          const before = new Map(
-            (previousFile?.records ?? []).map((r) => [r.id, JSON.stringify(r)]),
-          );
+          const before = recordIds(previousFile);
+          const after = recordIds(result.records);
           const changed =
-            result.records.filter((r) => before.get(r.id) !== JSON.stringify(r)).length +
-            [...before.keys()].filter((id) => !result.records.some((r) => r.id === id)).length;
+            [...after].filter(([k, v]) => before.get(k) !== v).length +
+            [...before.keys()].filter((k) => !after.has(k)).length;
           const out: IngestFile = {
             providerId: mod.id,
             fetchedAt: startedAt,
             contentHash: result.contentHash,
-            records: [...result.records].sort((a, b) => a.id.localeCompare(b.id)),
           };
+          for (const k of KINDS) {
+            const list = result.records[k];
+            if (list)
+              (out as Record<string, unknown>)[k] = [...list].sort((a, b) =>
+                a.id.localeCompare(b.id),
+              );
+          }
           writeFileSync(file, `${JSON.stringify(out, null, 2)}\n`);
           run = {
             status: warnings.length ? "warning" : "ok",
             startedAt,
             finishedAt: now().toISOString(),
-            recordsFound: result.records.length,
+            recordsFound: found,
             recordsChanged: changed,
             warnings,
             guardDecision: guard.decision,

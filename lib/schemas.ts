@@ -4,6 +4,7 @@ import { z } from "zod";
 import type {
   BuildReport,
   Club,
+  CollectedOrg,
   Country,
   EventItem,
   Notice,
@@ -13,6 +14,7 @@ import type {
   Resource,
   Site,
   Station,
+  StewardEvidence,
   Brand,
   ProviderRun,
 } from "./types";
@@ -305,6 +307,31 @@ export const noticeSchema = z.object({
   siteIds: z.array(z.string()).optional(),
   sources: z.array(sourceRefSchema).min(1),
 }) satisfies z.ZodType<Notice>;
+
+export const collectedOrgSchema = z.object({
+  id: z.string().min(1),
+  providerId: z.string().min(1),
+  kind: orgKindSchema,
+  name: z.string().min(1),
+  country: countryCode,
+  regionCode: regionCode.optional(),
+  locality: z.string().optional(),
+  postcode: z.string().optional(),
+  website: httpUrl.optional(),
+  emailPublic: z.email().optional(),
+  phonePublic: z.string().optional(),
+  disciplines: z.array(disciplineSchema),
+  associationName: z.string().optional(),
+  source: sourceRefSchema,
+}) satisfies z.ZodType<CollectedOrg>;
+
+export const stewardEvidenceSchema = z.object({
+  id: z.string().min(1),
+  orgId: z.string().min(1),
+  url: httpUrl,
+  siteIds: z.array(z.string()),
+  source: sourceRefSchema,
+}) satisfies z.ZodType<StewardEvidence>;
 
 export const brandSchema = z.object({
   id: z.string(),
