@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ExternalLink } from "lucide-react";
 import { SiteMapPanel } from "@/components/domain/SiteMapPanel";
+import { SiteOutlookSection } from "@/components/domain/SiteOutlookSection";
+import { StarButton } from "@/components/domain/StarButton";
 import { StatusChip } from "@/components/domain/StatusChip";
 import { StewardPanel } from "@/components/domain/StewardPanel";
 import { WindRose } from "@/components/domain/WindRose";
@@ -17,7 +19,7 @@ import { jsonLdScript, pageMetadata } from "@/lib/seo";
 import { siteJsonLd } from "@/lib/site-jsonld";
 import { siteShareImagePath } from "@/lib/share";
 import { summarise } from "@/lib/site-summary";
-import { siteView } from "@/lib/site-view";
+import { siteSummaries, siteView } from "@/lib/site-view";
 import { mainLaunch, regionPath, regionSegmentOf, sitePath } from "@/lib/sites";
 import type { Site } from "@/lib/types";
 
@@ -73,6 +75,7 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
   const zone = country.timezones[0] ?? "UTC";
   const today = new Date().toISOString().slice(0, 10);
   const view = siteView(site, today);
+  const summary = siteSummaries(country, site.regionCode).find((s) => s.id === site.id);
   const regionName = country.regionNames[site.regionCode] ?? site.regionCode;
   const launch = mainLaunch(site);
   const community = site.layer === "pge";
@@ -126,15 +129,18 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
             </span>
           )}
         </div>
-        {site.officialGuideUrl && (
-          <a
-            href={site.officialGuideUrl}
-            className="mt-3 inline-flex min-h-11 items-center gap-2 rounded-[10px] bg-action px-4 font-semibold text-white no-underline hover:text-white"
-          >
-            {t("site.officialDetails")}
-            <ExternalLink className="size-4" aria-hidden="true" />
-          </a>
-        )}
+        <div className="mt-3 flex flex-wrap items-center gap-2">
+          {summary && <StarButton site={summary} withLabel />}
+          {site.officialGuideUrl && (
+            <a
+              href={site.officialGuideUrl}
+              className="inline-flex min-h-11 items-center gap-2 rounded-[10px] bg-action px-4 font-semibold text-white no-underline hover:text-white"
+            >
+              {t("site.officialDetails")}
+              <ExternalLink className="size-4" aria-hidden="true" />
+            </a>
+          )}
+        </div>
       </header>
 
       <StewardPanel
@@ -260,7 +266,19 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
             <h2 id="forecasts" className={h2}>
               {t("site.forecasts.heading")}
             </h2>
-            <p className="mt-1">{t("site.forecasts.intro")}</p>
+            {launch ? (
+              <SiteOutlookSection
+                id={site.id}
+                lat={launch.lat}
+                lon={launch.lon}
+                ranges={site.windRanges}
+                rated={parsedWind}
+                wtfHref={forecastLinks[0]?.href ?? "https://wheretofly.info/"}
+              />
+            ) : (
+              <p className="mt-2 text-muted">{t("outlook.noPosition")}</p>
+            )}
+            <p className="mt-4">{t("site.forecasts.intro")}</p>
             <ul className="mt-3 flex flex-wrap gap-2">
               {forecastLinks.map((l) => (
                 <li key={l.label}>
