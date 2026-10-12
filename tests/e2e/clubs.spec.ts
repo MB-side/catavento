@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import AxeBuilder from "@axe-core/playwright";
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./fixtures";
 
 interface Org {
   id: string;
@@ -73,7 +73,7 @@ test("Follow club saves the club's sites to My Sites on this device", async ({ p
   await page.goto("my-sites/");
   await expect(page.getByTestId("my-sites-empty")).toBeVisible();
   await page.goto("au/clubs/canungra-hang-gliding-club/");
-  const managed = page.getByTestId("club-managed").getByRole("listitem");
+  const managed = page.getByTestId("club-managed").getByTestId("site-card");
   const count = await managed.count();
   expect(count).toBeGreaterThan(0);
   await page.getByRole("button", { name: "Follow club" }).click();
