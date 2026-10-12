@@ -19,3 +19,14 @@ NZ-CLB-010: { regionCode: NZ-MBH, source: "https://nzhgpa.org.nz/local-clubs/" }
 # HighSide flight park runs the Karioitahi Beach sample site, which nz-sample-sites.yaml places
 # in the Auckland region.
 NZ-FP-001: { regionCode: NZ-AUK, source: "https://www.highside.nz" }
+
+# New Zealand schools: NZHGPA lists each school's town (https://nzhgpa.org.nz/finding-a-school/,
+# via the seed); the region is the one that town is in. Auckland/Waikato (NZ-SCH-008) spans two
+# regions, so it stays unset.
+NZ-SCH-001: { regionCode: NZ-CAN, source: "https://nzhgpa.org.nz/finding-a-school/", note: "Christchurch" }
+NZ-SCH-002: { regionCode: NZ-CAN, source: "https://nzhgpa.org.nz/finding-a-school/", note: "Christchurch" }
+NZ-SCH-003: { regionCode: NZ-NTL, source: "https://nzhgpa.org.nz/finding-a-school/", note: "Mangawhai Heads (Kaipara District)" }
+NZ-SCH-004: { regionCode: NZ-HKB, source: "https://nzhgpa.org.nz/finding-a-school/", note: "Napier" }
+NZ-SCH-005: { regionCode: NZ-NSN, source: "https://nzhgpa.org.nz/finding-a-school/", note: "Nelson" }
+NZ-SCH-006: { regionCode: NZ-NSN, source: "https://nzhgpa.org.nz/finding-a-school/", note: "Nelson" }
+NZ-SCH-007: { regionCode: NZ-CAN, source: "https://nzhgpa.org.nz/finding-a-school/", note: "Canterbury" }

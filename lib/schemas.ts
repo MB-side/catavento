@@ -338,6 +338,28 @@ export const stewardEvidenceSchema = z.object({
   source: sourceRefSchema,
 }) satisfies z.ZodType<StewardEvidence>;
 
+export const brandsFileSchema = z
+  .array(
+    z.object({
+      name: z.string().min(1),
+      website: optionalUrl,
+      distributors: z.array(
+        z.object({
+          org: z.string().min(1), // seed legacy ID or organisation ID
+          role: z.enum([
+            "official_importer",
+            "core_importer",
+            "dealer",
+            "service_agent",
+            "certified_service",
+          ]),
+        }),
+      ),
+      source: z.string().optional(),
+    }),
+  )
+  .nullable();
+
 export const brandSchema = z.object({
   id: z.string(),
   name: z.string().min(1),
@@ -419,6 +441,10 @@ export const countryInputSchema = z.object({
     membershipLine: z.string().min(1),
     visitingPilotsUrl: optionalUrl,
     joinUrl: optionalUrl,
+    shortName: z.string().min(1).optional(),
+    learnUrl: optionalUrl,
+    feesUrl: optionalUrl,
+    equipmentUrl: optionalUrl,
   }),
   map: z
     .object({
@@ -448,6 +474,10 @@ export const countrySchema = z.object({
     membershipLine: z.string().min(1),
     visitingPilotsUrl: httpUrl.optional(),
     joinUrl: httpUrl.optional(),
+    shortName: z.string().min(1).optional(),
+    learnUrl: httpUrl.optional(),
+    feesUrl: httpUrl.optional(),
+    equipmentUrl: httpUrl.optional(),
   }),
 }) satisfies z.ZodType<Country>;
 

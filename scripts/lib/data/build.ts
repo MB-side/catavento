@@ -33,6 +33,7 @@ import {
   type OfferingInput,
   type SampleSiteInput,
 } from "./merge";
+import { slugify } from "./ids";
 import { assignOrgIds, mapDirectory, mapStations, type CsvRow } from "./seed";
 import { OrgMatcher } from "./match";
 import { mergeCollectedOrgs } from "./orgs";
@@ -68,6 +69,7 @@ export interface BuildInputs {
   sampleSites: SampleSiteInput[];
   sampleSitesChecked: string;
   offerings: OfferingInput[];
+  brands: { name: string; website?: string; distributors: { org: string; role: Brand["distributors"][number]["role"] }[] }[];
 }
 
 export interface BuildOutputs {
@@ -231,7 +233,18 @@ export function buildData(input: BuildInputs): BuildOutputs {
     stations: stations.sort(byId),
     events: events.sort((a, b) => a.startDate.localeCompare(b.startDate) || a.id.localeCompare(b.id)),
     notices: notices.sort((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id)),
-    brands: [],
+    brands: input.brands
+      .map((b) => ({
+        id: `brand:${slugify(b.name)}`,
+        name: b.name,
+        website: b.website,
+        distributors: b.distributors.flatMap((d) => {
+          const orgId = resolveOrgRef(d.org, withClubs);
+          if (!orgId) warnings.push({ code: "brand-org-missing", message: `brands.yaml: ${b.name}: no organisation ${d.org}` });
+          return orgId ? [{ orgId, role: d.role }] : [];
+        }),
+      }))
+      .sort(byId),
     offerings,
     resources: seed.resources.sort(byId),
     report: { build: { counts, warnings }, providers: input.runs },

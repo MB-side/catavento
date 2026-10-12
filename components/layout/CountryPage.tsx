@@ -1,7 +1,6 @@
 import "server-only";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Link from "next/link";
 import { getCountry } from "@/lib/country";
 import { WindyMap } from "@/components/domain/WindyMap";
 import { getCounts } from "@/lib/data";
@@ -9,7 +8,6 @@ import { windyEmbedUrl } from "@/lib/links";
 import { t, tCount, type MessageKey } from "@/lib/messages";
 import { pageMetadata } from "@/lib/seo";
 import type { Country } from "@/lib/types";
-import { ComingSoon } from "./ComingSoon";
 
 const pages = {
   countryHome: { title: "pages.countryHome.title", summary: "pages.countryHome.summary", path: "" },
@@ -60,43 +58,8 @@ export async function countryPageMetadata(
   });
 }
 
-/** Placeholder for a country section until its milestone builds it. */
-export async function CountryPage({
-  params,
-  page,
-}: {
-  params: CountryParams;
-  page: CountryPageKey;
-}) {
-  const country = await resolveCountry(params);
-  const { title, summary } = texts(page, country);
-  const segment = country.code.toLowerCase();
-  return (
-    <ComingSoon title={title} summary={summary}>
-      {page === "countryHome" && <CountryCountsLine code={country.code} />}
-      {page === "countryHome" && <LiveWind country={country} />}
-      {page === "countryHome" && (
-        <ul className="mt-4 flex flex-wrap gap-2">
-          {(["sites", "clubs", "whatsOn", "gear", "newToFlying", "visitingPilots"] as const).map(
-            (key) => (
-              <li key={key}>
-                <Link
-                  href={`/${segment}${pages[key].path}/`}
-                  className="inline-flex min-h-11 items-center rounded-full border border-border-strong bg-surface px-4 font-semibold text-ink hover:text-ink"
-                >
-                  {t(pages[key].title)}
-                </Link>
-              </li>
-            ),
-          )}
-        </ul>
-      )}
-    </ComingSoon>
-  );
-}
-
 /** What the data already holds for this country, e.g. "27 clubs · 36 schools · 9 weather station links". */
-function CountryCountsLine({ code }: { code: string }) {
+export function CountryCountsLine({ code }: { code: string }) {
   const counts = getCounts(code);
   const items = (
     [
@@ -118,7 +81,7 @@ function CountryCountsLine({ code }: { code: string }) {
 }
 
 /** Live wind: Windy's map (on tap) and the placeholder for station widgets awaiting permission (D44, D45). */
-function LiveWind({ country }: { country: Country }) {
+export function LiveWind({ country }: { country: Country }) {
   const stations = getCounts(country.code).stations;
   return (
     <section aria-labelledby="live-wind" className="mt-8">

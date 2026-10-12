@@ -53,6 +53,10 @@
       "membershipLine": "Current SAFA membership is required to fly in Australia, including for visiting pilots.",
       "visitingPilotsUrl": "https://safa.asn.au/pilot-tools/visiting-international-pilots/",
       "joinUrl": "https://safa.asn.au/learn-to-fly/join-now/",
+      "shortName": "SAFA",
+      "learnUrl": "https://safa.asn.au/why-fly/four-steps-to-flying/",
+      "feesUrl": "https://safa.asn.au/pilot-tools/membership-and-fees/",
+      "equipmentUrl": "https://safa.asn.au/pilot-tools/buying-equipment/",
       "orgId": "org:au:sports-aviation-federation-of-australia"
     }
   },
@@ -122,6 +126,9 @@
       "membershipLine": "NZHGPA membership (or a visitor membership) is required to fly in New Zealand.",
       "visitingPilotsUrl": "https://nzhgpa.org.nz/flying-in-nz/",
       "joinUrl": "https://nzhgpa.org.nz/membership/",
+      "shortName": "NZHGPA",
+      "learnUrl": "https://nzhgpa.org.nz/finding-a-school/",
+      "feesUrl": "https://nzhgpa.org.nz/membership/",
       "orgId": "org:nz:new-zealand-hang-gliding-paragliding-association"
     }
   }

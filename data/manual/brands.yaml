@@ -1,0 +1,47 @@
+# Where to buy (docs/02 §5.8): brands and the Australian businesses that import, sell or service
+# them, parsed by hand from the seed's brands_or_notes column (founder's research, checked
+# 2026-10-08 to 10-12). Roles say only what each business publishes about itself:
+#   official_importer  "official importer"        core_importer  "importer" (as it describes itself)
+#   dealer             sells or represents         service_agent  "agent for"
+#   certified_service  certified to service, as it publishes
+# `org` is a seed legacy ID (merged shop rows point at their school, docs/10 D40).
+- name: Advance
+  distributors: [{ org: RTL-002, role: core_importer }, { org: SCH-021, role: service_agent }]
+- name: Apco
+  distributors: [{ org: SVC-001, role: certified_service }]
+- name: BGD
+  distributors: [{ org: RTL-002, role: core_importer }, { org: RTL-001, role: dealer }, { org: SCH-021, role: service_agent }]
+- name: Charly
+  distributors: [{ org: RTL-003, role: core_importer }, { org: RTL-002, role: core_importer }]
+- name: Dudek
+  distributors: [{ org: RTL-002, role: core_importer }, { org: RTL-001, role: dealer }]
+- name: Flare
+  distributors: [{ org: RTL-001, role: dealer }]
+- name: Flow
+  distributors: [{ org: RTL-003, role: core_importer }, { org: SCH-026, role: dealer }, { org: SCH-027, role: dealer }, { org: SVC-001, role: certified_service }]
+- name: Flymaster
+  distributors: [{ org: RTL-002, role: core_importer }]
+- name: Gin
+  distributors: [{ org: SCH-019, role: official_importer }, { org: RTL-002, role: core_importer }, { org: RTL-001, role: dealer }]
+- name: Gradient
+  distributors: [{ org: SVC-001, role: certified_service }]
+- name: Neo
+  distributors: [{ org: RTL-003, role: core_importer }]
+- name: Niviuk
+  distributors: [{ org: RTL-001, role: dealer }, { org: SCH-026, role: dealer }, { org: SCH-027, role: dealer }, { org: SCH-021, role: service_agent }]
+- name: Nova
+  distributors: [{ org: RTL-002, role: core_importer }, { org: SCH-021, role: service_agent }, { org: SVC-001, role: certified_service }]
+- name: Ozone
+  distributors: [{ org: RTL-003, role: core_importer }, { org: RTL-002, role: core_importer }, { org: RTL-001, role: dealer }]
+- name: PHI
+  distributors: [{ org: RTL-002, role: core_importer }, { org: RTL-001, role: dealer }, { org: SCH-021, role: service_agent }]
+- name: Skywalk
+  distributors: [{ org: SCH-021, role: official_importer }, { org: SVC-001, role: certified_service }]
+- name: Sup'Air
+  distributors: [{ org: SCH-019, role: official_importer }, { org: RTL-002, role: core_importer }]
+- name: Syride
+  distributors: [{ org: RTL-002, role: core_importer }]
+- name: Woody Valley
+  distributors: [{ org: RTL-003, role: core_importer }, { org: RTL-002, role: core_importer }]
+- name: XC Tracer
+  distributors: [{ org: RTL-002, role: core_importer }]

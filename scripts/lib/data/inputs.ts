@@ -5,6 +5,7 @@ import { parse as parseCsv } from "csv-parse/sync";
 import { parse as parseYaml } from "yaml";
 import type { z } from "zod";
 import {
+  brandsFileSchema,
   clubAliasesFileSchema,
   countriesFileSchema,
   nzSampleSitesFileSchema,
@@ -69,5 +70,6 @@ export function readInputs(root: string = process.cwd()): BuildInputs {
     sampleSites: readYaml("nz-sample-sites.yaml", nzSampleSitesFileSchema),
     sampleSitesChecked: SAMPLE_SITES_CHECKED,
     offerings: readYaml("offerings.yaml", offeringsFileSchema),
+    brands: readYaml("brands.yaml", brandsFileSchema) ?? [],
   };
 }

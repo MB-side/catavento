@@ -287,6 +287,10 @@ export interface NationalBody {
   membershipLine: string;
   visitingPilotsUrl?: string;
   joinUrl?: string;
+  shortName?: string; // e.g. "SAFA", for "Listed by SAFA" (docs/07 §2)
+  learnUrl?: string; // the national body's own "how to start" page
+  feesUrl?: string; // membership fees
+  equipmentUrl?: string; // advice on buying equipment
 }
 
 export interface Country {

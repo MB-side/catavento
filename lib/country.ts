@@ -21,3 +21,16 @@ export function getCountry(code: CountryCode): Country | undefined {
   const upper = code.toUpperCase();
   return getEnabledCountries().find((c) => c.code === upper);
 }
+
+/** For pages under /[country]: the enabled country for the URL segment, or undefined. */
+export async function countryFromParams(
+  params: Promise<{ country: string }>,
+): Promise<Country | undefined> {
+  const { country } = await params;
+  return getCountry(country);
+}
+
+/** Countries with full coverage get the whole section; sample countries a short version. */
+export function fullCoverageCountries(): Country[] {
+  return getEnabledCountries().filter((c) => c.coverage === "full");
+}
