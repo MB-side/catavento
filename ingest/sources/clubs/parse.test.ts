@@ -116,6 +116,7 @@ describe("site names on a club's sites page", () => {
     expect(nameVariants("Hill")).toEqual([]);
     expect(nameVariants("Strzelecki lookout")).toEqual(["strzelecki lookout", "strzelecki"]);
     expect(nameVariants("Hunter - Lookout")).toEqual(["hunter lookout", "hunter"]);
+    expect(nameVariants("Long Reef NE")).toEqual(["long reef ne", "long reef"]);
     expect(mentions(text, "The Hill")).toBe(true);
   });
 });

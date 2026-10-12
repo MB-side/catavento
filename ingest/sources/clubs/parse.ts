@@ -257,6 +257,25 @@ export function pageText(html: string): string {
   return ` ${phrase($("body").text())} `;
 }
 
+const COMPASS = new Set([
+  "n",
+  "nne",
+  "ne",
+  "ene",
+  "e",
+  "ese",
+  "se",
+  "sse",
+  "s",
+  "ssw",
+  "sw",
+  "wsw",
+  "w",
+  "wnw",
+  "nw",
+  "nnw",
+]);
+
 // Words that name a kind of place, not a place: never enough on their own.
 const GENERIC = new Set([
   "lookout",
@@ -306,10 +325,12 @@ export function nameVariants(name: string): string[] {
     const v = phrase(piece);
     if (!v) continue;
     out.add(v);
-    // "Strzelecki Lookout" is often just "Strzelecki".
+    // "Strzelecki Lookout" is often just "Strzelecki"; "Long Reef NE" (a launch) just "Long Reef".
     const words = v.split(" ");
-    if (words.length > 1 && GENERIC.has(words.at(-1) as string))
+    const last = words.at(-1) as string;
+    if (words.length > 1 && (GENERIC.has(last) || COMPASS.has(last))) {
       out.add(words.slice(0, -1).join(" "));
+    }
     if (/^(mt|mount) /.test(v)) {
       out.add(v.replace(/^mt /, "mount ").replace(/^mount /, "mt "));
       out.add(v.replace(/^(mt|mount) /, ""));

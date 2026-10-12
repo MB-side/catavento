@@ -1,3 +1,28 @@
 # Curated weather stations per site, in display order (docs/04 §4, docs/05 §5.5).
-# Australian sites arrive with the Site Guide import (M2); entries are added here as they're checked.
+# Australian entries matched by hand on 2026-10-12: the station's own name names the site (the
+# station list has no positions, so nothing is matched automatically). Stations whose site isn't
+# certain (Backyards, Berrigal Airstrip, Hooley Dooley, Lady Bay, Mt Inkerman, Pops, Porepunkah
+# Airfield, Single Hill, Stringybark) are left unlinked until checked.
 site:nz:auk:karioitahi-beach: [station:holfuy:213]
+site:au:nsw:long-reef-ne: [station:club-stations:wind-flysydney-com-au]
+site:au:nsw:long-reef-se: [station:club-stations:wind-flysydney-com-au]
+site:au:nsw:stanwell-park-bald-hill: [station:holfuy:156, station:freeflightwx:stanwell]
+site:au:nsw:hill-60: [station:weatherlink:0a7df552-f465-4ce4-90e1-6967f3cf0918]
+site:au:nsw:spring-hill: [station:freeflightwx:acthpa-springhill]
+site:au:nsw:lake-george-collector: [station:freeflightwx:acthpa-lakegeorge]
+site:au:nsw:lake-george-gearys-gap: [station:freeflightwx:acthpa-lakegeorge]
+site:au:nsw:lake-george-south-launch: [station:freeflightwx:acthpa-lakegeorge]
+site:au:act:lanyon: [station:freeflightwx:acthpa-lanyon]
+site:au:nsw:crackneck-lookout: [station:freeflightwx:crackneck]
+site:au:nsw:glennies-ridge-lake-st-clair-little-europe: [station:freeflightwx:lakestclaire]
+site:au:vic:mt-elliot: [station:freeflightwx:acthpa-corryong]
+site:au:vic:the-pines-buckland-ridge: [station:freeflightwx:buckland]
+site:au:vic:mt-emu: [station:freeflightwx:emu]
+site:au:vic:three-sisters-flowerdale: [station:freeflightwx:flowerdale]
+site:au:vic:gundowring-savhill: [station:freeflightwx:gundowring]
+site:au:vic:mt-broughton-thistle-hill: [station:freeflightwx:mtbroughton]
+site:au:vic:mystic: [station:freeflightwx:mystic]
+site:au:qld:ma-ma-creek: [station:freeflightwx:mama]
+site:au:qld:killarney: [station:freeflightwx:killarney]
+site:au:qld:wilsons: [station:freeflightwx:wilsons]
+site:au:sa:tunkalilla: [station:freeflightwx:tunk4]

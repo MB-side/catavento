@@ -405,6 +405,7 @@ export const countryInputSchema = z.object({
   default: z.boolean().optional(),
   regionLabel: z.string().min(1),
   regions: z.array(regionCode).min(1),
+  regionNames: z.record(regionCode, z.string().min(1)),
   timezones: z.array(z.string().min(1)).min(1),
   currency: z.string().regex(/^[A-Z]{3}$/),
   defaultUnits: z.object({
@@ -430,7 +431,13 @@ export const countryInputSchema = z.object({
   primarySiteSource: z.string().min(1),
   coverage: z.enum(["full", "sample"]),
 });
-export const countriesFileSchema = z.array(countryInputSchema).min(1);
+export const countriesFileSchema = z
+  .array(
+    countryInputSchema.refine((c) => c.regions.every((r) => c.regionNames[r]), {
+      message: "every region in `regions` needs a name in `regionNames`",
+    }),
+  )
+  .min(1);
 
 export const countrySchema = z.object({
   ...countryInputSchema.shape,

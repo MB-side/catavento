@@ -5,6 +5,15 @@
   default: true
   regionLabel: State or territory
   regions: [AU-NSW, AU-VIC, AU-QLD, AU-SA, AU-WA, AU-TAS, AU-ACT, AU-NT]
+  regionNames:
+    AU-NSW: New South Wales
+    AU-VIC: Victoria
+    AU-QLD: Queensland
+    AU-SA: South Australia
+    AU-WA: Western Australia
+    AU-TAS: Tasmania
+    AU-ACT: Australian Capital Territory
+    AU-NT: Northern Territory
   timezones: [Australia/Sydney, Australia/Melbourne, Australia/Brisbane, Australia/Adelaide, Australia/Perth, Australia/Hobart, Australia/Darwin]
   currency: AUD
   defaultUnits: { speed: kmh, altitude: m }
@@ -25,6 +34,24 @@
   default: false
   regionLabel: Region
   regions: [NZ-NTL, NZ-AUK, NZ-WKO, NZ-BOP, NZ-GIS, NZ-HKB, NZ-TKI, NZ-MWT, NZ-WGN, NZ-TAS, NZ-NSN, NZ-MBH, NZ-WTC, NZ-CAN, NZ-OTA, NZ-STL, NZ-CIT]   # all ISO 3166-2:NZ regions (docs/10 C22)
+  regionNames:
+    NZ-NTL: Northland
+    NZ-AUK: Auckland
+    NZ-WKO: Waikato
+    NZ-BOP: Bay of Plenty
+    NZ-GIS: Gisborne
+    NZ-HKB: Hawke's Bay
+    NZ-TKI: Taranaki
+    NZ-MWT: Manawatū-Whanganui
+    NZ-WGN: Wellington
+    NZ-TAS: Tasman
+    NZ-NSN: Nelson
+    NZ-MBH: Marlborough
+    NZ-WTC: West Coast
+    NZ-CAN: Canterbury
+    NZ-OTA: Otago
+    NZ-STL: Southland
+    NZ-CIT: Chatham Islands
   timezones: [Pacific/Auckland]
   currency: NZD
   defaultUnits: { speed: kmh, altitude: m }
