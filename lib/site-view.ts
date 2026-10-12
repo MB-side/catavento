@@ -10,6 +10,7 @@ import {
   getStations,
 } from "@/lib/data";
 import { distanceKm } from "@/lib/geo";
+import { clubPath } from "@/lib/clubs";
 import { summarise, type SiteSummary } from "@/lib/site-summary";
 import { mainLaunch } from "@/lib/sites";
 import type {
@@ -118,14 +119,18 @@ export function siteView(site: Site, today: string): SiteView {
 
 /** Summaries for the sites list and map, with steward or listed-contact names filled in. */
 export function siteSummaries(country: Country, regionCode?: string): SiteSummary[] {
-  const orgName = (id?: string) => (id ? getOrganisation(id)?.name : undefined);
+  const org = (id?: string) => (id ? getOrganisation(id) : undefined);
+  const page = (o?: Organisation) =>
+    o && (o.kind === "club" || o.kind === "regional_association") ? clubPath(o) : undefined;
   return getSites(country.code)
     .filter((s) => !regionCode || s.regionCode === regionCode)
     .sort((a, b) => a.name.localeCompare(b.name))
     .map((s) =>
       summarise(s, country.regionNames[s.regionCode] ?? s.regionCode, {
-        steward: orgName(s.stewardOrgId),
-        contact: orgName(s.listedContact?.orgId) ?? s.listedContact?.name,
+        steward: org(s.stewardOrgId)?.name,
+        stewardHref: page(org(s.stewardOrgId)),
+        contact: org(s.listedContact?.orgId)?.name ?? s.listedContact?.name,
+        contactHref: page(org(s.listedContact?.orgId)),
       }),
     );
 }

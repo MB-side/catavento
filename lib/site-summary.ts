@@ -15,7 +15,9 @@ export interface SiteSummary {
   windParsed: boolean;
   disciplines: Discipline[];
   steward?: string; // "Managed by …" when confirmed
+  stewardHref?: string; // its club page
   contact?: string; // the listed contact otherwise
+  contactHref?: string;
   lat?: number;
   lon?: number;
 }
@@ -23,7 +25,7 @@ export interface SiteSummary {
 export function summarise(
   site: Site,
   regionName: string,
-  names: { steward?: string; contact?: string },
+  names: { steward?: string; stewardHref?: string; contact?: string; contactHref?: string },
 ): SiteSummary {
   const launch = mainLaunch(site);
   return {
@@ -39,7 +41,9 @@ export function summarise(
     windParsed: site.windRanges === "all" || site.windRanges.length > 0,
     disciplines: site.disciplines,
     steward: names.steward,
+    stewardHref: names.steward ? names.stewardHref : undefined,
     contact: names.steward ? undefined : names.contact,
+    contactHref: names.steward ? undefined : names.contactHref,
     lat: launch?.lat,
     lon: launch?.lon,
   };

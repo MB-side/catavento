@@ -1,7 +1,9 @@
 // Steward panel (docs/02 §5.4, docs/06 §6): who manages the site, how to contact them, and the
 // first-flight and national-body lines. Same prominence for every role. A site guide's contact on
 // its own is shown as "Contact listed in the Site Guide", never as "Managed by" (D47).
+import Link from "next/link";
 import { ExternalLink, Mail } from "lucide-react";
+import { clubPath } from "@/lib/clubs";
 import { correctionFormUrl } from "@/lib/links";
 import { t } from "@/lib/messages";
 import { absoluteUrl } from "@/lib/paths";
@@ -24,6 +26,17 @@ interface StewardPanelProps {
   steward?: Organisation;
   listed?: Organisation;
   also: { org: Organisation; note?: string }[];
+}
+
+/** The organisation's name, linked to its club page when it has one. */
+function OrgName({ org, fallback }: { org?: Organisation; fallback?: string }) {
+  const name = org?.name ?? fallback;
+  const linked = org && (org.kind === "club" || org.kind === "regional_association");
+  return (
+    <p className="mt-1 font-condensed text-[1.5rem] leading-tight font-bold">
+      {linked ? <Link href={clubPath(org)}>{name}</Link> : name}
+    </p>
+  );
 }
 
 function ContactButtons({
@@ -79,9 +92,7 @@ export function StewardPanel({ site, country, steward, listed, also }: StewardPa
 
       {steward && (
         <>
-          <p className="mt-1 font-condensed text-[1.5rem] leading-tight font-bold">
-            {steward.name}
-          </p>
+          <OrgName org={steward} />
           {confirmedByClub && label === "managedBy" && (
             <p className="mt-1 text-[0.875rem] text-muted">{t("site.steward.confirmed")}</p>
           )}
@@ -95,7 +106,7 @@ export function StewardPanel({ site, country, steward, listed, also }: StewardPa
 
       {!steward && label === "listedContact" && listedName && (
         <>
-          <p className="mt-1 font-condensed text-[1.5rem] leading-tight font-bold">{listedName}</p>
+          <OrgName org={listed} fallback={listedName} />
           <ContactButtons
             email={listed?.emailPublic}
             website={listed?.website ?? site.listedContact?.url}
