@@ -1,1 +1,290 @@
-[]
+[
+  {
+    "id": "brand:advance",
+    "name": "Advance",
+    "distributors": [
+      {
+        "orgId": "org:au:fly2base",
+        "role": "core_importer"
+      },
+      {
+        "orgId": "org:au:paratech-paragliding",
+        "role": "service_agent"
+      }
+    ]
+  },
+  {
+    "id": "brand:apco",
+    "name": "Apco",
+    "distributors": [
+      {
+        "orgId": "org:au:paragliding-repair-centre",
+        "role": "certified_service"
+      }
+    ]
+  },
+  {
+    "id": "brand:bgd",
+    "name": "BGD",
+    "distributors": [
+      {
+        "orgId": "org:au:fly2base",
+        "role": "core_importer"
+      },
+      {
+        "orgId": "org:au:paragliding-shop",
+        "role": "dealer"
+      },
+      {
+        "orgId": "org:au:paratech-paragliding",
+        "role": "service_agent"
+      }
+    ]
+  },
+  {
+    "id": "brand:charly",
+    "name": "Charly",
+    "distributors": [
+      {
+        "orgId": "org:au:planet-paragliding",
+        "role": "core_importer"
+      },
+      {
+        "orgId": "org:au:fly2base",
+        "role": "core_importer"
+      }
+    ]
+  },
+  {
+    "id": "brand:dudek",
+    "name": "Dudek",
+    "distributors": [
+      {
+        "orgId": "org:au:fly2base",
+        "role": "core_importer"
+      },
+      {
+        "orgId": "org:au:paragliding-shop",
+        "role": "dealer"
+      }
+    ]
+  },
+  {
+    "id": "brand:flare",
+    "name": "Flare",
+    "distributors": [
+      {
+        "orgId": "org:au:paragliding-shop",
+        "role": "dealer"
+      }
+    ]
+  },
+  {
+    "id": "brand:flow",
+    "name": "Flow",
+    "distributors": [
+      {
+        "orgId": "org:au:planet-paragliding",
+        "role": "core_importer"
+      },
+      {
+        "orgId": "org:au:skysurf-paragliding-canberra",
+        "role": "dealer"
+      },
+      {
+        "orgId": "org:au:skysurf-paragliding-wollongong",
+        "role": "dealer"
+      },
+      {
+        "orgId": "org:au:paragliding-repair-centre",
+        "role": "certified_service"
+      }
+    ]
+  },
+  {
+    "id": "brand:flymaster",
+    "name": "Flymaster",
+    "distributors": [
+      {
+        "orgId": "org:au:fly2base",
+        "role": "core_importer"
+      }
+    ]
+  },
+  {
+    "id": "brand:gin",
+    "name": "Gin",
+    "distributors": [
+      {
+        "orgId": "org:au:paragliding-queensland",
+        "role": "official_importer"
+      },
+      {
+        "orgId": "org:au:fly2base",
+        "role": "core_importer"
+      },
+      {
+        "orgId": "org:au:paragliding-shop",
+        "role": "dealer"
+      }
+    ]
+  },
+  {
+    "id": "brand:gradient",
+    "name": "Gradient",
+    "distributors": [
+      {
+        "orgId": "org:au:paragliding-repair-centre",
+        "role": "certified_service"
+      }
+    ]
+  },
+  {
+    "id": "brand:neo",
+    "name": "Neo",
+    "distributors": [
+      {
+        "orgId": "org:au:planet-paragliding",
+        "role": "core_importer"
+      }
+    ]
+  },
+  {
+    "id": "brand:niviuk",
+    "name": "Niviuk",
+    "distributors": [
+      {
+        "orgId": "org:au:paragliding-shop",
+        "role": "dealer"
+      },
+      {
+        "orgId": "org:au:skysurf-paragliding-canberra",
+        "role": "dealer"
+      },
+      {
+        "orgId": "org:au:skysurf-paragliding-wollongong",
+        "role": "dealer"
+      },
+      {
+        "orgId": "org:au:paratech-paragliding",
+        "role": "service_agent"
+      }
+    ]
+  },
+  {
+    "id": "brand:nova",
+    "name": "Nova",
+    "distributors": [
+      {
+        "orgId": "org:au:fly2base",
+        "role": "core_importer"
+      },
+      {
+        "orgId": "org:au:paratech-paragliding",
+        "role": "service_agent"
+      },
+      {
+        "orgId": "org:au:paragliding-repair-centre",
+        "role": "certified_service"
+      }
+    ]
+  },
+  {
+    "id": "brand:ozone",
+    "name": "Ozone",
+    "distributors": [
+      {
+        "orgId": "org:au:planet-paragliding",
+        "role": "core_importer"
+      },
+      {
+        "orgId": "org:au:fly2base",
+        "role": "core_importer"
+      },
+      {
+        "orgId": "org:au:paragliding-shop",
+        "role": "dealer"
+      }
+    ]
+  },
+  {
+    "id": "brand:phi",
+    "name": "PHI",
+    "distributors": [
+      {
+        "orgId": "org:au:fly2base",
+        "role": "core_importer"
+      },
+      {
+        "orgId": "org:au:paragliding-shop",
+        "role": "dealer"
+      },
+      {
+        "orgId": "org:au:paratech-paragliding",
+        "role": "service_agent"
+      }
+    ]
+  },
+  {
+    "id": "brand:skywalk",
+    "name": "Skywalk",
+    "distributors": [
+      {
+        "orgId": "org:au:paratech-paragliding",
+        "role": "official_importer"
+      },
+      {
+        "orgId": "org:au:paragliding-repair-centre",
+        "role": "certified_service"
+      }
+    ]
+  },
+  {
+    "id": "brand:supair",
+    "name": "Sup'Air",
+    "distributors": [
+      {
+        "orgId": "org:au:paragliding-queensland",
+        "role": "official_importer"
+      },
+      {
+        "orgId": "org:au:fly2base",
+        "role": "core_importer"
+      }
+    ]
+  },
+  {
+    "id": "brand:syride",
+    "name": "Syride",
+    "distributors": [
+      {
+        "orgId": "org:au:fly2base",
+        "role": "core_importer"
+      }
+    ]
+  },
+  {
+    "id": "brand:woody-valley",
+    "name": "Woody Valley",
+    "distributors": [
+      {
+        "orgId": "org:au:planet-paragliding",
+        "role": "core_importer"
+      },
+      {
+        "orgId": "org:au:fly2base",
+        "role": "core_importer"
+      }
+    ]
+  },
+  {
+    "id": "brand:xc-tracer",
+    "name": "XC Tracer",
+    "distributors": [
+      {
+        "orgId": "org:au:fly2base",
+        "role": "core_importer"
+      }
+    ]
+  }
+]

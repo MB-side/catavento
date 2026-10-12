@@ -2869,6 +2869,7 @@
       "PG"
     ],
     "country": "NZ",
+    "regionCode": "NZ-HKB",
     "locality": "Napier",
     "nationalBodyListed": true,
     "sources": [
@@ -3025,6 +3026,7 @@
       "PG"
     ],
     "country": "NZ",
+    "regionCode": "NZ-CAN",
     "locality": "Canterbury",
     "nationalBodyListed": true,
     "summary": "Hang glider instruction; equipment, hire and repairs (per NZHGPA listing)",
@@ -3049,6 +3051,7 @@
       "PG"
     ],
     "country": "NZ",
+    "regionCode": "NZ-CAN",
     "locality": "Christchurch",
     "nationalBodyListed": true,
     "sources": [
@@ -3072,6 +3075,7 @@
       "PG"
     ],
     "country": "NZ",
+    "regionCode": "NZ-CAN",
     "locality": "Christchurch",
     "nationalBodyListed": true,
     "sources": [
@@ -3095,6 +3099,7 @@
       "PG"
     ],
     "country": "NZ",
+    "regionCode": "NZ-NTL",
     "locality": "Mangawhai Heads",
     "nationalBodyListed": true,
     "sources": [
@@ -3196,6 +3201,7 @@
       "PG"
     ],
     "country": "NZ",
+    "regionCode": "NZ-NSN",
     "locality": "Nelson",
     "nationalBodyListed": true,
     "sources": [
@@ -3219,6 +3225,7 @@
       "PG"
     ],
     "country": "NZ",
+    "regionCode": "NZ-NSN",
     "locality": "Nelson",
     "nationalBodyListed": true,
     "sources": [
