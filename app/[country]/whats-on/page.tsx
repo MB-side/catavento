@@ -3,7 +3,8 @@ import { EventsExplorer } from "@/components/domain/EventsExplorer";
 import { countryPageMetadata } from "@/components/layout/CountryPage";
 import { card, h2, PageHeader } from "@/components/layout/PageHeader";
 import { countryFromParams } from "@/lib/country";
-import { eventSummary, nationalNotices, upcomingEvents } from "@/lib/events-view";
+import { eventSummary, eventsJsonLd, nationalNotices, upcomingEvents } from "@/lib/events-view";
+import { jsonLdScript } from "@/lib/seo";
 import { formatDate } from "@/lib/format";
 import { t } from "@/lib/messages";
 
@@ -16,9 +17,8 @@ export default async function WhatsOnPage({ params }: PageProps<"/[country]/what
   const country = await countryFromParams(params);
   if (!country) notFound();
   const zone = country.timezones[0] ?? "UTC";
-  const events = upcomingEvents(country, new Date().toISOString().slice(0, 10)).map((e) =>
-    eventSummary(e, country),
-  );
+  const upcoming = upcomingEvents(country, new Date().toISOString().slice(0, 10));
+  const events = upcoming.map((e) => eventSummary(e, country));
   const regions = country.regions
     .filter((r) => events.some((e) => e.regionCode === r))
     .map((code) => ({ code, name: country.regionNames[code] ?? code }));
@@ -26,6 +26,12 @@ export default async function WhatsOnPage({ params }: PageProps<"/[country]/what
   const body = country.nationalBody.shortName ?? country.nationalBody.name;
   return (
     <div className="flex flex-col gap-8">
+      {upcoming.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLdScript(eventsJsonLd(upcoming, country)) }}
+        />
+      )}
       <PageHeader title={t("pages.whatsOn.title")} intro={t("whatsOn.intro")} />
       <section aria-labelledby="events">
         <h2 id="events" className={`${h2} mb-3`}>

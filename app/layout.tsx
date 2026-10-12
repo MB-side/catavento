@@ -14,14 +14,15 @@ import "./globals.css";
 // latin-ext covers macrons in New Zealand place names.
 const barlow = Barlow({
   weight: ["400", "500", "600", "700"],
-  subsets: ["latin", "latin-ext"],
+  // Only Latin is preloaded; the latin-ext faces (e.g. "ū" in Manawatū) still load when a page uses them.
+  subsets: ["latin"],
   variable: "--font-barlow",
   display: "swap",
 });
 
 const barlowCondensed = Barlow_Condensed({
   weight: ["500", "600", "700"],
-  subsets: ["latin", "latin-ext"],
+  subsets: ["latin"],
   variable: "--font-barlow-condensed",
   display: "swap",
 });
@@ -31,7 +32,10 @@ export const metadata: Metadata = {
   description: siteConfig.descriptor,
   applicationName: siteConfig.name,
   metadataBase: new URL(`${siteConfig.siteUrl}/`),
-  icons: { apple: withBasePath("/icons/apple-touch-icon.png") },
+  icons: {
+    icon: [{ url: withBasePath("/icon.svg"), type: "image/svg+xml" }],
+    apple: withBasePath("/icons/apple-touch-icon.png"),
+  },
   appleWebApp: { capable: true, title: siteConfig.name, statusBarStyle: "default" },
   robots,
   openGraph: { siteName: siteConfig.name, type: "website", url: absoluteUrl("/") },
