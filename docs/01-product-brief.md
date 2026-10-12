@@ -96,7 +96,7 @@ Acquire through the one-off questions, retain through the daily and weekly ones,
 
 | Item | Decision |
 |---|---|
-| Name | **Catavento** (D33; replaces Catavento) |
+| Name | **Catavento** (D33; replaces HouseThermal) |
 | Spelling | Always one word, capital C only: **Catavento**. Never "Cata-vento", "CataVento" or "Cata Vento" in UI, titles or code constants |
 | Primary descriptor | **Paragliding and hang gliding, all in one place** |
 | Australian page-title descriptor (Iteration 1) | **Paragliding and hang gliding in Australia, all in one place** |

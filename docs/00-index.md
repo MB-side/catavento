@@ -46,7 +46,7 @@ Each topic is defined in exactly one place. Other documents link to it rather th
 
 | Term | Meaning |
 |---|---|
-| **Catavento** | This website's name (Portuguese for pinwheel, "catch the wind"): always one word, capital C only. Set in `site.config.ts`. See `docs/01` §8. Formerly Catavento (D33). |
+| **Catavento** | This website's name (Portuguese for pinwheel, "catch the wind"): always one word, capital C only. Set in `site.config.ts`. See `docs/01` §8. Formerly HouseThermal (D33). |
 | **Hub** | Informal word for the site as a whole (the centre of the spoked wheel). |
 | **Site** | A named flying site (e.g. "Long Reef NE"). Contains one or more **launches**. |
 | **Launch** | A take-off point with coordinates. Coordinates live on launches, not sites. |

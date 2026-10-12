@@ -32,7 +32,7 @@ scope `docs/02` · architecture `docs/03` · data `docs/04` · sources and scrap
 - **No invented facts and no `[placeholder]` text on deployed pages.** Use "Not published", "Ask the club" or "Contact the school".
 - **Accessibility:** WCAG 2.2 AA, real buttons and links, 44 px targets, text on every coloured outlook cell.
 - **Never import from `design/mockups/`.** They are visual references only.
-- **The name is always written Catavento** (one word, capital C only) in UI text, metadata and code constants; never "Cata-vento", "CataVento" or "Cata Vento". It replaced Catavento (D33). Brand rules: `docs/01` §8 and `docs/06` §9.
+- **The name is always written Catavento** (one word, capital C only) in UI text, metadata and code constants; never "Cata-vento", "CataVento" or "Cata Vento". It replaced the working name HouseThermal (D33). Brand rules: `docs/01` §8 and `docs/06` §9.
 
 ## Code standards
 
