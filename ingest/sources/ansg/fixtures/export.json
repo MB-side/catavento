@@ -1,0 +1,235 @@
+{
+ "version": {
+  "id": 892,
+  "comment": "No landing updates",
+  "published": "2026-10-01T08:41:19Z"
+ },
+ "sites": [
+  {
+   "id": 1,
+   "areaId": 9,
+   "name": "Tunkalilla",
+   "closed": null,
+   "rating": "PG2 / HG Supervised, top landing HG Intermediate",
+   "height": "280'/85m asl, 250' agl",
+   "type": "Coastal ridge ~ 10 km",
+   "restrictions": null,
+   "shortLocation": "Prose that must not be copied.",
+   "extendedLocation": null,
+   "conditions": "SE - SSW",
+   "description": "Prose that must not be copied.",
+   "takeoff": "Prose that must not be copied.",
+   "landing": "Prose that must not be copied.",
+   "landowners": "Prose that must not be copied.",
+   "flightComments": "Prose that must not be copied.",
+   "hazardsComments": "Prose that must not be copied.",
+   "insetMapPosition": {
+    "id": 1,
+    "name": "Bottom Right"
+   },
+   "smallPicture": "SA_Tunk.jpg",
+   "smallPictureTitle": null,
+   "smallPictureHref": null,
+   "launches": [
+    {
+     "id": 111,
+     "name": null,
+     "closed": null,
+     "conditions": null,
+     "description": null,
+     "lat": -35.6342,
+     "lon": 138.3155,
+     "estaEmergencyMarker": null
+    }
+   ],
+   "mapShapeIds": [],
+   "contacts": [
+    {
+     "isContact": true,
+     "isResponsible": true,
+     "id": 41,
+     "name": "SAHPGA",
+     "fullName": "South Australian Hang Gliding & Paragliding Association",
+     "link": "https://sites.google.com/site/sahpgahome/",
+     "address": null,
+     "phone": null,
+     "safaClubId": "SAHPGA"
+    }
+   ],
+   "videos": [
+    {
+     "id": 59,
+     "type": {
+      "id": 1,
+      "name": "YouTube"
+     },
+     "identifier": "_gRNcAQPj6g"
+    }
+   ],
+   "seeAlsos": []
+  },
+  {
+   "id": 106,
+   "areaId": 6,
+   "name": "Lanyon",
+   "closed": null,
+   "rating": "PG2 / HG Supervised",
+   "height": "900m ASL, 250m AGL",
+   "type": "Inland Hill",
+   "restrictions": null,
+   "shortLocation": "Prose that must not be copied.",
+   "extendedLocation": "Prose that must not be copied.",
+   "conditions": "W",
+   "description": "Prose that must not be copied.",
+   "takeoff": "Prose that must not be copied.",
+   "landing": "Prose that must not be copied.",
+   "landowners": "Prose that must not be copied.",
+   "flightComments": null,
+   "hazardsComments": "Prose that must not be copied.",
+   "insetMapPosition": {
+    "id": 1,
+    "name": "Bottom Right"
+   },
+   "smallPicture": null,
+   "smallPictureTitle": null,
+   "smallPictureHref": null,
+   "launches": [
+    {
+     "id": 28,
+     "name": null,
+     "closed": null,
+     "conditions": null,
+     "description": null,
+     "lat": -35.48388,
+     "lon": 149.10754,
+     "estaEmergencyMarker": null
+    }
+   ],
+   "mapShapeIds": [
+    23,
+    24,
+    401
+   ],
+   "contacts": [
+    {
+     "isContact": true,
+     "isResponsible": true,
+     "id": 20,
+     "name": "ACTHPA",
+     "fullName": "ACT HG and PG Association",
+     "link": "https://acthpa.org/info/about/",
+     "address": null,
+     "phone": null,
+     "safaClubId": "ACTHPA"
+    }
+   ],
+   "videos": [],
+   "seeAlsos": []
+  },
+  {
+   "id": 5,
+   "areaId": 9,
+   "name": "Myponga Cliffs",
+   "closed": "Closed: reason as prose that must not be copied.",
+   "rating": "HG Novice, PG2",
+   "height": "300' / 90m",
+   "type": "Coastal ridge / cliff",
+   "restrictions": null,
+   "shortLocation": "Prose that must not be copied.",
+   "extendedLocation": null,
+   "conditions": "NW, WNW possible",
+   "description": "Prose that must not be copied.",
+   "takeoff": null,
+   "landing": null,
+   "landowners": null,
+   "flightComments": null,
+   "hazardsComments": null,
+   "insetMapPosition": {
+    "id": 1,
+    "name": "Bottom Right"
+   },
+   "smallPicture": null,
+   "smallPictureTitle": null,
+   "smallPictureHref": null,
+   "launches": [
+    {
+     "id": 220,
+     "name": null,
+     "closed": null,
+     "conditions": null,
+     "description": null,
+     "lat": -35.3541,
+     "lon": 138.4367,
+     "estaEmergencyMarker": null
+    }
+   ],
+   "mapShapeIds": [],
+   "contacts": [
+    {
+     "isContact": true,
+     "isResponsible": true,
+     "id": 41,
+     "name": "SAHPGA",
+     "fullName": "South Australian Hang Gliding & Paragliding Association",
+     "link": "https://sites.google.com/site/sahpgahome/",
+     "address": null,
+     "phone": null,
+     "safaClubId": "SAHPGA"
+    }
+   ],
+   "videos": [],
+   "seeAlsos": []
+  },
+  {
+   "id": 9001,
+   "areaId": 9,
+   "name": " Example Bluff ",
+   "closed": null,
+   "rating": "PG2",
+   "height": "120m",
+   "type": "Coastal",
+   "conditions": "A very long wind description that keeps going well past the eighty character limit for short facts.",
+   "launches": [
+    {
+     "id": 1,
+     "name": null,
+     "closed": null,
+     "lat": -33.1,
+     "lon": 151.6
+    }
+   ],
+   "contacts": [
+    {
+     "isContact": true,
+     "isResponsible": false,
+     "id": 1,
+     "name": "Pat Example",
+     "fullName": null,
+     "link": null,
+     "address": "1 Example Street",
+     "phone": "0400 000 000",
+     "safaClubId": null
+    },
+    {
+     "isContact": false,
+     "isResponsible": true,
+     "id": 2,
+     "name": "EXC",
+     "fullName": "Example Club",
+     "link": "https://club.example/",
+     "address": null,
+     "phone": null,
+     "safaClubId": "EX"
+    }
+   ]
+  },
+  {
+   "id": 9002,
+   "areaId": 9,
+   "name": "No Launch Site",
+   "closed": null,
+   "launches": [],
+   "contacts": []
+  }
+ ]
+}

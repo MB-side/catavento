@@ -119,6 +119,7 @@ export function toCollectedOrg(
     phonePublic: kind === "school" ? card.phone : undefined,
     disciplines: card.disciplines,
     associationName: extra.association,
+    externalId: kind === "club" ? card.detailPath?.split("id=")[1] : undefined,
     source: { providerId: "safa", url: extra.url, fetchedAt: "", licence: "facts" },
   };
 }

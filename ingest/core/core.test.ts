@@ -1,10 +1,8 @@
 import { mkdtempSync, readFileSync, rmSync } from "node:fs";
 import os from "node:os";
 import path from "node:path";
-import { strToU8, zipSync } from "fflate";
 import { afterEach, describe, expect, it } from "vitest";
 import type { Provider, ProviderRun, Site } from "@/lib/types";
-import { kmlText } from "../sources/ansg/collect";
 import { PoliteFetcher, RobotsDisallowedError, USER_AGENT } from "./fetcher";
 import { changeGuard } from "./guard";
 import type { RegionLookup } from "./regions";
@@ -114,21 +112,31 @@ describe("PoliteFetcher", () => {
     expect(waits[0]).toBeGreaterThan(2900);
   });
 
+  it("asks whether a resource changed, using the version tag from last time", async () => {
+    const seen: (string | null)[] = [];
+    const impl = (async (input: RequestInfo | URL, init?: RequestInit) => {
+      const url = String(input);
+      if (url.endsWith("/robots.txt")) return new Response("", { status: 404 });
+      const tag = new Headers(init?.headers).get("If-None-Match");
+      seen.push(tag);
+      return tag === '"892"'
+        ? new Response(null, { status: 304, headers: { ETag: '"892"' } })
+        : new Response("{}", { status: 200, headers: { ETag: '"892"' } });
+    }) as typeof fetch;
+    const f = new PoliteFetcher(impl, async () => {}, 0);
+    const first = await f.get("https://example.org/api/Export");
+    expect(first).toMatchObject({ status: 200, etag: '"892"', body: "{}" });
+    const second = await f.get("https://example.org/api/Export", { ifNoneMatch: '"892"' });
+    expect(second).toMatchObject({ status: 304, notModified: true, etag: '"892"', body: "" });
+    expect(seen).toEqual([null, '"892"']);
+  });
+
   it("gives up on a missing page without retrying", async () => {
     const { impl, seen } = fakeFetch({});
     await expect(
       new PoliteFetcher(impl, async () => {}, 0).get("https://example.org/gone"),
     ).rejects.toThrow("HTTP 404");
     expect(seen.filter((s) => s.url.endsWith("/gone"))).toHaveLength(1);
-  });
-});
-
-describe("kmlText", () => {
-  it("unzips a zipped Google Earth file, and passes plain KML through", () => {
-    const kml = '<?xml version="1.0"?><kml><Document/></kml>';
-    expect(kmlText({ bytes: zipSync({ "doc.kml": strToU8(kml) }) })).toBe(kml);
-    expect(kmlText({ bytes: strToU8(kml) })).toBe(kml);
-    expect(() => kmlText({ bytes: zipSync({ "readme.txt": strToU8("x") }) })).toThrow("no .kml");
   });
 });
 

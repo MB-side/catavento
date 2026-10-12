@@ -1,11 +1,11 @@
 // Turns parsed Site Guide sites into Catavento Site records (docs/04 §2). Region comes from the
-// first launch's position; the Site Guide's "Contact/Responsible" becomes a listed contact, not a
+// first launch's position; the Site Guide's listed contact (with its SAFA club code) becomes a listed contact, not a
 // steward: a club is shown as managing a site only when a second source agrees (D47).
 import type { Discipline, Site, SourceRef } from "@/lib/types";
 import { parseWindRange } from "@/lib/wind";
 import type { RegionLookup } from "../../core/regions";
 import { orgSlug, siteId } from "@/scripts/lib/data/ids";
-import type { ParsedSite } from "./parse";
+import type { ParsedSite } from "./export";
 
 export interface NormaliseContext {
   country: string;
@@ -77,7 +77,12 @@ export function normaliseSites(
       status: p.status,
       stewardRole: "unknown",
       listedContact: p.contact
-        ? { name: p.contact.name, url: p.contact.url, providerId: "ansg" }
+        ? {
+            name: p.contact.name,
+            url: p.contact.url,
+            providerId: "ansg",
+            clubRef: p.contact.clubRef,
+          }
         : undefined,
       launches: p.launches.map((l, i) => ({
         id: `${id}:launch:${i + 1}`,

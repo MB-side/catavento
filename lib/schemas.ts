@@ -130,6 +130,7 @@ const organisationShape = {
   additionalKinds: z.array(orgKindSchema).optional(),
   name: z.string().min(1),
   aliases: z.array(z.string()).optional(),
+  externalIds: z.record(z.string(), z.string()).optional(),
   disciplines: z.array(disciplineSchema),
   country: countryCode,
   regionCode: regionCode.optional(),
@@ -213,6 +214,7 @@ export const siteSchema = z.object({
       url: httpUrl.optional(),
       orgId: z.string().optional(),
       providerId: z.string().min(1),
+      clubRef: z.object({ providerId: z.string(), id: z.string() }).optional(),
     })
     .optional(),
   alsoAdministeredBy: z
@@ -324,6 +326,7 @@ export const collectedOrgSchema = z.object({
   phonePublic: z.string().optional(),
   disciplines: z.array(disciplineSchema),
   associationName: z.string().optional(),
+  externalId: z.string().optional(),
   source: sourceRefSchema,
 }) satisfies z.ZodType<CollectedOrg>;
 
@@ -454,6 +457,7 @@ export const providerRunSchema = z.object({
   lastSuccessAt: z.iso.datetime({ offset: true }).optional(),
   contentHash: z.string().optional(),
   info: z.array(z.string()).optional(),
+  sourceVersion: z.string().optional(),
 }) satisfies z.ZodType<ProviderRun>;
 
 export const buildReportSchema = z.object({

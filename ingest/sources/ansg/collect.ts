@@ -1,64 +1,55 @@
-// Australian National Site Guide: two downloads (open and closed sites), parsed for short facts.
-import { strFromU8, unzipSync } from "fflate";
-import { sha256, type FetchResult } from "../../core/fetcher";
+// Australian National Site Guide (amber tier, permission granted, D59): its export service,
+// checked daily with the version tag it sends, so an unchanged day costs one tiny reply.
+import { sha256 } from "../../core/fetcher";
 import type { ProviderModule } from "../../core/runner";
+import { parseExport, SITE_GUIDE_BASE, type SiteGuideExport } from "./export";
 import { normaliseSites } from "./normalise";
-import { parseSiteGuideKml } from "./parse";
 
-/** Bump when parsing or normalising changes, so the next run re-reads the files. */
-export const READER_VERSION = 3;
+/** Bump when parsing or normalising changes, so the next run re-reads the export. */
+export const READER_VERSION = 4;
 
-export const SITE_GUIDE_FILES = {
-  open: "https://siteguide.org.au/Kml/Open",
-  closed: "https://siteguide.org.au/Kml/Closed",
-} as const;
-
-/** The Site Guide serves zipped Google Earth files (.kmz) under a KML content type: unzip if needed. */
-export function kmlText(file: Pick<FetchResult, "bytes">): string {
-  const b = file.bytes;
-  if (b[0] === 0x50 && b[1] === 0x4b) {
-    const entries = unzipSync(b);
-    const name = Object.keys(entries).find((n) => n.toLowerCase().endsWith(".kml"));
-    if (!name) throw new Error("Zipped Site Guide file has no .kml inside");
-    return strFromU8(entries[name] as Uint8Array);
-  }
-  return new TextDecoder().decode(b);
-}
+export const SITE_GUIDE_EXPORT = `${SITE_GUIDE_BASE}/api/Export`;
 
 export const ansg: ProviderModule = {
   id: "ansg",
   async collect(ctx) {
-    const open = await ctx.fetcher.get(SITE_GUIDE_FILES.open);
-    const closed = await ctx.fetcher.get(SITE_GUIDE_FILES.closed);
-    // The reader's version is part of the fingerprint, so improving it re-reads unchanged files.
-    const contentHash = sha256(`${READER_VERSION}:${open.contentHash}:${closed.contentHash}`);
-    if (!ctx.force && contentHash === ctx.previous?.contentHash) {
-      return { unchanged: true, contentHash, records: {}, invalid: 0, warnings: [] };
-    }
-
-    const a = parseSiteGuideKml(kmlText(open), "open");
-    const b = parseSiteGuideKml(kmlText(closed), "closed");
-    const openUrls = new Set(a.sites.map((s) => s.siteGuideUrl));
-    // A site in both files is treated as closed only if it isn't also listed as open.
-    const parsed = [...a.sites, ...b.sites.filter((s) => !openUrls.has(s.siteGuideUrl))];
     const country = ctx.countries[0];
     if (ctx.countries.length !== 1 || !country)
       throw new Error("The Site Guide covers one country");
+
+    // Ask "has it changed?" only if the last copy was read by this version of the reader.
+    const [lastReader, lastTag] = (ctx.previous?.sourceVersion ?? "").split("|");
+    const ifNoneMatch =
+      !ctx.force && lastReader === String(READER_VERSION) && lastTag ? lastTag : undefined;
+    const res = await ctx.fetcher.get(SITE_GUIDE_EXPORT, { ifNoneMatch });
+    if (res.notModified) {
+      return {
+        unchanged: true,
+        contentHash: ctx.previous?.contentHash ?? "",
+        records: {},
+        invalid: 0,
+        warnings: [],
+        sourceVersion: ctx.previous?.sourceVersion,
+      };
+    }
+
+    const contentHash = sha256(`${READER_VERSION}:${res.etag ?? res.contentHash}`);
+    const { sites: parsed, skipped } = parseExport(JSON.parse(res.body) as SiteGuideExport);
     const { sites, warnings, invalid } = normaliseSites(parsed, {
       country: country.code,
       allowedRegions: country.regions,
       regions: ctx.regions,
-      fetchedAt: open.fetchedAt,
+      fetchedAt: res.fetchedAt,
       contentHash,
     });
-    for (const name of [...a.skipped, ...b.skipped])
-      warnings.push(`${name}: launch without a site link; skipped`);
+    for (const name of skipped) warnings.push(`${name}: no launch position; skipped`);
     return {
       unchanged: false,
       contentHash,
       records: { sites },
-      invalid: invalid + a.skipped.length + b.skipped.length,
+      invalid: invalid + skipped.length,
       warnings,
+      sourceVersion: res.etag ? `${READER_VERSION}|${res.etag}` : undefined,
     };
   },
 };

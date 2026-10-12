@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>Test copy: closed sites (made-up example)</name>
-<Placemark><name>Example Closed Hill</name><description>&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;h3&gt;&lt;a href=&quot;https://siteguide.org.au/Sites/Details/Example Closed Hill&quot;&gt;Example Closed Hill&lt;/a&gt;&lt;/h3&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr /&gt;&lt;table&gt;&lt;tr&gt;&lt;td&gt;Inland Hill&lt;/td&gt;&lt;td&gt;300m&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;N&lt;/td&gt;&lt;td&gt;&lt;p&gt;PG3&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</description><styleUrl>#styleClosedLaunch</styleUrl><Point><coordinates>149.10,-35.30</coordinates></Point></Placemark>
-<Placemark><name>Broken entry</name><description>no site link here</description><styleUrl>#styleLaunch</styleUrl><Point><coordinates>149.0,-35.0</coordinates></Point></Placemark>
-</Document></kml>
