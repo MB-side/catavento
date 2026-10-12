@@ -1,18 +1,21 @@
-# The nightly refresh: collects public data, commits it if anything changed, then calls the
-# publisher (docs/03 §5). M0: providers don't exist yet, so runs collect nothing; the nightly
-# schedule is switched on in M2. Run it by hand with "force deploy" to test the hand-off.
+# The daily check-in (docs/03 §5, D49): wakes once a day, runs only the providers whose own
+# schedule says they are due (weekly, monthly...), commits the data if anything changed, then
+# calls the publisher. Paused providers never run on the schedule.
 name: Ingest
 
 on:
-  # Switched on in M2 (02:30 AEST / 03:30 AEDT):
-  # schedule:
-  #   - cron: "30 16 * * *"
+  schedule:
+    - cron: "30 16 * * *" # 02:30 AEST / 03:30 AEDT
   workflow_dispatch:
     inputs:
       provider:
-        description: Run one provider only (leave empty for all enabled providers)
+        description: Run one provider only (leave empty for all providers that are due)
         type: string
         required: false
+      force_collect:
+        description: Collect now even if not due (with a provider named, even if paused)
+        type: boolean
+        default: false
       force_deploy:
         description: Publish even if no data changed
         type: boolean
@@ -45,8 +48,9 @@ jobs:
       - name: Run providers
         env:
           PROVIDER: ${{ inputs.provider }}
+          FORCE: ${{ inputs.force_collect && '--force' || '' }}
         run: |
-          if [ -n "${PROVIDER:-}" ]; then pnpm ingest --provider "$PROVIDER"; else pnpm ingest; fi
+          if [ -n "${PROVIDER:-}" ]; then pnpm ingest --provider "$PROVIDER" $FORCE; else pnpm ingest $FORCE; fi
       - run: pnpm build:data
       - name: Commit data changes
         id: commit

@@ -1,5 +1,5 @@
 // Reads and validates every input file for the data build (data/seed and data/manual).
-import { readFileSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { parse as parseCsv } from "csv-parse/sync";
 import { parse as parseYaml } from "yaml";
@@ -15,6 +15,7 @@ import {
   siteStationsFileSchema,
   siteStewardsFileSchema,
 } from "@/lib/schemas";
+import { ingestFileSchema, runsFileSchema } from "@/ingest/core/runner";
 import type { BuildInputs } from "./build";
 import type { CsvRow } from "./seed";
 
@@ -39,7 +40,19 @@ export function readInputs(root: string = process.cwd()): BuildInputs {
     }) as CsvRow[];
   }
 
+  const ingestDir = dataDir("ingest");
+  const ingestFiles = existsSync(ingestDir)
+    ? readdirSync(ingestDir)
+        .filter((f) => f.endsWith(".json") && !f.startsWith("_"))
+        .sort()
+        .map((f) => ingestFileSchema.parse(JSON.parse(readFileSync(path.join(ingestDir, f), "utf8"))))
+    : [];
+  const runsPath = path.join(ingestDir, "_runs.json");
+  const runs = existsSync(runsPath) ? runsFileSchema.parse(JSON.parse(readFileSync(runsPath, "utf8"))) : {};
+
   return {
+    ingestedSites: ingestFiles.flatMap((f) => f.records),
+    runs,
     directoryRows: readCsv("directory.csv"),
     stationRows: readCsv("weather-stations.csv"),
     countries: readYaml("countries.yaml", countriesFileSchema),

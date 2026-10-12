@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>Test copy: Australian National Site Guide (open sites), short facts only</name>
+<Placemark>
+    <name>Avalon</name>
+    
+    <description>&lt;table width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;h3&gt;&lt;a href=&quot;https://siteguide.org.au/Sites/Details/Avalon&quot;&gt;Avalon&lt;/a&gt;&lt;/h3&gt;&lt;/td&gt;
+        &lt;td align=right&gt;&lt;a href=&quot;mailto:webmaster@siteguide.org.au?subject=Site%20guide%20update%20-%20@Model.Site.Name&quot;&gt;Submit update&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;table width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Low Coastal Dune&lt;/td&gt;
+        &lt;td&gt;0 - 50ft / 15m&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;NW&lt;/td&gt;
+        &lt;td&gt;&lt;p&gt;PG2 / HG Supervised&lt;/p&gt;
+&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;p&gt;(Description removed from this test copy.)&lt;/p&gt;
+&lt;br /&gt;&lt;b&gt;Contact/Responsible&lt;/b&gt;: &lt;a href=&#x27;http://www.flywa.com.au&#x27;&gt;HGAWA&lt;/a&gt;</description>
+    <styleUrl>#styleLaunch</styleUrl>
+    <Point>
+        <coordinates>115.65, -32.57</coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>Barn Hill (The Bluff)</name>
+    
+    <description>&lt;table width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;h3&gt;&lt;a href=&quot;https://siteguide.org.au/Sites/Details/Barn Hill (The Bluff)&quot;&gt;Barn Hill (The Bluff)&lt;/a&gt;&lt;/h3&gt;&lt;/td&gt;
+        &lt;td align=right&gt;&lt;a href=&quot;mailto:webmaster@siteguide.org.au?subject=Site%20guide%20update%20-%20@Model.Site.Name&quot;&gt;Submit update&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;table width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Inland Hill&lt;/td&gt;
+        &lt;td&gt;1100&amp;#x27; / 335m asl, 550ft / 168m agl&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Main ridge SW-SE, small W face. Best ridge lift in due S. Best wind direction for XC ~ SSW.&lt;/td&gt;
+        &lt;td&gt;&lt;p&gt;PG2/ HG Supervised&lt;/p&gt;
+&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;p&gt;(Description removed from this test copy.)&lt;/p&gt;
+&lt;br /&gt;&lt;b&gt;Contact/Responsible&lt;/b&gt;: &lt;a href=&#x27;https://sites.google.com/site/sahpgahome/&#x27;&gt;SAHPGA&lt;/a&gt;</description>
+    <styleUrl>#styleLaunch</styleUrl>
+    <Point>
+        <coordinates>138.13567, -33.58777</coordinates>
+    </Point>
+</Placemark>
+<Placemark>
+    <name>Bartletts Reserve - NE Bonnys</name>
+    
+    <description>&lt;table width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;h3&gt;&lt;a href=&quot;https://siteguide.org.au/Sites/Details/Bartletts Reserve - NE Bonnys&quot;&gt;Bartletts Reserve - NE Bonnys&lt;/a&gt;&lt;/h3&gt;&lt;/td&gt;
+        &lt;td align=right&gt;&lt;a href=&quot;mailto:webmaster@siteguide.org.au?subject=Site%20guide%20update%20-%20@Model.Site.Name&quot;&gt;Submit update&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;table width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Small Coastal Ridge&lt;/td&gt;
+        &lt;td&gt;18m asl&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;p&gt;PG4 / HG Advanced&lt;/p&gt;
+&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;p&gt;(Description removed from this test copy.)&lt;/p&gt;
+&lt;br /&gt;&lt;b&gt;Contact/Responsible&lt;/b&gt;: &lt;a href=&#x27;https://mncf.tidyhq.com&#x27;&gt;MNCF&lt;/a&gt;</description>
+    <styleUrl>#styleLaunch</styleUrl>
+    <Point>
+        <coordinates>152.8423, -31.5948</coordinates>
+    </Point>
+</Placemark>
+<Folder>
+ 	            <name>Bastion</name>
+ 	            <open>1</open>
+ 	            
+     	            <Placemark>
+    <name>Bastion - North Launch</name>
+    
+    <description>&lt;table width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;h3&gt;&lt;a href=&quot;https://siteguide.org.au/Sites/Details/Bastion&quot;&gt;Bastion&lt;/a&gt;&lt;/h3&gt;&lt;/td&gt;
+        &lt;td align=right&gt;&lt;a href=&quot;mailto:webmaster@siteguide.org.au?subject=Site%20guide%20update%20-%20@Model.Site.Name&quot;&gt;Submit update&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;table width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Big Hill&lt;/td&gt;
+        &lt;td&gt;1100ft / 330m&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;NW-NE&lt;/td&gt;
+        &lt;td&gt;&lt;p&gt;PG2 / HG Supervised&lt;/p&gt;
+&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;p&gt;(Description removed from this test copy.)&lt;/p&gt;</description>
+    <styleUrl>#styleLaunch</styleUrl>
+    <Point>
+        <coordinates>128.1227, -15.4502</coordinates>
+    </Point>
+</Placemark>
+     	            <Placemark>
+    <name>Bastion - Sunset/West Launch</name>
+    
+    <description>&lt;table width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;&lt;h3&gt;&lt;a href=&quot;https://siteguide.org.au/Sites/Details/Bastion&quot;&gt;Bastion&lt;/a&gt;&lt;/h3&gt;&lt;/td&gt;
+        &lt;td align=right&gt;&lt;a href=&quot;mailto:webmaster@siteguide.org.au?subject=Site%20guide%20update%20-%20@Model.Site.Name&quot;&gt;Submit update&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;table width=&quot;100%&quot;&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Big Hill&lt;/td&gt;
+        &lt;td&gt;1100ft / 330m&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;SW-NW&lt;/td&gt;
+        &lt;td&gt;&lt;p&gt;PG2 / HG Supervised&lt;/p&gt;
+&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;hr /&gt;
+&lt;p&gt;(Description removed from this test copy.)&lt;/p&gt;</description>
+    <styleUrl>#styleLaunch</styleUrl>
+    <Point>
+        <coordinates>128.119, -15.451</coordinates>
+    </Point>
+</Placemark>
+ 	                
+
+ 	        </Folder>
+<Placemark>
+            <name>(Landing) Orchard Top Landing</name>
+                <description>
+&lt;hr /&gt;
+&lt;p&gt;(Description removed from this test copy.)&lt;/p&gt;</description>
+            <styleUrl>#styleLanding</styleUrl>
+                <Polygon>
+                    <altitudeMode>clampToGround</altitudeMode>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <coordinates>153.19813410138303,-28.114843063273064 153.19643352771087,-28.114611269222674 153.19619481110854,-28.11328172275444 153.19604395014062,-28.111072072436254 153.1972774376559,-28.110894631094776 153.19869884411804,-28.11178061973828 153.1995490222179,-28.113226696942647 153.1997145531775,-28.11349491006049 153.19928340136752,-28.11344257057963 153.19925088622782,-28.114379398483724 153.1983278776952,-28.114180670993285</coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+        </Placemark>
+</Document></kml>

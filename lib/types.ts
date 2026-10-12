@@ -60,6 +60,8 @@ export interface Provider {
   enabled: boolean;
   contact?: string;
   notes?: string;
+  /** Automatic collection (M2): how often, and whether it is paused (e.g. awaiting a courtesy note). */
+  collect?: { everyDays: number; paused?: boolean; pausedReason?: string };
 }
 
 export type OrgKind =
@@ -163,6 +165,7 @@ export interface Site {
   stewardOrgId?: string;
   stewardRole: StewardRole;
   stewardNote?: string;
+  listedContact?: ListedContact;
   alsoAdministeredBy?: { orgId: string; note?: string }[];
   siteAccessNote?: string;
   officialGuideUrl?: string;
@@ -307,10 +310,33 @@ export interface BuildWarning {
   recordId?: string;
 }
 
+export type RunStatus = "ok" | "warning" | "blocked" | "failed" | "unchanged";
+
+/** One provider's latest collection run (docs/05 §6), shown on /status. */
+export interface ProviderRun {
+  status: RunStatus;
+  startedAt: string;
+  finishedAt: string;
+  recordsFound: number;
+  recordsChanged: number;
+  warnings: string[];
+  guardDecision?: "accepted" | "accepted_first_run" | "blocked_drop" | "blocked_invalid";
+  lastSuccessAt?: string;
+  contentHash?: string;
+}
+
 export interface BuildReport {
   build: {
     counts: Record<string, number>;
     warnings: BuildWarning[];
   };
-  providers: Record<string, unknown>;
+  providers: Record<string, ProviderRun>;
+}
+
+/** A site contact as listed by a site guide: a pointer to the steward, not proof (D47). */
+export interface ListedContact {
+  name: string;
+  url?: string;
+  orgId?: string; // matched exactly by website address or alias, never guessed
+  providerId: string;
 }

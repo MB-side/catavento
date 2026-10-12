@@ -173,7 +173,7 @@ test("interactive controls in the bars meet the 44 px touch target", async ({ pa
   }
 });
 
-for (const path of ["", "au/clubs/", "nz/", "feedback/"]) {
+for (const path of ["", "au/clubs/", "nz/", "feedback/", "status/", "bot/"]) {
   test(`no serious accessibility problems on /${path}`, async ({ page }) => {
     await page.goto(path);
     const results = await new AxeBuilder({ page })
@@ -250,4 +250,22 @@ test("Windy's map loads only after a tap, with its credit", async ({ page }) => 
     /embed\.windy\.com\/embed2\.html.*overlay=wind/,
   );
   await expect(page.getByTestId("stations-placeholder")).toBeVisible();
+});
+
+test("Status shows the Site Guide's latest run and next check", async ({ page }) => {
+  await page.goto("status/");
+  const card = page.locator("#status-ansg");
+  await expect(card.getByRole("heading", { name: "Australian National Site Guide" })).toBeVisible();
+  await expect(card).toContainText("Every 7 days");
+  await expect(card).toContainText(/\d+ found, \d+ changed/);
+  await expect(card).toContainText("Next check");
+});
+
+test("the bot page shows the user agent and how to opt out", async ({ page }) => {
+  await page.goto("bot/");
+  await expect(page.getByRole("main")).toContainText(
+    "CataventoBot/0.1 (+https://mb-side.github.io/catavento/bot/;",
+  );
+  await expect(page.getByRole("main")).toContainText("User-agent: CataventoBot");
+  await expect(page.getByRole("main")).toContainText("Disallow: /");
 });
