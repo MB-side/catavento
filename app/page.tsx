@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, CalendarDays, Compass, Map as MapIcon, Search, Wrench } from "lucide-react";
 import { LogoMark } from "@/components/brand/Logo";
+import { YourSitesStrip } from "@/components/domain/YourSitesStrip";
 import { defaultCountrySegment } from "@/lib/country-codes";
 import { getEnabledCountries } from "@/lib/country";
 import { getCounts, type CountryCounts } from "@/lib/data";
@@ -74,6 +75,7 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col gap-10">
+      <YourSitesStrip />
       <section aria-labelledby="welcome" className="max-w-3xl">
         <div className="flex items-center gap-4">
           <LogoMark size={112} className="size-18 shrink-0 lg:size-28" />

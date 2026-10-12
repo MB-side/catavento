@@ -1,6 +1,7 @@
 // A site in a list (sites list, club pages): wind rose, name, region and range, who manages it or
 // who to contact, status. Club names link to club pages.
 import Link from "next/link";
+import { StarButton } from "@/components/domain/StarButton";
 import { StatusChip } from "@/components/domain/StatusChip";
 import { WindRose } from "@/components/domain/WindRose";
 import { t } from "@/lib/messages";
@@ -21,9 +22,12 @@ export function SiteCard({
       ? { label: "sitesList.contact" as const, name: s.contact, href: s.contactHref }
       : undefined;
   return (
-    <li className="flex gap-3 rounded-[14px] border border-border bg-surface p-4">
+    <li
+      className="flex gap-3 rounded-[14px] border border-border bg-surface p-4"
+      data-testid="site-card"
+    >
       <WindRose ranges={s.windRanges} size={48} className="shrink-0" />
-      <div className="min-w-0">
+      <div className="min-w-0 flex-1">
         <Link href={s.href} className="font-condensed text-[1.25rem] leading-tight font-bold">
           {s.name}
         </Link>
@@ -51,6 +55,7 @@ export function SiteCard({
         </div>
         {children}
       </div>
+      <StarButton site={s} />
     </li>
   );
 }

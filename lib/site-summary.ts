@@ -20,12 +20,16 @@ export interface SiteSummary {
   contactHref?: string;
   lat?: number;
   lon?: number;
+  exact: boolean; // the main launch has an exact position (outlook only then, docs/04 §5)
+  stations?: { name: string; url: string }[];
+  wtfSlug?: string;
 }
 
 export function summarise(
   site: Site,
   regionName: string,
   names: { steward?: string; stewardHref?: string; contact?: string; contactHref?: string },
+  stations: { name: string; url: string }[] = [],
 ): SiteSummary {
   const launch = mainLaunch(site);
   return {
@@ -46,5 +50,8 @@ export function summarise(
     contactHref: names.steward ? undefined : names.contactHref,
     lat: launch?.lat,
     lon: launch?.lon,
+    exact: !!launch,
+    stations: stations.length ? stations : undefined,
+    wtfSlug: site.wtfSlug,
   };
 }

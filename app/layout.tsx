@@ -5,7 +5,7 @@ import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { BottomTabBar } from "@/components/layout/SiteNav";
 import { t } from "@/lib/messages";
-import { absoluteUrl } from "@/lib/paths";
+import { absoluteUrl, withBasePath } from "@/lib/paths";
 import { homeTitle, jsonLdScript, organizationJsonLd, robots } from "@/lib/seo";
 import { siteConfig } from "@/site.config";
 import "./globals.css";
@@ -30,6 +30,9 @@ export const metadata: Metadata = {
   title: { default: homeTitle, template: `%s | ${siteConfig.name}` },
   description: siteConfig.descriptor,
   applicationName: siteConfig.name,
+  metadataBase: new URL(`${siteConfig.siteUrl}/`),
+  icons: { apple: withBasePath("/icons/apple-touch-icon.png") },
+  appleWebApp: { capable: true, title: siteConfig.name, statusBarStyle: "default" },
   robots,
   openGraph: { siteName: siteConfig.name, type: "website", url: absoluteUrl("/") },
 };

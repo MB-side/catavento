@@ -1,4 +1,4 @@
-import { MySitesList } from "@/components/domain/MySitesList";
+import { MySitesDashboard } from "@/components/domain/MySitesDashboard";
 import { t } from "@/lib/messages";
 import { pageMetadata } from "@/lib/seo";
 import { siteConfig } from "@/site.config";
@@ -18,8 +18,7 @@ export default function MySitesPage() {
         </h1>
         <p className="mt-2 text-[1.0625rem]">{t("mySites.intro")}</p>
       </header>
-      <MySitesList sitesHref={`/${siteConfig.defaultCountry.toLowerCase()}/sites`} />
-      <p className="text-[0.9375rem] text-muted">{t("mySites.comingNext")}</p>
+      <MySitesDashboard sitesHref={`/${siteConfig.defaultCountry.toLowerCase()}/sites`} />
       <p className="rounded-[14px] bg-info-tint p-4 text-[0.9375rem] text-muted-strong">
         {t("site.disclaimer")}
       </p>

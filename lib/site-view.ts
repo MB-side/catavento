@@ -126,11 +126,16 @@ export function siteSummaries(country: Country, regionCode?: string): SiteSummar
     .filter((s) => !regionCode || s.regionCode === regionCode)
     .sort((a, b) => a.name.localeCompare(b.name))
     .map((s) =>
-      summarise(s, country.regionNames[s.regionCode] ?? s.regionCode, {
-        steward: org(s.stewardOrgId)?.name,
-        stewardHref: page(org(s.stewardOrgId)),
-        contact: org(s.listedContact?.orgId)?.name ?? s.listedContact?.name,
-        contactHref: page(org(s.listedContact?.orgId)),
-      }),
+      summarise(
+        s,
+        country.regionNames[s.regionCode] ?? s.regionCode,
+        {
+          steward: org(s.stewardOrgId)?.name,
+          stewardHref: page(org(s.stewardOrgId)),
+          contact: org(s.listedContact?.orgId)?.name ?? s.listedContact?.name,
+          contactHref: page(org(s.listedContact?.orgId)),
+        },
+        stationsFor(s).map(({ station }) => ({ name: station.name, url: station.url as string })),
+      ),
     );
 }

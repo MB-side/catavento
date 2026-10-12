@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import AxeBuilder from "@axe-core/playwright";
-import { expect, test } from "@playwright/test";
+import { expect, test } from "./fixtures";
 
 interface SiteRecord {
   id: string;
@@ -109,11 +109,11 @@ test.describe("sites list", () => {
     const au = sites.filter((s) => s.country === "AU");
     await page.goto("au/sites/");
     await expect(page.getByTestId("site-count")).toHaveText(`${au.length} sites`);
-    await page.getByLabel("Name").fill("Long Reef");
+    await page.getByLabel("Name", { exact: true }).fill("Long Reef");
     await expect(
       page.getByTestId("site-list").getByRole("link", { name: "Long Reef NE" }),
     ).toBeVisible();
-    await page.getByLabel("Name").fill("");
+    await page.getByLabel("Name", { exact: true }).fill("");
     await page.getByLabel("Takes a wind from").selectOption("NE");
     const count = Number((await page.getByTestId("site-count").innerText()).split(" ")[0]);
     expect(count).toBeGreaterThan(0);
