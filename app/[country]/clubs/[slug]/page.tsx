@@ -105,7 +105,7 @@ export default async function ClubPage({ params }: PageProps<"/[country]/clubs/[
           </p>
         )}
         <div className="mt-4 flex flex-wrap items-start gap-3">
-          <FollowClubButton siteIds={view.managed.map((s) => s.id)} />
+          <FollowClubButton sites={managed} />
           {club.emailPublic && (
             <a
               href={`mailto:${club.emailPublic}`}

@@ -4,9 +4,17 @@
 import { useSyncExternalStore } from "react";
 import { Check, Star } from "lucide-react";
 import { tOr, t } from "@/lib/messages";
-import { addSites, mySitesSnapshot, removeSites, subscribeMySites } from "@/lib/my-sites";
+import {
+  addSites,
+  cacheSummaries,
+  mySitesSnapshot,
+  removeSites,
+  subscribeMySites,
+} from "@/lib/my-sites";
+import type { SiteSummary } from "@/lib/site-summary";
 
-export function FollowClubButton({ siteIds }: { siteIds: string[] }) {
+export function FollowClubButton({ sites }: { sites: SiteSummary[] }) {
+  const siteIds = sites.map((s) => s.id);
   const snapshot = useSyncExternalStore(subscribeMySites, mySitesSnapshot, () => "");
   const saved = new Set(snapshot ? snapshot.split("|") : []);
   const following = siteIds.length > 0 && siteIds.every((id) => saved.has(id));
@@ -35,7 +43,10 @@ export function FollowClubButton({ siteIds }: { siteIds: string[] }) {
         <>
           <button
             type="button"
-            onClick={() => addSites(siteIds)}
+            onClick={() => {
+              cacheSummaries(sites);
+              addSites(siteIds);
+            }}
             className="inline-flex min-h-11 items-center gap-2 self-start rounded-[10px] bg-action px-4 font-semibold text-white"
           >
             <Star className="size-5" aria-hidden="true" />

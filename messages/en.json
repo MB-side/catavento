@@ -54,7 +54,9 @@
     "nationalBody": "National body: {name}",
     "sampleLabel": "Sample",
     "building": "This prototype is being built. Site counts, upcoming events and, for returning pilots, your saved sites will appear on this page as each part is finished.",
-    "whyTheNameLabel": "Why the name?"
+    "whyTheNameLabel": "Why the name?",
+    "yourSites": "Your sites",
+    "openMySites": "Open My Sites"
   },
   "comingSoon": {
     "text": "This section is being built for the prototype.",
@@ -367,8 +369,8 @@
       "none": "No weather stations linked to this site yet."
     },
     "forecasts": {
-      "heading": "Forecasts",
-      "intro": "A 3-day wind outlook for each site arrives with My Sites. Meanwhile, these forecast services cover this area:",
+      "heading": "Next 3 days",
+      "intro": "Forecast wind direction at this launch, compared with the published range. For thermals, cloud and more detail, try:",
       "wtf": "Where To Fly",
       "skysight": "SkySight",
       "pgmap": "Paragliding Map"
@@ -478,12 +480,51 @@
     "sourcesHeading": "Sources for this page"
   },
   "mySites": {
-    "intro": "Your saved sites, kept on this device only. Nothing is sent anywhere.",
-    "empty": "No saved sites yet. Follow a club to save all its sites, or browse the sites.",
+    "intro": "Your saved sites with a 3-day outlook, kept on this device only. Forecasts are fetched by your browser from Open-Meteo.",
+    "empty": "No saved sites yet. Tap the star on any site, or follow a club to save all its sites.",
     "browse": "Browse the sites",
     "loading": "Loading your sites…",
     "loadFailed": "Your sites couldn't load. Try again in a moment.",
     "remove": "Remove from My Sites",
-    "comingNext": "Soon: a star on every site, and a 3-day wind outlook for each saved site."
+    "wtf": "Check these sites in Where To Fly",
+    "share": "Share my list",
+    "copied": "Link copied. Open it on another device to get the same list.",
+    "copyThis": "Copy this link and open it on another device:",
+    "sharedHeading": {
+      "one": "Someone shared 1 site with you",
+      "other": "Someone shared {count} sites with you"
+    },
+    "addShared": "Add them to My Sites",
+    "settings": "Units and speed limits",
+    "units": "Wind speed units",
+    "knots": "Knots",
+    "limits": "Your speed limits (optional)",
+    "limitsHelp": "Outlook cells outside your limits get a dashed outline. Leave blank to show speeds without marking them.",
+    "min": "Lowest ({unit})",
+    "max": "Highest ({unit})"
+  },
+  "outlook": {
+    "heading": "Next 3 days",
+    "intro": "Forecast wind direction compared with the published range.",
+    "within": "Within the published range",
+    "marginal": "Within 22.5° of the range",
+    "outside": "Outside the published range",
+    "light": "Light wind",
+    "lightShort": "Light",
+    "unrated": "Range not published: direction and speed only",
+    "outsideLimits": "Outside your speed limits",
+    "units": "Speeds in {unit}",
+    "attribution": "Weather data by Open-Meteo.com",
+    "loading": "Loading the forecast…",
+    "unavailable": "Forecast unavailable right now. Try",
+    "morning": "10am",
+    "afternoon": "2pm",
+    "day": "Day",
+    "noPosition": "No outlook: this site's position isn't published.",
+    "gridLabel": "3-day wind outlook, every 2 hours"
+  },
+  "star": {
+    "save": "Save to My Sites",
+    "saved": "Saved to My Sites"
   }
 }
