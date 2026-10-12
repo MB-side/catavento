@@ -89,6 +89,7 @@ export interface Organisation {
   additionalKinds?: OrgKind[]; // e.g. a school that also runs a shop (D40)
   name: string;
   aliases?: string[];
+  externalIds?: Record<string, string>; // codes other sources use for it, e.g. { safa: "CG" } (D60)
   disciplines: Discipline[];
   country: CountryCode;
   regionCode?: RegionCode;
@@ -326,6 +327,7 @@ export interface ProviderRun {
   lastSuccessAt?: string;
   contentHash?: string;
   info?: string[]; // neutral notes, e.g. what each club website gave
+  sourceVersion?: string; // the source's own version tag, sent back to ask "has it changed?"
 }
 
 export interface BuildReport {
@@ -351,6 +353,7 @@ export interface CollectedOrg {
   phonePublic?: string;
   disciplines: Discipline[];
   associationName?: string; // the regional association the source links it to
+  externalId?: string; // the source's own code for it, e.g. SAFA's club code
   source: SourceRef;
 }
 
@@ -369,4 +372,5 @@ export interface ListedContact {
   url?: string;
   orgId?: string; // matched exactly by website address or alias, never guessed
   providerId: string;
+  clubRef?: { providerId: string; id: string }; // the club's code at another source, e.g. SAFA's (D60)
 }

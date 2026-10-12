@@ -42,14 +42,14 @@
   licence: facts
   attribution: "Site facts: Australian National Site Guide"
   uses: Site and launch names, launch positions, short fields (type, height, wind directions, rating), the contact listed for each site, open or closed status, and each site's page address. Never descriptions, hazards, rules or landing notes
-  method: Their public Google Earth files of open and closed sites (2 downloads), compared with last week's copy
-  schedule: Weekly
+  method: Its export service (siteguide.org.au/api/Export), as its webmaster suggested. Each check sends back the version tag from last time, so an unchanged day costs one tiny reply
+  schedule: Daily (a quick "has it changed?" check)
   countries: [AU]
   permissionStatus: granted_feed
-  notes: "The webmaster replied on 2026-10-12: happy for us to use the data, the Google Earth files are fine (and cached, so may be checked more often), and suggested its export service with version checks (docs/10 D59)."
+  notes: "The webmaster replied on 2026-10-12: happy for us to use the data, suggested its export service with version checks, which we now use (docs/10 D59, D60)."
   enabled: true
   collect:
-    everyDays: 7
+    everyDays: 1
 
 - id: pge
   name: ParaglidingEarth

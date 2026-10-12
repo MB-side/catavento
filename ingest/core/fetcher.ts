@@ -13,6 +13,9 @@ const RETRIES = 2;
 export interface FetchResult {
   url: string;
   status: number;
+  /** True when the server answered 304: our copy is current and there is no body. */
+  notModified?: boolean;
+  etag?: string;
   body: string;
   bytes: Uint8Array;
   contentHash: string;
@@ -59,10 +62,10 @@ export class PoliteFetcher {
     return next;
   }
 
-  private async raw(url: string): Promise<Response> {
+  private async raw(url: string, extra: Record<string, string> = {}): Promise<Response> {
     this.requests.push(url);
     return this.fetchImpl(url, {
-      headers: { "User-Agent": USER_AGENT, Accept: "*/*" },
+      headers: { "User-Agent": USER_AGENT, Accept: "*/*", ...extra },
       redirect: "follow",
       credentials: "omit",
       signal: AbortSignal.timeout(TIMEOUT_MS),
@@ -85,8 +88,12 @@ export class PoliteFetcher {
     return rules ? rules.isAllowed(url.toString(), BOT_TOKEN) !== false : false;
   }
 
-  /** Fetches text, obeying robots.txt. Throws on disallowed URLs or after retries fail. */
-  async get(urlString: string): Promise<FetchResult> {
+  /**
+   * Fetches text, obeying robots.txt. Throws on disallowed URLs or after retries fail. With
+   * `ifNoneMatch` (a version tag from last time), an unchanged resource comes back as
+   * `notModified` with no body (docs/05 §3: conditional requests).
+   */
+  async get(urlString: string, opts: { ifNoneMatch?: string } = {}): Promise<FetchResult> {
     const url = new URL(urlString);
     if (!(await this.allowed(url)))
       throw new RobotsDisallowedError(`robots.txt does not allow ${urlString}`);
@@ -94,8 +101,24 @@ export class PoliteFetcher {
     for (let attempt = 0; attempt <= RETRIES; attempt++) {
       if (attempt > 0) await this.sleep(2 ** attempt * 2000);
       try {
-        const res = await this.schedule(url.host, () => this.raw(urlString));
+        const conditional: Record<string, string> = opts.ifNoneMatch
+          ? { "If-None-Match": opts.ifNoneMatch }
+          : {};
+        const res = await this.schedule(url.host, () => this.raw(urlString, conditional));
         if (res.status >= 500) throw new Error(`HTTP ${res.status} for ${urlString}`);
+        const etag = res.headers.get("etag") ?? undefined;
+        if (res.status === 304) {
+          return {
+            url: urlString,
+            status: 304,
+            notModified: true,
+            etag: etag ?? opts.ifNoneMatch,
+            body: "",
+            bytes: new Uint8Array(),
+            contentHash: "",
+            fetchedAt: new Date().toISOString(),
+          };
+        }
         const bytes = new Uint8Array(await res.arrayBuffer());
         if (!res.ok)
           throw Object.assign(new Error(`HTTP ${res.status} for ${urlString}`), {
@@ -104,6 +127,7 @@ export class PoliteFetcher {
         return {
           url: urlString,
           status: res.status,
+          etag,
           body: new TextDecoder().decode(bytes),
           bytes,
           contentHash: sha256(bytes),

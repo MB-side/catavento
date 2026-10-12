@@ -10,5 +10,6 @@ merge:
   - { from: RTL-007, into: [SCH-011], note: "High Adventure shop and school" }
   - { from: RTL-008, into: [SCH-030], note: "Tribal Flight sales and school" }
   - { from: MFG-001, into: [SCH-017], note: "Moyes Delta Gliders (manufacturer) and its academy" }
+  - { from: CLB-014, into: [REG-003], note: "One North Queensland body: same website; SAFA lists it as a club and as Cairns HGC's association (docs/10 C29, founder approved 2026-10-12)" }
 related:
   - { ids: [SCH-026, SCH-027], note: "SkySurf Paragliding: Canberra and Wollongong bases" }

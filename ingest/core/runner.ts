@@ -65,6 +65,7 @@ export interface CollectResult {
   invalid: number;
   warnings: string[];
   info?: string[]; // neutral notes for /status, e.g. what each club website gave
+  sourceVersion?: string; // the source's version tag, kept for the next conditional request
 }
 
 export interface ProviderModule {
@@ -189,6 +190,7 @@ export async function runIngest(opts: RunOptions): Promise<Record<string, Provid
           recordsChanged: 0,
           warnings: last?.warnings ?? [],
           info: last?.info,
+          sourceVersion: result.sourceVersion ?? last?.sourceVersion,
           guardDecision: last?.guardDecision,
           lastSuccessAt: now().toISOString(),
           contentHash: result.contentHash,
@@ -213,6 +215,7 @@ export async function runIngest(opts: RunOptions): Promise<Record<string, Provid
             guardDecision: guard.decision,
             lastSuccessAt: last?.lastSuccessAt,
             contentHash: last?.contentHash,
+            sourceVersion: last?.sourceVersion,
           };
         } else {
           const before = recordIds(previousFile);
@@ -244,6 +247,7 @@ export async function runIngest(opts: RunOptions): Promise<Record<string, Provid
             lastSuccessAt: now().toISOString(),
             contentHash: result.contentHash,
             info: result.info?.length ? result.info : undefined,
+            sourceVersion: result.sourceVersion,
           };
         }
       }
@@ -257,6 +261,7 @@ export async function runIngest(opts: RunOptions): Promise<Record<string, Provid
         warnings: [error instanceof Error ? error.message : String(error)],
         lastSuccessAt: last?.lastSuccessAt,
         contentHash: last?.contentHash,
+        sourceVersion: last?.sourceVersion,
       };
     }
     runs[mod.id] = run;

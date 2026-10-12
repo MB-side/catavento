@@ -32,7 +32,7 @@ export function matchListedContacts(
     const c = site.listedContact;
     if (!c) continue;
     const urlKey = normaliseUrl(c.url);
-    const org = matcher.find(site.country, c.name, c.url)?.org;
+    const org = matcher.find(site.country, c.name, c.url, c.clubRef)?.org;
     if (org) {
       site.listedContact = { ...c, name: org.name, orgId: org.id };
       continue;

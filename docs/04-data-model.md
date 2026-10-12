@@ -53,6 +53,7 @@ type OrgKind =
 interface Organisation {
   id: string; legacyId?: string; slug: string; kind: OrgKind; name: string;
   aliases?: string[];                          // other names used by sources
+  externalIds?: Record<string, string>;        // other sources' codes for it, e.g. { safa: "CG" } (D60)
   disciplines: Discipline[];
   country: CountryCode; regionCode?: RegionCode; locality?: string; postcode?: string;
   location?: { lat: number; lon: number };     // geocoded or published; omit if unknown
@@ -95,6 +96,7 @@ interface Site {
   mainLandingName?: string;                    // name only; notes stay on the Site Guide
   stationIds: string[];                        // curated (data/manual/site-stations.yaml) plus nearest matches
   wtfSlug?: string;                            // Where To Fly slug if known
+  pgeId?: string;                              // ParaglidingEarth ID (community-layer sites)
   disciplines: Discipline[];                   // derived from ratingText where determinable
   layer: "ansg" | "pge" | "manual";            // licence layer; "manual" = compiled by hand from a cited source
   sources: SourceRef[];
@@ -106,6 +108,7 @@ interface ListedContact {
   url?: string;
   orgId?: string;                              // linked only on an exact match (docs/05 §5.4)
   providerId: string;
+  clubRef?: { providerId: string; id: string }; // the club's code at another source, e.g. SAFA's (D60)
 }
 
 interface Launch {
@@ -130,7 +133,8 @@ interface EventItem {
   type: "competition" | "fly_in" | "clinic" | "siv" | "meeting" | "social" | "festival" | "other";
   disciplines: Discipline[];
   locationText?: string; country: CountryCode; regionCode?: RegionCode; location?: { lat: number; lon: number };
-  organiserOrgId?: string; url: string; sources: SourceRef[];
+  organiserOrgId?: string; organiserName?: string;   // name as the source gives it; linked only on an exact match
+  url: string; sources: SourceRef[];
 }
 
 interface Notice {
@@ -161,6 +165,19 @@ interface ProviderRun {                        // one provider's latest collecti
   recordsFound: number; recordsChanged: number; warnings: string[];
   guardDecision?: "accepted" | "accepted_first_run" | "blocked_drop" | "blocked_invalid";
   lastSuccessAt?: string; contentHash?: string;
+  info?: string[];                             // neutral notes for /status, e.g. what each club website gave
+  sourceVersion?: string;                      // the source's version tag, sent back next time ("has it changed?")
+}
+
+// Collected but not shown directly: merged into the directory and the sites at build time.
+interface CollectedOrg {                       // an organisation as a source lists it (e.g. SAFA's directory)
+  id: string; providerId: string; kind: OrgKind; name: string; country: CountryCode; regionCode?: RegionCode;
+  website?: string; emailPublic?: string;      // clubs: role or own-domain addresses only (D53)
+  phonePublic?: string; disciplines: Discipline[]; associationName?: string; externalId?: string; source: SourceRef;
+}
+
+interface StewardEvidence {                    // a club's own website naming sites (D47, D57)
+  id: string; orgId: string; url: string; siteIds: string[]; source: SourceRef;
 }
 
 interface BuildReport {                        // data/generated/_report.json
@@ -192,7 +209,7 @@ interface Country {                            // loaded from data/manual/countr
 | `data/generated/offerings.json` | `Offering[]` |
 | `data/generated/resources.json` | `Resource[]` |
 | `data/generated/_report.json` | `BuildReport`: build counts and warnings, plus each provider's latest run |
-| `data/ingest/<provider>.json` | Normalised output of each provider's last accepted run (with `fetchedAt` and `contentHash`) |
+| `data/ingest/<provider>.json` | Normalised output of each provider's last accepted run (with `fetchedAt` and `contentHash`): any of `sites`, `orgs` (`CollectedOrg`), `events`, `notices` and `stewardEvidence` |
 | `data/ingest/_runs.json` | `ProviderRun` per provider: the record the schedule and `/status` read |
 | `data/boundaries/regions-au-nz.geojson` | Natural Earth state and region boundaries for offline region lookup (D51) |
 
@@ -210,6 +227,7 @@ All optional; create them as needed. Each entry may carry a `note` and `source` 
 | `site-stewards.yaml` | Force a site's steward and role where parsing can't | `site:au:nsw:manilla-mt-borah: { org: org:au:manilla-sky-sailors, role: club }` |
 | `site-stations.yaml` | Curated stations per site (order = display order) | `site:au:nsw:long-reef-ne: [station:club:long-reef]` |
 | `wtf-slugs.yaml` | Where To Fly slug per site | `site:au:act:spring-hill: spring_hill` |
+| `club-websites.yaml` | Club websites CataventoBot must not read (opt-outs) | `skip: [org:au:example-club]` |
 | `org-merges.yaml` | Seed rows that are one business: merge a shop into its school, or cross-link separate records (D40) | `merge: [{ from: RTL-004, into: [SCH-021] }]` |
 | `brands.yaml` | Brands and their distributors in each country | |
 | `offerings.yaml` | Published prices and courses, each with source URL | |

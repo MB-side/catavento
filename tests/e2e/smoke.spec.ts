@@ -256,7 +256,7 @@ test("Status shows the Site Guide's latest run and next check", async ({ page })
   await page.goto("status/");
   const card = page.locator("#status-ansg");
   await expect(card.getByRole("heading", { name: "Australian National Site Guide" })).toBeVisible();
-  await expect(card).toContainText("Every 7 days");
+  await expect(card).toContainText("Every day");
   await expect(card).toContainText(/\d+ found, \d+ changed/);
   await expect(card).toContainText("Next check");
 });
