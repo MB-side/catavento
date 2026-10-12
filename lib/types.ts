@@ -81,6 +81,20 @@ export type OrgKind =
 export type OrgVerification =
   "verified_public_source" | "listed_by_national_body" | "needs_verification" | "owner_confirmed";
 
+/** What a shop says it sells (D73). */
+export type GearCategory =
+  | "paragliders"
+  | "mini-speed-wings"
+  | "paramotors"
+  | "hang-gliders"
+  | "trikes"
+  | "harnesses"
+  | "pod-harnesses"
+  | "reserves"
+  | "instruments"
+  | "helmets-accessories"
+  | "service";
+
 export interface Organisation {
   id: string;
   legacyId?: string;
@@ -90,6 +104,7 @@ export interface Organisation {
   name: string;
   aliases?: string[];
   externalIds?: Record<string, string>; // codes other sources use for it, e.g. { safa: "CG" } (D60)
+  sells?: GearCategory[]; // gear categories, as the shop publishes them (D73)
   disciplines: Discipline[];
   country: CountryCode;
   regionCode?: RegionCode;

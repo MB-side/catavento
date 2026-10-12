@@ -148,7 +148,11 @@
     "lastVerified": "2026-10-08",
     "verificationStatus": "needs_verification",
     "id": "org:au:airborne-windsports",
-    "slug": "airborne-windsports"
+    "slug": "airborne-windsports",
+    "sells": [
+      "hang-gliders",
+      "trikes"
+    ]
   },
   {
     "legacyId": "SCH-102",
@@ -645,7 +649,18 @@
     "lastVerified": "2026-10-08",
     "verificationStatus": "verified_public_source",
     "id": "org:au:fly2base",
-    "slug": "fly2base"
+    "slug": "fly2base",
+    "sells": [
+      "paragliders",
+      "mini-speed-wings",
+      "paramotors",
+      "harnesses",
+      "pod-harnesses",
+      "reserves",
+      "instruments",
+      "helmets-accessories",
+      "service"
+    ]
   },
   {
     "legacyId": "SCH-008",
@@ -834,7 +849,14 @@
       "High Adventure (shop)"
     ],
     "id": "org:au:high-adventure",
-    "slug": "high-adventure"
+    "slug": "high-adventure",
+    "sells": [
+      "paragliders",
+      "paramotors",
+      "harnesses",
+      "reserves",
+      "helmets-accessories"
+    ]
   },
   {
     "legacyId": "SCH-012",
@@ -1138,6 +1160,12 @@
         "url": "https://www.moyes.com.au",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://www.moyes.com.au/",
+        "fetchedAt": "2026-10-13",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
@@ -1149,7 +1177,14 @@
       "Moyes Delta Gliders"
     ],
     "id": "org:au:moyes-hang-gliding-academy",
-    "slug": "moyes-hang-gliding-academy"
+    "slug": "moyes-hang-gliding-academy",
+    "sells": [
+      "hang-gliders",
+      "harnesses",
+      "reserves",
+      "instruments",
+      "helmets-accessories"
+    ]
   },
   {
     "legacyId": "CLB-011",
@@ -1530,7 +1565,13 @@
       "Paragliding Queensland (shop)"
     ],
     "id": "org:au:paragliding-queensland",
-    "slug": "paragliding-queensland"
+    "slug": "paragliding-queensland",
+    "sells": [
+      "paragliders",
+      "harnesses",
+      "reserves",
+      "service"
+    ]
   },
   {
     "legacyId": "SVC-001",
@@ -1556,7 +1597,10 @@
     "lastVerified": "2026-10-08",
     "verificationStatus": "verified_public_source",
     "id": "org:au:paragliding-repair-centre",
-    "slug": "paragliding-repair-centre"
+    "slug": "paragliding-repair-centre",
+    "sells": [
+      "service"
+    ]
   },
   {
     "legacyId": "RTL-001",
@@ -1583,7 +1627,16 @@
     "lastVerified": "2026-10-08",
     "verificationStatus": "verified_public_source",
     "id": "org:au:paragliding-shop",
-    "slug": "paragliding-shop"
+    "slug": "paragliding-shop",
+    "sells": [
+      "paragliders",
+      "mini-speed-wings",
+      "paramotors",
+      "harnesses",
+      "pod-harnesses",
+      "reserves",
+      "helmets-accessories"
+    ]
   },
   {
     "legacyId": "SCH-020",
@@ -1652,7 +1705,13 @@
       "Paratech Paragliding (shop)"
     ],
     "id": "org:au:paratech-paragliding",
-    "slug": "paratech-paragliding"
+    "slug": "paratech-paragliding",
+    "sells": [
+      "paragliders",
+      "harnesses",
+      "reserves",
+      "instruments"
+    ]
   },
   {
     "legacyId": "RTL-003",
@@ -1677,7 +1736,12 @@
     "lastVerified": "2026-10-08",
     "verificationStatus": "verified_public_source",
     "id": "org:au:planet-paragliding",
-    "slug": "planet-paragliding"
+    "slug": "planet-paragliding",
+    "sells": [
+      "paragliders",
+      "instruments",
+      "service"
+    ]
   },
   {
     "legacyId": "SCH-022",
@@ -2002,6 +2066,15 @@
     "slug": "skysurf-paragliding-canberra",
     "relatedOrgIds": [
       "org:au:skysurf-paragliding-wollongong"
+    ],
+    "sells": [
+      "paragliders",
+      "mini-speed-wings",
+      "paramotors",
+      "harnesses",
+      "reserves",
+      "instruments",
+      "helmets-accessories"
     ]
   },
   {
@@ -2046,6 +2119,15 @@
     "slug": "skysurf-paragliding-wollongong",
     "relatedOrgIds": [
       "org:au:skysurf-paragliding-canberra"
+    ],
+    "sells": [
+      "paragliders",
+      "mini-speed-wings",
+      "paramotors",
+      "harnesses",
+      "reserves",
+      "instruments",
+      "helmets-accessories"
     ]
   },
   {
@@ -2614,7 +2696,11 @@
       "Tribal Flight (sales)"
     ],
     "id": "org:au:tribal-flight-paragliding-fox-airsports",
-    "slug": "tribal-flight-paragliding-fox-airsports"
+    "slug": "tribal-flight-paragliding-fox-airsports",
+    "sells": [
+      "paragliders",
+      "paramotors"
+    ]
   },
   {
     "legacyId": "SCH-031",

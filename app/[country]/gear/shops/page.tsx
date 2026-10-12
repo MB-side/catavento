@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { OrgCard } from "@/components/domain/OrgCard";
+import { GearExplorer } from "@/components/domain/GearExplorer";
 import { card, PageHeader } from "@/components/layout/PageHeader";
 import { countryFromParams } from "@/lib/country";
 import { gearOrgs, priceFrom } from "@/lib/directory";
@@ -30,17 +30,12 @@ export default async function ShopsPage({ params }: PageProps<"/[country]/gear/s
       {orgs.length === 0 ? (
         <p className={card}>{t("gear.noneYet", { country: country.name })}</p>
       ) : (
-        <ul className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-          {orgs.map((o) => (
-            <OrgCard
-              key={o.id}
-              org={o}
-              regionName={o.regionCode ? country.regionNames[o.regionCode] : undefined}
-              price={priceFrom(o.id)}
-              timeZone={zone}
-            />
-          ))}
-        </ul>
+        <GearExplorer
+          orgs={orgs}
+          regionNames={country.regionNames}
+          prices={Object.fromEntries(orgs.map((o) => [o.id, priceFrom(o.id)]))}
+          timeZone={zone}
+        />
       )}
     </div>
   );

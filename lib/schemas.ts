@@ -122,6 +122,31 @@ export const providerSchema = z.object({
     .optional(),
 }) satisfies z.ZodType<Provider>;
 
+export const gearCategorySchema = z.enum([
+  "paragliders",
+  "mini-speed-wings",
+  "paramotors",
+  "hang-gliders",
+  "trikes",
+  "harnesses",
+  "pod-harnesses",
+  "reserves",
+  "instruments",
+  "helmets-accessories",
+  "service",
+]);
+
+export const gearCategoriesFileSchema = z
+  .array(
+    z.object({
+      org: z.string().min(1),
+      sells: z.array(gearCategorySchema).min(1),
+      source: httpUrl,
+      checked: z.iso.date(),
+    }),
+  )
+  .nullable();
+
 const organisationShape = {
   id: z.string().regex(/^org:[a-z]{2}:[a-z0-9-]+$/),
   legacyId: z.string().optional(),
@@ -131,6 +156,7 @@ const organisationShape = {
   name: z.string().min(1),
   aliases: z.array(z.string()).optional(),
   externalIds: z.record(z.string(), z.string()).optional(),
+  sells: z.array(gearCategorySchema).optional(),
   disciplines: z.array(disciplineSchema),
   country: countryCode,
   regionCode: regionCode.optional(),

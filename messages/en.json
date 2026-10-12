@@ -675,7 +675,30 @@
     "classifiedsHeading": "Classifieds are coming",
     "classifiedsText": "We're thinking about a place to buy and sell used gear. Tell us what you'd want from it.",
     "classifiedsLink": "Tell us",
-    "noneYet": "Nothing listed for {country} yet."
+    "noneYet": "Nothing listed for {country} yet.",
+    "filterHeading": "What are you after?",
+    "all": "Everything",
+    "sells": "Sells",
+    "categories": {
+      "paragliders": "Paraglider wings",
+      "mini-speed-wings": "Mini and speed wings",
+      "paramotors": "Paramotors and paramotor wings",
+      "hang-gliders": "Hang gliders",
+      "trikes": "Trikes",
+      "harnesses": "Harnesses",
+      "pod-harnesses": "Pod harnesses",
+      "reserves": "Reserve parachutes",
+      "instruments": "Instruments (varios, GPS, radios)",
+      "helmets-accessories": "Helmets and accessories",
+      "service": "Servicing and repairs"
+    },
+    "specificNote": "Looking for a particular model, size or class, such as an EN-B wing? Shops list what they stock on their own websites: check there, or ask them.",
+    "matches": {
+      "one": "1 business",
+      "other": "{count} businesses"
+    },
+    "categoriesNote": "What each business sells is taken from its own website, or from our research where a site couldn't be read. Categories only: we don't list stock.",
+    "findByType": "Find shops by what they sell"
   },
   "whatsOn": {
     "intro": "Competitions, fly-ins, club events and courses, from the national body and club websites.",

@@ -45,6 +45,14 @@ export function OrgCard({
       {org.disciplines.length > 0 && (
         <p className="text-[0.875rem] text-muted-strong">{disciplineLabels(org)}</p>
       )}
+      {org.sells && org.sells.length > 0 && (
+        <p className="text-[0.875rem]">
+          <span className="font-semibold">{t("gear.sells")}:</span>{" "}
+          {org.sells
+            .map((c) => tOr(`gear.categories.${c}`, "gear.categories.paragliders"))
+            .join(", ")}
+        </p>
+      )}
       {price?.priceFrom !== undefined && (
         <p className="text-[0.875rem]">
           <span className="font-semibold">

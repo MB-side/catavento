@@ -16,6 +16,7 @@ import type {
   Station,
   Brand,
   ProviderRun,
+  GearCategory,
   StewardEvidence,
   StewardRole,
 } from "@/lib/types";
@@ -69,6 +70,7 @@ export interface BuildInputs {
   sampleSites: SampleSiteInput[];
   sampleSitesChecked: string;
   offerings: OfferingInput[];
+  gearCategories: { org: string; sells: GearCategory[]; source: string; checked: string }[];
   brands: { name: string; website?: string; distributors: { org: string; role: Brand["distributors"][number]["role"] }[] }[];
 }
 
@@ -151,6 +153,19 @@ export function buildData(input: BuildInputs): BuildOutputs {
     site.stewardOrgId = steward.org ? resolveOrgRef(steward.org, organisations) : undefined;
   }
   applySiteStations(sites, input.siteStations, stations, warnings);
+
+  // What each shop sells, as it publishes (D73), with the page it came from as a source.
+  for (const entry of input.gearCategories) {
+    const org = organisations.find((o) => o.id === entry.org || o.legacyId === entry.org);
+    if (!org) {
+      warnings.push({ code: "gear-org-missing", message: `gear-categories.yaml: no organisation ${entry.org}` });
+      continue;
+    }
+    org.sells = [...new Set([...(org.sells ?? []), ...entry.sells])];
+    if (!org.sources.some((s) => s.url === entry.source)) {
+      org.sources = [...org.sources, { providerId: "org-websites", url: entry.source, fetchedAt: entry.checked, licence: "facts" }];
+    }
+  }
 
   // Manual overrides win over everything else.
   const used = new Set<string>();

@@ -7,6 +7,7 @@ import type { z } from "zod";
 import {
   brandsFileSchema,
   clubAliasesFileSchema,
+  gearCategoriesFileSchema,
   countriesFileSchema,
   nzSampleSitesFileSchema,
   offeringsFileSchema,
@@ -71,5 +72,6 @@ export function readInputs(root: string = process.cwd()): BuildInputs {
     sampleSitesChecked: SAMPLE_SITES_CHECKED,
     offerings: readYaml("offerings.yaml", offeringsFileSchema),
     brands: readYaml("brands.yaml", brandsFileSchema) ?? [],
+    gearCategories: readYaml("gear-categories.yaml", gearCategoriesFileSchema) ?? [],
   };
 }
