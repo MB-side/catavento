@@ -296,6 +296,7 @@ export interface Country {
   default?: boolean;
   regionLabel: string;
   regions: RegionCode[];
+  regionNames: Record<RegionCode, string>; // display names, e.g. "AU-NSW": "New South Wales"
   timezones: string[];
   currency: string;
   defaultUnits: { speed: SpeedUnit; altitude: AltitudeUnit };

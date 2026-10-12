@@ -167,6 +167,7 @@ describe("mapOfferings", () => {
       enabled: true,
       regionLabel: "State",
       regions: ["AU-NSW"],
+      regionNames: { "AU-NSW": "New South Wales" },
       timezones: ["Australia/Sydney"],
       currency: "AUD",
       defaultUnits: { speed: "kmh" as const, altitude: "m" as const },

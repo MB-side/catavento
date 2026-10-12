@@ -187,7 +187,9 @@ interface BuildReport {                        // data/generated/_report.json
 
 interface Country {                            // loaded from data/manual/countries.yaml
   code: CountryCode; name: string; enabled: boolean; default?: boolean;
-  regionLabel: string; regions: RegionCode[]; timezones: string[]; currency: string;
+  regionLabel: string; regions: RegionCode[];
+  regionNames: Record<RegionCode, string>;     // display names, e.g. "AU-NSW": "New South Wales" (D63)
+  timezones: string[]; currency: string;
   defaultUnits: { speed: "kmh" | "kt" | "mph"; altitude: "m" | "ft" };
   nationalBody: { orgId: string; name: string; url: string; membershipLine: string; visitingPilotsUrl?: string; joinUrl?: string };
   ratingsNote: string; primarySiteSource: string; coverage: "full" | "sample";

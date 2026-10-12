@@ -23,6 +23,14 @@ const POINTS_16 = [
 ] as const;
 type Point = (typeof POINTS_16)[number];
 
+/** The 16 compass points, clockwise from north, for direction pickers. */
+export const COMPASS_POINTS: readonly string[] = POINTS_16;
+
+/** Whether a site's published range takes a wind from this bearing (inside an arc, or "all"). */
+export function takesWindFrom(ranges: WindArc[] | "all", bearing: number): boolean {
+  return ranges === "all" || ranges.some((a) => distanceToArc(bearing, a) === 0);
+}
+
 const BEARING = new Map<string, number>(POINTS_16.map((p, i) => [p, i * 22.5]));
 const EIGHT_POINT = new Set(["N", "NE", "E", "SE", "S", "SW", "W", "NW"]);
 

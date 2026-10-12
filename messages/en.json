@@ -281,5 +281,139 @@
     "optOutContact": "Or email us and we'll stop, usually within 24 hours. We can also remove anything already collected from your site.",
     "contactHeading": "Contact",
     "contactText": "Questions about CataventoBot:"
+  },
+  "sitesList": {
+    "intro": "Every flying site we know of in {country}: where it is, which winds it takes, and who to contact before you fly.",
+    "regionIntro": "Flying sites in {region}.",
+    "browseRegions": "Browse by {regionLabel}",
+    "filtersHeading": "Find a site",
+    "name": "Name",
+    "namePlaceholder": "Site name",
+    "region": "{regionLabel}",
+    "allRegions": "All",
+    "discipline": "Suits",
+    "anyDiscipline": "Either",
+    "pg": "Paragliders",
+    "hg": "Hang gliders",
+    "wind": "Takes a wind from",
+    "anyWind": "Any direction",
+    "include": "Show",
+    "includeAll": "All sites",
+    "includeOfficial": "Site guide sites only",
+    "clear": "Clear filters",
+    "results": {
+      "one": "1 site",
+      "other": "{count} sites"
+    },
+    "noResults": "No sites match these filters.",
+    "showMap": "Show map",
+    "hideMap": "Hide map",
+    "mapLoading": "Loading the map…",
+    "mapFailed": "The map couldn't load. The list still works.",
+    "mapLabel": "Map of the sites listed below",
+    "openSite": "Open site page",
+    "community": "Community data",
+    "communityExplainer": "Sites marked “Community data” come from ParaglidingEarth's contributors and aren't in the official site guide. Check locally before flying.",
+    "closed": "Closed",
+    "open": "Open",
+    "unknownStatus": "Status not published",
+    "noPosition": "Position not published",
+    "contact": "Contact: {name}",
+    "managedBy": "Managed by {name}",
+    "restricted": "Restricted"
+  },
+  "site": {
+    "sitesCrumb": "Sites",
+    "officialDetails": "Official site details",
+    "fullOfficialDetails": "Full official site details",
+    "steward": {
+      "managedBy": "Managed by",
+      "operatedBy": "Operated by",
+      "siteHolder": "Site holder",
+      "accessManagedBy": "Access managed by",
+      "openSite": "Open site: no managing body listed",
+      "listedContact": "Contact listed in the Site Guide",
+      "notListed": "Steward not listed yet",
+      "tellUs": "Know who manages this site? Tell us",
+      "contact": "Contact",
+      "website": "Website",
+      "organisationPage": "About {name}",
+      "access": "Site access",
+      "also": "Also involved",
+      "firstFlight": "New to this site or visiting? Contact the {steward} before your first flight for site rules, protocols and hazards.",
+      "firstFlightListed": "New to this site or visiting? Contact {name} before your first flight for site rules, protocols and hazards.",
+      "noSteward": "No managing body is listed for this site. Check local rules with the national body or a local club before flying.",
+      "word": {
+        "club": "club",
+        "site_holder": "site holder",
+        "operator": "operator"
+      },
+      "confirmed": "Named by the Site Guide and on its own website."
+    },
+    "wind": {
+      "heading": "Wind window",
+      "published": "Published range: {label}",
+      "all": "All directions",
+      "unparsed": "Wind directions aren't given in a form we can read. See the official site details.",
+      "note": "The shaded area shows the published wind range.",
+      "community": "Directions rated “good” by ParaglidingEarth contributors."
+    },
+    "stations": {
+      "heading": "Weather stations",
+      "open": "Open live wind",
+      "clubStation": "Club station",
+      "onSite": "On site",
+      "away": "{distance} km away",
+      "none": "No weather stations linked to this site yet."
+    },
+    "forecasts": {
+      "heading": "Forecasts",
+      "intro": "A 3-day wind outlook for each site arrives with My Sites. Meanwhile, these forecast services cover this area:",
+      "wtf": "Where To Fly",
+      "skysight": "SkySight",
+      "pgmap": "Paragliding Map"
+    },
+    "facts": {
+      "heading": "Before you fly",
+      "type": "Type",
+      "height": "Height",
+      "rating": "Rating",
+      "wind": "Wind directions",
+      "launches": "Launches",
+      "status": "Status",
+      "contact": "Contact listed",
+      "intro": "Short facts only. Hazards, landing areas and local rules are on the official site details.",
+      "notPublished": "Not published",
+      "source": "Facts from the {provider} · checked {date}",
+      "communitySource": "Community site data from ParaglidingEarth · checked {date}",
+      "communityNote": "This site comes from ParaglidingEarth's contributors and isn't in the official site guide. Ask a local club before flying here."
+    },
+    "map": {
+      "heading": "Where it is",
+      "launch": "Launch",
+      "noPosition": "This site's position isn't published.",
+      "approximate": "Location available from the club.",
+      "show": "Show on map"
+    },
+    "notices": {
+      "heading": "Club news",
+      "intro": "Recent headlines from {name}.",
+      "none": "No recent club news for this site."
+    },
+    "nearby": {
+      "schoolsHeading": "New to flying here?",
+      "schoolsIntro": "Schools and tandem operators in {region}, as listed by the national body.",
+      "noSchools": "No schools or tandem operators listed in {region} yet.",
+      "eventsHeading": "What's on in {region}",
+      "noEvents": "No upcoming events listed in {region}."
+    },
+    "otherSites": {
+      "heading": "Other sites {name} manages"
+    },
+    "sources": {
+      "heading": "Sources for this page"
+    },
+    "disclaimer": "Information only. Forecast direction is compared with each site's published wind range; speeds are shown but not judged. Always check the official site guide, the administering club and conditions on the day. You are responsible for your decision to fly.",
+    "shareFooter": "Information only. Check the official site guide and the club before flying."
   }
 }

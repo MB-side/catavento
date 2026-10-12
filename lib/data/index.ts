@@ -9,6 +9,8 @@ import {
   anyOrganisationSchema,
   buildReportSchema,
   countrySchema,
+  eventSchema,
+  noticeSchema,
   offeringSchema,
   providerSchema,
   resourceSchema,
@@ -20,6 +22,8 @@ import type {
   Club,
   Country,
   CountryCode,
+  EventItem,
+  Notice,
   Offering,
   OrgKind,
   Organisation,
@@ -88,8 +92,39 @@ export function getSites(country?: CountryCode): Site[] {
   );
 }
 
+export function getSite(id: string): Site | undefined {
+  return getSites().find((s) => s.id === id);
+}
+
+/** Sites in one region (state, territory or NZ region), by name. */
+export function getSitesInRegion(regionCode: string): Site[] {
+  return getSites()
+    .filter((s) => s.regionCode === regionCode)
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
 export function getStations(): Station[] {
   return load("stations.json", z.array(stationSchema)).filter((s) => !s.hidden);
+}
+
+export function getStation(id: string): Station | undefined {
+  return getStations().find((s) => s.id === id);
+}
+
+// ---------- events and notices ----------
+
+export function getEvents(country?: CountryCode): EventItem[] {
+  return load("events.json", z.array(eventSchema)).filter(
+    (e) => !country || sameCountry(e.country, country),
+  );
+}
+
+export function getNotices(filter: { country?: CountryCode; orgId?: string } = {}): Notice[] {
+  return load("notices.json", z.array(noticeSchema)).filter(
+    (n) =>
+      (!filter.country || sameCountry(n.country, filter.country)) &&
+      (!filter.orgId || n.orgId === filter.orgId),
+  );
 }
 
 // ---------- everything else ----------

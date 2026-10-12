@@ -17,10 +17,15 @@ interface PageMetaInput {
   description: string;
   /** Route path without basePath, e.g. "/au/clubs". */
   path: string;
+  /** A share image path without basePath, e.g. "/og/sites/au/nsw/long-reef-ne.png" (1200×630). */
+  image?: { path: string; alt: string };
 }
 
-export function pageMetadata({ title, description, path }: PageMetaInput): Metadata {
+export function pageMetadata({ title, description, path, image }: PageMetaInput): Metadata {
   const url = absoluteUrl(path);
+  const images = image
+    ? [{ url: absoluteUrl(image.path), width: 1200, height: 630, alt: image.alt }]
+    : undefined;
   return {
     title,
     description,
@@ -31,7 +36,9 @@ export function pageMetadata({ title, description, path }: PageMetaInput): Metad
       url,
       siteName: siteConfig.name,
       type: "website",
+      ...(images ? { images } : {}),
     },
+    ...(images ? { twitter: { card: "summary_large_image", images } } : {}),
   };
 }
 

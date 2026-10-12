@@ -668,10 +668,10 @@
     },
     "club-websites": {
       "status": "warning",
-      "startedAt": "2026-10-12T08:37:24.241Z",
-      "finishedAt": "2026-10-12T08:41:56.544Z",
-      "recordsFound": 14,
-      "recordsChanged": 14,
+      "startedAt": "2026-10-12T09:17:42.632Z",
+      "finishedAt": "2026-10-12T09:22:16.672Z",
+      "recordsFound": 15,
+      "recordsChanged": 15,
       "warnings": [
         "Skyhigh Paragliding Club Inc: website not read (robots.txt does not allow https://skyhighparagliding.org.au/)",
         "Southern Microlight Club Inc: website not read (robots.txt does not allow https://www.southernmicrolightclub.com.au/)",
@@ -681,8 +681,8 @@
         "Hawkes Bay club: website not read (robots.txt does not allow https://www.soarhawkesbay.co.nz)"
       ],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-10-12T08:41:56.544Z",
-      "contentHash": "feaca1c89daa1d29fed911a71af72ce387de11f662cdf544198f8691acd8924c",
+      "lastSuccessAt": "2026-10-12T09:22:16.672Z",
+      "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c",
       "info": [
         "ACT Hang-gliding and Paragliding Association (ACTHPA): its website names 7 of the 8 sites listed for it",
         "Blue Mountains Hang Gliding Club Inc: nothing to collect",
@@ -698,7 +698,6 @@
         "Newcastle Hang Gliding Club Inc: nothing to collect",
         "Newcastle Paragliding Club: nothing to collect",
         "North East Victoria Hang Gliding Club Inc: its website names 9 of the 10 sites listed for it",
-        "North Queensland Hang Gliding Association: nothing to collect",
         "North Queensland Regional Association (NQRA): nothing to collect",
         "Northern Rivers Hang Gliding and Paragliding Club Inc: nothing to collect",
         "NSW Hang-gliding and Paragliding Association (NSWHPA): nothing to collect",
@@ -707,7 +706,7 @@
         "South Australian Hang Gliding & Paragliding Association (SAHPGA): its website names 4 of the 8 sites listed for it",
         "Stanwell Park Hang Gliding & Paragliding Club (FlyStanwell): its website names 2 of the 2 sites listed for it",
         "Sunshine Coast Free Flyers Association: its website names 6 of the 8 sites listed for it",
-        "Sydney Paragliding and Hang Gliding Club (SPHGC): its website names 6 of the 8 sites listed for it",
+        "Sydney Paragliding and Hang Gliding Club (SPHGC): its website names 8 of the 8 sites listed for it",
         "Tasmanian Hang-gliding and Paragliding Association (THPA): nothing to collect",
         "Victorian Hang-gliding and Paragliding Association (VHPA): nothing to collect",
         "Auckland club: nothing to collect",

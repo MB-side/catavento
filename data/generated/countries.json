@@ -15,6 +15,16 @@
       "AU-ACT",
       "AU-NT"
     ],
+    "regionNames": {
+      "AU-NSW": "New South Wales",
+      "AU-VIC": "Victoria",
+      "AU-QLD": "Queensland",
+      "AU-SA": "South Australia",
+      "AU-WA": "Western Australia",
+      "AU-TAS": "Tasmania",
+      "AU-ACT": "Australian Capital Territory",
+      "AU-NT": "Northern Territory"
+    },
     "timezones": [
       "Australia/Sydney",
       "Australia/Melbourne",
@@ -71,6 +81,25 @@
       "NZ-STL",
       "NZ-CIT"
     ],
+    "regionNames": {
+      "NZ-NTL": "Northland",
+      "NZ-AUK": "Auckland",
+      "NZ-WKO": "Waikato",
+      "NZ-BOP": "Bay of Plenty",
+      "NZ-GIS": "Gisborne",
+      "NZ-HKB": "Hawke's Bay",
+      "NZ-TKI": "Taranaki",
+      "NZ-MWT": "Manawatū-Whanganui",
+      "NZ-WGN": "Wellington",
+      "NZ-TAS": "Tasman",
+      "NZ-NSN": "Nelson",
+      "NZ-MBH": "Marlborough",
+      "NZ-WTC": "West Coast",
+      "NZ-CAN": "Canterbury",
+      "NZ-OTA": "Otago",
+      "NZ-STL": "Southland",
+      "NZ-CIT": "Chatham Islands"
+    },
     "timezones": [
       "Pacific/Auckland"
     ],

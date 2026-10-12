@@ -10,7 +10,7 @@
     "dev": "next dev",
     "build:data": "tsx scripts/build-data.ts",
     "ingest": "tsx scripts/ingest.ts",
-    "build": "pnpm build:data && next build && pnpm check:content",
+    "build": "pnpm build:data && next build && pnpm share-images && pnpm check:content",
     "serve": "tsx scripts/serve-out.ts",
     "lint": "eslint .",
     "typecheck": "next typegen && tsc --noEmit",
@@ -19,13 +19,15 @@
     "test:e2e": "playwright test",
     "check:content": "tsx scripts/content-guard.ts",
     "check:links": "tsx scripts/check-links.ts",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "share-images": "tsx scripts/share-images.tsx"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cn": "^0.4.0",
     "lucide-react": "^1.53.0",
+    "maplibre-gl": "^5.24.0",
     "next": "16.4.0",
     "radix-ui": "^1.7.0",
     "react": "19.3.0",
