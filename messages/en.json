@@ -40,13 +40,19 @@
     "independence": "Catavento is an independent prototype. Information comes from public sources and is credited on every page."
   },
   "home": {
-    "title": "Find flying sites, clubs, schools and events",
-    "intro": "One place for sites, the clubs that manage them, schools, tandem flights, shops and events.",
-    "iFly": "I fly",
-    "iFlyHint": "Sites, clubs and what's on",
-    "newToFlying": "New to flying",
-    "newToFlyingHint": "Tandem flights and learning to fly",
-    "building": "This prototype is being built. Sites, clubs and your saved sites will appear here soon.",
+    "intro": "One place for flying sites and who manages them, events, gear, and tandem flights and lessons for people new to flying.",
+    "searchLabel": "Search sites, clubs, schools and events",
+    "searchPlaceholder": "Site, club, school or town",
+    "searchButton": "Search",
+    "sectionsHeading": "What's here",
+    "sites": "Sites and who manages each one, on a map and in a list.",
+    "whatsOn": "Events, competitions and safety notices.",
+    "gear": "Where to buy, shops and service centres, and used gear.",
+    "newToFlying": "Tandem flights, learning to fly, and schools.",
+    "countriesHeading": "Browse by country",
+    "nationalBody": "National body: {name}",
+    "sampleLabel": "Sample",
+    "building": "This prototype is being built. Site counts, upcoming events and, for returning pilots, your saved sites will appear on this page as each part is finished.",
     "whyTheNameLabel": "Why the name?"
   },
   "comingSoon": {

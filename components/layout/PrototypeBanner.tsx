@@ -6,7 +6,7 @@ import { X } from "lucide-react";
 import { t, tOr } from "@/lib/messages";
 import { useCurrentCountry } from "./useCurrentCountry";
 
-const DISMISS_KEY = "ht.prototypeBannerDismissed";
+const DISMISS_KEY = "catavento.prototypeBannerDismissed";
 
 /** Prototype banner (docs/07 §3): every page, dismissible for the browser session. */
 export function PrototypeBanner() {

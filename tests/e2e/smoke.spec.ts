@@ -55,6 +55,24 @@ test("home page has the brand title, descriptor and Organization JSON-LD", async
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
 });
 
+test("home is an overview: search, sections and countries", async ({ page }) => {
+  await page.goto("");
+  const sections = page.getByRole("region", { name: "What's here" });
+  for (const name of ["Sites & map", "What's on", "Gear", "New to flying"]) {
+    await expect(sections.getByRole("link", { name: new RegExp(name) })).toBeVisible();
+  }
+  const countries = page.getByRole("region", { name: "Browse by country" });
+  await expect(countries.getByRole("link", { name: /Australia/ })).toHaveAttribute(
+    "href",
+    /\/au\/$/,
+  );
+  await expect(countries.getByRole("link", { name: /New Zealand.*Sample/ })).toBeVisible();
+
+  await page.getByLabel("Search sites, clubs, schools and events").fill("Stanwell");
+  await page.getByRole("search").getByRole("button", { name: "Search" }).click();
+  await expect(page).toHaveURL(/\/catavento\/search\/\?q=Stanwell$/);
+});
+
 test("prototype banner can be dismissed for the session", async ({ page }) => {
   await page.goto("");
   const banner = page.getByTestId("prototype-banner");

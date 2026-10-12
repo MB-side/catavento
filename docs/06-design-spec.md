@@ -85,7 +85,8 @@ Empty, loading and error states are required for: My Sites (no sites), outlook (
 
 | Screen | Reference | Iteration 1 differences from the mockup |
 |---|---|---|
-| My Sites (phone) | `Main.dc.html` | Live wind numbers become "Open live wind" station buttons. "Since your last visit" shows new events and notices only (no listings yet). The top bar adds the visible "New to flying" button (not drawn in the mockup); the prototype banner replaces the "Sample data" chip |
+| Home | None (layout agreed 2026-10-12, D37) | Overview: welcome and search, "What's here" section tiles, browse by country, coming up, why the name. Returning visitors with saved sites see a "Your sites" strip first (compact `SiteCard`s with `OutlookStrip`, link to My Sites). Blocks without data yet are omitted, never filled with examples |
+| My Sites (phone) | `Main.dc.html` | Live wind numbers become "Open live wind" station buttons. "Since your last visit" shows new events and notices only (no listings yet). The phone top bar has search and the menu (D32); the prototype banner replaces the "Sample data" chip |
 | Site page (phone) | `SitePage.dc.html` | Top bar as for My Sites. No live numbers; no "I'm planning to fly"; Sponsored card only via partner previews; gear section omitted; "New to flying here?" section added (tandems and schools nearby) |
 | Site page (desktop) | `SitePageDesktop.dc.html` | Same as phone, plus "Pilot reports" omitted (Iteration 3); "Sign in" omitted |
 | Club page (desktop) | `ClubPage.dc.html` | "Follow club" adds all club sites to My Sites (device only); "Claim this club page" shows as coming soon with the feedback link; contacts only as published |

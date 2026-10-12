@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CalendarDays, Compass, Map as MapIcon, Search, Wrench } from "lucide-react";
 import { defaultCountrySegment } from "@/lib/country-codes";
-import { t } from "@/lib/messages";
-import { absoluteUrl } from "@/lib/paths";
+import { getEnabledCountries } from "@/lib/country";
+import { t, type MessageKey } from "@/lib/messages";
+import { absoluteUrl, withBasePath } from "@/lib/paths";
 import { homeTitle } from "@/lib/seo";
 import { siteConfig } from "@/site.config";
 
@@ -12,46 +13,118 @@ export const metadata: Metadata = {
   alternates: { canonical: absoluteUrl("/") },
 };
 
-/** Home (placeholder for M0): the "I fly" / "New to flying" chooser arrives with real data. */
+const sections: { label: MessageKey; text: MessageKey; path: string; Icon: typeof MapIcon }[] = [
+  { label: "nav.sites", text: "home.sites", path: "/sites", Icon: MapIcon },
+  { label: "nav.whatsOn", text: "home.whatsOn", path: "/whats-on", Icon: CalendarDays },
+  { label: "nav.gear", text: "home.gear", path: "/gear", Icon: Wrench },
+  { label: "nav.newToFlying", text: "home.newToFlying", path: "/new-to-flying", Icon: Compass },
+];
+
+/**
+ * Home: an overview for everyone (D37). Later milestones add, in order: live counts on the section
+ * tiles (M1/M3), regions under each country (M3), a "Your sites" strip at the top for visitors
+ * with saved sites on this device (M5, client-side only), and "Coming up" events (M6).
+ */
 export default function HomePage() {
   const country = defaultCountrySegment;
-  const paths = [
-    { href: `/${country}/sites/`, label: t("home.iFly"), hint: t("home.iFlyHint") },
-    {
-      href: `/${country}/new-to-flying/`,
-      label: t("home.newToFlying"),
-      hint: t("home.newToFlyingHint"),
-    },
-  ];
+  const countries = getEnabledCountries();
 
   return (
-    <div className="mx-auto max-w-3xl">
-      <h1 className="font-condensed text-[2rem] leading-tight font-bold lg:text-[3rem]">
-        {siteConfig.name}
-      </h1>
-      <p className="mt-1 text-[1.125rem] font-medium text-muted-strong">{siteConfig.descriptor}</p>
-      <p className="mt-4 text-[1.0625rem]">{t("home.intro")}</p>
+    <div className="flex flex-col gap-10">
+      <section aria-labelledby="welcome" className="max-w-3xl">
+        <h1
+          id="welcome"
+          className="font-condensed text-[2rem] leading-tight font-bold lg:text-[3rem]"
+        >
+          {siteConfig.name}
+        </h1>
+        <p className="mt-1 text-[1.125rem] font-medium text-muted-strong">
+          {siteConfig.descriptor}
+        </p>
+        <p className="mt-3 text-[1.0625rem]">{t("home.intro")}</p>
 
-      <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-        {paths.map((p) => (
-          <li key={p.href}>
-            <Link
-              href={p.href}
-              className="flex min-h-11 items-center justify-between gap-3 rounded-[14px] border border-border bg-surface p-4 text-ink hover:border-link hover:text-ink lg:p-5"
+        {/* Plain GET form: works without JavaScript and sends nothing anywhere but /search. */}
+        <form action={withBasePath("/search")} method="get" role="search" className="mt-5">
+          <label htmlFor="home-search" className="mb-1.5 block font-semibold">
+            {t("home.searchLabel")}
+          </label>
+          <div className="flex gap-2">
+            <input
+              id="home-search"
+              name="q"
+              type="search"
+              placeholder={t("home.searchPlaceholder")}
+              className="min-h-11 w-full rounded-[10px] border border-border-strong bg-surface px-3 text-base placeholder:text-muted"
+            />
+            <button
+              type="submit"
+              className="inline-flex min-h-11 shrink-0 items-center gap-2 rounded-[10px] bg-ink px-4 font-semibold text-white hover:bg-ink/90"
             >
-              <span>
-                <span className="block font-condensed text-[1.375rem] font-bold">{p.label}</span>
-                <span className="block text-muted">{p.hint}</span>
-              </span>
-              <ArrowRight className="size-6 shrink-0 text-action" aria-hidden="true" />
-            </Link>
-          </li>
-        ))}
-      </ul>
+              <Search className="size-5" aria-hidden="true" />
+              {t("home.searchButton")}
+            </button>
+          </div>
+        </form>
+      </section>
 
-      <p className="mt-6 rounded-[14px] bg-info-tint p-4 text-muted-strong">{t("home.building")}</p>
+      <section aria-labelledby="sections">
+        <h2 id="sections" className="font-condensed text-[1.375rem] font-bold">
+          {t("home.sectionsHeading")}
+        </h2>
+        <ul className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {sections.map(({ label, text, path, Icon }) => (
+            <li key={path}>
+              <Link
+                href={`/${country}${path}/`}
+                className="flex h-full min-h-11 flex-col gap-1 rounded-[14px] border border-border bg-surface p-4 text-ink hover:border-link hover:text-ink lg:p-5"
+              >
+                <span className="flex items-center gap-2 font-condensed text-[1.25rem] font-bold">
+                  <Icon className="size-5 text-action" aria-hidden="true" />
+                  {t(label)}
+                </span>
+                <span className="text-muted">{t(text)}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
 
-      <section aria-labelledby="why-the-name" className="mt-10 border-t border-border pt-6">
+      <section aria-labelledby="countries">
+        <h2 id="countries" className="font-condensed text-[1.375rem] font-bold">
+          {t("home.countriesHeading")}
+        </h2>
+        <ul className="mt-3 grid gap-3 sm:grid-cols-2">
+          {countries.map((c) => (
+            <li key={c.code}>
+              <Link
+                href={`/${c.code.toLowerCase()}/`}
+                className="flex min-h-11 items-center justify-between gap-3 rounded-[14px] border border-border bg-surface p-4 text-ink hover:border-link hover:text-ink lg:p-5"
+              >
+                <span>
+                  <span className="flex items-center gap-2 font-condensed text-[1.25rem] font-bold">
+                    {c.name}
+                    {c.coverage === "sample" && (
+                      <span className="rounded-full bg-prototype-tint px-2 py-0.5 font-sans text-[0.75rem] font-semibold text-prototype-text">
+                        {t("home.sampleLabel")}
+                      </span>
+                    )}
+                  </span>
+                  <span className="block text-muted">
+                    {t("home.nationalBody", { name: c.nationalBody.name })}
+                  </span>
+                </span>
+                <ArrowRight className="size-6 shrink-0 text-action" aria-hidden="true" />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <p className="max-w-3xl rounded-[14px] bg-info-tint p-4 text-muted-strong">
+        {t("home.building")}
+      </p>
+
+      <section aria-labelledby="why-the-name" className="max-w-3xl border-t border-border pt-6">
         <h2 id="why-the-name" className="font-condensed text-[1.25rem] font-bold">
           {t("home.whyTheNameLabel")}
         </h2>

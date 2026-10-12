@@ -25,7 +25,7 @@ Build a credible, mostly real, static website that the founder can share with pi
 
 ### In scope
 
-- Home with "I fly" / "New to flying" chooser, and My Sites for returning visitors
+- Home: an overview of everything on the site (search, a tile per section, browse by country, coming up), with the visitor's saved sites at the top when they have any (D37)
 - **My Sites** (device-only): save sites, see each with wind range, 3-day outlook, station links, club, status
 - **Sites & map**: national map and filterable list; state pages; **site pages** with the **Managed by** club panel
 - **Clubs**: directory by state and **club pages** listing managed sites; "Follow club" adds all its sites to My Sites
@@ -52,7 +52,7 @@ All routes are statically generated. `[country]` is a lowercase ISO country code
 
 | Route | Purpose | Mockup reference |
 |---|---|---|
-| `/` | Chooser for first-time visitors ("I fly" / "New to flying", with country); returning visitors with saved sites see My Sites inline | n/a |
+| `/` | Overview (D37): welcome and search; "What's here" tiles for Sites & map, What's on, Gear and New to flying (with live counts once data exists); browse by country (then by region); coming up (next events, latest notices); why the name. Visitors with saved sites on this device also see a "Your sites" strip at the top (site, club, 3-day outlook mini-strip, link to My Sites), rendered in the browser | n/a |
 | `/my-sites` | Saved sites dashboard (spans countries) | `design/mockups/Main.dc.html` |
 | `/search` | Client-side search results (current country first) | n/a |
 | `/about`, `/sources`, `/status`, `/bot`, `/takedown`, `/privacy`, `/disclaimer`, `/feedback` | Trust and policy pages | n/a |
@@ -76,7 +76,7 @@ All routes are statically generated. `[country]` is a lowercase ISO country code
 ### 5.1 Global
 
 - **Prototype banner** (every page, dismissible per session): text in `docs/07` §3. Includes a Feedback link.
-- **Navigation** per `docs/01` §4 and `docs/06` §5. Section links (Sites & map, Clubs, What's on, Gear, New to flying) go to the **current country** (from the page, else the visitor's saved choice `ht.country`, else the default country).
+- **Navigation** per `docs/01` §4 and `docs/06` §5. Section links (Sites & map, What's on, Gear, New to flying; D31) go to the **current country** (from the page, else the visitor's saved choice `catavento.country`, else the default country).
 - **Country switcher** (desktop top bar, phone menu) lists enabled countries; sample countries are labelled "(sample)".
 - **Footer**: sources summary, links to About, Sources and attribution, Status, Bot policy, Takedown, Privacy, Disclaimer, Feedback.
 - **"Report a correction"** link on every site, club and directory page, opening the external feedback form with the page URL and record ID pre-filled (if the form supports pre-fill; otherwise shown on the page for copying).
@@ -85,9 +85,10 @@ All routes are statically generated. `[country]` is a lowercase ISO country code
 ### 5.2 My Sites
 
 - Visitors add or remove a site with a star button on site cards and site pages; "Follow club" adds all of a club's sites.
-- Stored in localStorage under `ht.mySites.v1` as `{ siteIds: string[], units: "kmh" | "kt", speedLimits?: { min?: number, max?: number } }`.
+- Stored in localStorage under `catavento.mySites.v1` as `{ siteIds: string[], units: "kmh" | "kt", speedLimits?: { min?: number, max?: number } }`.
 - Each saved site shows: name (links to site page), region, **administering club** (links to club page), status, wind-range rose and label, **3-day outlook strip** (morning and afternoon per day), and station buttons that open the provider's live page.
 - **"Check these sites in Where To Fly"** button (deep link per `docs/05` §4.6; falls back to the home page).
+- **Installed app:** the web app manifest's `start_url` is `/my-sites/`, so pilots who add the site to their home screen open straight into My Sites (D37).
 - **Share my list**: a URL with site IDs in the query string that recreates the list on another device (and lets a club share "all our sites").
 - Empty state invites the visitor to browse the map or follow a club.
 - Disclaimer per `docs/07` §2.
