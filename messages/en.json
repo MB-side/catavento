@@ -415,5 +415,75 @@
     },
     "disclaimer": "Information only. Forecast direction is compared with each site's published wind range; speeds are shown but not judged. Always check the official site guide, the administering club and conditions on the day. You are responsible for your decision to fly.",
     "shareFooter": "Information only. Check the official site guide and the club before flying."
+  },
+  "clubs": {
+    "intro": "Clubs and associations look after flying sites and welcome visiting pilots. Contact them before your first flight at any of their sites.",
+    "noRegion": "Region not listed",
+    "association": "Association",
+    "club": "Club",
+    "managesCount": {
+      "one": "Manages 1 site",
+      "other": "Manages {count} sites"
+    },
+    "listedCount": {
+      "one": "Contact for 1 more site",
+      "other": "Contact for {count} more sites"
+    },
+    "noSites": "No sites linked yet",
+    "count": {
+      "one": "1 club or association",
+      "other": "{count} clubs and associations"
+    }
+  },
+  "club": {
+    "crumb": "Clubs",
+    "kind": {
+      "club": "Club",
+      "regional_association": "State or regional association"
+    },
+    "contact": "Contact the club",
+    "website": "Club website",
+    "follow": "Follow club",
+    "followHelp": "Saves this club's sites to My Sites on this device.",
+    "following": {
+      "one": "Following: 1 site saved to My Sites on this device.",
+      "other": "Following: {count} sites saved to My Sites on this device."
+    },
+    "unfollow": "Remove these sites from My Sites",
+    "managedHeading": "Sites we manage",
+    "managedNote": "Confirmed by two sources: the site guide lists this club, and the club's own website names the site.",
+    "listedHeading": "Sites that list this club as their contact",
+    "listedNote": "The Site Guide lists this club as the contact for these sites. Whether the club manages them isn't confirmed yet.",
+    "noSites": "No sites are linked to this club yet.",
+    "flyingHeading": "Flying at our sites",
+    "flyingContact": "Contact the club before your first flight at any of our sites for site rules, protocols and hazards.",
+    "flyingRatings": "Check each site's rating and supervision requirements. Some sites need a club safety officer or duty pilot present for lower-rated pilots.",
+    "flyingJoin": "Join the club if you fly here regularly. Membership details: see the club's website.",
+    "flyingJoinNoSite": "Join the club if you fly here regularly. Ask the club about membership.",
+    "newsHeading": "Club news",
+    "newsNone": "No recent news from this club's website.",
+    "eventsHeading": "Club events",
+    "eventsNone": "No upcoming events listed for this club.",
+    "contactsHeading": "Contacts",
+    "contactsNote": "Contacts as published by {source}. Committee members' details are on the club's own website.",
+    "notPublished": "Not published. Ask the club through its website.",
+    "stationsHeading": "Club weather stations",
+    "associationHeading": "Association",
+    "partOf": "Part of {name}",
+    "membersHeading": "Member clubs",
+    "nearbyHeading": "Other clubs in {region}",
+    "claimHeading": "On the club committee?",
+    "claimText": "Soon, clubs will be able to claim their page to post site status, notices and events directly. Until then, tell us what you'd like changed.",
+    "claimLink": "Tell us about your club",
+    "sourcesHeading": "Sources for this page"
+  },
+  "mySites": {
+    "intro": "Your saved sites, kept on this device only. Nothing is sent anywhere.",
+    "empty": "No saved sites yet. Follow a club to save all its sites, or browse the sites.",
+    "browse": "Browse the sites",
+    "loading": "Loading your sites…",
+    "loadFailed": "Your sites couldn't load. Try again in a moment.",
+    "remove": "Remove from My Sites",
+    "comingNext": "Soon: a star on every site, and a 3-day wind outlook for each saved site."
   }
 }

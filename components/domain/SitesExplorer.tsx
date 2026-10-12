@@ -3,11 +3,9 @@
 // Sites list with filters (docs/02 §5.5). The list is the main interface and works without
 // JavaScript (it is pre-rendered in full); the map is an extra that loads only when asked for.
 import dynamic from "next/dynamic";
-import Link from "next/link";
 import { useMemo, useState } from "react";
 import { Map as MapIcon } from "lucide-react";
-import { StatusChip } from "@/components/domain/StatusChip";
-import { WindRose } from "@/components/domain/WindRose";
+import { SiteCard } from "@/components/domain/SiteCard";
 import { t, tOr } from "@/lib/messages";
 import type { SiteSummary } from "@/lib/site-summary";
 import { COMPASS_POINTS, takesWindFrom } from "@/lib/wind";
@@ -165,40 +163,7 @@ export function SitesExplorer({ sites, regions, regionLabel }: Props) {
       ) : (
         <ul className="grid gap-3 md:grid-cols-2 xl:grid-cols-3" data-testid="site-list">
           {shown.map((s) => (
-            <li
-              key={s.id}
-              className="flex gap-3 rounded-[14px] border border-border bg-surface p-4"
-            >
-              <WindRose ranges={s.windRanges} size={48} className="shrink-0" />
-              <div className="min-w-0">
-                <Link
-                  href={s.href}
-                  className="font-condensed text-[1.25rem] leading-tight font-bold"
-                >
-                  {s.name}
-                </Link>
-                <p className="text-[0.875rem] text-muted">
-                  {[s.regionName, s.windParsed ? s.windLabel : undefined]
-                    .filter(Boolean)
-                    .join(" · ")}
-                </p>
-                <p className="text-[0.875rem] text-muted-strong">
-                  {s.steward
-                    ? t("sitesList.managedBy", { name: s.steward })
-                    : s.contact
-                      ? t("sitesList.contact", { name: s.contact })
-                      : undefined}
-                </p>
-                <div className="mt-1 flex flex-wrap gap-1.5">
-                  <StatusChip status={s.status} />
-                  {s.community && (
-                    <span className="rounded-full bg-prototype-tint px-2.5 py-0.5 text-[0.8125rem] font-semibold text-prototype-text">
-                      {t("sitesList.community")}
-                    </span>
-                  )}
-                </div>
-              </div>
-            </li>
+            <SiteCard key={s.id} site={s} />
           ))}
         </ul>
       )}
