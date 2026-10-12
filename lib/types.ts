@@ -173,6 +173,7 @@ export interface Site {
   mainLandingName?: string;
   stationIds: string[];
   wtfSlug?: string;
+  pgeId?: string; // ParaglidingEarth site ID, for community-layer sites and pinned sample sites
   disciplines: Discipline[];
   layer: "ansg" | "pge" | "manual";
   sources: SourceRef[];
@@ -215,6 +216,7 @@ export interface EventItem {
   regionCode?: RegionCode;
   location?: { lat: number; lon: number };
   organiserOrgId?: string;
+  organiserName?: string; // as the source names it; linked to organiserOrgId only on an exact match
   url: string;
   sources: SourceRef[];
 }
@@ -323,6 +325,7 @@ export interface ProviderRun {
   guardDecision?: "accepted" | "accepted_first_run" | "blocked_drop" | "blocked_invalid";
   lastSuccessAt?: string;
   contentHash?: string;
+  info?: string[]; // neutral notes, e.g. what each club website gave
 }
 
 export interface BuildReport {
@@ -344,7 +347,7 @@ export interface CollectedOrg {
   locality?: string;
   postcode?: string;
   website?: string;
-  emailPublic?: string; // only the organisation's own published contact, never a person's (D53)
+  emailPublic?: string; // the contact published for the organisation, never committee members' (D53)
   phonePublic?: string;
   disciplines: Discipline[];
   associationName?: string; // the regional association the source links it to

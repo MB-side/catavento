@@ -238,6 +238,7 @@ export const siteSchema = z.object({
   mainLandingName: z.string().optional(),
   stationIds: z.array(z.string()),
   wtfSlug: z.string().optional(),
+  pgeId: z.string().optional(),
   disciplines: z.array(disciplineSchema),
   layer: z.enum(["ansg", "pge", "manual"]),
   sources: z.array(sourceRefSchema).min(1),
@@ -292,6 +293,7 @@ export const eventSchema = z.object({
   regionCode: regionCode.optional(),
   location: latLon.optional(),
   organiserOrgId: z.string().optional(),
+  organiserName: z.string().optional(),
   url: httpUrl,
   sources: z.array(sourceRefSchema).min(1),
 }) satisfies z.ZodType<EventItem>;
@@ -451,6 +453,7 @@ export const providerRunSchema = z.object({
     .optional(),
   lastSuccessAt: z.iso.datetime({ offset: true }).optional(),
   contentHash: z.string().optional(),
+  info: z.array(z.string()).optional(),
 }) satisfies z.ZodType<ProviderRun>;
 
 export const buildReportSchema = z.object({
@@ -501,6 +504,7 @@ export const nzSampleSitesFileSchema = z.array(
     officialGuideUrl: httpUrl.optional(),
     siteAccessNote: z.string().optional(),
     stations: z.array(z.string()).optional(),
+    pgeIds: z.array(z.string().regex(/^\d+$/)).optional(),
     note: z.string().optional(),
     source: httpUrl,
   }),

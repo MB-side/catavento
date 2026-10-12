@@ -29,6 +29,7 @@ import type { RegionLookup } from "./regions";
 export interface CountryScope {
   code: string;
   regions: ReadonlySet<string>;
+  timezone?: string; // the country's main time zone, for times published without one
 }
 
 /** What the site already knows, for providers that look things up against it (club websites). */
@@ -63,6 +64,7 @@ export interface CollectResult {
   records: IngestRecords;
   invalid: number;
   warnings: string[];
+  info?: string[]; // neutral notes for /status, e.g. what each club website gave
 }
 
 export interface ProviderModule {
@@ -116,6 +118,7 @@ export interface RunOptions {
   modules: ProviderModule[];
   regions: RegionLookup;
   countriesRegions: Map<string, Set<string>>;
+  countryZones?: Map<string, string>;
   directory?: () => Directory;
   only?: string;
   force?: boolean;
@@ -157,6 +160,7 @@ export async function runIngest(opts: RunOptions): Promise<Record<string, Provid
     const countries = codes.map((code) => ({
       code,
       regions: opts.countriesRegions.get(code) ?? new Set<string>(),
+      timezone: opts.countryZones?.get(code),
     }));
 
     const startedAt = now().toISOString();
@@ -184,6 +188,7 @@ export async function runIngest(opts: RunOptions): Promise<Record<string, Provid
           recordsFound: count(previousFile, KINDS),
           recordsChanged: 0,
           warnings: last?.warnings ?? [],
+          info: last?.info,
           guardDecision: last?.guardDecision,
           lastSuccessAt: now().toISOString(),
           contentHash: result.contentHash,
@@ -238,6 +243,7 @@ export async function runIngest(opts: RunOptions): Promise<Record<string, Provid
             guardDecision: guard.decision,
             lastSuccessAt: now().toISOString(),
             contentHash: result.contentHash,
+            info: result.info?.length ? result.info : undefined,
           };
         }
       }

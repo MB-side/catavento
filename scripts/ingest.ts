@@ -29,6 +29,7 @@ async function main(): Promise<void> {
     modules: providerModules,
     regions: RegionLookup.fromFile(),
     countriesRegions: new Map(inputs.countries.map((c) => [c.code, new Set(c.regions)])),
+    countryZones: new Map(inputs.countries.map((c) => [c.code, c.timezones[0] ?? "UTC"])),
     directory: () => ({
       organisations: z.array(anyOrganisationSchema).parse(readGenerated("organisations.json")),
       sites: z.array(siteSchema).parse(readGenerated("sites.json")),

@@ -1,0 +1,3 @@
+# Club and association websites CataventoBot must not read (docs/05 §4, club-websites provider).
+# Add an organisation ID or seed legacy ID when a club asks us to stop; robots.txt is obeyed too.
+skip: []

@@ -13,12 +13,14 @@
   tier: green
   licence: facts
   attribution: "Source: Sports Aviation Federation of Australia"
-  uses: School directory, club directory and club detail pages, events, public safety and advisory notice titles
-  method: Reading public web pages
-  schedule: Nightly
+  uses: Club and school directories (names, state, website, the contact SAFA publishes for each, related association), upcoming events (title, dates, place, organiser, link) and the titles and dates of defect and safety notices. Never committee members' names or details, and never descriptions
+  method: Reading its public directory pages, each club's SAFA page and its public events feed (about 45 requests a week)
+  schedule: Weekly
   countries: [AU]
   permissionStatus: not_requested
   enabled: true
+  collect:
+    everyDays: 7
 
 - id: nzhgpa
   name: New Zealand Hang Gliding & Paragliding Association
@@ -43,7 +45,8 @@
   method: Their public Google Earth files of open and closed sites (2 downloads), compared with last week's copy
   schedule: Weekly
   countries: [AU]
-  permissionStatus: not_requested
+  permissionStatus: granted_feed
+  notes: "The webmaster replied on 2026-10-12: happy for us to use the data, the Google Earth files are fine (and cached, so may be checked more often), and suggested its export service with version checks (docs/10 D59)."
   enabled: true
   collect:
     everyDays: 7
@@ -54,13 +57,15 @@
   tier: green
   licence: cc-by-sa-3.0
   attribution: "Community site data: © ParaglidingEarth contributors (CC BY-SA 3.0 / ODbL 1.0)"
-  uses: Australian sites missing from the Site Guide (a separate community layer); coordinates and wind directions for the New Zealand sample sites
-  method: Official data service (access to be requested)
-  schedule: Weekly
+  uses: Australian sites missing from the Site Guide (a separate community layer), and coordinates and wind directions for the New Zealand sample sites. Name, takeoff position, directions rated "good", and whether it suits paragliders or hang gliders. Never descriptions
+  method: Its open data service, one download per country (2 a month); the service needs no sign-up
+  schedule: Monthly
   countries: ["*"]
   permissionStatus: not_requested
   enabled: true
   notes: Share-alike licence; our copy of this data stays public in the project repository (docs/10 C17).
+  collect:
+    everyDays: 30
 
 - id: assoc
   name: State and regional associations
@@ -79,12 +84,14 @@
   tier: amber
   licence: facts
   attribution: "Source: {club name} website"   # (D39)
-  uses: Notice and event headlines, dates and links where a club publishes a simple public list (added club by club)
-  method: Reading public web pages or news feeds
-  schedule: Nightly
+  uses: From each club or association website listed by its national body, news and event headlines with their dates and links (from its news feed or events calendar), and which sites its own "sites" page names (to confirm who manages a site). Never article text, descriptions or photos
+  method: Reading each club's home page, its news feed or calendar, and its sites page (about 3 to 6 requests per club). Facebook pages are never read. A club can opt out through its robots.txt or by asking us
+  schedule: About twice a week
   countries: ["*"]
   permissionStatus: not_requested
   enabled: true
+  collect:
+    everyDays: 3
 
 - id: org-websites
   name: Organisations' own websites
