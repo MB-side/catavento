@@ -65,14 +65,21 @@ export function LogoMark({ size = 28, className }: MarkProps) {
 interface LockupProps {
   withDescriptor?: boolean;
   onDark?: boolean;
+  /** The mark's size in pixels. Below about 40 px the gliders' shapes blur together. */
+  markSize?: number;
   className?: string;
 }
 
 /** Mark + name, optionally with the descriptor stacked beneath (desktop top bar, About, share images). */
-export function Lockup({ withDescriptor = false, onDark = false, className }: LockupProps) {
+export function Lockup({
+  withDescriptor = false,
+  onDark = false,
+  markSize = withDescriptor ? 48 : 40,
+  className,
+}: LockupProps) {
   return (
-    <span className={cn("inline-flex items-center gap-2", className)}>
-      <LogoMark size={withDescriptor ? 32 : 28} />
+    <span className={cn("inline-flex items-center gap-2.5", className)}>
+      <LogoMark size={markSize} />
       <span className="flex flex-col leading-none">
         <span
           className={cn(
