@@ -1,0 +1,4 @@
+# Force a site's steward and role where parsing can't (docs/04 §4). Empty until Australian sites
+# arrive in M2. Example:
+# site:au:nsw:manilla-mt-borah: { org: CLB-xxx, role: club, source: "https://..." }
+{}

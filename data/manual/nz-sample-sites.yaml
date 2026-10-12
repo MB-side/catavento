@@ -8,7 +8,7 @@
   officialGuideUrl: https://www.cloudbase.org.nz/site-guide/flying-site-kariotahi
   siteAccessNote: "Subscription pass required (day, week, month or season); funds go to developing the flight park."
   stations: [station:holfuy:213]
-  source: https://www.paraglidingmap.com/sites/Russia
+  source: https://www.highside.nz   # was a Paragliding Map URL (wrong page, red tier): docs/10 C19
 - name: Port Hills
   region: NZ-CAN
   steward: { legacyId: NZ-CLB-005, role: club }
