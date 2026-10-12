@@ -211,5 +211,71 @@
     "stationsHeading": "Live readings from weather stations",
     "stationsText": "Live readings from Holfuy, FreeFlightWx and club weather stations will appear on each site page once their owners agree. Until then, each site links straight to its stations' live pages.",
     "stationsCount": "{count} station links so far in {country}."
+  },
+  "status": {
+    "intro": "Catavento collects public information automatically on a schedule. Each check downloads the source, compares it with the last copy, and only updates the site if nothing looks wrong. This page shows how the latest check went for each source.",
+    "collectedHeading": "Collected automatically",
+    "manualHeading": "Checked by hand",
+    "manualText": "Everything else on the Sources page is added or checked by hand, or only linked to.",
+    "sourcesLink": "See all sources",
+    "lastChecked": "Last checked",
+    "lastSuccess": "Last good update",
+    "nextCheck": "Next check",
+    "nextCheckValue": "From {date}",
+    "every": "How often",
+    "everyDays": {
+      "one": "Every day",
+      "other": "Every {count} days"
+    },
+    "records": "Records",
+    "recordsValue": "{found} found, {changed} changed",
+    "changeCheck": "Change check",
+    "notes": "Notes",
+    "notesSummary": {
+      "one": "Show 1 note",
+      "other": "Show {count} notes"
+    },
+    "notesExplainer": "Notes list records we couldn't read fully. Those records still appear, with a link to the official details.",
+    "never": "Not yet",
+    "pausedReason": "Why it's paused",
+    "states": {
+      "ok": "Up to date",
+      "warning": "Updated, with notes",
+      "unchanged": "No changes since the last check",
+      "blocked": "Update held back for checking",
+      "failed": "Check failed; showing the last good copy",
+      "paused": "Paused",
+      "notRun": "Not run yet"
+    },
+    "guard": {
+      "accepted": "Passed: nothing unusual changed",
+      "accepted_first_run": "First collection, so there was nothing to compare with",
+      "blocked_drop": "Held back: more than 20% of records disappeared at once",
+      "blocked_invalid": "Held back: more than 10% of records couldn't be read"
+    },
+    "timeZoneNote": "Times are shown in Sydney time."
+  },
+  "bot": {
+    "intro": "CataventoBot is the program that collects public information for Catavento. It is built to be a polite visitor: it takes only short facts, checks rarely, and stays away from anything it is asked not to read.",
+    "identityHeading": "How to recognise it",
+    "identityText": "Every request it makes carries this user agent:",
+    "rulesHeading": "How it behaves",
+    "rules": {
+      "robots": "It reads each website's robots.txt first and obeys it. If robots.txt can't be read because of a server error, it doesn't visit.",
+      "pace": "It makes one request at a time to each website, at least 3 seconds apart.",
+      "rarely": "It checks each source on a schedule of days or weeks, not continuously. If a file hasn't changed, nothing is updated.",
+      "noLogin": "It never logs in, never sends cookies, and never fills in forms.",
+      "facts": "It takes facts and short labels, such as names, coordinates, wind directions and links. It never copies descriptions, articles or photos.",
+      "guard": "If a source suddenly looks very different, the update is held back for a person to check."
+    },
+    "scheduleHeading": "What it collects, and how often",
+    "scheduleText": "These are the sources it currently collects from. The Sources page lists everything Catavento uses, including what is only linked to.",
+    "noneYet": "Nothing is being collected automatically at the moment.",
+    "pausedLabel": "Paused",
+    "optOutHeading": "How to opt out",
+    "optOutText": "To stop CataventoBot visiting your website, add these lines to your robots.txt. It will stop at its next scheduled check.",
+    "optOutContact": "Or email us and we'll stop, usually within 24 hours. We can also remove anything already collected from your site.",
+    "contactHeading": "Contact",
+    "contactText": "Questions about CataventoBot:"
   }
 }
