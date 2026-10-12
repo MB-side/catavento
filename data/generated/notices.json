@@ -1,1 +1,685 @@
-[]
+[
+  {
+    "id": "notice:club:b1c9b608f15c",
+    "title": "Change to Club Radio Channel",
+    "date": "2026-10-06",
+    "url": "https://www.chgpc.org.nz/post/change-to-club-radio-channel",
+    "country": "NZ",
+    "scope": "club",
+    "orgId": "org:nz:canterbury-club",
+    "sources": [
+      {
+        "providerId": "club-websites",
+        "url": "https://www.chgpc.org.nz/blog-feed.xml",
+        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "licence": "facts",
+        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:11358266adeb",
+    "title": "Safety Notice: NEO Bikini Tandem Harness",
+    "date": "2026-09-15",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47MkZQWk9GL1dlY0UvT0pqa1hPb0ZxQT09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:bc7abb82a771",
+    "title": "- Niviuk Safety Check IKS 3000",
+    "date": "2026-09-11",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47WTdPQ1Y5dXlmSmJVNHNnWmpuRHRBdz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:e3571d7cb2b0",
+    "title": "- Gin Gliders Safety Notice: Rescue Handle",
+    "date": "2026-08-31",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47WEVHZ2FQZmhUeU1MbWgyS2RZOTAxdz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:1529132fff35",
+    "title": "- DHV Safety Notice - A.I.R. Atos",
+    "date": "2026-08-21",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47eWFZRzZQWU5lakxzalRXNzFZTWxEQT09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:d42f0ad63446",
+    "title": "Gin Gliders Safety Notice - Genie Race 5 harness rescue handle",
+    "date": "2026-07-10",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47NzFmUkhvSHNVdUkvbCtwTzVsaFV5QT09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:d1fa35394ead",
+    "title": "Woody Valley Safety Note - Race Harness - Control closing of buckles before take off",
+    "date": "2026-06-11",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47cHlxcVVMdndGV1ZEYlVTS0J0VDVsdz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:club:3a6629345df4",
+    "title": "Sumner Rescue Training & Zephyr",
+    "date": "2026-06-09",
+    "url": "https://www.chgpc.org.nz/post/sumner-rescue-training-zephyr",
+    "country": "NZ",
+    "scope": "club",
+    "orgId": "org:nz:canterbury-club",
+    "sources": [
+      {
+        "providerId": "club-websites",
+        "url": "https://www.chgpc.org.nz/blog-feed.xml",
+        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "licence": "facts",
+        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:223457e0d229",
+    "title": "Ozone Safety Notice - Ozone hook knives",
+    "date": "2026-05-19",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47VWxXQVc4ZGMwaXNEaUQvWWo3REdodz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:e92306e3053b",
+    "title": "Woody Valley Safety Note - MK1 & MK1 pro harnesses",
+    "date": "2026-05-15",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47aXB5S01UbTEreWg2aS9JSG52dkxSUT09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:club:b06fd3b81946",
+    "title": "Deep dive: Cliffs & Castle Rock",
+    "date": "2026-04-29",
+    "url": "https://www.chgpc.org.nz/post/deep-dive-taylors-cliffs-gondola-castle-rock",
+    "country": "NZ",
+    "scope": "club",
+    "orgId": "org:nz:canterbury-club",
+    "sources": [
+      {
+        "providerId": "club-websites",
+        "url": "https://www.chgpc.org.nz/blog-feed.xml",
+        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "licence": "facts",
+        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:b31ef0ef9b0f",
+    "title": "Woody Valley Safety Notice - Quadro 100/120/140/220 reserve parachutes",
+    "date": "2026-04-15",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47MU54SVYxNmlEaGJ6MDNvd3ZIc2YwQT09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:d02327c48dbb",
+    "title": "Ozone Important Safety Notice - Set-up of the F*Race2 ABS System",
+    "date": "2025-09-01",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47NzdnSWZyWkVOaHdQUldFZjBJdG90UT09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:fc1758719d9a",
+    "title": "Parajet Safety Advisory Bulletin: July 2025 Maverick 1 Harness Arm",
+    "date": "2025-08-04",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47R2dSbFN3SC8wOWUydmZMcXBlbjl1UT09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:5d0111db62a3",
+    "title": "Important Safety Notice: Ozone Lite, Lite PPG and Cockpit Rescue Containers",
+    "date": "2025-07-21",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47bXA2UnFjSGVPdnF3MUxiUkkxZkp1dz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:1819ceb69af6",
+    "title": "Further Safety Notice: Finsterwalder & Charly Paralock 3 Carabiner",
+    "date": "2025-03-12",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47MW9xZGhVbndraUlJaS91a2xhbTV3dz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:4721cf63a999",
+    "title": "Safety Notice: Niviuk, Arrow, Arrow P and Hawk Harnesses",
+    "date": "2025-03-12",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47Y28rZHhFenlxV0t0WXVjNk5lUmlRdz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:e62970eaafae",
+    "title": "EASA Emergency Airworthiness Directive - Rotax 912i, 915i and 916i engines",
+    "date": "2025-01-20",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47cW5pbmdKcnJiWmp2SkgrekFaU29RUT09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:4ae86841b64d",
+    "title": "Safety Notice: Finsterwalder & Charly Paralock 3 Carabiner",
+    "date": "2024-11-23",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47N2tGNmNtREtyc0JUYnQwQ0gwc2JNZz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:c345ae796407",
+    "title": "Woody Valley X-R7 Harness Safety Note",
+    "date": "2024-07-17",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47Vm1xSEVpaUpxOUlMSlVkVW1haW1lZz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:f666b2bbd5a7",
+    "title": "Advance Progress 3 & Easiness 2 harnesses - Safety Notice",
+    "date": "2024-05-31",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47SHdZbWNwcnQxRzhESFZ3VGhGSGZ1UT09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:cc16efacbe2e",
+    "title": "PHI Paragliders Safety Note - R07 risers",
+    "date": "2024-02-08",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47dnBrbHdVeXBNeENpeFlSOW5JYTZldz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:902667571972",
+    "title": "AirDesign Safety Notice 20231109 - Line Connector Inspection - Safety Loops",
+    "date": "2023-11-13",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47V2M4MlptYjdwWGNFSGNiaXdETzF1dz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:821fb39b83db",
+    "title": "EASA Emergency Airworthiness Directive 2023-0156-E",
+    "date": "2023-08-03",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47UTBjNGpxamtqejFva1VtY0tsaDF5dz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:c2e0c12ac5cf",
+    "title": "Gin Gliders Safety Notice: G-Lite Rescue Parachute",
+    "date": "2022-10-28",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47SFRvV0F0UjZCU2ZRcWJqemczcnQ5UT09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:e2de88880eef",
+    "title": "Fly-Neo Safety Notice and Product Recall - Rescue Bridle Y 125cm Black",
+    "date": "2022-09-26",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47K3hPOFk4OHlsSHQzYlFRWEZZaU5wUT09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:646efc38b983",
+    "title": "Gin Gliders Safety Notice - Switch 2 Light Reversible PG Harness",
+    "date": "2022-07-01",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47SEx3d1JBclNobThiNlVhNEtPQlFadz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:8aa15fce2e53",
+    "title": "Supair Call for Inspection - Dyneema Parachute Bridles",
+    "date": "2022-05-24",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47d29ZSnQyZ041YWw4bnFpektjMzFoUT09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:c1f12d1f66b1",
+    "title": "Sky Twin Harness - Safety Notice",
+    "date": "2022-05-05",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47a3g4WU42Y1l3Vk85bWt5VGRtelZidz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:123cecfe720d",
+    "title": "Woody Valley X-R7 Harness - Safety Note",
+    "date": "2022-03-28",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47ZFU0L245Z3A3QTlkWXhzTGY3MzJvdz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:09775dab57d2",
+    "title": "Gin Gliders - Genie Lite 3 Rescue Deck Safety Notice",
+    "date": "2021-03-15",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47MFhEQlhsSm9WcmsxcnlIVGcwMGM0dz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:daeb28ba94ef",
+    "title": "Gin Gliders - Genie Light 3 Safety Notice",
+    "date": "2021-02-11",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47OTJaYmluV040UWxPMFE1cnJKeEkxdz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:03c49e3efb7a",
+    "title": "Safety Notice: Woody Valley GTO Light 2",
+    "date": "2020-08-26",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47NTUrQjR4aG1NSEFMaUNrZmwvemhCUT09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:4f5f9670a401",
+    "title": "Safety Notice: Air Design Front Container Handle Warning",
+    "date": "2020-08-23",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47Z1FMVWhPbDE0alI3K2g3WWg1Y283QT09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:40f4f4d55812",
+    "title": "SAFA Advisory Notice AN-2020/02 - PG Tandem Spreader Bars",
+    "date": "2020-08-04",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47NDlzNGVKLzl4SHlqYXU0bm5XOXZ0Zz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:1f742f0f2d22",
+    "title": "SAFA Advisory Notice AN-2020/01 - Rotax Oil Coolers",
+    "date": "2020-08-03",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47ZVR1UmpxaWlIUTQ5WS93bFNTYzliQT09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:539aa783356a",
+    "title": "DUC Windspoon carbon fibre propeller hub",
+    "date": "2020-05-29",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47dDRMS0FROGZQZG55RXZBd1dnbGkxQT09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:d77027b3720c",
+    "title": "ATSB report on Supair Strike harness",
+    "date": "2020-05-21",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47bGV2MUxEVll2SzBGcE5XeHJQSEFjUT09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:37d5667ca097",
+    "title": "Woody Valley XR7 Defect Report",
+    "date": "2020-03-30",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47UFNBYmJyOGtVNmc2d3EyZGdsUEJWdz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:df13dde23636",
+    "title": "Safety Notice: Gingo Airlite 4/Verso 3",
+    "date": "2019-11-25",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47b1Y3Szg0ZmJkRUdFdXhRdXVtYW5YZz09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  }
+]

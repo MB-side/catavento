@@ -1,1 +1,66 @@
-[]
+[
+  {
+    "id": "event:safa:62692",
+    "title": "Canungra Sports Cup",
+    "startDate": "2026-09-26",
+    "endDate": "2026-10-03",
+    "type": "competition",
+    "disciplines": [],
+    "locationText": "Canungra",
+    "country": "AU",
+    "regionCode": "AU-QLD",
+    "organiserName": "Canungra Hang Gliding and Paragliding Club",
+    "url": "https://safa.asn.au/event/canungra-sports-cup/",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/event/canungra-sports-cup/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  },
+  {
+    "id": "event:safa:64861",
+    "title": "50th anniversary of Free flight @ Stanwell Park",
+    "startDate": "2026-10-17",
+    "type": "other",
+    "disciplines": [],
+    "locationText": "Stanwell Park Landing Zone, Stanwell Park",
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "organiserName": "FlyStanwell Inc",
+    "url": "https://safa.asn.au/event/50th-anniversary-of-free-flight-stanwell-park/",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/event/50th-anniversary-of-free-flight-stanwell-park/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ],
+    "organiserOrgId": "org:au:stanwell-park-hang-gliding-paragliding-club"
+  },
+  {
+    "id": "event:safa:66182",
+    "title": "Fly From Everest – End Polio Now Movie Event",
+    "startDate": "2026-10-17T19:00:00+11:00",
+    "type": "other",
+    "disciplines": [],
+    "locationText": "Tradies Helensburgh, Helensburgh",
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "url": "https://safa.asn.au/event/fly-from-everest-end-polio-now-movie-event/",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/event/fly-from-everest-end-polio-now-movie-event/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    ]
+  }
+]

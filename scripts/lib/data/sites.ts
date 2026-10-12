@@ -1,28 +1,10 @@
 // Site merging rules (docs/05 §5.3–5.4). Pure functions.
 import { distanceM } from "@/lib/geo";
-import type { BuildWarning, Organisation, Site } from "@/lib/types";
+import { coversAll, labelArcs, mergeArcs, UNPARSED_LABEL } from "@/lib/wind";
+import type { BuildWarning, Organisation, Site, StewardEvidence, WindArc } from "@/lib/types";
+import { normaliseUrl, OrgMatcher, type Aliases } from "./match";
 
-/** "https://www.Example.org/club/" → "example.org/club": for exact address matching only. */
-export function normaliseUrl(url: string | undefined): string | undefined {
-  if (!url) return undefined;
-  try {
-    const u = new URL(url);
-    const host = u.hostname.toLowerCase().replace(/^www\./, "");
-    const pathPart = u.pathname.replace(/\/+$/, "").toLowerCase();
-    return `${host}${pathPart}`;
-  } catch {
-    return undefined;
-  }
-}
-
-/** "Illawarra Gliding Club Inc." → "illawarra gliding club": case, spacing and a trailing "Inc" ignored. */
-export function normaliseName(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/\s+/g, " ")
-    .trim()
-    .replace(/,?\s+(inc\.?|incorporated)$/, "");
-}
+export { normaliseName, normaliseUrl } from "./match";
 
 /** Weather pages and similar links that sources sometimes put where a contact belongs. */
 const NOT_CONTACT_HOSTS = ["willyweather.com.au", "bom.gov.au", "windy.com", "holfuy.com"];
@@ -40,36 +22,17 @@ const NOT_CONTACT_HOSTS = ["willyweather.com.au", "bom.gov.au", "windy.com", "ho
 export function matchListedContacts(
   sites: Site[],
   orgs: Organisation[],
-  aliases: Record<string, Record<string, string> | null>,
+  aliases: Aliases,
   warnings: BuildWarning[],
 ): void {
-  const byUrl = new Map<string, string[]>();
-  const byName = new Map<string, string[]>();
-  const add = (map: Map<string, string[]>, key: string, id: string) => {
-    if (!map.get(key)?.includes(id)) map.set(key, [...(map.get(key) ?? []), id]);
-  };
-  for (const o of orgs) {
-    const key = normaliseUrl(o.website);
-    if (key) add(byUrl, `${o.country}|${key}`, o.id);
-    add(byName, `${o.country}|${normaliseName(o.name)}`, o.id);
-    const bracketed = /\(([^()]+)\)\s*$/.exec(o.name)?.[1];
-    if (bracketed) add(byName, `${o.country}|${normaliseName(bracketed)}`, o.id);
-  }
-  const orgById = new Map(orgs.flatMap((o) => [[o.id, o] as const, ...(o.legacyId ? [[o.legacyId, o] as const] : [])]));
-  const only = (ids: string[] | undefined) => (ids?.length === 1 ? ids[0] : undefined);
-
+  const matcher = new OrgMatcher(orgs, aliases);
   const unmatched = new Map<string, number>();
   const dropped = new Map<string, number>();
   for (const site of sites) {
     const c = site.listedContact;
     if (!c) continue;
     const urlKey = normaliseUrl(c.url);
-    const countryAliases = aliases[site.country] ?? {};
-    const aliasRef = countryAliases[c.name] ?? (urlKey ? countryAliases[urlKey] : undefined);
-    const org =
-      (aliasRef ? orgById.get(aliasRef) : undefined) ??
-      orgById.get(only(urlKey ? byUrl.get(`${site.country}|${urlKey}`) : undefined) ?? "") ??
-      orgById.get(only(byName.get(`${site.country}|${normaliseName(c.name)}`)) ?? "");
+    const org = matcher.find(site.country, c.name, c.url)?.org;
     if (org) {
       site.listedContact = { ...c, name: org.name, orgId: org.id };
       continue;
@@ -132,4 +95,75 @@ export function dedupeSites(sites: Site[], warnings: BuildWarning[]): Site[] {
     kept.push(s);
   }
   return kept;
+}
+
+/**
+ * Gives a hand-compiled site the takeoffs pinned to it in ParaglidingEarth (positions, wind
+ * directions rated good, disciplines), crediting ParaglidingEarth. Never matched automatically.
+ */
+export function enrichFromPge(site: Site, pinned: string[], pgeSites: Site[], warnings: BuildWarning[]): void {
+  const found = pinned
+    .map((pid) => {
+      const hit = pgeSites.find((p) => p.pgeId === pid);
+      if (!hit) warnings.push({ code: "pge-pin-missing", message: `${site.id}: ParaglidingEarth ${pid} not in the latest download`, recordId: site.id });
+      return hit;
+    })
+    .filter((p): p is Site => !!p);
+  if (!found.length) return;
+  site.launches = found.flatMap((p) => p.launches).map((l, i) => ({ ...l, id: `${site.id}:launch:${i + 1}`, name: found.length > 1 ? (found[i]?.name ?? l.name) : l.name }));
+  const arcs = found.flatMap((p) => (p.windRanges === "all" ? [{ fromDeg: 0, toDeg: 360 }] : p.windRanges)) as WindArc[];
+  if (arcs.length) {
+    const ranges = coversAll(arcs) ? "all" : mergeArcs(arcs);
+    site.windRanges = ranges;
+    site.windRangeLabel = labelArcs(ranges);
+  } else {
+    site.windRangeLabel = UNPARSED_LABEL;
+  }
+  site.disciplines = [...new Set([...site.disciplines, ...found.flatMap((p) => p.disciplines)])];
+  site.sources = [...site.sources, ...found.flatMap((p) => p.sources)];
+}
+
+/**
+ * The community layer (ParaglidingEarth) is shown only in fully covered countries; in sample
+ * countries it only feeds pinned sample sites. A community site whose ID is taken by another
+ * source's site gets its ParaglidingEarth ID added.
+ */
+export function placeCommunitySites(sites: Site[], fullCountries: ReadonlySet<string>): Site[] {
+  const taken = new Set(sites.filter((s) => s.layer !== "pge").map((s) => s.id));
+  return sites
+    .filter((s) => s.layer !== "pge" || fullCountries.has(s.country))
+    .map((s) => {
+      if (s.layer !== "pge" || !taken.has(s.id)) return s;
+      const slug = `${s.slug}-${s.pgeId ?? "pge"}`;
+      const id = `${s.id.slice(0, s.id.lastIndexOf(":") + 1)}${slug}`;
+      return { ...s, id, slug, launches: s.launches.map((l, i) => ({ ...l, id: `${id}:launch:${i + 1}` })) };
+    });
+}
+
+/**
+ * D47: a club is shown as managing a site only when two sources agree: the site guide lists it as
+ * the site's contact, and the club's own website names the site. Hand-set stewards
+ * (site-stewards.yaml) are applied afterwards and win.
+ */
+export function confirmStewards(
+  sites: Site[],
+  orgs: Organisation[],
+  evidence: StewardEvidence[],
+  warnings: BuildWarning[],
+): void {
+  const byId = new Map(sites.map((s) => [s.id, s]));
+  for (const ev of evidence) {
+    const org = orgs.find((o) => o.id === ev.orgId);
+    if (!org) {
+      warnings.push({ code: "evidence-org-missing", message: `${ev.id}: no organisation ${ev.orgId}` });
+      continue;
+    }
+    for (const siteId of ev.siteIds) {
+      const site = byId.get(siteId);
+      if (!site || site.listedContact?.orgId !== org.id || site.stewardRole !== "unknown") continue;
+      site.stewardOrgId = org.id;
+      site.stewardRole = "club";
+      site.sources = [...site.sources, ev.source];
+    }
+  }
 }

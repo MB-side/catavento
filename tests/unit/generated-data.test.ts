@@ -100,8 +100,10 @@ describe("generated data", () => {
 
   it("links clubs and the sites they steward both ways", () => {
     for (const s of sites.filter((x) => x.stewardRole === "club" && x.stewardOrgId)) {
-      const club = organisations.find((o) => o.id === s.stewardOrgId);
-      expect(club && "siteIds" in club ? club.siteIds : [], s.id).toContain(s.id);
+      const steward = organisations.find((o) => o.id === s.stewardOrgId);
+      expect(steward, s.id).toBeDefined();
+      // Regional associations (e.g. ACTHPA) can manage sites too; only clubs carry siteIds so far.
+      if (steward?.kind === "club") expect(steward.siteIds, s.id).toContain(s.id);
     }
   });
 });

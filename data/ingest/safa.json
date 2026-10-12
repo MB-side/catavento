@@ -1,0 +1,2069 @@
+{
+  "providerId": "safa",
+  "fetchedAt": "2026-10-12T05:19:06.992Z",
+  "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046",
+  "orgs": [
+    {
+      "id": "safa:club:ACTHPA",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "ACTHPA",
+      "country": "AU",
+      "regionCode": "AU-ACT",
+      "website": "https://acthpa.org/",
+      "emailPublic": "office@acthpa.org",
+      "disciplines": [],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=ACTHPA",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:AL",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Albany Hang Gliding Club Inc",
+      "country": "AU",
+      "regionCode": "AU-WA",
+      "disciplines": [],
+      "associationName": "Hang Gliding & Paragliding Association of Western Australia",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=AL",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:BB",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Northern Rivers Hang Gliding and Paragliding Club Inc",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://www.flynr.org/",
+      "disciplines": [],
+      "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=BB",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:CB",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Cloudbase Paragliding WA",
+      "country": "AU",
+      "regionCode": "AU-WA",
+      "website": "https://www.facebook.com/groups/383968665334499",
+      "emailPublic": "info@cloudbasewa.club",
+      "disciplines": [],
+      "associationName": "Hang Gliding & Paragliding Association of Western Australia",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=CB",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:CC",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Central Coast Sky Surfers Inc",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://www.centralcoastskysurfers.com/",
+      "emailPublic": "president@centralcoastskysurfers.com",
+      "disciplines": [],
+      "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=CC",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:CG",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Canungra Hang Gliding Club Inc",
+      "country": "AU",
+      "regionCode": "AU-QLD",
+      "website": "https://www.flycanungra.com.au/",
+      "disciplines": [],
+      "associationName": "Queensland Sports Aviators Inc.",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=CG",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:CN",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Cairns Hang Gliding Club Inc",
+      "country": "AU",
+      "regionCode": "AU-QLD",
+      "website": "https://www.cairnshangglidingclub.org/",
+      "emailPublic": "flying@cairnshangglidingclub.org",
+      "disciplines": [],
+      "associationName": "North Queensland Hang Gliding Association",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=CN",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:DB",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Dalby Hang Gliding Club Inc",
+      "country": "AU",
+      "regionCode": "AU-QLD",
+      "disciplines": [],
+      "associationName": "Queensland Sports Aviators Inc.",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=DB",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:DS",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Dynasoarers Hang Gliding Club Inc",
+      "country": "AU",
+      "regionCode": "AU-VIC",
+      "website": "https://www.dynasoarers.vhpa.org.au/",
+      "disciplines": [],
+      "associationName": "Victorian HG and PG Association",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=DS",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:FTC",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Flatlands Towing Club",
+      "country": "AU",
+      "regionCode": "AU-ACT",
+      "disciplines": [],
+      "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=FTC",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:HF",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "WA Hill Flyers Club Inc",
+      "country": "AU",
+      "regionCode": "AU-WA",
+      "disciplines": [],
+      "associationName": "Hang Gliding & Paragliding Association of Western Australia",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=HF",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:HGAWA",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Hang Gliding & Paragliding Association of Western Australia",
+      "country": "AU",
+      "regionCode": "AU-WA",
+      "website": "https://www.flywa.com.au/",
+      "disciplines": [],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=HGAWA",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:IL",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Illawarra Gliding Club Inc",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://www.nswhpa.org/illawarra-clubs/",
+      "disciplines": [],
+      "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=IL",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:LB",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Blue Mountains Hang Gliding Club Inc",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://bluemountainssoaring.club/",
+      "disciplines": [],
+      "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=LB",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:MH",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Melbourne Hang Gliding Club Inc",
+      "country": "AU",
+      "regionCode": "AU-VIC",
+      "website": "https://mhgc.vhpa.org.au/",
+      "disciplines": [],
+      "associationName": "Victorian HG and PG Association",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=MH",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:MN",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Mid North Coast Flyers Inc",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://mncf.tidyhq.com/",
+      "disciplines": [],
+      "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=MN",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:NB",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Sydney Paragliding and Hang Gliding Club",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://www.flysydney.com.au/",
+      "emailPublic": "president@flysydney.com.au",
+      "disciplines": [],
+      "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=NB",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:NC",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Newcastle Hang Gliding Club Inc",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://www.nhgc.asn.au/",
+      "disciplines": [],
+      "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=NC",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:NQLD",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "North Queensland Hang Gliding Association",
+      "country": "AU",
+      "regionCode": "AU-QLD",
+      "website": "https://www.nthqldregionalassociation.com/",
+      "disciplines": [],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=NQLD",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:NSWHPA",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://www.nswhpa.org/",
+      "emailPublic": "exec@nswhpa.org",
+      "disciplines": [],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=NSWHPA",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:NSWPC",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Newcastle Paragliding Club",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://newcastleparaglidingclub.org.au/",
+      "emailPublic": "secretary.npc@mail.tidyhq.com",
+      "disciplines": [],
+      "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=NSWPC",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:NV",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "North East Victoria Hang Gliding Club Inc",
+      "country": "AU",
+      "regionCode": "AU-VIC",
+      "website": "https://www.nevhgc.net/",
+      "emailPublic": "president@nevhgc.net",
+      "disciplines": [],
+      "associationName": "Victorian HG and PG Association",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=NV",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:PC",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "The Pico Club Incorporated",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://www.thepico.com.au/",
+      "disciplines": [],
+      "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=PC",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:PFI",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Paradise Flyers QLD",
+      "country": "AU",
+      "regionCode": "AU-QLD",
+      "website": "https://www.paradiseflyers.org.au/",
+      "disciplines": [],
+      "associationName": "Queensland Sports Aviators Inc.",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=PFI",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:SAHPGA",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "South Australian Hang Gliding & Paragliding Association (Inc)",
+      "country": "AU",
+      "regionCode": "AU-SA",
+      "website": "https://sites.google.com/site/sahpgahome/",
+      "disciplines": [],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=SAHPGA",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:SCFFA",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Sunshine Coast Free Flyers Association",
+      "country": "AU",
+      "regionCode": "AU-QLD",
+      "website": "https://www.freeflyers.com.au/",
+      "emailPublic": "executive@freeflyers.com.au",
+      "disciplines": [],
+      "associationName": "Queensland Sports Aviators Inc.",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=SCFFA",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:SEQLD",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Queensland Sports Aviators Inc.",
+      "country": "AU",
+      "regionCode": "AU-QLD",
+      "website": "https://www.qsa.asn.au/",
+      "emailPublic": "president@qsa.asn.au",
+      "disciplines": [],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=SEQLD",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:SH",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Sydney Hang Gliding Club Inc",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "disciplines": [],
+      "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=SH",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:SK",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Skyhigh Paragliding Club Inc",
+      "country": "AU",
+      "regionCode": "AU-VIC",
+      "website": "https://skyhighparagliding.org.au/",
+      "emailPublic": "web@skyhighparagliding.org.au",
+      "disciplines": [],
+      "associationName": "Victorian HG and PG Association",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=SK",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:SP",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "FlyStanwell Inc",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://www.flystanwell.com.au/",
+      "emailPublic": "committee@flystanwell.com.au",
+      "disciplines": [],
+      "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=SP",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:STF",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Surf & Turf Flyers",
+      "country": "AU",
+      "regionCode": "AU-QLD",
+      "disciplines": [],
+      "associationName": "Queensland Sports Aviators Inc.",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=STF",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:SWAir",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "South West Airsports",
+      "country": "AU",
+      "regionCode": "AU-WA",
+      "disciplines": [],
+      "associationName": "Hang Gliding & Paragliding Association of Western Australia",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=SWAir",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:THPA",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Tasmanian Hang Gliding & Paragliding Association",
+      "country": "AU",
+      "regionCode": "AU-TAS",
+      "website": "https://www.thpa.org.au/",
+      "disciplines": [],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=THPA",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:TM",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Manilla Skysailors Inc",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://www.mss.org.au/",
+      "disciplines": [],
+      "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=TM",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:UMFFI",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Upper Murray Free Flyers Inc",
+      "country": "AU",
+      "regionCode": "AU-VIC",
+      "disciplines": [],
+      "associationName": "Victorian HG and PG Association",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=UMFFI",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:VHPA",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Victorian HG and PG Association",
+      "country": "AU",
+      "regionCode": "AU-VIC",
+      "website": "https://www.vhpa.org.au/",
+      "emailPublic": "secretary@vhpa.org.au",
+      "disciplines": [],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=VHPA",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:VT",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Southern Microlight Club Inc",
+      "country": "AU",
+      "regionCode": "AU-VIC",
+      "website": "https://www.southernmicrolightclub.com.au/",
+      "disciplines": [],
+      "associationName": "Victorian HG and PG Association",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=VT",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:WSP",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Sky Pirates Paramotoring Club (WA)",
+      "country": "AU",
+      "regionCode": "AU-WA",
+      "website": "https://m.facebook.com/groups/WAskypirates/",
+      "disciplines": [],
+      "associationName": "Hang Gliding & Paragliding Association of Western Australia",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=WSP",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:WV",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Western Victorian Hang Gliding Club Inc",
+      "country": "AU",
+      "regionCode": "AU-VIC",
+      "website": "https://www.wvhgc.tidyhq.com/",
+      "disciplines": [],
+      "associationName": "Victorian HG and PG Association",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=WV",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:club:WW",
+      "providerId": "safa",
+      "kind": "club",
+      "name": "Wicked Wings Toowoomba/Killarney HG & PG Club Inc",
+      "country": "AU",
+      "regionCode": "AU-QLD",
+      "website": "https://wickedwings.com.au/",
+      "disciplines": [],
+      "associationName": "Queensland Sports Aviators Inc.",
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=WW",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:active-flight-paragliding-center",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Active Flight Paragliding Center",
+      "country": "AU",
+      "regionCode": "AU-VIC",
+      "website": "https://activeflight.com.au/",
+      "emailPublic": "fgungl@gmail.com",
+      "phonePublic": "0428 854 455",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:adventure-plus-paragliding",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Adventure Plus Paragliding",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://www.adventureplusparagliding.com.au/",
+      "emailPublic": "fly@adventureplusparagliding.com.au",
+      "phonePublic": "0412 271 404",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:air-sports",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Air Sports",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://air-sports.com.au/",
+      "emailPublic": "tony@air-sports.com.au",
+      "phonePublic": "0412 607 815",
+      "disciplines": [
+        "HG",
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:birds-eye-view",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Birds Eye View",
+      "country": "AU",
+      "regionCode": "AU-WA",
+      "website": "https://www.birdseyeview.net.au/",
+      "emailPublic": "gav@birdseyeview.net.au",
+      "phonePublic": "0428 011 077",
+      "disciplines": [
+        "WM"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:bright-flight",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Bright Flight",
+      "country": "AU",
+      "regionCode": "AU-VIC",
+      "website": "https://www.brightflight.com.au/",
+      "emailPublic": "info@brightflight.com.au",
+      "phonePublic": "0432673388",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:cloudbase-paragliding",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Cloudbase Paragliding",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "http://www.cloudbaseparagliding.com.au/",
+      "emailPublic": "info@cloudbaseparagliding.com.au",
+      "phonePublic": "0407 918 099",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:dtk-microlights",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "DTK Microlights",
+      "country": "AU",
+      "regionCode": "AU-VIC",
+      "emailPublic": "fly@dtkmicrolights.com.au",
+      "phonePublic": "+61437073400",
+      "disciplines": [
+        "WM"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:freedom-airsports",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Freedom Airsports",
+      "country": "AU",
+      "regionCode": "AU-VIC",
+      "website": "http://freedomairsports.com.au/",
+      "emailPublic": "info@freedomairsports.com.au",
+      "phonePublic": "0409 526 805",
+      "disciplines": [
+        "HG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:future-wings-paragliding",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Future Wings Paragliding",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://www.futurewings.com.au/",
+      "emailPublic": "paraglide@futurewings.com.au",
+      "phonePublic": "0408 864 083",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:hang-gliding-wa",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Hang Gliding WA",
+      "country": "AU",
+      "regionCode": "AU-WA",
+      "website": "https://hangglidingwa.com.au/",
+      "emailPublic": "david@hangglidingwa.com.au",
+      "phonePublic": "0428 439 934",
+      "disciplines": [
+        "HG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:high-adventure",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "High Adventure",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "http://www.highadventure.com.au/",
+      "emailPublic": "learn@highadventure.com.au",
+      "phonePublic": "0429 844 961",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:high-adventure-great-ocean-road",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "High Adventure - Great Ocean Road",
+      "country": "AU",
+      "regionCode": "AU-VIC",
+      "website": "https://www.greatoceanroadparagliding.com.au/",
+      "emailPublic": "fly@greatoceanroadparagliding.com.au",
+      "phonePublic": "0490 836 441",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:hollywood-paragliding",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Hollywood Paragliding",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "http://www.hollywoodparagliding.com.au/",
+      "emailPublic": "hollywood@flyforfly.com",
+      "phonePublic": "0409 959 691",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:manilla-paragliding",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Manilla Paragliding",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://www.flymanilla.com/",
+      "emailPublic": "godfrey@flymanilla.com",
+      "phonePublic": "02 6785 6545",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:manilla-paragliding-cairns",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Manilla Paragliding (Cairns)",
+      "country": "AU",
+      "regionCode": "AU-QLD",
+      "emailPublic": "Daniel@starresorts.com.au",
+      "phonePublic": "0427 888 893",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:melbourne-paragliding",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Melbourne Paragliding",
+      "country": "AU",
+      "regionCode": "AU-VIC",
+      "website": "https://www.melbourneparagliding.com/",
+      "emailPublic": "info@melbourneparagliding.com",
+      "phonePublic": "0474 128 219",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:moyes-hang-gliding-academy",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Moyes Hang Gliding Academy",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://www.moyes.com.au/",
+      "emailPublic": "vicki@moyes.com.au",
+      "phonePublic": "02 9668 8686",
+      "disciplines": [
+        "HG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:north-side-paragliding",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "North Side Paragliding",
+      "country": "AU",
+      "regionCode": "AU-QLD",
+      "website": "http://www.northsideparagliding.com.au/",
+      "emailPublic": "fly@northsideparagliding.com.au",
+      "phonePublic": "0402 027 928",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:paragliding-queensland",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Paragliding Queensland",
+      "country": "AU",
+      "regionCode": "AU-QLD",
+      "website": "https://www.paraglidingqueensland.com/",
+      "emailPublic": "paraglidingqld@gmail.com",
+      "phonePublic": "0418 155 317",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:paragliding-tasmania",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Paragliding Tasmania",
+      "country": "AU",
+      "regionCode": "AU-TAS",
+      "website": "https://paraglidingtasmania.com.au/",
+      "emailPublic": "ramon@paraglidingtasmania.com.au",
+      "phonePublic": "0478 902 850",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:paratech-paragliding",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Paratech Paragliding",
+      "country": "AU",
+      "regionCode": "AU-QLD",
+      "website": "https://www.paratechpg.com/",
+      "emailPublic": "paratechpg@gmail.com",
+      "phonePublic": "0432 105 906",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:pro-flyte",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Pro-Flyte",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://www.byron-lennoxhanggliding.com.au/",
+      "emailPublic": "proflyte@bigpond.net.au",
+      "phonePublic": "0427 257 699",
+      "disciplines": [
+        "HG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:seq-paragliding",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "SEQ Paragliding",
+      "country": "AU",
+      "regionCode": "AU-QLD",
+      "website": "http://www.seqparagliding.com/",
+      "emailPublic": "fly@SEQParagliding.com",
+      "phonePublic": "0417 619 167",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:simon-shuttleworth-albany-hang-gliding",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Simon Shuttleworth Albany Hang Gliding",
+      "country": "AU",
+      "regionCode": "AU-WA",
+      "emailPublic": "simon@holidayalbany.com.au",
+      "phonePublic": "0427 950 556",
+      "disciplines": [
+        "WM"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:sky-out-paragliding",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Sky Out Paragliding",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "http://www.skyoutparagliding.com/",
+      "emailPublic": "Roger@skyoutparagliding.com",
+      "phonePublic": "0424307047",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:sky-surf-paragliding-canberra",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Sky Surf Paragliding (Canberra)",
+      "country": "AU",
+      "regionCode": "AU-ACT",
+      "website": "https://www.skysurf.com.au/",
+      "emailPublic": "contact@skysurf.com.au",
+      "phonePublic": "0432 543 502",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:skysurf-paragliding-wollongong",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "SkySurf Paragliding (Wollongong)",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://www.skysurf.com.au/",
+      "emailPublic": "contact@skysurf.com.au",
+      "phonePublic": "0432 543 502",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:sunshine-coast-hang-gliding-weight-shift-microlights",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Sunshine Coast Hang Gliding & Weight Shift Microlights",
+      "country": "AU",
+      "regionCode": "AU-QLD",
+      "emailPublic": "cookmank@hotmail.com",
+      "phonePublic": "07 5449 8573",
+      "disciplines": [
+        "HG",
+        "WM"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:sydney-microlights",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Sydney Microlights",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "website": "https://www.trikefan.com/",
+      "emailPublic": "fly@trikefan.com",
+      "phonePublic": "0418574068",
+      "disciplines": [
+        "WM"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:tribal-flight-paragliding-fox-airsports",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Tribal Flight Paragliding - Fox Airsports",
+      "country": "AU",
+      "regionCode": "AU-QLD",
+      "website": "https://www.tribalflight.com.au/",
+      "emailPublic": "matt.fox@tribalflight.com.au",
+      "phonePublic": "0428280666",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    },
+    {
+      "id": "safa:school:updraft-paragliding",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "Updraft Paragliding",
+      "country": "AU",
+      "regionCode": "AU-VIC",
+      "website": "http://www.updraftparagliding.com.au/",
+      "emailPublic": "wagolly@gmail.com",
+      "phonePublic": "0411 533 625",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "licence": "facts",
+        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "event:safa:62692",
+      "title": "Canungra Sports Cup",
+      "startDate": "2026-09-26",
+      "endDate": "2026-10-03",
+      "type": "competition",
+      "disciplines": [],
+      "locationText": "Canungra",
+      "country": "AU",
+      "regionCode": "AU-QLD",
+      "organiserName": "Canungra Hang Gliding and Paragliding Club",
+      "url": "https://safa.asn.au/event/canungra-sports-cup/",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/event/canungra-sports-cup/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "event:safa:64861",
+      "title": "50th anniversary of Free flight @ Stanwell Park",
+      "startDate": "2026-10-17",
+      "type": "other",
+      "disciplines": [],
+      "locationText": "Stanwell Park Landing Zone, Stanwell Park",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "organiserName": "FlyStanwell Inc",
+      "url": "https://safa.asn.au/event/50th-anniversary-of-free-flight-stanwell-park/",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/event/50th-anniversary-of-free-flight-stanwell-park/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "event:safa:66182",
+      "title": "Fly From Everest – End Polio Now Movie Event",
+      "startDate": "2026-10-17T19:00:00+11:00",
+      "type": "other",
+      "disciplines": [],
+      "locationText": "Tradies Helensburgh, Helensburgh",
+      "country": "AU",
+      "regionCode": "AU-NSW",
+      "url": "https://safa.asn.au/event/fly-from-everest-end-polio-now-movie-event/",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/event/fly-from-everest-end-polio-now-movie-event/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    }
+  ],
+  "notices": [
+    {
+      "id": "notice:safa:03c49e3efb7a",
+      "title": "Safety Notice: Woody Valley GTO Light 2",
+      "date": "2020-08-26",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47NTUrQjR4aG1NSEFMaUNrZmwvemhCUT09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:09775dab57d2",
+      "title": "Gin Gliders - Genie Lite 3 Rescue Deck Safety Notice",
+      "date": "2021-03-15",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47MFhEQlhsSm9WcmsxcnlIVGcwMGM0dz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:11358266adeb",
+      "title": "Safety Notice: NEO Bikini Tandem Harness",
+      "date": "2026-09-15",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47MkZQWk9GL1dlY0UvT0pqa1hPb0ZxQT09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:123cecfe720d",
+      "title": "Woody Valley X-R7 Harness - Safety Note",
+      "date": "2022-03-28",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47ZFU0L245Z3A3QTlkWXhzTGY3MzJvdz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:1529132fff35",
+      "title": "- DHV Safety Notice - A.I.R. Atos",
+      "date": "2026-08-21",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47eWFZRzZQWU5lakxzalRXNzFZTWxEQT09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:1819ceb69af6",
+      "title": "Further Safety Notice: Finsterwalder & Charly Paralock 3 Carabiner",
+      "date": "2025-03-12",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47MW9xZGhVbndraUlJaS91a2xhbTV3dz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:1f742f0f2d22",
+      "title": "SAFA Advisory Notice AN-2020/01 - Rotax Oil Coolers",
+      "date": "2020-08-03",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47ZVR1UmpxaWlIUTQ5WS93bFNTYzliQT09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:223457e0d229",
+      "title": "Ozone Safety Notice - Ozone hook knives",
+      "date": "2026-05-19",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47VWxXQVc4ZGMwaXNEaUQvWWo3REdodz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:37d5667ca097",
+      "title": "Woody Valley XR7 Defect Report",
+      "date": "2020-03-30",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47UFNBYmJyOGtVNmc2d3EyZGdsUEJWdz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:40f4f4d55812",
+      "title": "SAFA Advisory Notice AN-2020/02 - PG Tandem Spreader Bars",
+      "date": "2020-08-04",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47NDlzNGVKLzl4SHlqYXU0bm5XOXZ0Zz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:4721cf63a999",
+      "title": "Safety Notice: Niviuk, Arrow, Arrow P and Hawk Harnesses",
+      "date": "2025-03-12",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47Y28rZHhFenlxV0t0WXVjNk5lUmlRdz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:4ae86841b64d",
+      "title": "Safety Notice: Finsterwalder & Charly Paralock 3 Carabiner",
+      "date": "2024-11-23",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47N2tGNmNtREtyc0JUYnQwQ0gwc2JNZz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:4f5f9670a401",
+      "title": "Safety Notice: Air Design Front Container Handle Warning",
+      "date": "2020-08-23",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47Z1FMVWhPbDE0alI3K2g3WWg1Y283QT09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:539aa783356a",
+      "title": "DUC Windspoon carbon fibre propeller hub",
+      "date": "2020-05-29",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47dDRMS0FROGZQZG55RXZBd1dnbGkxQT09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:5d0111db62a3",
+      "title": "Important Safety Notice: Ozone Lite, Lite PPG and Cockpit Rescue Containers",
+      "date": "2025-07-21",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47bXA2UnFjSGVPdnF3MUxiUkkxZkp1dz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:646efc38b983",
+      "title": "Gin Gliders Safety Notice - Switch 2 Light Reversible PG Harness",
+      "date": "2022-07-01",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47SEx3d1JBclNobThiNlVhNEtPQlFadz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:821fb39b83db",
+      "title": "EASA Emergency Airworthiness Directive 2023-0156-E",
+      "date": "2023-08-03",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47UTBjNGpxamtqejFva1VtY0tsaDF5dz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:8aa15fce2e53",
+      "title": "Supair Call for Inspection - Dyneema Parachute Bridles",
+      "date": "2022-05-24",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47d29ZSnQyZ041YWw4bnFpektjMzFoUT09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:902667571972",
+      "title": "AirDesign Safety Notice 20231109 - Line Connector Inspection - Safety Loops",
+      "date": "2023-11-13",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47V2M4MlptYjdwWGNFSGNiaXdETzF1dz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:b31ef0ef9b0f",
+      "title": "Woody Valley Safety Notice - Quadro 100/120/140/220 reserve parachutes",
+      "date": "2026-04-15",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47MU54SVYxNmlEaGJ6MDNvd3ZIc2YwQT09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:bc7abb82a771",
+      "title": "- Niviuk Safety Check IKS 3000",
+      "date": "2026-09-11",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47WTdPQ1Y5dXlmSmJVNHNnWmpuRHRBdz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:c1f12d1f66b1",
+      "title": "Sky Twin Harness - Safety Notice",
+      "date": "2022-05-05",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47a3g4WU42Y1l3Vk85bWt5VGRtelZidz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:c2e0c12ac5cf",
+      "title": "Gin Gliders Safety Notice: G-Lite Rescue Parachute",
+      "date": "2022-10-28",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47SFRvV0F0UjZCU2ZRcWJqemczcnQ5UT09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:c345ae796407",
+      "title": "Woody Valley X-R7 Harness Safety Note",
+      "date": "2024-07-17",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47Vm1xSEVpaUpxOUlMSlVkVW1haW1lZz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:cc16efacbe2e",
+      "title": "PHI Paragliders Safety Note - R07 risers",
+      "date": "2024-02-08",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47dnBrbHdVeXBNeENpeFlSOW5JYTZldz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:d02327c48dbb",
+      "title": "Ozone Important Safety Notice - Set-up of the F*Race2 ABS System",
+      "date": "2025-09-01",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47NzdnSWZyWkVOaHdQUldFZjBJdG90UT09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:d1fa35394ead",
+      "title": "Woody Valley Safety Note - Race Harness - Control closing of buckles before take off",
+      "date": "2026-06-11",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47cHlxcVVMdndGV1ZEYlVTS0J0VDVsdz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:d42f0ad63446",
+      "title": "Gin Gliders Safety Notice - Genie Race 5 harness rescue handle",
+      "date": "2026-07-10",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47NzFmUkhvSHNVdUkvbCtwTzVsaFV5QT09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:d77027b3720c",
+      "title": "ATSB report on Supair Strike harness",
+      "date": "2020-05-21",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47bGV2MUxEVll2SzBGcE5XeHJQSEFjUT09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:daeb28ba94ef",
+      "title": "Gin Gliders - Genie Light 3 Safety Notice",
+      "date": "2021-02-11",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47OTJaYmluV040UWxPMFE1cnJKeEkxdz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:df13dde23636",
+      "title": "Safety Notice: Gingo Airlite 4/Verso 3",
+      "date": "2019-11-25",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47b1Y3Szg0ZmJkRUdFdXhRdXVtYW5YZz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:e2de88880eef",
+      "title": "Fly-Neo Safety Notice and Product Recall - Rescue Bridle Y 125cm Black",
+      "date": "2022-09-26",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47K3hPOFk4OHlsSHQzYlFRWEZZaU5wUT09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:e3571d7cb2b0",
+      "title": "- Gin Gliders Safety Notice: Rescue Handle",
+      "date": "2026-08-31",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47WEVHZ2FQZmhUeU1MbWgyS2RZOTAxdz09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:e62970eaafae",
+      "title": "EASA Emergency Airworthiness Directive - Rotax 912i, 915i and 916i engines",
+      "date": "2025-01-20",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47cW5pbmdKcnJiWmp2SkgrekFaU29RUT09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:e92306e3053b",
+      "title": "Woody Valley Safety Note - MK1 & MK1 pro harnesses",
+      "date": "2026-05-15",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47aXB5S01UbTEreWg2aS9JSG52dkxSUT09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:f666b2bbd5a7",
+      "title": "Advance Progress 3 & Easiness 2 harnesses - Safety Notice",
+      "date": "2024-05-31",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47SHdZbWNwcnQxRzhESFZ3VGhGSGZ1UT09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    },
+    {
+      "id": "notice:safa:fc1758719d9a",
+      "title": "Parajet Safety Advisory Bulletin: July 2025 Maverick 1 Harness Arm",
+      "date": "2025-08-04",
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47R2dSbFN3SC8wOWUydmZMcXBlbjl1UT09",
+      "country": "AU",
+      "scope": "national",
+      "sources": [
+        {
+          "providerId": "safa",
+          "url": "https://safa.asn.au/pilot-tools/resources/",
+          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "licence": "facts",
+          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        }
+      ]
+    }
+  ]
+}
