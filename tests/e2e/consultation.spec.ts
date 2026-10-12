@@ -107,3 +107,9 @@ for (const p of SWEEP) {
     expect(serious.map((v) => `${v.id}: ${v.help}`)).toEqual([]);
   });
 }
+
+test("the About page names no one", async ({ page }) => {
+  await page.goto("about/");
+  await expect(page.locator("main")).not.toContainText("Who runs it");
+  await expect(page.locator("main")).not.toContainText("Burnside");
+});

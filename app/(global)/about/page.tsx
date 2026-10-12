@@ -28,9 +28,6 @@ export default function AboutPage() {
       <PolicySection id="prototype" heading={t("about.prototypeHeading")}>
         <p>{t("about.prototypeText")}</p>
       </PolicySection>
-      <PolicySection id="who" heading={t("about.whoHeading")}>
-        <p>{t("about.whoText")}</p>
-      </PolicySection>
       <PolicySection id="sources" heading={t("about.sourcesHeading")}>
         <p>{t("about.sourcesText")}</p>
         <p className="flex flex-wrap gap-x-4">
