@@ -81,6 +81,7 @@ All routes are statically generated. `[country]` is a lowercase ISO country code
 - **Footer**: sources summary, links to About, Sources and attribution, Status, Bot policy, Takedown, Privacy, Disclaimer, Feedback.
 - **"Report a correction"** link on every site, club and directory page, opening the external feedback form with the page URL and record ID pre-filled (if the form supports pre-fill; otherwise shown on the page for copying).
 - **Units**: km/h by default; a setting switches to knots (stored on device).
+- **Live wind (D44–D45):** Windy's standard embedded wind map, unmodified with Windy's logo and credited "Wind map by Windy.com", on country pages now and site pages from M3, loaded only when the visitor taps. Station widgets (Holfuy, FreeFlightWx, club stations) are shown only after written permission; until then a short placeholder explains they're coming and each site links to its stations' live pages.
 
 ### 5.2 My Sites
 

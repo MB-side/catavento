@@ -294,6 +294,7 @@ export interface Country {
   currency: string;
   defaultUnits: { speed: SpeedUnit; altitude: AltitudeUnit };
   nationalBody: NationalBody;
+  map?: { lat: number; lon: number; zoom: number }; // overview map centre (D44)
   ratingsNote: string;
   primarySiteSource: string;
   coverage: "full" | "sample";

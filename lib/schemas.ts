@@ -371,6 +371,13 @@ export const countryInputSchema = z.object({
     visitingPilotsUrl: optionalUrl,
     joinUrl: optionalUrl,
   }),
+  map: z
+    .object({
+      lat: z.number().min(-90).max(90),
+      lon: z.number().min(-180).max(180),
+      zoom: z.number().int().min(1).max(18),
+    })
+    .optional(),
   ratingsNote: z.string().min(1),
   primarySiteSource: z.string().min(1),
   coverage: z.enum(["full", "sample"]),

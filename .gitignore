@@ -27,3 +27,6 @@ docs/research/
 .vercel
 npm-debug.log*
 .pnpm-debug.log*
+
+# daily feedback review: last processed responses (never committed)
+.feedback-review-state.json

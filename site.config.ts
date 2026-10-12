@@ -13,7 +13,14 @@ export const siteConfig = {
   basePath: "/catavento",
   siteUrl: "https://mb-side.github.io/catavento", // full public URL including basePath, no trailing slash
   repoUrl: "https://github.com/MB-side/catavento",
-  feedbackFormUrl: "", // external form; empty shows the email fallback on /feedback
+  // Google Forms in the project account (D43). Answers go to private Google Sheets.
+  feedbackFormUrl:
+    "https://docs.google.com/forms/d/e/1FAIpQLSdRmNlQry4gYLTlftrIa0CoFg8k2q1wdljsB0wtG15ES2yZdA/viewform",
+  correctionForm: {
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSfjk3vShn8zTT0DEnYE9vIsmzMrUVszOsslrRg_GAFFOdiK2w/viewform",
+    pageField: "entry.1454041646", // "Page address", filled in from the page being reported
+    recordField: "entry.1432268283", // "Record ID", filled in on record pages
+  },
   contactEmail: "housethermal.app@gmail.com", // takedown, bot policy and feedback fallback; replace with a Catavento address when one exists
   analytics: { enabled: false, provider: "" },
   showPartnerPreviews: false, // docs/02 §5.13

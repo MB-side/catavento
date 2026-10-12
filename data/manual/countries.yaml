@@ -15,6 +15,7 @@
     membershipLine: "Current SAFA membership is required to fly in Australia, including for visiting pilots."
     visitingPilotsUrl: https://safa.asn.au/pilot-tools/visiting-international-pilots/   # from safa.asn.au navigation, 2026-10-12
     joinUrl: https://safa.asn.au/learn-to-fly/join-now/                                    # from safa.asn.au navigation, 2026-10-12
+  map: { lat: -27.5, lon: 134.0, zoom: 4 }   # country overview map centre
   ratingsNote: "Pilot ratings as published by SAFA and site guides (for example PG2, HG Supervised)."
   primarySiteSource: ansg
   coverage: full
@@ -34,6 +35,7 @@
     membershipLine: "NZHGPA membership (or a visitor membership) is required to fly in New Zealand."
     visitingPilotsUrl: https://nzhgpa.org.nz/flying-in-nz/   # linked from nzhgpa.org.nz/membership/, 2026-10-12
     joinUrl: https://nzhgpa.org.nz/membership/
+  map: { lat: -41.0, lon: 173.0, zoom: 5 }   # country overview map centre
   ratingsNote: "NZ ratings as published by NZHGPA (for example Hang 2 Novice, Hang 3 Intermediate; sites rated Beginner to Advanced)."
   primarySiteSource: manual+pge
   coverage: sample             # Iteration 1 shows a "Sample coverage" notice on NZ pages

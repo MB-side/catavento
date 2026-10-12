@@ -214,3 +214,40 @@ test("the 404 page has its own title", async ({ page }) => {
   await page.goto("no-such-page/");
   await expect(page).toHaveTitle("Page not found | Catavento");
 });
+
+test("every page offers 'Report a correction' with its own address filled in", async ({ page }) => {
+  await page.goto("nz/clubs/");
+  const link = page.getByRole("contentinfo").getByRole("link", { name: "Report a correction" });
+  const href = new URL((await link.getAttribute("href")) ?? "");
+  expect(href.host).toBe("docs.google.com");
+  expect(href.searchParams.get("usp")).toBe("pp_url");
+  expect([...href.searchParams.values()]).toContain(
+    "https://mb-side.github.io/catavento/nz/clubs/",
+  );
+});
+
+test("the feedback page links to both forms and the email address", async ({ page }) => {
+  await page.goto("feedback/");
+  await expect(page.getByRole("link", { name: "Open the feedback form" })).toHaveAttribute(
+    "href",
+    /docs\.google\.com\/forms\//,
+  );
+  await expect(
+    page.getByRole("main").getByRole("link", { name: "Report a correction" }),
+  ).toHaveAttribute("href", /docs\.google\.com\/forms\//);
+  await expect(page.getByRole("link", { name: "housethermal.app@gmail.com" })).toBeVisible();
+});
+
+test("Windy's map loads only after a tap, with its credit", async ({ page }) => {
+  await page.route("**/embed.windy.com/**", (route) => route.abort());
+  await page.goto("au/");
+  const map = page.getByTestId("windy-map");
+  await expect(map.locator("iframe")).toHaveCount(0);
+  await expect(map.getByRole("link", { name: "Wind map by Windy.com" })).toBeVisible();
+  await map.getByRole("button", { name: "Show live wind map" }).click();
+  await expect(map.locator("iframe")).toHaveAttribute(
+    "src",
+    /embed\.windy\.com\/embed2\.html.*overlay=wind/,
+  );
+  await expect(page.getByTestId("stations-placeholder")).toBeVisible();
+});

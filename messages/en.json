@@ -37,7 +37,8 @@
     "privacy": "Privacy",
     "disclaimer": "Disclaimer",
     "feedback": "Feedback",
-    "independence": "Catavento is an independent prototype. Information comes from public sources and is credited on every page."
+    "independence": "Catavento is an independent prototype. Information comes from public sources and is credited on every page.",
+    "correction": "Report a correction"
   },
   "home": {
     "intro": "One place for flying sites and who manages them, events, gear, and tandem flights and lessons for people new to flying.",
@@ -101,8 +102,10 @@
       "title": "Feedback",
       "summary": "Tell us what's useful, what's wrong and what's missing.",
       "formLink": "Open the feedback form",
-      "emailIntro": "A short feedback form is being set up. Until then, please email us:",
-      "includePage": "If you're reporting a correction, include the page address so we can find it."
+      "emailIntro": "Or email us:",
+      "includePage": "If you're reporting a correction, include the page address so we can find it.",
+      "correctionIntro": "Found something wrong or out of date?",
+      "correctionLink": "Report a correction"
     },
     "countryHome": {
       "title": "Flying in {country}",
@@ -197,5 +200,16 @@
       "proprietary": "Owner's terms",
       "unknown": "No published terms"
     }
+  },
+  "liveWind": {
+    "heading": "Wind now",
+    "intro": "A live wind map for {country}, from Windy.",
+    "show": "Show live wind map",
+    "privacy": "This loads Windy's map from windy.com, which may use its own cookies. Nothing loads until you tap.",
+    "frameTitle": "Live wind map of {country} from Windy.com",
+    "credit": "Wind map by Windy.com",
+    "stationsHeading": "Live readings from weather stations",
+    "stationsText": "Live readings from Holfuy, FreeFlightWx and club weather stations will appear on each site page once their owners agree. Until then, each site links straight to its stations' live pages.",
+    "stationsCount": "{count} station links so far in {country}."
   }
 }
