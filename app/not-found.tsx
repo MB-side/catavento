@@ -1,5 +1,8 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { t } from "@/lib/messages";
+
+export const metadata: Metadata = { title: t("notFound.metaTitle") };
 
 export default function NotFound() {
   return (

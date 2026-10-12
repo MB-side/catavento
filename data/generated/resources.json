@@ -1,0 +1,298 @@
+[
+  {
+    "id": "resource:adrenaline",
+    "legacyId": "BKG-001",
+    "name": "Adrenaline",
+    "url": "https://www.adrenaline.com.au/gliding/sydney/tandem-paragliding/",
+    "category": "booking_marketplace",
+    "summary": "Sells tandem PG (Stanwell Park, 20 min) as experiences and gift vouchers",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:airspace-checker-xcaustralia-org",
+    "legacyId": "INF-003",
+    "name": "Airspace Checker (xcaustralia.org)",
+    "url": "http://xcaustralia.org/aircheck/aircheck.php",
+    "category": "airspace",
+    "summary": "Online airspace check for flights",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:auckland-club-site-guide",
+    "legacyId": "NZ-INF-001",
+    "name": "Auckland club site guide",
+    "url": "https://www.cloudbase.org.nz/site-guide/flying-site-kariotahi",
+    "category": "site_guide_club",
+    "summary": "Club-published site guide pages for Auckland sites",
+    "countries": [
+      "NZ"
+    ]
+  },
+  {
+    "id": "resource:australian-national-site-guide",
+    "legacyId": "INF-001",
+    "name": "Australian National Site Guide",
+    "url": "https://siteguide.org.au",
+    "category": "sites",
+    "summary": "Volunteer-run, SAFA-board-endorsed site guide; map layers for open/closed sites, schools, clubs, CAR166 aerodromes; downloads",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:australian-ppg-xcontest",
+    "legacyId": "INF-005",
+    "name": "Australian PPG XContest",
+    "url": "https://paramotors.xcontest.org/ppgxc-australia",
+    "category": "online_xc",
+    "summary": "Annual PPG XC contest; Chris Atkinson Memorial Trophy; interstate/club trophy",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:cloudbase-mayhem-podcast-forecasting-episodes",
+    "legacyId": "INF-012",
+    "name": "Cloudbase Mayhem podcast (forecasting episodes)",
+    "url": "https://www.cloudbasemayhem.com/humanflight/forecasting/",
+    "category": "podcast",
+    "summary": "Global free-flight podcast; includes Australian weather guests",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:expedia-things-to-do",
+    "legacyId": "BKG-004",
+    "name": "Expedia Things To Do",
+    "url": "https://www.expedia.com/things-to-do/hang-gliding-with-hangglideoz.a1246939.activity-details",
+    "category": "booking_marketplace",
+    "summary": "Lists HangglideOz tandem HG (~A$264)",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:flyappi-org",
+    "legacyId": "INF-023",
+    "name": "flyappi.org",
+    "url": "https://flyappi.org",
+    "category": "site_database_global",
+    "summary": "Global site pages, some imported from XContest (e.g. Mt Borah page with site-fee info)",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:freeflightwx",
+    "legacyId": "INF-015",
+    "name": "FreeFlightWx",
+    "url": "https://freeflightwx.com/",
+    "category": "station_network_au",
+    "summary": "Network of ~26 Australian free-flight site stations (ACT, VIC, QLD, NSW, SA, TAS) with live graphs, tables, gauges and site info; comp tools",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:holfuy",
+    "legacyId": "INF-016",
+    "name": "Holfuy",
+    "url": "https://holfuy.com",
+    "category": "station_platform",
+    "summary": "Station hardware and hosting; public station pages; iframe widgets for registered domains; API by arrangement",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:nz-pg-site-records-nzhgpa",
+    "legacyId": "NZ-INF-002",
+    "name": "NZ PG site records (NZHGPA)",
+    "url": "https://nzhgpa.org.nz/paragliding-competitions/pg-records-index/nz-pg-site-records/",
+    "category": "records",
+    "summary": "Site records by region; useful list of NZ site names",
+    "countries": [
+      "NZ"
+    ]
+  },
+  {
+    "id": "resource:open-meteo",
+    "legacyId": "INF-022",
+    "name": "Open-Meteo",
+    "url": "https://open-meteo.com",
+    "category": "forecast_api",
+    "summary": "Forecast and elevation APIs",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:paragliding-map",
+    "legacyId": "INF-014",
+    "name": "Paragliding Map",
+    "url": "https://www.paraglidingmap.com/app/",
+    "category": "global_site_weather_app",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:paragliding-site-federation-open-source",
+    "legacyId": "INF-018",
+    "name": "Paragliding Site Federation (open source)",
+    "url": "https://github.com/Kevin-McIsaac/paragliding_site_federation",
+    "category": "site_data_pipeline",
+    "summary": "Pipeline merging Site Guide AU, ParaglidingEarth and DHV into one launch catalogue; nearest weather-station matcher (WU PWS, BOM, Holfuy)",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:paraglidingearth",
+    "legacyId": "INF-013",
+    "name": "ParaglidingEarth",
+    "url": "https://www.paraglidingearth.com",
+    "category": "site_database_global",
+    "summary": "Open collaborative worldwide site database; GeoJSON/XML API (around point, bounding box, country, modified since); GPX export",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:qantas-marketplace",
+    "legacyId": "BKG-003",
+    "name": "Qantas Marketplace",
+    "url": "https://marketplace.qantas.com/au/p/adrenaline-tandem-paragliding-coastal-flight-sydney/AU100179175",
+    "category": "booking_marketplace",
+    "summary": "Resells Adrenaline tandem PG",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:qsa-flight-schools-page",
+    "legacyId": "INF-011",
+    "name": "QSA flight schools page",
+    "url": "https://queenslandsportsaviators.com.au/flight-school-instructors/",
+    "category": "directory",
+    "summary": "QLD school and CFI profiles",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:queensland-com-visit-brisbane",
+    "legacyId": "BKG-006",
+    "name": "Queensland.com / Visit Brisbane",
+    "url": "https://visit.brisbane.qld.au/things-to-do/scenic-rim/adventure/oz-paragliding-and-hang-gliding-cfc4",
+    "category": "tourism_listing",
+    "summary": "Lists Oz Paragliding & Hang Gliding",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:redballoon",
+    "legacyId": "BKG-002",
+    "name": "RedBalloon",
+    "url": "https://redballoon.com.au/product/tandem-paragliding-coastal-flight---20-minutes/APP004.html",
+    "category": "booking_marketplace",
+    "summary": "Sells Adventure Plus Paragliding tandem flights",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:skysailor-magazine-safa",
+    "legacyId": "INF-009",
+    "name": "Skysailor magazine (SAFA)",
+    "url": "https://safa.asn.au/news/skysailor/current-issues/",
+    "category": "magazine",
+    "summary": "SAFA member magazine with archive",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:sphgc-long-reef-weather-station",
+    "legacyId": "INF-019",
+    "name": "SPHGC Long Reef weather station",
+    "url": "https://wind.flysydney.com.au/",
+    "category": "club_station_page",
+    "summary": "Club-run live station page for Long Reef",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:the-paragliding-app-open-source",
+    "legacyId": "INF-017",
+    "name": "The Paragliding App (open source)",
+    "url": "https://github.com/Kevin-McIsaac/the_paragliding_app",
+    "category": "pilot_app_open_source",
+    "summary": "Open-source Flutter app: logbook, 3D replay, nearby sites with forecast/flyability, airspace; documented weather-provider adapters (BOM, Pioupiou, FFVL, AWC, NWS)",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:vhpa-schools-and-clubs-lists",
+    "legacyId": "INF-010",
+    "name": "VHPA schools and clubs lists",
+    "url": "https://www.vhpa.org.au/schools.html",
+    "category": "directory",
+    "summary": "State-level school and club lists",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:visitnsw",
+    "legacyId": "BKG-005",
+    "name": "VisitNSW",
+    "url": "https://www.visitnsw.com/things-to-do/tours/hangglideoz",
+    "category": "tourism_listing",
+    "summary": "Official tourism listings for HangglideOz and SkySurf tandems",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:where-to-fly",
+    "legacyId": "INF-002",
+    "name": "Where To Fly",
+    "url": "https://wheretofly.info",
+    "category": "site_forecast",
+    "summary": "Per-site flyability forecast incl. RASP values, sortable by distance; iOS and Android apps",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:windy-app-spots-australia-paragliding",
+    "legacyId": "INF-007",
+    "name": "Windy.app spots (Australia paragliding)",
+    "url": "https://windy.app/spots/Australia/paragliding",
+    "category": "spot_forecast",
+    "summary": "Spot list with wind forecasts",
+    "countries": [
+      "AU"
+    ]
+  },
+  {
+    "id": "resource:xcontest-australia",
+    "legacyId": "INF-004",
+    "name": "XContest Australia",
+    "url": "https://www.xcontest.org/australia/",
+    "category": "online_xc",
+    "summary": "National online XC contest; requires SAFA licence; feeds World XContest",
+    "countries": [
+      "AU"
+    ]
+  }
+]

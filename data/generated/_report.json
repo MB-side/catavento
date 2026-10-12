@@ -1,0 +1,42 @@
+{
+  "build": {
+    "counts": {
+      "organisations": 102,
+      "clubs": 38,
+      "schools": 44,
+      "sites": 5,
+      "stations": 29,
+      "resources": 27,
+      "providers": 22,
+      "offerings": 1
+    },
+    "warnings": [
+      {
+        "code": "no-source",
+        "message": "Flow Paragliders: no source address, not imported",
+        "recordId": "MFG-003"
+      },
+      {
+        "code": "resource-no-url",
+        "message": "SkySight: no website in the seed, not listed",
+        "recordId": "INF-006"
+      },
+      {
+        "code": "resource-no-url",
+        "message": "OutDare: no website in the seed, not listed",
+        "recordId": "INF-008"
+      },
+      {
+        "code": "resource-no-url",
+        "message": "BOM automatic weather station observations: no website in the seed, not listed",
+        "recordId": "INF-020"
+      },
+      {
+        "code": "resource-no-url",
+        "message": "Pioupiou / OpenWindMap: no website in the seed, not listed",
+        "recordId": "INF-021"
+      }
+    ]
+  },
+  "providers": {}
+}

@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getCountry } from "@/lib/country";
-import { t, type MessageKey } from "@/lib/messages";
+import { getCounts } from "@/lib/data";
+import { t, tCount, type MessageKey } from "@/lib/messages";
 import { pageMetadata } from "@/lib/seo";
 import type { Country } from "@/lib/types";
 import { ComingSoon } from "./ComingSoon";
@@ -70,6 +71,7 @@ export async function CountryPage({
   const segment = country.code.toLowerCase();
   return (
     <ComingSoon title={title} summary={summary}>
+      {page === "countryHome" && <CountryCountsLine code={country.code} />}
       {page === "countryHome" && (
         <ul className="mt-4 flex flex-wrap gap-2">
           {(["sites", "clubs", "whatsOn", "gear", "newToFlying", "visitingPilots"] as const).map(
@@ -87,5 +89,27 @@ export async function CountryPage({
         </ul>
       )}
     </ComingSoon>
+  );
+}
+
+/** What the data already holds for this country, e.g. "27 clubs · 36 schools · 9 weather station links". */
+function CountryCountsLine({ code }: { code: string }) {
+  const counts = getCounts(code);
+  const items = (
+    [
+      ["counts.sites", counts.sites],
+      ["counts.clubs", counts.clubs],
+      ["counts.schools", counts.schools],
+      ["counts.gear", counts.gear],
+      ["counts.stations", counts.stations],
+    ] as const
+  )
+    .filter(([, n]) => n > 0)
+    .map(([key, n]) => tCount(key, n));
+  if (items.length === 0) return null;
+  return (
+    <p className="mt-3 font-semibold text-muted-strong" data-testid="country-counts">
+      {items.join(" · ")}
+    </p>
   );
 }

@@ -1,0 +1,10 @@
+# Map spellings used by sources to one organisation, per country (docs/05 §5.4). Never guess:
+# add an entry only when the match is certain. Values are seed legacy IDs or organisation IDs.
+AU:
+  "Sydney Paragliding & Hang Gliding Club": CLB-024
+  "Sydney Paragliding and Hang Gliding Club": CLB-024
+  "SPHGC": CLB-024
+  "Stanwell Park Hang Gliding & Paragliding Club (FlyStanwell)": CLB-021
+  "Stanwell Park Hang Gliding & Paragliding Club": CLB-021
+  "FlyStanwell": CLB-021
+NZ: {}

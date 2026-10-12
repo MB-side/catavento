@@ -1,3 +1,5 @@
+import { readFileSync } from "node:fs";
+import path from "node:path";
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test, type Page } from "@playwright/test";
 
@@ -183,3 +185,32 @@ for (const path of ["", "au/clubs/", "nz/", "feedback/"]) {
     expect(serious.map((v) => `${v.id}: ${v.help}`)).toEqual([]);
   });
 }
+
+const providers = JSON.parse(
+  readFileSync(path.join(process.cwd(), "data", "generated", "providers.json"), "utf8"),
+) as { id: string; name: string; tier: string }[];
+
+test("Sources lists every provider with its tier and credit line", async ({ page }) => {
+  await page.goto("sources/");
+  const cards = page.locator("li[id^='provider-']");
+  await expect(cards).toHaveCount(providers.length);
+  for (const p of providers) {
+    const card = page.locator(`#provider-${p.id}`);
+    await expect(card.getByRole("heading", { name: p.name })).toBeVisible();
+    await expect(card).toContainText(/Green|Amber|Red/);
+    await expect(card).toContainText("Credit shown");
+  }
+});
+
+test("country pages show counts worked out from the data", async ({ page }) => {
+  await page.goto("au/");
+  await expect(page.getByTestId("country-counts")).toContainText(/\d+ clubs/);
+  await page.goto("nz/");
+  await expect(page.getByTestId("country-counts")).toContainText(/5 sites/);
+  await expect(page.getByTestId("country-counts")).toContainText(/11 clubs/);
+});
+
+test("the 404 page has its own title", async ({ page }) => {
+  await page.goto("no-such-page/");
+  await expect(page).toHaveTitle("Page not found | Catavento");
+});

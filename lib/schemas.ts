@@ -1,47 +1,463 @@
-// All Zod schemas, mirroring lib/types.ts (docs/04). The remaining schemas arrive in M1.
+// All Zod schemas, mirroring lib/types.ts (docs/04). Output schemas validate data/generated/*.json;
+// input schemas validate the hand-edited files in data/manual/.
 import { z } from "zod";
-import type { Country } from "./types";
+import type {
+  BuildReport,
+  Club,
+  Country,
+  EventItem,
+  Notice,
+  Offering,
+  Organisation,
+  Provider,
+  Resource,
+  Site,
+  Station,
+  Brand,
+} from "./types";
 
+// ---------- shared pieces ----------
+
+const isoDateOrTime = z.union([z.iso.date(), z.iso.datetime({ offset: true })]);
+const countryCode = z.string().regex(/^[A-Z]{2}$/);
+const regionCode = z.string().regex(/^[A-Z]{2}-[A-Z0-9]{1,3}$/);
+const httpUrl = z.url({ protocol: /^https?$/ });
+
+/** Blank strings in YAML ("") mean "not set". */
 const optionalUrl = z
   .string()
   .transform((v) => (v.trim() === "" ? undefined : v))
-  .pipe(z.url().optional())
+  .pipe(httpUrl.optional())
   .optional();
+
+export const disciplineSchema = z.enum([
+  "PG",
+  "HG",
+  "PPG",
+  "WM",
+  "tandem",
+  "speedflying",
+  "parakite",
+]);
+export const tierSchema = z.enum(["green", "amber", "red"]);
+export const licenceSchema = z.enum([
+  "facts",
+  "cc-by-sa-3.0",
+  "odbl-1.0",
+  "cc-by-4.0",
+  "proprietary",
+  "unknown",
+]);
+export const orgKindSchema = z.enum([
+  "governing_body",
+  "regional_association",
+  "club",
+  "school",
+  "tandem_operator",
+  "retailer",
+  "importer_distributor",
+  "manufacturer",
+  "service_centre",
+  "flight_park",
+  "site_holder",
+  "operator",
+]);
+export const stewardRoleSchema = z.enum([
+  "club",
+  "site_holder",
+  "flight_park",
+  "operator",
+  "landowner",
+  "municipality",
+  "national_body",
+  "none",
+  "unknown",
+]);
+
+export const sourceRefSchema = z.object({
+  providerId: z.string().min(1),
+  url: httpUrl,
+  fetchedAt: isoDateOrTime,
+  licence: licenceSchema,
+  contentHash: z.string().optional(),
+});
+
+const latLon = z.object({ lat: z.number().min(-90).max(90), lon: z.number().min(-180).max(180) });
+
+// ---------- generated data (output) ----------
+
+export const providerSchema = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  name: z.string().min(1),
+  homepage: httpUrl.optional(),
+  termsUrl: httpUrl.optional(),
+  tier: tierSchema,
+  licence: licenceSchema,
+  attribution: z.string().min(1),
+  uses: z.string().min(1),
+  method: z.string().min(1),
+  schedule: z.string().min(1),
+  countries: z.array(z.union([countryCode, z.literal("*")])).min(1),
+  permissionStatus: z.enum([
+    "not_requested",
+    "requested",
+    "granted_link",
+    "granted_embed",
+    "granted_feed",
+    "refused",
+    "withdrawn",
+  ]),
+  enabled: z.boolean(),
+  contact: z.string().optional(),
+  notes: z.string().optional(),
+}) satisfies z.ZodType<Provider>;
+
+const organisationShape = {
+  id: z.string().regex(/^org:[a-z]{2}:[a-z0-9-]+$/),
+  legacyId: z.string().optional(),
+  slug: z.string().regex(/^[a-z0-9-]+$/),
+  kind: orgKindSchema,
+  additionalKinds: z.array(orgKindSchema).optional(),
+  name: z.string().min(1),
+  aliases: z.array(z.string()).optional(),
+  disciplines: z.array(disciplineSchema),
+  country: countryCode,
+  regionCode: regionCode.optional(),
+  locality: z.string().optional(),
+  postcode: z.string().optional(),
+  location: latLon.optional(),
+  website: httpUrl.optional(),
+  emailPublic: z.email().optional(),
+  phonePublic: z.string().optional(),
+  nationalBodyListed: z.boolean().optional(),
+  summary: z.string().optional(),
+  brands: z.array(z.string()).optional(),
+  relatedOrgIds: z.array(z.string()).optional(),
+  sources: z.array(sourceRefSchema).min(1),
+  lastVerified: z.iso.date(),
+  verificationStatus: z.enum([
+    "verified_public_source",
+    "listed_by_national_body",
+    "needs_verification",
+    "owner_confirmed",
+  ]),
+  hidden: z.boolean().optional(),
+};
+
+export const organisationSchema = z.object(organisationShape) satisfies z.ZodType<Organisation>;
+
+export const clubSchema = z.object({
+  ...organisationShape,
+  kind: z.literal("club"),
+  regionalAssociationId: z.string().optional(),
+  siteIds: z.array(z.string()),
+  stationIds: z.array(z.string()),
+  contacts: z
+    .array(
+      z.object({
+        role: z.string(),
+        name: z.string().optional(),
+        phone: z.string().optional(),
+        email: z.string().optional(),
+        source: sourceRefSchema,
+      }),
+    )
+    .optional(),
+  joinUrl: httpUrl.optional(),
+  noticesUrl: httpUrl.optional(),
+  siteAccessNote: z.string().optional(),
+}) satisfies z.ZodType<Club>;
+
+/** Clubs carry the extra club fields; everything else is a plain organisation. */
+export const anyOrganisationSchema = z.union([
+  clubSchema,
+  organisationSchema.refine((o) => o.kind !== "club"),
+]);
+
+export const siteSchema = z.object({
+  id: z.string().regex(/^site:[a-z]{2}:[a-z0-9]{1,3}:[a-z0-9-]+$/),
+  slug: z.string().regex(/^[a-z0-9-]+$/),
+  name: z.string().min(1),
+  country: countryCode,
+  regionCode: regionCode,
+  area: z.string().optional(),
+  siteGuideUrl: httpUrl.optional(),
+  typeText: z.string().optional(),
+  heightText: z.string().optional(),
+  ratingText: z.string().optional(),
+  conditionsText: z.string().optional(),
+  windRanges: z.union([
+    z.literal("all"),
+    z.array(z.object({ fromDeg: z.number().min(0).max(360), toDeg: z.number().min(0).max(360) })),
+  ]),
+  windRangeLabel: z.string().min(1),
+  ratingSystem: z.string().optional(),
+  ippiLevel: z.number().int().optional(),
+  status: z.enum(["open", "closed", "restricted", "unknown"]),
+  stewardOrgId: z.string().optional(),
+  stewardRole: stewardRoleSchema,
+  stewardNote: z.string().optional(),
+  alsoAdministeredBy: z
+    .array(z.object({ orgId: z.string(), note: z.string().optional() }))
+    .optional(),
+  siteAccessNote: z.string().optional(),
+  officialGuideUrl: httpUrl.optional(),
+  launches: z.array(
+    z
+      .object({
+        id: z.string(),
+        name: z.string(),
+        lat: z.number().optional(),
+        lon: z.number().optional(),
+        precision: z.enum(["exact", "approximate", "withheld"]),
+        altitudeM: z.number().optional(),
+      })
+      // Withheld coordinates are never stored (docs/04 §5).
+      .refine((l) => l.precision !== "withheld" || (l.lat === undefined && l.lon === undefined), {
+        message: "withheld launches must not store coordinates",
+      }),
+  ),
+  mainLandingName: z.string().optional(),
+  stationIds: z.array(z.string()),
+  wtfSlug: z.string().optional(),
+  disciplines: z.array(disciplineSchema),
+  layer: z.enum(["ansg", "pge", "manual"]),
+  sources: z.array(sourceRefSchema).min(1),
+  hidden: z.boolean().optional(),
+}) satisfies z.ZodType<Site>;
+
+export const stationSchema = z
+  .object({
+    id: z.string().regex(/^station:[a-z0-9-]+:[a-z0-9-]+$/),
+    legacyId: z.string().optional(),
+    providerId: z.string().min(1),
+    providerRef: z.string(),
+    name: z.string().min(1),
+    country: countryCode,
+    url: httpUrl.optional(),
+    lat: z.number().optional(),
+    lon: z.number().optional(),
+    ownerOrgId: z.string().optional(),
+    ownerLabel: z.string().optional(),
+    embedAllowed: z.boolean(),
+    feedAllowed: z.boolean(),
+    verificationStatus: z.enum([
+      "verified_public_source",
+      "linked_by_club",
+      "listed_on_provider_index",
+      "needs_verification",
+    ]),
+    hidden: z.boolean().optional(),
+  })
+  .refine((s) => s.hidden === true || s.url !== undefined, {
+    message: "visible stations need a live page address",
+  }) satisfies z.ZodType<Station>;
+
+export const eventSchema = z.object({
+  id: z.string(),
+  title: z.string().min(1),
+  startDate: isoDateOrTime,
+  endDate: isoDateOrTime.optional(),
+  type: z.enum([
+    "competition",
+    "fly_in",
+    "clinic",
+    "siv",
+    "meeting",
+    "social",
+    "festival",
+    "other",
+  ]),
+  disciplines: z.array(disciplineSchema),
+  locationText: z.string().optional(),
+  country: countryCode,
+  regionCode: regionCode.optional(),
+  location: latLon.optional(),
+  organiserOrgId: z.string().optional(),
+  url: httpUrl,
+  sources: z.array(sourceRefSchema).min(1),
+}) satisfies z.ZodType<EventItem>;
+
+export const noticeSchema = z.object({
+  id: z.string(),
+  title: z.string().min(1),
+  date: isoDateOrTime,
+  url: httpUrl,
+  country: countryCode,
+  scope: z.enum(["national", "club", "site"]),
+  orgId: z.string().optional(),
+  siteIds: z.array(z.string()).optional(),
+  sources: z.array(sourceRefSchema).min(1),
+}) satisfies z.ZodType<Notice>;
+
+export const brandSchema = z.object({
+  id: z.string(),
+  name: z.string().min(1),
+  website: httpUrl.optional(),
+  distributors: z.array(
+    z.object({
+      orgId: z.string(),
+      role: z.enum([
+        "official_importer",
+        "core_importer",
+        "dealer",
+        "service_agent",
+        "certified_service",
+      ]),
+    }),
+  ),
+}) satisfies z.ZodType<Brand>;
+
+export const offeringSchema = z.object({
+  orgId: z.string(),
+  type: z.enum([
+    "tandem",
+    "intro_course",
+    "licence_course",
+    "endorsement",
+    "siv",
+    "xc_clinic",
+    "tour",
+    "guiding",
+    "service",
+  ]),
+  discipline: disciplineSchema.optional(),
+  title: z.string().min(1),
+  priceFrom: z.number().positive().optional(),
+  currency: z
+    .string()
+    .regex(/^[A-Z]{3}$/)
+    .optional(),
+  priceText: z.string().optional(),
+  durationText: z.string().optional(),
+  inclusions: z.array(z.string()).optional(),
+  url: httpUrl,
+  source: sourceRefSchema,
+}) satisfies z.ZodType<Offering>;
+
+export const resourceSchema = z.object({
+  id: z.string().regex(/^resource:[a-z0-9-]+$/),
+  legacyId: z.string().optional(),
+  name: z.string().min(1),
+  url: httpUrl,
+  category: z.string().min(1),
+  summary: z.string().optional(),
+  providerId: z.string().optional(),
+  countries: z.array(countryCode).optional(),
+}) satisfies z.ZodType<Resource>;
 
 /**
  * Validates one entry of data/manual/countries.yaml. The file names the national body by its
- * seed `orgLegacyId` (e.g. GOV-001); until organisations are imported in M1 that legacy ID
- * stands in for `orgId` (docs/10 C23).
+ * seed `orgLegacyId` (e.g. GOV-001); build-data resolves it to the organisation ID (docs/10 C23).
  */
-export const countrySchema = z
-  .object({
-    code: z.string().regex(/^[A-Z]{2}$/),
+export const countryInputSchema = z.object({
+  code: countryCode,
+  name: z.string().min(1),
+  enabled: z.boolean(),
+  default: z.boolean().optional(),
+  regionLabel: z.string().min(1),
+  regions: z.array(regionCode).min(1),
+  timezones: z.array(z.string().min(1)).min(1),
+  currency: z.string().regex(/^[A-Z]{3}$/),
+  defaultUnits: z.object({
+    speed: z.enum(["kmh", "kt", "mph"]),
+    altitude: z.enum(["m", "ft"]),
+  }),
+  nationalBody: z.object({
+    orgLegacyId: z.string().min(1),
     name: z.string().min(1),
-    enabled: z.boolean(),
-    default: z.boolean().optional(),
-    regionLabel: z.string().min(1),
-    regions: z.array(z.string().regex(/^[A-Z]{2}-[A-Z0-9]{1,3}$/)).min(1),
-    timezones: z.array(z.string().min(1)).min(1),
-    currency: z.string().regex(/^[A-Z]{3}$/),
-    defaultUnits: z.object({
-      speed: z.enum(["kmh", "kt", "mph"]),
-      altitude: z.enum(["m", "ft"]),
-    }),
-    nationalBody: z.object({
-      orgLegacyId: z.string().min(1),
-      name: z.string().min(1),
-      url: z.url(),
-      membershipLine: z.string().min(1),
-      visitingPilotsUrl: optionalUrl,
-      joinUrl: optionalUrl,
-    }),
-    ratingsNote: z.string().min(1),
-    primarySiteSource: z.string().min(1),
-    coverage: z.enum(["full", "sample"]),
-  })
-  .transform(({ nationalBody: { orgLegacyId, ...body }, ...rest }): Country => ({
-    ...rest,
-    nationalBody: { orgId: orgLegacyId, ...body },
-  }));
+    url: httpUrl,
+    membershipLine: z.string().min(1),
+    visitingPilotsUrl: optionalUrl,
+    joinUrl: optionalUrl,
+  }),
+  ratingsNote: z.string().min(1),
+  primarySiteSource: z.string().min(1),
+  coverage: z.enum(["full", "sample"]),
+});
+export const countriesFileSchema = z.array(countryInputSchema).min(1);
 
-export const countriesFileSchema = z.array(countrySchema).min(1);
+export const countrySchema = z.object({
+  ...countryInputSchema.shape,
+  nationalBody: z.object({
+    orgId: z.string().min(1),
+    name: z.string().min(1),
+    url: httpUrl,
+    membershipLine: z.string().min(1),
+    visitingPilotsUrl: httpUrl.optional(),
+    joinUrl: httpUrl.optional(),
+  }),
+}) satisfies z.ZodType<Country>;
+
+export const buildReportSchema = z.object({
+  build: z.object({
+    counts: z.record(z.string(), z.number()),
+    warnings: z.array(
+      z.object({ code: z.string(), message: z.string(), recordId: z.string().optional() }),
+    ),
+  }),
+  providers: z.record(z.string(), z.unknown()),
+}) satisfies z.ZodType<BuildReport>;
+
+// ---------- hand-edited inputs (data/manual) ----------
+
+export const providersFileSchema = z.array(providerSchema).min(1);
+
+const meta = { note: z.string().optional(), source: z.string().optional() };
+
+export const orgMergesFileSchema = z.object({
+  merge: z
+    .array(z.object({ from: z.string(), into: z.array(z.string()).min(1), ...meta }))
+    .default([]),
+  related: z.array(z.object({ ids: z.array(z.string()).min(2), ...meta })).default([]),
+});
+
+/** Keyed by record ID or seed legacy ID; values are fields to set (validated after merging). */
+export const overridesFileSchema = z
+  .record(z.string(), z.record(z.string(), z.unknown()))
+  .nullable();
+
+export const clubAliasesFileSchema = z.record(
+  countryCode,
+  z.record(z.string(), z.string()).nullable(),
+);
+
+export const siteStationsFileSchema = z.record(z.string(), z.array(z.string())).nullable();
+
+export const siteStewardsFileSchema = z
+  .record(z.string(), z.object({ org: z.string().optional(), role: stewardRoleSchema, ...meta }))
+  .nullable();
+
+export const nzSampleSitesFileSchema = z.array(
+  z.object({
+    name: z.string().min(1),
+    region: regionCode,
+    steward: z.object({ legacyId: z.string().optional(), role: stewardRoleSchema }),
+    alsoAdministeredBy: z.object({ legacyId: z.string(), note: z.string().optional() }).optional(),
+    officialGuideUrl: httpUrl.optional(),
+    siteAccessNote: z.string().optional(),
+    stations: z.array(z.string()).optional(),
+    note: z.string().optional(),
+    source: httpUrl,
+  }),
+);
+
+export const offeringsFileSchema = z.array(
+  z.object({
+    org: z.string().min(1), // organisation name or legacy ID
+    type: offeringSchema.shape.type,
+    discipline: disciplineSchema.optional(),
+    title: z.string().min(1),
+    priceFromAud: z.number().positive().optional(), // legacy field name; becomes priceFrom + currency
+    priceFrom: z.number().positive().optional(),
+    priceText: z.string().optional(),
+    durationText: z.string().optional(),
+    inclusions: z.array(z.string()).optional(),
+    url: httpUrl,
+    sourceCheckedAt: z.union([
+      z.iso.date(),
+      z.date().transform((d) => d.toISOString().slice(0, 10)),
+    ]),
+    note: z.string().optional(),
+  }),
+);

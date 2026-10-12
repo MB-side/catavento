@@ -1,0 +1,3 @@
+# Curated weather stations per site, in display order (docs/04 §4, docs/05 §5.5).
+# Australian sites arrive with the Site Guide import (M2); entries are added here as they're checked.
+site:nz:auk:karioitahi-beach: [station:holfuy:213]

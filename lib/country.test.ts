@@ -1,34 +1,36 @@
 import { describe, expect, it } from "vitest";
+import { countriesFileSchema } from "@/lib/schemas";
 import { siteConfig } from "@/site.config";
+import { getOrganisation } from "./data";
 import { countryFromPath } from "./country-codes";
-import { getAllCountries, getCountry, getEnabledCountries, parseCountries } from "./country";
+import { getAllCountries, getCountry, getEnabledCountries } from "./country";
 
-describe("countries.yaml", () => {
-  it("is valid and has exactly one default country, matching site.config", () => {
-    const countries = getAllCountries();
-    const defaults = countries.filter((c) => c.default);
+describe("countries", () => {
+  it("have exactly one default country, matching site.config", () => {
+    const defaults = getAllCountries().filter((c) => c.default);
     expect(defaults).toHaveLength(1);
     expect(defaults[0]?.code).toBe(siteConfig.defaultCountry);
   });
 
-  it("contains every country enabled in site.config", () => {
-    const codes = getEnabledCountries().map((c) => c.code);
-    expect(codes).toEqual([...siteConfig.enabledCountries]);
+  it("include every country enabled in site.config", () => {
+    expect(getEnabledCountries().map((c) => c.code)).toEqual([...siteConfig.enabledCountries]);
   });
 
-  it("maps the national body legacy ID to orgId and drops empty URLs", () => {
-    const au = getCountry("au");
-    expect(au?.nationalBody.orgId).toBe("GOV-001");
-    expect(au?.nationalBody.joinUrl).toBeUndefined();
+  it("name a national body that exists as an organisation in the same country", () => {
+    for (const c of getEnabledCountries()) {
+      const body = getOrganisation(c.nationalBody.orgId);
+      expect(body?.kind, c.code).toBe("governing_body");
+      expect(body?.country).toBe(c.code);
+    }
   });
 
-  it("uses each country's own membership line", () => {
+  it("use each country's own membership line", () => {
     expect(getCountry("AU")?.nationalBody.membershipLine).toMatch(/SAFA/);
-    expect(getCountry("NZ")?.nationalBody.membershipLine).not.toMatch(/SAFA/);
+    expect(getCountry("nz")?.nationalBody.membershipLine).not.toMatch(/SAFA/);
   });
 
-  it("rejects a malformed file", () => {
-    expect(() => parseCountries("- code: australia\n")).toThrow();
+  it("reject a malformed countries.yaml", () => {
+    expect(() => countriesFileSchema.parse([{ code: "australia" }])).toThrow();
   });
 });
 

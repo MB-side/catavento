@@ -1,0 +1,89 @@
+[
+  {
+    "code": "AU",
+    "name": "Australia",
+    "enabled": true,
+    "default": true,
+    "regionLabel": "State or territory",
+    "regions": [
+      "AU-NSW",
+      "AU-VIC",
+      "AU-QLD",
+      "AU-SA",
+      "AU-WA",
+      "AU-TAS",
+      "AU-ACT",
+      "AU-NT"
+    ],
+    "timezones": [
+      "Australia/Sydney",
+      "Australia/Melbourne",
+      "Australia/Brisbane",
+      "Australia/Adelaide",
+      "Australia/Perth",
+      "Australia/Hobart",
+      "Australia/Darwin"
+    ],
+    "currency": "AUD",
+    "defaultUnits": {
+      "speed": "kmh",
+      "altitude": "m"
+    },
+    "ratingsNote": "Pilot ratings as published by SAFA and site guides (for example PG2, HG Supervised).",
+    "primarySiteSource": "ansg",
+    "coverage": "full",
+    "nationalBody": {
+      "name": "Sports Aviation Federation of Australia (SAFA)",
+      "url": "https://safa.asn.au",
+      "membershipLine": "Current SAFA membership is required to fly in Australia, including for visiting pilots.",
+      "visitingPilotsUrl": "https://safa.asn.au/pilot-tools/visiting-international-pilots/",
+      "joinUrl": "https://safa.asn.au/learn-to-fly/join-now/",
+      "orgId": "org:au:sports-aviation-federation-of-australia"
+    }
+  },
+  {
+    "code": "NZ",
+    "name": "New Zealand",
+    "enabled": true,
+    "default": false,
+    "regionLabel": "Region",
+    "regions": [
+      "NZ-NTL",
+      "NZ-AUK",
+      "NZ-WKO",
+      "NZ-BOP",
+      "NZ-GIS",
+      "NZ-HKB",
+      "NZ-TKI",
+      "NZ-MWT",
+      "NZ-WGN",
+      "NZ-TAS",
+      "NZ-NSN",
+      "NZ-MBH",
+      "NZ-WTC",
+      "NZ-CAN",
+      "NZ-OTA",
+      "NZ-STL",
+      "NZ-CIT"
+    ],
+    "timezones": [
+      "Pacific/Auckland"
+    ],
+    "currency": "NZD",
+    "defaultUnits": {
+      "speed": "kmh",
+      "altitude": "m"
+    },
+    "ratingsNote": "NZ ratings as published by NZHGPA (for example Hang 2 Novice, Hang 3 Intermediate; sites rated Beginner to Advanced).",
+    "primarySiteSource": "manual+pge",
+    "coverage": "sample",
+    "nationalBody": {
+      "name": "New Zealand Hang Gliding & Paragliding Association (NZHGPA)",
+      "url": "https://nzhgpa.org.nz",
+      "membershipLine": "NZHGPA membership (or a visitor membership) is required to fly in New Zealand.",
+      "visitingPilotsUrl": "https://nzhgpa.org.nz/flying-in-nz/",
+      "joinUrl": "https://nzhgpa.org.nz/membership/",
+      "orgId": "org:nz:new-zealand-hang-gliding-paragliding-association"
+    }
+  }
+]

@@ -1,0 +1,14 @@
+# Businesses that appear on more than one row of data/seed/directory.csv (docs/04 §6, docs/10 C5).
+# merge: the row's facts join the target organisation, which also gains the row's kind
+#        (so a school's shop appears under Gear as well as New to flying).
+# related: separate organisations that are the same business (each keeps its own record and
+#          location, e.g. two SAFA-listed bases); they are cross-linked.
+merge:
+  - { from: RTL-004, into: [SCH-021], note: "Paratech Paragliding shop and school" }
+  - { from: RTL-005, into: [SCH-019], note: "Paragliding Queensland shop and school" }
+  - { from: RTL-006, into: [SCH-026, SCH-027], note: "SkySurf sales, at both SAFA-listed bases" }
+  - { from: RTL-007, into: [SCH-011], note: "High Adventure shop and school" }
+  - { from: RTL-008, into: [SCH-030], note: "Tribal Flight sales and school" }
+  - { from: MFG-001, into: [SCH-017], note: "Moyes Delta Gliders (manufacturer) and its academy" }
+related:
+  - { ids: [SCH-026, SCH-027], note: "SkySurf Paragliding: Canberra and Wollongong bases" }

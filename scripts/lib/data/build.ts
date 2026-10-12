@@ -1,0 +1,168 @@
+// Builds every generated data file from already-parsed inputs (docs/03 §6). Pure: the file
+// reading and writing lives in scripts/build-data.ts, so the whole pipeline is testable.
+import type {
+  BuildReport,
+  BuildWarning,
+  Club,
+  Country,
+  EventItem,
+  Notice,
+  Offering,
+  Organisation,
+  Provider,
+  Resource,
+  Site,
+  Station,
+  Brand,
+  StewardRole,
+} from "@/lib/types";
+import {
+  applyOrgMerges,
+  applyOverrides,
+  applyRelated,
+  applySiteStations,
+  deriveClubs,
+  mapOfferings,
+  mapSampleSites,
+  resolveAlias,
+  resolveOrgRef,
+  type MergeRule,
+  type OfferingInput,
+  type SampleSiteInput,
+} from "./merge";
+import { assignOrgIds, mapDirectory, mapStations, type CsvRow } from "./seed";
+
+export interface CountryInput extends Omit<Country, "nationalBody"> {
+  nationalBody: Omit<Country["nationalBody"], "orgId"> & { orgLegacyId: string };
+}
+
+export interface BuildInputs {
+  directoryRows: CsvRow[];
+  stationRows: CsvRow[];
+  countries: CountryInput[];
+  providers: Provider[];
+  orgMerges: { merge: MergeRule[]; related: { ids: string[] }[] };
+  overrides: Record<string, Record<string, unknown>>;
+  clubAliases: Record<string, Record<string, string> | null>;
+  siteStations: Record<string, string[]>;
+  siteStewards: Record<string, { org?: string; role: StewardRole }>;
+  sampleSites: SampleSiteInput[];
+  sampleSitesChecked: string;
+  offerings: OfferingInput[];
+}
+
+export interface BuildOutputs {
+  countries: Country[];
+  providers: Provider[];
+  organisations: (Organisation | Club)[];
+  sites: Site[];
+  stations: Station[];
+  events: EventItem[];
+  notices: Notice[];
+  brands: Brand[];
+  offerings: Offering[];
+  resources: Resource[];
+  report: BuildReport;
+}
+
+const byId = <T extends { id: string }>(a: T, b: T) => a.id.localeCompare(b.id);
+
+export function buildData(input: BuildInputs): BuildOutputs {
+  const warnings: BuildWarning[] = [];
+  const providerMap = new Map(input.providers.map((p) => [p.id, p]));
+
+  // Organisations: seed rows → merged businesses → IDs → related links → manual overrides.
+  const seed = mapDirectory(input.directoryRows, providerMap);
+  warnings.push(...seed.warnings);
+  const merged = applyOrgMerges(seed.orgs, input.orgMerges.merge, warnings);
+  const organisations = assignOrgIds(merged);
+  applyRelated(organisations, input.orgMerges.related, warnings);
+
+  // Stations, with club owners matched only by exact alias.
+  const { stations, warnings: stationWarnings } = mapStations(input.stationRows);
+  warnings.push(...stationWarnings);
+  const stationByLegacy = new Map(stations.map((s) => [s.legacyId, s]));
+  for (const row of input.stationRows) {
+    const station = stationByLegacy.get(row.station_id);
+    if (!station) continue;
+    const owner = resolveAlias(row.owner_or_admin, station.country, input.clubAliases, organisations);
+    if (owner) {
+      station.ownerOrgId = owner;
+      if (organisations.find((o) => o.id === owner)?.kind === "club") station.ownerLabel = "club station";
+    }
+  }
+
+  // Countries: national body named by legacy ID in countries.yaml.
+  const countries: Country[] = input.countries.map(({ nationalBody: { orgLegacyId, ...body }, ...c }) => {
+    const orgId = resolveOrgRef(orgLegacyId, organisations);
+    if (!orgId) warnings.push({ code: "national-body-missing", message: `${c.code}: national body ${orgLegacyId} not found` });
+    return { ...c, nationalBody: { ...body, orgId: orgId ?? orgLegacyId } };
+  });
+
+  // Sites: the NZ sample now; the Site Guide and ParaglidingEarth join in M2.
+  const sites = mapSampleSites(input.sampleSites, organisations, input.sampleSitesChecked, warnings);
+  for (const [siteKey, steward] of Object.entries(input.siteStewards)) {
+    const site = sites.find((s) => s.id === siteKey);
+    if (!site) continue; // Australian sites arrive in M2
+    site.stewardRole = steward.role;
+    site.stewardOrgId = steward.org ? resolveOrgRef(steward.org, organisations) : undefined;
+  }
+  applySiteStations(sites, input.siteStations, stations, warnings);
+
+  // Manual overrides win over everything else.
+  const used = new Set<string>();
+  for (const records of [organisations, stations, sites] as { id: string; legacyId?: string }[][]) {
+    for (const key of applyOverrides(records, input.overrides)) used.add(key);
+  }
+  for (const key of Object.keys(input.overrides)) {
+    if (!used.has(key)) warnings.push({ code: "override-unused", message: `overrides.yaml: no record matches "${key}"` });
+  }
+
+  const withClubs = deriveClubs(organisations, sites, stations);
+  const offerings = mapOfferings(input.offerings, withClubs, countries, providerMap, warnings);
+
+  // Every country must exist in countries.yaml; every region code must belong to its country.
+  const regionsByCountry = new Map(countries.map((c) => [c.code, new Set(c.regions)]));
+  for (const r of [...withClubs, ...sites]) {
+    const regions = regionsByCountry.get(r.country);
+    if (!regions) warnings.push({ code: "unknown-country", message: `${r.id}: country ${r.country} not in countries.yaml`, recordId: r.id });
+    else if (r.regionCode && !regions.has(r.regionCode)) {
+      warnings.push({ code: "unknown-region", message: `${r.id}: region ${r.regionCode} not in countries.yaml`, recordId: r.id });
+    }
+  }
+
+  // Duplicate IDs are an error, not a warning.
+  for (const list of [withClubs, sites, stations] as { id: string }[][]) {
+    const seen = new Set<string>();
+    for (const r of list) {
+      if (seen.has(r.id)) throw new Error(`Duplicate ID: ${r.id}`);
+      seen.add(r.id);
+    }
+  }
+
+  const visible = withClubs.filter((o) => !o.hidden);
+  const counts: Record<string, number> = {
+    organisations: withClubs.length,
+    clubs: visible.filter((o) => o.kind === "club").length,
+    schools: visible.filter((o) => o.kind === "school").length,
+    sites: sites.filter((s) => !s.hidden).length,
+    stations: stations.filter((s) => !s.hidden).length,
+    resources: seed.resources.length,
+    providers: input.providers.length,
+    offerings: offerings.length,
+  };
+
+  return {
+    countries,
+    providers: input.providers,
+    organisations: withClubs.sort(byId),
+    sites: sites.sort(byId),
+    stations: stations.sort(byId),
+    events: [],
+    notices: [],
+    brands: [],
+    offerings,
+    resources: seed.resources.sort(byId),
+    report: { build: { counts, warnings }, providers: {} },
+  };
+}
