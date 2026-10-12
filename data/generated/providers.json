@@ -38,14 +38,19 @@
     "tier": "amber",
     "licence": "facts",
     "attribution": "Site facts: Australian National Site Guide",
-    "uses": "Site and launch names, coordinates (respecting their precision), short fields (type, height, rating, conditions), administering club, main landing name, linked weather-station addresses, status and page address",
-    "method": "Bulk export if available, otherwise a slow, polite read of public site pages",
-    "schedule": "Nightly",
+    "uses": "Site and launch names, launch positions, short fields (type, height, wind directions, rating), the contact listed for each site, open or closed status, and each site's page address. Never descriptions, hazards, rules or landing notes",
+    "method": "Their public Google Earth files of open and closed sites (2 downloads), compared with last week's copy",
+    "schedule": "Weekly",
     "countries": [
       "AU"
     ],
     "permissionStatus": "not_requested",
-    "enabled": true
+    "enabled": true,
+    "collect": {
+      "everyDays": 7,
+      "paused": true,
+      "pausedReason": "Waiting for the courtesy note to the Site Guide's webmaster to be sent (docs/10 C9)"
+    }
   },
   {
     "id": "pge",
@@ -136,6 +141,22 @@
     "schedule": "Not applicable",
     "countries": [
       "NZ"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "naturalearth",
+    "name": "Natural Earth",
+    "homepage": "https://www.naturalearthdata.com",
+    "tier": "green",
+    "licence": "facts",
+    "attribution": "Region boundaries: Natural Earth",
+    "uses": "State and region boundaries, used offline to work out which state or region each launch is in",
+    "method": "One-off download (public domain), stored in the project",
+    "schedule": "Not applicable",
+    "countries": [
+      "*"
     ],
     "permissionStatus": "not_requested",
     "enabled": true

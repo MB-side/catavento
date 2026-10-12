@@ -7,4 +7,15 @@ AU:
   "Stanwell Park Hang Gliding & Paragliding Club (FlyStanwell)": CLB-021
   "Stanwell Park Hang Gliding & Paragliding Club": CLB-021
   "FlyStanwell": CLB-021
+  # Site Guide contacts (siteguide.org.au, checked 2026-10-12). Keys may be a spelling or a web
+  # address (without "https://www."). Each web address below spells out the club's own name.
+  "BMHGC": CLB-002 # Blue Mountains Hang Gliding Club
+  "cairnshangglidingclub.org": CLB-003
+  "flycanungra.com.au": CLB-004 # Canungra Hang Gliding Club
+  "dynasoarers.vhpa.org.au": CLB-007
+  "newcastleparaglidingclub.org.au": CLB-012
+  "nevhgc.net": CLB-013 # North East Victoria Hang Gliding Club's email domain
+  "skyhighparagliding.org.au": CLB-018
+  "freeflyers.com.au/contact": CLB-022 # Sunshine Coast Free Flyers Association
+  "wvhgc.tidyhq.com": CLB-027 # Western Victorian Hang Gliding Club
 NZ: {}

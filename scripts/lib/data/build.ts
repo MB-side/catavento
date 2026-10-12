@@ -14,6 +14,7 @@ import type {
   Site,
   Station,
   Brand,
+  ProviderRun,
   StewardRole,
 } from "@/lib/types";
 import {
@@ -31,12 +32,15 @@ import {
   type SampleSiteInput,
 } from "./merge";
 import { assignOrgIds, mapDirectory, mapStations, type CsvRow } from "./seed";
+import { dedupeSites, matchListedContacts } from "./sites";
 
 export interface CountryInput extends Omit<Country, "nationalBody"> {
   nationalBody: Omit<Country["nationalBody"], "orgId"> & { orgLegacyId: string };
 }
 
 export interface BuildInputs {
+  ingestedSites: Site[];
+  runs: Record<string, ProviderRun>;
   directoryRows: CsvRow[];
   stationRows: CsvRow[];
   countries: CountryInput[];
@@ -99,11 +103,17 @@ export function buildData(input: BuildInputs): BuildOutputs {
     return { ...c, nationalBody: { ...body, orgId: orgId ?? orgLegacyId } };
   });
 
-  // Sites: the NZ sample now; the Site Guide and ParaglidingEarth join in M2.
-  const sites = mapSampleSites(input.sampleSites, organisations, input.sampleSitesChecked, warnings);
+  // Sites: collected (Site Guide, later ParaglidingEarth) plus the hand-compiled NZ sample.
+  const sampleSites = mapSampleSites(input.sampleSites, organisations, input.sampleSitesChecked, warnings);
+  const collected = input.ingestedSites.map((s) => structuredClone(s));
+  const sites = dedupeSites([...collected, ...sampleSites], warnings);
+  matchListedContacts(sites, organisations, input.clubAliases, warnings);
   for (const [siteKey, steward] of Object.entries(input.siteStewards)) {
     const site = sites.find((s) => s.id === siteKey);
-    if (!site) continue; // Australian sites arrive in M2
+    if (!site) {
+      warnings.push({ code: "steward-site-missing", message: `site-stewards.yaml: no site "${siteKey}"` });
+      continue;
+    }
     site.stewardRole = steward.role;
     site.stewardOrgId = steward.org ? resolveOrgRef(steward.org, organisations) : undefined;
   }
@@ -163,6 +173,6 @@ export function buildData(input: BuildInputs): BuildOutputs {
     brands: [],
     offerings,
     resources: seed.resources.sort(byId),
-    report: { build: { counts, warnings }, providers: {} },
+    report: { build: { counts, warnings }, providers: input.runs },
   };
 }
