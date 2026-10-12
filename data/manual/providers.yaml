@@ -47,8 +47,6 @@
   enabled: true
   collect:
     everyDays: 7
-    paused: true
-    pausedReason: Waiting for the courtesy note to the Site Guide's webmaster to be sent (docs/10 C9)
 
 - id: pge
   name: ParaglidingEarth

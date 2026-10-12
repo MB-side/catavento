@@ -252,13 +252,13 @@ test("Windy's map loads only after a tap, with its credit", async ({ page }) => 
   await expect(page.getByTestId("stations-placeholder")).toBeVisible();
 });
 
-test("Status shows the Site Guide's latest run and that it is paused", async ({ page }) => {
+test("Status shows the Site Guide's latest run and next check", async ({ page }) => {
   await page.goto("status/");
   const card = page.locator("#status-ansg");
   await expect(card.getByRole("heading", { name: "Australian National Site Guide" })).toBeVisible();
-  await expect(card).toContainText("Paused");
+  await expect(card).toContainText("Every 7 days");
   await expect(card).toContainText(/\d+ found, \d+ changed/);
-  await expect(card).toContainText("Why it's paused");
+  await expect(card).toContainText("Next check");
 });
 
 test("the bot page shows the user agent and how to opt out", async ({ page }) => {
