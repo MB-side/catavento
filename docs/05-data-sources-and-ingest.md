@@ -71,7 +71,18 @@ Every provider entry includes `countries: [..]` (e.g. `[AU]`, `[NZ]`, or `["*"]`
 | `freeflightwx` | Live wind: FreeFlightWx |
 | `holfuy` | Live wind: Holfuy, station {station name} (link to the station page) |
 | `club-stations` | Live wind: {club name} station |
+| `assoc` | Source: {association name} |
+| `club-websites` | Source: {club name} website |
+| `org-websites` | Source: {organisation name} website |
+| `nz-club-guides` | Site guide: {club name} |
+| `highside` | HighSide flight park |
+| `manual` | Compiled by Catavento from {source} |
+| `weatherlink` | Live wind: WeatherLink, station {station name} |
+| `xcontest`, `skysight`, `paraglidingmap` | The provider's name (links only) |
+| `retail` | Source: {business name} website |
 | Map tiles | As the chosen tile provider requires, including © OpenStreetMap contributors |
+
+Rows from `assoc` onwards were added on 2026-10-12 (D39).
 
 Each attribution links to the provider's page for that record.
 

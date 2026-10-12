@@ -37,8 +37,9 @@ interface SourceRef {
 }
 
 interface Provider {
-  id: string; name: string; homepage: string; termsUrl?: string;
+  id: string; name: string; homepage?: string; termsUrl?: string;   // homepage absent for grouped providers
   tier: Tier; licence: Licence; attribution: string;    // exact display text, docs/05 §4
+  uses: string; method: string; schedule: string; countries: string[];   // shown on /sources (D41)
   permissionStatus: "not_requested" | "requested" | "granted_link" | "granted_embed" | "granted_feed" | "refused" | "withdrawn";
   enabled: boolean; contact?: string; notes?: string;
 }
@@ -54,13 +55,15 @@ interface Organisation {
   disciplines: Discipline[];
   country: CountryCode; regionCode?: RegionCode; locality?: string; postcode?: string;
   location?: { lat: number; lon: number };     // geocoded or published; omit if unknown
-  website?: string; emailPublic?: string; phonePublic?: string;   // only as published by the org or SAFA
-  safaListed?: boolean;                        // appears in SAFA's school directory
+  website?: string; emailPublic?: string; phonePublic?: string;   // only as published by the org or its national body
+  nationalBodyListed?: boolean;                // appears in the national body's school directory (D40)
+  additionalKinds?: OrgKind[];                 // e.g. a school that also runs a shop (D40)
+  relatedOrgIds?: string[];                    // same business, separate record (e.g. two bases) (D40)
   summary?: string;                            // our own short words
   brands?: string[];                           // for retailers/importers
   sources: SourceRef[];
   lastVerified: string;                        // ISO date
-  verificationStatus: "verified_public_source" | "listed_by_safa" | "needs_verification" | "owner_confirmed";
+  verificationStatus: "verified_public_source" | "listed_by_national_body" | "needs_verification" | "owner_confirmed";
   hidden?: boolean;
 }
 
@@ -91,7 +94,7 @@ interface Site {
   stationIds: string[];                        // curated (data/manual/site-stations.yaml) plus nearest matches
   wtfSlug?: string;                            // Where To Fly slug if known
   disciplines: Discipline[];                   // derived from ratingText where determinable
-  layer: "ansg" | "pge";                       // licence layer
+  layer: "ansg" | "pge" | "manual";            // licence layer; "manual" = compiled by hand from a cited source
   sources: SourceRef[];
   hidden?: boolean;
 }
@@ -104,8 +107,8 @@ interface Launch {
 }
 
 interface Station {
-  id: string; providerId: string; providerRef: string; name: string;
-  url: string;                                 // public live page
+  id: string; legacyId?: string; providerId: string; providerRef: string; name: string; country: CountryCode;
+  url?: string;                                // public live page; required unless hidden (D41)
   lat?: number; lon?: number;
   ownerOrgId?: string; ownerLabel?: string;    // e.g. "club station"
   embedAllowed: boolean; feedAllowed: boolean; // both false in Iteration 1 unless permission recorded
@@ -123,7 +126,7 @@ interface EventItem {
 
 interface Notice {
   id: string; title: string; date: string; url: string;
-  scope: "national" | "club" | "site"; orgId?: string; siteIds?: string[];
+  country: CountryCode; scope: "national" | "club" | "site"; orgId?: string; siteIds?: string[];   // country: D41
   sources: SourceRef[];
 }
 
@@ -133,12 +136,13 @@ interface Brand { id: string; name: string; website?: string;
 interface Offering {                           // only published facts
   orgId: string; type: "tandem" | "intro_course" | "licence_course" | "endorsement" | "siv" | "xc_clinic" | "tour" | "guiding" | "service";
   discipline?: Discipline; title: string;
-  priceFromAud?: number; priceText?: string; durationText?: string; inclusions?: string[];
+  priceFrom?: number; currency?: string;       // ISO 4217 from the organisation's country (D41)
+  priceText?: string; durationText?: string; inclusions?: string[];
   url: string; source: SourceRef;
 }
 
 interface Resource {                           // tools and references shown on Sources / Visiting pilots
-  id: string; name: string; url: string; category: string; summary: string; providerId?: string; countries?: CountryCode[];
+  id: string; legacyId?: string; name: string; url: string; category: string; summary?: string; providerId?: string; countries?: CountryCode[];
 }
 
 interface Country {                            // loaded from data/manual/countries.yaml
@@ -181,7 +185,8 @@ All optional; create them as needed. Each entry may carry a `note` and `source` 
 | `site-stewards.yaml` | Force a site's steward and role where parsing can't | `site:au:nsw:manilla-mt-borah: { org: org:au:manilla-sky-sailors, role: club }` |
 | `site-stations.yaml` | Curated stations per site (order = display order) | `site:au:nsw:long-reef-ne: [station:club:long-reef]` |
 | `wtf-slugs.yaml` | Where To Fly slug per site | `site:au:act:spring-hill: spring_hill` |
-| `brands.yaml` | Brands and their Australian distributors | |
+| `org-merges.yaml` | Seed rows that are one business: merge a shop into its school, or cross-link separate records (D40) | `merge: [{ from: RTL-004, into: [SCH-021] }]` |
+| `brands.yaml` | Brands and their distributors in each country | |
 | `offerings.yaml` | Published prices and courses, each with source URL | |
 | `events.yaml` | Events not available from a source | |
 
@@ -203,7 +208,7 @@ Precedence: **manual > ingest > seed** (`docs/03` §6).
 | `info_tool`, `weather_tool`, `competition_platform`, `community_media`, `booking_marketplace`, `tourism_listing` | Import as `Resource` (and use to seed `providers.yaml` where relevant) |
 | `overseas_benchmark`, `domestic_benchmark` | **Do not import** (research only) |
 
-Field mapping: `id → legacyId`, `name`, `disciplines` (semicolon list), `country`, `state` → `regionCode` (`AU-` + state; NZ rows have none until geocoded), `locality`, `postcode`, `website`, `email → emailPublic`, `phone → phonePublic`, `offerings_summary → summary` (rewrite briefly if needed), `brands_or_notes` → `brands` for retailers/importers (parse by hand into `brands.yaml`), `source_url → sources[0]`, `in_safa_school_directory → safaListed`, `last_checked → lastVerified`, `verification_status` → mapped enum. Rows with notes saying "verify" import with `verificationStatus: needs_verification` and are shown with a "Not yet verified" label. Rows with `subcategory = flight_park` import as kind `flight_park`. Multiple rows for one business (e.g. a school and its shop) become **one** organisation with combined kinds noted in `summary`; keep the school `kind`.
+Field mapping: `id → legacyId`, `name`, `disciplines` (semicolon list), `country`, `state` → `regionCode` (`AU-` + state; NZ rows have none until geocoded), `locality`, `postcode`, `website`, `email → emailPublic`, `phone → phonePublic`, `offerings_summary → summary` (rewrite briefly if needed), `brands_or_notes` → `brands` for retailers/importers (parse by hand into `brands.yaml`), `source_url → sources[0]`, `in_safa_school_directory → nationalBodyListed`, `last_checked → lastVerified`, `verification_status` → mapped enum. Rows with notes saying "verify" import with `verificationStatus: needs_verification` and are shown with a "Not yet verified" label. Rows with `subcategory = flight_park` import as kind `flight_park`. Multiple rows for one business (e.g. a school and its shop) become **one** organisation that keeps the school `kind` and lists the others in `additionalKinds`; separate SAFA-listed bases stay separate records linked by `relatedOrgIds` (`data/manual/org-merges.yaml`, D40).
 
 ### `data/seed/weather-stations.csv` → `Station`
 
