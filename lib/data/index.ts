@@ -7,6 +7,7 @@ import path from "node:path";
 import { z } from "zod";
 import {
   anyOrganisationSchema,
+  brandSchema,
   buildReportSchema,
   countrySchema,
   eventSchema,
@@ -18,6 +19,7 @@ import {
   stationSchema,
 } from "@/lib/schemas";
 import type {
+  Brand,
   BuildReport,
   Club,
   Country,
@@ -131,6 +133,10 @@ export function getNotices(filter: { country?: CountryCode; orgId?: string } = {
 
 export function getOfferings(orgId?: string): Offering[] {
   return load("offerings.json", z.array(offeringSchema)).filter((o) => !orgId || o.orgId === orgId);
+}
+
+export function getBrands(): Brand[] {
+  return load("brands.json", z.array(brandSchema));
 }
 
 export function getResources(): Resource[] {
