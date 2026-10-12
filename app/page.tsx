@@ -4,7 +4,9 @@ import { ArrowRight, CalendarDays, Compass, Map as MapIcon, Search, Wrench } fro
 import { LogoMark } from "@/components/brand/Logo";
 import { YourSitesStrip } from "@/components/domain/YourSitesStrip";
 import { defaultCountrySegment } from "@/lib/country-codes";
-import { getEnabledCountries } from "@/lib/country";
+import { getCountry, getEnabledCountries } from "@/lib/country";
+import { eventSummary, nationalNotices, upcomingEvents } from "@/lib/events-view";
+import { formatDate } from "@/lib/format";
 import { getCounts, type CountryCounts } from "@/lib/data";
 import { t, tCount, type MessageKey } from "@/lib/messages";
 import { absoluteUrl, withBasePath } from "@/lib/paths";
@@ -142,6 +144,8 @@ export default function HomePage() {
         </ul>
       </section>
 
+      <ComingUp />
+
       <section aria-labelledby="countries">
         <h2 id="countries" className="font-condensed text-[1.375rem] font-bold">
           {t("home.countriesHeading")}
@@ -187,5 +191,56 @@ export default function HomePage() {
         <p className="mt-1 text-muted-strong">{siteConfig.whyTheName}</p>
       </section>
     </div>
+  );
+}
+
+/** Coming up (D37): the next events and latest notices in the default country, when there are any. */
+function ComingUp() {
+  const country = getCountry(defaultCountrySegment);
+  if (!country) return null;
+  const zone = country.timezones[0] ?? "UTC";
+  const events = upcomingEvents(country, new Date().toISOString().slice(0, 10))
+    .slice(0, 3)
+    .map((e) => eventSummary(e, country));
+  const notices = nationalNotices(country).slice(0, 3);
+  if (events.length === 0 && notices.length === 0) return null;
+  return (
+    <section aria-labelledby="coming-up" className="grid gap-4 md:grid-cols-2">
+      <h2 id="coming-up" className="sr-only">
+        {t("home.comingUp")}
+      </h2>
+      {events.length > 0 && (
+        <div className="rounded-[14px] border border-border bg-surface p-4 lg:p-5">
+          <h3 className="font-condensed text-[1.375rem] font-bold">{t("home.comingUp")}</h3>
+          <ul className="mt-2 flex flex-col gap-1">
+            {events.map((e) => (
+              <li key={e.id}>
+                <a href={e.url}>{e.title}</a>{" "}
+                <span className="text-[0.875rem] text-muted">· {e.when}</span>
+              </li>
+            ))}
+          </ul>
+          <Link
+            href={`/${defaultCountrySegment}/whats-on`}
+            className="mt-2 inline-flex min-h-11 items-center font-semibold"
+          >
+            {t("pages.whatsOn.title")}
+          </Link>
+        </div>
+      )}
+      {notices.length > 0 && (
+        <div className="rounded-[14px] border border-border bg-surface p-4 lg:p-5">
+          <h3 className="font-condensed text-[1.375rem] font-bold">{t("home.latestNotices")}</h3>
+          <ul className="mt-2 flex flex-col gap-1">
+            {notices.map((n) => (
+              <li key={n.id}>
+                <a href={n.url}>{n.title}</a>{" "}
+                <span className="text-[0.875rem] text-muted">· {formatDate(n.date, zone)}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </section>
   );
 }

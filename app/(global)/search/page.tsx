@@ -1,4 +1,5 @@
-import { ComingSoon } from "@/components/layout/ComingSoon";
+import { SearchPanel } from "@/components/domain/SearchPanel";
+import { PageHeader } from "@/components/layout/PageHeader";
 import { t } from "@/lib/messages";
 import { pageMetadata } from "@/lib/seo";
 
@@ -9,5 +10,10 @@ export const metadata = pageMetadata({
 });
 
 export default function SearchPage() {
-  return <ComingSoon title={t("pages.search.title")} summary={t("pages.search.summary")} />;
+  return (
+    <div className="flex flex-col gap-6">
+      <PageHeader title={t("pages.search.title")} intro={t("search.intro")} />
+      <SearchPanel />
+    </div>
+  );
 }
