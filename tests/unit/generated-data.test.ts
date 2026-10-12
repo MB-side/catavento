@@ -103,7 +103,7 @@ describe("generated data", () => {
       const steward = organisations.find((o) => o.id === s.stewardOrgId);
       expect(steward, s.id).toBeDefined();
       // Regional associations (e.g. ACTHPA) can manage sites too; only clubs carry siteIds so far.
-      if (steward?.kind === "club") expect(steward.siteIds, s.id).toContain(s.id);
+      if (steward && "siteIds" in steward) expect(steward.siteIds, s.id).toContain(s.id);
     }
   });
 });
