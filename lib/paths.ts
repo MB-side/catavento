@@ -11,13 +11,13 @@ function normalise(pathname: string): string {
   return last.includes(".") || withLeading.endsWith("/") ? withLeading : `${withLeading}/`;
 }
 
-/** "/clubs" → "/housethermal/clubs/" (or "/clubs/" when basePath is empty). */
+/** "/clubs" → "/catavento/clubs/" (or "/clubs/" when basePath is empty). */
 export function withBasePath(pathname: string, basePath: string = siteConfig.basePath): string {
   const path = normalise(pathname);
   return path === "/" ? `${basePath}/` : `${basePath}${path}`;
 }
 
-/** "/clubs" → "https://mb-side.github.io/housethermal/clubs/" */
+/** "/clubs" → "https://mb-side.github.io/catavento/clubs/" */
 export function absoluteUrl(pathname: string, siteUrl: string = siteConfig.siteUrl): string {
   const path = normalise(pathname);
   return `${siteUrl.replace(/\/$/, "")}${path}`;

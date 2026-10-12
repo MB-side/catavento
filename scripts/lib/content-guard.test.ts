@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { checkHtml, visibleText } from "./content-guard";
 
 const page = (body: string) =>
-  `<html><head><title>Clubs | HouseThermal</title></head><body>${body}</body></html>`;
+  `<html><head><title>Clubs | Catavento</title></head><body>${body}</body></html>`;
 
 describe("content guard", () => {
   it("passes clean pages", () => {
@@ -16,8 +16,9 @@ describe("content guard", () => {
     ["Is it safe to launch?", "safe"],
     ["Looks good to go", "good-to-go"],
     ["Courses from [price]", "placeholder"],
-    ["Welcome to House Thermal", "name-two-words"],
-    ["Welcome to Housethermal", "name-lowercase-t"],
+    ["Welcome to Cata-vento", "name-spelling"],
+    ["Welcome to CataVento", "name-spelling"],
+    ["Welcome to HouseThermal", "old-name"],
   ])("flags %j", (text, rule) => {
     expect(checkHtml(page(`<p>${text}</p>`)).map((h) => h.rule)).toContain(rule);
   });
@@ -28,9 +29,9 @@ describe("content guard", () => {
     ).toEqual([]);
   });
 
-  it("ignores scripts, so JSON-LD alternateName and framework data don't trip it", () => {
+  it("ignores scripts, so JSON-LD and framework data don't trip it", () => {
     const html = page(
-      '<script type="application/ld+json">{"alternateName":"House Thermal","x":["a"]}</script><p>Hi</p>',
+      '<script type="application/ld+json">{"description":"[not visible]","x":["a"]}</script><p>Hi</p>',
     );
     expect(checkHtml(html)).toEqual([]);
   });

@@ -3,18 +3,18 @@
 export type SpeedUnit = "kmh" | "kt";
 
 export const siteConfig = {
-  name: "HouseThermal",
-  alternateName: "House Thermal", // structured data only, never displayed
+  name: "Catavento",
   descriptor: "Paragliding and hang gliding, all in one place",
   titleDescriptor: "Paragliding and hang gliding in Australia, all in one place",
+  // Draft copy for founder review (docs/07 §9).
   whyTheName:
-    "Every flying site has a house thermal: the reliable climb the locals head for first. We want to be that for everything about flying.",
-  // GitHub Pages project URL until housethermal.fly is set up; then basePath becomes "".
-  basePath: "/housethermal",
-  siteUrl: "https://mb-side.github.io/housethermal", // full public URL including basePath, no trailing slash
-  repoUrl: "https://github.com/MB-side/housethermal",
+    "Catavento is Portuguese for pinwheel: it means \u201ccatch the wind\u201d. Like a pinwheel, everything here turns around one centre: the sites, clubs, schools and pilots of free flight.",
+  // GitHub Pages project URL until catavento.fly is set up; then basePath becomes "".
+  basePath: "/catavento",
+  siteUrl: "https://mb-side.github.io/catavento", // full public URL including basePath, no trailing slash
+  repoUrl: "https://github.com/MB-side/catavento",
   feedbackFormUrl: "", // external form; empty shows the email fallback on /feedback
-  contactEmail: "housethermal.app@gmail.com", // takedown, bot policy and feedback fallback
+  contactEmail: "housethermal.app@gmail.com", // takedown, bot policy and feedback fallback; replace with a Catavento address when one exists
   analytics: { enabled: false, provider: "" },
   showPartnerPreviews: false, // docs/02 §5.13
   allowIndexing: false, // search engines kept out until consultation launch (M7)

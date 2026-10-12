@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import en from "@/messages/en.json";
+import { guardRules } from "@/scripts/lib/content-guard";
 import { format, lookup, t, tOr } from "./messages";
 
 function leaves(node: unknown, prefix = ""): [string, string][] {
@@ -27,10 +28,9 @@ describe("messages", () => {
     );
   });
 
-  it("writes the name as HouseThermal and never uses unsafe wording", () => {
+  it("passes every content-guard rule (name spelling, unsafe wording, placeholders)", () => {
     for (const [key, text] of leaves(en)) {
-      expect(text, key).not.toMatch(/House Thermal|Housethermal/);
-      expect(text, key).not.toMatch(/\bflyable\b|\bsafe\b/i);
+      for (const rule of guardRules) expect(text, `${key}: ${rule.why}`).not.toMatch(rule.pattern);
     }
   });
 

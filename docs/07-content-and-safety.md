@@ -73,7 +73,7 @@ Explain in plain words that buyers should check the wing's certification and wei
 
 | Page | Contents |
 |---|---|
-| About | What HouseThermal is, why the name (§9), independence, prototype status, who runs it, how to give feedback |
+| About | What Catavento is, why the name (§9), independence, prototype status, who runs it, how to give feedback |
 | Sources and attribution | Provider table from `providers.json`, tiers explained, how to request changes |
 | Status | Rendered `_report.json` |
 | Bot policy (`/bot`) | User agent, rate limits, robots.txt respect, what we collect, contact, how to opt out |
@@ -86,14 +86,16 @@ These pages are drafts for the founder to review; they are not legal advice.
 
 ## 9. Name usage
 
-- Always **HouseThermal** (one word). The first mention on a page may be followed by the descriptor.
+- Always **Catavento** (one word, capital C only). The first mention on a page may be followed by the descriptor.
 - **Descriptor:** "Paragliding and hang gliding, all in one place". Page titles use the Australian version: "Paragliding and hang gliding in Australia, all in one place".
 - **Why the name** (home page footer-strip and About page, exactly):
 
-> Every flying site has a house thermal: the reliable climb the locals head for first. We want to be that for everything about flying.
+> Catavento is Portuguese for pinwheel: it means “catch the wind”. Like a pinwheel, everything here turns around one centre: the sites, clubs, schools and pilots of free flight.
 
-- **New to flying pages** may add a one-line gloss the first time the name appears: "(A house thermal is the dependable climb locals use at a flying site.)"
-- **Bot and email identity:** HouseThermalBot; emails signed "HouseThermal".
+(Draft for founder review, 2026-10-12.)
+
+- **New to flying pages** may add a one-line gloss the first time the name appears: "(Catavento means pinwheel: it catches the wind.)"
+- **Bot and email identity:** CataventoBot; emails signed "Catavento".
 
 ## 10. Coverage notice (sample countries)
 

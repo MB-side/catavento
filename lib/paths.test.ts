@@ -3,17 +3,17 @@ import { absoluteUrl, withBasePath } from "./paths";
 
 describe("withBasePath", () => {
   it("prefixes the base path and adds the trailing slash", () => {
-    expect(withBasePath("/au/clubs", "/housethermal")).toBe("/housethermal/au/clubs/");
-    expect(withBasePath("au/clubs/", "/housethermal")).toBe("/housethermal/au/clubs/");
+    expect(withBasePath("/au/clubs", "/catavento")).toBe("/catavento/au/clubs/");
+    expect(withBasePath("au/clubs/", "/catavento")).toBe("/catavento/au/clubs/");
   });
 
   it("maps the home page to the base path root", () => {
-    expect(withBasePath("/", "/housethermal")).toBe("/housethermal/");
-    expect(withBasePath("", "/housethermal")).toBe("/housethermal/");
+    expect(withBasePath("/", "/catavento")).toBe("/catavento/");
+    expect(withBasePath("", "/catavento")).toBe("/catavento/");
   });
 
   it("leaves file paths without a trailing slash", () => {
-    expect(withBasePath("/data/sites.json", "/housethermal")).toBe("/housethermal/data/sites.json");
+    expect(withBasePath("/data/sites.json", "/catavento")).toBe("/catavento/data/sites.json");
   });
 
   it("works with an empty base path (custom domain)", () => {
@@ -24,9 +24,9 @@ describe("withBasePath", () => {
 
 describe("absoluteUrl", () => {
   it("joins the site URL and path", () => {
-    expect(absoluteUrl("/au/clubs", "https://mb-side.github.io/housethermal")).toBe(
-      "https://mb-side.github.io/housethermal/au/clubs/",
+    expect(absoluteUrl("/au/clubs", "https://mb-side.github.io/catavento")).toBe(
+      "https://mb-side.github.io/catavento/au/clubs/",
     );
-    expect(absoluteUrl("/", "https://housethermal.fly/")).toBe("https://housethermal.fly/");
+    expect(absoluteUrl("/", "https://catavento.fly/")).toBe("https://catavento.fly/");
   });
 });

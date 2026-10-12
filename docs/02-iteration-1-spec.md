@@ -160,7 +160,7 @@ Client-side index built at build time (e.g. MiniSearch) over sites, clubs, direc
 
 ### 5.11 Share images
 
-Build-time PNG per site and club (1200×630) using the layout in `SharePreview.dc.html` **without live or forecast data**: site or club name, region, club, wind-range rose, and the HouseThermal logo lockup with descriptor. Set Open Graph and Twitter meta tags.
+Build-time PNG per site and club (1200×630) using the layout in `SharePreview.dc.html` **without live or forecast data**: site or club name, region, club, wind-range rose, and the Catavento logo lockup with descriptor. Set Open Graph and Twitter meta tags.
 
 ### 5.12 Status page
 
@@ -202,7 +202,7 @@ Purpose: prove that a second country works through configuration and data alone.
 
 - **Performance:** Lighthouse mobile ≥ 90 for Performance, Accessibility, Best Practices and SEO on `/`, a site page and a club page. JS for the map loads only on map views.
 - **Accessibility:** WCAG 2.2 AA. Real buttons and links, labels on inputs, visible focus, 44 px touch targets, colour never the only signal (outlook cells carry text).
-- **SEO:** static HTML for every page, sitemap, canonical URLs, page titles in the form `{Page title} | HouseThermal` (home: `HouseThermal · Paragliding and hang gliding in Australia, all in one place`), `Organization` JSON-LD on every page (`name: HouseThermal`, `alternateName: House Thermal`), and JSON-LD (`SportsActivityLocation` for sites, `SportsOrganization` for clubs, `LocalBusiness` for directory entries, `Event` for events).
+- **SEO:** static HTML for every page, sitemap, canonical URLs, page titles in the form `{Page title} | Catavento` (home: `Catavento · Paragliding and hang gliding in Australia, all in one place`), `Organization` JSON-LD on every page (`name: Catavento`), and JSON-LD (`SportsActivityLocation` for sites, `SportsOrganization` for clubs, `LocalBusiness` for directory entries, `Event` for events).
 - **Privacy:** no cookies; localStorage only for My Sites and settings; optional cookie-less analytics off by default.
 - **Resilience:** pages render fully without JavaScript except My Sites, outlook, map and search.
 - **Build:** full build plus deploy under 10 minutes.
@@ -228,8 +228,8 @@ All milestones signed off; nightly ingest has run successfully for 7 consecutive
 
 | Decision | Default |
 |---|---|
-| Name | **HouseThermal** (decided; `docs/01` §8) |
-| Domain | GitHub Pages project URL (set `basePath` accordingly) until the founder confirms housethermal.com or housethermal.fly |
+| Name | **Catavento** (decided; `docs/01` §8) |
+| Domain | GitHub Pages project URL (set `basePath` accordingly) until catavento.fly is registered and set up |
 | Feedback form URL | Placeholder in config; `/feedback` page explains how to send feedback by email until set |
 | Analytics | Off |
 | Partner previews | Off |

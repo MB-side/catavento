@@ -73,7 +73,7 @@ jobs:
 
           code=$(fetch "$base/" home.html)
           [ "$code" = 200 ] || { echo "Home page returned $code"; exit 1; }
-          grep -q '<title>HouseThermal' home.html || { echo "Home page title missing"; exit 1; }
+          grep -q '<title>Catavento' home.html || { echo "Home page title missing"; exit 1; }
 
           css=$(grep -o 'href="[^"]*\.css"' home.html | head -1 | sed 's/^href="//; s/"$//')
           [ -n "$css" ] || { echo "No stylesheet linked from the home page"; exit 1; }

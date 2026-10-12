@@ -26,11 +26,15 @@ export const guardRules: GuardRule[] = [
     pattern: /\[[^\][\n]{1,80}\]/,
     why: "Square-bracket placeholders must never be deployed (docs/07 §1)",
   },
-  { id: "name-two-words", pattern: /\bHouse Thermal\b/, why: "The name is one word: HouseThermal" },
   {
-    id: "name-lowercase-t",
-    pattern: /\bHousethermal\b/,
-    why: "The name is HouseThermal (capital T)",
+    id: "name-spelling",
+    pattern: /\bCata(?:[ -][Vv]|V)ento\b/,
+    why: "The name is one word with a capital C only: Catavento",
+  },
+  {
+    id: "old-name",
+    pattern: /\bHouse ?[Tt]hermal(?:Bot)?\b/,
+    why: "Old name: the site is now Catavento (D33)",
   },
 ];
 
@@ -42,8 +46,8 @@ export interface GuardHit {
 
 /**
  * Visible text of an HTML document: drops <script>, <style>, <template> and comments, removes
- * tags, decodes common entities. JSON-LD (which legitimately holds "House Thermal" as
- * alternateName) lives in <script> and is therefore excluded.
+ * tags, decodes common entities. Scripts (JSON-LD, framework data) are not visible text and
+ * are therefore excluded.
  */
 export function visibleText(html: string): string {
   return html

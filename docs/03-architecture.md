@@ -125,11 +125,10 @@ Details: `docs/04`.
 
 ```ts
 export const siteConfig = {
-  name: "HouseThermal",
-  alternateName: "House Thermal",          // structured data only, never displayed
+  name: "Catavento",
   descriptor: "Paragliding and hang gliding, all in one place",
   titleDescriptor: "Paragliding and hang gliding in Australia, all in one place",
-  whyTheName: "Every flying site has a house thermal: the reliable climb the locals head for first. We want to be that for everything about flying.",
+  whyTheName: "Catavento is Portuguese for pinwheel: it means “catch the wind”. Like a pinwheel, everything here turns around one centre: the sites, clubs, schools and pilots of free flight.",
   basePath: "",                    // "/<repo>" for a GitHub project page
   siteUrl: "",                     // full public URL, used for canonical and share images
   feedbackFormUrl: "",             // external form; empty shows the email fallback on /feedback

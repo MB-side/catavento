@@ -1,7 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-2 -2 32 32" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-2 -2 32 32" fill="none">
   <rect x="-2" y="-2" width="32" height="32" rx="6" fill="#FFFFFF"/>
-  <path d="M4 23 L14 15 L24 23" stroke="#0F1B26" stroke-width="2.4"/>
-  <path d="M8.5 12 C 8.5 14.4, 19.5 14.4, 19.5 12" stroke="#B8460B" stroke-width="2.2"/>
-  <path d="M10.5 7.5 C 10.5 9.3, 17.5 9.3, 17.5 7.5" stroke="#B8460B" stroke-width="2.2"/>
-  <circle cx="14" cy="3.6" r="1.7" fill="#B8460B"/>
+  <path d="M13.2 2.2 Q14.93 6.4 13.2 10.6" transform="rotate(0 14 14)" stroke="#F28C28" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M17.24 6.4 L12.9 1 Q13.5 4.02 13.9 6.4 Q13.5 8.78 12.9 11.8 Z" transform="rotate(45 14 14)" fill="#D6336C" stroke="#D6336C" stroke-width="0.6" stroke-linejoin="round"/>
+  <path d="M13.2 2.2 Q14.93 6.4 13.2 10.6" transform="rotate(90 14 14)" stroke="#D7263D" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M17.24 6.4 L12.9 1 Q13.5 4.02 13.9 6.4 Q13.5 8.78 12.9 11.8 Z" transform="rotate(135 14 14)" fill="#7B3FB5" stroke="#7B3FB5" stroke-width="0.6" stroke-linejoin="round"/>
+  <path d="M13.2 2.2 Q14.93 6.4 13.2 10.6" transform="rotate(180 14 14)" stroke="#2A4FB8" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M17.24 6.4 L12.9 1 Q13.5 4.02 13.9 6.4 Q13.5 8.78 12.9 11.8 Z" transform="rotate(225 14 14)" fill="#0F8A7E" stroke="#0F8A7E" stroke-width="0.6" stroke-linejoin="round"/>
+  <path d="M13.2 2.2 Q14.93 6.4 13.2 10.6" transform="rotate(270 14 14)" stroke="#3BA55C" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M17.24 6.4 L12.9 1 Q13.5 4.02 13.9 6.4 Q13.5 8.78 12.9 11.8 Z" transform="rotate(315 14 14)" fill="#F2C230" stroke="#F2C230" stroke-width="0.6" stroke-linejoin="round"/>
 </svg>

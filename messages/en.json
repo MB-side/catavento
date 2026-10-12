@@ -1,6 +1,6 @@
 {
   "brand": {
-    "homeLink": "HouseThermal home"
+    "homeLink": "Catavento home"
   },
   "banner": {
     "label": "Prototype notice",
@@ -37,7 +37,7 @@
     "privacy": "Privacy",
     "disclaimer": "Disclaimer",
     "feedback": "Feedback",
-    "independence": "HouseThermal is an independent prototype. Information comes from public sources and is credited on every page."
+    "independence": "Catavento is an independent prototype. Information comes from public sources and is credited on every page."
   },
   "home": {
     "title": "Find flying sites, clubs, schools and events",
@@ -65,7 +65,7 @@
     },
     "about": {
       "title": "About",
-      "summary": "What HouseThermal is, who runs it and how to give feedback."
+      "summary": "What Catavento is, who runs it and how to give feedback."
     },
     "sources": {
       "title": "Sources and attribution",
@@ -77,7 +77,7 @@
     },
     "bot": {
       "title": "Bot policy",
-      "summary": "How HouseThermalBot collects public information politely, and how to opt out."
+      "summary": "How CataventoBot collects public information politely, and how to opt out."
     },
     "takedown": {
       "title": "Takedown",

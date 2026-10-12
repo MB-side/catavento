@@ -34,7 +34,7 @@ test.describe("every page", () => {
       const response = await page.goto(path);
       expect(response?.status()).toBe(200);
       await expect(page.locator("h1")).toHaveCount(1);
-      await expect(page).toHaveTitle(/HouseThermal/);
+      await expect(page).toHaveTitle(/Catavento/);
       await expect(page.getByTestId("prototype-banner")).toBeVisible();
     });
   }
@@ -43,14 +43,13 @@ test.describe("every page", () => {
 test("home page has the brand title, descriptor and Organization JSON-LD", async ({ page }) => {
   await page.goto("");
   await expect(page).toHaveTitle(
-    "HouseThermal · Paragliding and hang gliding in Australia, all in one place",
+    "Catavento · Paragliding and hang gliding in Australia, all in one place",
   );
-  await expect(page.locator("h1")).toHaveText("HouseThermal");
+  await expect(page.locator("h1")).toHaveText("Catavento");
   const jsonLd = await page.locator('script[type="application/ld+json"]').first().textContent();
   expect(JSON.parse(jsonLd ?? "{}")).toMatchObject({
     "@type": "Organization",
-    name: "HouseThermal",
-    alternateName: "House Thermal",
+    name: "Catavento",
   });
   // Search engines are kept out until consultation launch.
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
@@ -105,17 +104,17 @@ test("navigation reaches each section in the current country", async ({ page }) 
       ["My Sites", "my-sites/"],
     ] as const) {
       await tabs.getByRole("link", { name: label, exact: true }).click();
-      await expect(page).toHaveURL(new RegExp(`/housethermal/${path}$`));
+      await expect(page).toHaveURL(new RegExp(`/catavento/${path}$`));
       await expect(tabs.getByRole("link", { name: label, exact: true })).toHaveAttribute(
         "aria-current",
         "page",
       );
     }
     await page.getByRole("link", { name: "Search" }).click();
-    await expect(page).toHaveURL(/\/housethermal\/search\/$/);
+    await expect(page).toHaveURL(/\/catavento\/search\/$/);
     await page.getByLabel("Menu").click();
     await page.getByRole("link", { name: "About" }).first().click();
-    await expect(page).toHaveURL(/\/housethermal\/about\/$/);
+    await expect(page).toHaveURL(/\/catavento\/about\/$/);
   } else {
     const nav = page.getByRole("navigation", { name: "Main" });
     for (const [label, path] of [
@@ -126,7 +125,7 @@ test("navigation reaches each section in the current country", async ({ page }) 
       ["My Sites", "my-sites/"],
     ] as const) {
       await nav.getByRole("link", { name: label }).click();
-      await expect(page).toHaveURL(new RegExp(`/housethermal/${path}$`));
+      await expect(page).toHaveURL(new RegExp(`/catavento/${path}$`));
       await expect(nav.getByRole("link", { name: label })).toHaveAttribute("aria-current", "page");
     }
   }

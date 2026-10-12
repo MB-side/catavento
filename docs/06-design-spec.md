@@ -51,11 +51,11 @@ Lucide icons (stroke 2, rounded joins) or equivalent inline stroke SVG. No emoji
 
 ## 5. Navigation
 
-- **Desktop top bar:** wordmark, then My Sites · Sites & map · Clubs · What's on · Gear · New to flying, then search and (later) Sign in. Active item uses `action` text on `action-tint`.
-- **Phone tab bar (bottom):** My Sites · Map · Clubs · What's on · Gear, icons above labels, active item in `action`.
-- **Phone top bar:** wordmark, a visible **"New to flying"** pill button, and a menu button (Country, About, Sources, Status, Feedback, Settings).
+- **Desktop top bar:** wordmark, then My Sites · Sites & map · What's on · Gear · New to flying, then search and (later) Sign in. Active item uses `action` text on `action-tint`.
+- **Phone tab bar (bottom):** My Sites · Sites · What's on · Gear · New to flying, icons above labels, active item in `action` (D32).
+- **Phone top bar:** wordmark, a search button, and a menu button (Country, About, Sources, Status, Feedback, Settings).
 - **Country switcher:** a compact button showing the current country ("Australia") at the right of the desktop top bar; in the phone menu. Sample countries are labelled "(sample)".
-- **Wordmark:** the HouseThermal logo lockup (§9) at the left of every top bar; desktop shows the descriptor beneath the name, phone shows the name only.
+- **Wordmark:** the Catavento logo lockup (§9) at the left of every top bar; desktop shows the descriptor beneath the name, phone shows the name only.
 - **Prototype banner:** full-width strip above the top bar in `prototype-tint`, one line, dismissible for the session, with a Feedback link.
 
 ## 6. Components
@@ -99,8 +99,8 @@ Real `button`, `a` and `label` elements; visible focus rings; text contrast ≥ 
 
 ## 9. Wordmark and logo
 
-- **Wordmark:** "HouseThermal" in Barlow Condensed 700, `ink` on light backgrounds, white on dark. One word, capital H and T.
-- **Mark:** a roofline chevron in `ink` (white on dark) with two stacked open arcs and a small dot above it in `action` (use `marginal` orange on dark): a glider climbing in a thermal above a house. Drawn as a 28 × 28 stroke icon; see the headers in `design/mockups/` for the reference SVG.
+- **Wordmark:** "Catavento" in Barlow Condensed 700, `ink` on light backgrounds, white on dark. One word, capital C only.
+- **Mark:** a pinwheel of eight gliders seen from above, alternating paraglider canopies (curved bars) and hang-glider deltas (nose first), circling clockwise with wingspans pointing at the centre, as if sharing a thermal. No ring and no centre dot. Colours clockwise from the top, after the founder's reference pinwheel: orange `#F28C28`, pink `#D6336C`, red `#D7263D`, purple `#7B3FB5`, blue `#2A4FB8`, teal `#0F8A7E`, green `#3BA55C`, yellow `#F2C230`. The same colours are used on light and dark backgrounds. Drawn in a 28 × 28 box; the reference implementation is `components/brand/Logo.tsx` (D34). The mockups in `design/mockups/` still show the old mark.
 - **Lockups:** mark + name (phone top bar, minimum 20 px mark); mark + name + descriptor stacked (desktop top bar, share images, About page).
 - **Favicon and app icon:** the mark alone on `surface` (light) with 2 px padding; provide 32, 180, 192 and 512 px PNGs and an SVG.
 - The mark is a concept for the prototype; a designer may refine it later without changing the name or colours.

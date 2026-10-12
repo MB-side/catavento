@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/site.config";
 import { absoluteUrl } from "./paths";
 
-/** Title for the home page: "HouseThermal · Paragliding and hang gliding in Australia, all in one place". */
+/** Title for the home page: "Catavento · Paragliding and hang gliding in Australia, all in one place". */
 export const homeTitle = `${siteConfig.name} · ${siteConfig.titleDescriptor}`;
 
 /** Robots directive for every page; indexing stays off until consultation launch. */
@@ -12,7 +12,7 @@ export const robots: Metadata["robots"] = siteConfig.allowIndexing
   : { index: false, follow: false };
 
 interface PageMetaInput {
-  /** Page title without the site name; the layout template adds " | HouseThermal". */
+  /** Page title without the site name; the layout template adds " | Catavento". */
   title: string;
   description: string;
   /** Route path without basePath, e.g. "/au/clubs". */
@@ -35,13 +35,12 @@ export function pageMetadata({ title, description, path }: PageMetaInput): Metad
   };
 }
 
-/** Organization JSON-LD for every page (name HouseThermal, alternateName House Thermal). */
+/** Organization JSON-LD for every page. */
 export function organizationJsonLd(): Record<string, unknown> {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: siteConfig.name,
-    alternateName: siteConfig.alternateName,
     description: siteConfig.descriptor,
     url: absoluteUrl("/"),
     email: siteConfig.contactEmail,
