@@ -1,0 +1,135 @@
+[
+  {
+    "id": "site:nz:auk:karioitahi-beach",
+    "slug": "karioitahi-beach",
+    "name": "Karioitahi Beach (HighSide)",
+    "country": "NZ",
+    "regionCode": "NZ-AUK",
+    "windRanges": [],
+    "windRangeLabel": "See official details",
+    "status": "unknown",
+    "stewardOrgId": "org:nz:highside-flight-park",
+    "stewardRole": "flight_park",
+    "alsoAdministeredBy": [
+      {
+        "orgId": "org:nz:auckland-club",
+        "note": "Auckland club publishes the site guide"
+      }
+    ],
+    "siteAccessNote": "Subscription pass required (day, week, month or season); funds go to developing the flight park.",
+    "officialGuideUrl": "https://www.cloudbase.org.nz/site-guide/flying-site-kariotahi",
+    "launches": [],
+    "stationIds": [
+      "station:holfuy:213"
+    ],
+    "disciplines": [],
+    "layer": "manual",
+    "sources": [
+      {
+        "providerId": "manual",
+        "url": "https://www.highside.nz",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ]
+  },
+  {
+    "id": "site:nz:bop:mount-maunganui",
+    "slug": "mount-maunganui",
+    "name": "Mount Maunganui",
+    "country": "NZ",
+    "regionCode": "NZ-BOP",
+    "windRanges": [],
+    "windRangeLabel": "See official details",
+    "status": "unknown",
+    "stewardOrgId": "org:nz:bay-of-plenty-club",
+    "stewardRole": "club",
+    "stewardNote": "Bay of Plenty club lists a Mount Maunganui site liaison.",
+    "launches": [],
+    "stationIds": [],
+    "disciplines": [],
+    "layer": "manual",
+    "sources": [
+      {
+        "providerId": "manual",
+        "url": "https://nzhgpa.org.nz/local-clubs/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ]
+  },
+  {
+    "id": "site:nz:can:port-hills",
+    "slug": "port-hills",
+    "name": "Port Hills",
+    "country": "NZ",
+    "regionCode": "NZ-CAN",
+    "windRanges": [],
+    "windRangeLabel": "See official details",
+    "status": "unknown",
+    "stewardOrgId": "org:nz:canterbury-club",
+    "stewardRole": "club",
+    "stewardNote": "Christchurch City Council licenses commercial paragliding operators on council land; the club regulates flying locally.",
+    "launches": [],
+    "stationIds": [],
+    "disciplines": [],
+    "layer": "manual",
+    "sources": [
+      {
+        "providerId": "manual",
+        "url": "https://letstalk.ccc.govt.nz/port-hills-paragliding-licences",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ]
+  },
+  {
+    "id": "site:nz:hkb:te-mata-peak",
+    "slug": "te-mata-peak",
+    "name": "Te Mata Peak",
+    "country": "NZ",
+    "regionCode": "NZ-HKB",
+    "windRanges": [],
+    "windRangeLabel": "See official details",
+    "status": "unknown",
+    "stewardOrgId": "org:nz:hawkes-bay-club",
+    "stewardRole": "club",
+    "stewardNote": "Local club safety officer cited in press coverage; confirm site management with the club.",
+    "launches": [],
+    "stationIds": [],
+    "disciplines": [],
+    "layer": "manual",
+    "sources": [
+      {
+        "providerId": "manual",
+        "url": "https://www.pressreader.com/new-zealand/hawkes-bay-today/20210923/281487869492322",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ]
+  },
+  {
+    "id": "site:nz:ota:coronet-peak",
+    "slug": "coronet-peak",
+    "name": "Coronet Peak",
+    "country": "NZ",
+    "regionCode": "NZ-OTA",
+    "windRanges": [],
+    "windRangeLabel": "See official details",
+    "status": "unknown",
+    "stewardRole": "unknown",
+    "stewardNote": "Commercial tandem flying operates here; steward not yet confirmed. Shows the 'steward not listed' state.",
+    "launches": [],
+    "stationIds": [],
+    "disciplines": [],
+    "layer": "manual",
+    "sources": [
+      {
+        "providerId": "manual",
+        "url": "https://nzpocketguide.com/5-breathtaking-places-to-try-paragliding-in-new-zealand/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ]
+  }
+]

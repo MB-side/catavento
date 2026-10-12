@@ -1,0 +1,2768 @@
+[
+  {
+    "legacyId": "REG-001",
+    "kind": "regional_association",
+    "name": "ACT Hang-gliding and Paragliding Association (ACTHPA)",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-ACT",
+    "website": "http://www.acthpa.org",
+    "summary": "Regional Development Levy projects; site development; state school/club lists",
+    "sources": [
+      {
+        "providerId": "ansg",
+        "url": "https://siteguide.org.au/About",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "verified_public_source",
+    "id": "org:au:act-hang-gliding-and-paragliding-association",
+    "slug": "act-hang-gliding-and-paragliding-association"
+  },
+  {
+    "legacyId": "SCH-001",
+    "kind": "school",
+    "name": "Active Flight Paragliding Center",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "locality": "Wandiligong",
+    "postcode": "3744",
+    "website": "https://activeflight.com.au",
+    "emailPublic": "fgungl@gmail.com",
+    "phonePublic": "0428 854 455",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:active-flight-paragliding-center",
+    "slug": "active-flight-paragliding-center"
+  },
+  {
+    "legacyId": "SCH-002",
+    "kind": "school",
+    "name": "Adventure Plus Paragliding",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "locality": "Keiraville",
+    "postcode": "2500",
+    "website": "https://www.adventureplusparagliding.com.au/",
+    "emailPublic": "fly@adventureplusparagliding.com.au",
+    "phonePublic": "0412 271 404",
+    "nationalBodyListed": true,
+    "summary": "Tandem coastal flights at Stanwell Park also sold via RedBalloon",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:adventure-plus-paragliding",
+    "slug": "adventure-plus-paragliding"
+  },
+  {
+    "legacyId": "SCH-003",
+    "kind": "school",
+    "name": "Air Sports",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "locality": "Whitebridge",
+    "postcode": "2298",
+    "website": "https://air-sports.com.au",
+    "emailPublic": "tony@air-sports.com.au",
+    "phonePublic": "0412 607 815",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:air-sports",
+    "slug": "air-sports"
+  },
+  {
+    "legacyId": "MFG-002",
+    "kind": "manufacturer",
+    "name": "Airborne Windsports",
+    "disciplines": [
+      "HG",
+      "WM"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "locality": "Redhead",
+    "website": "http://www.airborne.com.au",
+    "summary": "Trike (weight-shift microlight) and hang glider manufacturer",
+    "sources": [
+      {
+        "providerId": "org-websites",
+        "url": "http://www.airborne.com.au",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "needs_verification",
+    "id": "org:au:airborne-windsports",
+    "slug": "airborne-windsports"
+  },
+  {
+    "legacyId": "SCH-102",
+    "kind": "school",
+    "name": "Airology",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "locality": "Bright / Mt Beauty",
+    "website": "https://airology.com.au",
+    "emailPublic": "info@airology.com.au",
+    "phonePublic": "0434 364 813",
+    "summary": "Paragliding school (per VHPA)",
+    "sources": [
+      {
+        "providerId": "assoc",
+        "url": "https://www.vhpa.org.au/schools.html",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "needs_verification",
+    "id": "org:au:airology",
+    "slug": "airology"
+  },
+  {
+    "legacyId": "CLB-001",
+    "kind": "club",
+    "name": "Albany Hang Gliding Club Inc",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-WA",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:albany-hang-gliding-club",
+    "slug": "albany-hang-gliding-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "SCH-004",
+    "kind": "school",
+    "name": "Birds Eye View",
+    "disciplines": [
+      "WM"
+    ],
+    "country": "AU",
+    "regionCode": "AU-WA",
+    "locality": "Exmouth",
+    "postcode": "6707",
+    "website": "https://www.birdseyeview.net.au",
+    "emailPublic": "gav@birdseyeview.net.au",
+    "phonePublic": "0428 011 077",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:birds-eye-view",
+    "slug": "birds-eye-view"
+  },
+  {
+    "legacyId": "CLB-002",
+    "kind": "club",
+    "name": "Blue Mountains Hang Gliding Club Inc",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:blue-mountains-hang-gliding-club",
+    "slug": "blue-mountains-hang-gliding-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "SCH-005",
+    "kind": "school",
+    "name": "Bright Flight",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "locality": "Porepunkah",
+    "postcode": "3740",
+    "website": "https://www.brightflight.com.au/",
+    "emailPublic": "info@brightflight.com.au",
+    "phonePublic": "0432 673 388",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:bright-flight",
+    "slug": "bright-flight"
+  },
+  {
+    "legacyId": "CLB-003",
+    "kind": "club",
+    "name": "Cairns Hang Gliding Club Inc",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-QLD",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:cairns-hang-gliding-club",
+    "slug": "cairns-hang-gliding-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "CLB-004",
+    "kind": "club",
+    "name": "Canungra Hang Gliding Club Inc",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-QLD",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:canungra-hang-gliding-club",
+    "slug": "canungra-hang-gliding-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "SCH-006",
+    "kind": "school",
+    "name": "Cloudbase Paragliding",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "locality": "Port Macquarie",
+    "postcode": "2444",
+    "website": "http://www.cloudbaseparagliding.com.au/",
+    "emailPublic": "info@cloudbaseparagliding.com.au",
+    "phonePublic": "0407 918 099",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:cloudbase-paragliding",
+    "slug": "cloudbase-paragliding"
+  },
+  {
+    "legacyId": "CLB-005",
+    "kind": "club",
+    "name": "Cloudbase Paragliding WA",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-WA",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:cloudbase-paragliding-wa",
+    "slug": "cloudbase-paragliding-wa",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "CLB-006",
+    "kind": "club",
+    "name": "Dalby Hang Gliding Club Inc",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-QLD",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:dalby-hang-gliding-club",
+    "slug": "dalby-hang-gliding-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "SCH-007",
+    "kind": "school",
+    "name": "DTK Microlights",
+    "disciplines": [
+      "WM"
+    ],
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "locality": "Matta Drive (address as published)",
+    "postcode": "3842",
+    "website": "http://dtkmicrolights.com.au",
+    "emailPublic": "fly@dtkmicrolights.com.au",
+    "phonePublic": "+61 437 073 400",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "needs_verification",
+    "id": "org:au:dtk-microlights",
+    "slug": "dtk-microlights"
+  },
+  {
+    "legacyId": "CLB-007",
+    "kind": "club",
+    "name": "Dynasoarers Hang Gliding Club Inc",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:dynasoarers-hang-gliding-club",
+    "slug": "dynasoarers-hang-gliding-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "CLB-008",
+    "kind": "club",
+    "name": "Flatlands Towing Club",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "needs_verification",
+    "id": "org:au:flatlands-towing-club",
+    "slug": "flatlands-towing-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "RTL-002",
+    "kind": "retailer",
+    "name": "Fly2Base",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "website": "https://fly2base.com",
+    "summary": "E-commerce store; next-day delivery; certified service centre; line trim tuning",
+    "sources": [
+      {
+        "providerId": "org-websites",
+        "url": "https://fly2base.com",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "verified_public_source",
+    "id": "org:au:fly2base",
+    "slug": "fly2base"
+  },
+  {
+    "legacyId": "SCH-008",
+    "kind": "school",
+    "name": "Freedom Airsports",
+    "disciplines": [
+      "HG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "locality": "Mitcham",
+    "postcode": "3132",
+    "website": "http://freedomairsports.com.au",
+    "emailPublic": "info@freedomairsports.com.au",
+    "phonePublic": "0409 526 805",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:freedom-airsports",
+    "slug": "freedom-airsports"
+  },
+  {
+    "legacyId": "SCH-009",
+    "kind": "school",
+    "name": "Future Wings Paragliding",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "locality": "Otford",
+    "postcode": "2508",
+    "website": "https://www.futurewings.com.au",
+    "emailPublic": "paraglide@futurewings.com.au",
+    "phonePublic": "0408 864 083",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:future-wings-paragliding",
+    "slug": "future-wings-paragliding"
+  },
+  {
+    "legacyId": "REG-002",
+    "kind": "regional_association",
+    "name": "Hang Gliding & Paragliding Association of Western Australia (HGAWA)",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-WA",
+    "website": "http://flywa.com.au",
+    "summary": "Regional Development Levy projects; site development; state school/club lists",
+    "sources": [
+      {
+        "providerId": "ansg",
+        "url": "https://siteguide.org.au/About",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "verified_public_source",
+    "id": "org:au:hang-gliding-paragliding-association-of-western-australia",
+    "slug": "hang-gliding-paragliding-association-of-western-australia"
+  },
+  {
+    "legacyId": "SCH-010",
+    "kind": "school",
+    "name": "Hang Gliding WA",
+    "disciplines": [
+      "HG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-WA",
+    "locality": "Mullaloo",
+    "postcode": "6027",
+    "website": "https://hangglidingwa.com.au/",
+    "emailPublic": "david@hangglidingwa.com.au",
+    "phonePublic": "0428 439 934",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:hang-gliding-wa",
+    "slug": "hang-gliding-wa"
+  },
+  {
+    "legacyId": "TAN-001",
+    "kind": "tandem_operator",
+    "name": "HangglideOz",
+    "disciplines": [
+      "HG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "locality": "Stanwell Park / Hill 60 Wollongong",
+    "postcode": "2508",
+    "summary": "Tandem hang gliding (~30 min) and lessons; family business since 1987; listed on VisitNSW, Expedia (about A$264), Magpie",
+    "sources": [
+      {
+        "providerId": "org-websites",
+        "url": "https://www.visitnsw.com/things-to-do/tours/hangglideoz",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "needs_verification",
+    "id": "org:au:hangglideoz",
+    "slug": "hangglideoz"
+  },
+  {
+    "legacyId": "SCH-011",
+    "kind": "school",
+    "name": "High Adventure",
+    "disciplines": [
+      "PG",
+      "PPG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "locality": "Laurieton",
+    "postcode": "2443",
+    "website": "http://www.highadventure.com.au/",
+    "emailPublic": "learn@highadventure.com.au",
+    "phonePublic": "0429 844 961",
+    "nationalBodyListed": true,
+    "summary": "Courses (2-day intro, PG licence, PPG licence, conversions), gear and clothing shop, accommodation, Bali tours",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "http://www.highadventure.com.au/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "additionalKinds": [
+      "retailer"
+    ],
+    "aliases": [
+      "High Adventure (shop)"
+    ],
+    "id": "org:au:high-adventure",
+    "slug": "high-adventure"
+  },
+  {
+    "legacyId": "SCH-012",
+    "kind": "school",
+    "name": "High Adventure - Great Ocean Road",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "locality": "Jan Juc",
+    "postcode": "3228",
+    "website": "https://www.greatoceanroadparagliding.com.au/",
+    "emailPublic": "fly@greatoceanroadparagliding.com.au",
+    "phonePublic": "0490 836 441",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:high-adventure-great-ocean-road",
+    "slug": "high-adventure-great-ocean-road"
+  },
+  {
+    "legacyId": "SCH-013",
+    "kind": "school",
+    "name": "Hollywood Paragliding",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "locality": "Wilton",
+    "postcode": "2571",
+    "website": "http://www.hollywoodparagliding.com.au/",
+    "emailPublic": "hollywood@flyforfly.com",
+    "phonePublic": "0409 959 691",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:hollywood-paragliding",
+    "slug": "hollywood-paragliding"
+  },
+  {
+    "legacyId": "CLB-009",
+    "kind": "club",
+    "name": "Illawarra Gliding Club Inc",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:illawarra-gliding-club",
+    "slug": "illawarra-gliding-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "SCH-014",
+    "kind": "school",
+    "name": "Manilla Paragliding",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "locality": "Manilla",
+    "postcode": "2346",
+    "website": "https://www.flymanilla.com",
+    "emailPublic": "godfrey@flymanilla.com",
+    "phonePublic": "02 6785 6545",
+    "nationalBodyListed": true,
+    "summary": "9+ day live-in PG2 licence course A$2,890 incl. SAFA insurance component, cabin accommodation and A$400 equipment credit",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:manilla-paragliding",
+    "slug": "manilla-paragliding"
+  },
+  {
+    "legacyId": "SCH-015",
+    "kind": "school",
+    "name": "Manilla Paragliding (Cairns)",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-QLD",
+    "locality": "Port Douglas",
+    "postcode": "4877",
+    "emailPublic": "Daniel@starresorts.com.au",
+    "phonePublic": "0427 888 893",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:manilla-paragliding-cairns",
+    "slug": "manilla-paragliding-cairns"
+  },
+  {
+    "legacyId": "CLB-010",
+    "kind": "club",
+    "name": "Melbourne Hang Gliding Club Inc",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "website": "https://sites.google.com/view/melbournehangglidingclub",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:melbourne-hang-gliding-club",
+    "slug": "melbourne-hang-gliding-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "SCH-016",
+    "kind": "school",
+    "name": "Melbourne Paragliding",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "locality": "Melbourne (postcode 3793 as published)",
+    "postcode": "3793",
+    "website": "https://www.melbourneparagliding.com/",
+    "emailPublic": "info@melbourneparagliding.com",
+    "phonePublic": "0474 128 219",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:melbourne-paragliding",
+    "slug": "melbourne-paragliding"
+  },
+  {
+    "legacyId": "SCH-017",
+    "kind": "school",
+    "name": "Moyes Hang Gliding Academy",
+    "disciplines": [
+      "HG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "locality": "Kurnell",
+    "postcode": "2231",
+    "website": "https://www.moyes.com.au",
+    "emailPublic": "vicki@moyes.com.au",
+    "phonePublic": "02 9668 8686",
+    "nationalBodyListed": true,
+    "summary": "Training arm of Moyes Delta Gliders",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://www.moyes.com.au",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "additionalKinds": [
+      "manufacturer"
+    ],
+    "aliases": [
+      "Moyes Delta Gliders"
+    ],
+    "id": "org:au:moyes-hang-gliding-academy",
+    "slug": "moyes-hang-gliding-academy"
+  },
+  {
+    "legacyId": "CLB-011",
+    "kind": "club",
+    "name": "Newcastle Hang Gliding Club Inc",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "website": "http://www.nhgc.asn.au",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:newcastle-hang-gliding-club",
+    "slug": "newcastle-hang-gliding-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "CLB-012",
+    "kind": "club",
+    "name": "Newcastle Paragliding Club",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:newcastle-paragliding-club",
+    "slug": "newcastle-paragliding-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "CLB-013",
+    "kind": "club",
+    "name": "North East Victoria Hang Gliding Club Inc",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:north-east-victoria-hang-gliding-club",
+    "slug": "north-east-victoria-hang-gliding-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "CLB-014",
+    "kind": "club",
+    "name": "North Queensland Hang Gliding Association",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-QLD",
+    "website": "https://www.nthqldregionalassociation.com/",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:north-queensland-hang-gliding-association",
+    "slug": "north-queensland-hang-gliding-association",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "REG-003",
+    "kind": "regional_association",
+    "name": "North Queensland Regional Association (NQRA)",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-QLD",
+    "website": "https://www.nthqldregionalassociation.com/",
+    "summary": "Regional Development Levy projects; site development; state school/club lists",
+    "sources": [
+      {
+        "providerId": "ansg",
+        "url": "https://siteguide.org.au/About",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "verified_public_source",
+    "id": "org:au:north-queensland-regional-association",
+    "slug": "north-queensland-regional-association"
+  },
+  {
+    "legacyId": "SCH-018",
+    "kind": "school",
+    "name": "North Side Paragliding",
+    "disciplines": [
+      "PG",
+      "PPG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-QLD",
+    "locality": "Cooroibah",
+    "postcode": "4562",
+    "website": "http://www.northsideparagliding.com.au/",
+    "emailPublic": "fly@northsideparagliding.com.au",
+    "phonePublic": "0402 027 928",
+    "nationalBodyListed": true,
+    "summary": "Paragliding and paramotoring school (per QSA)",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:north-side-paragliding",
+    "slug": "north-side-paragliding"
+  },
+  {
+    "legacyId": "CLB-015",
+    "kind": "club",
+    "name": "Northern Rivers Hang Gliding and Paragliding Club Inc",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:northern-rivers-hang-gliding-and-paragliding-club",
+    "slug": "northern-rivers-hang-gliding-and-paragliding-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "REG-004",
+    "kind": "regional_association",
+    "name": "NSW Hang-gliding and Paragliding Association (NSWHPA)",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "website": "http://www.nswhpa.org",
+    "summary": "Regional Development Levy projects; site development; state school/club lists",
+    "sources": [
+      {
+        "providerId": "ansg",
+        "url": "https://siteguide.org.au/About",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "verified_public_source",
+    "id": "org:au:nsw-hang-gliding-and-paragliding-association",
+    "slug": "nsw-hang-gliding-and-paragliding-association"
+  },
+  {
+    "legacyId": "SCH-101",
+    "kind": "school",
+    "name": "Oz Paragliding & Hang Gliding",
+    "disciplines": [
+      "HG",
+      "PG",
+      "tandem"
+    ],
+    "country": "AU",
+    "regionCode": "AU-QLD",
+    "locality": "Boyland / Mt Tamborine (Oz Sky Ranch)",
+    "postcode": "4275",
+    "website": "https://ozparaglidingandhanggliding.com.au/",
+    "summary": "Learn-to-fly courses in PG and HG; tandem PG and HG; on-site student accommodation; aerotow flight park",
+    "sources": [
+      {
+        "providerId": "org-websites",
+        "url": "https://ozparaglidingandhanggliding.com.au/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "needs_verification",
+    "id": "org:au:oz-paragliding-hang-gliding",
+    "slug": "oz-paragliding-hang-gliding"
+  },
+  {
+    "legacyId": "CLB-016",
+    "kind": "club",
+    "name": "Paradise Flyers QLD",
+    "disciplines": [
+      "PPG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-QLD",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:paradise-flyers-qld",
+    "slug": "paradise-flyers-qld",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "SCH-019",
+    "kind": "school",
+    "name": "Paragliding Queensland",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-QLD",
+    "locality": "Canungra area (Lamington National Park Rd)",
+    "postcode": "4275",
+    "website": "https://www.paraglidingqueensland.com/",
+    "emailPublic": "paraglidingqld@gmail.com",
+    "phonePublic": "0418 155 317",
+    "nationalBodyListed": true,
+    "summary": "Also official importer of Gin Gliders and Sup'Air",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://www.paraglidingqueensland.com/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "additionalKinds": [
+      "importer_distributor"
+    ],
+    "aliases": [
+      "Paragliding Queensland (shop)"
+    ],
+    "id": "org:au:paragliding-queensland",
+    "slug": "paragliding-queensland"
+  },
+  {
+    "legacyId": "SVC-001",
+    "kind": "service_centre",
+    "name": "Paragliding Repair Centre",
+    "disciplines": [
+      "PG",
+      "PPG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-WA",
+    "locality": "Albany",
+    "website": "https://paraglidingrepaircentre.com.au/",
+    "summary": "Mail-in repair, check, line trim; e.g. Skywalk Check Air with 2+2 guarantee A$440 (A$540 incl. line replacement)",
+    "sources": [
+      {
+        "providerId": "org-websites",
+        "url": "https://paraglidingrepaircentre.com.au/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "verified_public_source",
+    "id": "org:au:paragliding-repair-centre",
+    "slug": "paragliding-repair-centre"
+  },
+  {
+    "legacyId": "RTL-001",
+    "kind": "retailer",
+    "name": "Paragliding Shop",
+    "disciplines": [
+      "PG",
+      "PPG",
+      "parakite"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "locality": "Sydney Northern Beaches and Byron Bay",
+    "website": "https://paraglidingshop.com.au",
+    "summary": "Online store for wings, harnesses, reserves, paramotors, parakites, accessories; local demos; Fly Now Pay Later",
+    "sources": [
+      {
+        "providerId": "org-websites",
+        "url": "https://paraglidingshop.com.au",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "verified_public_source",
+    "id": "org:au:paragliding-shop",
+    "slug": "paragliding-shop"
+  },
+  {
+    "legacyId": "SCH-020",
+    "kind": "school",
+    "name": "Paragliding Tasmania",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-TAS",
+    "locality": "Lewisham",
+    "postcode": "7173",
+    "website": "https://paraglidingtasmania.com.au/",
+    "emailPublic": "ramon@paraglidingtasmania.com.au",
+    "phonePublic": "0478 902 850",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:paragliding-tasmania",
+    "slug": "paragliding-tasmania"
+  },
+  {
+    "legacyId": "SCH-021",
+    "kind": "school",
+    "name": "Paratech Paragliding",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-QLD",
+    "locality": "Boyland (Canungra area)",
+    "postcode": "4275",
+    "website": "https://www.paratechpg.com/",
+    "emailPublic": "paratechpg@gmail.com",
+    "phonePublic": "0432 105 906",
+    "nationalBodyListed": true,
+    "summary": "Official Skywalk importer; agent for Advance, Niviuk, Phi, BGD, Nova; price matching",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://www.paratechpg.com/equipment-sales",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "additionalKinds": [
+      "importer_distributor"
+    ],
+    "aliases": [
+      "Paratech Paragliding (shop)"
+    ],
+    "id": "org:au:paratech-paragliding",
+    "slug": "paratech-paragliding"
+  },
+  {
+    "legacyId": "RTL-003",
+    "kind": "importer_distributor",
+    "name": "Planet Paragliding",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-QLD",
+    "locality": "Beechmont (Gold Coast hinterland)",
+    "website": "https://planetparagliding.com.au",
+    "summary": "Shop by appointment; demo wings; large instrument range; service centre (line trim, reserve repack); next-day delivery",
+    "sources": [
+      {
+        "providerId": "org-websites",
+        "url": "https://planetparagliding.com.au",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "verified_public_source",
+    "id": "org:au:planet-paragliding",
+    "slug": "planet-paragliding"
+  },
+  {
+    "legacyId": "SCH-022",
+    "kind": "school",
+    "name": "Pro-Flyte",
+    "disciplines": [
+      "HG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "locality": "Lennox Head",
+    "postcode": "2478",
+    "website": "https://www.byron-lennoxhanggliding.com.au",
+    "emailPublic": "proflyte@bigpond.net.au",
+    "phonePublic": "0427 257 699",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:pro-flyte",
+    "slug": "pro-flyte"
+  },
+  {
+    "legacyId": "REG-005",
+    "kind": "regional_association",
+    "name": "Queensland Sports Aviators (QSA)",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-QLD",
+    "website": "https://www.queenslandsportsaviators.com.au",
+    "summary": "Regional Development Levy projects; site development; state school/club lists",
+    "sources": [
+      {
+        "providerId": "ansg",
+        "url": "https://siteguide.org.au/About",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "verified_public_source",
+    "id": "org:au:queensland-sports-aviators",
+    "slug": "queensland-sports-aviators"
+  },
+  {
+    "legacyId": "GOV-002",
+    "kind": "governing_body",
+    "name": "SAFA Member Zone / portal",
+    "disciplines": [
+      "HG",
+      "PG",
+      "PPG",
+      "WM"
+    ],
+    "country": "AU",
+    "website": "https://members.safa.asn.au",
+    "summary": "Member login and renewal; public pilot lookup; aircraft rego check",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "verified_public_source",
+    "id": "org:au:safa-member-zone-portal",
+    "slug": "safa-member-zone-portal"
+  },
+  {
+    "legacyId": "RTL-009",
+    "kind": "retailer",
+    "name": "SAFA Shop",
+    "disciplines": [
+      "HG",
+      "PG",
+      "PPG",
+      "WM"
+    ],
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "website": "https://safa.asn.au/shop/",
+    "summary": "SAFA merchandise",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/shop/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "verified_public_source",
+    "id": "org:au:safa-shop",
+    "slug": "safa-shop"
+  },
+  {
+    "legacyId": "SCH-023",
+    "kind": "school",
+    "name": "SEQ Paragliding",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-QLD",
+    "locality": "Battery Hill",
+    "postcode": "4551",
+    "website": "http://www.seqparagliding.com/",
+    "emailPublic": "fly@SEQParagliding.com",
+    "phonePublic": "0417 619 167",
+    "nationalBodyListed": true,
+    "summary": "Sunshine Coast inland and coastal sites",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:seq-paragliding",
+    "slug": "seq-paragliding"
+  },
+  {
+    "legacyId": "SCH-024",
+    "kind": "school",
+    "name": "Simon Shuttleworth Albany Hang Gliding",
+    "disciplines": [
+      "HG",
+      "WM"
+    ],
+    "country": "AU",
+    "regionCode": "AU-WA",
+    "locality": "Tambellup",
+    "postcode": "6320",
+    "emailPublic": "simon@holidayalbany.com.au",
+    "phonePublic": "0427 950 556",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "needs_verification",
+    "id": "org:au:simon-shuttleworth-albany-hang-gliding",
+    "slug": "simon-shuttleworth-albany-hang-gliding"
+  },
+  {
+    "legacyId": "SCH-025",
+    "kind": "school",
+    "name": "Sky Out Paragliding",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "locality": "Naremburn",
+    "postcode": "2065",
+    "website": "http://www.skyoutparagliding.com/",
+    "emailPublic": "Roger@skyoutparagliding.com",
+    "phonePublic": "0424 307 047",
+    "nationalBodyListed": true,
+    "summary": "Northern Beaches school (per SPHGC)",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:sky-out-paragliding",
+    "slug": "sky-out-paragliding"
+  },
+  {
+    "legacyId": "CLB-017",
+    "kind": "club",
+    "name": "Sky Pirates Paramotoring Club (WA)",
+    "disciplines": [
+      "PPG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-WA",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:sky-pirates-paramotoring-club",
+    "slug": "sky-pirates-paramotoring-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "CLB-018",
+    "kind": "club",
+    "name": "Skyhigh Paragliding Club Inc",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:skyhigh-paragliding-club",
+    "slug": "skyhigh-paragliding-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "SCH-026",
+    "kind": "school",
+    "name": "SkySurf Paragliding (Canberra)",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-ACT",
+    "locality": "Canberra",
+    "postcode": "2602",
+    "website": "https://www.skysurf.com.au/",
+    "emailPublic": "contact@skysurf.com.au",
+    "phonePublic": "0432 543 502",
+    "nationalBodyListed": true,
+    "summary": "Dealer for Flow and Niviuk; sells wings only to licensed or student pilots",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://www.skysurf.com.au/paragliders/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "additionalKinds": [
+      "retailer"
+    ],
+    "aliases": [
+      "SkySurf Paragliding (sales)"
+    ],
+    "id": "org:au:skysurf-paragliding-canberra",
+    "slug": "skysurf-paragliding-canberra",
+    "relatedOrgIds": [
+      "org:au:skysurf-paragliding-wollongong"
+    ]
+  },
+  {
+    "legacyId": "SCH-027",
+    "kind": "school",
+    "name": "SkySurf Paragliding (Wollongong)",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "locality": "Woonona",
+    "postcode": "2517",
+    "website": "https://www.skysurf.com.au/",
+    "emailPublic": "contact@skysurf.com.au",
+    "phonePublic": "0432 543 502",
+    "nationalBodyListed": true,
+    "summary": "Tandem flights at Stanwell Park listed on VisitNSW",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://www.skysurf.com.au/paragliders/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "additionalKinds": [
+      "retailer"
+    ],
+    "aliases": [
+      "SkySurf Paragliding (sales)"
+    ],
+    "id": "org:au:skysurf-paragliding-wollongong",
+    "slug": "skysurf-paragliding-wollongong",
+    "relatedOrgIds": [
+      "org:au:skysurf-paragliding-canberra"
+    ]
+  },
+  {
+    "legacyId": "REG-006",
+    "kind": "regional_association",
+    "name": "South Australian Hang Gliding & Paragliding Association (SAHPGA)",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-SA",
+    "website": "https://sites.google.com/site/sahpgahome",
+    "summary": "Regional Development Levy projects; site development; state school/club lists",
+    "sources": [
+      {
+        "providerId": "ansg",
+        "url": "https://siteguide.org.au/About",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "verified_public_source",
+    "id": "org:au:south-australian-hang-gliding-paragliding-association",
+    "slug": "south-australian-hang-gliding-paragliding-association"
+  },
+  {
+    "legacyId": "CLB-019",
+    "kind": "club",
+    "name": "South West Airsports",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "needs_verification",
+    "id": "org:au:south-west-airsports",
+    "slug": "south-west-airsports",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "CLB-020",
+    "kind": "club",
+    "name": "Southern Microlight Club Inc",
+    "disciplines": [
+      "WM"
+    ],
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:southern-microlight-club",
+    "slug": "southern-microlight-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "GOV-001",
+    "kind": "governing_body",
+    "name": "Sports Aviation Federation of Australia (SAFA)",
+    "disciplines": [
+      "HG",
+      "PG",
+      "PPG",
+      "WM"
+    ],
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "locality": "Keilor East",
+    "postcode": "3033",
+    "website": "https://safa.asn.au",
+    "emailPublic": "office@safa.asn.au",
+    "phonePublic": "03 9336 7155",
+    "summary": "Pilot certification; membership (mandatory to fly); school & club directories; pilot and aircraft lookup; member PWA app (flight log, TIF registration); events; Skysailor magazine; safety notices; merch shop",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/wp-content/uploads/2026/07/saf029_safa_strategic_plan_2026_v2.pdf",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "verified_public_source",
+    "id": "org:au:sports-aviation-federation-of-australia",
+    "slug": "sports-aviation-federation-of-australia"
+  },
+  {
+    "legacyId": "CLB-021",
+    "kind": "club",
+    "name": "Stanwell Park Hang Gliding & Paragliding Club (FlyStanwell)",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:stanwell-park-hang-gliding-paragliding-club",
+    "slug": "stanwell-park-hang-gliding-paragliding-club",
+    "siteIds": [],
+    "stationIds": [
+      "station:holfuy:156"
+    ]
+  },
+  {
+    "legacyId": "CLB-022",
+    "kind": "club",
+    "name": "Sunshine Coast Free Flyers Association",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-QLD",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:sunshine-coast-free-flyers-association",
+    "slug": "sunshine-coast-free-flyers-association",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "SCH-028",
+    "kind": "school",
+    "name": "Sunshine Coast Hang Gliding & Weight Shift Microlights",
+    "disciplines": [
+      "HG",
+      "WM"
+    ],
+    "country": "AU",
+    "regionCode": "AU-QLD",
+    "locality": "Cooroibah",
+    "postcode": "4565",
+    "emailPublic": "cookmank@hotmail.com",
+    "phonePublic": "07 5449 8573",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:sunshine-coast-hang-gliding-weight-shift-microlights",
+    "slug": "sunshine-coast-hang-gliding-weight-shift-microlights"
+  },
+  {
+    "legacyId": "TAN-002",
+    "kind": "tandem_operator",
+    "name": "Sydney Hang Gliding Centre",
+    "disciplines": [
+      "HG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "locality": "Bald Hill, Stanwell Tops",
+    "postcode": "2508",
+    "summary": "Tandem hang gliding and licence course (per 2012 article); Time Out lists A$220 (date unknown)",
+    "sources": [
+      {
+        "providerId": "org-websites",
+        "url": "https://www.timeout.com/sydney/sport-and-fitness/sydney-hang-gliding-centre",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "needs_verification",
+    "id": "org:au:sydney-hang-gliding-centre",
+    "slug": "sydney-hang-gliding-centre"
+  },
+  {
+    "legacyId": "CLB-023",
+    "kind": "club",
+    "name": "Sydney Hang Gliding Club Inc",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:sydney-hang-gliding-club",
+    "slug": "sydney-hang-gliding-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "SCH-029",
+    "kind": "school",
+    "name": "Sydney Microlights",
+    "disciplines": [
+      "WM"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "locality": "Stanwell Park",
+    "postcode": "2508",
+    "website": "https://www.trikefan.com",
+    "emailPublic": "fly@trikefan.com",
+    "phonePublic": "0418 574 068",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:sydney-microlights",
+    "slug": "sydney-microlights"
+  },
+  {
+    "legacyId": "SCH-104",
+    "kind": "school",
+    "name": "Sydney Paragliding",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "locality": "Northern Beaches, Sydney",
+    "summary": "Mentioned by Sydney Paragliding & Hang Gliding Club as a Northern Beaches school",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/news/sydney-paragliding-and-hang-gliding-club/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "needs_verification",
+    "id": "org:au:sydney-paragliding",
+    "slug": "sydney-paragliding"
+  },
+  {
+    "legacyId": "CLB-024",
+    "kind": "club",
+    "name": "Sydney Paragliding and Hang Gliding Club (SPHGC)",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "website": "http://www.flysydney.com.au",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:sydney-paragliding-and-hang-gliding-club",
+    "slug": "sydney-paragliding-and-hang-gliding-club",
+    "siteIds": [],
+    "stationIds": [
+      "station:club-stations:wind-flysydney-com-au"
+    ]
+  },
+  {
+    "legacyId": "REG-007",
+    "kind": "regional_association",
+    "name": "Tasmanian Hang-gliding and Paragliding Association (THPA)",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-TAS",
+    "website": "http://www.thpa.org.au",
+    "summary": "Regional Development Levy projects; site development; state school/club lists",
+    "sources": [
+      {
+        "providerId": "ansg",
+        "url": "https://siteguide.org.au/About",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "verified_public_source",
+    "id": "org:au:tasmanian-hang-gliding-and-paragliding-association",
+    "slug": "tasmanian-hang-gliding-and-paragliding-association"
+  },
+  {
+    "legacyId": "CLB-025",
+    "kind": "club",
+    "name": "The Pico Club Incorporated",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "needs_verification",
+    "id": "org:au:the-pico-club",
+    "slug": "the-pico-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "SCH-030",
+    "kind": "school",
+    "name": "Tribal Flight Paragliding - Fox Airsports",
+    "disciplines": [
+      "PG",
+      "PPG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-QLD",
+    "locality": "Glencoe (Toowoomba area)",
+    "postcode": "4352",
+    "website": "https://www.tribalflight.com.au",
+    "emailPublic": "matt.fox@tribalflight.com.au",
+    "phonePublic": "0428 280 666",
+    "nationalBodyListed": true,
+    "summary": "PG and PPG licence courses; new and used gear sales",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://www.tribalflight.com.au",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "needs_verification",
+    "additionalKinds": [
+      "retailer"
+    ],
+    "aliases": [
+      "Tribal Flight (sales)"
+    ],
+    "id": "org:au:tribal-flight-paragliding-fox-airsports",
+    "slug": "tribal-flight-paragliding-fox-airsports"
+  },
+  {
+    "legacyId": "SCH-031",
+    "kind": "school",
+    "name": "Updraft Paragliding",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "locality": "Rowville",
+    "postcode": "3178",
+    "website": "http://www.updraftparagliding.com.au/",
+    "emailPublic": "wagolly@gmail.com",
+    "phonePublic": "0411 533 625",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:updraft-paragliding",
+    "slug": "updraft-paragliding"
+  },
+  {
+    "legacyId": "REG-008",
+    "kind": "regional_association",
+    "name": "Victorian Hang-gliding and Paragliding Association (VHPA)",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "website": "http://www.vhpa.org.au",
+    "summary": "Regional Development Levy projects; site development; state school/club lists",
+    "sources": [
+      {
+        "providerId": "ansg",
+        "url": "https://siteguide.org.au/About",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "verified_public_source",
+    "id": "org:au:victorian-hang-gliding-and-paragliding-association",
+    "slug": "victorian-hang-gliding-and-paragliding-association"
+  },
+  {
+    "legacyId": "CLB-026",
+    "kind": "club",
+    "name": "WA Hill Flyers Club Inc",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-WA",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:wa-hill-flyers-club",
+    "slug": "wa-hill-flyers-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "SCH-105",
+    "kind": "school",
+    "name": "Warren Wind Sports",
+    "disciplines": [
+      "HG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "locality": "Stanwell Park",
+    "postcode": "2508",
+    "summary": "Hang gliding (per 2012 article)",
+    "sources": [
+      {
+        "providerId": "org-websites",
+        "url": "https://www.weekendnotes.com/hang-gliding-lessons-sydney/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "needs_verification",
+    "id": "org:au:warren-wind-sports",
+    "slug": "warren-wind-sports"
+  },
+  {
+    "legacyId": "CLB-027",
+    "kind": "club",
+    "name": "Western Victorian Hang Gliding Club Inc",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:au:western-victorian-hang-gliding-club",
+    "slug": "western-victorian-hang-gliding-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "SCH-103",
+    "kind": "school",
+    "name": "XCkms",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "locality": "Bright",
+    "website": "http://xckms.com",
+    "emailPublic": "webbie@xckms.com",
+    "phonePublic": "0417 530 972",
+    "summary": "Paragliding school (per VHPA)",
+    "sources": [
+      {
+        "providerId": "assoc",
+        "url": "https://www.vhpa.org.au/schools.html",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-08",
+    "verificationStatus": "needs_verification",
+    "id": "org:au:xckms",
+    "slug": "xckms"
+  },
+  {
+    "legacyId": "NZ-SCH-004",
+    "kind": "school",
+    "name": "Airplay Paragliding",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "NZ",
+    "locality": "Napier",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/finding-a-school/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:nz:airplay-paragliding",
+    "slug": "airplay-paragliding"
+  },
+  {
+    "legacyId": "NZ-CLB-006",
+    "kind": "club",
+    "name": "Aorangi club",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "NZ",
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/local-clubs/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:nz:aorangi-club",
+    "slug": "aorangi-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "NZ-CLB-007",
+    "kind": "club",
+    "name": "Auckland club",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "NZ",
+    "regionCode": "NZ-AUK",
+    "website": "https://www.cloudbase.org.nz",
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/local-clubs/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:nz:auckland-club",
+    "slug": "auckland-club",
+    "siteIds": [
+      "site:nz:auk:karioitahi-beach"
+    ],
+    "stationIds": []
+  },
+  {
+    "legacyId": "NZ-SCH-008",
+    "kind": "school",
+    "name": "Auckland/Hamilton Hang Gliding Club (instruction)",
+    "disciplines": [
+      "HG"
+    ],
+    "country": "NZ",
+    "locality": "Auckland/Waikato",
+    "nationalBodyListed": true,
+    "summary": "Club-based hang gliding instruction (per NZHGPA listing)",
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/finding-a-school/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:nz:auckland-hamilton-hang-gliding-club",
+    "slug": "auckland-hamilton-hang-gliding-club"
+  },
+  {
+    "legacyId": "NZ-CLB-008",
+    "kind": "club",
+    "name": "Bay of Plenty club",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "NZ",
+    "regionCode": "NZ-BOP",
+    "website": "https://www.bophgpg.org.nz",
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/local-clubs/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:nz:bay-of-plenty-club",
+    "slug": "bay-of-plenty-club",
+    "siteIds": [
+      "site:nz:bop:mount-maunganui"
+    ],
+    "stationIds": []
+  },
+  {
+    "legacyId": "NZ-CLB-005",
+    "kind": "club",
+    "name": "Canterbury club",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "NZ",
+    "regionCode": "NZ-CAN",
+    "website": "https://www.chgpc.org.nz",
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/local-clubs/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:nz:canterbury-club",
+    "slug": "canterbury-club",
+    "siteIds": [
+      "site:nz:can:port-hills"
+    ],
+    "stationIds": []
+  },
+  {
+    "legacyId": "NZ-SCH-007",
+    "kind": "school",
+    "name": "Canterbury Hang Gliding School",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "NZ",
+    "locality": "Canterbury",
+    "nationalBodyListed": true,
+    "summary": "Hang glider instruction; equipment, hire and repairs (per NZHGPA listing)",
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/finding-a-school/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:nz:canterbury-hang-gliding-school",
+    "slug": "canterbury-hang-gliding-school"
+  },
+  {
+    "legacyId": "NZ-SCH-002",
+    "kind": "school",
+    "name": "Christchurch Paragliding",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "NZ",
+    "locality": "Christchurch",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/finding-a-school/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:nz:christchurch-paragliding",
+    "slug": "christchurch-paragliding"
+  },
+  {
+    "legacyId": "NZ-SCH-001",
+    "kind": "school",
+    "name": "Cloudbase Paragliding",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "NZ",
+    "locality": "Christchurch",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/finding-a-school/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:nz:cloudbase-paragliding",
+    "slug": "cloudbase-paragliding"
+  },
+  {
+    "legacyId": "NZ-SCH-003",
+    "kind": "school",
+    "name": "Fergs Paragliding",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "NZ",
+    "locality": "Mangawhai Heads",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/finding-a-school/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:nz:fergs-paragliding",
+    "slug": "fergs-paragliding"
+  },
+  {
+    "legacyId": "NZ-CLB-003",
+    "kind": "club",
+    "name": "Hawkes Bay club",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "NZ",
+    "regionCode": "NZ-HKB",
+    "website": "https://www.soarhawkesbay.co.nz",
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/local-clubs/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:nz:hawkes-bay-club",
+    "slug": "hawkes-bay-club",
+    "siteIds": [
+      "site:nz:hkb:te-mata-peak"
+    ],
+    "stationIds": []
+  },
+  {
+    "legacyId": "NZ-FP-001",
+    "kind": "flight_park",
+    "name": "HighSide flight park (Karioitahi Beach)",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "NZ",
+    "regionCode": "NZ-AUK",
+    "locality": "Franklin, South Auckland",
+    "website": "https://www.highside.nz",
+    "summary": "Flight park at Karioitahi Beach; day, week, month or season passes fund site development",
+    "sources": [
+      {
+        "providerId": "org-websites",
+        "url": "https://www.highside.nz/membership",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "verified_public_source",
+    "id": "org:nz:highside-flight-park",
+    "slug": "highside-flight-park"
+  },
+  {
+    "legacyId": "NZ-CLB-010",
+    "kind": "club",
+    "name": "Marlborough club",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "NZ",
+    "regionCode": "NZ-MBH",
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/local-clubs/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:nz:marlborough-club",
+    "slug": "marlborough-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "NZ-SCH-006",
+    "kind": "school",
+    "name": "Nelson Bays Paragliding",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "NZ",
+    "locality": "Nelson",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/finding-a-school/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:nz:nelson-bays-paragliding",
+    "slug": "nelson-bays-paragliding"
+  },
+  {
+    "legacyId": "NZ-SCH-005",
+    "kind": "school",
+    "name": "Nelson Paragliding",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "NZ",
+    "locality": "Nelson",
+    "nationalBodyListed": true,
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/finding-a-school/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:nz:nelson-paragliding",
+    "slug": "nelson-paragliding"
+  },
+  {
+    "legacyId": "NZ-GOV-001",
+    "kind": "governing_body",
+    "name": "New Zealand Hang Gliding & Paragliding Association (NZHGPA)",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "NZ",
+    "website": "https://nzhgpa.org.nz",
+    "summary": "National governing body; membership required to fly in NZ (CAA rules); lists schools, tandem operators, clubs, competitions and records; members hub with sponsor offers",
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/about-us/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "verified_public_source",
+    "id": "org:nz:new-zealand-hang-gliding-paragliding-association",
+    "slug": "new-zealand-hang-gliding-paragliding-association"
+  },
+  {
+    "legacyId": "NZ-CLB-001",
+    "kind": "club",
+    "name": "Northland club",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "NZ",
+    "regionCode": "NZ-NTL",
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/local-clubs/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:nz:northland-club",
+    "slug": "northland-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "NZ-CLB-011",
+    "kind": "club",
+    "name": "Southern club",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "NZ",
+    "website": "https://www.southernclub.co.nz",
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/local-clubs/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:nz:southern-club",
+    "slug": "southern-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "NZ-CLB-004",
+    "kind": "club",
+    "name": "Tasman club",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "NZ",
+    "regionCode": "NZ-TAS",
+    "website": "http://thgpc.org.nz/",
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/local-clubs/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:nz:tasman-club",
+    "slug": "tasman-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "NZ-CLB-002",
+    "kind": "club",
+    "name": "Waikato club",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "NZ",
+    "regionCode": "NZ-WKO",
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/local-clubs/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:nz:waikato-club",
+    "slug": "waikato-club",
+    "siteIds": [],
+    "stationIds": []
+  },
+  {
+    "legacyId": "NZ-CLB-009",
+    "kind": "club",
+    "name": "Wellington club",
+    "disciplines": [
+      "HG",
+      "PG"
+    ],
+    "country": "NZ",
+    "regionCode": "NZ-WGN",
+    "website": "https://www.whgpc.nz",
+    "sources": [
+      {
+        "providerId": "nzhgpa",
+        "url": "https://nzhgpa.org.nz/local-clubs/",
+        "fetchedAt": "2026-10-09",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-10-09",
+    "verificationStatus": "listed_by_national_body",
+    "id": "org:nz:wellington-club",
+    "slug": "wellington-club",
+    "siteIds": [],
+    "stationIds": []
+  }
+]

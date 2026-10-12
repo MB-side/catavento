@@ -1,0 +1,349 @@
+[
+  {
+    "id": "safa",
+    "name": "Sports Aviation Federation of Australia",
+    "homepage": "https://safa.asn.au",
+    "tier": "green",
+    "licence": "facts",
+    "attribution": "Source: Sports Aviation Federation of Australia",
+    "uses": "School directory, club directory and club detail pages, events, public safety and advisory notice titles",
+    "method": "Reading public web pages",
+    "schedule": "Nightly",
+    "countries": [
+      "AU"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "nzhgpa",
+    "name": "New Zealand Hang Gliding & Paragliding Association",
+    "homepage": "https://nzhgpa.org.nz",
+    "tier": "green",
+    "licence": "facts",
+    "attribution": "Source: New Zealand Hang Gliding & Paragliding Association",
+    "uses": "New Zealand club and school lists (names, regions, websites) and national-body facts",
+    "method": "Provided list for now; reading public web pages later",
+    "schedule": "Weekly",
+    "countries": [
+      "NZ"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "ansg",
+    "name": "Australian National Site Guide",
+    "homepage": "https://siteguide.org.au",
+    "tier": "amber",
+    "licence": "facts",
+    "attribution": "Site facts: Australian National Site Guide",
+    "uses": "Site and launch names, coordinates (respecting their precision), short fields (type, height, rating, conditions), administering club, main landing name, linked weather-station addresses, status and page address",
+    "method": "Bulk export if available, otherwise a slow, polite read of public site pages",
+    "schedule": "Nightly",
+    "countries": [
+      "AU"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "pge",
+    "name": "ParaglidingEarth",
+    "homepage": "https://www.paraglidingearth.com",
+    "tier": "green",
+    "licence": "cc-by-sa-3.0",
+    "attribution": "Community site data: © ParaglidingEarth contributors (CC BY-SA 3.0 / ODbL 1.0)",
+    "uses": "Australian sites missing from the Site Guide (a separate community layer); coordinates and wind directions for the New Zealand sample sites",
+    "method": "Official data service (access to be requested)",
+    "schedule": "Weekly",
+    "countries": [
+      "*"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true,
+    "notes": "Share-alike licence; our copy of this data stays public in the project repository (docs/10 C17)."
+  },
+  {
+    "id": "assoc",
+    "name": "State and regional associations",
+    "tier": "green",
+    "licence": "facts",
+    "attribution": "Source: {association name}",
+    "uses": "School and club lists, for cross-checking",
+    "method": "Reading public web pages",
+    "schedule": "Weekly",
+    "countries": [
+      "AU"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "club-websites",
+    "name": "Club websites",
+    "tier": "amber",
+    "licence": "facts",
+    "attribution": "Source: {club name} website",
+    "uses": "Notice and event headlines, dates and links where a club publishes a simple public list (added club by club)",
+    "method": "Reading public web pages or news feeds",
+    "schedule": "Nightly",
+    "countries": [
+      "*"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "org-websites",
+    "name": "Organisations' own websites",
+    "tier": "amber",
+    "licence": "facts",
+    "attribution": "Source: {organisation name} website",
+    "uses": "Published facts about schools, tandem operators and shops (for example a published course price), each with its page address and the date checked",
+    "method": "Checked by hand",
+    "schedule": "When updated",
+    "countries": [
+      "*"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "nz-club-guides",
+    "name": "New Zealand club site guides",
+    "tier": "amber",
+    "licence": "facts",
+    "attribution": "Site guide: {club name}",
+    "uses": "Links only",
+    "method": "Links",
+    "schedule": "Not applicable",
+    "countries": [
+      "NZ"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "highside",
+    "name": "HighSide flight park",
+    "homepage": "https://www.highside.nz",
+    "tier": "amber",
+    "licence": "unknown",
+    "attribution": "HighSide flight park",
+    "uses": "Link to the flight park and its passes",
+    "method": "Links",
+    "schedule": "Not applicable",
+    "countries": [
+      "NZ"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "manual",
+    "name": "Compiled by Catavento",
+    "tier": "green",
+    "licence": "facts",
+    "attribution": "Compiled by Catavento from {source}",
+    "uses": "Facts we gathered by hand from a public source, each with its source link (for example the New Zealand sample sites)",
+    "method": "Checked by hand",
+    "schedule": "When updated",
+    "countries": [
+      "*"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "wtf",
+    "name": "Where To Fly",
+    "homepage": "https://wheretofly.info",
+    "tier": "amber",
+    "licence": "unknown",
+    "attribution": "Where To Fly (wheretofly.info)",
+    "uses": "Nothing collected; links to its forecasts for each site",
+    "method": "Links",
+    "schedule": "Not applicable",
+    "countries": [
+      "AU"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "open-meteo",
+    "name": "Open-Meteo",
+    "homepage": "https://open-meteo.com",
+    "termsUrl": "https://open-meteo.com/en/terms",
+    "tier": "green",
+    "licence": "cc-by-4.0",
+    "attribution": "Weather data by Open-Meteo.com",
+    "uses": "Hourly forecast wind, fetched by your own browser when you open a page (free non-commercial tier)",
+    "method": "Fetched live by the visitor's browser",
+    "schedule": "Each time a page is opened",
+    "countries": [
+      "*"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "freeflightwx",
+    "name": "FreeFlightWx",
+    "homepage": "https://freeflightwx.com",
+    "tier": "amber",
+    "licence": "unknown",
+    "attribution": "Live wind: FreeFlightWx",
+    "uses": "Nothing collected; links to each station's live page",
+    "method": "Links",
+    "schedule": "Not applicable",
+    "countries": [
+      "AU"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "holfuy",
+    "name": "Holfuy",
+    "homepage": "https://holfuy.com",
+    "tier": "red",
+    "licence": "proprietary",
+    "attribution": "Live wind: Holfuy, station {station name}",
+    "uses": "Nothing collected (their terms forbid it); links to each station's live page",
+    "method": "Links",
+    "schedule": "Not applicable",
+    "countries": [
+      "*"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "club-stations",
+    "name": "Club-run weather stations",
+    "tier": "amber",
+    "licence": "unknown",
+    "attribution": "Live wind: {club name} station",
+    "uses": "Links to each station's live page",
+    "method": "Links",
+    "schedule": "Not applicable",
+    "countries": [
+      "*"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "weatherlink",
+    "name": "WeatherLink",
+    "homepage": "https://www.weatherlink.com",
+    "tier": "amber",
+    "licence": "proprietary",
+    "attribution": "Live wind: WeatherLink, station {station name}",
+    "uses": "Links to each station's public page",
+    "method": "Links",
+    "schedule": "Not applicable",
+    "countries": [
+      "*"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "bom",
+    "name": "Bureau of Meteorology",
+    "homepage": "http://www.bom.gov.au",
+    "tier": "amber",
+    "licence": "unknown",
+    "attribution": "Bureau of Meteorology",
+    "uses": "Nothing yet; state observation feeds noted for Iteration 2, pending a check of their terms",
+    "method": "Not used",
+    "schedule": "Not applicable",
+    "countries": [
+      "AU"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": false
+  },
+  {
+    "id": "xcontest",
+    "name": "XContest",
+    "homepage": "https://www.xcontest.org",
+    "tier": "amber",
+    "licence": "proprietary",
+    "attribution": "XContest",
+    "uses": "Links only (terms for showing flight data not yet checked)",
+    "method": "Links",
+    "schedule": "Not applicable",
+    "countries": [
+      "*"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "skysight",
+    "name": "SkySight",
+    "homepage": "https://skysight.io",
+    "tier": "red",
+    "licence": "proprietary",
+    "attribution": "SkySight",
+    "uses": "Links only",
+    "method": "Links",
+    "schedule": "Not applicable",
+    "countries": [
+      "*"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "paraglidingmap",
+    "name": "Paragliding Map",
+    "homepage": "https://www.paraglidingmap.com",
+    "tier": "red",
+    "licence": "proprietary",
+    "attribution": "Paragliding Map",
+    "uses": "Links only",
+    "method": "Links",
+    "schedule": "Not applicable",
+    "countries": [
+      "*"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "retail",
+    "name": "Retailer and manufacturer websites",
+    "tier": "amber",
+    "licence": "proprietary",
+    "attribution": "Source: {business name} website",
+    "uses": "Links and the facts in our starting list only; never product photos or descriptions",
+    "method": "Links",
+    "schedule": "Not applicable",
+    "countries": [
+      "*"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": true
+  },
+  {
+    "id": "facebook",
+    "name": "Facebook groups and pages, and messaging apps",
+    "homepage": "https://www.facebook.com",
+    "tier": "red",
+    "licence": "proprietary",
+    "attribution": "Facebook",
+    "uses": "Nothing",
+    "method": "Not used",
+    "schedule": "Not applicable",
+    "countries": [
+      "*"
+    ],
+    "permissionStatus": "not_requested",
+    "enabled": false
+  }
+]

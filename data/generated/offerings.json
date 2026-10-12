@@ -1,0 +1,23 @@
+[
+  {
+    "orgId": "org:au:manilla-paragliding",
+    "type": "licence_course",
+    "discipline": "PG",
+    "title": "PG2 licence course (9+ days, live-in)",
+    "priceFrom": 2890,
+    "currency": "AUD",
+    "priceText": "A$2,890",
+    "inclusions": [
+      "SAFA insurance component",
+      "On-site cabin accommodation",
+      "A$400 equipment credit"
+    ],
+    "url": "https://www.flymanilla.com/ManillaParaglidingSchool/tabid/141/Default.aspx",
+    "source": {
+      "providerId": "org-websites",
+      "url": "https://www.flymanilla.com/ManillaParaglidingSchool/tabid/141/Default.aspx",
+      "fetchedAt": "2026-10-08",
+      "licence": "facts"
+    }
+  }
+]
