@@ -30,7 +30,7 @@ Use the Iteration 1 prototype to learn what pilots, clubs, schools and data owne
 
 ## 4. Anchor sites for spot checks
 
-Check name, coordinates, wind range, rating, administering club and station links against the Site Guide for: Long Reef NE, Long Reef SE, Stanwell Park, Manilla – Mt Borah, Mystic, Spring Hill, Lake George, Mt Emu, Killarney, Crackneck, Tunkallila and Single Hill (use the exact names the Site Guide uses).
+Check name, coordinates, wind range, rating, administering club and station links against the Site Guide for: Long Reef NE, Long Reef SE, Stanwell Park, Manilla – Mt Borah, Mystic, Spring Hill, Lake George, Mt Emu, Killarney, Crackneck and Tunkallila (use the exact names the Site Guide uses). Single Hill was dropped on 2026-10-12: the Site Guide has no site of that name (docs/10 C30).
 
 ## 5. Launch-week notes ("notify, don't wait")
 

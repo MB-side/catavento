@@ -27,8 +27,7 @@ const byId = (id: string) => {
   return s;
 };
 
-// docs/09 §4 anchor sites, by the names the Site Guide uses. ("Single Hill" isn't in the Site
-// Guide; its FreeFlightWx station exists but no site carries that name.)
+// docs/09 §4 anchor sites, by the names the Site Guide uses (Single Hill dropped: docs/10 C30).
 const ANCHORS = [
   "site:au:nsw:long-reef-ne",
   "site:au:nsw:long-reef-se",
