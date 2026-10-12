@@ -1,7 +1,7 @@
 {
   "providerId": "club-websites",
-  "fetchedAt": "2026-10-12T08:04:40.791Z",
-  "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf",
+  "fetchedAt": "2026-10-12T08:37:24.241Z",
+  "contentHash": "feaca1c89daa1d29fed911a71af72ce387de11f662cdf544198f8691acd8924c",
   "events": [],
   "notices": [
     {
@@ -16,9 +16,9 @@
         {
           "providerId": "club-websites",
           "url": "https://www.chgpc.org.nz/blog-feed.xml",
-          "fetchedAt": "2026-10-12T08:04:40.792Z",
+          "fetchedAt": "2026-10-12T08:37:24.241Z",
           "licence": "facts",
-          "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+          "contentHash": "feaca1c89daa1d29fed911a71af72ce387de11f662cdf544198f8691acd8924c"
         }
       ]
     },
@@ -34,9 +34,9 @@
         {
           "providerId": "club-websites",
           "url": "https://www.chgpc.org.nz/blog-feed.xml",
-          "fetchedAt": "2026-10-12T08:04:40.792Z",
+          "fetchedAt": "2026-10-12T08:37:24.241Z",
           "licence": "facts",
-          "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+          "contentHash": "feaca1c89daa1d29fed911a71af72ce387de11f662cdf544198f8691acd8924c"
         }
       ]
     },
@@ -52,9 +52,9 @@
         {
           "providerId": "club-websites",
           "url": "https://www.chgpc.org.nz/blog-feed.xml",
-          "fetchedAt": "2026-10-12T08:04:40.792Z",
+          "fetchedAt": "2026-10-12T08:37:24.241Z",
           "licence": "facts",
-          "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+          "contentHash": "feaca1c89daa1d29fed911a71af72ce387de11f662cdf544198f8691acd8924c"
         }
       ]
     }
@@ -68,6 +68,7 @@
         "site:au:act:lanyon",
         "site:au:nsw:honeysuckle",
         "site:au:nsw:lake-george-collector",
+        "site:au:nsw:lake-george-gearys-gap",
         "site:au:nsw:lake-george-south-launch",
         "site:au:nsw:one-tree-hill-gungahlin",
         "site:au:nsw:spring-hill"
@@ -75,9 +76,9 @@
       "source": {
         "providerId": "club-websites",
         "url": "https://acthpa.org/",
-        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "fetchedAt": "2026-10-12T08:37:24.241Z",
         "licence": "facts",
-        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+        "contentHash": "feaca1c89daa1d29fed911a71af72ce387de11f662cdf544198f8691acd8924c"
       }
     },
     {
@@ -92,9 +93,9 @@
       "source": {
         "providerId": "club-websites",
         "url": "https://www.flycanungra.com.au/",
-        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "fetchedAt": "2026-10-12T08:37:24.241Z",
         "licence": "facts",
-        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+        "contentHash": "feaca1c89daa1d29fed911a71af72ce387de11f662cdf544198f8691acd8924c"
       }
     },
     {
@@ -107,9 +108,9 @@
       "source": {
         "providerId": "club-websites",
         "url": "https://www.centralcoastskysurfers.com/flying-sites/",
-        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "fetchedAt": "2026-10-12T08:37:24.241Z",
         "licence": "facts",
-        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+        "contentHash": "feaca1c89daa1d29fed911a71af72ce387de11f662cdf544198f8691acd8924c"
       }
     },
     {
@@ -117,14 +118,33 @@
       "orgId": "org:au:dynasoarers-hang-gliding-club",
       "url": "https://www.dynasoarers.vhpa.org.au/sites.shtml",
       "siteIds": [
-        "site:au:vic:portland"
+        "site:au:vic:bells-beach",
+        "site:au:vic:bells-beach-winkipop",
+        "site:au:vic:ocean-grove",
+        "site:au:vic:portland",
+        "site:au:vic:spion-kop-fairhaven-aireys-moggs"
       ],
       "source": {
         "providerId": "club-websites",
         "url": "https://www.dynasoarers.vhpa.org.au/sites.shtml",
-        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "fetchedAt": "2026-10-12T08:37:24.241Z",
         "licence": "facts",
-        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+        "contentHash": "feaca1c89daa1d29fed911a71af72ce387de11f662cdf544198f8691acd8924c"
+      }
+    },
+    {
+      "id": "evidence:org:au:manilla-skysailors:dbad5010",
+      "orgId": "org:au:manilla-skysailors",
+      "url": "https://mss.org.au/Information/LaunchSites/tabid/76/Default.aspx",
+      "siteIds": [
+        "site:au:nsw:manilla-mt-borah"
+      ],
+      "source": {
+        "providerId": "club-websites",
+        "url": "https://mss.org.au/Information/LaunchSites/tabid/76/Default.aspx",
+        "fetchedAt": "2026-10-12T08:37:24.241Z",
+        "licence": "facts",
+        "contentHash": "feaca1c89daa1d29fed911a71af72ce387de11f662cdf544198f8691acd8924c"
       }
     },
     {
@@ -139,9 +159,9 @@
       "source": {
         "providerId": "club-websites",
         "url": "https://mncf.tidyhq.com/",
-        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "fetchedAt": "2026-10-12T08:37:24.241Z",
         "licence": "facts",
-        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+        "contentHash": "feaca1c89daa1d29fed911a71af72ce387de11f662cdf544198f8691acd8924c"
       }
     },
     {
@@ -149,18 +169,22 @@
       "orgId": "org:au:north-east-victoria-hang-gliding-club",
       "url": "https://www.nevhgc.net/sites",
       "siteIds": [
+        "site:au:vic:gundowring-savhill",
         "site:au:vic:mannys",
         "site:au:vic:mt-buffalo-reeds-lookout-paraglider-launch",
         "site:au:vic:mt-buffalo-the-gorge-hg-ramp",
+        "site:au:vic:mt-emu",
         "site:au:vic:murmungee",
-        "site:au:vic:mystic"
+        "site:au:vic:mystic",
+        "site:au:vic:tawonga-gap",
+        "site:au:vic:the-pines-buckland-ridge"
       ],
       "source": {
         "providerId": "club-websites",
         "url": "https://www.nevhgc.net/sites",
-        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "fetchedAt": "2026-10-12T08:37:24.241Z",
         "licence": "facts",
-        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+        "contentHash": "feaca1c89daa1d29fed911a71af72ce387de11f662cdf544198f8691acd8924c"
       }
     },
     {
@@ -169,15 +193,16 @@
       "url": "https://sites.google.com/site/sahpgahome/ourflyingsites",
       "siteIds": [
         "site:au:sa:barn-hill-the-bluff",
+        "site:au:sa:myponga-cliffs",
         "site:au:sa:sellicks-beach",
         "site:au:sa:tunkalilla"
       ],
       "source": {
         "providerId": "club-websites",
         "url": "https://sites.google.com/site/sahpgahome/ourflyingsites",
-        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "fetchedAt": "2026-10-12T08:37:24.241Z",
         "licence": "facts",
-        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+        "contentHash": "feaca1c89daa1d29fed911a71af72ce387de11f662cdf544198f8691acd8924c"
       }
     },
     {
@@ -185,14 +210,15 @@
       "orgId": "org:au:stanwell-park-hang-gliding-paragliding-club",
       "url": "https://www.flystanwell.com.au/",
       "siteIds": [
+        "site:au:nsw:hill-60",
         "site:au:nsw:stanwell-park-bald-hill"
       ],
       "source": {
         "providerId": "club-websites",
         "url": "https://www.flystanwell.com.au/",
-        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "fetchedAt": "2026-10-12T08:37:24.241Z",
         "licence": "facts",
-        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+        "contentHash": "feaca1c89daa1d29fed911a71af72ce387de11f662cdf544198f8691acd8924c"
       }
     },
     {
@@ -204,14 +230,35 @@
         "site:au:qld:mt-widgee",
         "site:au:qld:point-cartwright",
         "site:au:qld:rainbow-beach-carlo-sand-blow",
+        "site:au:qld:sunrise-beach",
         "site:au:qld:teewah-beach"
       ],
       "source": {
         "providerId": "club-websites",
         "url": "https://www.freeflyers.com.au/",
-        "fetchedAt": "2026-10-12T08:04:40.792Z",
+        "fetchedAt": "2026-10-12T08:37:24.241Z",
         "licence": "facts",
-        "contentHash": "4df3820121d4ad7e3ebc2fae33b52d8fc3fb8ea533185d7a8cd4a9818b18dfcf"
+        "contentHash": "feaca1c89daa1d29fed911a71af72ce387de11f662cdf544198f8691acd8924c"
+      }
+    },
+    {
+      "id": "evidence:org:au:sydney-paragliding-and-hang-gliding-club:9cb6af81",
+      "orgId": "org:au:sydney-paragliding-and-hang-gliding-club",
+      "url": "https://www.flysydney.com.au/public/pages/site-guides",
+      "siteIds": [
+        "site:au:nsw:bungan",
+        "site:au:nsw:cooks-terrace",
+        "site:au:nsw:mona-vale",
+        "site:au:nsw:newport",
+        "site:au:nsw:turimetta",
+        "site:au:nsw:warriewood"
+      ],
+      "source": {
+        "providerId": "club-websites",
+        "url": "https://www.flysydney.com.au/public/pages/site-guides",
+        "fetchedAt": "2026-10-12T08:37:24.241Z",
+        "licence": "facts",
+        "contentHash": "feaca1c89daa1d29fed911a71af72ce387de11f662cdf544198f8691acd8924c"
       }
     }
   ]

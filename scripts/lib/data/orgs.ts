@@ -63,6 +63,7 @@ export function mergeCollectedOrgs(
       if (!org.sources.some((s) => s.providerId === c.providerId && s.url === c.source.url)) {
         org.sources = [...org.sources, c.source];
       }
+      if (c.externalId) org.externalIds = { ...org.externalIds, [c.providerId]: c.externalId };
       org.lastVerified = dateOf(c.source.fetchedAt);
       if (org.verificationStatus === "needs_verification") org.verificationStatus = "listed_by_national_body";
       if (c.associationName) associationNames.set(org.id, { country: c.country, name: c.associationName });
@@ -85,6 +86,7 @@ export function mergeCollectedOrgs(
       emailPublic: c.emailPublic,
       phonePublic: c.phonePublic,
       nationalBodyListed: c.kind === "school" ? true : undefined,
+      externalIds: c.externalId ? { [c.providerId]: c.externalId } : undefined,
       sources: [c.source],
       lastVerified: dateOf(c.source.fetchedAt),
       verificationStatus: "listed_by_national_body",

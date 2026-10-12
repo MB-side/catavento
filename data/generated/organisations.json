@@ -22,9 +22,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=ACTHPA",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
@@ -33,7 +33,10 @@
     "slug": "act-hang-gliding-and-paragliding-association",
     "aliases": [
       "ACTHPA"
-    ]
+    ],
+    "externalIds": {
+      "safa": "ACTHPA"
+    }
   },
   {
     "legacyId": "SCH-001",
@@ -194,15 +197,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=AL",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:albany-hang-gliding-club",
     "slug": "albany-hang-gliding-club",
+    "externalIds": {
+      "safa": "AL"
+    },
     "siteIds": [],
     "stationIds": [],
     "regionalAssociationId": "org:au:hang-gliding-paragliding-association-of-western-australia"
@@ -256,15 +262,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=LB",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:blue-mountains-hang-gliding-club",
     "slug": "blue-mountains-hang-gliding-club",
+    "externalIds": {
+      "safa": "LB"
+    },
     "siteIds": [],
     "stationIds": [],
     "regionalAssociationId": "org:au:nsw-hang-gliding-and-paragliding-association"
@@ -319,17 +328,21 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=CN",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:cairns-hang-gliding-club",
     "slug": "cairns-hang-gliding-club",
+    "externalIds": {
+      "safa": "CN"
+    },
     "siteIds": [],
-    "stationIds": []
+    "stationIds": [],
+    "regionalAssociationId": "org:au:north-queensland-regional-association"
   },
   {
     "legacyId": "CLB-004",
@@ -352,15 +365,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=CG",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:canungra-hang-gliding-club",
     "slug": "canungra-hang-gliding-club",
+    "externalIds": {
+      "safa": "CG"
+    },
     "siteIds": [
       "site:au:qld:beechmont-rosins-lookout",
       "site:au:qld:flying-fox",
@@ -379,13 +395,16 @@
     "regionCode": "AU-NSW",
     "website": "https://www.centralcoastskysurfers.com/",
     "emailPublic": "president@centralcoastskysurfers.com",
+    "externalIds": {
+      "safa": "CC"
+    },
     "sources": [
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=CC",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
@@ -446,15 +465,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=CB",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:cloudbase-paragliding-wa",
     "slug": "cloudbase-paragliding-wa",
+    "externalIds": {
+      "safa": "CB"
+    },
     "siteIds": [],
     "stationIds": [],
     "regionalAssociationId": "org:au:hang-gliding-paragliding-association-of-western-australia"
@@ -479,15 +501,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=DB",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:dalby-hang-gliding-club",
     "slug": "dalby-hang-gliding-club",
+    "externalIds": {
+      "safa": "DB"
+    },
     "siteIds": [],
     "stationIds": [],
     "regionalAssociationId": "org:au:queensland-sports-aviators"
@@ -541,17 +566,24 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=DS",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:dynasoarers-hang-gliding-club",
     "slug": "dynasoarers-hang-gliding-club",
+    "externalIds": {
+      "safa": "DS"
+    },
     "siteIds": [
-      "site:au:vic:portland"
+      "site:au:vic:bells-beach",
+      "site:au:vic:bells-beach-winkipop",
+      "site:au:vic:ocean-grove",
+      "site:au:vic:portland",
+      "site:au:vic:spion-kop-fairhaven-aireys-moggs"
     ],
     "stationIds": [],
     "regionalAssociationId": "org:au:victorian-hang-gliding-and-paragliding-association"
@@ -576,15 +608,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=FTC",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:flatlands-towing-club",
     "slug": "flatlands-towing-club",
+    "externalIds": {
+      "safa": "FTC"
+    },
     "siteIds": [],
     "stationIds": [],
     "regionalAssociationId": "org:au:nsw-hang-gliding-and-paragliding-association"
@@ -690,9 +725,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=HGAWA",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
@@ -701,7 +736,10 @@
     "slug": "hang-gliding-paragliding-association-of-western-australia",
     "aliases": [
       "Hang Gliding & Paragliding Association of Western Australia"
-    ]
+    ],
+    "externalIds": {
+      "safa": "HGAWA"
+    }
   },
   {
     "legacyId": "SCH-010",
@@ -875,15 +913,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=IL",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:illawarra-gliding-club",
     "slug": "illawarra-gliding-club",
+    "externalIds": {
+      "safa": "IL"
+    },
     "siteIds": [],
     "stationIds": [],
     "regionalAssociationId": "org:au:nsw-hang-gliding-and-paragliding-association"
@@ -953,18 +994,23 @@
     "country": "AU",
     "regionCode": "AU-NSW",
     "website": "https://www.mss.org.au/",
+    "externalIds": {
+      "safa": "TM"
+    },
     "sources": [
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=TM",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
-    "siteIds": [],
+    "siteIds": [
+      "site:au:nsw:manilla-mt-borah"
+    ],
     "stationIds": [],
     "regionalAssociationId": "org:au:nsw-hang-gliding-and-paragliding-association"
   },
@@ -989,15 +1035,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=MH",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:melbourne-hang-gliding-club",
     "slug": "melbourne-hang-gliding-club",
+    "externalIds": {
+      "safa": "MH"
+    },
     "siteIds": [],
     "stationIds": [],
     "regionalAssociationId": "org:au:victorian-hang-gliding-and-paragliding-association"
@@ -1039,13 +1088,16 @@
     "country": "AU",
     "regionCode": "AU-NSW",
     "website": "https://mncf.tidyhq.com/",
+    "externalIds": {
+      "safa": "MN"
+    },
     "sources": [
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=MN",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
@@ -1120,15 +1172,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=NC",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:newcastle-hang-gliding-club",
     "slug": "newcastle-hang-gliding-club",
+    "externalIds": {
+      "safa": "NC"
+    },
     "siteIds": [],
     "stationIds": [],
     "regionalAssociationId": "org:au:nsw-hang-gliding-and-paragliding-association"
@@ -1155,15 +1210,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=NSWPC",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:newcastle-paragliding-club",
     "slug": "newcastle-paragliding-club",
+    "externalIds": {
+      "safa": "NSWPC"
+    },
     "siteIds": [],
     "stationIds": [],
     "regionalAssociationId": "org:au:nsw-hang-gliding-and-paragliding-association"
@@ -1190,57 +1248,31 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=NV",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:north-east-victoria-hang-gliding-club",
     "slug": "north-east-victoria-hang-gliding-club",
+    "externalIds": {
+      "safa": "NV"
+    },
     "siteIds": [
+      "site:au:vic:gundowring-savhill",
       "site:au:vic:mannys",
       "site:au:vic:mt-buffalo-reeds-lookout-paraglider-launch",
       "site:au:vic:mt-buffalo-the-gorge-hg-ramp",
+      "site:au:vic:mt-emu",
       "site:au:vic:murmungee",
-      "site:au:vic:mystic"
+      "site:au:vic:mystic",
+      "site:au:vic:tawonga-gap",
+      "site:au:vic:the-pines-buckland-ridge"
     ],
     "stationIds": [],
     "regionalAssociationId": "org:au:victorian-hang-gliding-and-paragliding-association"
-  },
-  {
-    "legacyId": "CLB-014",
-    "kind": "club",
-    "name": "North Queensland Hang Gliding Association",
-    "disciplines": [
-      "HG",
-      "PG"
-    ],
-    "country": "AU",
-    "regionCode": "AU-QLD",
-    "website": "https://www.nthqldregionalassociation.com/",
-    "sources": [
-      {
-        "providerId": "safa",
-        "url": "https://safa.asn.au/local-clubs/",
-        "fetchedAt": "2026-10-08",
-        "licence": "facts"
-      },
-      {
-        "providerId": "safa",
-        "url": "https://safa.asn.au/find-a-club/club/?id=NQLD",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
-        "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
-      }
-    ],
-    "lastVerified": "2026-10-12",
-    "verificationStatus": "listed_by_national_body",
-    "id": "org:au:north-queensland-hang-gliding-association",
-    "slug": "north-queensland-hang-gliding-association",
-    "siteIds": [],
-    "stationIds": []
   },
   {
     "legacyId": "REG-003",
@@ -1260,12 +1292,34 @@
         "url": "https://siteguide.org.au/About",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/local-clubs/",
+        "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      },
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/find-a-club/club/?id=NQLD",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "licence": "facts",
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
-    "lastVerified": "2026-10-08",
+    "lastVerified": "2026-10-12",
     "verificationStatus": "verified_public_source",
+    "additionalKinds": [
+      "club"
+    ],
+    "aliases": [
+      "North Queensland Hang Gliding Association"
+    ],
     "id": "org:au:north-queensland-regional-association",
-    "slug": "north-queensland-regional-association"
+    "slug": "north-queensland-regional-association",
+    "externalIds": {
+      "safa": "NQLD"
+    }
   },
   {
     "legacyId": "SCH-018",
@@ -1318,15 +1372,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=BB",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:northern-rivers-hang-gliding-and-paragliding-club",
     "slug": "northern-rivers-hang-gliding-and-paragliding-club",
+    "externalIds": {
+      "safa": "BB"
+    },
     "siteIds": [],
     "stationIds": [],
     "regionalAssociationId": "org:au:nsw-hang-gliding-and-paragliding-association"
@@ -1354,9 +1411,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=NSWHPA",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
@@ -1365,7 +1422,10 @@
     "slug": "nsw-hang-gliding-and-paragliding-association",
     "aliases": [
       "New South Wales Hang Gliding and Paragliding Association Inc."
-    ]
+    ],
+    "externalIds": {
+      "safa": "NSWHPA"
+    }
   },
   {
     "legacyId": "SCH-101",
@@ -1415,15 +1475,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=PFI",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:paradise-flyers-qld",
     "slug": "paradise-flyers-qld",
+    "externalIds": {
+      "safa": "PFI"
+    },
     "siteIds": [],
     "stationIds": [],
     "regionalAssociationId": "org:au:queensland-sports-aviators"
@@ -1667,9 +1730,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SEQLD",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
@@ -1678,7 +1741,10 @@
     "slug": "queensland-sports-aviators",
     "aliases": [
       "Queensland Sports Aviators Inc."
-    ]
+    ],
+    "externalIds": {
+      "safa": "SEQLD"
+    }
   },
   {
     "legacyId": "GOV-002",
@@ -1839,15 +1905,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=WSP",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:sky-pirates-paramotoring-club",
     "slug": "sky-pirates-paramotoring-club",
+    "externalIds": {
+      "safa": "WSP"
+    },
     "siteIds": [],
     "stationIds": [],
     "regionalAssociationId": "org:au:hang-gliding-paragliding-association-of-western-australia"
@@ -1874,15 +1943,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SK",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:skyhigh-paragliding-club",
     "slug": "skyhigh-paragliding-club",
+    "externalIds": {
+      "safa": "SK"
+    },
     "siteIds": [],
     "stationIds": [],
     "regionalAssociationId": "org:au:victorian-hang-gliding-and-paragliding-association"
@@ -1998,9 +2070,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SAHPGA",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
@@ -2009,7 +2081,10 @@
     "slug": "south-australian-hang-gliding-paragliding-association",
     "aliases": [
       "South Australian Hang Gliding & Paragliding Association (Inc)"
-    ]
+    ],
+    "externalIds": {
+      "safa": "SAHPGA"
+    }
   },
   {
     "legacyId": "CLB-019",
@@ -2031,15 +2106,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SWAir",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:south-west-airsports",
     "slug": "south-west-airsports",
+    "externalIds": {
+      "safa": "SWAir"
+    },
     "siteIds": [],
     "stationIds": [],
     "regionalAssociationId": "org:au:hang-gliding-paragliding-association-of-western-australia"
@@ -2064,15 +2142,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=VT",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:southern-microlight-club",
     "slug": "southern-microlight-club",
+    "externalIds": {
+      "safa": "VT"
+    },
     "siteIds": [],
     "stationIds": [],
     "regionalAssociationId": "org:au:victorian-hang-gliding-and-paragliding-association"
@@ -2130,9 +2211,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SP",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
@@ -2142,7 +2223,11 @@
     "aliases": [
       "FlyStanwell Inc"
     ],
+    "externalIds": {
+      "safa": "SP"
+    },
     "siteIds": [
+      "site:au:nsw:hill-60",
       "site:au:nsw:stanwell-park-bald-hill"
     ],
     "stationIds": [
@@ -2172,20 +2257,24 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SCFFA",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:sunshine-coast-free-flyers-association",
     "slug": "sunshine-coast-free-flyers-association",
+    "externalIds": {
+      "safa": "SCFFA"
+    },
     "siteIds": [
       "site:au:qld:buchys-at-gerrards-lookout",
       "site:au:qld:mt-widgee",
       "site:au:qld:point-cartwright",
       "site:au:qld:rainbow-beach-carlo-sand-blow",
+      "site:au:qld:sunrise-beach",
       "site:au:qld:teewah-beach"
     ],
     "stationIds": [],
@@ -2227,13 +2316,16 @@
     "disciplines": [],
     "country": "AU",
     "regionCode": "AU-QLD",
+    "externalIds": {
+      "safa": "STF"
+    },
     "sources": [
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=STF",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
@@ -2287,15 +2379,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SH",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:sydney-hang-gliding-club",
     "slug": "sydney-hang-gliding-club",
+    "externalIds": {
+      "safa": "SH"
+    },
     "siteIds": [],
     "stationIds": [],
     "regionalAssociationId": "org:au:nsw-hang-gliding-and-paragliding-association"
@@ -2374,9 +2469,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=NB",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
@@ -2386,7 +2481,17 @@
     "aliases": [
       "Sydney Paragliding and Hang Gliding Club"
     ],
-    "siteIds": [],
+    "externalIds": {
+      "safa": "NB"
+    },
+    "siteIds": [
+      "site:au:nsw:bungan",
+      "site:au:nsw:cooks-terrace",
+      "site:au:nsw:mona-vale",
+      "site:au:nsw:newport",
+      "site:au:nsw:turimetta",
+      "site:au:nsw:warriewood"
+    ],
     "stationIds": [
       "station:club-stations:wind-flysydney-com-au"
     ],
@@ -2414,9 +2519,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=THPA",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
@@ -2425,7 +2530,10 @@
     "slug": "tasmanian-hang-gliding-and-paragliding-association",
     "aliases": [
       "Tasmanian Hang Gliding & Paragliding Association"
-    ]
+    ],
+    "externalIds": {
+      "safa": "THPA"
+    }
   },
   {
     "legacyId": "CLB-025",
@@ -2448,15 +2556,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=PC",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:the-pico-club",
     "slug": "the-pico-club",
+    "externalIds": {
+      "safa": "PC"
+    },
     "siteIds": [],
     "stationIds": [],
     "regionalAssociationId": "org:au:nsw-hang-gliding-and-paragliding-association"
@@ -2539,13 +2650,16 @@
     "disciplines": [],
     "country": "AU",
     "regionCode": "AU-VIC",
+    "externalIds": {
+      "safa": "UMFFI"
+    },
     "sources": [
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=UMFFI",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
@@ -2577,9 +2691,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=VHPA",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
@@ -2588,7 +2702,10 @@
     "slug": "victorian-hang-gliding-and-paragliding-association",
     "aliases": [
       "Victorian HG and PG Association"
-    ]
+    ],
+    "externalIds": {
+      "safa": "VHPA"
+    }
   },
   {
     "legacyId": "CLB-026",
@@ -2610,15 +2727,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=HF",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:wa-hill-flyers-club",
     "slug": "wa-hill-flyers-club",
+    "externalIds": {
+      "safa": "HF"
+    },
     "siteIds": [],
     "stationIds": [],
     "regionalAssociationId": "org:au:hang-gliding-paragliding-association-of-western-australia"
@@ -2669,15 +2789,18 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=WV",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:western-victorian-hang-gliding-club",
     "slug": "western-victorian-hang-gliding-club",
+    "externalIds": {
+      "safa": "WV"
+    },
     "siteIds": [],
     "stationIds": [],
     "regionalAssociationId": "org:au:victorian-hang-gliding-and-paragliding-association"
@@ -2691,13 +2814,16 @@
     "country": "AU",
     "regionCode": "AU-QLD",
     "website": "https://wickedwings.com.au/",
+    "externalIds": {
+      "safa": "WW"
+    },
     "sources": [
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=WW",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     ],
     "lastVerified": "2026-10-12",

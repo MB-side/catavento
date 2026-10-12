@@ -1,7 +1,7 @@
 {
   "providerId": "safa",
-  "fetchedAt": "2026-10-12T05:19:06.992Z",
-  "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046",
+  "fetchedAt": "2026-10-12T08:34:19.004Z",
+  "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9",
   "orgs": [
     {
       "id": "safa:club:ACTHPA",
@@ -13,12 +13,13 @@
       "website": "https://acthpa.org/",
       "emailPublic": "office@acthpa.org",
       "disciplines": [],
+      "externalId": "ACTHPA",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=ACTHPA",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -30,12 +31,13 @@
       "regionCode": "AU-WA",
       "disciplines": [],
       "associationName": "Hang Gliding & Paragliding Association of Western Australia",
+      "externalId": "AL",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=AL",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -48,12 +50,13 @@
       "website": "https://www.flynr.org/",
       "disciplines": [],
       "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "externalId": "BB",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=BB",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -67,12 +70,13 @@
       "emailPublic": "info@cloudbasewa.club",
       "disciplines": [],
       "associationName": "Hang Gliding & Paragliding Association of Western Australia",
+      "externalId": "CB",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=CB",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -86,12 +90,13 @@
       "emailPublic": "president@centralcoastskysurfers.com",
       "disciplines": [],
       "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "externalId": "CC",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=CC",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -104,12 +109,13 @@
       "website": "https://www.flycanungra.com.au/",
       "disciplines": [],
       "associationName": "Queensland Sports Aviators Inc.",
+      "externalId": "CG",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=CG",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -123,12 +129,13 @@
       "emailPublic": "flying@cairnshangglidingclub.org",
       "disciplines": [],
       "associationName": "North Queensland Hang Gliding Association",
+      "externalId": "CN",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=CN",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -140,12 +147,13 @@
       "regionCode": "AU-QLD",
       "disciplines": [],
       "associationName": "Queensland Sports Aviators Inc.",
+      "externalId": "DB",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=DB",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -158,12 +166,13 @@
       "website": "https://www.dynasoarers.vhpa.org.au/",
       "disciplines": [],
       "associationName": "Victorian HG and PG Association",
+      "externalId": "DS",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=DS",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -175,12 +184,13 @@
       "regionCode": "AU-ACT",
       "disciplines": [],
       "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "externalId": "FTC",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=FTC",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -192,12 +202,13 @@
       "regionCode": "AU-WA",
       "disciplines": [],
       "associationName": "Hang Gliding & Paragliding Association of Western Australia",
+      "externalId": "HF",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=HF",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -209,12 +220,13 @@
       "regionCode": "AU-WA",
       "website": "https://www.flywa.com.au/",
       "disciplines": [],
+      "externalId": "HGAWA",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=HGAWA",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -227,12 +239,13 @@
       "website": "https://www.nswhpa.org/illawarra-clubs/",
       "disciplines": [],
       "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "externalId": "IL",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=IL",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -245,12 +258,13 @@
       "website": "https://bluemountainssoaring.club/",
       "disciplines": [],
       "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "externalId": "LB",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=LB",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -263,12 +277,13 @@
       "website": "https://mhgc.vhpa.org.au/",
       "disciplines": [],
       "associationName": "Victorian HG and PG Association",
+      "externalId": "MH",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=MH",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -281,12 +296,13 @@
       "website": "https://mncf.tidyhq.com/",
       "disciplines": [],
       "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "externalId": "MN",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=MN",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -300,12 +316,13 @@
       "emailPublic": "president@flysydney.com.au",
       "disciplines": [],
       "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "externalId": "NB",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=NB",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -318,12 +335,13 @@
       "website": "https://www.nhgc.asn.au/",
       "disciplines": [],
       "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "externalId": "NC",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=NC",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -335,12 +353,13 @@
       "regionCode": "AU-QLD",
       "website": "https://www.nthqldregionalassociation.com/",
       "disciplines": [],
+      "externalId": "NQLD",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=NQLD",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -353,12 +372,13 @@
       "website": "https://www.nswhpa.org/",
       "emailPublic": "exec@nswhpa.org",
       "disciplines": [],
+      "externalId": "NSWHPA",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=NSWHPA",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -372,12 +392,13 @@
       "emailPublic": "secretary.npc@mail.tidyhq.com",
       "disciplines": [],
       "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "externalId": "NSWPC",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=NSWPC",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -391,12 +412,13 @@
       "emailPublic": "president@nevhgc.net",
       "disciplines": [],
       "associationName": "Victorian HG and PG Association",
+      "externalId": "NV",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=NV",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -409,12 +431,13 @@
       "website": "https://www.thepico.com.au/",
       "disciplines": [],
       "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "externalId": "PC",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=PC",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -427,12 +450,13 @@
       "website": "https://www.paradiseflyers.org.au/",
       "disciplines": [],
       "associationName": "Queensland Sports Aviators Inc.",
+      "externalId": "PFI",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=PFI",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -444,12 +468,13 @@
       "regionCode": "AU-SA",
       "website": "https://sites.google.com/site/sahpgahome/",
       "disciplines": [],
+      "externalId": "SAHPGA",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SAHPGA",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -463,12 +488,13 @@
       "emailPublic": "executive@freeflyers.com.au",
       "disciplines": [],
       "associationName": "Queensland Sports Aviators Inc.",
+      "externalId": "SCFFA",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SCFFA",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -481,12 +507,13 @@
       "website": "https://www.qsa.asn.au/",
       "emailPublic": "president@qsa.asn.au",
       "disciplines": [],
+      "externalId": "SEQLD",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SEQLD",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -498,12 +525,13 @@
       "regionCode": "AU-NSW",
       "disciplines": [],
       "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "externalId": "SH",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SH",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -517,12 +545,13 @@
       "emailPublic": "web@skyhighparagliding.org.au",
       "disciplines": [],
       "associationName": "Victorian HG and PG Association",
+      "externalId": "SK",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SK",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -536,12 +565,13 @@
       "emailPublic": "committee@flystanwell.com.au",
       "disciplines": [],
       "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "externalId": "SP",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SP",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -553,12 +583,13 @@
       "regionCode": "AU-QLD",
       "disciplines": [],
       "associationName": "Queensland Sports Aviators Inc.",
+      "externalId": "STF",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=STF",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -570,12 +601,13 @@
       "regionCode": "AU-WA",
       "disciplines": [],
       "associationName": "Hang Gliding & Paragliding Association of Western Australia",
+      "externalId": "SWAir",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SWAir",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -587,12 +619,13 @@
       "regionCode": "AU-TAS",
       "website": "https://www.thpa.org.au/",
       "disciplines": [],
+      "externalId": "THPA",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=THPA",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -605,12 +638,13 @@
       "website": "https://www.mss.org.au/",
       "disciplines": [],
       "associationName": "New South Wales Hang Gliding and Paragliding Association Inc.",
+      "externalId": "TM",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=TM",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -622,12 +656,13 @@
       "regionCode": "AU-VIC",
       "disciplines": [],
       "associationName": "Victorian HG and PG Association",
+      "externalId": "UMFFI",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=UMFFI",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -640,12 +675,13 @@
       "website": "https://www.vhpa.org.au/",
       "emailPublic": "secretary@vhpa.org.au",
       "disciplines": [],
+      "externalId": "VHPA",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=VHPA",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -658,12 +694,13 @@
       "website": "https://www.southernmicrolightclub.com.au/",
       "disciplines": [],
       "associationName": "Victorian HG and PG Association",
+      "externalId": "VT",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=VT",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -676,12 +713,13 @@
       "website": "https://m.facebook.com/groups/WAskypirates/",
       "disciplines": [],
       "associationName": "Hang Gliding & Paragliding Association of Western Australia",
+      "externalId": "WSP",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=WSP",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -694,12 +732,13 @@
       "website": "https://www.wvhgc.tidyhq.com/",
       "disciplines": [],
       "associationName": "Victorian HG and PG Association",
+      "externalId": "WV",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=WV",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -712,12 +751,13 @@
       "website": "https://wickedwings.com.au/",
       "disciplines": [],
       "associationName": "Queensland Sports Aviators Inc.",
+      "externalId": "WW",
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=WW",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -736,9 +776,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -757,9 +797,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -779,9 +819,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -800,9 +840,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -821,9 +861,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -842,9 +882,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -862,9 +902,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -883,9 +923,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -904,9 +944,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -925,9 +965,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -946,9 +986,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -967,9 +1007,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -988,9 +1028,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -1009,9 +1049,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -1029,9 +1069,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -1050,9 +1090,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -1071,9 +1111,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -1092,9 +1132,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -1113,9 +1153,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -1134,9 +1174,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -1155,9 +1195,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -1176,9 +1216,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -1197,9 +1237,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -1217,9 +1257,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -1238,9 +1278,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -1259,9 +1299,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -1280,9 +1320,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -1301,9 +1341,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -1322,9 +1362,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -1343,9 +1383,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     },
     {
@@ -1364,9 +1404,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-10-12T05:19:06.993Z",
+        "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
-        "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
       }
     }
   ],
@@ -1387,9 +1427,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/event/canungra-sports-cup/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1408,9 +1448,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/event/50th-anniversary-of-free-flight-stanwell-park/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1428,9 +1468,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/event/fly-from-everest-end-polio-now-movie-event/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     }
@@ -1447,9 +1487,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1464,9 +1504,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1481,9 +1521,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1498,9 +1538,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1515,9 +1555,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1532,9 +1572,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1549,9 +1589,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1566,9 +1606,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1583,9 +1623,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1600,9 +1640,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1617,9 +1657,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1634,9 +1674,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1651,9 +1691,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1668,9 +1708,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1685,9 +1725,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1702,9 +1742,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1719,9 +1759,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1736,9 +1776,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1753,9 +1793,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1770,9 +1810,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1787,9 +1827,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1804,9 +1844,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1821,9 +1861,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1838,9 +1878,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1855,9 +1895,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1872,9 +1912,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1889,9 +1929,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1906,9 +1946,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1923,9 +1963,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1940,9 +1980,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1957,9 +1997,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1974,9 +2014,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -1991,9 +2031,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -2008,9 +2048,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -2025,9 +2065,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -2042,9 +2082,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     },
@@ -2059,9 +2099,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-10-12T05:19:06.993Z",
+          "fetchedAt": "2026-10-12T08:34:19.005Z",
           "licence": "facts",
-          "contentHash": "ca5d96e59c277d2d6a0103e1b8803315e8d50ff02aca2536199726e2b8839046"
+          "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
         }
       ]
     }

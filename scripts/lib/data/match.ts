@@ -29,7 +29,13 @@ export function normaliseName(name: string): string {
 
 export type Aliases = Record<string, Record<string, string> | null>;
 
-export type MatchRule = "alias" | "website" | "name";
+export type MatchRule = "code" | "alias" | "website" | "name";
+
+/** Another source's code for an organisation, e.g. SAFA's club code "CG" (D60). */
+export interface ClubRef {
+  providerId: string;
+  id: string;
+}
 
 /** Looks organisations up by alias, website or name within one country. */
 export class OrgMatcher {
@@ -37,6 +43,7 @@ export class OrgMatcher {
   private byUrl = new Map<string, string[]>();
   private byName = new Map<string, string[]>();
   private byPart = new Map<string, string[]>();
+  private byCode = new Map<string, string>();
 
   constructor(
     orgs: Organisation[],
@@ -54,6 +61,9 @@ export class OrgMatcher {
     };
     const url = normaliseUrl(o.website);
     if (url) push(this.byUrl, `${o.country}|${url}`);
+    for (const [provider, code] of Object.entries(o.externalIds ?? {})) {
+      this.byCode.set(`${provider}|${code}`, o.id);
+    }
     for (const name of [o.name, ...(o.aliases ?? [])]) {
       push(this.byName, `${o.country}|${normaliseName(name)}`);
       // "Queensland Sports Aviators (QSA)" is also found as "QSA" and as "Queensland Sports Aviators".
@@ -68,7 +78,10 @@ export class OrgMatcher {
     country: string,
     name: string | undefined,
     url?: string,
+    ref?: ClubRef,
   ): { org: Organisation; rule: MatchRule } | undefined {
+    const coded = ref ? this.byId.get(this.byCode.get(`${ref.providerId}|${ref.id}`) ?? "") : undefined;
+    if (coded && coded.country === country) return { org: coded, rule: "code" };
     const urlKey = normaliseUrl(url);
     const aliases = this.aliases[country] ?? {};
     const aliasRef = (name ? aliases[name.trim()] : undefined) ?? (urlKey ? aliases[urlKey] : undefined);
