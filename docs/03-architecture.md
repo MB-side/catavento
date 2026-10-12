@@ -1,6 +1,6 @@
 # 03 · Architecture (Iteration 1)
 
-**Status:** current · **Last updated:** 9 Oct 2026
+**Status:** current · **Last updated:** 12 Oct 2026
 
 ## 1. Overview
 
@@ -23,7 +23,7 @@
 ```
 
 - **No server.** Everything a visitor sees is pre-rendered HTML plus small client-side features.
-- **Nightly ingest** (GitHub Actions) refreshes public data, validates it, writes JSON, commits if changed, and redeploys.
+- **Scheduled ingest** (GitHub Actions, a daily check-in that runs each source only when its own schedule says it is due; D49) refreshes public data, validates it, writes JSON, commits if changed, and redeploys.
 - **Iteration 2** reuses the same Next.js app on Vercel with Supabase (§9).
 
 ## 2. Stack
@@ -105,7 +105,7 @@ Use current stable versions at the time of building; record versions in `package
 |---|---|---|
 | `ci.yml` | Pull requests and pushes to non-main branches | install → lint → typecheck → unit tests → build → Playwright against the static output → link check |
 | `deploy.yml` | Push to `main`, manual dispatch, and **`workflow_call`** | install → build → `actions/upload-pages-artifact` → `actions/deploy-pages` |
-| `ingest.yml` | Nightly schedule (around 03:00 Australian Eastern time; cron in UTC), manual dispatch | install → run all enabled providers → `build-data` → if `data/` changed: commit with a bot identity, then **call `deploy.yml`** as a reusable workflow |
+| `ingest.yml` | Daily check-in (02:30 Australian Eastern standard time; cron in UTC), manual dispatch (optionally one provider, optionally forced) | install → run the providers that are due → `build-data` → if `data/` changed: commit with a bot identity, then **call `deploy.yml`** as a reusable workflow |
 
 **Gotcha:** commits pushed with the default `GITHUB_TOKEN` do not trigger other workflows, so `ingest.yml` must call `deploy.yml` directly (reusable workflow) rather than relying on the push.
 

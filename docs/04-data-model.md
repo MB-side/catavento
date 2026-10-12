@@ -1,6 +1,6 @@
 # 04 · Data Model (Iteration 1)
 
-**Status:** current · **Last updated:** 9 Oct 2026
+**Status:** current · **Last updated:** 12 Oct 2026
 
 All types live in `lib/types.ts` with matching Zod schemas in `lib/schemas.ts`. The app reads only `data/generated/*.json` through `lib/data`.
 
@@ -42,6 +42,7 @@ interface Provider {
   uses: string; method: string; schedule: string; countries: string[];   // shown on /sources (D41)
   permissionStatus: "not_requested" | "requested" | "granted_link" | "granted_embed" | "granted_feed" | "refused" | "withdrawn";
   enabled: boolean; contact?: string; notes?: string;
+  collect?: { everyDays: number; paused?: boolean; pausedReason?: string };   // automatic collection schedule (D49)
 }
 
 type OrgKind =
@@ -85,7 +86,8 @@ interface Site {
   windRangeLabel: string;                      // e.g. "NNE–ENE", "All"
   ratingSystem?: string; ippiLevel?: number;   // e.g. "SAFA", "NZHGPA"; IPPI only where published
   status: "open" | "closed" | "restricted" | "unknown";
-  stewardOrgId?: string; stewardRole: StewardRole; stewardNote?: string;
+  stewardOrgId?: string; stewardRole: StewardRole; stewardNote?: string;   // set only from a steward source, never from a site guide's contact alone (D47)
+  listedContact?: ListedContact;               // the contact a site guide lists: a pointer, not proof of stewardship (D47)
   alsoAdministeredBy?: { orgId: string; note?: string }[];   // e.g. the club that publishes a flight park's guide
   siteAccessNote?: string;                     // passes, fees or membership, only if published
   officialGuideUrl?: string;                   // Site Guide page or club guide
@@ -97,6 +99,13 @@ interface Site {
   layer: "ansg" | "pge" | "manual";            // licence layer; "manual" = compiled by hand from a cited source
   sources: SourceRef[];
   hidden?: boolean;
+}
+
+interface ListedContact {
+  name: string;                                // the organisation's own name once linked; never a person's name (D48)
+  url?: string;
+  orgId?: string;                              // linked only on an exact match (docs/05 §5.4)
+  providerId: string;
 }
 
 interface Launch {
@@ -145,6 +154,20 @@ interface Resource {                           // tools and references shown on 
   id: string; legacyId?: string; name: string; url: string; category: string; summary?: string; providerId?: string; countries?: CountryCode[];
 }
 
+type RunStatus = "ok" | "warning" | "blocked" | "failed" | "unchanged";
+
+interface ProviderRun {                        // one provider's latest collection run, shown on /status
+  status: RunStatus; startedAt: string; finishedAt: string;
+  recordsFound: number; recordsChanged: number; warnings: string[];
+  guardDecision?: "accepted" | "accepted_first_run" | "blocked_drop" | "blocked_invalid";
+  lastSuccessAt?: string; contentHash?: string;
+}
+
+interface BuildReport {                        // data/generated/_report.json
+  build: { counts: Record<string, number>; warnings: { code: string; message: string; recordId?: string }[] };
+  providers: Record<string, ProviderRun>;
+}
+
 interface Country {                            // loaded from data/manual/countries.yaml
   code: CountryCode; name: string; enabled: boolean; default?: boolean;
   regionLabel: string; regions: RegionCode[]; timezones: string[]; currency: string;
@@ -168,8 +191,10 @@ interface Country {                            // loaded from data/manual/countr
 | `data/generated/brands.json` | `Brand[]` |
 | `data/generated/offerings.json` | `Offering[]` |
 | `data/generated/resources.json` | `Resource[]` |
-| `data/generated/_report.json` | Last ingest/build report (per provider: status, counts, changes, warnings, guard decisions, timings) |
-| `data/ingest/<provider>.json` | Normalised output of each provider's last successful run |
+| `data/generated/_report.json` | `BuildReport`: build counts and warnings, plus each provider's latest run |
+| `data/ingest/<provider>.json` | Normalised output of each provider's last accepted run (with `fetchedAt` and `contentHash`) |
+| `data/ingest/_runs.json` | `ProviderRun` per provider: the record the schedule and `/status` read |
+| `data/boundaries/regions-au-nz.geojson` | Natural Earth state and region boundaries for offline region lookup (D51) |
 
 ## 4. Manual curation files (`data/manual/`)
 
@@ -179,7 +204,7 @@ All optional; create them as needed. Each entry may carry a `note` and `source` 
 |---|---|---|
 | `providers.yaml` | Provider registry (seeded from `docs/05` §4) | `- id: holfuy  tier: red  enabled: true ...` |
 | `overrides.yaml` | Set or hide fields on any record; pin IDs | `site:au:nsw:long-reef-ne: { status: open }` |
-| `club-aliases.yaml` | Map source spellings to one club | `AU: { "Sydney Paragliding & Hang Gliding Club": org:au:sydney-paragliding-hang-gliding-club }` |
+| `club-aliases.yaml` | Map a source's spelling, or a web address without `https://www.`, to one organisation in that country (D48) | `AU: { "SPHGC": CLB-024, "flycanungra.com.au": CLB-004 }` |
 | `countries.yaml` | Country configuration (provided) | AU and NZ entries |
 | `nz-sample-sites.yaml` | Iteration 1 NZ sample sites with stewards (provided) | |
 | `site-stewards.yaml` | Force a site's steward and role where parsing can't | `site:au:nsw:manilla-mt-borah: { org: org:au:manilla-sky-sailors, role: club }` |

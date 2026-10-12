@@ -60,7 +60,7 @@ Node 24 and pnpm 12. On the founder's Mac they live in `~/.local` (system Node i
 | Link check (against the build) | `pnpm check:links` |
 | Lint, format and typecheck | `pnpm lint && pnpm format:check && pnpm typecheck` |
 
-Workflows: `ci.yml` (checks every PR), `deploy.yml` (publishes `main`), `ingest.yml` (nightly data refresh; calls `deploy.yml`).
+Workflows: `ci.yml` (checks every PR), `deploy.yml` (publishes `main`), `ingest.yml` (daily check-in that runs each source when due; calls `deploy.yml`).
 
 ## Repo map
 

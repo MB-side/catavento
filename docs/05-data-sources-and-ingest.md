@@ -1,6 +1,6 @@
 # 05 · Data Sources and Ingest
 
-**Status:** current · **Last updated:** 9 Oct 2026
+**Status:** current · **Last updated:** 12 Oct 2026
 
 The hub aggregates publicly available information **with attribution**, and upgrades to official feeds and permissions as relationships form. This document is the single source of truth for which sources are used, how, and how they are credited.
 
@@ -12,7 +12,7 @@ The hub aggregates publicly available information **with attribution**, and upgr
 4. **Never scrape red-tier sources.** Link to them only.
 5. **Respect restricted information** (approximate or members-only coordinates, logged-in areas).
 6. **Make removal easy.** Per-provider kill switch, `/takedown` page, action within 24 hours.
-7. **Tell sources what we use** in launch week and offer adjustments (`docs/09` §5).
+7. **Tell sources what we use** and offer adjustments: amber sources before automatic collection starts, the rest in launch week (`docs/09` §5).
 
 ## 2. Tiers
 
@@ -25,12 +25,13 @@ The hub aggregates publicly available information **with attribution**, and upgr
 ## 3. Fetcher rules (implemented once in `ingest/core/`)
 
 - Check and obey robots.txt for every host before fetching.
-- User agent: `CataventoBot/0.1 (+<siteUrl>/bot; <contactEmail>)`.
+- User agent: `CataventoBot/0.1 (+<siteUrl>/bot/; <contactEmail>)`, defined once in `lib/bot.ts`.
 - **One request at a time per host**, minimum 3 seconds apart (configurable per provider, never lower).
 - 30-second timeout, 2 retries with exponential backoff, then record a failure.
-- Conditional requests (`If-None-Match`, `If-Modified-Since`) and a raw-response cache in `data/cache/` (gitignored).
+- Conditional requests (`If-None-Match`, `If-Modified-Since`) where the server supports them; otherwise compare a fingerprint (`contentHash`) of the download with the last run and change nothing if it matches.
+- **Schedules are per provider, not nightly (D49):** each collected provider has `collect.everyDays` in `providers.yaml` and may be `paused` with a reason. `ingest.yml` wakes daily and runs only what is due; paused providers never run on the schedule.
 - Never send cookies, never log in, never fetch URLs behind authentication.
-- **Change guard:** if a provider's record count drops by more than 20% versus its last successful run, or required fields are missing in more than 10% of records, keep the previous data, mark the provider `blocked` in `_report.json`, and continue with other providers.
+- **Change guard:** if a provider's record count drops by more than 20% versus its last successful run, or more than 10% of records are invalid (missing required fields or unreadable), keep the previous data, mark the provider `blocked` in `_report.json`, and continue with other providers.
 - Every parser has saved fixtures in `ingest/sources/<provider>/fixtures/` and tests; a parser change without passing fixtures fails CI.
 - Store `fetchedAt`, `url` and a `contentHash` for each record's source.
 
@@ -40,9 +41,9 @@ Every provider entry includes `countries: [..]` (e.g. `[AU]`, `[NZ]`, or `["*"]`
 
 | ID | Provider | Tier | Licence | What Iteration 1 uses | Method | Schedule |
 |---|---|---|---|---|---|---|
-| `safa` | Sports Aviation Federation of Australia | Green | facts | School directory, club directory and club detail pages, events, public safety and advisory notice titles | HTML scrape | Nightly |
-| `ansg` | Australian National Site Guide | Amber | facts | Site and launch names, coordinates (respecting precision), short fields (type, height, rating, conditions), administering club name, main landing name, linked weather-station URLs, status, page URL | Bulk export if available, otherwise polite HTML crawl of public site pages | Nightly |
-| `pge` | ParaglidingEarth | Green | cc-by-sa-3.0 / odbl-1.0 | AU: sites missing from the Site Guide only, as a separate "community data" layer. NZ: coordinates and wind directions for the sample sites | Official GeoJSON API (request access as their site asks) | Weekly |
+| `safa` | Sports Aviation Federation of Australia | Green | facts | School directory, club directory and club detail pages, events, public safety and advisory notice titles | HTML scrape | Weekly |
+| `ansg` | Australian National Site Guide | Amber | facts | Site and launch names, coordinates (respecting precision), short fields (type, height, rating, conditions), the contact listed for each site (D47), status, page URL | Its two public Google Earth files (D50) | Weekly |
+| `pge` | ParaglidingEarth | Green | cc-by-sa-3.0 / odbl-1.0 | AU: sites missing from the Site Guide only, as a separate "community data" layer. NZ: coordinates and wind directions for the sample sites | Official GeoJSON API (request access as their site asks) | Monthly |
 | `nzhgpa` | New Zealand Hang Gliding & Paragliding Association | Green | facts | NZ clubs and schools lists (names, regions, websites); national-body facts | Seed now; optional HTML scrape | Weekly |
 | `nz-club-guides` | NZ club site guides (e.g. Auckland club) | Amber | facts | Links only in Iteration 1 | Links | n/a |
 | `highside` | HighSide flight park | Amber | n/a | Link to passes page | Links | n/a |
@@ -54,7 +55,8 @@ Every provider entry includes `countries: [..]` (e.g. `[AU]`, `[NZ]`, or `["*"]`
 | `open-meteo` | Open-Meteo | Green (non-commercial tier) | cc-by-4.0 | Hourly forecast wind, fetched by the visitor's browser | Client-side API | On view |
 | `skysight`, `paraglidingmap` | SkySight, Paragliding Map | **Red** | proprietary | Links only | Links | n/a |
 | `xcontest` | XContest | Amber | proprietary | Links only (terms for showing flight data not yet checked) | Links | n/a |
-| `club-websites` | Individual club websites | Amber | facts | Notice and event headlines, dates and links where a simple public list exists (add per club, manually enabled) | HTML scrape or RSS | Nightly |
+| `club-websites` | Individual club websites | Amber | facts | Notice and event headlines, dates and links where a simple public list exists (add per club, manually enabled) | RSS, iCal or a simple public list | Twice weekly |
+| `naturalearth` | Natural Earth | Green | facts (public domain) | State and region boundaries, used offline to give each collected site its region (D51) | Downloaded once into `data/boundaries/` | When boundaries change |
 | `facebook` | Facebook groups/pages and messaging apps | **Red** | proprietary | Nothing | n/a | n/a |
 | `retail` | Retailer and manufacturer sites | Amber/Red | proprietary | Iteration 1: links and seed facts only. Product photos and descriptions never | Links | n/a |
 
@@ -89,7 +91,7 @@ Each attribution links to the provider's page for that record.
 ### 4.2 Source specifics
 
 - **SAFA:** school directory `https://safa.asn.au/learn-to-fly/flight-schools/`; club directory `https://safa.asn.au/local-clubs/` with detail pages at `/local-clubs/club/?id=<code>`; events `https://safa.asn.au/events`; resources and notices `https://safa.asn.au/pilot-tools/resources/`. The public site also has older copies under an `hgfa.asn.au` domain: **ignore those**.
-- **Site Guide:** site list at `https://siteguide.org.au/Sites`, details at `/Sites/Details/{Site Name}`; the About page lists state associations. First check the Downloads page for a bulk export and prefer it. A site contains launches; only launches carry coordinates. "Conditions" is prose (parse per §5). Many site pages link a weather station: capture those URLs as station links. Some sites publish deliberately approximate coordinates for members only: set `precision: "approximate"`.
+- **Site Guide:** read from its public Google Earth files `https://siteguide.org.au/Kml/Open` and `/Kml/Closed` (zipped despite their content type; allowed by robots.txt), not by visiting each site page (D50). Each placemark is a launch; its description holds the short fields and the site's page link (`/Sites/Details/{Site Name}`). Keep only fields of 80 characters or fewer; never copy descriptions. The server sends no "last changed" date, so the weekly run compares fingerprints. A site in both files counts as open. Landing names and station links appear only on site pages and are not collected. Some sites publish deliberately approximate coordinates for members only: set `precision: "approximate"`. The webmaster was sent a courtesy note on 2026-10-12.
 - **ParaglidingEarth:** GeoJSON endpoints include sites by country, by bounding box, around a point, and modified since a date. Use country (Australia) for the initial load and "modified since" afterwards.
 - **Where To Fly:** filters are encoded in the URL. The view for specific sites is `https://wheretofly.info/wtf.html?sites=<slug>+<slug>`. Slugs are not published; use `data/manual/wtf-slugs.yaml` and fall back to `https://wheretofly.info/` when unknown. Never scrape.
 - **NZHGPA:** about `https://nzhgpa.org.nz/about-us/`, clubs `https://nzhgpa.org.nz/local-clubs/`, schools `https://nzhgpa.org.nz/finding-a-school/`, membership `https://nzhgpa.org.nz/membership/`. Club officer names and phone numbers are published there; show them only as each club provides them (Iteration 2 club claims), not in Iteration 1.
@@ -106,6 +108,7 @@ Implemented in `lib/wind.ts`, shared by ingest and UI.
 - Commas or "and" separate multiple points or ranges.
 - Parenthetical notes such as "(best WNW)" are ignored for the range and kept in `conditionsText`.
 - "All", "Any" and "Various" mean every direction (`"all"`).
+- A sweep through three or more points ("SW-W-NW") follows the stated path. Speeds and launch notes ("HG < 15 knots", "PG") are stripped before reading. Anything still unclear (question marks, sentences, "none") is never guessed.
 - Unparseable text: `windRanges: []`, label "See official details", and a warning in `_report.json`.
 
 | Input | Expected |
@@ -130,7 +133,17 @@ Implemented in `lib/wind.ts`, shared by ingest and UI.
 
 ### 5.4 Club matching
 
-Normalise names (case, "&" vs "and", "Inc", punctuation), then resolve via `data/manual/club-aliases.yaml` **within the same country**. Unresolved club names from the Site Guide are listed in `_report.json` for manual mapping. Never guess a club link.
+Within the same country, a source's club or contact links to an organisation only on an exact match (D48), in this order: an entry in `data/manual/club-aliases.yaml` (a spelling or a web address); the same website as exactly one organisation; the organisation's full name, or the short name it gives in brackets, ignoring case and a trailing "Inc". Unresolved names are listed in `_report.json` for manual mapping. Never guess a club link.
+
+A linked contact is shown under the organisation's own name, so a person's name copied from a source is never shown. An unlinked contact with no link, or whose link is a weather page, is not shown.
+
+### 5.4a Listed contact and steward
+
+A site guide's contact is a pointer, not proof of who manages a site (D47). It is stored as `listedContact` and shown as "Contact listed in the Site Guide". `stewardOrgId` and `stewardRole` are set only when a second, independent source names the steward: the national body's or the club's own pages, or `data/manual/site-stewards.yaml`. Only then does a site show "Managed by".
+
+### 5.4b Regions for collected sites
+
+Each collected launch gets its state or region from Natural Earth boundaries stored in `data/boundaries/`, looked up offline; a coastal launch just outside every boundary takes the nearest region within 25 km (D51). Online reverse-geocoding is not used (Nominatim's robots.txt forbids it).
 
 ### 5.5 Stations for a site
 
@@ -138,4 +151,4 @@ Curated stations from `data/manual/site-stations.yaml` first, then station URLs 
 
 ## 6. Status report
 
-`_report.json` per provider: `status` (`ok`, `warning`, `blocked`, `failed`, `disabled`), `startedAt`, `finishedAt`, `recordsFound`, `recordsChanged`, `warnings[]`, `guardDecision`. Rendered at `/status`.
+`_report.json` per provider: `status` (`ok`, `warning`, `blocked`, `failed`, `unchanged`), `startedAt`, `finishedAt`, `recordsFound`, `recordsChanged`, `warnings[]`, `guardDecision`, `lastSuccessAt`, `contentHash`. `/status` renders it, together with each provider's schedule and whether it is paused (`docs/04` §2).
