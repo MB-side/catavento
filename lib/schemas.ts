@@ -14,6 +14,7 @@ import type {
   Site,
   Station,
   Brand,
+  ProviderRun,
 } from "./types";
 
 // ---------- shared pieces ----------
@@ -110,6 +111,13 @@ export const providerSchema = z.object({
   enabled: z.boolean(),
   contact: z.string().optional(),
   notes: z.string().optional(),
+  collect: z
+    .object({
+      everyDays: z.number().positive(),
+      paused: z.boolean().optional(),
+      pausedReason: z.string().optional(),
+    })
+    .optional(),
 }) satisfies z.ZodType<Provider>;
 
 const organisationShape = {
@@ -197,6 +205,14 @@ export const siteSchema = z.object({
   stewardOrgId: z.string().optional(),
   stewardRole: stewardRoleSchema,
   stewardNote: z.string().optional(),
+  listedContact: z
+    .object({
+      name: z.string().min(1),
+      url: httpUrl.optional(),
+      orgId: z.string().optional(),
+      providerId: z.string().min(1),
+    })
+    .optional(),
   alsoAdministeredBy: z
     .array(z.object({ orgId: z.string(), note: z.string().optional() }))
     .optional(),
@@ -396,6 +412,20 @@ export const countrySchema = z.object({
   }),
 }) satisfies z.ZodType<Country>;
 
+export const providerRunSchema = z.object({
+  status: z.enum(["ok", "warning", "blocked", "failed", "unchanged"]),
+  startedAt: z.iso.datetime({ offset: true }),
+  finishedAt: z.iso.datetime({ offset: true }),
+  recordsFound: z.number().int().min(0),
+  recordsChanged: z.number().int().min(0),
+  warnings: z.array(z.string()),
+  guardDecision: z
+    .enum(["accepted", "accepted_first_run", "blocked_drop", "blocked_invalid"])
+    .optional(),
+  lastSuccessAt: z.iso.datetime({ offset: true }).optional(),
+  contentHash: z.string().optional(),
+}) satisfies z.ZodType<ProviderRun>;
+
 export const buildReportSchema = z.object({
   build: z.object({
     counts: z.record(z.string(), z.number()),
@@ -403,7 +433,7 @@ export const buildReportSchema = z.object({
       z.object({ code: z.string(), message: z.string(), recordId: z.string().optional() }),
     ),
   }),
-  providers: z.record(z.string(), z.unknown()),
+  providers: z.record(z.string(), providerRunSchema),
 }) satisfies z.ZodType<BuildReport>;
 
 // ---------- hand-edited inputs (data/manual) ----------
