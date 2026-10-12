@@ -2,8 +2,9 @@ import Link from "next/link";
 import { Lockup } from "@/components/brand/Logo";
 import { t } from "@/lib/messages";
 import { footerNav, navHref } from "./nav-items";
+import { ReportCorrectionLink } from "./ReportCorrectionLink";
 
-/** Dark footer with the policy links (docs/02 §5.1). Sources summary joins in M1. */
+/** Dark footer with the policy links and "Report a correction" (docs/02 §5.1). */
 export function SiteFooter() {
   return (
     <footer className="mt-12 bg-ink text-white">
@@ -21,6 +22,9 @@ export function SiteFooter() {
                 </Link>
               </li>
             ))}
+            <li>
+              <ReportCorrectionLink className="inline-flex min-h-11 items-center px-1 text-[0.9375rem] text-footer-link underline-offset-4 hover:text-white hover:underline" />
+            </li>
           </ul>
         </nav>
         <p className="max-w-2xl text-[0.875rem] text-white/80">{t("footer.independence")}</p>

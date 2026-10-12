@@ -8,7 +8,9 @@ export const metadata = pageMetadata({
   path: "/feedback",
 });
 
-/** Feedback: the external form when configured, otherwise the email fallback (docs/02 §10). */
+const buttonClass = "inline-flex min-h-11 items-center rounded-[10px] px-4 font-semibold";
+
+/** Feedback: the feedback form, the correction form, and the email address (docs/07 §8, D43). */
 export default function FeedbackPage() {
   const formUrl = siteConfig.feedbackFormUrl as string;
   return (
@@ -17,28 +19,40 @@ export default function FeedbackPage() {
         {t("pages.feedback.title")}
       </h1>
       <p className="mt-2 text-[1.0625rem] text-muted">{t("pages.feedback.summary")}</p>
-      <div className="mt-6 rounded-[14px] border border-border bg-surface p-4 lg:p-5">
-        {formUrl ? (
-          <a
-            href={formUrl}
-            className="inline-flex min-h-11 items-center rounded-[10px] bg-action px-4 font-semibold text-white hover:bg-action/90 hover:text-white"
-          >
-            {t("pages.feedback.formLink")}
-          </a>
-        ) : (
-          <>
-            <p>{t("pages.feedback.emailIntro")}</p>
-            <p className="mt-2">
-              <a
-                href={`mailto:${siteConfig.contactEmail}`}
-                className="inline-flex min-h-11 items-center text-[1.125rem] font-semibold underline underline-offset-4"
-              >
-                {siteConfig.contactEmail}
-              </a>
-            </p>
-          </>
+      <div className="mt-6 flex flex-col gap-5 rounded-[14px] border border-border bg-surface p-4 lg:p-5">
+        {formUrl && (
+          <p>
+            <a
+              href={formUrl}
+              className={`${buttonClass} bg-action text-white hover:bg-action/90 hover:text-white`}
+            >
+              {t("pages.feedback.formLink")}
+            </a>
+          </p>
         )}
-        <p className="mt-3 text-muted">{t("pages.feedback.includePage")}</p>
+        <div>
+          <p>{t("pages.feedback.correctionIntro")}</p>
+          <p className="mt-2">
+            <a
+              href={siteConfig.correctionForm.url}
+              className={`${buttonClass} border border-border-strong bg-surface text-ink hover:bg-ground hover:text-ink`}
+            >
+              {t("pages.feedback.correctionLink")}
+            </a>
+          </p>
+          <p className="mt-2 text-muted">{t("pages.feedback.includePage")}</p>
+        </div>
+        <div>
+          <p>{t("pages.feedback.emailIntro")}</p>
+          <p className="mt-1">
+            <a
+              href={`mailto:${siteConfig.contactEmail}`}
+              className="inline-flex min-h-11 items-center text-[1.125rem] font-semibold underline underline-offset-4"
+            >
+              {siteConfig.contactEmail}
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );

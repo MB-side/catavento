@@ -160,6 +160,20 @@
   permissionStatus: not_requested
   enabled: true
 
+- id: windy
+  name: Windy
+  homepage: https://www.windy.com
+  tier: amber
+  licence: proprietary
+  attribution: "Wind map by Windy.com"   # (D44) Windy's own logo also stays visible on the map
+  uses: Their standard embedded live wind map, unmodified and with their logo, shown only when you tap to load it; nothing collected
+  method: Embedded map from windy.com, loaded by your browser
+  schedule: Live, each time you load it
+  countries: ["*"]
+  permissionStatus: not_requested
+  enabled: true
+  notes: Embedding follows Windy's public widget terms; a request for written confirmation was drafted on 2026-10-12 for the founder to send.
+
 - id: freeflightwx
   name: FreeFlightWx
   homepage: https://freeflightwx.com

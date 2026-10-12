@@ -3,7 +3,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getCountry } from "@/lib/country";
+import { WindyMap } from "@/components/domain/WindyMap";
 import { getCounts } from "@/lib/data";
+import { windyEmbedUrl } from "@/lib/links";
 import { t, tCount, type MessageKey } from "@/lib/messages";
 import { pageMetadata } from "@/lib/seo";
 import type { Country } from "@/lib/types";
@@ -72,6 +74,7 @@ export async function CountryPage({
   return (
     <ComingSoon title={title} summary={summary}>
       {page === "countryHome" && <CountryCountsLine code={country.code} />}
+      {page === "countryHome" && <LiveWind country={country} />}
       {page === "countryHome" && (
         <ul className="mt-4 flex flex-wrap gap-2">
           {(["sites", "clubs", "whatsOn", "gear", "newToFlying", "visitingPilots"] as const).map(
@@ -111,5 +114,40 @@ function CountryCountsLine({ code }: { code: string }) {
     <p className="mt-3 font-semibold text-muted-strong" data-testid="country-counts">
       {items.join(" · ")}
     </p>
+  );
+}
+
+/** Live wind: Windy's map (on tap) and the placeholder for station widgets awaiting permission (D44, D45). */
+function LiveWind({ country }: { country: Country }) {
+  const stations = getCounts(country.code).stations;
+  return (
+    <section aria-labelledby="live-wind" className="mt-8">
+      <h2 id="live-wind" className="font-condensed text-[1.375rem] font-bold">
+        {t("liveWind.heading")}
+      </h2>
+      {country.map && (
+        <>
+          <p className="mt-1 text-muted">{t("liveWind.intro", { country: country.name })}</p>
+          <div className="mt-3">
+            <WindyMap
+              src={windyEmbedUrl({ ...country.map, speedUnit: country.defaultUnits.speed })}
+              placeName={country.name}
+            />
+          </div>
+        </>
+      )}
+      <div
+        className="mt-4 rounded-[14px] border border-dashed border-border-strong p-4"
+        data-testid="stations-placeholder"
+      >
+        <h3 className="font-semibold">{t("liveWind.stationsHeading")}</h3>
+        <p className="mt-1 text-muted-strong">{t("liveWind.stationsText")}</p>
+        {stations > 0 && (
+          <p className="mt-1 text-[0.875rem] text-muted">
+            {t("liveWind.stationsCount", { count: String(stations), country: country.name })}
+          </p>
+        )}
+      </div>
+    </section>
   );
 }

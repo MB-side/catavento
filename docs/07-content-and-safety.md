@@ -78,7 +78,7 @@ Explain in plain words that buyers should check the wing's certification and wei
 | Status | Rendered `_report.json` |
 | Bot policy (`/bot`) | User agent, rate limits, robots.txt respect, what we collect, contact, how to opt out |
 | Takedown | How to request removal or correction; 24-hour response commitment; contact |
-| Privacy | No accounts, no cookies; My Sites stored only on your device; optional cookie-less analytics if enabled; external services contacted by your browser (Open-Meteo, map tiles) |
+| Privacy | No accounts, no cookies; My Sites stored only on your device; optional cookie-less analytics if enabled; external services contacted by your browser (Open-Meteo, map tiles, and Windy's map only after you tap to load it); feedback and correction forms are Google Forms whose answers go to the project's private Google Sheets |
 | Disclaimer | Standard disclaimer (§2), no affiliation, data accuracy limits |
 | Feedback | Link to the external form; email fallback |
 
