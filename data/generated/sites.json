@@ -9683,7 +9683,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:1831"
+    ],
     "disciplines": [
       "PG"
     ],
@@ -10402,7 +10404,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:777"
+    ],
     "disciplines": [
       "PG",
       "HG"

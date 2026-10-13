@@ -619,6 +619,18 @@
     "verificationStatus": "listed_on_provider_index"
   },
   {
+    "id": "station:holfuy:1831",
+    "legacyId": "HOLF-1831",
+    "providerId": "holfuy",
+    "providerRef": "1831",
+    "name": "Lemon Hill",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/1831",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
+  },
+  {
     "id": "station:holfuy:184",
     "legacyId": "HOLF-184",
     "providerId": "holfuy",
@@ -678,6 +690,44 @@
     "embedAllowed": false,
     "feedAllowed": false,
     "verificationStatus": "listed_on_provider_index"
+  },
+  {
+    "id": "station:holfuy:617",
+    "legacyId": "HOLF-617",
+    "providerId": "holfuy",
+    "providerRef": "617",
+    "name": "Mary Ann Bay",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/617",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "needs_verification",
+    "hidden": true
+  },
+  {
+    "id": "station:holfuy:777",
+    "legacyId": "HOLF-777",
+    "providerId": "holfuy",
+    "providerRef": "777",
+    "name": "Gaffs Hill",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/777",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
+  },
+  {
+    "id": "station:holfuy:778",
+    "legacyId": "HOLF-778",
+    "providerId": "holfuy",
+    "providerRef": "778",
+    "name": "Woodspring",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/778",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "needs_verification",
+    "hidden": true
   },
   {
     "id": "station:holfuy:894",
