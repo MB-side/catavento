@@ -3,6 +3,7 @@ import { PolicySection } from "@/components/layout/PolicySection";
 import { t } from "@/lib/messages";
 import { pageMetadata } from "@/lib/seo";
 import { siteConfig } from "@/site.config";
+import { Anchor } from "@/components/ui/anchor";
 
 export const metadata = pageMetadata({
   title: t("pages.privacy.title"),
@@ -42,13 +43,13 @@ export default function PrivacyPage() {
       <PolicySection id="hosting" heading={t("privacy.hostingHeading")}>
         <p>{t("privacy.hostingText")}</p>
         <p>
-          <a href={GITHUB_DATA}>{t("privacy.hostingLink")}</a>
+          <Anchor href={GITHUB_DATA}>{t("privacy.hostingLink")}</Anchor>
         </p>
       </PolicySection>
       <PolicySection id="contact" heading={t("privacy.contactHeading")}>
         <p>
           {t("privacy.contactText")}{" "}
-          <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>
+          <Anchor href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</Anchor>
         </p>
       </PolicySection>
     </div>

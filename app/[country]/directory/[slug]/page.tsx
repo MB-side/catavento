@@ -14,6 +14,7 @@ import { t, tOr } from "@/lib/messages";
 import { formatPrice } from "@/lib/money";
 import { absoluteUrl } from "@/lib/paths";
 import { jsonLdScript, pageMetadata } from "@/lib/seo";
+import { Anchor } from "@/components/ui/anchor";
 
 export const dynamicParams = false;
 
@@ -100,22 +101,22 @@ export default async function DirectoryProfile({
         )}
         <div className="mt-4 flex flex-wrap gap-2">
           {org.website && (
-            <a href={org.website} className={linkButton}>
+            <Anchor href={org.website} className={linkButton}>
               {t("directory.website")}
               <ExternalLink className="size-4" aria-hidden="true" />
-            </a>
+            </Anchor>
           )}
           {org.emailPublic && (
-            <a href={`mailto:${org.emailPublic}`} className={linkButton}>
+            <Anchor href={`mailto:${org.emailPublic}`} className={linkButton}>
               <Mail className="size-4" aria-hidden="true" />
               {org.emailPublic}
-            </a>
+            </Anchor>
           )}
           {org.phonePublic && (
-            <a href={`tel:${org.phonePublic.replace(/\s+/g, "")}`} className={linkButton}>
+            <Anchor href={`tel:${org.phonePublic.replace(/\s+/g, "")}`} className={linkButton}>
               <Phone className="size-4" aria-hidden="true" />
               {org.phonePublic}
-            </a>
+            </Anchor>
           )}
         </div>
       </header>
@@ -134,12 +135,12 @@ export default async function DirectoryProfile({
                 </p>
                 {o.inclusions && <p className="text-muted-strong">{o.inclusions.join(", ")}</p>}
                 <p className="text-[0.875rem] text-muted">
-                  <a href={o.url}>
+                  <Anchor href={o.url}>
                     {t("directory.offeringSource", {
                       name: org.name,
                       date: formatDate(o.source.fetchedAt, zone),
                     })}
-                  </a>
+                  </Anchor>
                 </p>
               </li>
             ))}
@@ -194,10 +195,10 @@ export default async function DirectoryProfile({
         <ul className="mt-1 flex flex-col gap-0.5">
           {org.sources.map((s) => (
             <li key={`${s.providerId}${s.url}`}>
-              <a href={s.url}>
+              <Anchor href={s.url}>
                 {getProvider(s.providerId)?.attribution.replace(/\{[^}]+\}/g, org.name) ??
                   s.providerId}
-              </a>{" "}
+              </Anchor>{" "}
               · {formatDate(s.fetchedAt, zone)}
             </li>
           ))}

@@ -9,6 +9,7 @@ import { absoluteUrl, withBasePath } from "@/lib/paths";
 import { homeTitle, jsonLdScript, organizationJsonLd, robots } from "@/lib/seo";
 import { siteConfig } from "@/site.config";
 import "./globals.css";
+import { Anchor } from "@/components/ui/anchor";
 
 // Downloaded at build time and served from this site: no runtime requests to Google (docs/03 §2).
 // latin-ext covers macrons in New Zealand place names.
@@ -50,12 +51,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${barlow.variable} ${barlowCondensed.variable}`}>
       <body className="flex min-h-dvh flex-col pb-[calc(3.5rem+env(safe-area-inset-bottom))] lg:pb-0">
-        <a
+        <Anchor
           href="#main"
           className="sr-only z-50 bg-surface px-4 py-3 font-semibold focus:not-sr-only focus:absolute focus:top-2 focus:left-2"
         >
           {t("nav.skipToContent")}
-        </a>
+        </Anchor>
         {siteConfig.prototypeBanner && <PrototypeBanner />}
         <SiteHeader />
         <main

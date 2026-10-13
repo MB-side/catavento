@@ -7,6 +7,7 @@ import { useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import { t, tOr } from "@/lib/messages";
 import { withBasePath } from "@/lib/paths";
 import { SEARCH_OPTIONS, type SearchDoc } from "@/lib/search";
+import { Anchor } from "@/components/ui/anchor";
 
 const noSubscription = () => () => {};
 const control =
@@ -91,9 +92,9 @@ export function SearchPanel() {
                   {tOr(`search.kinds.${r.kind}`, "search.kinds.site")}
                 </span>
                 {r.href.startsWith("http") ? (
-                  <a href={r.href} className="font-semibold">
+                  <Anchor href={r.href} className="font-semibold">
                     {r.title}
-                  </a>
+                  </Anchor>
                 ) : (
                   <Link href={r.href} className="font-semibold">
                     {r.title}

@@ -5,6 +5,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { t, tOr } from "@/lib/messages";
+import { Anchor } from "@/components/ui/anchor";
 
 export interface EventSummary {
   id: string;
@@ -86,9 +87,12 @@ export function EventsExplorer({
                 <span className="text-[1.625rem]">{e.day}</span>
               </span>
               <div className="min-w-0">
-                <a href={e.url} className="font-condensed text-[1.25rem] leading-tight font-bold">
+                <Anchor
+                  href={e.url}
+                  className="font-condensed text-[1.25rem] leading-tight font-bold"
+                >
                   {e.title}
-                </a>
+                </Anchor>
                 <p className="text-[0.875rem] text-muted">
                   {[e.when, e.place, tOr(`whatsOn.types.${e.type}`, "whatsOn.types.other")]
                     .filter(Boolean)

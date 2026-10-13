@@ -18,6 +18,7 @@ import {
 import type { WindArc } from "@/lib/types";
 import { classifyWind, compassPoint, type WindClass } from "@/lib/wind";
 import { cn } from "@/lib/utils";
+import { Anchor } from "@/components/ui/anchor";
 
 export const STRIP_HOURS = [10, 14];
 export const GRID_HOURS = [6, 8, 10, 12, 14, 16, 18, 20];
@@ -226,7 +227,7 @@ export function OutlookLegend({
       </ul>
       <p>
         {t("outlook.units", { unit: units === "kt" ? "knots" : "km/h" })} ·{" "}
-        <a href="https://open-meteo.com/">{t("outlook.attribution")}</a>
+        <Anchor href="https://open-meteo.com/">{t("outlook.attribution")}</Anchor>
       </p>
     </div>
   );
@@ -257,7 +258,7 @@ export function SiteOutlook({
   if (!forecast) {
     return (
       <p className="text-[0.875rem] text-muted" data-testid="outlook-failed">
-        {t("outlook.unavailable")} <a href={wtfHref}>{t("site.forecasts.wtf")}</a>
+        {t("outlook.unavailable")} <Anchor href={wtfHref}>{t("site.forecasts.wtf")}</Anchor>
       </p>
     );
   }

@@ -6,6 +6,7 @@ import { countryFromParams } from "@/lib/country";
 import { t } from "@/lib/messages";
 import { DISCIPLINE_PAGES } from "@/lib/learn";
 import { pageMetadata } from "@/lib/seo";
+import { Anchor } from "@/components/ui/anchor";
 
 export async function generateMetadata({ params }: PageProps<"/[country]/new-to-flying/learn">) {
   const country = await countryFromParams(params);
@@ -45,16 +46,16 @@ export default async function LearnPage({ params }: PageProps<"/[country]/new-to
         </ol>
         <div className="mt-4 flex flex-wrap gap-2">
           {country.nationalBody.learnUrl && (
-            <a href={country.nationalBody.learnUrl} className={linkButton}>
+            <Anchor href={country.nationalBody.learnUrl} className={linkButton}>
               {t("ntf.officialSteps", { body })}
               <ExternalLink className="size-4" aria-hidden="true" />
-            </a>
+            </Anchor>
           )}
           {country.nationalBody.joinUrl && (
-            <a href={country.nationalBody.joinUrl} className={linkButton}>
+            <Anchor href={country.nationalBody.joinUrl} className={linkButton}>
               {t("ntf.joinLink")}
               <ExternalLink className="size-4" aria-hidden="true" />
-            </a>
+            </Anchor>
           )}
           <Link href={`${base}/schools`} className={linkButton}>
             {t("ntf.schoolsLink")}

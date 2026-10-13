@@ -51,7 +51,10 @@ test.describe("anchor sites match the Site Guide (docs/09 §4)", () => {
       const site = byId(id);
       await page.goto(pathOf(site));
       await expect(page.getByRole("heading", { level: 1 })).toHaveText(site.name);
-      const official = page.getByRole("link", { name: "Official site details", exact: true });
+      const official = page.getByRole("link", {
+        name: "Official site details (opens in a new tab)",
+        exact: true,
+      });
       await expect(official).toHaveAttribute("href", site.officialGuideUrl ?? "");
       expect(site.officialGuideUrl).toMatch(/^https:\/\/siteguide\.org\.au\/Sites\/Details\//);
       if (site.windRangeLabel !== "See official details") {
@@ -77,7 +80,7 @@ test.describe("S12: who is responsible, whatever kind of body it is", () => {
     await expect(panel).toContainText("Subscription pass required");
     await expect(panel).toContainText("Auckland club");
     await expect(
-      page.getByRole("link", { name: "Official site details", exact: true }),
+      page.getByRole("link", { name: "Official site details (opens in a new tab)", exact: true }),
     ).toHaveAttribute("href", /cloudbase\.org\.nz/);
   });
 

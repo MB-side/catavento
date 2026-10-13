@@ -7,6 +7,7 @@ import { formatDate } from "@/lib/format";
 import { t, tOr } from "@/lib/messages";
 import { formatPrice } from "@/lib/money";
 import type { Offering, Organisation } from "@/lib/types";
+import { Anchor } from "@/components/ui/anchor";
 
 export function kindLabels(o: Organisation): string {
   return [o.kind, ...(o.additionalKinds ?? [])]
@@ -65,14 +66,14 @@ export function OrgCard({
         </p>
       )}
       {org.website && (
-        <a
+        <Anchor
           href={org.website}
           className="mt-1 inline-flex min-h-11 items-center gap-1.5 self-start font-semibold"
         >
           {t("ntf.visitSite")}
           <span className="sr-only">: {org.name}</span>
           <ExternalLink className="size-4" aria-hidden="true" />
-        </a>
+        </Anchor>
       )}
     </li>
   );

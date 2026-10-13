@@ -5,6 +5,7 @@ import { countryPageMetadata } from "@/components/layout/CountryPage";
 import { card, h2, linkButton, PageHeader } from "@/components/layout/PageHeader";
 import { countryFromParams } from "@/lib/country";
 import { t } from "@/lib/messages";
+import { Anchor } from "@/components/ui/anchor";
 
 export function generateMetadata({ params }: PageProps<"/[country]/visiting-pilots">) {
   return countryPageMetadata(params, "visitingPilots");
@@ -32,16 +33,16 @@ export default async function VisitingPilotsPage({
         <p className="mt-2">{body.membershipLine}</p>
         <div className="mt-3 flex flex-wrap gap-2">
           {body.visitingPilotsUrl && (
-            <a href={body.visitingPilotsUrl} className={linkButton}>
+            <Anchor href={body.visitingPilotsUrl} className={linkButton}>
               {t("visiting.officialPage", { body: short })}
               <ExternalLink className="size-4" aria-hidden="true" />
-            </a>
+            </Anchor>
           )}
           {body.joinUrl && (
-            <a href={body.joinUrl} className={linkButton}>
+            <Anchor href={body.joinUrl} className={linkButton}>
               {t("ntf.joinLink")}
               <ExternalLink className="size-4" aria-hidden="true" />
-            </a>
+            </Anchor>
           )}
         </div>
       </section>

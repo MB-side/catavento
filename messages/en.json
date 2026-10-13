@@ -2,6 +2,9 @@
   "brand": {
     "homeLink": "Catavento home"
   },
+  "links": {
+    "newTab": "(opens in a new tab)"
+  },
   "banner": {
     "label": "Prototype notice",
     "text": "Prototype for community feedback. Independent: not affiliated with {affiliations}. Information may be incomplete or out of date.",

@@ -6,6 +6,7 @@ import { card, h2, linkButton, PageHeader } from "@/components/layout/PageHeader
 import { countryFromParams } from "@/lib/country";
 import { eventSummary, upcomingEvents } from "@/lib/events-view";
 import { t, type MessageKey } from "@/lib/messages";
+import { Anchor } from "@/components/ui/anchor";
 
 export function generateMetadata({ params }: PageProps<"/[country]">) {
   return countryPageMetadata(params, "countryHome");
@@ -59,7 +60,7 @@ export default async function CountryHome({ params }: PageProps<"/[country]">) {
           <ul className="mt-2 flex flex-col gap-1">
             {coming.map((e) => (
               <li key={e.id}>
-                <a href={e.url}>{e.title}</a>{" "}
+                <Anchor href={e.url}>{e.title}</Anchor>{" "}
                 <span className="text-[0.875rem] text-muted">· {e.when}</span>
               </li>
             ))}
@@ -74,10 +75,10 @@ export default async function CountryHome({ params }: PageProps<"/[country]">) {
           {t("countryHome.bodyHeading")}
         </h2>
         <p className="mt-2">{country.nationalBody.membershipLine}</p>
-        <a href={country.nationalBody.url} className={`${linkButton} mt-3`}>
+        <Anchor href={country.nationalBody.url} className={`${linkButton} mt-3`}>
           {country.nationalBody.name}
           <ExternalLink className="size-4" aria-hidden="true" />
-        </a>
+        </Anchor>
       </section>
       <LiveWind country={country} />
     </div>

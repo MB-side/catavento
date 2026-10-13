@@ -14,6 +14,7 @@ import { absoluteUrl } from "@/lib/paths";
 import { jsonLdScript, pageMetadata } from "@/lib/seo";
 import { siteSummaries } from "@/lib/site-view";
 import type { Organisation } from "@/lib/types";
+import { Anchor } from "@/components/ui/anchor";
 
 export const dynamicParams = false;
 
@@ -107,22 +108,22 @@ export default async function ClubPage({ params }: PageProps<"/[country]/clubs/[
         <div className="mt-4 flex flex-wrap items-start gap-3">
           <FollowClubButton sites={managed} />
           {club.emailPublic && (
-            <a
+            <Anchor
               href={`mailto:${club.emailPublic}`}
               className={`${button} bg-ink text-white hover:text-white`}
             >
               <Mail className="size-4" aria-hidden="true" />
               {t("club.contact")}
-            </a>
+            </Anchor>
           )}
           {club.website && (
-            <a
+            <Anchor
               href={club.website}
               className={`${button} border border-border-strong bg-surface text-ink hover:text-ink`}
             >
               {t("club.website")}
               <ExternalLink className="size-4" aria-hidden="true" />
-            </a>
+            </Anchor>
           )}
         </div>
       </header>
@@ -183,7 +184,7 @@ export default async function ClubPage({ params }: PageProps<"/[country]/clubs/[
               <ul className="mt-2 flex flex-col gap-1">
                 {view.notices.map((n) => (
                   <li key={n.id}>
-                    <a href={n.url}>{n.title}</a>{" "}
+                    <Anchor href={n.url}>{n.title}</Anchor>{" "}
                     <span className="text-[0.875rem] text-muted">· {formatDate(n.date, zone)}</span>
                   </li>
                 ))}
@@ -208,9 +209,9 @@ export default async function ClubPage({ params }: PageProps<"/[country]/clubs/[
                         <span className="text-[1.375rem]">{d.day}</span>
                       </span>
                       <span>
-                        <a href={e.url} className="font-semibold">
+                        <Anchor href={e.url} className="font-semibold">
                           {e.title}
-                        </a>
+                        </Anchor>
                         {e.locationText && (
                           <span className="block text-[0.875rem] text-muted">{e.locationText}</span>
                         )}
@@ -232,14 +233,14 @@ export default async function ClubPage({ params }: PageProps<"/[country]/clubs/[
               <ul className="mt-2 flex flex-col gap-1 break-words">
                 {club.emailPublic && (
                   <li>
-                    <a href={`mailto:${club.emailPublic}`}>{club.emailPublic}</a>
+                    <Anchor href={`mailto:${club.emailPublic}`}>{club.emailPublic}</Anchor>
                   </li>
                 )}
                 {club.website && (
                   <li>
-                    <a href={club.website}>
+                    <Anchor href={club.website}>
                       {club.website.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}
-                    </a>
+                    </Anchor>
                   </li>
                 )}
               </ul>
@@ -259,13 +260,13 @@ export default async function ClubPage({ params }: PageProps<"/[country]/clubs/[
               <ul className="mt-2 flex flex-col gap-2">
                 {view.stations.map((s) => (
                   <li key={s.id}>
-                    <a
+                    <Anchor
                       href={s.url}
                       className="inline-flex min-h-11 items-center gap-1.5 font-semibold"
                     >
                       {s.name}
                       <ExternalLink className="size-4" aria-hidden="true" />
-                    </a>
+                    </Anchor>
                   </li>
                 ))}
               </ul>
@@ -307,12 +308,12 @@ export default async function ClubPage({ params }: PageProps<"/[country]/clubs/[
               {t("club.claimHeading")}
             </h2>
             <p className="mt-1 text-muted-strong">{t("club.claimText")}</p>
-            <a
+            <Anchor
               href={correctionFormUrl(absoluteUrl(clubPath(club)), club.id)}
               className="mt-2 inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
             >
               {t("club.claimLink")}
-            </a>
+            </Anchor>
           </section>
         </aside>
       </div>
@@ -326,9 +327,9 @@ export default async function ClubPage({ params }: PageProps<"/[country]/clubs/[
             const p = getProvider(s.providerId);
             return (
               <li key={`${s.providerId}${s.url}`}>
-                <a href={s.url}>
+                <Anchor href={s.url}>
                   {p?.attribution.replace(/\{[^}]+\}/g, club.name) ?? s.providerId}
-                </a>{" "}
+                </Anchor>{" "}
                 · {formatDate(s.fetchedAt, zone)}
               </li>
             );

@@ -9,6 +9,7 @@ import { orgPath } from "@/lib/clubs";
 import { t } from "@/lib/messages";
 import { formatPrice } from "@/lib/money";
 import { pageMetadata } from "@/lib/seo";
+import { Anchor } from "@/components/ui/anchor";
 
 export const dynamicParams = false;
 
@@ -58,12 +59,12 @@ export default async function CostsPage({ params }: PageProps<"/[country]/new-to
                 <p className="text-muted-strong">{o.inclusions.join(", ")}</p>
               )}
               <p className="mt-1 text-[0.875rem] text-muted">
-                <a href={o.url}>
+                <Anchor href={o.url}>
                   {t("directory.offeringSource", {
                     name: org?.name ?? "",
                     date: formatDate(o.source.fetchedAt, zone),
                   })}
-                </a>
+                </Anchor>
               </p>
             </li>
           ))}
@@ -73,10 +74,10 @@ export default async function CostsPage({ params }: PageProps<"/[country]/new-to
       <div className={card}>
         <p>{t("ntf.costsMembership", { body })}</p>
         {country.nationalBody.feesUrl && (
-          <a href={country.nationalBody.feesUrl} className={`${linkButton} mt-3`}>
+          <Anchor href={country.nationalBody.feesUrl} className={`${linkButton} mt-3`}>
             {t("ntf.feesLink")}
             <ExternalLink className="size-4" aria-hidden="true" />
-          </a>
+          </Anchor>
         )}
       </div>
     </div>
