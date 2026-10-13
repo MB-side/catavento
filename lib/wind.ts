@@ -239,12 +239,16 @@ export function classifyWind(
   dirDeg: number,
   speedKmh: number,
   ranges: WindArc[] | "all",
+  /** Directions a source rates "possible" rather than good: marginal, never within (D81). */
+  marginal: WindArc[] = [],
 ): WindClass {
   if (speedKmh < LIGHT_WIND_KMH) return "light";
   if (ranges === "all") return "within";
-  if (ranges.length === 0) return "outside";
-  const nearest = Math.min(...ranges.map((r) => distanceToArc(dirDeg, r)));
+  const nearest = ranges.length
+    ? Math.min(...ranges.map((r) => distanceToArc(dirDeg, r)))
+    : Infinity;
   if (nearest === 0) return "within";
+  if (marginal.some((r) => distanceToArc(dirDeg, r) === 0)) return "marginal";
   return nearest <= MARGINAL_DEG ? "marginal" : "outside";
 }
 

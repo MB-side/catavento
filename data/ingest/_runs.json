@@ -55,14 +55,14 @@
   },
   "pge": {
     "status": "ok",
-    "startedAt": "2026-10-12T05:17:29.909Z",
-    "finishedAt": "2026-10-12T05:17:39.796Z",
+    "startedAt": "2026-10-13T08:39:23.097Z",
+    "finishedAt": "2026-10-13T08:39:36.392Z",
     "recordsFound": 388,
     "recordsChanged": 388,
     "warnings": [],
     "guardDecision": "accepted",
-    "lastSuccessAt": "2026-10-12T05:17:39.796Z",
-    "contentHash": "8de5ce5faf3023c2eeab2a64ff6ee47a0bc027d059f2d3026bfe417765f011b9"
+    "lastSuccessAt": "2026-10-13T08:39:36.392Z",
+    "contentHash": "6d838bb0876f4a50886203ab918290cc13a9a88efa2d14ff78af21af4844a3b9"
   },
   "club-websites": {
     "status": "warning",

@@ -57,7 +57,7 @@
   tier: green
   licence: cc-by-sa-3.0
   attribution: "Community site data: © ParaglidingEarth contributors (CC BY-SA 3.0 / ODbL 1.0)"
-  uses: Australian sites missing from the Site Guide (a separate community layer), and coordinates and wind directions for the New Zealand sample sites. Name, takeoff position, directions rated "good", and whether it suits paragliders or hang gliders. Never descriptions
+  uses: Sites missing from the official site guide (a separate community layer, in Australia and New Zealand), and coordinates and wind directions for the New Zealand sample sites. Name, takeoff position and height, directions rated "good" or "possible", whether it suits paragliders or hang gliders, the kinds of flying, and landing and parking positions. Never descriptions, rules or travel notes
   method: Its open data service, one download per country (2 a month); the service needs no sign-up
   schedule: Monthly
   countries: ["*"]

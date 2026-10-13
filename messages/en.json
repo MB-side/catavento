@@ -359,8 +359,9 @@
       "all": "All directions",
       "unparsed": "Wind directions aren't given in a form we can read. See the official site details.",
       "note": "The shaded area shows the published wind range.",
-      "community": "Directions rated “good” by ParaglidingEarth contributors.",
-      "fromClub": "Wind directions from the {name} website"
+      "community": "Shaded blue: rated “good” by ParaglidingEarth contributors. Amber: rated “possible”.",
+      "fromClub": "Wind directions from the {name} website",
+      "possible": "Also possible: {label}"
     },
     "stations": {
       "heading": "Weather stations",
@@ -385,20 +386,37 @@
       "rating": "Rating",
       "wind": "Wind directions",
       "launches": "Launches",
+      "takeoffAltitude": "{metres} m at takeoff",
+      "flying": "Kinds of flying",
+      "landing": "Landing",
+      "parking": "Parking",
+      "parkingTakeoff": "For the takeoff",
+      "parkingLanding": "For the landing",
+      "marked": "Position given",
+      "onMap": "Open map",
       "status": "Status",
       "contact": "Contact listed",
       "intro": "Short facts only. Hazards, landing areas and local rules are on the official site details.",
       "notPublished": "Not published",
       "source": "Facts from the {provider} · checked {date}",
       "communitySource": "Community site data from ParaglidingEarth · checked {date}",
-      "communityNote": "This site comes from ParaglidingEarth's contributors and isn't in the official site guide. Ask a local club before flying here."
+      "communityNote": "This site comes from ParaglidingEarth's contributors and isn't in the official site guide. Ask a local club before flying here.",
+      "flyingTypes": {
+        "thermal": "Thermal",
+        "soaring": "Ridge soaring",
+        "xc": "Cross-country",
+        "flatland": "Flatland",
+        "winch": "Winch tow"
+      }
     },
     "map": {
       "heading": "Where it is",
       "launch": "Launch",
       "noPosition": "This site's position isn't published.",
       "approximate": "Location available from the club.",
-      "show": "Show on map"
+      "show": "Show on map",
+      "landing": "Landing",
+      "parking": "Parking"
     },
     "notices": {
       "heading": "Club news",
@@ -510,7 +528,7 @@
     "heading": "Next 3 days",
     "intro": "Forecast wind direction compared with the published range.",
     "within": "Within the published range",
-    "marginal": "Within 22.5° of the range",
+    "marginal": "Within 22.5° of the range, or rated “possible”",
     "outside": "Outside the published range",
     "light": "Light wind",
     "lightShort": "Light",

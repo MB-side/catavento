@@ -7,13 +7,14 @@ import { useState } from "react";
 import { Map as MapIcon } from "lucide-react";
 import { t } from "@/lib/messages";
 import type { SiteSummary } from "@/lib/site-summary";
+import type { MapPoint } from "./SitesMap";
 
 const SitesMap = dynamic(() => import("./SitesMap"), {
   ssr: false,
   loading: () => <p className="p-4 text-muted">{t("sitesList.mapLoading")}</p>,
 });
 
-export function SiteMapPanel({ site }: { site: SiteSummary }) {
+export function SiteMapPanel({ site, points = [] }: { site: SiteSummary; points?: MapPoint[] }) {
   const [shown, setShown] = useState(false);
   return (
     <div>
@@ -28,7 +29,7 @@ export function SiteMapPanel({ site }: { site: SiteSummary }) {
       </button>
       {shown && (
         <div className="mt-3 overflow-hidden rounded-[10px] border border-border">
-          <SitesMap sites={[site]} />
+          <SitesMap sites={[site]} points={points} />
         </div>
       )}
     </div>

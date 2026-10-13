@@ -26,7 +26,7 @@ export function SiteCard({
       className="flex gap-3 rounded-[14px] border border-border bg-surface p-4"
       data-testid="site-card"
     >
-      <WindRose ranges={s.windRanges} size={48} className="shrink-0" />
+      <WindRose ranges={s.windRanges} marginal={s.windMarginal} size={48} className="shrink-0" />
       <div className="min-w-0 flex-1">
         <Link href={s.href} className="font-condensed text-[1.25rem] leading-tight font-bold">
           {s.name}

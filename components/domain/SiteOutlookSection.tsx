@@ -9,6 +9,7 @@ export function SiteOutlookSection({
   lat,
   lon,
   ranges,
+  marginal,
   rated,
   wtfHref,
 }: {
@@ -16,6 +17,7 @@ export function SiteOutlookSection({
   lat: number;
   lon: number;
   ranges: WindArc[] | "all";
+  marginal?: WindArc[];
   rated: boolean;
   wtfHref: string;
 }) {
@@ -23,7 +25,14 @@ export function SiteOutlookSection({
   const state = useForecasts([point]);
   return (
     <div className="mt-3 flex flex-col gap-2">
-      <SiteOutlook point={point} ranges={ranges} rated={rated} state={state} wtfHref={wtfHref} />
+      <SiteOutlook
+        point={point}
+        ranges={ranges}
+        marginal={marginal}
+        rated={rated}
+        state={state}
+        wtfHref={wtfHref}
+      />
       <OutlookLegend rated={rated} />
     </div>
   );

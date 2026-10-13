@@ -11,6 +11,7 @@ export interface SiteSummary {
   status: Site["status"];
   community: boolean;
   windRanges: WindArc[] | "all";
+  windMarginal?: WindArc[];
   windLabel: string;
   windParsed: boolean;
   disciplines: Discipline[];
@@ -41,6 +42,7 @@ export function summarise(
     status: site.status,
     community: site.layer === "pge",
     windRanges: site.windRanges,
+    ...(site.windMarginal?.length ? { windMarginal: site.windMarginal } : {}),
     windLabel: site.windRangeLabel,
     windParsed: site.windRanges === "all" || site.windRanges.length > 0,
     disciplines: site.disciplines,

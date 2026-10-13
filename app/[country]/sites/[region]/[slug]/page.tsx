@@ -21,7 +21,9 @@ import { siteShareImagePath } from "@/lib/share";
 import { summarise } from "@/lib/site-summary";
 import { siteSummaries, siteView } from "@/lib/site-view";
 import { mainLaunch, regionPath, regionSegmentOf, sitePath } from "@/lib/sites";
-import type { Site } from "@/lib/types";
+import type { ReactNode } from "react";
+import type { Site, SitePoint } from "@/lib/types";
+import { labelArcs } from "@/lib/wind";
 import { Anchor } from "@/components/ui/anchor";
 
 export const dynamicParams = false;
@@ -83,12 +85,51 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
   const siteSource = site.sources[0];
   const sourceProvider = siteSource ? getProvider(siteSource.providerId) : undefined;
   const parsedWind = site.windRanges === "all" || site.windRanges.length > 0;
-  const facts: [string, string | undefined][] = [
+  const onMap = (p: SitePoint) => (
+    <Anchor
+      href={`https://www.openstreetmap.org/?mlat=${p.lat}&mlon=${p.lon}#map=16/${p.lat}/${p.lon}`}
+    >
+      {t("site.facts.onMap")}
+    </Anchor>
+  );
+  const extraFacts: [string, ReactNode][] = [];
+  if (site.flyingTypes?.length)
+    extraFacts.push([
+      t("site.facts.flying"),
+      site.flyingTypes.map((k) => t(`site.facts.flyingTypes.${k}`)).join(", "),
+    ]);
+  for (const l of site.landings ?? [])
+    extraFacts.push([
+      t("site.facts.landing"),
+      <>
+        {[l.name, l.altitudeM ? `${l.altitudeM} m` : undefined].filter(Boolean).join(", ") ||
+          t("site.facts.marked")}
+        {" · "}
+        {onMap(l)}
+      </>,
+    ]);
+  for (const p of site.parking ?? [])
+    extraFacts.push([
+      t("site.facts.parking"),
+      <>
+        {t(p.serves === "landing" ? "site.facts.parkingLanding" : "site.facts.parkingTakeoff")}
+        {" · "}
+        {onMap(p)}
+      </>,
+    ]);
+  const facts: [string, ReactNode | undefined][] = [
     [t("site.facts.type"), site.typeText],
-    [t("site.facts.height"), site.heightText],
+    [
+      t("site.facts.height"),
+      site.heightText ??
+        (launch?.altitudeM
+          ? t("site.facts.takeoffAltitude", { metres: String(launch.altitudeM) })
+          : undefined),
+    ],
     [t("site.facts.rating"), site.ratingText],
     [t("site.facts.wind"), site.conditionsText ?? (parsedWind ? site.windRangeLabel : undefined)],
     [t("site.facts.launches"), site.launches.map((l) => l.name).join(", ") || undefined],
+    ...extraFacts,
   ];
   const wtf = getProvider("wtf");
   const forecastLinks = [
@@ -159,7 +200,7 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
               {t("site.wind.heading")}
             </h2>
             <div className="mt-3 flex items-center gap-4">
-              <WindRose ranges={site.windRanges} size={160} labels />
+              <WindRose ranges={site.windRanges} marginal={site.windMarginal} size={160} labels />
               <div>
                 {parsedWind ? (
                   <p className="font-condensed text-[1.375rem] font-bold">
@@ -167,9 +208,14 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
                       ? t("site.wind.all")
                       : t("site.wind.published", { label: site.windRangeLabel })}
                   </p>
-                ) : (
+                ) : site.windMarginal?.length ? null : (
                   <p>{t("site.wind.unparsed")}</p>
                 )}
+                {site.windMarginal?.length ? (
+                  <p className="mt-1 font-semibold" data-testid="wind-possible">
+                    {t("site.wind.possible", { label: labelArcs(site.windMarginal) })}
+                  </p>
+                ) : null}
                 <p className="mt-1 text-[0.875rem] text-muted">
                   {community ? t("site.wind.community") : t("site.wind.note")}
                 </p>
@@ -282,6 +328,7 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
                 lat={launch.lat}
                 lon={launch.lon}
                 ranges={site.windRanges}
+                marginal={site.windMarginal}
                 rated={parsedWind}
                 wtfHref={forecastLinks[0]?.href ?? "https://wheretofly.info/"}
               />
@@ -412,6 +459,10 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
                     steward: view.steward?.name,
                     contact: view.listed?.name ?? site.listedContact?.name,
                   })}
+                  points={[
+                    ...(site.landings ?? []).map((p) => ({ ...p, kind: "landing" as const })),
+                    ...(site.parking ?? []).map((p) => ({ ...p, kind: "parking" as const })),
+                  ]}
                 />
               </>
             ) : (

@@ -12,7 +12,21 @@ import type { SiteSummary } from "@/lib/site-summary";
 
 export const MAP_STYLE = "https://tiles.openfreemap.org/styles/liberty";
 
-const COLOURS = { site: "#1f4fbf", community: "#b8460b", cluster: "#0f1b26" };
+const COLOURS = {
+  site: "#1f4fbf",
+  community: "#b8460b",
+  cluster: "#0f1b26",
+  landing: "#1e7a46",
+  parking: "#5b6b7a",
+};
+
+/** A landing or parking spot shown on a single site's map (D81). */
+export interface MapPoint {
+  kind: "landing" | "parking";
+  lat: number;
+  lon: number;
+  name?: string;
+}
 
 function popupContent(s: SiteSummary): HTMLElement {
   // Built from DOM nodes, never HTML strings, so names can't inject markup.
@@ -46,7 +60,13 @@ function popupContent(s: SiteSummary): HTMLElement {
   return box;
 }
 
-export default function SitesMap({ sites }: { sites: SiteSummary[] }) {
+export default function SitesMap({
+  sites,
+  points = [],
+}: {
+  sites: SiteSummary[];
+  points?: MapPoint[];
+}) {
   const container = useRef<HTMLDivElement>(null);
   const mapRef = useRef<MapLibreMap | null>(null);
   const [failed, setFailed] = useState(false);
@@ -149,11 +169,50 @@ export default function SitesMap({ sites }: { sites: SiteSummary[] }) {
           .setDOMContent(popupContent(site))
           .addTo(map);
       });
-      for (const layer of ["clusters", "site-points"]) {
+      if (points.length) {
+        map.addSource("extra-points", {
+          type: "geojson",
+          data: {
+            type: "FeatureCollection",
+            features: points.map((p) => ({
+              type: "Feature",
+              geometry: { type: "Point", coordinates: [p.lon, p.lat] },
+              properties: {
+                kind: p.kind,
+                label: [t(p.kind === "landing" ? "site.map.landing" : "site.map.parking"), p.name]
+                  .filter(Boolean)
+                  .join(": "),
+              },
+            })),
+          },
+        });
+        map.addLayer({
+          id: "extra-points",
+          type: "circle",
+          source: "extra-points",
+          paint: {
+            "circle-color": ["match", ["get", "kind"], "landing", COLOURS.landing, COLOURS.parking],
+            "circle-radius": 6,
+            "circle-stroke-width": 2,
+            "circle-stroke-color": "#ffffff",
+          },
+        });
+        map.on("click", "extra-points", (e) => {
+          const feature = e.features?.[0];
+          if (!feature || feature.geometry.type !== "Point") return;
+          const box = document.createElement("div");
+          box.textContent = String(feature.properties?.label ?? "");
+          new maplibregl.Popup({ offset: 10 })
+            .setLngLat(feature.geometry.coordinates as [number, number])
+            .setDOMContent(box)
+            .addTo(map);
+        });
+      }
+      for (const layer of ["clusters", "site-points", ...(points.length ? ["extra-points"] : [])]) {
         map.on("mouseenter", layer, () => (map.getCanvas().style.cursor = "pointer"));
         map.on("mouseleave", layer, () => (map.getCanvas().style.cursor = ""));
       }
-      fit(map, located);
+      fit(map, located, points);
     });
     return () => {
       map.remove();
@@ -184,9 +243,10 @@ export default function SitesMap({ sites }: { sites: SiteSummary[] }) {
   );
 }
 
-function fit(map: MapLibreMap, sites: SiteSummary[]) {
+function fit(map: MapLibreMap, sites: SiteSummary[], points: MapPoint[] = []) {
   if (sites.length === 0) return;
   const bounds = new maplibregl.LngLatBounds();
   for (const s of sites) bounds.extend([s.lon as number, s.lat as number]);
+  for (const p of points) bounds.extend([p.lon, p.lat]);
   map.fitBounds(bounds, { padding: 40, maxZoom: 11, duration: 0 });
 }

@@ -2,7 +2,13 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
 import type { RegionLookup } from "../../core/regions";
-import { cleanPgeName, goodDirections, toSite, type PgeFeature } from "./collect";
+import {
+  cleanPgeName,
+  goodDirections,
+  possibleDirections,
+  toSite,
+  type PgeFeature,
+} from "./collect";
 
 const features = (
   JSON.parse(readFileSync(path.join(__dirname, "fixtures", "au.json"), "utf8")) as {
@@ -82,5 +88,35 @@ describe("toSite", () => {
       geometry: { type: "Point", coordinates: [Number.NaN, 0] },
     } as PgeFeature;
     expect(toSite(broken, AU, regions, source).warning).toMatch(/no usable position/);
+  });
+});
+
+describe("toSite: extra facts (D81)", () => {
+  it("keeps takeoff height, kinds of flying, landing and parking, and no text", () => {
+    const { site } = toSite(byName("Manilla"), AU, regions, source);
+    expect(site?.launches[0]?.altitudeM).toBe(895);
+    expect(site?.flyingTypes).toEqual(["thermal", "soaring", "flatland"]);
+    expect(site?.landings).toEqual([
+      { name: "Main paddock", lat: -30.6831, lon: 150.597, altitudeM: 538 },
+    ]);
+    expect(site?.parking).toEqual([{ lat: -30.68, lon: 150.608, serves: "takeoff" }]);
+    const json = JSON.stringify(site);
+    expect(json).not.toContain("must not be copied");
+    expect(json).not.toContain("0400 000 000");
+  });
+
+  it("keeps directions rated possible apart from the good ones", () => {
+    const p = byName("Mosman").properties;
+    expect(possibleDirections(p)).toEqual(["NE"]);
+    expect(goodDirections(p)).toEqual([]);
+    const { site } = toSite(byName("Mosman"), AU, regions, source);
+    expect(site?.windRanges).toEqual([]);
+    expect(site?.windMarginal).toEqual([{ fromDeg: 22.5, toDeg: 67.5 }]);
+  });
+
+  it("leaves out fields that aren't given", () => {
+    const { site } = toSite(byName("Black Jack"), AU, regions, source);
+    expect(site?.landings).toBeUndefined();
+    expect(site?.parking).toBeUndefined();
   });
 });

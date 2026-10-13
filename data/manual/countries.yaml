@@ -73,3 +73,4 @@
   ratingsNote: "NZ ratings as published by NZHGPA (for example Hang 2 Novice, Hang 3 Intermediate; sites rated Beginner to Advanced)."
   primarySiteSource: manual+pge
   coverage: sample             # Iteration 1 shows a "Sample coverage" notice on NZ pages
+  communitySites: true         # but lists ParaglidingEarth's NZ sites as community data (founder, 2026-10-13)

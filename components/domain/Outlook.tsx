@@ -72,10 +72,12 @@ const CLASS_LABEL: Record<WindClass | "unrated", string> = {
 function OutlookCell({
   cell,
   ranges,
+  marginal,
   rated,
 }: {
   cell?: OutlookCellData;
   ranges: WindArc[] | "all";
+  marginal?: WindArc[];
   rated: boolean;
 }) {
   const { units, min, max } = useSettings();
@@ -87,7 +89,7 @@ function OutlookCell({
     );
   }
   const cls: WindClass | "unrated" = rated
-    ? classifyWind(cell.direction, cell.speed, ranges)
+    ? classifyWind(cell.direction, cell.speed, ranges, marginal)
     : cell.speed < 5
       ? "light"
       : "unrated";
@@ -130,12 +132,14 @@ function OutlookTable({
   days,
   hours,
   ranges,
+  marginal,
   rated,
   compact,
 }: {
   days: OutlookDay[];
   hours: number[];
   ranges: WindArc[] | "all";
+  marginal?: WindArc[];
   rated: boolean;
   compact: boolean;
 }) {
@@ -175,7 +179,7 @@ function OutlookTable({
               </th>
               {d.cells.map((c, i) => (
                 <td key={i} className={cn(!compact && "min-w-11")}>
-                  <OutlookCell cell={c} ranges={ranges} rated={rated} />
+                  <OutlookCell cell={c} ranges={ranges} marginal={marginal} rated={rated} />
                 </td>
               ))}
             </tr>
@@ -236,6 +240,7 @@ export function OutlookLegend({
 interface OutlookProps {
   point: ForecastPoint;
   ranges: WindArc[] | "all";
+  marginal?: WindArc[];
   rated: boolean; // false when the site's range isn't published in a readable form
   state: State;
   compact?: boolean;
@@ -246,6 +251,7 @@ interface OutlookProps {
 export function SiteOutlook({
   point,
   ranges,
+  marginal,
   rated,
   state,
   compact = false,
@@ -268,6 +274,7 @@ export function SiteOutlook({
       days={pickDays(forecast, hours)}
       hours={hours}
       ranges={ranges}
+      marginal={marginal}
       rated={rated}
       compact={compact}
     />

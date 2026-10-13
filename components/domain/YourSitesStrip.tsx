@@ -52,6 +52,7 @@ export function YourSitesStrip() {
                 <SiteOutlook
                   point={{ id: s.id, lat: s.lat, lon: s.lon }}
                   ranges={s.windRanges}
+                  marginal={s.windMarginal}
                   rated={s.windParsed}
                   state={state}
                   compact
