@@ -962,7 +962,8 @@
       }
     ],
     "stationIds": [
-      "station:freeflightwx:crackneck"
+      "station:freeflightwx:crackneck",
+      "station:holfuy:184"
     ],
     "disciplines": [
       "PG",
@@ -1169,7 +1170,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:179"
+    ],
     "pgeId": "11514",
     "disciplines": [
       "PG"
@@ -2910,7 +2913,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:175"
+    ],
     "disciplines": [
       "PG",
       "HG"
@@ -3139,7 +3144,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:182"
+    ],
     "disciplines": [
       "PG",
       "HG"
@@ -4025,7 +4032,8 @@
         "licence": "cc-by-sa-3.0",
         "contentHash": "8de5ce5faf3023c2eeab2a64ff6ee47a0bc027d059f2d3026bfe417765f011b9"
       }
-    ]
+    ],
+    "hidden": true
   },
   {
     "id": "site:au:nsw:possums",
@@ -4062,7 +4070,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:181"
+    ],
     "disciplines": [
       "PG"
     ],
@@ -5337,7 +5347,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:1483"
+    ],
     "disciplines": [],
     "layer": "ansg",
     "sources": [
@@ -5348,7 +5360,10 @@
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
-    ]
+    ],
+    "stationDistancesKm": {
+      "station:holfuy:1483": 3
+    }
   },
   {
     "id": "site:au:qld:beechmont-rosins-lookout",
@@ -5389,7 +5404,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:1342"
+    ],
     "disciplines": [
       "PG",
       "HG"
@@ -6002,7 +6019,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:1341"
+    ],
     "disciplines": [
       "PG",
       "HG"
@@ -6656,7 +6675,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:1312"
+    ],
     "disciplines": [
       "PG",
       "HG"
@@ -6975,7 +6996,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:1482"
+    ],
     "disciplines": [],
     "layer": "ansg",
     "sources": [
@@ -6994,7 +7017,10 @@
         "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
       }
     ],
-    "stewardOrgId": "org:au:sunshine-coast-free-flyers-association"
+    "stewardOrgId": "org:au:sunshine-coast-free-flyers-association",
+    "stationDistancesKm": {
+      "station:holfuy:1482": 3
+    }
   },
   {
     "id": "site:au:qld:point-cartwright-carties",
@@ -7020,7 +7046,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:1482"
+    ],
     "pgeId": "10171",
     "disciplines": [
       "PG",
@@ -7035,7 +7063,10 @@
         "licence": "cc-by-sa-3.0",
         "contentHash": "8de5ce5faf3023c2eeab2a64ff6ee47a0bc027d059f2d3026bfe417765f011b9"
       }
-    ]
+    ],
+    "stationDistancesKm": {
+      "station:holfuy:1482": 4
+    }
   },
   {
     "id": "site:au:qld:rainbow-beach",
@@ -7347,7 +7378,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:569"
+    ],
     "disciplines": [],
     "layer": "ansg",
     "sources": [
@@ -7407,7 +7440,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:894"
+    ],
     "disciplines": [],
     "layer": "ansg",
     "sources": [
@@ -7426,7 +7461,10 @@
         "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
       }
     ],
-    "stewardOrgId": "org:au:sunshine-coast-free-flyers-association"
+    "stewardOrgId": "org:au:sunshine-coast-free-flyers-association",
+    "stationDistancesKm": {
+      "station:holfuy:894": 7
+    }
   },
   {
     "id": "site:au:qld:the-spit",
@@ -9645,7 +9683,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:1831"
+    ],
     "disciplines": [
       "PG"
     ],
@@ -10364,7 +10404,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:777"
+    ],
     "disciplines": [
       "PG",
       "HG"
@@ -10530,7 +10572,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:616"
+    ],
     "pgeId": "6802",
     "disciplines": [
       "PG",
@@ -19486,7 +19530,10 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:1103",
+      "station:holfuy:151"
+    ],
     "disciplines": [
       "PG"
     ],
@@ -19532,7 +19579,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:152"
+    ],
     "disciplines": [
       "PG",
       "HG"

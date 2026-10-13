@@ -188,6 +188,8 @@ export interface Site {
   launches: Launch[];
   mainLandingName?: string;
   stationIds: string[];
+  /** Approximate distance (km) from the main launch, set by hand where a station's position isn't stored. */
+  stationDistancesKm?: Record<string, number>;
   wtfSlug?: string;
   pgeId?: string; // ParaglidingEarth site ID, for community-layer sites and pinned sample sites
   disciplines: Discipline[];
@@ -195,6 +197,9 @@ export interface Site {
   sources: SourceRef[];
   hidden?: boolean;
 }
+
+/** One entry in site-stations.yaml: a station ID, or an ID with its approximate distance from launch. */
+export type SiteStationEntry = string | { id: string; km: number };
 
 export type StationVerification =
   "verified_public_source" | "linked_by_club" | "listed_on_provider_index" | "needs_verification";

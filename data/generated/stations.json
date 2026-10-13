@@ -427,12 +427,24 @@
     "providerId": "holfuy",
     "providerRef": "1080",
     "name": "Kingston SPHGC",
-    "country": "AU",
+    "country": "NZ",
     "url": "https://holfuy.com/en/weather/1080",
     "embedAllowed": false,
     "feedAllowed": false,
     "verificationStatus": "needs_verification",
     "hidden": true
+  },
+  {
+    "id": "station:holfuy:1103",
+    "legacyId": "HOLF-1103",
+    "providerId": "holfuy",
+    "providerRef": "1103",
+    "name": "Te Mata Peak",
+    "country": "NZ",
+    "url": "https://holfuy.com/en/weather/1103",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
   },
   {
     "id": "station:holfuy:1312",
@@ -444,8 +456,19 @@
     "url": "https://holfuy.com/en/weather/1312",
     "embedAllowed": false,
     "feedAllowed": false,
-    "verificationStatus": "needs_verification",
-    "hidden": true
+    "verificationStatus": "listed_on_provider_index"
+  },
+  {
+    "id": "station:holfuy:1341",
+    "legacyId": "HOLF-1341",
+    "providerId": "holfuy",
+    "providerRef": "1341",
+    "name": "Hinchies",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/1341",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
   },
   {
     "id": "station:holfuy:1342",
@@ -457,8 +480,7 @@
     "url": "https://holfuy.com/en/weather/1342",
     "embedAllowed": false,
     "feedAllowed": false,
-    "verificationStatus": "needs_verification",
-    "hidden": true
+    "verificationStatus": "listed_on_provider_index"
   },
   {
     "id": "station:holfuy:136",
@@ -472,6 +494,54 @@
     "feedAllowed": false,
     "verificationStatus": "needs_verification",
     "hidden": true
+  },
+  {
+    "id": "station:holfuy:1482",
+    "legacyId": "HOLF-1482",
+    "providerId": "holfuy",
+    "providerRef": "1482",
+    "name": "Kawana Beach",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/1482",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
+  },
+  {
+    "id": "station:holfuy:1483",
+    "legacyId": "HOLF-1483",
+    "providerId": "holfuy",
+    "providerRef": "1483",
+    "name": "Cotton Tree",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/1483",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
+  },
+  {
+    "id": "station:holfuy:151",
+    "legacyId": "HOLF-151",
+    "providerId": "holfuy",
+    "providerRef": "151",
+    "name": "Te Mata Ridge",
+    "country": "NZ",
+    "url": "https://holfuy.com/en/weather/151",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
+  },
+  {
+    "id": "station:holfuy:152",
+    "legacyId": "HOLF-152",
+    "providerId": "holfuy",
+    "providerRef": "152",
+    "name": "Coronet Peak Tandems",
+    "country": "NZ",
+    "url": "https://holfuy.com/en/weather/152",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
   },
   {
     "id": "station:holfuy:156",
@@ -497,8 +567,7 @@
     "url": "https://holfuy.com/en/weather/175",
     "embedAllowed": false,
     "feedAllowed": false,
-    "verificationStatus": "needs_verification",
-    "hidden": true
+    "verificationStatus": "listed_on_provider_index"
   },
   {
     "id": "station:holfuy:178",
@@ -523,8 +592,43 @@
     "url": "https://holfuy.com/en/weather/179",
     "embedAllowed": false,
     "feedAllowed": false,
-    "verificationStatus": "needs_verification",
-    "hidden": true
+    "verificationStatus": "listed_on_provider_index"
+  },
+  {
+    "id": "station:holfuy:181",
+    "legacyId": "HOLF-181",
+    "providerId": "holfuy",
+    "providerRef": "181",
+    "name": "Possums",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/181",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
+  },
+  {
+    "id": "station:holfuy:182",
+    "legacyId": "HOLF-182",
+    "providerId": "holfuy",
+    "providerRef": "182",
+    "name": "Monties",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/182",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
+  },
+  {
+    "id": "station:holfuy:1831",
+    "legacyId": "HOLF-1831",
+    "providerId": "holfuy",
+    "providerRef": "1831",
+    "name": "Lemon Hill",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/1831",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
   },
   {
     "id": "station:holfuy:184",
@@ -536,21 +640,19 @@
     "url": "https://holfuy.com/en/weather/184",
     "embedAllowed": false,
     "feedAllowed": false,
-    "verificationStatus": "needs_verification",
-    "hidden": true
+    "verificationStatus": "listed_on_provider_index"
   },
   {
     "id": "station:holfuy:213",
     "legacyId": "HOLF-213",
     "providerId": "holfuy",
     "providerRef": "213",
-    "name": "Kario (HighSide)",
+    "name": "Kario (High Side)",
     "country": "NZ",
     "url": "https://holfuy.com/en/weather/213",
     "embedAllowed": false,
     "feedAllowed": false,
-    "verificationStatus": "needs_verification",
-    "hidden": true
+    "verificationStatus": "listed_on_provider_index"
   },
   {
     "id": "station:holfuy:232",
@@ -564,6 +666,80 @@
     "feedAllowed": false,
     "verificationStatus": "needs_verification",
     "hidden": true
+  },
+  {
+    "id": "station:holfuy:569",
+    "legacyId": "HOLF-569",
+    "providerId": "holfuy",
+    "providerRef": "569",
+    "name": "Sunrise Beach",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/569",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
+  },
+  {
+    "id": "station:holfuy:616",
+    "legacyId": "HOLF-616",
+    "providerId": "holfuy",
+    "providerRef": "616",
+    "name": "Winton",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/616",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
+  },
+  {
+    "id": "station:holfuy:617",
+    "legacyId": "HOLF-617",
+    "providerId": "holfuy",
+    "providerRef": "617",
+    "name": "Mary Ann Bay",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/617",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "needs_verification",
+    "hidden": true
+  },
+  {
+    "id": "station:holfuy:777",
+    "legacyId": "HOLF-777",
+    "providerId": "holfuy",
+    "providerRef": "777",
+    "name": "Gaffs Hill",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/777",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
+  },
+  {
+    "id": "station:holfuy:778",
+    "legacyId": "HOLF-778",
+    "providerId": "holfuy",
+    "providerRef": "778",
+    "name": "Woodspring",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/778",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "needs_verification",
+    "hidden": true
+  },
+  {
+    "id": "station:holfuy:894",
+    "legacyId": "HOLF-894",
+    "providerId": "holfuy",
+    "providerRef": "894",
+    "name": "Lake Cootharaba",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/894",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
   },
   {
     "id": "station:weatherlink:0a7df552-f465-4ce4-90e1-6967f3cf0918",

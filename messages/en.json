@@ -364,6 +364,7 @@
       "clubStation": "Club station",
       "onSite": "On site",
       "away": "{distance} km away",
+      "awayAbout": "about {distance} km away",
       "none": "No weather stations linked to this site yet."
     },
     "forecasts": {

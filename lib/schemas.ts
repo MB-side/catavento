@@ -13,6 +13,7 @@ import type {
   Provider,
   Resource,
   Site,
+  SiteStationEntry,
   Station,
   StewardEvidence,
   Brand,
@@ -265,6 +266,7 @@ export const siteSchema = z.object({
   ),
   mainLandingName: z.string().optional(),
   stationIds: z.array(z.string()),
+  stationDistancesKm: z.record(z.string(), z.number().positive()).optional(),
   wtfSlug: z.string().optional(),
   pgeId: z.string().optional(),
   disciplines: z.array(disciplineSchema),
@@ -556,7 +558,14 @@ export const clubAliasesFileSchema = z.record(
   z.record(z.string(), z.string()).nullable(),
 );
 
-export const siteStationsFileSchema = z.record(z.string(), z.array(z.string())).nullable();
+export const siteStationsFileSchema = z
+  .record(
+    z.string(),
+    z.array(
+      z.union([z.string(), z.object({ id: z.string(), km: z.number().positive() })]),
+    ) satisfies z.ZodType<SiteStationEntry[]>,
+  )
+  .nullable();
 
 export const siteStewardsFileSchema = z
   .record(z.string(), z.object({ org: z.string().optional(), role: stewardRoleSchema, ...meta }))

@@ -224,7 +224,7 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
               <p className="mt-2 text-muted">{t("site.stations.none")}</p>
             ) : (
               <ul className="mt-3 flex flex-col gap-2">
-                {view.stations.map(({ station, provider, km }) => (
+                {view.stations.map(({ station, provider, km, approximate }) => (
                   <li
                     key={station.id}
                     className="flex flex-wrap items-center justify-between gap-2 rounded-[10px] bg-ground p-3"
@@ -239,9 +239,11 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
                             : undefined,
                           km === undefined
                             ? undefined
-                            : km <= 0.2
-                              ? t("site.stations.onSite")
-                              : t("site.stations.away", { distance: km.toFixed(1) }),
+                            : approximate
+                              ? t("site.stations.awayAbout", { distance: String(Math.round(km)) })
+                              : km <= 0.2
+                                ? t("site.stations.onSite")
+                                : t("site.stations.away", { distance: km.toFixed(1) }),
                         ]
                           .filter(Boolean)
                           .join(" · ")}
