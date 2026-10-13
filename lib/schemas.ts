@@ -148,6 +148,11 @@ export const gearCategoriesFileSchema = z
   )
   .nullable();
 
+/** Broken outside links accepted for now, each with a reason and a date to look again (D80). */
+export const linkExceptionsFileSchema = z
+  .array(z.object({ url: httpUrl, reason: z.string().min(1), review: z.iso.date() }))
+  .nullable();
+
 /** Wind directions a club publishes for a site the main source gives none for (D78). */
 export const siteWindFileSchema = z
   .array(

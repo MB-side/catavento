@@ -15,6 +15,16 @@ export interface LinkReport {
   broken: { url: string; page: string; error: string }[];
 }
 
+/** A broken link accepted until its review date: `url` matches the link exactly or as a prefix. */
+export interface LinkException {
+  url: string;
+  reason: string;
+  review: string;
+}
+
+/** Answers that usually mean "no automated checkers", not "gone": not counted as broken (D80). */
+const REFUSED = /^HTTP (401|403|429)\b/;
+
 export interface WorkflowRun {
   name: string;
   conclusion: string | null;
@@ -30,6 +40,7 @@ export interface HealthInput {
   gearCategories: { org: string; source: string; checked: string }[];
   siteWind: { site: string; source: string; checked: string }[];
   links?: LinkReport;
+  linkExceptions?: LinkException[];
   /** Each workflow's most recent finished run, newest first (from GitHub). */
   workflows?: WorkflowRun[];
 }
@@ -106,6 +117,11 @@ export function checkHealth(input: HealthInput): HealthProblem[] {
       });
     }
     for (const b of input.links.broken) {
+      if (REFUSED.test(b.error)) continue;
+      const accepted = (input.linkExceptions ?? []).find(
+        (e) => b.url.startsWith(e.url) && daysSince(e.review, now) <= 0,
+      );
+      if (accepted) continue;
       out.push({
         kind: "links",
         key: `link:${b.url}`,

@@ -795,12 +795,13 @@
     "regionCode": "AU-NSW",
     "locality": "Stanwell Park / Hill 60 Wollongong",
     "postcode": "2508",
+    "website": "https://www.hangglideoz.com.au/",
     "summary": "Tandem hang gliding (~30 min) and lessons; family business since 1987; listed on VisitNSW, Expedia (about A$264), Magpie",
     "sources": [
       {
         "providerId": "org-websites",
-        "url": "https://www.visitnsw.com/things-to-do/tours/hangglideoz",
-        "fetchedAt": "2026-10-08",
+        "url": "https://www.hangglideoz.com.au/",
+        "fetchedAt": "2026-10-13",
         "licence": "facts"
       }
     ],

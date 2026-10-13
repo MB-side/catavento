@@ -15,4 +15,5 @@ Every entry should include a `source` URL or a `note` explaining where the infor
 | `site-stations.yaml` | Weather stations to show for a site, in order |
 | `nz-sample-sites.yaml` | The five New Zealand sample sites and their stewards |
 | `site-wind.yaml` | Wind directions a club publishes for a site the Site Guide gives none for, with the club's page and date checked |
+| `link-exceptions.yaml` | Broken outside links accepted for now, each with a reason and a date to look again |
 | `offerings.yaml` | Published course and tandem prices, each with its source page and date checked |
