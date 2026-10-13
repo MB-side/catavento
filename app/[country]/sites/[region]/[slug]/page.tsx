@@ -173,6 +173,13 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
                 <p className="mt-1 text-[0.875rem] text-muted">
                   {community ? t("site.wind.community") : t("site.wind.note")}
                 </p>
+                {site.windSource && (
+                  <p className="mt-1 text-[0.875rem]">
+                    <Anchor href={site.windSource.url}>
+                      {t("site.wind.fromClub", { name: site.windSource.name })}
+                    </Anchor>
+                  </p>
+                )}
               </div>
             </div>
           </section>

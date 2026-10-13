@@ -116,8 +116,13 @@
     "typeText": "Small Coastal Ridge",
     "heightText": "18m asl",
     "ratingText": "PG4 / HG Advanced",
-    "windRanges": [],
-    "windRangeLabel": "See official details",
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      }
+    ],
+    "windRangeLabel": "NNE–ENE",
     "status": "open",
     "stewardRole": "club",
     "listedContact": {
@@ -160,9 +165,19 @@
         "fetchedAt": "2026-10-12T09:17:42.632Z",
         "licence": "facts",
         "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+      },
+      {
+        "providerId": "club-websites",
+        "url": "https://mncf.tidyhq.com/public/pages/bartletts-reserve",
+        "fetchedAt": "2026-10-13",
+        "licence": "facts"
       }
     ],
-    "stewardOrgId": "org:au:mid-north-coast-flyers"
+    "stewardOrgId": "org:au:mid-north-coast-flyers",
+    "windSource": {
+      "name": "Mid North Coast Flyers Inc",
+      "url": "https://mncf.tidyhq.com/public/pages/bartletts-reserve"
+    }
   },
   {
     "id": "site:au:nsw:bathurst-bash",

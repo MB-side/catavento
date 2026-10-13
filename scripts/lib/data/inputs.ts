@@ -8,6 +8,7 @@ import {
   brandsFileSchema,
   clubAliasesFileSchema,
   gearCategoriesFileSchema,
+  siteWindFileSchema,
   countriesFileSchema,
   nzSampleSitesFileSchema,
   offeringsFileSchema,
@@ -73,5 +74,6 @@ export function readInputs(root: string = process.cwd()): BuildInputs {
     offerings: readYaml("offerings.yaml", offeringsFileSchema),
     brands: readYaml("brands.yaml", brandsFileSchema) ?? [],
     gearCategories: readYaml("gear-categories.yaml", gearCategoriesFileSchema) ?? [],
+    siteWind: readYaml("site-wind.yaml", siteWindFileSchema) ?? [],
   };
 }

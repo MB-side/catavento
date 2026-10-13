@@ -1,0 +1,9 @@
+# Wind directions a club publishes for a site whose main source gives none we can read (D78).
+# Read with the same rules as the Site Guide's (lib/wind.ts) and credited on the site page.
+# Facts only: the directions, never the club's wording around them.
+
+- site: site:au:nsw:bartletts-reserve-ne-bonnys
+  wind: NNE to ENE
+  org: org:au:mid-north-coast-flyers
+  source: https://mncf.tidyhq.com/public/pages/bartletts-reserve
+  checked: 2026-10-13

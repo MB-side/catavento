@@ -84,7 +84,7 @@
   tier: amber
   licence: facts
   attribution: "Source: {club name} website"   # (D39)
-  uses: From each club or association website listed by its national body, news and event headlines with their dates and links (from its news feed or events calendar), and which sites its own "sites" page names (to confirm who manages a site). Never article text, descriptions or photos
+  uses: From each club or association website listed by its national body, news and event headlines with their dates and links (from its news feed or events calendar), which sites its own "sites" page names (to confirm who manages a site), and, where the main site guide gives none, a site's wind directions as the club publishes them. Never article text, descriptions or photos
   method: Reading each club's home page, its news feed or calendar, and its sites page (about 3 to 6 requests per club). Facebook pages are never read. A club can opt out through its robots.txt or by asking us
   schedule: About twice a week
   countries: ["*"]

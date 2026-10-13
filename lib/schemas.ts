@@ -148,6 +148,19 @@ export const gearCategoriesFileSchema = z
   )
   .nullable();
 
+/** Wind directions a club publishes for a site the main source gives none for (D78). */
+export const siteWindFileSchema = z
+  .array(
+    z.object({
+      site: z.string().min(1),
+      wind: z.string().min(1),
+      org: z.string().min(1),
+      source: httpUrl,
+      checked: z.iso.date(),
+    }),
+  )
+  .nullable();
+
 const organisationShape = {
   id: z.string().regex(/^org:[a-z]{2}:[a-z0-9-]+$/),
   legacyId: z.string().optional(),
@@ -267,6 +280,7 @@ export const siteSchema = z.object({
   mainLandingName: z.string().optional(),
   stationIds: z.array(z.string()),
   stationDistancesKm: z.record(z.string(), z.number().positive()).optional(),
+  windSource: z.object({ name: z.string(), url: httpUrl }).optional(),
   wtfSlug: z.string().optional(),
   pgeId: z.string().optional(),
   disciplines: z.array(disciplineSchema),

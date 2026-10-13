@@ -26,6 +26,8 @@ import {
   applyOverrides,
   applyRelated,
   applySiteStations,
+  applySiteWind,
+  type SiteWindInput,
   deriveClubs,
   mapOfferings,
   mapSampleSites,
@@ -72,6 +74,7 @@ export interface BuildInputs {
   sampleSitesChecked: string;
   offerings: OfferingInput[];
   gearCategories: { org: string; sells: GearCategory[]; source: string; checked: string }[];
+  siteWind: SiteWindInput[];
   brands: { name: string; website?: string; distributors: { org: string; role: Brand["distributors"][number]["role"] }[] }[];
 }
 
@@ -154,6 +157,7 @@ export function buildData(input: BuildInputs): BuildOutputs {
     site.stewardOrgId = steward.org ? resolveOrgRef(steward.org, organisations) : undefined;
   }
   applySiteStations(sites, input.siteStations, stations, warnings);
+  applySiteWind(sites, organisations, input.siteWind, warnings);
 
   // What each shop sells, as it publishes (D73), with the page it came from as a source.
   for (const entry of input.gearCategories) {
