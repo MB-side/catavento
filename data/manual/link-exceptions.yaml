@@ -1,0 +1,7 @@
+# Broken outside links accepted for now (D80). The daily health check ignores a link that starts
+# with `url` until the `review` date, then lists it again so it gets another look. Links that
+# refuse automated checkers (HTTP 401, 403, 429) are never counted as broken.
+
+- url: http://members.safa.asn.au/isonic-downloaddoc.php
+  reason: SAFA's own safety-notice listing links to documents that no longer open. Ours mirrors SAFA's list; worth telling SAFA.
+  review: 2027-01-31

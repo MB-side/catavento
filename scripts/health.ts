@@ -4,6 +4,8 @@
 //   pnpm health --out health.md     (GitHub job; HEALTH_WORKFLOWS may hold recent job runs as JSON)
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
+import { parse as parseYaml } from "yaml";
+import { linkExceptionsFileSchema } from "@/lib/schemas";
 import { readInputs } from "./lib/data/inputs";
 import {
   checkHealth,
@@ -22,6 +24,10 @@ const linksPath = path.join(process.cwd(), "data", "reports", "external-links.js
 const links = existsSync(linksPath)
   ? (JSON.parse(readFileSync(linksPath, "utf8")) as LinkReport)
   : undefined;
+const exceptionsPath = path.join(process.cwd(), "data", "manual", "link-exceptions.yaml");
+const linkExceptions = existsSync(exceptionsPath)
+  ? (linkExceptionsFileSchema.parse(parseYaml(readFileSync(exceptionsPath, "utf8"))) ?? [])
+  : [];
 const workflows = process.env.HEALTH_WORKFLOWS
   ? (JSON.parse(process.env.HEALTH_WORKFLOWS) as WorkflowRun[])
   : undefined;
@@ -40,6 +46,7 @@ const problems = checkHealth({
   gearCategories: input.gearCategories,
   siteWind: input.siteWind,
   links,
+  linkExceptions,
   workflows,
 });
 const report = healthReport(problems, now);

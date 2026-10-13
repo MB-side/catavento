@@ -139,3 +139,40 @@ describe("checkHealth", () => {
     expect(problemFingerprint(a)).not.toBe(problemFingerprint([]));
   });
 });
+
+describe("checkHealth: link noise", () => {
+  const links = {
+    checkedAt: "2026-10-12T18:00:00Z",
+    total: 600,
+    broken: [
+      { url: "https://refuses.example/page", page: "a/index.html", error: "HTTP 403" },
+      { url: "https://national.example/doc.php?id=1", page: "b/index.html", error: "HTTP 404" },
+      { url: "https://gone.example/", page: "c/index.html", error: "HTTP 404" },
+    ],
+  };
+
+  it("doesn't count links that refuse checkers, and honours exceptions until their review date", () => {
+    const problems = checkHealth({
+      ...base,
+      links,
+      linkExceptions: [
+        { url: "https://national.example/doc.php", reason: "their listing", review: "2027-01-31" },
+      ],
+    });
+    expect(problems.map((p) => p.key)).toEqual(["link:https://gone.example/"]);
+  });
+
+  it("lists an excepted link again once its review date has passed", () => {
+    const problems = checkHealth({
+      ...base,
+      links,
+      linkExceptions: [
+        { url: "https://national.example/doc.php", reason: "their listing", review: "2026-10-01" },
+      ],
+    });
+    expect(problems.map((p) => p.key)).toEqual([
+      "link:https://national.example/doc.php?id=1",
+      "link:https://gone.example/",
+    ]);
+  });
+});
