@@ -58,9 +58,11 @@ Node 24 and pnpm 12. On the founder's Mac they live in `~/.local` (system Node i
 | Unit tests | `pnpm test` |
 | E2E tests (against the build) | `pnpm test:e2e` |
 | Link check (against the build) | `pnpm check:links` |
+| Outside-link check (polite; `--json <file>` saves a report) | `pnpm check:external` |
+| What needs attention (sources, jobs, links, use-by dates) | `pnpm health` |
 | Lint, format and typecheck | `pnpm lint && pnpm format:check && pnpm typecheck` |
 
-Workflows: `ci.yml` (checks every PR), `deploy.yml` (publishes `main`), `ingest.yml` (daily check-in that runs each source when due; calls `deploy.yml`).
+Workflows: `ci.yml` (checks every PR), `deploy.yml` (publishes `main`), `ingest.yml` (daily check-in that runs each source when due; calls `deploy.yml`), `health.yml` (daily; opens or closes the "health" issue), `links.yml` (monthly outside-link report).
 
 ## Repo map
 
