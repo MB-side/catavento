@@ -41,3 +41,8 @@ TAN-001:
   website: https://www.hangglideoz.com.au/
   sources: [{ providerId: org-websites, url: "https://www.hangglideoz.com.au/", fetchedAt: "2026-10-13", licence: facts }]
   note: "Website found 2026-10-13; replaces the dead VisitNSW source"
+
+# Warren Wind Sports: only source a 2012 article, no website, not in SAFA's school directory, and
+# nothing current found online (checked 2026-10-13). Hidden at the founder's request; one line
+# brings it back if it's shown to be operating.
+SCH-105: { hidden: true, note: "No current evidence of operation (founder, 2026-10-13)" }

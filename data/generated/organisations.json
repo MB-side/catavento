@@ -2855,7 +2855,8 @@
     "lastVerified": "2026-10-08",
     "verificationStatus": "needs_verification",
     "id": "org:au:warren-wind-sports",
-    "slug": "warren-wind-sports"
+    "slug": "warren-wind-sports",
+    "hidden": true
   },
   {
     "legacyId": "CLB-027",
