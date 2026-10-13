@@ -36,10 +36,25 @@ async function main(): Promise<void> {
   const brokenLinks: { url: string; page: string; error: string }[] = [];
   const skipped: string[] = [];
   let done = 0;
+  // A network failure (no HTTP answer at all) is often a one-off timeout, so it's retried once,
+  // a minute later, before the link counts as broken (D80).
+  const attempt = async (url: string): Promise<void> => {
+    try {
+      await fetcher.get(url);
+    } catch (error) {
+      if (
+        error instanceof RobotsDisallowedError ||
+        /^HTTP \d/.test(String((error as Error).message))
+      )
+        throw error;
+      await new Promise((resolve) => setTimeout(resolve, 60_000));
+      await fetcher.get(url);
+    }
+  };
   await Promise.all(
     [...where].map(async ([url, page]) => {
       try {
-        await fetcher.get(url);
+        await attempt(url);
       } catch (error) {
         if (error instanceof RobotsDisallowedError) skipped.push(url);
         else {
