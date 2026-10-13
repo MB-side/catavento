@@ -176,3 +176,18 @@ describe("checkHealth: link noise", () => {
     ]);
   });
 });
+
+describe("checkHealth: country guides (D83)", () => {
+  it("asks for a guide to be re-checked a year after it was checked", () => {
+    const fresh = checkHealth({
+      ...base,
+      guides: [{ code: "FR", name: "France", checked: "2026-10-01" }],
+    });
+    expect(fresh).toEqual([]);
+    const stale = checkHealth({
+      ...base,
+      guides: [{ code: "FR", name: "France", checked: "2025-09-01" }],
+    });
+    expect(stale.map((p) => p.key)).toEqual(["stale-guide:FR"]);
+  });
+});

@@ -9,6 +9,7 @@ import {
   noticeSchema,
   providerRunSchema,
   siteSchema,
+  overviewSiteSchema,
   stewardEvidenceSchema,
 } from "@/lib/schemas";
 import type {
@@ -19,6 +20,7 @@ import type {
   Provider,
   ProviderRun,
   Site,
+  OverviewSite,
   StewardEvidence,
 } from "@/lib/types";
 import { PoliteFetcher } from "./fetcher";
@@ -47,6 +49,8 @@ export interface ProviderContext {
   previousRecords?: IngestRecords;
   force: boolean;
   now: Date;
+  /** ISO codes of overview-region countries (D83): light site lists only. */
+  overview?: string[];
 }
 
 /** Everything a provider can collect. Each kind is optional. */
@@ -56,6 +60,7 @@ export interface IngestRecords {
   events?: EventItem[];
   notices?: Notice[];
   stewardEvidence?: StewardEvidence[];
+  overviewSites?: OverviewSite[];
 }
 
 export interface CollectResult {
@@ -82,14 +87,15 @@ export const ingestFileSchema = z.object({
   events: z.array(eventSchema).optional(),
   notices: z.array(noticeSchema).optional(),
   stewardEvidence: z.array(stewardEvidenceSchema).optional(),
+  overviewSites: z.array(overviewSiteSchema).optional(),
 });
 export type IngestFile = z.infer<typeof ingestFileSchema>;
 export const runsFileSchema = z.record(z.string(), providerRunSchema);
 
-const KINDS = ["sites", "orgs", "events", "notices", "stewardEvidence"] as const;
+const KINDS = ["sites", "orgs", "events", "notices", "stewardEvidence", "overviewSites"] as const;
 // Sites and directories are stable, so a sudden drop means a broken source. Events, notices and
 // evidence come and go naturally, so only their validity is checked.
-const STABLE_KINDS = ["sites", "orgs"] as const;
+const STABLE_KINDS = ["sites", "orgs", "overviewSites"] as const;
 
 const count = (r: IngestRecords | undefined, kinds: readonly (keyof IngestRecords)[]) =>
   kinds.reduce((n, k) => n + (r?.[k]?.length ?? 0), 0);
@@ -120,6 +126,7 @@ export interface RunOptions {
   regions: RegionLookup;
   countriesRegions: Map<string, Set<string>>;
   countryZones?: Map<string, string>;
+  overviewCountries?: string[];
   directory?: () => Directory;
   only?: string;
   force?: boolean;
@@ -180,6 +187,7 @@ export async function runIngest(opts: RunOptions): Promise<Record<string, Provid
         previousRecords: previousFile,
         force: !!opts.force,
         now: now(),
+        overview: opts.overviewCountries ?? [],
       });
       if (result.unchanged) {
         run = {

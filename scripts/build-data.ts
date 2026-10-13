@@ -13,6 +13,9 @@ import {
   noticeSchema,
   offeringSchema,
   resourceSchema,
+  overviewSiteSchema,
+  countryGuideSchema,
+  overviewRegionSchema,
   siteSchema,
   stationSchema,
 } from "../lib/schemas";
@@ -56,6 +59,9 @@ function main(): void {
   validate("brands", brandSchema, out.brands);
   validate("offerings", offeringSchema, out.offerings);
   validate("resources", resourceSchema, out.resources);
+  validate("overview regions", overviewRegionSchema, out.overview.regions);
+  validate("guides", countryGuideSchema, out.overview.guides);
+  validate("overview sites", overviewSiteSchema, out.overviewSites);
 
   for (const [file, records] of [
     ["organisations.json", out.organisations],
@@ -83,6 +89,8 @@ function main(): void {
   write("brands.json", out.brands);
   write("offerings.json", out.offerings);
   write("resources.json", out.resources);
+  write("overview.json", out.overview);
+  write("overview-sites.json", out.overviewSites);
   write("_report.json", out.report);
 
   const c = out.report.build.counts;

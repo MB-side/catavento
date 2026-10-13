@@ -20,6 +20,9 @@ import type {
   GearCategory,
   StewardEvidence,
   StewardRole,
+  CountryGuide,
+  OverviewRegion,
+  OverviewSite,
 } from "@/lib/types";
 import {
   applyOrgMerges,
@@ -75,6 +78,9 @@ export interface BuildInputs {
   offerings: OfferingInput[];
   gearCategories: { org: string; sells: GearCategory[]; source: string; checked: string }[];
   siteWind: SiteWindInput[];
+  overview: OverviewRegion[];
+  guides: CountryGuide[];
+  ingestedOverviewSites: OverviewSite[];
   brands: { name: string; website?: string; distributors: { org: string; role: Brand["distributors"][number]["role"] }[] }[];
 }
 
@@ -89,6 +95,8 @@ export interface BuildOutputs {
   brands: Brand[];
   offerings: Offering[];
   resources: Resource[];
+  overview: { regions: OverviewRegion[]; guides: CountryGuide[] };
+  overviewSites: OverviewSite[];
   report: BuildReport;
 }
 
@@ -234,6 +242,16 @@ export function buildData(input: BuildInputs): BuildOutputs {
     }
   }
 
+  // Overview regions (D83): only countries listed in overview.yaml, sorted for stable output.
+  const overviewCodes = new Set(input.overview.flatMap((r) => r.countries.map((c) => c.code)));
+  const overviewSites = input.ingestedOverviewSites
+    .filter((s) => overviewCodes.has(s.country))
+    .sort((a, b) => a.country.localeCompare(b.country) || a.name.localeCompare(b.name) || a.id.localeCompare(b.id));
+  const guideCodes = new Set(["europe", ...overviewCodes]);
+  for (const g of input.guides) {
+    if (!guideCodes.has(g.code)) warnings.push({ code: "guide-unknown", message: `guides.yaml: "${g.code}" is not an overview region or country` });
+  }
+
   const visible = withClubs.filter((o) => !o.hidden);
   const counts: Record<string, number> = {
     organisations: withClubs.length,
@@ -246,6 +264,7 @@ export function buildData(input: BuildInputs): BuildOutputs {
     offerings: offerings.length,
     events: events.length,
     notices: notices.length,
+    overviewSites: overviewSites.length,
   };
 
   return {
@@ -270,6 +289,8 @@ export function buildData(input: BuildInputs): BuildOutputs {
       .sort(byId),
     offerings,
     resources: seed.resources.sort(byId),
+    overview: { regions: input.overview, guides: input.guides },
+    overviewSites,
     report: { build: { counts, warnings }, providers: input.runs },
   };
 }

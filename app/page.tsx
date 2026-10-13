@@ -7,7 +7,8 @@ import { defaultCountrySegment } from "@/lib/country-codes";
 import { getCountry, getEnabledCountries } from "@/lib/country";
 import { eventSummary, nationalNotices, upcomingEvents } from "@/lib/events-view";
 import { formatDate } from "@/lib/format";
-import { getCounts, type CountryCounts } from "@/lib/data";
+import { getCounts, getOverviewRegions, type CountryCounts } from "@/lib/data";
+import { worldPath } from "@/lib/overview";
 import { t, tCount, type MessageKey } from "@/lib/messages";
 import { absoluteUrl, withBasePath } from "@/lib/paths";
 import { homeTitle } from "@/lib/seo";
@@ -178,6 +179,25 @@ export default function HomePage() {
                   </span>
                 </span>
                 <ArrowRight className="size-6 shrink-0 text-action" aria-hidden="true" />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section aria-labelledby="elsewhere">
+        <h2 id="elsewhere" className="font-condensed text-[1.375rem] font-bold">
+          {t("home.elsewhereHeading")}
+        </h2>
+        <p className="mt-1 max-w-3xl text-muted-strong">{t("home.elsewhereText")}</p>
+        <ul className="mt-3 flex flex-wrap gap-2" data-testid="home-elsewhere">
+          {getOverviewRegions().map((r) => (
+            <li key={r.slug}>
+              <Link
+                href={`${worldPath(r)}/`}
+                className="inline-flex min-h-11 items-center rounded-full border border-border bg-surface px-4 font-semibold text-ink hover:border-link hover:text-ink"
+              >
+                {r.name}
               </Link>
             </li>
           ))}

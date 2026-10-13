@@ -9,6 +9,8 @@ import {
   clubAliasesFileSchema,
   gearCategoriesFileSchema,
   siteWindFileSchema,
+  overviewFileSchema,
+  guidesFileSchema,
   countriesFileSchema,
   nzSampleSitesFileSchema,
   offeringsFileSchema,
@@ -75,5 +77,8 @@ export function readInputs(root: string = process.cwd()): BuildInputs {
     brands: readYaml("brands.yaml", brandsFileSchema) ?? [],
     gearCategories: readYaml("gear-categories.yaml", gearCategoriesFileSchema) ?? [],
     siteWind: readYaml("site-wind.yaml", siteWindFileSchema) ?? [],
+    overview: readYaml("overview.yaml", overviewFileSchema).regions,
+    guides: readYaml("guides.yaml", guidesFileSchema) ?? [],
+    ingestedOverviewSites: ingestFiles.flatMap((f) => f.overviewSites ?? []),
   };
 }
