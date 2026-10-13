@@ -787,7 +787,7 @@
     "servicesHeading": "Services your browser contacts",
     "servicesIntro": "Some features load from other services, straight from your browser. Like any website, each of them can see your browser's internet address.",
     "openMeteo": "Open-Meteo, for wind forecasts, whenever a page shows an outlook. The request contains the site's position, nothing about you.",
-    "openFreeMap": "OpenFreeMap, for map tiles, only when you open a map.",
+    "openFreeMap": "OpenFreeMap, for map tiles, whenever a page shows a map.",
     "windy": "Windy, for its live wind map, only after you tap “Show live wind map”. Windy may set its own cookies.",
     "links": "Links to weather stations, clubs, schools and other sites take you to those sites, under their own privacy policies.",
     "feedbackHeading": "Feedback and corrections",
