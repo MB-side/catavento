@@ -18,6 +18,9 @@ import type {
   StewardEvidence,
   Brand,
   ProviderRun,
+  CountryGuide,
+  OverviewRegion,
+  OverviewSite,
 } from "./types";
 
 // ---------- shared pieces ----------
@@ -639,3 +642,50 @@ export const offeringsFileSchema = z.array(
     note: z.string().optional(),
   }),
 );
+
+// ---------- overview regions (D83) ----------
+
+const windArcSchema = z.object({
+  fromDeg: z.number().min(0).max(360),
+  toDeg: z.number().min(0).max(360),
+});
+
+export const overviewSiteSchema = z.object({
+  id: z.string().regex(/^pge:\d+$/),
+  name: z.string().min(1),
+  country: z.string().regex(/^[A-Z]{2}$/),
+  lat: z.number().min(-90).max(90),
+  lon: z.number().min(-180).max(180),
+  altitudeM: z.number().optional(),
+  windRanges: z.union([z.literal("all"), z.array(windArcSchema)]),
+  windMarginal: z.array(windArcSchema).optional(),
+  windLabel: z.string(),
+  disciplines: z.array(disciplineSchema),
+  flyingTypes: z.array(z.enum(["thermal", "soaring", "xc", "flatland", "winch"])).optional(),
+  landing: z.object({ lat: z.number(), lon: z.number() }).optional(),
+  url: httpUrl,
+  fetchedAt: z.iso.datetime({ offset: true }),
+}) satisfies z.ZodType<OverviewSite>;
+
+export const overviewRegionSchema = z.object({
+  slug: z.string().regex(/^[a-z-]+$/),
+  name: z.string().min(1),
+  countries: z
+    .array(z.object({ code: z.string().regex(/^[A-Z]{2}$/), name: z.string().min(1) }))
+    .min(1),
+}) satisfies z.ZodType<OverviewRegion>;
+
+export const overviewFileSchema = z.object({ regions: z.array(overviewRegionSchema).min(1) });
+
+export const countryGuideSchema = z.object({
+  code: z.string().min(2),
+  name: z.string().min(1),
+  nationalBody: z.object({ name: z.string().min(1), url: httpUrl }).optional(),
+  visitors: z.array(z.string().min(1)),
+  learners: z.array(z.string().min(1)),
+  links: z.array(z.object({ label: z.string().min(1), url: httpUrl })),
+  sources: z.array(httpUrl),
+  checked: z.iso.date(),
+}) satisfies z.ZodType<CountryGuide>;
+
+export const guidesFileSchema = z.array(countryGuideSchema).nullable();

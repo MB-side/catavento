@@ -53,6 +53,8 @@
     "whatsOn": "Events, competitions and safety notices.",
     "gear": "Where to buy, shops and service centres, and used gear.",
     "newToFlying": "Tandem flights, learning to fly, and schools.",
+    "elsewhereHeading": "Flying elsewhere",
+    "elsewhereText": "Travelling? A short overview of other countries: where the sites are, how flying works for visitors and learners, and who to contact.",
     "countriesHeading": "Browse by country",
     "nationalBody": "National body: {name}",
     "sampleLabel": "Sample",
@@ -76,6 +78,10 @@
     "about": {
       "title": "About",
       "summary": "What Catavento is, who runs it and how to give feedback."
+    },
+    "world": {
+      "title": "Flying elsewhere",
+      "summary": "Sites, rules and contacts for flying outside Australia and New Zealand."
     },
     "sources": {
       "title": "Sources and attribution",
@@ -171,6 +177,31 @@
       "one": "{count} weather station link",
       "other": "{count} weather station links"
     }
+  },
+  "world": {
+    "intro": "Outside Australia and New Zealand, Catavento gives a short overview: where the sites are, how flying works for visitors and learners, and where to find more. Each country's national body has the full detail.",
+    "overviewIntro": "A short overview: how flying works here, where the sites are, and where to find more. Check with the national body or a local club or school before flying.",
+    "overviewLabel": "Overview",
+    "regionTitle": "Flying in {name}",
+    "regionSummary": "How paragliding and hang gliding work in {name}, where the sites are, and who to contact.",
+    "countriesCount": "{count} countries",
+    "guideHeading": "How flying works here",
+    "visitorsHeading": "Visiting pilots",
+    "learnersHeading": "Learning to fly",
+    "linksHeading": "Where to find more",
+    "nationalBody": "National body",
+    "guideChecked": "Checked {date} against official sources:",
+    "source": "source {n}",
+    "guideMissing": "We haven't written a guide for {country} yet. Check with the national body or a local club or school before flying.",
+    "mapHeading": "Map",
+    "sitesHeading": "Sites",
+    "sitesNote": "Sites listed by ParaglidingEarth's contributors. Ask a local club or school about each one before flying there.",
+    "sitesNone": "ParaglidingEarth doesn't list any sites in {country} yet.",
+    "countriesHeading": "Countries",
+    "openFull": "Full details on ParaglidingEarth",
+    "landingMap": "Landing on a map",
+    "showOutlook": "Show the next 3 days",
+    "checked": "checked {date}"
   },
   "sources": {
     "intro": "Catavento brings together public information from many places. Every record shows where it came from and when it was checked. This page lists every source, what we use from it, how often we check it, and the credit we show.",

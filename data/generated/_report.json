@@ -10,7 +10,8 @@
       "providers": 24,
       "offerings": 1,
       "events": 3,
-      "notices": 40
+      "notices": 40,
+      "overviewSites": 9055
     },
     "warnings": [
       {
@@ -664,14 +665,14 @@
     },
     "pge": {
       "status": "ok",
-      "startedAt": "2026-10-13T08:39:23.097Z",
-      "finishedAt": "2026-10-13T08:39:36.392Z",
-      "recordsFound": 388,
-      "recordsChanged": 388,
+      "startedAt": "2026-10-13T09:35:13.342Z",
+      "finishedAt": "2026-10-13T09:38:51.210Z",
+      "recordsFound": 9443,
+      "recordsChanged": 9443,
       "warnings": [],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-10-13T08:39:36.392Z",
-      "contentHash": "6d838bb0876f4a50886203ab918290cc13a9a88efa2d14ff78af21af4844a3b9"
+      "lastSuccessAt": "2026-10-13T09:38:51.210Z",
+      "contentHash": "22541882c7e98b019e6a8a7062dff1cd93cfb5a6ec82f589b9befd9b5ed29779"
     },
     "club-websites": {
       "status": "warning",

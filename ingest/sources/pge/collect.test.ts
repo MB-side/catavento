@@ -6,6 +6,8 @@ import {
   cleanPgeName,
   goodDirections,
   possibleDirections,
+  overviewName,
+  toOverviewSite,
   toSite,
   type PgeFeature,
 } from "./collect";
@@ -118,5 +120,42 @@ describe("toSite: extra facts (D81)", () => {
     const { site } = toSite(byName("Black Jack"), AU, regions, source);
     expect(site?.landings).toBeUndefined();
     expect(site?.parking).toBeUndefined();
+  });
+});
+
+describe("toOverviewSite (D83)", () => {
+  it("makes a light record with the country asked for, and no text", () => {
+    const s = toOverviewSite(byName("Manilla"), "fr", "2026-10-13T00:00:00.000Z");
+    expect(s).toMatchObject({
+      id: "pge:4632",
+      name: "Manilla, Mt Borah (NSW)",
+      country: "FR",
+      altitudeM: 895,
+      flyingTypes: ["thermal", "soaring", "flatland"],
+      landing: { lat: -30.6831, lon: 150.597 },
+      url: "https://www.paraglidingearth.com/?site=4632",
+    });
+    expect(JSON.stringify(s)).not.toContain("must not be copied");
+  });
+
+  it("keeps possible directions apart and skips records without a position", () => {
+    expect(
+      toOverviewSite(byName("Mosman"), "au", "2026-10-13T00:00:00.000Z")?.windMarginal,
+    ).toEqual([{ fromDeg: 22.5, toDeg: 67.5 }]);
+    const broken = {
+      ...byName("Mosman"),
+      geometry: { type: "Point", coordinates: [0, 0] as [number, number] },
+    };
+    expect(toOverviewSite(broken, "au", "2026-10-13T00:00:00.000Z")).toBeUndefined();
+  });
+});
+
+describe("overviewName", () => {
+  it("keeps community names but meets the wording rules", () => {
+    expect(overviewName("Mynydd Llangorse [closed]")).toBe("Mynydd Llangorse (closed)");
+    expect(overviewName("Henninger Flats - No Safe Local LZ")).toBe(
+      "Henninger Flats - No Suitable Local LZ",
+    );
+    expect(overviewName("Col de l\\'Arpettaz")).toBe("Col de l'Arpettaz");
   });
 });

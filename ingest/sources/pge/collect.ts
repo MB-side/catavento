@@ -5,7 +5,7 @@
 // In fully covered countries these become the "community data" layer for sites the primary guide
 // lacks (duplicates are dropped at build, docs/05 §5.3); in sample countries they only supply
 // coordinates and wind directions to sample sites pinned by ParaglidingEarth ID.
-import type { Discipline, FlyingType, Site, SitePoint, SourceRef } from "@/lib/types";
+import type { Discipline, FlyingType, OverviewSite, Site, SitePoint, SourceRef } from "@/lib/types";
 import { parseWindRange } from "@/lib/wind";
 import { slugify, siteId } from "@/scripts/lib/data/ids";
 import { sha256 } from "../../core/fetcher";
@@ -13,7 +13,7 @@ import type { CountryScope, ProviderModule } from "../../core/runner";
 import type { RegionLookup } from "../../core/regions";
 
 export const PGE_API = "https://www.paraglidingearth.com/api/geojson/getCountrySites.php";
-export const READER_VERSION = 2;
+export const READER_VERSION = 3;
 
 const POINTS = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"] as const;
 
@@ -176,6 +176,66 @@ export function toSite(
   };
 }
 
+/**
+ * Community names shown as given, with two exceptions so they meet the site's wording rules
+ * (docs/07): square brackets become round ones ("[closed]" → "(closed)"), and "safe" becomes
+ * "suitable" ("No Safe Local LZ" → "No Suitable Local LZ"), which keeps the warning.
+ */
+export function overviewName(raw: string): string {
+  return cleanPgeName(raw, [])
+    .replace(/\[/g, "(")
+    .replace(/\]/g, ")")
+    .replace(/\bsafe\b/gi, (w) => (w[0] === "S" ? "Suitable" : "suitable"));
+}
+
+/**
+ * A light record for an overview-region country (D83): position, height, wind directions, kinds of
+ * flying and the landing position, linking to its ParaglidingEarth page. No region lookup: the
+ * country is the one asked for.
+ */
+export function toOverviewSite(
+  f: PgeFeature,
+  country: string,
+  fetchedAt: string,
+): OverviewSite | undefined {
+  const p = f.properties;
+  const [lon, lat] = f.geometry.coordinates;
+  if (f.geometry.type !== "Point" || !Number.isFinite(lat) || !Number.isFinite(lon))
+    return undefined;
+  if (Math.abs(lat) > 90 || Math.abs(lon) > 180 || (lat === 0 && lon === 0)) return undefined;
+  if (!/^\d+$/.test(p.pge_site_id ?? "")) return undefined;
+  const name = overviewName(p.name);
+  if (!name) return undefined;
+  const dirs = goodDirections(p);
+  const wind = dirs.length ? parseWindRange(dirs.join(", ")) : undefined;
+  const possible = possibleDirections(p);
+  const marginal = possible.length ? parseWindRange(possible.join(", ")).ranges : undefined;
+  const disciplines: Discipline[] = [];
+  if (p.paragliding === "1") disciplines.push("PG");
+  if (p.hanggliding === "1") disciplines.push("HG");
+  const extra = extraFacts(p);
+  const altitudeM = positive(p.takeoff_altitude);
+  const landing = extra.landings?.[0];
+  return {
+    id: `pge:${p.pge_site_id}`,
+    name,
+    country: country.toUpperCase(),
+    lat: Number(lat.toFixed(5)),
+    lon: Number(lon.toFixed(5)),
+    ...(altitudeM ? { altitudeM } : {}),
+    windRanges: wind?.ranges ?? [],
+    ...(marginal && marginal !== "all" && marginal.length ? { windMarginal: marginal } : {}),
+    windLabel: wind?.label ?? "See official details",
+    disciplines,
+    ...(extra.flyingTypes ? { flyingTypes: extra.flyingTypes } : {}),
+    ...(landing ? { landing: { lat: landing.lat, lon: landing.lon } } : {}),
+    url:
+      p.pge_link?.replace(/^http:/, "https:") ??
+      `https://www.paraglidingearth.com/?site=${p.pge_site_id}`,
+    fetchedAt,
+  };
+}
+
 export const pge: ProviderModule = {
   id: "pge",
   async collect(ctx) {
@@ -187,8 +247,16 @@ export const pge: ProviderModule = {
       );
       downloads.push({ country, res });
     }
+    // Overview-region countries (D83): the plain download is enough for their light records.
+    const fullCodes = new Set(ctx.countries.map((c) => c.code));
+    const overviewDownloads = [];
+    for (const code of ctx.overview ?? []) {
+      if (fullCodes.has(code)) continue;
+      const res = await ctx.fetcher.get(`${PGE_API}?iso=${code.toLowerCase()}`);
+      overviewDownloads.push({ code, res });
+    }
     const contentHash = sha256(
-      `${READER_VERSION}:${downloads.map((d) => d.res.contentHash).join(":")}`,
+      `${READER_VERSION}:${[...downloads, ...overviewDownloads].map((d) => d.res.contentHash).join(":")}`,
     );
     if (!ctx.force && contentHash === ctx.previous?.contentHash) {
       return { unchanged: true, contentHash, records: {}, invalid: 0, warnings: [] };
@@ -226,6 +294,21 @@ export const pge: ProviderModule = {
         sites.push(site);
       }
     }
-    return { unchanged: false, contentHash, records: { sites }, invalid, warnings };
+    const overviewSites: OverviewSite[] = [];
+    for (const { code, res } of overviewDownloads) {
+      const features = (JSON.parse(res.body) as { features?: PgeFeature[] }).features ?? [];
+      for (const f of features) {
+        const site = toOverviewSite(f, code, res.fetchedAt);
+        if (site) overviewSites.push(site);
+        else invalid++;
+      }
+    }
+    return {
+      unchanged: false,
+      contentHash,
+      records: { sites, ...(overviewSites.length ? { overviewSites } : {}) },
+      invalid,
+      warnings,
+    };
   },
 };

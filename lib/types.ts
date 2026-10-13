@@ -421,3 +421,42 @@ export interface ListedContact {
   providerId: string;
   clubRef?: { providerId: string; id: string }; // the club's code at another source, e.g. SAFA's (D60)
 }
+
+// ---------- overview regions (D83) ----------
+
+/** A site in an overview region: a light ParaglidingEarth record, listed and mapped but without its own page. */
+export interface OverviewSite {
+  id: string; // "pge:<ParaglidingEarth ID>"
+  name: string;
+  country: string; // ISO 3166-1 alpha-2, upper case
+  lat: number;
+  lon: number;
+  altitudeM?: number;
+  windRanges: WindArc[] | "all";
+  windMarginal?: WindArc[];
+  windLabel: string;
+  disciplines: Discipline[];
+  flyingTypes?: FlyingType[];
+  landing?: { lat: number; lon: number };
+  url: string; // its ParaglidingEarth page
+  fetchedAt: string;
+}
+
+/** An overview region: a group of countries (Europe) or a single destination country. */
+export interface OverviewRegion {
+  slug: string;
+  name: string;
+  countries: { code: string; name: string }[];
+}
+
+/** How flying works in a country, or across a region: short facts from official sources. */
+export interface CountryGuide {
+  code: string; // ISO code, or a region slug for a region-wide guide ("europe")
+  name: string;
+  nationalBody?: { name: string; url: string };
+  visitors: string[];
+  learners: string[];
+  links: { label: string; url: string }[];
+  sources: string[];
+  checked: string; // ISO date the facts were checked
+}

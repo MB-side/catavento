@@ -83,3 +83,44 @@
     }
   }
 }
+
+/* Overview site lists (D83): styled once here, so a thousand entries carry no per-item classes. */
+.overview-sites {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.overview-sites > li {
+  scroll-margin-top: 6rem;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-surface);
+}
+.overview-sites summary {
+  min-height: 2.75rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+}
+.overview-sites summary span {
+  color: var(--color-muted);
+  font-size: 0.875rem;
+}
+.overview-sites details > :not(summary) {
+  margin: 0 0.75rem 0.5rem;
+  font-size: 0.9375rem;
+}
+.overview-sites details > p:first-of-type {
+  margin-top: 0.5rem;
+}
+.overview-sites button[data-outlook] {
+  min-height: 2.75rem;
+  padding: 0 0.75rem;
+  border: 1px solid var(--color-border-strong);
+  border-radius: 10px;
+  background: var(--color-surface);
+  font-weight: 600;
+}

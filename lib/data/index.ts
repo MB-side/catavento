@@ -17,6 +17,9 @@ import {
   resourceSchema,
   siteSchema,
   stationSchema,
+  overviewSiteSchema,
+  overviewRegionSchema,
+  countryGuideSchema,
 } from "@/lib/schemas";
 import type {
   Brand,
@@ -33,6 +36,9 @@ import type {
   Resource,
   Site,
   Station,
+  CountryGuide,
+  OverviewRegion,
+  OverviewSite,
 } from "@/lib/types";
 
 const GENERATED = path.join(process.cwd(), "data", "generated");
@@ -171,4 +177,29 @@ export function getCounts(country: CountryCode): CountryCounts {
     ).length,
     stations: getStations().filter((s) => sameCountry(s.country, country)).length,
   };
+}
+
+// ---------- overview regions (D83) ----------
+
+const overviewSchema = z.object({
+  regions: z.array(overviewRegionSchema),
+  guides: z.array(countryGuideSchema),
+});
+
+export function getOverviewRegions(): OverviewRegion[] {
+  return load("overview.json", overviewSchema).regions;
+}
+
+export function getOverviewRegion(slug: string): OverviewRegion | undefined {
+  return getOverviewRegions().find((r) => r.slug === slug);
+}
+
+/** The guide for a country (ISO code) or a region-wide guide (region slug, e.g. "europe"). */
+export function getGuide(code: string): CountryGuide | undefined {
+  return load("overview.json", overviewSchema).guides.find((g) => g.code === code);
+}
+
+export function getOverviewSites(country?: string): OverviewSite[] {
+  const all = load("overview-sites.json", z.array(overviewSiteSchema));
+  return country ? all.filter((s) => s.country === country.toUpperCase()) : all;
 }
