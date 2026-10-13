@@ -136,17 +136,21 @@ test.describe("sites list", () => {
     );
   });
 
-  test("the map loads only on request, and the list still works if tiles fail", async ({
+  test("the map shows by default, can be hidden, and the list still works if tiles fail", async ({
     page,
   }) => {
     await page.route("**/tiles.openfreemap.org/**", (route) => route.abort());
     await page.goto("au/sites/");
+    await expect(
+      page.getByText(/The map couldn't load|Loading the map/).or(page.getByTestId("sites-map")),
+    ).toBeVisible();
+    await expect(page.getByTestId("site-list")).toBeVisible();
+    await page.getByRole("button", { name: "Hide map" }).click();
     await expect(page.getByTestId("sites-map")).toHaveCount(0);
     await page.getByRole("button", { name: "Show map" }).click();
     await expect(
       page.getByText(/The map couldn't load|Loading the map/).or(page.getByTestId("sites-map")),
     ).toBeVisible();
-    await expect(page.getByTestId("site-list")).toBeVisible();
   });
 
   test("community sites are labelled", async ({ page }) => {

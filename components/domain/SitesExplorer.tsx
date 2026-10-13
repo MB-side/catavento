@@ -1,7 +1,8 @@
 "use client";
 
 // Sites list with filters (docs/02 §5.5). The list is the main interface and works without
-// JavaScript (it is pre-rendered in full); the map is an extra that loads only when asked for.
+// JavaScript (it is pre-rendered in full); the map opens above it once the page's script has loaded
+// (founder, D75), and can be hidden.
 import dynamic from "next/dynamic";
 import { useMemo, useState } from "react";
 import { Map as MapIcon } from "lucide-react";
@@ -31,7 +32,7 @@ export function SitesExplorer({ sites, regions, regionLabel }: Props) {
   const [discipline, setDiscipline] = useState("");
   const [wind, setWind] = useState("");
   const [officialOnly, setOfficialOnly] = useState(false);
-  const [showMap, setShowMap] = useState(false);
+  const [showMap, setShowMap] = useState(true);
 
   const shown = useMemo(() => {
     const q = fold(text.trim());
