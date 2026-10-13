@@ -19,6 +19,7 @@ export interface ExportContact {
 
 export interface ExportLaunch {
   name?: string | null;
+  conditions?: string | null; // the launch's own wind directions, where the site gives none
   lat?: number;
   lon?: number;
 }
@@ -133,7 +134,14 @@ export function parseExport(data: SiteGuideExport): { sites: ParsedSite[]; skipp
       typeText: short(s.type),
       heightText: short(s.height),
       ratingText: short(s.rating),
-      conditionsText: short(s.conditions),
+      // Wind directions: the site's own, or else those given for its launches.
+      conditionsText:
+        short(s.conditions) ??
+        short(
+          [...new Set((s.launches ?? []).map((l) => l.conditions?.trim()).filter(Boolean))].join(
+            ", ",
+          ),
+        ),
       contact: chooseContact(s.contacts),
       launches,
       status: s.closed?.trim() ? "closed" : "open",

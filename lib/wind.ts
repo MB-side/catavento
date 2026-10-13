@@ -131,16 +131,21 @@ export function mergeArcs(arcs: WindArc[]): WindArc[] {
 
 /**
  * Reads a published wind-direction text, e.g. "North East", "S to SE", "NW- WSW (best WNW)",
- * "W, SW", "All". Text that isn't purely directions (prose) is not guessed at: it returns no
- * ranges and the label "See official details" (docs/05 §5.1).
+ * "W, SW", "All", "NNE-E.", "SE but will tolerate ESE". Speed notes are dropped (speeds are never
+ * judged). Text that isn't purely directions (prose) is not guessed at: it returns no ranges and the
+ * label "See official details" (docs/05 §5.1). Also refused: separate directions for paragliders
+ * and hang gliders ("PG SE to ENE / HG ESE to ENE"), and "light" qualifiers ("E or light NE"),
+ * since the outlook judges direction only.
  */
 export function parseWindRange(text: string | undefined): ParsedWind {
   const unparsed: ParsedWind = { ranges: [], label: UNPARSED_LABEL, parsed: false };
   if (!text) return unparsed;
   let t = text
     .toLowerCase()
+    .replace(/&amp;/g, "&")
     .replace(/\([^)]*\)/g, " ")
     .trim();
+  if (/\b(pg|hg)\b\s*:?\s*(n|s|e|w|north|south|east|west)/.test(t)) return unparsed;
   if (
     /^(all|any|various)\b[\s\w]*$/.test(t) &&
     !/\b(n|e|s|w)\b/.test(t.replace(/^(all|any|various)/, ""))
@@ -150,8 +155,15 @@ export function parseWindRange(text: string | undefined): ParsedWind {
   // Drop speed and launch notes that follow the directions, e.g. "NW at 10-15kn",
   // "ESE to ENE, soarable over 10 knots", "N-NE Launch". Anything else left over means prose.
   t = t
-    .replace(/[<>~]?\s*\d+(\.\d+)?\s*(-\s*\d+(\.\d+)?)?\s*(knots|kts?|kn|km\/?h|kmh|°)/g, " ")
-    .replace(/\b(soarable|ideal(ly)?|launch(es)?|faces?|at|over|under|true)\b/g, " ");
+    .replace(/\++/g, " ")
+    .replace(/[<>~]?\s*\d+(\.\d+)?\s*((-|to)\s*\d+(\.\d+)?)?\s*(knots|kts?|kn|km\/?h|kmh|°)/g, " ")
+    .replace(/\bup to\b/g, " ")
+    .replace(/\b(but|or)\b/g, ",")
+    .replace(/[.:]/g, " ")
+    .replace(
+      /\b(soarable|ideal(ly)?|launch(es)?|faces?|at|over|under|true|hg|pg|strength|thermic|possible|maximum|minimum|various|is|can|take|will|tolerate)\b/g,
+      " ",
+    );
   for (const [re, p] of WORDS) t = t.replace(re, ` ${p} `);
   t = t
     .replace(/\bthrough\b|\bto\b|–|—/g, "-")
@@ -160,7 +172,7 @@ export function parseWindRange(text: string | undefined): ParsedWind {
 
   const parts = t
     .split(/,|;|\/|&|•|\band\b/)
-    .map((s) => s.trim())
+    .map((s) => s.trim().replace(/^-+\s*|\s*-+$/g, ""))
     .filter(Boolean);
   if (parts.length === 0) return unparsed;
 
