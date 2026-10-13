@@ -128,3 +128,8 @@ test("links to other websites open in a new tab and say so; the site's own links
   const own = page.locator('main a[href^="/catavento/"]').first();
   await expect(own).not.toHaveAttribute("target", "_blank");
 });
+
+test("the Sources page thanks the people behind the information", async ({ page }) => {
+  await page.goto("sources/");
+  await expect(page.getByTestId("sources-thanks")).toContainText("Thank you");
+});

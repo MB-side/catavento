@@ -18,6 +18,10 @@
   --color-marginal: #f0a04b;
   --color-outside: #dce2e8;
   --color-light-wind: #f3f6f8;
+  --color-good-tint: #e1f2e6;
+  --color-good-text: #1c6a37;
+  --color-bad-tint: #fbe2df;
+  --color-bad-text: #a1231b;
   --color-notice-tint: #fcebd9;
   --color-notice-text: #8a3a06;
   --color-prototype-tint: #fbe7c6;
