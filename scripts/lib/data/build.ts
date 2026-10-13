@@ -13,6 +13,7 @@ import type {
   Provider,
   Resource,
   Site,
+  SiteStationEntry,
   Station,
   Brand,
   ProviderRun,
@@ -65,7 +66,7 @@ export interface BuildInputs {
   orgMerges: { merge: MergeRule[]; related: { ids: string[] }[] };
   overrides: Record<string, Record<string, unknown>>;
   clubAliases: Record<string, Record<string, string> | null>;
-  siteStations: Record<string, string[]>;
+  siteStations: Record<string, SiteStationEntry[]>;
   siteStewards: Record<string, { org?: string; role: StewardRole }>;
   sampleSites: SampleSiteInput[];
   sampleSitesChecked: string;

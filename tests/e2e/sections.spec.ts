@@ -234,3 +234,9 @@ test("search finds shops by the gear people ask for", async ({ page }) => {
     page.getByTestId("search-results").getByRole("link", { name: "Paragliding Shop" }),
   ).toBeVisible();
 });
+
+test("a station away from the launch says roughly how far", async ({ page }) => {
+  await page.goto("au/sites/qld/teewah-beach/");
+  await expect(page.locator("main")).toContainText("Lake Cootharaba");
+  await expect(page.locator("main")).toContainText("about 7 km away");
+});

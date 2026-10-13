@@ -7,6 +7,7 @@ import type {
   Organisation,
   Provider,
   Site,
+  SiteStationEntry,
   SourceRef,
   Station,
   StewardRole,
@@ -250,17 +251,25 @@ export function mapOfferings(
   return out;
 }
 
-/** Station IDs for each site from data/manual/site-stations.yaml (curated order first). */
+/**
+ * Station IDs for each site from data/manual/site-stations.yaml (curated order first), with any
+ * hand-set approximate distances.
+ */
 export function applySiteStations(
   sites: Site[],
-  curated: Record<string, string[]>,
+  curated: Record<string, SiteStationEntry[]>,
   stations: Station[],
   warnings: BuildWarning[],
 ): void {
   const known = new Set(stations.map((s) => s.id));
   for (const site of sites) {
-    const ids = curated[site.id];
-    if (!ids) continue;
+    const entries = curated[site.id];
+    if (!entries) continue;
+    const ids = entries.map((e) => (typeof e === "string" ? e : e.id));
+    const distances = Object.fromEntries(
+      entries.flatMap((e) => (typeof e === "string" || !known.has(e.id) ? [] : [[e.id, e.km]])),
+    );
+    if (Object.keys(distances).length > 0) site.stationDistancesKm = distances;
     for (const id of ids) {
       if (!known.has(id)) warnings.push({ code: "station-missing", message: `${site.id}: station ${id} not found`, recordId: site.id });
     }

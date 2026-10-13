@@ -30,6 +30,7 @@ export interface StationLink {
   station: Station;
   provider?: Provider;
   km?: number; // distance from the main launch, when both positions are known
+  approximate?: boolean; // km was set by hand (site-stations.yaml), not measured
 }
 
 /**
@@ -52,11 +53,16 @@ export function stationsFor(site: Site): StationLink[] {
     .filter((x): x is { s: Station; km: number } => x.km !== undefined && x.km <= NEARBY_STATION_KM)
     .sort((a, b) => a.km - b.km)
     .map((x) => x.s);
-  return [...curated, ...near].map((station) => ({
-    station,
-    provider: getProvider(station.providerId),
-    km: dist(station),
-  }));
+  return [...curated, ...near].map((station) => {
+    const measured = dist(station);
+    const approx = measured === undefined ? site.stationDistancesKm?.[station.id] : undefined;
+    return {
+      station,
+      provider: getProvider(station.providerId),
+      km: measured ?? approx,
+      ...(approx !== undefined ? { approximate: true } : {}),
+    };
+  });
 }
 
 export interface SiteView {

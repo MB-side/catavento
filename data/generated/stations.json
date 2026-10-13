@@ -456,8 +456,19 @@
     "url": "https://holfuy.com/en/weather/1312",
     "embedAllowed": false,
     "feedAllowed": false,
-    "verificationStatus": "needs_verification",
-    "hidden": true
+    "verificationStatus": "listed_on_provider_index"
+  },
+  {
+    "id": "station:holfuy:1341",
+    "legacyId": "HOLF-1341",
+    "providerId": "holfuy",
+    "providerRef": "1341",
+    "name": "Hinchies",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/1341",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
   },
   {
     "id": "station:holfuy:1342",
@@ -483,6 +494,30 @@
     "feedAllowed": false,
     "verificationStatus": "needs_verification",
     "hidden": true
+  },
+  {
+    "id": "station:holfuy:1482",
+    "legacyId": "HOLF-1482",
+    "providerId": "holfuy",
+    "providerRef": "1482",
+    "name": "Kawana Beach",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/1482",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
+  },
+  {
+    "id": "station:holfuy:1483",
+    "legacyId": "HOLF-1483",
+    "providerId": "holfuy",
+    "providerRef": "1483",
+    "name": "Cotton Tree",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/1483",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
   },
   {
     "id": "station:holfuy:151",
@@ -628,6 +663,30 @@
     "name": "Sunrise Beach",
     "country": "AU",
     "url": "https://holfuy.com/en/weather/569",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
+  },
+  {
+    "id": "station:holfuy:616",
+    "legacyId": "HOLF-616",
+    "providerId": "holfuy",
+    "providerRef": "616",
+    "name": "Winton",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/616",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
+  },
+  {
+    "id": "station:holfuy:894",
+    "legacyId": "HOLF-894",
+    "providerId": "holfuy",
+    "providerRef": "894",
+    "name": "Lake Cootharaba",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/894",
     "embedAllowed": false,
     "feedAllowed": false,
     "verificationStatus": "listed_on_provider_index"

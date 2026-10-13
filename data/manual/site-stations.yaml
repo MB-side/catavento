@@ -28,9 +28,10 @@ site:au:qld:wilsons: [station:freeflightwx:wilsons]
 site:au:sa:tunkalilla: [station:freeflightwx:tunk4]
 
 # Holfuy stations matched on 2026-10-13 from Holfuy's station finder (filtered by country), the
-# station's own page (position and club) or the founder's confirmation. Unsure matches wait for the
-# founder: Tamborine (Tambo), Hinchcliffes (Hinchies), the Sunshine Coast beach stations, Possum
-# Shoot, Tyagarah, Lake Illawarra, Winton, Port Hills, Granite Field.
+# station's own page (position and club) or the founder's confirmation. `km` is an approximate
+# distance from launch, set by hand where the station isn't on the site (measured from the surf or
+# sailing club the station is named after). Ruled out by the founder: Coolum Beach (its site is
+# closed), Lake Illawarra, Selwyn Snow, Tyagarah. Taylors Mistake isn't in the NZ sample.
 site:au:nsw:possums: [station:holfuy:181]
 site:au:nsw:montes: [station:holfuy:182]
 site:au:nsw:dickson-park: [station:holfuy:179]
@@ -39,3 +40,10 @@ site:au:qld:beechmont-rosins-lookout: [station:holfuy:1342]
 site:au:qld:sunrise-beach: [station:holfuy:569]
 site:nz:hkb:te-mata-peak: [station:holfuy:1103, station:holfuy:151]
 site:nz:ota:coronet-peak: [station:holfuy:152]
+site:au:qld:mt-tamborine: [station:holfuy:1312]
+site:au:qld:hinchcliffes-harts-flattop: [station:holfuy:1341]
+site:au:qld:point-cartwright: [{ id: station:holfuy:1482, km: 3 }]
+site:au:qld:point-cartwright-carties: [{ id: station:holfuy:1482, km: 4 }]
+site:au:qld:alexandra-headland: [{ id: station:holfuy:1483, km: 3 }]
+site:au:qld:teewah-beach: [{ id: station:holfuy:894, km: 7 }]
+site:au:tas:winton: [station:holfuy:616]

@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
-import type { BuildWarning, Organisation, Station } from "@/lib/types";
+import type { BuildWarning, Organisation, Site, Station } from "@/lib/types";
 import {
+  applySiteStations,
   applyOrgMerges,
   applyOverrides,
   applyRelated,
@@ -195,5 +196,61 @@ describe("mapOfferings", () => {
     const warnings: BuildWarning[] = [];
     expect(mapOfferings([{ ...base, org: "Nobody" }], orgs, countries, new Map(), warnings)).toEqual([]);
     expect(warnings[0]?.code).toBe("offering-org");
+  });
+});
+
+describe("applySiteStations", () => {
+  const station = (ref: string): Station => ({
+    id: `station:holfuy:${ref}`,
+    providerId: "holfuy",
+    providerRef: ref,
+    name: ref,
+    country: "AU",
+    url: `https://holfuy.com/en/weather/${ref}`,
+    embedAllowed: false,
+    feedAllowed: false,
+    verificationStatus: "listed_on_provider_index",
+  });
+  const site = (id: string): Site => ({
+    id,
+    slug: id,
+    name: id,
+    country: "AU",
+    regionCode: "AU-QLD",
+    windRanges: [],
+    windRangeLabel: "See official details",
+    status: "open",
+    stewardRole: "unknown",
+    launches: [],
+    stationIds: [],
+    disciplines: [],
+    layer: "ansg",
+    sources: [{ providerId: "ansg", url: "https://siteguide.org.au/", fetchedAt: "2026-10-13", licence: "facts" }],
+  });
+
+  it("links stations in order and keeps hand-set distances", () => {
+    const sites = [site("a"), site("b")];
+    const warnings: BuildWarning[] = [];
+    applySiteStations(
+      sites,
+      { a: ["station:holfuy:1", { id: "station:holfuy:2", km: 3 }], b: ["station:holfuy:1"] },
+      [station("1"), station("2")],
+      warnings,
+    );
+    expect(sites[0]).toMatchObject({
+      stationIds: ["station:holfuy:1", "station:holfuy:2"],
+      stationDistancesKm: { "station:holfuy:2": 3 },
+    });
+    expect(sites[1]?.stationDistancesKm).toBeUndefined();
+    expect(warnings).toEqual([]);
+  });
+
+  it("warns about unknown stations and drops their distances", () => {
+    const sites = [site("a")];
+    const warnings: BuildWarning[] = [];
+    applySiteStations(sites, { a: [{ id: "station:holfuy:9", km: 2 }] }, [station("1")], warnings);
+    expect(sites[0]?.stationIds).toEqual([]);
+    expect(sites[0]?.stationDistancesKm).toBeUndefined();
+    expect(warnings.map((w) => w.code)).toEqual(["station-missing"]);
   });
 });

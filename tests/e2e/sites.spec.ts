@@ -5,6 +5,7 @@ import { expect, test } from "./fixtures";
 
 interface SiteRecord {
   id: string;
+  hidden?: boolean;
   name: string;
   country: string;
   regionCode: string;
@@ -16,9 +17,11 @@ interface SiteRecord {
   layer: string;
 }
 
-const sites = JSON.parse(
-  readFileSync(path.join(process.cwd(), "data", "generated", "sites.json"), "utf8"),
-) as SiteRecord[];
+const sites = (
+  JSON.parse(
+    readFileSync(path.join(process.cwd(), "data", "generated", "sites.json"), "utf8"),
+  ) as SiteRecord[]
+).filter((s) => !s.hidden);
 const pathOf = (s: SiteRecord) =>
   `${s.country.toLowerCase()}/sites/${s.regionCode.split("-")[1]?.toLowerCase()}/${s.slug}/`;
 const byId = (id: string) => {

@@ -30,3 +30,7 @@ NZ-SCH-004: { regionCode: NZ-HKB, source: "https://nzhgpa.org.nz/finding-a-schoo
 NZ-SCH-005: { regionCode: NZ-NSN, source: "https://nzhgpa.org.nz/finding-a-school/", note: "Nelson" }
 NZ-SCH-006: { regionCode: NZ-NSN, source: "https://nzhgpa.org.nz/finding-a-school/", note: "Nelson" }
 NZ-SCH-007: { regionCode: NZ-CAN, source: "https://nzhgpa.org.nz/finding-a-school/", note: "Canterbury" }
+
+# Possum Shoot (ParaglidingEarth) is the same hill as the Site Guide's Possums, 300 m away
+# (founder, 2026-10-13); the official listing stays.
+site:au:nsw:possum-shoot: { hidden: true, note: "Duplicate of site:au:nsw:possums (founder, 2026-10-13)" }
