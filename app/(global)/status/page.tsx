@@ -30,11 +30,11 @@ function when(iso: string | undefined): string {
 type State = ProviderRun["status"] | "paused" | "notRun";
 
 const CHIP: Record<State, string> = {
-  ok: "bg-info-tint text-link",
-  unchanged: "bg-info-tint text-link",
+  ok: "bg-good-tint text-good-text",
+  unchanged: "bg-good-tint text-good-text",
   warning: "bg-notice-tint text-notice-text",
   blocked: "bg-notice-tint text-notice-text",
-  failed: "bg-ink text-white",
+  failed: "bg-bad-tint text-bad-text",
   paused: "bg-outside text-muted-strong",
   notRun: "bg-outside text-muted-strong",
 };

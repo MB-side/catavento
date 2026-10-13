@@ -18,7 +18,7 @@ const TIERS: { tier: Tier; label: MessageKey; text: MessageKey; chip: string }[]
     tier: "green",
     label: "sources.tierGreen",
     text: "sources.tierGreenText",
-    chip: "bg-info-tint text-link",
+    chip: "bg-good-tint text-good-text",
   },
   {
     tier: "amber",
@@ -26,7 +26,12 @@ const TIERS: { tier: Tier; label: MessageKey; text: MessageKey; chip: string }[]
     text: "sources.tierAmberText",
     chip: "bg-notice-tint text-notice-text",
   },
-  { tier: "red", label: "sources.tierRed", text: "sources.tierRedText", chip: "bg-ink text-white" },
+  {
+    tier: "red",
+    label: "sources.tierRed",
+    text: "sources.tierRedText",
+    chip: "bg-bad-tint text-bad-text",
+  },
 ];
 
 /** "Live wind: {club name} station" → text with the placeholder in italics. */
@@ -116,6 +121,9 @@ export default function SourcesPage() {
         {t("pages.sources.title")}
       </h1>
       <p className="mt-2 text-[1.0625rem]">{t("sources.intro")}</p>
+      <p className="mt-3 text-[1.0625rem]" data-testid="sources-thanks">
+        {t("sources.thanks")}
+      </p>
 
       <section aria-labelledby="tiers" className="mt-8">
         <h2 id="tiers" className="font-condensed text-[1.375rem] font-bold">
