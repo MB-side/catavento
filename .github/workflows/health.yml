@@ -1,0 +1,64 @@
+# Daily data-health check (D79): runs after the nightly collection and before the founder's
+# 9am review. If anything needs attention (a source failing or overdue, a failed job, broken
+# outside links, hand-entered facts past their use-by date) it opens or updates one issue
+# labelled "health", which GitHub emails to the owner; when all is clear it closes it.
+name: Health
+
+on:
+  schedule:
+    - cron: "30 19 * * *" # 05:30 AEST / 06:30 AEDT
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: health
+  cancel-in-progress: false
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      issues: write
+      actions: read
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Recent job results
+        run: |
+          {
+            echo 'HEALTH_WORKFLOWS<<EOF'
+            gh run list --branch main --limit 40 --json workflowName,conclusion,status,url,createdAt \
+              --jq '[.[] | select(.status == "completed" and .workflowName != "Health" and .workflowName != "CI") | {name: .workflowName, conclusion, url, createdAt}]'
+            echo 'EOF'
+          } >> "$GITHUB_ENV"
+      - run: pnpm health --out health.md
+      - name: Open, update or close the health issue
+        run: |
+          count=$(grep -o 'count:[0-9]*' health.md | cut -d: -f2)
+          print=$(grep -o 'health:[0-9a-f]*' health.md)
+          issue=$(gh issue list --label health --state open --json number --jq '.[0].number // empty')
+          if [ "$count" -gt 0 ]; then
+            if [ -z "$issue" ]; then
+              gh label create health --color B8460B --description "Daily data-health check" --force
+              gh issue create --title "Catavento needs attention" --label health --body-file health.md
+            else
+              before=$(gh issue view "$issue" --json body --jq .body | grep -o 'health:[0-9a-f]*' || true)
+              gh issue edit "$issue" --body-file health.md
+              if [ "$before" != "$print" ]; then
+                gh issue comment "$issue" --body "What needs attention has changed: see the updated list above."
+              fi
+            fi
+          elif [ -n "$issue" ]; then
+            gh issue close "$issue" --comment "All clear now."
+          fi

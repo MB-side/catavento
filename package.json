@@ -21,7 +21,8 @@
     "check:links": "tsx scripts/check-links.ts",
     "format:check": "prettier --check .",
     "share-images": "tsx scripts/share-images.tsx",
-    "check:external": "tsx scripts/check-external-links.ts"
+    "check:external": "tsx scripts/check-external-links.ts",
+    "health": "tsx scripts/health.ts"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
