@@ -240,3 +240,11 @@ test("a station away from the launch says roughly how far", async ({ page }) => 
   await expect(page.locator("main")).toContainText("Lake Cootharaba");
   await expect(page.locator("main")).toContainText("about 7 km away");
 });
+
+test("a wind range from a club website is credited to the club", async ({ page }) => {
+  await page.goto("au/sites/nsw/bartletts-reserve-ne-bonnys/");
+  await expect(page.locator("main")).toContainText("Published range: NNE–ENE");
+  await expect(
+    page.getByRole("link", { name: /Wind directions from the Mid North Coast Flyers Inc website/ }),
+  ).toHaveAttribute("href", "https://mncf.tidyhq.com/public/pages/bartletts-reserve");
+});

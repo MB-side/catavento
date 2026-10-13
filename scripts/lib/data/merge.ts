@@ -13,6 +13,7 @@ import type {
   StewardRole,
 } from "@/lib/types";
 import type { SeedOrg } from "./seed";
+import { parseWindRange } from "@/lib/wind";
 import { orgSlug, siteId } from "./ids";
 
 export interface MergeRule {
@@ -277,3 +278,43 @@ export function applySiteStations(
   }
 }
 
+
+export interface SiteWindInput {
+  site: string;
+  wind: string;
+  org: string;
+  source: string;
+  checked: string;
+}
+
+/**
+ * Wind directions a club publishes for a site (data/manual/site-wind.yaml, D78), read with the
+ * same rules as the Site Guide's and credited to the club's page. Text the reader won't accept is
+ * skipped with a warning rather than guessed at.
+ */
+export function applySiteWind(
+  sites: Site[],
+  orgs: Organisation[],
+  entries: SiteWindInput[],
+  warnings: BuildWarning[],
+): void {
+  for (const e of entries) {
+    const site = sites.find((s) => s.id === e.site);
+    const org = orgs.find((o) => o.id === e.org || o.legacyId === e.org);
+    if (!site || !org) {
+      warnings.push({ code: "site-wind-missing", message: `site-wind.yaml: no site "${e.site}" or organisation "${e.org}"` });
+      continue;
+    }
+    const wind = parseWindRange(e.wind);
+    if (!wind.parsed) {
+      warnings.push({ code: "site-wind-unread", message: `site-wind.yaml: "${e.wind}" for ${e.site} isn't readable`, recordId: site.id });
+      continue;
+    }
+    site.windRanges = wind.ranges;
+    site.windRangeLabel = wind.label;
+    site.windSource = { name: org.name, url: e.source };
+    if (!site.sources.some((s) => s.url === e.source)) {
+      site.sources = [...site.sources, { providerId: "club-websites", url: e.source, fetchedAt: e.checked, licence: "facts" }];
+    }
+  }
+}

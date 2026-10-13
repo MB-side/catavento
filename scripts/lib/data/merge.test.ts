@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import type { BuildWarning, Organisation, Site, Station } from "@/lib/types";
 import {
   applySiteStations,
+  applySiteWind,
   applyOrgMerges,
   applyOverrides,
   applyRelated,
@@ -252,5 +253,48 @@ describe("applySiteStations", () => {
     expect(sites[0]?.stationIds).toEqual([]);
     expect(sites[0]?.stationDistancesKm).toBeUndefined();
     expect(warnings.map((w) => w.code)).toEqual(["station-missing"]);
+  });
+});
+
+describe("applySiteWind", () => {
+  const base = (): Site => ({
+    id: "site:au:nsw:x",
+    slug: "x",
+    name: "X",
+    country: "AU",
+    regionCode: "AU-NSW",
+    windRanges: [],
+    windRangeLabel: "See official details",
+    status: "open",
+    stewardRole: "unknown",
+    launches: [],
+    stationIds: [],
+    disciplines: [],
+    layer: "ansg",
+    sources: [{ providerId: "ansg", url: "https://siteguide.org.au/", fetchedAt: "2026-10-13", licence: "facts" }],
+  });
+  const club = { id: "org:au:club", name: "Club" } as Organisation;
+  const entry = { site: "site:au:nsw:x", org: "org:au:club", source: "https://club.example/x", checked: "2026-10-13" };
+
+  it("reads the club's directions and credits its page", () => {
+    const sites = [base()];
+    const warnings: BuildWarning[] = [];
+    applySiteWind(sites, [club], [{ ...entry, wind: "NNE to ENE" }], warnings);
+    expect(sites[0]).toMatchObject({
+      windRanges: [{ fromDeg: 22.5, toDeg: 67.5 }],
+      windRangeLabel: "NNE–ENE",
+      windSource: { name: "Club", url: "https://club.example/x" },
+    });
+    expect(sites[0]?.sources.map((s) => s.providerId)).toEqual(["ansg", "club-websites"]);
+    expect(warnings).toEqual([]);
+  });
+
+  it("skips text it can't read, with a warning", () => {
+    const sites = [base()];
+    const warnings: BuildWarning[] = [];
+    applySiteWind(sites, [club], [{ ...entry, wind: "best in a sea breeze" }], warnings);
+    expect(sites[0]?.windRanges).toEqual([]);
+    expect(sites[0]?.windSource).toBeUndefined();
+    expect(warnings.map((w) => w.code)).toEqual(["site-wind-unread"]);
   });
 });

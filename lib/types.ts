@@ -190,6 +190,8 @@ export interface Site {
   stationIds: string[];
   /** Approximate distance (km) from the main launch, set by hand where a station's position isn't stored. */
   stationDistancesKm?: Record<string, number>;
+  /** Where the wind directions came from, when not the site's main source (site-wind.yaml). */
+  windSource?: { name: string; url: string };
   wtfSlug?: string;
   pgeId?: string; // ParaglidingEarth site ID, for community-layer sites and pinned sample sites
   disciplines: Discipline[];

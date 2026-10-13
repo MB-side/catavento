@@ -359,7 +359,8 @@
       "all": "All directions",
       "unparsed": "Wind directions aren't given in a form we can read. See the official site details.",
       "note": "The shaded area shows the published wind range.",
-      "community": "Directions rated “good” by ParaglidingEarth contributors."
+      "community": "Directions rated “good” by ParaglidingEarth contributors.",
+      "fromClub": "Wind directions from the {name} website"
     },
     "stations": {
       "heading": "Weather stations",
