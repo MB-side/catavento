@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-10-13T05:15:02.093Z",
+  "total": 649,
+  "broken": [
+    {
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47b1Y3Szg0ZmJkRUdFdXhRdXVtYW5YZz09",
+      "page": "au/whats-on/index.html",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47MFhEQlhsSm9WcmsxcnlIVGcwMGM0dz09",
+      "page": "au/whats-on/index.html",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47OTJaYmluV040UWxPMFE1cnJKeEkxdz09",
+      "page": "au/whats-on/index.html",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47SEx3d1JBclNobThiNlVhNEtPQlFadz09",
+      "page": "au/whats-on/index.html",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47SFRvV0F0UjZCU2ZRcWJqemczcnQ5UT09",
+      "page": "au/whats-on/index.html",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47V2M4MlptYjdwWGNFSGNiaXdETzF1dz09",
+      "page": "au/whats-on/index.html",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47Z1FMVWhPbDE0alI3K2g3WWg1Y283QT09",
+      "page": "au/whats-on/index.html",
+      "error": "HTTP 403"
+    },
+    {
+      "url": "https://www.visitnsw.com/things-to-do/tours/hangglideoz",
+      "page": "au/directory/hangglideoz/index.html",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.weekendnotes.com/hang-gliding-lessons-sydney/",
+      "page": "au/directory/warren-wind-sports/index.html",
+      "error": "HTTP 403"
+    }
+  ]
+}
