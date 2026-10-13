@@ -5,7 +5,7 @@ import type { Provider, ProviderRun } from "@/lib/types";
 const DAY_MS = 86_400_000;
 
 /** How long hand-entered facts stay fresh before they're re-checked on the official page. */
-export const USE_BY_DAYS = { prices: 183, gear: 365, siteWind: 365 } as const;
+export const USE_BY_DAYS = { prices: 183, gear: 365, siteWind: 365, guides: 365 } as const;
 /** The outside-link check runs monthly; a report older than this means it has stopped. */
 export const LINK_REPORT_MAX_DAYS = 45;
 
@@ -39,6 +39,8 @@ export interface HealthInput {
   offerings: { org: string; title: string; url: string; sourceCheckedAt: string }[];
   gearCategories: { org: string; source: string; checked: string }[];
   siteWind: { site: string; source: string; checked: string }[];
+  /** Overview country guides (D83). */
+  guides?: { code: string; name: string; checked: string }[];
   links?: LinkReport;
   linkExceptions?: LinkException[];
   /** Each workflow's most recent finished run, newest first (from GitHub). */
@@ -155,6 +157,15 @@ export function checkHealth(input: HealthInput): HealthProblem[] {
         kind: "stale",
         key: `stale-wind:${w.site}`,
         text: `Wind directions for ${w.site}, checked ${w.checked}: re-check ${w.source}`,
+      });
+    }
+  }
+  for (const g of input.guides ?? []) {
+    if (daysSince(g.checked, now) > USE_BY_DAYS.guides) {
+      out.push({
+        kind: "stale",
+        key: `stale-guide:${g.code}`,
+        text: `Country guide for ${g.name}, checked ${g.checked}: re-check its facts against the official sources it lists`,
       });
     }
   }

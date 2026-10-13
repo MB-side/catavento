@@ -1,3 +1,1318 @@
-# How flying works in each overview country (D83): short facts from official sources, each
-# guide with its sources and the date it was checked. Re-checked yearly (health check).
-[]
+# How flying works in each overview country (D83): short facts from official sources (national
+# federations, civil aviation authorities, FAI/CIVL), each guide with its sources and the date it
+# was checked. Researched 2026-10-13; the evidence (a quoted line per fact) is kept privately in
+# docs/research/m9-guides/. The daily health check asks for a re-check after 12 months.
+# Never "safe" or "flyable"; facts only. Countries without a confirmed fact have no guide yet.
+- code: europe
+  name: Europe
+  visitors:
+    - Hang gliding and paragliding rules are set by each country, so licence, insurance and airspace requirements differ from one country to the next.
+    - EU aviation law leaves the airworthiness and insurance rules for hang gliders and paragliders to each country.
+    - Many countries have guest rules that let visiting pilots fly if they hold an IPPI card. Check each country's guest rules before you travel.
+    - The IPPI card, from FAI/CIVL via national associations, shows your skill level abroad, but it is valid only with a current national licence or rating card.
+    - The IPPI card gives no insurance cover. Countries such as France and Switzerland make third-party liability insurance compulsory.
+  learners: []
+  links:
+    - label: IPPI card (FAI/CIVL)
+      url: https://www.fai.org/page/civl-ippi-card
+    - label: "EHPU: links to each country's rules for visiting pilots"
+      url: https://www.ehpu.org/
+    - label: XContest cross-country flights
+      url: https://www.xcontest.org/world/en/
+    - label: ParaglidingEarth site guide
+      url: https://www.paraglidingearth.com/
+  sources:
+    - https://www.ehpu.org/policy
+    - https://www.ehpu.org/
+    - https://www.fai.org/page/civl-ippi-card
+    - https://www.fai.org/page/civl-ippi-FRA
+    - https://www.fai.org/page/civl-ippi-SUI
+    - https://www.shv-fsvl.ch/en/education/foreign-licence/
+  checked: 2026-10-13
+- code: FR
+  name: France
+  nationalBody:
+    name: Fédération Française de Vol Libre (FFVL)
+    url: https://federation.ffvl.fr/
+  visitors:
+    - The IPPI card is accepted in France. Third-party liability insurance is compulsory, but no minimum amount of cover is set.
+    - French rules also require the landowner's agreement for the take-off and landing places you use.
+    - Foreign pilots can join the FFVL and get the same insurance cover as French members, but need a medical certificate in French from a doctor registered in Europe.
+    - You may not fly in class A–D airspace, prohibited areas or active restricted areas, or above 3450 m except in authorised parts of the Alps and Pyrenees.
+  learners:
+    - The FFVL awards its school label for one season at a time. EFVL schools are run by state-qualified professionals and club-schools (CEFVL) by volunteer federation-qualified instructors.
+    - More than 200 professional schools belong to the FFVL network. You can find one on the FFVL school map.
+    - Training follows three FFVL brevets (initial, pilot and confirmed pilot), each with practical modules and a multiple-choice theory exam.
+  links:
+    - label: FFVL (national federation)
+      url: https://federation.ffvl.fr/
+    - label: French flying rules in English (FFVL)
+      url: https://federation.ffvl.fr/french-flying-rules
+    - label: FFVL club and school finder
+      url: https://federation.ffvl.fr/ou-pratiquer-ensuite
+    - label: FFVL school map
+      url: https://efvl.ffvl.fr/carte_choisir_ecole
+    - label: FFVL site map (SpotAiR)
+      url: https://www.spotair.mobi/
+    - label: FFVL weather beacons
+      url: https://www.balisemeteo.com/
+    - label: "ParaglidingEarth: France"
+      url: https://www.paraglidingearth.com/?country=fr
+  sources:
+    - https://www.fai.org/page/civl-ippi-FRA
+    - https://federation.ffvl.fr/french-flying-rules
+    - https://federation.ffvl.fr/faq-page/264
+    - https://federation.ffvl.fr/pages/les-licences-et-titres-participation
+    - https://federation.ffvl.fr/pages/les-coles-f-d-rales
+    - https://efvl.ffvl.fr/carte_choisir_ecole
+    - https://efvl.ffvl.fr/brevets_ffvl
+    - https://federation.ffvl.fr/pages/rechercher-un-site-pratique
+    - https://federation.ffvl.fr/ou-pratiquer-ensuite
+  checked: 2026-10-13
+- code: CH
+  name: Switzerland
+  nationalBody:
+    name: Swiss Hang Gliding and Paragliding Association (SHV/FSVL)
+    url: https://www.shv-fsvl.ch/en/
+  visitors:
+    - Pilots living abroad may fly occasionally with an IPPI card at level IV or V. Commercial tandem flying and instructing need Swiss licences.
+    - Liability insurance with at least CHF 1 million of cover is compulsory. The SHV sells guest cover for 30 days or up to 120 consecutive days.
+    - Every glider flown in Switzerland needs a registration number at least 40 cm high on its underside. The SHV issues one free, with no membership needed.
+    - Every airspace user is required by law to check the daily airspace bulletin (DABS) and current NOTAMs.
+  learners:
+    - Training is done at SHV-certified flight schools. You start on a practice slope, then make high flights supervised by an instructor over the radio.
+    - The licence exam has a theory test in five subjects and a practical exam. Paraglider pilots need at least 50 high flights from at least 5 sites first.
+    - The minimum age is 14 for training flights and the theory exam, and 16 for the practical exam.
+  links:
+    - label: SHV/FSVL (national federation)
+      url: https://www.shv-fsvl.ch/en/
+    - label: SHV rules for foreign guest pilots
+      url: https://www.shv-fsvl.ch/en/education/foreign-licence/
+    - label: SHV flight school finder
+      url: https://www.shv-fsvl.ch/en/easy-to-find/flight-schools/
+    - label: SHV club finder
+      url: https://www.shv-fsvl.ch/en/translate-to-englisch-einfach-finden/translate-to-englisch-clubs/
+    - label: SHV flying area info boards
+      url: https://www.shv-fsvl.ch/en/translate-to-englisch-fluggebiete/translate-to-englisch-fluggebiete/
+    - label: SHV airspace, DABS and NOTAM links
+      url: https://www.shv-fsvl.ch/en/fluggebiete-sicherheit/fluggebiete/airspace/
+    - label: SHV airspace map
+      url: https://airspace.shv-fsvl.ch/map
+    - label: burnair map
+      url: https://www.burnair.ch/
+    - label: "ParaglidingEarth: Switzerland"
+      url: https://www.paraglidingearth.com/?country=ch
+  sources:
+    - https://www.shv-fsvl.ch/en/education/foreign-licence/
+    - https://www.fai.org/page/civl-ippi-SUI
+    - https://www.shv-fsvl.ch/en/verband/alle-news/news-en/?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2644&cHash=ec10beec5ae0347395b600d8e3487641
+    - https://www.shv-fsvl.ch/en/fluggebiete-sicherheit/fluggebiete/airspace/
+    - https://www.shv-fsvl.ch/en/education/translate-to-englisch-wie-werde-ich-pilot/
+    - https://www.shv-fsvl.ch/en/education/flight-schools/
+    - https://www.shv-fsvl.ch/en/federation/translate-to-englisch-rechtliche-grundlagen/
+  checked: 2026-10-13
+- code: DE
+  name: Germany
+  nationalBody:
+    name: DHV (Deutscher Gleitschirmverband und Drachenflugverband)
+    url: https://www.dhv.de/en/
+  visitors:
+    - If you live outside Germany, you can fly there with your home licence plus an FAI IPPI card at stage 4 or 5. Stage 4 does not allow cross-country flights.
+    - You must hold third-party liability insurance. DHV's English rules page gives a minimum cover of 750,000 SDR (special drawing rights).
+    - Carry a ready-to-use reserve parachute and wear a helmet. Paragliding pilots must also wear a certified back protector.
+    - The guest rule is for non-commercial flying and does not cover passenger (tandem) flights. Contact the local club before flying a new site.
+  learners:
+    - The A licence is the first level of Germany's state pilot licence. It combines basic training (training slope or winch) with high-altitude training.
+    - The theory and practical exams are taken before a DHV examiner.
+    - DHV runs an online school search, and its training department can help you choose a school.
+  links:
+    - label: DHV (English)
+      url: https://www.dhv.de/en/
+    - label: DHV German flying rules (English)
+      url: https://www.dhv.de/en/dhv/german-flying-rules/
+    - label: DHV guest flying rules (German)
+      url: https://www.dhv.de/fliegen/gaesteflug/
+    - label: DHV site database (Germany, Alps, Europe)
+      url: https://service.dhv.de/db3/gelaende
+    - label: DHV school search
+      url: https://service.dhv.de/db1/addressessearchpage.php?lang=EN&addressestype=school
+    - label: "ParaglidingEarth: Germany"
+      url: https://www.paraglidingearth.com/?country=de
+    - label: XContest Germany
+      url: https://www.xcontest.org/germany/
+  sources:
+    - https://www.dhv.de/media/seiten/02_fliegen/Gaesteflug/Durchf%C3%BChrungsbestimmungen_zu_den_NfL_2026-1-3794_G%C3%A4steflug.pdf
+    - https://www.dhv.de/fliegen/gaesteflug/
+    - https://www.dhv.de/en/dhv/german-flying-rules/
+    - https://www.dhv.de/en/sites-nature/flying-sites/
+    - https://www.dhv.de/fliegen/ausbildung/a-lizenz/
+    - https://www.dhv.de/en/training/schools/
+  checked: 2026-10-13
+- code: AT
+  name: Austria
+  nationalBody:
+    name: Österreichischer Aero-Club (ÖAeC), hang gliding and paragliding section
+    url: https://aeroclub.at/de/sportverband/sektionen/haenge-paragleiten
+  visitors:
+    - You need a recognised licence to fly in Austria. The Austrian Aero Club (ÖAeC) is the aviation authority for hang gliding and paragliding.
+    - Austria's Guest Flight Regulation accepts licences from 20 listed countries, including Australia, Germany, Italy and Switzerland, without separate recognition.
+    - This general acceptance does not cover tandem or powered flying. Pilots with other licences can apply to ÖAeC for validation, or get a one-year certificate from an approved Austrian school.
+  learners:
+    - Choose a flight school approved by ÖAeC. ÖAeC publishes the list of approved hang gliding and paragliding schools.
+    - The minimum age is 15. No medical certificate is needed, but you must meet the fitness criteria.
+    - The basic licence is issued for each launch method (slope or winch). Cross-country flying needs a separate cross-country rating.
+  links:
+    - label: ÖAeC hang gliding and paragliding
+      url: https://aeroclub.at/de/sportverband/sektionen/haenge-paragleiten
+    - label: "ÖAeC: learn to paraglide"
+      url: https://aeroclub.at/de/fliegenlernen/fliegenlernen/paragleiten
+    - label: ÖAeC approved schools (PDF)
+      url: https://www.aeroclub.at/uploads/download/OeAeC_FAA_ato_HPG_001_i041_haenge_paragleiterschulen.pdf
+    - label: ÖAeC club finder
+      url: https://aeroclub.at/de/sportverband/sektionen/haenge-paragleiten/vereine
+    - label: Guest Flight Regulation (PDF, German)
+      url: https://aeroclub.at/uploads/download/GasteflugVO__Fassung_vom_01_03_2017.pdf
+    - label: DHV site database (includes the Alps)
+      url: https://service.dhv.de/db3/gelaende
+    - label: burnair map
+      url: https://www.burnair.ch/
+    - label: "ParaglidingEarth: Austria"
+      url: https://www.paraglidingearth.com/?country=at
+    - label: XContest Austria
+      url: https://www.xcontest.org/austria/
+  sources:
+    - https://aeroclub.at/uploads/images/site/649/content4_text2/132a_Letter-to-foreign-countries_170321.pdf
+    - https://aeroclub.at/uploads/download/GasteflugVO__Fassung_vom_01_03_2017.pdf
+    - https://aeroclub.at/de/behoerde/rechtsfragen
+    - https://aeroclub.at/de/behoerde/download
+    - https://aeroclub.at/uploads/download/OeAeC_FAA_ZPH_006_i04_anerkennung_fs_und_hgpg_berechtigungen.pdf
+    - https://aeroclub.at/de/fliegenlernen/fliegenlernen/paragleiten
+    - https://www.aeroclub.at/uploads/download/OeAeC_FAA_ato_HPG_001_i041_haenge_paragleiterschulen.pdf
+  checked: 2026-10-13
+- code: IT
+  name: Italy
+  nationalBody:
+    name: FIVL (Federazione Italiana Volo Libero)
+    url: https://www.fivl.it/
+  visitors:
+    - FIVL tells visiting pilots to carry their IPPI card so clubs can check their level, and says level 4 is the minimum for cross-country flying.
+    - Third-party liability insurance is a legal requirement. FIVL's visitor page gives a minimum cover of EUR 1.6 million.
+    - If your own cover falls short, FIVL sells a renewable 30-day liability policy for foreign pilots that is valid in Italy only.
+    - Contact the clubs in the region before you fly. Site managers can set restrictions, and ignoring them breaks the law.
+  learners:
+    - The free flight licence (attestato di volo libero) can only be obtained at schools certified by the Aero Club d'Italia. FIVL publishes the list.
+    - To be issued the licence (VDS attestato), you need a clearance (nulla osta) from the Questore (police) of your home province.
+    - The police clearance doesn't replace the medical fitness certificate needed to join a course.
+  links:
+    - label: FIVL
+      url: https://www.fivl.it/
+    - label: FIVL rules for foreign pilots (English)
+      url: https://www.fivl.it/foreign-pilots/rules-for-hg-pg-pilots
+    - label: FIVL list of certified schools
+      url: https://www.fivl.it/sul-territorio/elenco-scuole
+    - label: Aero Club d'Italia
+      url: https://www.aeci.it/
+    - label: DHV site database (includes the Alps)
+      url: https://service.dhv.de/db3/gelaende
+    - label: burnair map
+      url: https://www.burnair.ch/
+    - label: "ParaglidingEarth: Italy"
+      url: https://www.paraglidingearth.com/?country=it
+    - label: XContest cross-country flights
+      url: https://www.xcontest.org/world/en/
+  sources:
+    - https://www.fivl.it/foreign-pilots/rules-for-hg-pg-pilots
+    - https://www.fivl.it/foreign-pilots/fivl-for-foreigners-stranieri-39
+    - https://www.fivl.it/foreign-pilots/rules-for-hg-pg-pilots/airspace-restrictions-stranieri
+    - https://www.fivl.it/sul-territorio/elenco-scuole
+    - https://poliziadistato.it/articolo/pdf/37626
+    - https://www.aeci.it/ippi-card-360
+  checked: 2026-10-13
+- code: LI
+  name: Liechtenstein
+  nationalBody:
+    name: SHV/FSVL (Swiss Hang Gliding Association), whose rules cover Liechtenstein
+    url: https://www.shv-fsvl.ch/en/
+  visitors:
+    - Liechtenstein applies Swiss aviation law under a 2003 agreement with Switzerland. Switzerland's Federal Office of Civil Aviation (FOCA/BAZL) acts as its aviation authority.
+    - SHV's guest rules for pilots living outside Switzerland and Liechtenstein allow occasional solo flights with an IPPI card at level IV or V.
+    - Liability insurance with at least CHF 1 million cover is compulsory.
+    - A foreign tandem licence allows occasional, non-commercial tandem flights. Commercial tandem flights need a Swiss licence.
+  learners:
+    - Once you live in Liechtenstein, you need a Swiss licence in the matching category.
+    - Training is offered by SHV-certified flight schools, which SHV lists on its website.
+  links:
+    - label: SHV/FSVL (English)
+      url: https://www.shv-fsvl.ch/en/
+    - label: SHV rules for foreign-licence guest pilots
+      url: https://www.shv-fsvl.ch/en/education/foreign-licence/
+    - label: SHV flight schools
+      url: https://www.shv-fsvl.ch/en/education/flight-schools/
+    - label: SHV clubs
+      url: https://www.shv-fsvl.ch/en/translate-to-englisch-einfach-finden/translate-to-englisch-clubs/
+    - label: SHV airspace map
+      url: https://airspace.shv-fsvl.ch/map
+    - label: burnair map
+      url: https://www.burnair.ch/
+    - label: DHV site database (includes the Alps)
+      url: https://service.dhv.de/db3/gelaende
+    - label: "ParaglidingEarth: Liechtenstein"
+      url: https://www.paraglidingearth.com/?country=li
+  sources:
+    - https://www.gesetze.li/konso/pdf/2024224000
+    - https://www.shv-fsvl.ch/en/education/foreign-licence/
+    - https://www.shv-fsvl.ch/en/education/moving-to-switzerland/
+    - https://www.shv-fsvl.ch/en/education/flight-schools/
+  checked: 2026-10-13
+- code: ES
+  name: Spain
+  nationalBody:
+    name: Real Federación Aeronáutica Española (RFAE)
+    url: https://rfae.es/
+  visitors:
+    - Spain's aviation authority (AESA) says no aviation law sets a pilot licence or on-board documents for paragliders and hang gliders.
+    - AESA notes that, depending on the region and its sports federation, some document may be required, so check locally before flying.
+    - Fly by day under visual flight rules, outside controlled, restricted and prohibited airspace, active danger areas, towns and crowds.
+    - The maximum is 10,000 ft pressure altitude; up to 13,000 ft is allowed for less than 30 minutes in total.
+  learners:
+    - RFAE rules say you train at a school recognised by the RFAE or a regional federation, holding a federation licence from day one.
+    - Under RFAE rules you need at least RFAE level 4 certification to fly as an independent pilot.
+    - The RFAE publishes a list of paragliding schools by region; schools do not have to be RFAE-certified to operate.
+  links:
+    - label: RFAE (national federation)
+      url: https://rfae.es/
+    - label: RFAE paragliding schools by region
+      url: https://rfae.es/es/section/formacion
+    - label: Regional air sports federations
+      url: https://rfae.es/en/section/federaciones-autonomicas
+    - label: "AESA: hang gliding, paragliding and paramotor rules"
+      url: https://www.seguridadaerea.gob.es/es/ambitos/aviacion-general/ala-delta-parapente-y-paramotor
+  sources:
+    - https://www.seguridadaerea.gob.es/es/ambitos/aviacion-general/ala-delta-parapente-y-paramotor
+    - https://cdn.leverade.com/files/r3zNIOr60a.pdf
+    - https://rfae.es/es/section/formacion
+    - https://rfae.es/es/section/documentos-parapente
+  checked: 2026-10-13
+- code: PT
+  name: Portugal
+  nationalBody:
+    name: Federação Portuguesa de Voo Livre (FPVL)
+    url: https://www2021.fpvl.pt/
+  visitors:
+    - Portuguese law requires free-flight pilots to hold third-party liability insurance and show the policy within five days if inspectors ask.
+    - Foreign free-flight licences can be validated by Portugal's aviation authority only where a reciprocity agreement with the issuing authority exists.
+    - FPVL rules treat valid licences from FAI-member national bodies as equal to its local-flight licence without thermal flying; higher levels need more.
+  learners:
+    - The FPVL says learners should choose an FPVL-certified school using certified instructors and approved teaching methods.
+    - Personal accident and liability insurance is compulsory for pilots, instructors and students during all stages of flight training.
+    - The FPVL publishes its list of member schools online, showing each school's permit status.
+  links:
+    - label: FPVL (national federation)
+      url: https://www2021.fpvl.pt/
+    - label: FPVL member schools
+      url: https://www2021.fpvl.pt/associados-escolas/
+    - label: FPVL member clubs
+      url: https://www2021.fpvl.pt/associados-clubes/
+    - label: FPVL laws and regulations
+      url: https://www2021.fpvl.pt/legislacao-e-regulamentos/
+  sources:
+    - http://www.fpvl.pt/images/stories/documentos/DL_283_2007.pdf
+    - http://www.fpvl.pt/images/stories/documentos/INAC_Reg_191_2009.pdf
+    - http://www.fpvl.pt/images/stories/docs_2026/RIT_2026.pdf
+    - http://www.fpvl.pt/index.php?option=com_content&view=article&id=32&Itemid=59
+    - http://www.fpvl.pt/index.php?option=com_content&view=article&id=29&Itemid=56
+    - https://www2021.fpvl.pt/associados-escolas/
+    - https://www2021.fpvl.pt/seguros-desportivos-fpvl/
+  checked: 2026-10-13
+- code: GB
+  name: United Kingdom
+  nationalBody:
+    name: British Hang Gliding and Paragliding Association (BHPA)
+    url: https://www.bhpa.co.uk/
+  visitors:
+    - Carry proof of suitable third-party insurance; BHPA members have £5 million cover, and most UK sites were negotiated on that basis.
+    - Be ready to show an IPPI card proving you are suitably qualified to fly a particular site.
+    - Sites are run by about 60 local BHPA clubs with their own rules; some are members-only, which requires BHPA membership (short-term options exist).
+    - Check NOTAMs every time you fly, carry an up-to-date aeronautical chart for cross-country, and don't use 144 MHz ham radio in flight.
+  learners:
+    - The BHPA says initial instruction should always be at a BHPA registered school; find one by postcode or on its map.
+    - BHPA registered schools are monitored by the BHPA, their instructors are licensed by it, and students take out BHPA membership.
+    - By law you must be at least 14 to attempt solo flight; many schools set a higher minimum age, often around 16.
+  links:
+    - label: BHPA (national association)
+      url: https://www.bhpa.co.uk/
+    - label: "BHPA: visiting overseas pilots"
+      url: https://www.bhpa.co.uk/safety/visitors
+    - label: BHPA info for visiting pilots (PDF)
+      url: https://www.bhpa.co.uk/pdf/Info_For_Visiting_Pilots.pdf
+    - label: BHPA club finder and map
+      url: https://www.bhpa.co.uk/clubs
+    - label: BHPA registered school finder
+      url: https://www.bhpa.co.uk/schools
+  sources:
+    - https://www.bhpa.co.uk/safety/visitors
+    - https://www.bhpa.co.uk/clubs
+    - https://www.bhpa.co.uk/schools
+    - https://bhpa.co.uk/sport/learn_to_fly
+  checked: 2026-10-13
+- code: IE
+  name: Ireland
+  nationalBody:
+    name: Irish Hang Gliding and Paragliding Association (IHPA)
+    url: https://www.ihpa.ie/
+  visitors:
+    - Join the IHPA as a free Visiting Pilot member; it lasts 90 days in any calendar year if you aren't normally resident.
+    - All pilots must sign the IHPA Waiver of Indemnity and hold appropriate third-party insurance covering property or livestock damage.
+    - Don't enter Class C airspace without air traffic control permission; some sites are restricted by airspace or minimum experience.
+    - Tandem flights for reward and paramotoring need a licence from the Irish Aviation Authority.
+  learners:
+    - The IHPA doesn't run training; to learn paragliding you go to an IHPA-approved school, which it lists on its site.
+    - In Ireland the minimum rating to fly unsupervised is Para Pro 3 (Novice); students and novices fly under a nominated coach.
+  links:
+    - label: IHPA (national association)
+      url: https://www.ihpa.ie/
+    - label: IHPA advice for visiting pilots
+      url: https://ihpa.ie/index.php/home/advice-for-visiting-pilots
+    - label: IHPA flying sites guide
+      url: https://www.ihpa.ie/index.php/documents/ihpa-flying-sites-guide
+    - label: IHPA restricted flying sites
+      url: https://www.ihpa.ie/index.php/flight-safety/restricted-flying-sites
+    - label: IHPA learn to fly and schools
+      url: https://www.ihpa.ie/index.php/home/learn-to-fly
+  sources:
+    - https://ihpa.ie/index.php/home/advice-for-visiting-pilots
+    - https://www.ihpa.ie/index.php/home/learn-to-fly
+    - https://ihpa.ie/index.php/home/about-us
+    - https://www.ihpa.ie/index.php/flight-safety/restricted-flying-sites
+  checked: 2026-10-13
+- code: NO
+  name: Norway
+  nationalBody:
+    name: Norges Luftsportforbund (NLF), Hang-, para- og speedglider section (HPS)
+    url: https://nlf.no/grener/hps/
+  visitors:
+    - Visiting pilots who belong to a foreign hang gliding or paragliding organisation and hold a valid licence may fly as guests for up to 6 months.
+    - Carry your licence and proof of third-party insurance, and show them on request. NLF also recognises the IPPI system.
+    - Tandem flights with friends and family are allowed, but commercial tandem flights by visitors are not.
+    - Anyone with a Norwegian address must hold a Norwegian licence, whatever their nationality.
+  learners:
+    - Beginner training happens in clubs affiliated with NLF, as an intensive course over 9 to 12 days or as weekend courses.
+    - To fly you must be a member of an NLF club, NLF and the HPS section, with compulsory accident and liability insurance.
+  links:
+    - label: "NLF: for visiting pilots"
+      url: https://nlf.no/grener/hps/for-visiting-pilots/
+    - label: "NLF: become a pilot (Norwegian)"
+      url: https://nlf.no/grener/hps/om-hps/
+    - label: NLF hang gliding and paragliding clubs
+      url: https://nlf.no/klubber/HPSklubber/
+    - label: Flightlog (takeoff database NLF points to)
+      url: https://flightlog.org/
+    - label: XContest Norway
+      url: https://www.xcontest.org/norway/
+  sources:
+    - https://nlf.no/grener/hps/for-visiting-pilots/
+    - https://nlf.no/grener/hps/om-hps/
+  checked: 2026-10-13
+- code: SE
+  name: Sweden
+  nationalBody:
+    name: Svenska Skärmflygförbundet (SSFF, Swedish Paragliding Association)
+    url: https://flygsport.se/grenar/skarmflyg/paragliding
+  visitors:
+    - Visiting pilots need liability insurance with cover at least equal to the Swedish members' liability insurance; accident insurance is strongly recommended.
+    - Sweden follows the IPPI system, and SSFF strongly recommends carrying your IPPI card when flying.
+    - Paragliding in Sweden follows general aviation VFR rules; SSFF's English page sets out the basic right-of-way rules.
+    - New national rules for paragliders and hang gliders (TSFS 2026:48, Swedish Transport Agency) took effect on 4 May 2026.
+  learners:
+    - Start by contacting an SSFF-approved instructor and booking a student course; the SSFF site has an instructor finder.
+    - "Before the course you pay for SSFF's Take Off kit: basic insurance, SSFF membership and the training book. Club membership comes before your licence."
+  links:
+    - label: "SSFF: visiting pilots (English)"
+      url: https://flygsport.se/grenar/skarmflyg/paragliding/english
+    - label: "SSFF: start paragliding (Swedish)"
+      url: https://flygsport.se/grenar/skarmflyg/paragliding/flygare/utbildningar/borja-skarmflyga
+    - label: "SSFF: find an instructor"
+      url: https://flygsport.se/grenar/skarmflyg/paragliding/flygare/instruktorer/hitta-instruktor
+    - label: SSFF clubs
+      url: https://flygsport.se/grenar/skarmflyg/paragliding/om-forbundet/klubbar
+    - label: SSFF insurance (English)
+      url: https://flygsport.se/grenar/skarmflyg/paragliding/flygare/forsakringar/insurance
+    - label: XContest Sweden
+      url: https://www.xcontest.org/sweden/
+  sources:
+    - https://flygsport.se/grenar/skarmflyg/paragliding/english
+    - https://flygsport.se/grenar/skarmflyg/paragliding/flygare/utbildningar/borja-skarmflyga
+    - https://www.transportstyrelsen.se/sv/om-oss/dina-rattigheter-lagar-och-regler/lagar-och-regler/information-om-nya-eller-andrade-regler/nya-foreskrifter-om-flygning-med-flygskarm-och-hangglidare/
+    - https://www-2025.fai.org/node/175088
+  checked: 2026-10-13
+- code: FI
+  name: Finland
+  nationalBody:
+    name: Suomen Ilmailuliitto (Finnish Aeronautical Association), Liidintoimikunta (gliders committee)
+    url: https://ilmailuliitto.fi/ilmailuliitto/ilmaileminen/lajit/varjoliito/
+  visitors:
+    - The IPPI card is not required by law in Finland, but it is recommended because its levels match the Finnish system.
+    - Insurance is not required by law, though some airports or airfields may require it; guests are advised to bring insurance from home.
+  learners:
+    - Courses are run by clubs around the country; ask a club for details. Paragliding and hang gliding have separate training programmes.
+    - The minimum age is 15, with a parent or guardian's consent.
+  links:
+    - label: "Ilmailuliitto: paragliding (Finnish)"
+      url: https://ilmailuliitto.fi/ilmailuliitto/ilmaileminen/lajit/varjoliito/
+    - label: "Ilmailuliitto: paragliding clubs"
+      url: https://ilmailuliitto.fi/ilmailuliitto/ilmailukerhot/?filter_ilmailulaji=varjoliito
+    - label: "Ilmailuliitto: briefly in English"
+      url: https://ilmailuliitto.fi/briefly-in-english/
+    - label: XContest Finland
+      url: https://www.xcontest.org/finland/
+  sources:
+    - https://www-2025.fai.org/node/175072
+    - https://ilmailuliitto.fi/ilmailuliitto/ilmaileminen/lajit/varjoliito/
+  checked: 2026-10-13
+- code: DK
+  name: Denmark
+  nationalBody:
+    name: Dansk Hanggliding og Paragliding Union (DHPU)
+    url: https://dhpu.dk/
+  visitors:
+    - You need a licence of at least IPPI 4 (bring the certificate); you may fly on your national licence for a maximum of 30 days.
+    - You need third-party liability insurance and an EN 966 helmet, and a reserve to fly above 150 m.
+    - Check NOTAMs and navigational warnings before every flight, including dune soaring; military ranges may be flown only when open with no live firing.
+    - Cross-country flying needs IPPI 5b, and the maximum altitude anywhere in Denmark is 1050 m (3500 ft MSL).
+  learners:
+    - To start training, contact your local club or DHPU; DHPU has a map of clubs.
+    - Teaching students at any level requires an instructor licence issued by DHPU.
+  links:
+    - label: "DHPU: for visiting pilots"
+      url: https://dhpu.dk/for-visiting-pilots-en/
+    - label: DHPU flying sites
+      url: https://dhpu.dk/flyvesteder/
+    - label: DHPU clubs
+      url: https://dhpu.dk/klubber-i-danmark/
+    - label: "DHPU: become a pilot (Danish)"
+      url: https://dhpu.dk/bliv-pilot/
+    - label: Navigational warnings (Naviair)
+      url: https://briefing.naviair.dk/app/map
+    - label: XContest Denmark
+      url: https://www.xcontest.org/denmark/
+  sources:
+    - https://dhpu.dk/for-visiting-pilots-en/
+    - https://dhpu.dk/bliv-pilot/
+    - https://dhpu.dk/flyvesteder/
+  checked: 2026-10-13
+- code: IS
+  name: Iceland
+  nationalBody:
+    name: Flugmálafélag Íslands (Icelandic Aviation Association)
+    url: https://www.flugmal.is/
+  visitors: []
+  learners:
+    - Flugmálafélag Íslands says the first step to try an introductory paragliding flight is to contact one of its member clubs, which include Svifvængjafélagið Bólstri.
+  links:
+    - label: Flugmálafélag Íslands (Icelandic)
+      url: https://www.flugmal.is/
+  sources:
+    - https://www.flugmal.is/
+  checked: 2026-10-13
+- code: NL
+  name: Netherlands
+  nationalBody:
+    name: Koninklijke Nederlandse Vereniging voor Luchtvaart (KNVvL), Afdeling Paragliding
+    url: https://www.knvvl.nl/paragliding
+  visitors:
+    - Visiting pilots with an IPPI 3 equivalent licence may launch at the dune soaring sites; KNVvL strongly recommends lessons if you lack strong-wind experience.
+    - Winch towing is the main launch method; without an equivalent licence plus IPPI 3, you must launch under an instructor at a KNVvL-authorised school.
+    - You need IPPI 5 to fly further than gliding distance from the tow site.
+    - Walking in the dunes is forbidden (they are protected), so stay on official paths or risk a fine.
+  learners:
+    - Under Dutch government rules, paragliding needs the Paragliding Pilot Licence (PgPL), issued by KNVvL.
+    - You learn at schools recognised by KNVvL; PgPL-1 needs at least 15 flights and does not allow solo flying.
+    - PgPL-2 (independent flying near the launch) needs at least 40 flights signed off by a school, a national theory exam and KNVvL membership.
+  links:
+    - label: "KNVvL: visiting pilots"
+      url: https://www.knvvl.nl/paragliding/visiting-pilots
+    - label: "KNVvL: training (Dutch)"
+      url: https://www.knvvl.nl/paragliding/opleidingen
+    - label: KNVvL recognised schools
+      url: https://www.knvvl.nl/paragliding/opleidingen/scholen
+    - label: KNVvL dune soaring guide (PDF)
+      url: https://www.knvvl.nl/uploads/images/paragliding/06-documenten/Soarfolder-English.pdf
+    - label: KNVvL exams and licences (KEI)
+      url: https://www.brevet.aero/paragliding
+  sources:
+    - https://www.knvvl.nl/paragliding/visiting-pilots
+    - https://www.knvvl.nl/paragliding/opleidingen
+    - https://www.rijksoverheid.nl/vraag-en-antwoord/luchtvaart/heb-ik-een-brevet-nodig-voor-ballonvaren-zweefvliegen-schermvliegen-en-deltavliegen
+  checked: 2026-10-13
+- code: BE
+  name: Belgium
+  nationalBody:
+    name: Fédération Belge de Vol Libre (FBVL) / Belgische Vrije Vlucht Federatie (BVVF)
+    url: https://fbvl.be/
+  visitors:
+    - FBVL insurance is not available to new members who do not live in Belgium, so visitors need their own liability insurance.
+    - The FBVL Pilote and Pilote XC licences match IPPI levels 4 and 5.
+  learners:
+    - FBVL recommends training at an FBVL-approved school up to the Pilote licence; schools abroad must be approved by a federation FBVL recognises.
+    - To fly distance (cross-country), FBVL asks members to hold the Pilote XC licence.
+  links:
+    - label: FBVL (French)
+      url: https://fbvl.be/
+    - label: BVVF (Dutch)
+      url: https://bvvf.be/
+    - label: FBVL flying sites
+      url: https://fbvl.be/flying_sites
+    - label: FBVL clubs and schools
+      url: https://fbvl.be/clubs-ecoles
+    - label: FBVL rules and licences
+      url: https://fbvl.be/reglements-brevets
+  sources:
+    - https://fbvl.be/membres
+    - https://fbvl.be/reglements-brevets
+    - https://www-2025.fai.org/node/175068
+  checked: 2026-10-13
+- code: LU
+  name: Luxembourg
+  visitors:
+    - Visiting pilots must register for a free guest membership with Cumulux, valid until the end of December, before launching from any of its sites.
+    - Flying at Luxembourg's official sites requires an internationally recognised licence.
+  learners:
+    - There is no paragliding school in Luxembourg; Cumulux points learners to schools in neighbouring Germany and France.
+  links:
+    - label: Cumulux Paragliding Club
+      url: https://www.cumulux.lu/en/
+    - label: "Cumulux: guest registration"
+      url: https://www.cumulux.lu/en/guest-registration/
+    - label: "Cumulux: learn to fly"
+      url: https://www.cumulux.lu/en/get-flying/learn-to-fly/
+  sources:
+    - https://www.cumulux.lu/en/
+    - https://www.cumulux.lu/en/guest-registration/
+    - https://www.cumulux.lu/en/get-flying/learn-to-fly/
+  checked: 2026-10-13
+- code: PL
+  name: Poland
+  nationalBody:
+    name: Aeroklub Polski
+    url: https://www.aeroklub-polski.pl/
+  visitors:
+    - Pilots whose home-country documents allow unsupervised paragliding or hang gliding may fly in Poland within those privileges.
+    - You must carry your pilot document and proof of third-party liability insurance when flying (they may stay at launch or landing for local flights).
+    - Third-party liability insurance is compulsory from your first flight in Polish airspace; the legal minimum is 10,000 SDR per event.
+    - Pilots, student pilots and passengers must wear a helmet.
+  learners:
+    - Polish pilots hold a state qualification certificate for paraglider or hang glider pilots; the minimum age is 15, with guardian consent for minors.
+  links:
+    - label: Aeroklub Polski
+      url: https://www.aeroklub-polski.pl/
+    - label: Civil Aviation Authority (ULC)
+      url: https://ulc.gov.pl/
+    - label: Paraglider and hang glider rules (consolidated regulation, PDF)
+      url: https://api.sejm.gov.pl/eli/acts/DU/2019/1497/text.pdf
+    - label: "ParaglidingEarth: Poland"
+      url: https://www.paraglidingearth.com/?country=pl
+    - label: XContest
+      url: https://www.xcontest.org/world/en/
+  sources:
+    - https://api.sejm.gov.pl/eli/acts/DU/2019/1497/text.pdf
+    - https://api.sejm.gov.pl/eli/acts/DU/2025/1431/text.pdf
+  checked: 2026-10-13
+- code: CZ
+  name: Czechia
+  nationalBody:
+    name: Letecká amatérská asociace ČR (LAA ČR)
+    url: https://www.laacr.cz/
+  visitors:
+    - The Czech CAA lets foreign sport flying devices fly without prior permission if conditions are met, including a valid home licence, liability insurance and day VFR.
+    - Third-party liability insurance is compulsory; the legal minimum for a sport flying device up to 150 kg is CZK 100,000.
+  learners:
+    - Paragliding training is done at training centres registered with LAA ČR.
+    - LAA ČR issues the pilot licence after theory and practical exams with an LAA inspector and a valid medical certificate.
+    - Practical paragliding training can start from age 15.
+  links:
+    - label: LAA ČR
+      url: https://www.laacr.cz/
+    - label: LAA ČR paragliding section
+      url: https://www.laacr.cz/padakove-kluzaky/
+    - label: Registered paragliding training centres
+      url: https://www.laacr.cz/padakove-kluzaky/pk-registrovana-strediska-pilotniho-vycviku/
+    - label: "CAA: foreign ultralight and sport flying devices"
+      url: https://www.caa.gov.cz/en/?p=47714
+    - label: "ParaglidingEarth: Czechia"
+      url: https://www.paraglidingearth.com/?country=cz
+    - label: XContest
+      url: https://www.xcontest.org/world/en/
+  sources:
+    - https://www.caa.gov.cz/en/?p=47714
+    - https://www.laacr.cz/tml/files/2023/05/vyhlaska_108_1997_konsolidovane_zneni_od_15-03-2019.pdf
+    - https://www.laacr.cz/sluzby-pilotum/pojisteni/
+    - https://www.laacr.cz/tml/files/2022/04/LA1_11.4.2022.pdf
+    - https://www.laacr.cz/padakove-kluzaky/pk-registrovana-strediska-pilotniho-vycviku/
+  checked: 2026-10-13
+- code: SK
+  name: Slovakia
+  nationalBody:
+    name: Letecká amatérska asociácia SR (LAA SR)
+    url: https://www.laa.sk/
+  visitors:
+    - LAA SR says the IPPI card is recognised only at association level and does not by itself make flying in Slovak airspace legal.
+    - Pilots from outside the EU must ask the Transport Authority to recognise their licence at least 30 days before flying.
+    - A third-party liability insurance certificate must be carried on every sport or leisure flight.
+  learners:
+    - Training is done with an instructor at an LAA SR approved training centre, covering theory and practice.
+    - LAA SR issues pilot licences, under authority from the Transport Authority, after theory and practical exams.
+    - The medical check is done by a general practitioner, to the standard for a category B driving licence.
+  links:
+    - label: LAA SR
+      url: https://www.laa.sk/
+    - label: Flying of foreign pilots in Slovakia (LAA SR)
+      url: https://www.laa.sk/flying-of-foreign-pilots-over-the-area-of-slovak-republic/
+    - label: Approved training centres
+      url: https://www.laa.sk/pre-buducich-piloto/schvalene-vycvikove-strediska-laa-sr-2-2/
+    - label: Launch sites and airfields (LAA SR)
+      url: https://www.laa.sk/pre-pilotov/startovacky-a-letiska/
+    - label: Transport Authority
+      url: https://www.nsat.sk/
+    - label: "ParaglidingEarth: Slovakia"
+      url: https://www.paraglidingearth.com/?country=sk
+    - label: XContest
+      url: https://www.xcontest.org/world/en/
+  sources:
+    - https://old.fai.org/ippi-card/recognition-and-use/373-civl/civl-ippi-card/42685-ippi-card-slovakia
+    - https://www.laa.sk/wp-content/uploads/2024/07/Operating-conditions-for-aerial-sport-or-leisure-aviation.pdf
+    - https://www.laa.sk/pre-buducich-piloto/ako-sa-stat-pilotom/
+    - https://www.laa.sk/pre-buducich-piloto/schvalene-vycvikove-strediska-laa-sr-2-2/
+  checked: 2026-10-13
+- code: HU
+  name: Hungary
+  nationalBody:
+    name: Magyar Szabad Repülők Szövetsége (HFFA, Hungarian Free Flying Association)
+    url: https://hffa.hu/
+  visitors:
+    - Paragliders and hang gliders must have valid third-party liability insurance; HFFA gives the minimum as HUF 10 million.
+    - In Hungary your wing must carry an identification number.
+  learners:
+    - Training is given by national training organisations registered with the aviation authority, which issue a certificate of training and exams.
+    - Pilots must meet the training and exam requirements set by ministerial decree and hold a valid medical certificate.
+  links:
+    - label: HFFA
+      url: https://hffa.hu/
+    - label: HFFA information in English
+      url: https://hffa.hu/english/
+    - label: Launch site information (HFFA)
+      url: https://hffa.hu/starthely-info/
+    - label: Instructors (HFFA)
+      url: https://hffa.hu/oktatok/
+    - label: "ParaglidingEarth: Hungary"
+      url: https://www.paraglidingearth.com/?country=hu
+    - label: XContest
+      url: https://www.xcontest.org/world/en/
+  sources:
+    - https://hffa.hu/english/
+    - https://hffa.hu/wp-content/uploads/2024/04/jogszabalyi-eloirasok-siklorepulokre.pdf
+  checked: 2026-10-13
+- code: SI
+  name: Slovenia
+  nationalBody:
+    name: Zveza za prosto letenje Slovenije (ZPLS / SFFA, Slovenian Free Flight Association)
+    url: https://sffa.org/
+  visitors:
+    - Foreign pilots may fly with a valid home licence plus an FAI sporting licence or IPPI card; without one of these, only under an instructor's supervision.
+    - Paragliders and hang gliders may fly only in uncontrolled class G airspace.
+    - Foreign instructors need a special permit from the aviation authority before teaching in Slovenia.
+  learners:
+    - Training starts from age 15 with an authorised instructor, after a theory course and written test; under-18s need parental consent.
+    - The licence exam (theory and practical) is taken from age 16 before an authority-appointed exam board, with a category B driving-licence medical.
+  links:
+    - label: ZPLS / SFFA
+      url: https://sffa.org/
+    - label: SFFA archive (English)
+      url: https://old.sffa.org/en.html
+    - label: Letalska zveza Slovenije
+      url: https://lzs-zveza.si/
+    - label: Hang gliding and paragliding decree (Uradni list 13/1999)
+      url: https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/1999-01-0616/
+    - label: "ParaglidingEarth: Slovenia"
+      url: https://www.paraglidingearth.com/?country=si
+    - label: XContest
+      url: https://www.xcontest.org/world/en/
+  sources:
+    - https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/1999-01-0616/
+    - https://old.sffa.org/en/flying-rules-slovenia.html
+  checked: 2026-10-13
+- code: HR
+  name: Croatia
+  nationalBody:
+    name: Hrvatski zrakoplovni savez (Croatian Aeronautical Federation)
+    url: https://www.caf.hr/
+  visitors:
+    - Pilots may fly under a licence and ratings issued abroad, if they also hold valid proof of medical fitness under the issuing country's rules.
+  learners:
+    - Training for a paraglider or hang glider licence may only be given by an approved training organisation.
+    - The Croatian Civil Aviation Agency (CCAA) issues licences; a Category A licence needs a training certificate, a practical check and a valid medical certificate.
+    - Minors need signed parental or guardian consent to start training.
+  links:
+    - label: Hrvatski zrakoplovni savez
+      url: https://www.caf.hr/
+    - label: Croatian Civil Aviation Agency (CCAA)
+      url: https://www.ccaa.hr/en
+    - label: Paraglider and hang glider rulebook (NN 43/2015)
+      url: https://www.zakon.hr/cms.htm?id=12596
+    - label: "ParaglidingEarth: Croatia"
+      url: https://www.paraglidingearth.com/?country=hr
+    - label: XContest
+      url: https://www.xcontest.org/world/en/
+  sources:
+    - https://www.zakon.hr/cms.htm?id=12596
+  checked: 2026-10-13
+- code: RO
+  name: Romania
+  nationalBody:
+    name: Asociația de Zbor Liber din România (AZLR)
+    url: https://azlr.ro/info/
+  visitors:
+    - Visiting pilots need a valid pilot licence of at least IPPI level 4 and third-party insurance.
+    - Every pilot must file a VFR notification on the CAA's vfr.caa.ro portal at least 30 minutes before each flight, even when flying in a group.
+    - You must close the flight within 15 minutes of landing, or search and rescue may be started.
+  learners:
+    - AZLR is the only entity accredited by the Romanian CAA (AACR) for this field and lists the paragliding schools.
+    - The licence needs age 16 or over, a valid medical certificate, at least 75% in each written subject and a pass in a practical test.
+  links:
+    - label: AZLR
+      url: https://azlr.ro/info/
+    - label: Visiting pilots (AZLR, English)
+      url: https://azlr.ro/info/visiting-pilots-en/
+    - label: Paragliding schools (AZLR)
+      url: https://azlr.ro/info/scoli-de-zbor-cu-parapanta/
+    - label: VFR notification portal (CAA)
+      url: https://vfr.caa.ro/login
+    - label: "ParaglidingEarth: Romania"
+      url: https://www.paraglidingearth.com/?country=ro
+    - label: XContest
+      url: https://www.xcontest.org/world/en/
+  sources:
+    - https://azlr.ro/info/visiting-pilots-en/
+    - https://azlr.ro/info/
+    - https://azlr.ro/info/licentaparapanta/
+  checked: 2026-10-13
+- code: BG
+  name: Bulgaria
+  nationalBody:
+    name: Civil Aviation Administration (ГД ГВА)
+    url: https://www.caa.bg/
+  visitors:
+    - Under Bulgarian rules, pilots of foot-launched paragliders and hang gliders do not need a pilot licence or a medical certificate.
+  learners:
+    - The minimum age for foot-launched paraglider and hang glider pilots is 16; under-18s need parental or guardian consent.
+    - Training follows programmes set by CAA-certified training organisations, which issue a certificate on completion.
+  links:
+    - label: Civil Aviation Administration
+      url: https://www.caa.bg/
+    - label: Ordinance N-1 on ultralights (PDF, Bulgarian)
+      url: https://caa.bg/sites/default/files/upload/documents/2020-08/naredba_1_ot_9012014_g_za_registraciq_pyrvonacalno_opredelqne_poddyrjane_na_letatelnata_godnost_eksp_0.pdf
+    - label: "ParaglidingEarth: Bulgaria"
+      url: https://www.paraglidingearth.com/?country=bg
+    - label: XContest
+      url: https://www.xcontest.org/world/en/
+  sources:
+    - https://caa.bg/sites/default/files/upload/documents/2020-08/naredba_1_ot_9012014_g_za_registraciq_pyrvonacalno_opredelqne_poddyrjane_na_letatelnata_godnost_eksp_0.pdf
+  checked: 2026-10-13
+- code: GR
+  name: Greece
+  nationalBody:
+    name: Hellenic Aeronautical and Airsports Federation (ELAO)
+    url: https://www.elao.website/
+  visitors:
+    - Visiting pilots staying one to three months show a Greek club their IPPI card, home licence and liability insurance, and join as temporary members.
+    - Visitors fly under Greek rules, with the privileges of the licence level they hold at home.
+    - Under ELAO's paragliding rules, a reserve parachute, a VHF radio and live tracking are compulsory on every flight.
+    - Flying within 10 nautical miles of an aerodrome or in airways is not allowed unless air traffic services are told before the flight.
+  learners:
+    - Only ELAO-approved schools may teach paragliding, and training follows the FAI/CIVL SPP (CIVL's pilot training standard) standard.
+    - Before practical training, students must join an ELAO club, hold an athlete health card and have third-party insurance.
+    - Foreign students can complete basic training (IPPI 1–2) at a school, but IPPI 3 and above need ELAO exams.
+  links:
+    - label: ELAO (Hellenic Aeronautical and Airsports Federation)
+      url: https://www.elao.website/
+    - label: ELAO paragliding page and rules
+      url: https://www.elao.website/aleksiptwto-plagias
+    - label: "Hellenic Paragliding Commission: rules for foreign pilots"
+      url: https://eap.elao.gr/index.php?option=com_content&view=article&id=124&Itemid=116
+    - label: "Hellenic Paragliding Commission: clubs and schools"
+      url: https://eap.elao.gr/index.php?option=com_content&view=article&id=114&Itemid=106
+    - label: "ParaglidingEarth: Greece"
+      url: https://www.paraglidingearth.com/?country=gr
+  sources:
+    - https://www.elao.website/_files/ugd/39f2b6_837ecd083fb54eb69a3195720a4a4123.pdf
+    - https://www.elao.website/aleksiptwto-plagias
+    - https://eap.elao.gr/index.php?option=com_content&view=article&id=124&Itemid=116
+    - https://www-2025.fai.org/member/gre-nac
+  checked: 2026-10-13
+- code: CY
+  name: Cyprus
+  nationalBody:
+    name: Cyprus Airsports Federation
+    url: https://www.caf.org.cy/
+  visitors: []
+  learners: []
+  links:
+    - label: Cyprus Airsports Federation
+      url: https://www.caf.org.cy/
+    - label: "ParaglidingEarth: Cyprus"
+      url: https://www.paraglidingearth.com/?country=cy
+  sources:
+    - https://www-2025.fai.org/member/cyp-nac
+    - https://www.caf.org.cy/
+  checked: 2026-10-13
+- code: AL
+  name: Albania
+  nationalBody:
+    name: Albanian Aeronautics Federation (FSHAIR)
+    url: https://nac.org.al/
+  visitors:
+    - On request, Albania's Civil Aviation Authority (AAC) can validate a foreign paragliding or hang gliding licence for up to one year.
+    - To convert to an Albanian licence, a foreign pilot needs an AAC theory check, a flight check with an authorised examiner, a medical certificate and the required flight time.
+    - Licence holders may fly only by day in visual weather conditions (VMC).
+    - A helmet is required, and you must not fly higher than 10 m above the ground without a reserve parachute.
+  learners:
+    - Training must be at an AAC-approved training organisation, and student pilots must be at least 15 before their first flight.
+    - You must be at least 16 to sit the licence exam, and the AAC runs the theory exam.
+    - Licence applicants need at least 10 hours as a student, including 60 flights over five minutes and five flights of at least an hour.
+  links:
+    - label: "Albanian Aeronautics Federation: paragliding"
+      url: https://nac.org.al/disiplina.php?d=paragliding
+    - label: "AAC: paraglider and hang glider pilots (forms and regulation)"
+      url: https://www.aac.gov.al/pilotet-e-paraglajdit-dhe-deltaplanit/
+    - label: AAC Regulation No. 195/2019 (Albanian, PDF)
+      url: https://www.aac.gov.al/wp-content/uploads/2025/04/Condition-for-usage-of-Paragliding-and-Deltaplans_Regulation-No195-dated-03.05.2019.pdf
+    - label: "ParaglidingEarth: Albania"
+      url: https://www.paraglidingearth.com/?country=al
+  sources:
+    - https://www.aac.gov.al/wp-content/uploads/2025/04/Condition-for-usage-of-Paragliding-and-Deltaplans_Regulation-No195-dated-03.05.2019.pdf
+    - https://www.aac.gov.al/pilotet-e-paraglajdit-dhe-deltaplanit/
+    - https://nac.org.al/disiplina.php?d=paragliding
+    - https://www-2025.fai.org/member/alb-nac
+  checked: 2026-10-13
+- code: BA
+  name: Bosnia and Herzegovina
+  nationalBody:
+    name: Vazduhoplovni savez Bosne i Hercegovine (Air Sports Federation of Bosnia and Herzegovina)
+    url: https://www.vzsbih.ba/
+  visitors: []
+  learners: []
+  links:
+    - label: "Vazduhoplovni savez BiH: paragliding"
+      url: https://www.vzsbih.ba/index.php/vazduhoplovni-sportovi/paraglajding
+    - label: "ParaglidingEarth: Bosnia and Herzegovina"
+      url: https://www.paraglidingearth.com/?country=ba
+  sources:
+    - https://www-2025.fai.org/member/bih-nac
+    - https://www.vzsbih.ba/index.php/vazduhoplovni-sportovi/paraglajding
+  checked: 2026-10-13
+- code: ME
+  name: Montenegro
+  nationalBody:
+    name: Vazduhoplovni sportski savez Crne Gore (Air Sports Federation of Montenegro)
+    url: https://www-2025.fai.org/member/mne-nac
+  visitors:
+    - You may fly in Montenegro on a valid paraglider licence from an EU member state, or a valid IPPI or APPI card, within its privileges.
+    - Paragliders may be flown only with valid licences and ratings, serviceable equipment and a medical certificate suited to the rating.
+    - To convert a foreign licence, you need a valid medical certificate, a theory test in aviation regulations and a practical test with an authorised examiner.
+  learners:
+    - A Montenegrin paraglider licence needs age 16 or over, completed training, a passed licence exam and a valid medical certificate.
+  links:
+    - label: "Civil Aviation Agency of Montenegro: paragliding rules"
+      url: https://caa.me/en/node/1276
+    - label: "Montenegro government: paraglider pilot licence"
+      url: https://psc.gov.me/en/sektorske-informacije/ministarstvo-saobracaja-i-pomorstva/izdavanje-dozvole-pilota-paraglajdera/
+    - label: "Montenegro government: licence from a foreign licence"
+      url: https://psc.gov.me/en/sektorske-informacije/ministarstvo-saobracaja-i-pomorstva/izdavanje-crnogorske-dozvole-na-osnovu-strane-dozvole/
+    - label: "ParaglidingEarth: Montenegro"
+      url: https://www.paraglidingearth.com/?country=me
+  sources:
+    - https://psc.gov.me/en/sektorske-informacije/ministarstvo-saobracaja-i-pomorstva/izdavanje-dozvole-pilota-paraglajdera/
+    - https://psc.gov.me/en/sektorske-informacije/ministarstvo-saobracaja-i-pomorstva/izdavanje-crnogorske-dozvole-na-osnovu-strane-dozvole/
+    - https://caa.me/en/node/1276
+    - https://www-2025.fai.org/member/mne-nac
+  checked: 2026-10-13
+- code: MK
+  name: North Macedonia
+  nationalBody:
+    name: Vozduhoplovna federacija na Makedonija (Aeronautical Federation of North Macedonia)
+    url: https://www-2025.fai.org/member/mkd-nac
+  visitors:
+    - A valid free-flight licence (paraglider or hang glider) from a foreign aviation authority or other authorised body lets you fly without a local licence.
+    - Flights are made from aerodromes, airfields and sites entered in the Civil Aviation Agency's register.
+    - Pilots must notify the responsible air traffic control 30 minutes before take-off, and close the flight 30 minutes after landing.
+  learners:
+    - Tandem passengers must be adults who give written consent; children aged 10 or more may fly with written consent and a parent at take-off.
+  links:
+    - label: "Civil Aviation Agency: free-flying wings rules (flyer, PDF)"
+      url: https://www.caa.gov.mk/wp-content/uploads/2021/09/Flaer-krila-za-slobodno-letanje.pdf
+    - label: "ParaglidingEarth: North Macedonia"
+      url: https://www.paraglidingearth.com/?country=mk
+  sources:
+    - https://www.caa.gov.mk/wp-content/uploads/2021/09/Flaer-krila-za-slobodno-letanje.pdf
+    - https://www-2025.fai.org/member/mkd-nac
+  checked: 2026-10-13
+- code: RS
+  name: Serbia
+  nationalBody:
+    name: Vazduhoplovni savez Srbije (Air Sports Federation of Serbia)
+    url: https://vss.rs/
+  visitors:
+    - A pilot with a valid paraglider licence from a foreign aviation authority, or a body authorised by that country, may fly without a Serbian licence.
+  learners:
+    - Training must be at a training centre certified by Serbia's Civil Aviation Directorate.
+    - Training is open to adults, or from age 15 with the certified written consent of both parents; the licence is issued from age 16.
+    - During practical training, students must carry a student-pilot authorisation issued by the Directorate.
+  links:
+    - label: "Vazduhoplovni savez Srbije: paragliding"
+      url: https://vss.rs/paraglajding/
+    - label: "Civil Aviation Directorate: paraglider pilots"
+      url: https://cad.gov.rs/en/strana/20491/paraglider-pilots
+    - label: Paraglider licence and training centre rulebook (Serbian, PDF)
+      url: https://cad.gov.rs/upload/letacko/pravilnici/Pravilnik%20o%20dozvolama%20i%20centrima%20za%20obuku%20pilota%20paraglajdera%20(Sl.%20glasnik%20RS,%20br.%2061-15).pdf
+    - label: "ParaglidingEarth: Serbia"
+      url: https://www.paraglidingearth.com/?country=rs
+  sources:
+    - https://cad.gov.rs/upload/letacko/pravilnici/Pravilnik%20o%20dozvolama%20i%20centrima%20za%20obuku%20pilota%20paraglajdera%20(Sl.%20glasnik%20RS,%20br.%2061-15).pdf
+    - https://cad.gov.rs/en/strana/20491/paraglider-pilots
+    - https://www-2025.fai.org/member/srb-nac
+  checked: 2026-10-13
+- code: EE
+  name: Estonia
+  nationalBody:
+    name: Eesti Lennuspordi Föderatsioon (Estonian Air Sports Federation)
+    url: https://www.lennusport.org/
+  visitors:
+    - The Estonian Air Sports Federation says third-party liability insurance is not required for paragliding in Estonia.
+    - Most free-flight launches in Estonia are by vehicle winch tow, usually to about 500 m.
+  learners:
+    - The federation's paragliding committee issues pilot certificates; you apply through a member club, and these clubs also run the training.
+    - Estonian paragliding ratings follow FAI/CIVL SPP (CIVL's pilot training standard); the first rating (PG-2) needs at least 10 flights.
+  links:
+    - label: "Estonian Air Sports Federation: paragliding and paramotoring"
+      url: https://www.lennusport.org/tiib-ja-motovari/
+    - label: Paragliding certificate system in Estonia (English, PDF)
+      url: https://www.lennusport.org/file/PG_PPG_system_estonia_ENG.pdf
+    - label: "ParaglidingEarth: Estonia"
+      url: https://www.paraglidingearth.com/?country=ee
+  sources:
+    - https://www.lennusport.org/tiib-ja-motovari/
+    - https://www.lennusport.org/file/PG_PPG_system_estonia_ENG.pdf
+    - https://www-2025.fai.org/member/est-nac
+  checked: 2026-10-13
+- code: LV
+  name: Latvia
+  nationalBody:
+    name: Latvijas Aeroklubs (Aero Club of Latvia)
+    url: https://aeroclub.lv/
+  visitors: []
+  learners:
+    - Since 1 January 2025, the Latvian Paragliding Federation certifies paraglider pilots and issues their certificates, supervised by the Civil Aviation Agency.
+  links:
+    - label: Latvijas Aeroklubs
+      url: https://aeroclub.lv/
+    - label: Law amendment naming the Latvian Paragliding Federation (Latvian)
+      url: https://likumi.lv/ta/id/356594
+    - label: "ParaglidingEarth: Latvia"
+      url: https://www.paraglidingearth.com/?country=lv
+  sources:
+    - https://likumi.lv/ta/id/356594
+    - https://www-2025.fai.org/member/lat-nac
+  checked: 2026-10-13
+- code: LT
+  name: Lithuania
+  nationalBody:
+    name: Lietuvos Aeroklubas (Lithuanian Aero Club)
+    url: https://aeroclub.lt/
+  visitors: []
+  learners: []
+  links:
+    - label: Lietuvos Aeroklubas
+      url: https://aeroclub.lt/
+    - label: Lithuanian Hang Gliding and Paragliding Sports Federation (state register entry)
+      url: https://www.lrvalstybe.lt/valstybine-institucija/lietuvos-skraidykliu-ir-parasparniu-sporto-federacija-9426
+    - label: "ParaglidingEarth: Lithuania"
+      url: https://www.paraglidingearth.com/?country=lt
+  sources:
+    - https://www-2025.fai.org/member/ltu-nac
+    - https://www.lrvalstybe.lt/valstybine-institucija/lietuvos-skraidykliu-ir-parasparniu-sporto-federacija-9426
+  checked: 2026-10-13
+- code: NP
+  name: Nepal
+  nationalBody:
+    name: Civil Aviation Authority of Nepal (CAAN)
+    url: https://caanepal.gov.np/
+  visitors:
+    - Paragliding in Nepal is regulated by the Civil Aviation Authority of Nepal (CAAN), and its directive binds all paragliding and hang gliding operations.
+    - CAAN's 2018 directive lets its authorised agency issue an authorisation to fly to holders of a foreign paragliding licence.
+    - CAAN publishes paragliding zones, with take-off and landing points and height limits, in AIP Nepal section ENR 5.5.
+    - In Pokhara's Mandredhunga/Torepani paragliding zone, CAAN allows operations from 11 am to 4:30 pm, in visual flight conditions only.
+  learners:
+    - Paragliding and hang gliding training organisations in Nepal, local or foreign, need CAAN approval on the recommendation of its authorised agency.
+    - Paragliding pilot licences in Nepal are issued under CAAN's paragliding pilot licensing requirements.
+  links:
+    - label: Civil Aviation Authority of Nepal
+      url: https://caanepal.gov.np/
+    - label: AIP Nepal (paragliding zones, ENR 5.5)
+      url: https://e-aip.caanepal.gov.np/
+    - label: XContest
+      url: https://www.xcontest.org/world/en/
+  sources:
+    - https://caanepal.gov.np/storage/app/media/uploaded-files/Directives-for-Recreational-Aviation-Authorized-Agency-2018.pdf
+    - https://e-aip.caanepal.gov.np/_uploads/_pdf/e2d8b2e13f696b4465772a3adc426ffc.pdf
+    - https://e-aip.caanepal.gov.np/_uploads/_pdf/8ec30f7b9ab189cd32187011dbdd806b.pdf
+  checked: 2026-10-13
+- code: IN
+  name: India
+  nationalBody:
+    name: Aero Club of India (FAI member for India)
+    url: https://aeroclubofindia.com/
+  visitors:
+    - Rules differ by state. In Himachal Pradesh (Bir Billing, Manali), a solo pilot must apply to the District Tourism Development Officer at least one month ahead.
+    - In Himachal Pradesh, solo flying permission is issued for three months, and the pilot needs a licence recognised by BHPA, USHGA, FAI or APPI.
+    - In Himachal Pradesh, foreign pilots may join an aero sports operation only if cleared by the District Tourism Development Officer and flying under a registered operator.
+    - In Himachal Pradesh, aero sports may only take place at sites identified by the state's Technical Committee and notified by the Director of Tourism.
+  learners:
+    - Himachal Pradesh's rules recognise a paragliding course from the Atal Bihari Vajpayee Institute of Mountaineering and Allied Sports (ABVIMAS) in Manali.
+    - In Himachal Pradesh, only operators registered with the Tourism Department and approved by the Technical Committee may run paragliding operations.
+    - In Himachal Pradesh, tandem pilots must be registered, be at least 21, hold at least P4 level, and have 100 hours of solo flying.
+  links:
+    - label: Aero Club of India
+      url: https://aeroclubofindia.com/
+    - label: Himachal Pradesh Aero Sports Rules 2022 (PDF)
+      url: https://himachaltourism.gov.in/wp-content/uploads/2022/06/Himachal-Pradesh-Aero-Sports-Rules-2022.pdf
+    - label: "Himachal Tourism: paragliding"
+      url: https://himachaltourism.gov.in/destination/paragliding/
+    - label: "ABVIMAS Manali: paragliding courses"
+      url: https://abvimas.org/course/paragliding-course-list
+    - label: XContest
+      url: https://www.xcontest.org/world/en/
+  sources:
+    - https://himachaltourism.gov.in/wp-content/uploads/2022/06/Himachal-Pradesh-Aero-Sports-Rules-2022.pdf
+    - https://civilaviation.gov.in/sites/default/files/2024-07/NAS%20Guidelines%202023%2007th%20August%202023.pdf
+    - https://abvimas.org/course/paragliding-course-list
+  checked: 2026-10-13
+- code: TR
+  name: Turkey
+  nationalBody:
+    name: Türkiye Hava Sporları Federasyonu (THSF, Turkish Air Sports Federation)
+    url: https://thsf.org.tr/
+  visitors:
+    - The Turkish Air Sports Federation (THSF) has been Türkiye's FAI member since 23 February 2026 and sets paragliding pilot levels and training rules.
+  learners:
+    - Paragliding training is run by sports clubs registered with THSF, or by other organisations that have signed a protocol with the federation.
+    - Students and tandem pilots must hold personal accident insurance that covers paragliding or hang gliding.
+    - Paragliding levels run P2 to P5, then tandem T1 and T2; P2 students may only fly under a coach's supervision, not on their own.
+  links:
+    - label: Turkish Air Sports Federation (THSF)
+      url: https://thsf.org.tr/
+    - label: THSF clubs list
+      url: https://thsf.org.tr/kuluplerimiz/
+    - label: THSF rules and instructions
+      url: https://thsf.org.tr/mevzuat/
+    - label: XContest
+      url: https://www.xcontest.org/world/en/
+  sources:
+    - https://thsf.org.tr/wp-content/uploads/2026/04/Turkiye-Hava-Sporlari-Federasyonu-Yamac-Parasutu-ve-Yelkenkanat-Sporcu-Pilot-Egitim-Talimati.pdf
+    - https://thsf.org.tr/mevzuat/
+    - https://thsf.org.tr/kuluplerimiz/
+    - https://thsf.org.tr/yamac-parasutu-pilotlari-dikkat-denklik-basvurulari-1-haziranda-basliyor/
+  checked: 2026-10-13
+- code: ZA
+  name: South Africa
+  nationalBody:
+    name: South African Hang Gliding and Paragliding Association (SAHPA)
+    url: https://sahpa.co.za/
+  visitors:
+    - Civil Aviation Regulations Part 94 require all pilots, including visitors, to be SAHPA members; visitors can take a 3- or 6-month Foreign Pilot Membership.
+    - You need third-party liability aviation insurance; SAHPA's foreign membership includes it.
+    - Visitors need an IPPI 4 card or higher; IPPI 3 or below must fly under an approved school, and tandem needs an IPPI 6 tandem rating.
+    - You need the landowner's permission to launch, and foreign instructors may not train or fly commercial tandems in South Africa.
+  learners:
+    - New pilots must complete a training programme with an approved school before getting a SAHPA National Pilot's Licence.
+    - Schools operate under Part 141 of the Civil Aviation Regulations; SAHPA keeps a schools directory but advises checking a school's approval with the CAA.
+    - For an introductory tandem flight, SAHPA offers a one-day Temporary Student membership.
+  links:
+    - label: SAHPA
+      url: https://sahpa.co.za/
+    - label: SAHPA foreign pilot membership
+      url: https://sahpa.co.za/membership/foreign-membership/
+    - label: SAHPA schools directory
+      url: https://sahpa.co.za/schools/
+    - label: About SAHPA (rules and site register)
+      url: https://sahpa.co.za/about/
+    - label: XContest
+      url: https://www.xcontest.org/world/en/
+  sources:
+    - https://sahpa.co.za/membership/foreign-membership/
+    - https://sahpa.co.za/about/
+    - https://sahpa.co.za/schools/
+  checked: 2026-10-13
+- code: CO
+  name: Colombia
+  nationalBody:
+    name: Federación Colombiana de Deportes Aéreos (Fedeaereos)
+    url: https://www.fedeaereos.org/
+  visitors:
+    - Pilots who live outside Colombia must show an IPPI card plus a valid, current licence or proficiency certificate from their home country, and a copy of their passport.
+    - Visiting pilots must also get a temporary flight licence issued by Fedeaereos.
+    - Apart from students in training, paraglider pilots may only fly if they are registered with or affiliated to a paragliding club.
+    - Clubs that manage a flying site can require a Fedeaereos-endorsed pilot certificate before you fly there; airspace use follows Aerocivil (civil aviation authority) rules.
+  learners:
+    - Training must be done at a paragliding school recognised by Fedeaereos.
+    - Students must be adults; 14 to 17-year-olds need permission from a parent or guardian, signed before a notary.
+    - After the course, students must join a paragliding club, where their further training and flying continues.
+  links:
+    - label: Fedeaereos (national federation)
+      url: https://www.fedeaereos.org/
+    - label: Affiliated clubs (Fedeaereos)
+      url: https://www.fedeaereos.org/clublist.php
+    - label: Register of licensed pilots (RUNP)
+      url: https://www.fedeaereos.org/runp.php
+    - label: Paragliding regulation (PDF, Spanish)
+      url: https://www.fedeaereos.org/download.php?file=20160101-ReglamentoNacionaldeParapente.pdf
+  sources:
+    - https://www.fedeaereos.org/download.php?file=20160101-ReglamentoNacionaldeParapente.pdf
+    - https://www.fedeaereos.org/
+    - https://www.fedeaereos.org/clublist.php
+  checked: 2026-10-13
+- code: BR
+  name: Brazil
+  nationalBody:
+    name: Confederação Brasileira de Voo Livre (CBVL)
+    url: https://www.cbvl.esp.br/
+  visitors:
+    - Under ANAC rule RBAC 103, every free-flight pilot must hold an ANAC sport-aviation registration (cadastro aerodesportista), certified through an ANAC-accredited association.
+    - The registration certificate must be carried when flying, on paper or digitally.
+    - Free flight is only legal inside airspace set aside for sport aviation, published by DECEA (Brazil's airspace authority) on its AISWEB site.
+    - Launch sites are run by clubs or public bodies, and many clubs require a CBVL rating before you can launch.
+  learners:
+    - You must be 18 to start free-flight training in CBVL's pilot proficiency system.
+    - Student pilots must train in a course run by CBVL-approved (homologado) instructors; CBVL lists schools by state.
+    - To join CBVL you must also be a member of an affiliated club and your state federation.
+  links:
+    - label: CBVL (national confederation)
+      url: https://www.cbvl.esp.br/
+    - label: Flight schools (CBVL)
+      url: https://www.cbvl.esp.br/aprenda-a-voar/escolas-de-voo/
+    - label: Launch sites of Brazil (CBVL)
+      url: https://www.cbvl.esp.br/aprenda-a-voar/rampas-do-brasil/
+    - label: State federations (CBVL)
+      url: https://www.cbvl.esp.br/institucional/federacoes/
+    - label: ANAC registration and exam (CBVL)
+      url: https://www.cbvl.esp.br/piloto-cbvl/prova-da-anac/
+    - label: Register as a sport pilot (gov.br)
+      url: https://www.gov.br/pt-br/servicos/cadastrar-se-como-aerodesportista
+    - label: AISWEB airspace information (DECEA)
+      url: https://aisweb.decea.mil.br/
+  sources:
+    - https://www.cbvl.esp.br/piloto-cbvl/prova-da-anac/
+    - https://www.gov.br/pt-br/servicos/cadastrar-se-como-aerodesportista
+    - https://www.anac.gov.br/assuntos/legislacao/legislacao-1/boletim-de-pessoal/2021/52/anexo-iv-is-no-103-001-revisao-c
+    - https://www.cbvl.esp.br/espaco-aereo/normas
+    - https://www.cbvl.esp.br/piloto-cbvl/porque-se-associar/
+    - https://www.cbvl.esp.br/aprenda-a-voar/perguntas-frequentes-sobre-voo-livre/
+    - https://www.cbvl.esp.br/piloto-cbvl/sistema-de-niveis/
+  checked: 2026-10-13
+- code: US
+  name: United States
+  nationalBody:
+    name: United States Hang Gliding and Paragliding Association (USHPA)
+    url: https://www.ushpa.org/
+  visitors:
+    - Visitors can join USHPA with a temporary 10-day membership from a USHPA instructor, chapter officer or approved event organiser; membership includes the liability insurance most landowners require.
+    - Without a USHPA rating, visitors must carry both their home-country rating documents and a valid IPPI card.
+    - Chapters that manage sites set minimum pilot ratings and should allow only USHPA members to fly their insured sites.
+    - FAA Part 103 needs no pilot certificate, but limits flying to daylight and bans flights over congested areas or in controlled airspace without ATC authorisation.
+  learners:
+    - Start with a USHPA-certified instructor, who activates a 60-day Student membership or provides a temporary 10-day membership.
+    - USHPA student pilots must be at least 14, and 16 to gain solo ratings.
+    - USHPA ratings run from level 1 (beginner) to 5 (master) for each wing type, and need minimum flights, hours and written tests.
+  links:
+    - label: USHPA (national association)
+      url: https://www.ushpa.org/
+    - label: International and visiting pilots (USHPA)
+      url: https://www.ushpa.org/USHPA/Pilot_Resources/Public/pilotresources/international-pilot-information.aspx
+    - label: Find a chapter (USHPA)
+      url: https://www.ushpa.org/USHPA/Pilot_Resources/chapters/Public/PilotResources/Chapters.aspx?hkey=5e0f83c4-b56c-478c-84f0-9cca441b9a17
+    - label: Find a school or instructor (USHPA)
+      url: https://www.ushpa.org/USHPA/Learn_to_fly/Find_a_school/Public/LearnToFly/find-a-school-or-instructor.aspx?hkey=c77fddb0-cfc1-4489-91d6-27d39ca321a5
+    - label: FAA resources (USHPA)
+      url: https://www.ushpa.org/USHPA/Pilot_Resources/FAA_Resources/Public/PilotResources/faa-resources.aspx?hkey=0b3582c2-0ff1-42fa-929e-b4904a95d92b
+    - label: FAA Part 103 (eCFR)
+      url: https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-103
+  sources:
+    - https://www.ushpa.org/USHPA/Pilot_Resources/Public/pilotresources/international-pilot-information.aspx
+    - https://www.ushpa.org/USHPA/Pilot_Resources/chapters/Public/PilotResources/Chapters.aspx?hkey=5e0f83c4-b56c-478c-84f0-9cca441b9a17
+    - https://www.ushpa.org/USHPA/Learn_to_fly/Become_a_pilot/Public/LearnToFly/become-a-pilot.aspx?hkey=e12ace22-bbe5-4838-b12e-764680618303
+    - https://www.ushpa.org/USHPA/Pilot_Resources/FAA_Resources/Public/PilotResources/faa-resources.aspx?hkey=0b3582c2-0ff1-42fa-929e-b4904a95d92b
+    - https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-103
+  checked: 2026-10-13
+- code: CA
+  name: Canada
+  nationalBody:
+    name: Hang Gliding and Paragliding Association of Canada (HPAC/ACVL)
+    url: https://hpac.ca/
+  visitors:
+    - Visitors need a temporary HPAC membership, valid for 60 days, to fly most Canadian sites.
+    - Insurance from your home association is not valid in Canada as primary cover; landowners require all pilots to carry Canadian insurance.
+    - Canadian Aviation Regulations (CAR 602.29) ban night flying; HPAC says controlled airspace also needs a Category 4 medical certificate and a pass in the HAGAR exam.
+    - Only Banff, Jasper, Kootenay and Yoho national parks allow free flight, each under Parks Canada rules; all other national parks are closed to it.
+  learners:
+    - Learn with an HPAC-certified instructor or school; your instructor sends in your HPAC membership application and rating form.
+    - Passing Transport Canada's HAGAR air-law exam is required before the Intermediate (P3 or H3) rating.
+  links:
+    - label: HPAC/ACVL (national association)
+      url: https://hpac.ca/
+    - label: Visiting pilots (HPAC)
+      url: https://hpac.ca/pilot/visiting-pilots/
+    - label: Schools (HPAC)
+      url: https://hpac.ca/schools/
+    - label: Find an instructor (HPAC)
+      url: https://hpac.ca/find-a-instructors/
+    - label: Flying in national parks (HPAC)
+      url: https://hpac.ca/pilot/flying-in-canadas-national-parks/
+    - label: HAGAR exam (HPAC)
+      url: https://hpac.ca/hagar/
+    - label: Canadian Aviation Regulations
+      url: https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-433/FullText.html
+  sources:
+    - https://hpac.ca/pilot/visiting-pilots/
+    - https://hpac.ca/medical-certificate/
+    - https://hpac.ca/hagar/
+    - https://hpac.ca/pilot/transport-canada-air-regulations-and-hagar/
+    - https://hpac.ca/pilot/flying-in-canadas-national-parks/
+    - https://hpac.ca/joining-hpac-for-the-first-time/
+    - https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-433/FullText.html
+  checked: 2026-10-13
+- code: ID
+  name: Indonesia
+  nationalBody:
+    name: Federasi Aero Sport Indonesia (FASI)
+    url: https://pbfasi.id/
+  visitors:
+    - FASI's paragliding committee says all visiting and local pilots need current FASI Paralayang membership to fly legally in Indonesia.
+    - The Visiting Pilot Membership is free for pilots with a current home-country licence, is best arranged before arrival, and is renewable once in any 3-month period.
+    - For recreational flying, PB FASI asks visitors to email an FAI Sporting Licence, a valid national pilot licence, and valid international insurance, which it says is mandatory.
+    - Visiting pilots may not fly tandems unless they hold a KITAS (stay permit) and FASI Paralayang approval; paid or instructional tandems are banned.
+  learners:
+    - FASI's paragliding committee advises finding an instructor or school near you, then joining a local paragliding club.
+  links:
+    - label: PB FASI (national federation)
+      url: https://pbfasi.id/
+    - label: Foreign pilot registration (PB FASI)
+      url: https://pbfasi.id/foreign-pilot-registration/
+    - label: Indonesia Paragliding (FASI Paralayang)
+      url: https://www.paragliding.web.id/
+    - label: Visiting pilot membership (FASI Paralayang)
+      url: https://paragliding.web.id/public/pilot_visitor
+    - label: Flying sites (FASI Paralayang)
+      url: https://www.paragliding.web.id/public/flysite
+  sources:
+    - https://paragliding.web.id/public/pilot_visitor
+    - https://pbfasi.id/foreign-pilot-registration/
+    - https://www.paragliding.web.id/flying_in_indonesia/how_to_fly
+  checked: 2026-10-13

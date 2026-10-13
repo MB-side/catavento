@@ -45,6 +45,7 @@ const problems = checkHealth({
   })),
   gearCategories: input.gearCategories,
   siteWind: input.siteWind,
+  guides: input.guides,
   links,
   linkExceptions,
   workflows,

@@ -665,13 +665,13 @@
     },
     "pge": {
       "status": "ok",
-      "startedAt": "2026-10-13T09:35:13.342Z",
-      "finishedAt": "2026-10-13T09:38:51.210Z",
+      "startedAt": "2026-10-13T09:53:54.527Z",
+      "finishedAt": "2026-10-13T09:57:35.407Z",
       "recordsFound": 9443,
       "recordsChanged": 9443,
       "warnings": [],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-10-13T09:38:51.210Z",
+      "lastSuccessAt": "2026-10-13T09:57:35.407Z",
       "contentHash": "22541882c7e98b019e6a8a7062dff1cd93cfb5a6ec82f589b9befd9b5ed29779"
     },
     "club-websites": {
