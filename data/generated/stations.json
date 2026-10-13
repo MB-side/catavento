@@ -427,12 +427,24 @@
     "providerId": "holfuy",
     "providerRef": "1080",
     "name": "Kingston SPHGC",
-    "country": "AU",
+    "country": "NZ",
     "url": "https://holfuy.com/en/weather/1080",
     "embedAllowed": false,
     "feedAllowed": false,
     "verificationStatus": "needs_verification",
     "hidden": true
+  },
+  {
+    "id": "station:holfuy:1103",
+    "legacyId": "HOLF-1103",
+    "providerId": "holfuy",
+    "providerRef": "1103",
+    "name": "Te Mata Peak",
+    "country": "NZ",
+    "url": "https://holfuy.com/en/weather/1103",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
   },
   {
     "id": "station:holfuy:1312",
@@ -457,8 +469,7 @@
     "url": "https://holfuy.com/en/weather/1342",
     "embedAllowed": false,
     "feedAllowed": false,
-    "verificationStatus": "needs_verification",
-    "hidden": true
+    "verificationStatus": "listed_on_provider_index"
   },
   {
     "id": "station:holfuy:136",
@@ -472,6 +483,30 @@
     "feedAllowed": false,
     "verificationStatus": "needs_verification",
     "hidden": true
+  },
+  {
+    "id": "station:holfuy:151",
+    "legacyId": "HOLF-151",
+    "providerId": "holfuy",
+    "providerRef": "151",
+    "name": "Te Mata Ridge",
+    "country": "NZ",
+    "url": "https://holfuy.com/en/weather/151",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
+  },
+  {
+    "id": "station:holfuy:152",
+    "legacyId": "HOLF-152",
+    "providerId": "holfuy",
+    "providerRef": "152",
+    "name": "Coronet Peak Tandems",
+    "country": "NZ",
+    "url": "https://holfuy.com/en/weather/152",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
   },
   {
     "id": "station:holfuy:156",
@@ -497,8 +532,7 @@
     "url": "https://holfuy.com/en/weather/175",
     "embedAllowed": false,
     "feedAllowed": false,
-    "verificationStatus": "needs_verification",
-    "hidden": true
+    "verificationStatus": "listed_on_provider_index"
   },
   {
     "id": "station:holfuy:178",
@@ -523,8 +557,31 @@
     "url": "https://holfuy.com/en/weather/179",
     "embedAllowed": false,
     "feedAllowed": false,
-    "verificationStatus": "needs_verification",
-    "hidden": true
+    "verificationStatus": "listed_on_provider_index"
+  },
+  {
+    "id": "station:holfuy:181",
+    "legacyId": "HOLF-181",
+    "providerId": "holfuy",
+    "providerRef": "181",
+    "name": "Possums",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/181",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
+  },
+  {
+    "id": "station:holfuy:182",
+    "legacyId": "HOLF-182",
+    "providerId": "holfuy",
+    "providerRef": "182",
+    "name": "Monties",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/182",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
   },
   {
     "id": "station:holfuy:184",
@@ -536,21 +593,19 @@
     "url": "https://holfuy.com/en/weather/184",
     "embedAllowed": false,
     "feedAllowed": false,
-    "verificationStatus": "needs_verification",
-    "hidden": true
+    "verificationStatus": "listed_on_provider_index"
   },
   {
     "id": "station:holfuy:213",
     "legacyId": "HOLF-213",
     "providerId": "holfuy",
     "providerRef": "213",
-    "name": "Kario (HighSide)",
+    "name": "Kario (High Side)",
     "country": "NZ",
     "url": "https://holfuy.com/en/weather/213",
     "embedAllowed": false,
     "feedAllowed": false,
-    "verificationStatus": "needs_verification",
-    "hidden": true
+    "verificationStatus": "listed_on_provider_index"
   },
   {
     "id": "station:holfuy:232",
@@ -564,6 +619,18 @@
     "feedAllowed": false,
     "verificationStatus": "needs_verification",
     "hidden": true
+  },
+  {
+    "id": "station:holfuy:569",
+    "legacyId": "HOLF-569",
+    "providerId": "holfuy",
+    "providerRef": "569",
+    "name": "Sunrise Beach",
+    "country": "AU",
+    "url": "https://holfuy.com/en/weather/569",
+    "embedAllowed": false,
+    "feedAllowed": false,
+    "verificationStatus": "listed_on_provider_index"
   },
   {
     "id": "station:weatherlink:0a7df552-f465-4ce4-90e1-6967f3cf0918",

@@ -13,7 +13,7 @@ site:au:nsw:lake-george-collector: [station:freeflightwx:acthpa-lakegeorge]
 site:au:nsw:lake-george-gearys-gap: [station:freeflightwx:acthpa-lakegeorge]
 site:au:nsw:lake-george-south-launch: [station:freeflightwx:acthpa-lakegeorge]
 site:au:act:lanyon: [station:freeflightwx:acthpa-lanyon]
-site:au:nsw:crackneck-lookout: [station:freeflightwx:crackneck]
+site:au:nsw:crackneck-lookout: [station:freeflightwx:crackneck, station:holfuy:184]
 site:au:nsw:glennies-ridge-lake-st-clair-little-europe: [station:freeflightwx:lakestclaire]
 site:au:vic:mt-elliot: [station:freeflightwx:acthpa-corryong]
 site:au:vic:the-pines-buckland-ridge: [station:freeflightwx:buckland]
@@ -26,3 +26,16 @@ site:au:qld:ma-ma-creek: [station:freeflightwx:mama]
 site:au:qld:killarney: [station:freeflightwx:killarney]
 site:au:qld:wilsons: [station:freeflightwx:wilsons]
 site:au:sa:tunkalilla: [station:freeflightwx:tunk4]
+
+# Holfuy stations matched on 2026-10-13 from Holfuy's station finder (filtered by country), the
+# station's own page (position and club) or the founder's confirmation. Unsure matches wait for the
+# founder: Tamborine (Tambo), Hinchcliffes (Hinchies), the Sunshine Coast beach stations, Possum
+# Shoot, Tyagarah, Lake Illawarra, Winton, Port Hills, Granite Field.
+site:au:nsw:possums: [station:holfuy:181]
+site:au:nsw:montes: [station:holfuy:182]
+site:au:nsw:dickson-park: [station:holfuy:179]
+site:au:nsw:middle-brother: [station:holfuy:175]
+site:au:qld:beechmont-rosins-lookout: [station:holfuy:1342]
+site:au:qld:sunrise-beach: [station:holfuy:569]
+site:nz:hkb:te-mata-peak: [station:holfuy:1103, station:holfuy:151]
+site:nz:ota:coronet-peak: [station:holfuy:152]

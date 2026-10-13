@@ -962,7 +962,8 @@
       }
     ],
     "stationIds": [
-      "station:freeflightwx:crackneck"
+      "station:freeflightwx:crackneck",
+      "station:holfuy:184"
     ],
     "disciplines": [
       "PG",
@@ -1169,7 +1170,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:179"
+    ],
     "pgeId": "11514",
     "disciplines": [
       "PG"
@@ -2910,7 +2913,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:175"
+    ],
     "disciplines": [
       "PG",
       "HG"
@@ -3139,7 +3144,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:182"
+    ],
     "disciplines": [
       "PG",
       "HG"
@@ -4062,7 +4069,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:181"
+    ],
     "disciplines": [
       "PG"
     ],
@@ -5389,7 +5398,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:1342"
+    ],
     "disciplines": [
       "PG",
       "HG"
@@ -7347,7 +7358,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:569"
+    ],
     "disciplines": [],
     "layer": "ansg",
     "sources": [
@@ -19486,7 +19499,10 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:1103",
+      "station:holfuy:151"
+    ],
     "disciplines": [
       "PG"
     ],
@@ -19532,7 +19548,9 @@
         "precision": "exact"
       }
     ],
-    "stationIds": [],
+    "stationIds": [
+      "station:holfuy:152"
+    ],
     "disciplines": [
       "PG",
       "HG"

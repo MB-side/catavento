@@ -79,12 +79,12 @@ test("Follow club saves the club's sites to My Sites on this device", async ({ p
   await page.getByRole("button", { name: "Follow club" }).click();
   await expect(page.getByRole("status")).toContainText(`${count} site`);
   await page.goto("my-sites/");
-  await expect(page.getByTestId("my-sites-list").getByRole("listitem")).toHaveCount(count);
+  await expect(page.getByTestId("my-sites-list").locator(":scope > li")).toHaveCount(count);
   await page
     .getByRole("button", { name: /Remove from My Sites/ })
     .first()
     .click();
-  await expect(page.getByTestId("my-sites-list").getByRole("listitem")).toHaveCount(count - 1);
+  await expect(page.getByTestId("my-sites-list").locator(":scope > li")).toHaveCount(count - 1);
 });
 
 test("New Zealand club pages use NZHGPA wording and show the sample notice", async ({ page }) => {
