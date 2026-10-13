@@ -75,13 +75,41 @@ describe("parseWindRange: more forms from the Site Guide", () => {
     ).toEqual([{ fromDeg: 67.5, toDeg: 90 }]);
   });
 
+  it("reads directions with notes, extras and stray punctuation", () => {
+    const cases: [string, string][] = [
+      ["NNE-E.", "NNE–E"],
+      ["SE++", "ESE–SSE"],
+      ["W-SSW, Thermic", "W–SSW"],
+      ["NW, WNW possible", "WNW–NNW"],
+      ["South East but will tolerate ESE", "ESE–SSE"],
+      ["SE at 150° • Can take SSE • 4-6 knots is ideal", "ESE–SSE"],
+      ["W at 270° • Ideal is W but can take NW • 4-7 knots", "WSW–NNW"],
+      ["West; HG < 15 knots, PG < 10 knots", "WSW–WNW"],
+      ["South, HG & PG < 15 knots", "SSE–SSW"],
+      ["ESE, Strength: HG < 15 knots, PG < 15 knots", "ESE"],
+      ["S-SW up to 20kts maximum", "S–SW"],
+      ["N-NE 12kn (PG) Minimum 15kn (HG)", "N–NE"],
+      ["-ESE 12-16 knots (PG) 16-23 knots (HG)", "ESE"],
+      ["Easterly and westerly, 0 to 12 knots", "ENE–ESE, WSW–WNW"],
+      ["Various launches face, N, W, E, SW, S &amp; SE", "ENE–WNW, NNW–NNE"],
+    ];
+    for (const [text, label] of cases) {
+      expect(parseWindRange(text), text).toMatchObject({ parsed: true, label });
+    }
+  });
+
   it("never guesses from prose", () => {
     for (const t of [
       "Main ridge SW-SE, small W face. Best ridge lift in due S.",
       "Good for afternoon sea breeze",
-      "West; HG < 15 knots, PG < 10 knots",
       "Several. E/NE, ~150m height difference",
       "PG SE to ENE 5-15kt / HG: ESE through to ENE 4-20kt.",
+      "E or light NE",
+      "Light to moderate S or light N",
+      "East to NNW, North is best. 10 + Knots.",
+      "Various - all except N",
+      "W, ?",
+      "SE?",
       "",
       undefined,
     ]) {

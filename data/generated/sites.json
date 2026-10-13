@@ -51,7 +51,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Lanyon",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -150,7 +150,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Bartletts%20Reserve%20-%20NE%20Bonnys",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -391,8 +391,13 @@
     "heightText": "30' / 10m",
     "ratingText": "PG4 / HG4",
     "conditionsText": "-ESE 12-16 knots (PG) 16-23 knots (HG)",
-    "windRanges": [],
-    "windRangeLabel": "See official details",
+    "windRanges": [
+      {
+        "fromDeg": 101.25,
+        "toDeg": 123.75
+      }
+    ],
+    "windRangeLabel": "ESE",
     "status": "open",
     "stewardRole": "unknown",
     "listedContact": {
@@ -432,7 +437,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Broadwater%20National%20Park",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -482,7 +487,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Bungan",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -616,7 +621,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Cambewarra",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -812,7 +817,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Catherine%20Hill%20Bay%20(Catho's)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -861,7 +866,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Conargo%20(Deniliquin)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -907,7 +912,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Cooks%20Terrace",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -974,7 +979,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Crackneck%20Lookout",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -1030,7 +1035,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Crescent%20Head",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -1426,7 +1431,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Glennies%20Ridge%20-%20Lake%20St%20Clair%20(Little%20Europe)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -1587,7 +1592,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Grants%20Headland%20-%20SE%20Bonnys",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -1686,7 +1691,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Harrys%20Lookout",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -1779,7 +1784,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Hill%2060",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -1804,8 +1809,13 @@
     "heightText": "685m (2247ft) AMSL, 350m (1148ft) AGL",
     "ratingText": "HG4 and PG3",
     "conditionsText": "W-SSW, Thermic",
-    "windRanges": [],
-    "windRangeLabel": "See official details",
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 270
+      }
+    ],
+    "windRangeLabel": "W–SSW",
     "status": "open",
     "stewardRole": "club",
     "listedContact": {
@@ -1852,7 +1862,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Honeysuckle",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -1955,7 +1965,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Hunter%20Lookout",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -2007,7 +2017,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Indian%20Head",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -2176,7 +2186,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Lake%20George%20(Collector)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -2242,7 +2252,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Lake%20George%20(Geary's%20Gap)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -2308,7 +2318,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Lake%20George%20(South%20Launch)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -2368,8 +2378,13 @@
     "heightText": "100' / 30m",
     "ratingText": "PG4 / HG4",
     "conditionsText": "N-NE 12kn (PG) Minimum 15kn (HG)",
-    "windRanges": [],
-    "windRangeLabel": "See official details",
+    "windRanges": [
+      {
+        "fromDeg": 0,
+        "toDeg": 45
+      }
+    ],
+    "windRangeLabel": "N–NE",
     "status": "closed",
     "stewardRole": "unknown",
     "listedContact": {
@@ -2402,7 +2417,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Lennox%20Head",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -2501,7 +2516,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Long%20Reef%20NE",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -2603,7 +2618,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Long%20Reef%20SE",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -2727,7 +2742,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Manilla%20-%20Mt%20Borah",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -2857,7 +2872,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/%20Merewether%20-%20Hickson%20Street%20Lookout",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -2925,7 +2940,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Middle%20brother",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -3054,7 +3069,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mona%20Vale",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -3156,7 +3171,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Montes",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -3212,7 +3227,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Moonee%20Moonee",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -3228,8 +3243,13 @@
     "typeText": "Inland ridge and thermic",
     "heightText": "450m / 1400 feet",
     "conditionsText": "West; HG < 15 knots, PG < 10 knots",
-    "windRanges": [],
-    "windRangeLabel": "See official details",
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windRangeLabel": "WSW–WNW",
     "status": "open",
     "stewardRole": "unknown",
     "listedContact": {
@@ -3259,7 +3279,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mount%20Ovens",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -3273,8 +3293,13 @@
     "regionCode": "AU-NSW",
     "siteGuideUrl": "https://siteguide.org.au/Sites/Details/Mount%20Rankin",
     "conditionsText": "ESE, Strength: HG < 15 knots, PG < 15 knots",
-    "windRanges": [],
-    "windRangeLabel": "See official details",
+    "windRanges": [
+      {
+        "fromDeg": 101.25,
+        "toDeg": 123.75
+      }
+    ],
+    "windRangeLabel": "ESE",
     "status": "open",
     "stewardRole": "unknown",
     "listedContact": {
@@ -3304,7 +3329,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mount%20Rankin",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -3354,8 +3379,18 @@
     "siteGuideUrl": "https://siteguide.org.au/Sites/Details/Mt%20Blackheath",
     "typeText": "Inland Mountain",
     "heightText": "1040m asl, 300m agl",
-    "windRanges": [],
-    "windRangeLabel": "See official details",
+    "conditionsText": "WSW - WNW; HG & PG < 15 knots, N-NE; HG & PG < 10 knots (safer at stronger end)",
+    "windRanges": [
+      {
+        "fromDeg": 0,
+        "toDeg": 45
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windRangeLabel": "WSW–WNW, N–NE",
     "status": "open",
     "stewardRole": "unknown",
     "listedContact": {
@@ -3392,7 +3427,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Blackheath",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -3588,7 +3623,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Nellies",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -3644,7 +3679,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Newport",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -3704,7 +3739,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/NNE%20Heaton%20Lookout",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -3760,7 +3795,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/North%20Brother%20Lookout",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -3925,7 +3960,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/One%20Tree%20Hill,%20Gungahlin",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -3993,7 +4028,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Pig%20Hill",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -4046,8 +4081,13 @@
     "heightText": "160m or ~500ft asl",
     "ratingText": "PG4 - PG Only",
     "conditionsText": "NNE-E.",
-    "windRanges": [],
-    "windRangeLabel": "See official details",
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 90
+      }
+    ],
+    "windRangeLabel": "NNE–E",
     "status": "open",
     "stewardRole": "unknown",
     "listedContact": {
@@ -4081,7 +4121,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Possums",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -4206,7 +4246,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Rocky%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -4337,8 +4377,13 @@
     "heightText": "407m asl, 354m above landing",
     "ratingText": "PG 5 rating • (There is no view of landing area) • HG Intermediate",
     "conditionsText": "SE at 150° • Can take SSE • 4-6 knots is ideal",
-    "windRanges": [],
-    "windRangeLabel": "See official details",
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 168.75
+      }
+    ],
+    "windRangeLabel": "ESE–SSE",
     "status": "open",
     "stewardRole": "unknown",
     "listedContact": {
@@ -4371,7 +4416,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/SE%20Heaton%20Lookout",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -4385,8 +4430,13 @@
     "regionCode": "AU-NSW",
     "siteGuideUrl": "https://siteguide.org.au/Sites/Details/Sofala",
     "conditionsText": "South, HG & PG < 15 knots",
-    "windRanges": [],
-    "windRangeLabel": "See official details",
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windRangeLabel": "SSE–SSW",
     "status": "open",
     "stewardRole": "unknown",
     "listedContact": {
@@ -4416,7 +4466,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Sofala",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -4474,7 +4524,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Spring%20Hill",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -4583,7 +4633,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Stanwell%20Park%20-%20Bald%20Hill",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -4647,7 +4697,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Strzelecki%20lookout",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -4691,7 +4741,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Table%20Rock",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -4813,7 +4863,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Tongarra",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -4870,8 +4920,13 @@
     "heightText": "60' / 20m",
     "ratingText": "PG4 / HG Intermediate",
     "conditionsText": "South East but will tolerate ESE",
-    "windRanges": [],
-    "windRangeLabel": "See official details",
+    "windRanges": [
+      {
+        "fromDeg": 101.25,
+        "toDeg": 157.5
+      }
+    ],
+    "windRangeLabel": "ESE–SSE",
     "status": "open",
     "stewardRole": "club",
     "listedContact": {
@@ -4904,7 +4959,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Turimetta",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -5037,7 +5092,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Warriewood",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -5061,8 +5116,13 @@
     "typeText": "Hill launch, Inland Site",
     "heightText": "430m-53m = 377m height difference",
     "conditionsText": "W at 270° • Ideal is W but can take NW • 4-7 knots",
-    "windRanges": [],
-    "windRangeLabel": "See official details",
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windRangeLabel": "WSW–NNW",
     "status": "open",
     "stewardRole": "unknown",
     "listedContact": {
@@ -5092,7 +5152,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/West%20Heaton%20Lookout",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -5141,8 +5201,13 @@
     "regionCode": "AU-NSW",
     "siteGuideUrl": "https://siteguide.org.au/Sites/Details/Wolgan",
     "conditionsText": "NE, HG < 5 knots",
-    "windRanges": [],
-    "windRangeLabel": "See official details",
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      }
+    ],
+    "windRangeLabel": "NNE–ENE",
     "status": "closed",
     "stewardRole": "unknown",
     "listedContact": {
@@ -5172,7 +5237,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Wolgan",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -5262,7 +5327,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Gillen%20-%20West%20Gap,%20South%20Face",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -5356,7 +5421,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Alexandra%20Headland",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -5416,7 +5481,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Beechmont%20-%20Rosin's%20Lookout",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -5514,7 +5579,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Buchy's,%20at%20Gerrards%20Lookout%20",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -5602,7 +5667,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Dalby%20Aerodrome",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -5686,7 +5751,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Eungella",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -5840,7 +5905,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Flying%20Fox",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -5939,7 +6004,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Gillies%20Lookout",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -6031,7 +6096,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Hinchcliffe's%20(Hart's,%20Flattop)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -6314,7 +6379,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Killarney",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -6437,7 +6502,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Ma%20Ma%20Creek",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -6687,7 +6752,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt.%20Tamborine",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -6750,7 +6815,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt.%20Widgee",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -6810,7 +6875,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/North%20End%20Sunshine%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -7005,7 +7070,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Point%20Cartwright",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -7159,7 +7224,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Rainbow%20Beach%20-%20Carlo%20Sand%20Blow",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -7223,7 +7288,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Rex%20Lookout",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -7387,7 +7452,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Sunrise%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -7449,7 +7514,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Teewah%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -7622,7 +7687,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Wilson's",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -7742,7 +7807,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Barn%20Hill%20(The%20Bluff)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -7885,7 +7950,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Cape%20Jervis",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -8049,7 +8114,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Gull%20Rock",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -8302,8 +8367,13 @@
     "heightText": "300' / 90m",
     "ratingText": "HG Novice, PG2",
     "conditionsText": "NW, WNW possible",
-    "windRanges": [],
-    "windRangeLabel": "See official details",
+    "windRanges": [
+      {
+        "fromDeg": 281.25,
+        "toDeg": 337.5
+      }
+    ],
+    "windRangeLabel": "WNW–NNW",
     "status": "closed",
     "stewardRole": "club",
     "listedContact": {
@@ -8336,7 +8406,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Myponga%20Cliffs",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -8399,7 +8469,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Ochre%20Point%20-%20Maslins",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -8616,7 +8686,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Sellicks%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -8837,7 +8907,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Tunkalilla",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -8900,7 +8970,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Bothwell%20Flying%20Site%201",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -8955,7 +9025,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Bothwell%20Flying%20Site%202",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -9010,7 +9080,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Bothwell%20Flying%20Site%203",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -9066,7 +9136,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Brighton%20Flying%20Site",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -9121,7 +9191,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Devonport%20Flying%20Site",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -9252,7 +9322,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Hobart%20Flying%20Site%201",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -9307,7 +9377,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Irishtown%20Flying%20Site",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -9362,7 +9432,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Jericho%20Flying%20Site%201",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -9417,7 +9487,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Lauderdale%20Flying%20Site%201",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -9473,7 +9543,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Lauderdale%20Flying%20Site%202",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -9633,7 +9703,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/North%20Coast%20Dunes",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -9694,7 +9764,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Oatlands%20Flying%20Site",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -9749,7 +9819,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Ouse%20Flying%20Site",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -9804,7 +9874,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Queenstown%20Flying%20Site",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -9863,7 +9933,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Ross%20Flying%20Site",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -9918,7 +9988,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Scottsdale%20Flying%20Site",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -9973,7 +10043,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/South%20Arm%20Flying%20Site",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -10028,7 +10098,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Stanley%20Flying%20Site",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -10083,7 +10153,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Strahan%20Flying%20Site",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -10138,7 +10208,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Tasman%20Flying%20Site%201",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -10193,7 +10263,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Tasman%20Flying%20Site%202",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -10248,7 +10318,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Tasman%20Flying%20Site%203",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -10303,7 +10373,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Tasman%20Flying%20Site%204",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -10358,7 +10428,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Trial%20Harbour%20Flying%20Site",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -10416,7 +10486,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Tunbridge%20Flying%20Site",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -10542,7 +10612,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Wilderness%20Hike%20and%20Fly",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -10640,7 +10710,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Wynyard%20Flying%20Site",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -10695,7 +10765,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Arthurs%20Seat",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -10757,7 +10827,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Barwon%20Heads%20(13th%20Beach)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -10820,7 +10890,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Bells%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -10884,7 +10954,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Bells%20Beach%20-%20Winkipop",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -10948,7 +11018,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Ben%20More",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -11039,7 +11109,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Ben%20Nevis",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -11087,7 +11157,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Birchip%20Tow%20Paddock",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -11179,7 +11249,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Cairns%20Bay",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -11275,7 +11345,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Cape%20Liptrap",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -11292,8 +11362,17 @@
     "heightText": "300m",
     "ratingText": "Tow endorsed PG and HG",
     "conditionsText": "Easterly and westerly, 0 to 12 knots",
-    "windRanges": [],
-    "windRangeLabel": "See official details",
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windRangeLabel": "ENE–ESE, WSW–WNW",
     "status": "open",
     "stewardRole": "unknown",
     "listedContact": {
@@ -11333,7 +11412,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Castlemaine%20Aerodrome%20(YCAL)%20",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -11388,7 +11467,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Cave%20Hill",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -11443,7 +11522,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Colliers%20Gap",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -11499,7 +11578,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Craigie%20Rd,%20Mt%20Martha",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -11555,7 +11634,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Dunvegan%20Road,%20Phillip%20Island",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -11654,7 +11733,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Eagle%20Rise",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -11700,7 +11779,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Eagles%20Nest",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -11756,7 +11835,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Elmhurst%20Hill",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -11812,7 +11891,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Eumeralla%20(Red%20Rocks)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -11867,7 +11946,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Fisher%20Street,%20Phillip%20Island",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -11923,7 +12002,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Flaxmans%20Hill",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -11979,7 +12058,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Flinders%20Golf%20Club",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -12035,7 +12114,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Flinders%20Monument",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -12139,7 +12218,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Gordon",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -12173,7 +12252,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Grampians",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -12229,7 +12308,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Grannies%20Grave",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -12285,7 +12364,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Great%20Missenden%20(Previously%20known%20as%20Landscape)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -12341,7 +12420,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Grossard%20Point,%20Phillip%20Island",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -12399,7 +12478,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Gundowring%20(Savhill)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -12463,7 +12542,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Johanna",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -12509,7 +12588,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Kilcunda",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -12560,7 +12639,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Levy's%20Point%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -12602,7 +12681,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Locksley%20Field",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -12658,7 +12737,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Logans%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -12710,7 +12789,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Manny's",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -12774,7 +12853,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Marriners%20Lookout",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -12809,7 +12888,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mentone",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -12867,7 +12946,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Broughton%20(Thistle%20Hill)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -12922,7 +13001,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Buangor",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -12972,7 +13051,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Buffalo%20%E2%80%93%20Reed%E2%80%99s%20Lookout%20Paraglider%20launch",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -13032,7 +13111,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Buffalo%20-%20The%20Gorge%20HG%20Ramp",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -13096,7 +13175,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Buninyong",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -13152,7 +13231,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Dandenong",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -13202,7 +13281,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Donna%20Buang",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -13258,7 +13337,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Elephant",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -13322,7 +13401,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Elliot",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -13383,7 +13462,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Emu",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -13458,7 +13537,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Hollowback",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -13493,7 +13572,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Langhi%20Ghiran",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -13544,7 +13623,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Lonarch",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -13600,7 +13679,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Meuron",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -13655,7 +13734,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Mittamatite",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -13711,7 +13790,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Sugarloaf",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -13767,7 +13846,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Tarrengower",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -13813,7 +13892,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Terrible",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -13865,7 +13944,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Murmungee",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -13967,7 +14046,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mystic",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -14031,7 +14110,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Ocean%20Grove",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -14074,7 +14153,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Phillip%20Island",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -14188,7 +14267,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Portland",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -14213,8 +14292,13 @@
     "heightText": "70' / 20m asl",
     "ratingText": "PG2 / HG Supervised",
     "conditionsText": "S-SW up to 20kts maximum",
-    "windRanges": [],
-    "windRangeLabel": "See official details",
+    "windRanges": [
+      {
+        "fromDeg": 180,
+        "toDeg": 225
+      }
+    ],
+    "windRangeLabel": "S–SW",
     "status": "open",
     "stewardRole": "unknown",
     "listedContact": {
@@ -14247,7 +14331,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Portsea",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -14303,7 +14387,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Potters%20Road,%20San%20Remo",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -14355,7 +14439,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Red%20Bluff",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -14446,7 +14530,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Rhyll,%20Phillip%20Island",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -14502,7 +14586,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Shoreham",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -14647,7 +14731,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Spion%20Kop%20(Fairhaven,%20Aireys,%20Moggs)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -14711,7 +14795,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Sunnyside",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -14763,7 +14847,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Tawonga%20Gap",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -14827,7 +14911,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Teddys%20Lookout",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -14844,8 +14928,17 @@
     "heightText": "1060' to 1320' (320m to 400m) agl, 700m / 2300' asl (N launch)",
     "ratingText": "PG4 / HG Intermediate",
     "conditionsText": "Various launches face, N, W, E, SW, S &amp; SE",
-    "windRanges": [],
-    "windRangeLabel": "See official details",
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 292.5
+      },
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windRangeLabel": "ENE–WNW, NNW–NNE",
     "status": "open",
     "stewardRole": "unknown",
     "listedContact": {
@@ -14913,7 +15006,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/The%20Paps",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -14971,7 +15064,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/The%20Pines%20(Buckland%20Ridge)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       },
@@ -15032,7 +15125,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Three%20Sisters%20(Flowerdale)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -15067,7 +15160,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Warrigal%20Rocks",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -15123,7 +15216,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Werribee%20Gorge",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -15204,7 +15297,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Yarragon",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -15260,7 +15353,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Avalon",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -15316,7 +15409,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Back%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -15379,7 +15472,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Bastion",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -15475,7 +15568,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Brunswick%20Junction",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -15530,7 +15623,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Bunbury%20Back%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -15586,7 +15679,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Burns%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -15677,7 +15770,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Cape%20Couvier",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -15733,7 +15826,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/City%20View",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -15789,7 +15882,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Conto%20Springs",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -15845,7 +15938,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Cosy%20Corner",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -15900,7 +15993,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Cottesloe",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -15996,7 +16089,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Dalyellup",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -16047,7 +16140,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Dingo's%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -16081,7 +16174,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Eucla",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -16097,8 +16190,13 @@
     "typeText": "Inland Hill",
     "heightText": "200m?",
     "conditionsText": "SE ++",
-    "windRanges": [],
-    "windRangeLabel": "See official details",
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windRangeLabel": "ESE–SSE",
     "status": "closed",
     "stewardRole": "unknown",
     "listedContact": {
@@ -16128,7 +16226,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Frenchman's%20Peak",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -16184,7 +16282,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Gingin",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -16240,7 +16338,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Greenhills",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -16331,7 +16429,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Horrocks%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -16387,7 +16485,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Injidup",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -16475,7 +16573,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Kalbarri%20North%20Coastal%20-%20Zuytdorp%20Sea%20Cliffs",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -16531,7 +16629,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Kalbarri%20South%20Sea%20Cliffs",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -16580,7 +16678,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Kalgoorlie%20-%20Lake%20Perkolilly",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -16671,7 +16769,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Lowlands%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -16727,7 +16825,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Lynton%20Farm",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -16783,7 +16881,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Masters",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -16839,7 +16937,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Moses%20Rocks",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -16894,7 +16992,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mosman%20Park",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -16945,7 +17043,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mount%20Bakewell%20(lower%20launch)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -16996,7 +17094,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mount%20Bakewell%20(top%20launches)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -17043,7 +17141,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mount%20Nameless",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -17099,7 +17197,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mount%20Rennie",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -17155,7 +17253,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Harrison",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -17211,7 +17309,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mt%20Nardie,%20Toodyay",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -17307,7 +17405,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Mullaloo%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -17363,7 +17461,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Muttonbird%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -17415,7 +17513,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Noondeening%20Hill",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -17465,7 +17563,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Observatory%20Point%20-%20Twilight%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -17516,7 +17614,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Parry%20Beach%20-%20Point%20Hillier",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -17572,7 +17670,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Perkins%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -17628,7 +17726,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Point%20King%20-%20Albany%20Town",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -17684,7 +17782,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Point%20Matthew",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -17741,7 +17839,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Porongorups",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -17834,7 +17932,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Quinns%20Rocks",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -17920,7 +18018,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Sand%20Patch",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -17976,7 +18074,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Sarge%20Bay",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -18032,7 +18130,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Seabird",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -18088,7 +18186,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Serpentine",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -18139,7 +18237,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Shelley%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -18186,7 +18284,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Stirlings",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -18237,7 +18335,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Table%20Mountain",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -18293,7 +18391,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/The%20Range,%20Toodyay",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -18349,7 +18447,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Two%20Rocks%20Beach",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -18401,8 +18499,13 @@
     "heightText": "200m+",
     "ratingText": "Closed",
     "conditionsText": "SE++",
-    "windRanges": [],
-    "windRangeLabel": "See official details",
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windRangeLabel": "ESE–SSE",
     "status": "open",
     "stewardRole": "unknown",
     "listedContact": {
@@ -18432,7 +18535,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Wagga%20(80m%20dunes)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -18488,7 +18591,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Warnbro",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -18648,7 +18751,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Westonia%20Tow%20Paddocks",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -18704,7 +18807,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/White%20Lakes%20Farm,%20Toodyay",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -18760,7 +18863,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Whitfield%20Hill%20(Wicklow)",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -18816,7 +18919,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Windmill%20Hill,%20Toodyay",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -18864,7 +18967,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Windy%20Harbour",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -18928,7 +19031,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Wozza's%20Knob",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -18978,7 +19081,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Wyalkatchem",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -19064,7 +19167,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Wyndham%20Towing",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -19120,7 +19223,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Yallingup%20-%20Rabbit%20Hill",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -19175,7 +19278,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/Yallingup%20-%20Three%20Bears",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -19234,7 +19337,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/York%20Airstrip",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -19298,7 +19401,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/York%20-%20Greenhills%20Towing",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }
@@ -19354,7 +19457,7 @@
       {
         "providerId": "ansg",
         "url": "https://siteguide.org.au/Sites/Details/York%20Silos%20-%20Gwambygine%20Hill",
-        "fetchedAt": "2026-10-12T08:33:44.283Z",
+        "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
       }

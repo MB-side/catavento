@@ -47,6 +47,30 @@ describe("parseExport", () => {
     expect(bluff?.conditionsText).toBeUndefined();
   });
 
+  it("uses the launches' wind directions when the site gives none", () => {
+    const parsed = parseExport({
+      sites: [
+        {
+          id: 9,
+          name: "Two Launches",
+          conditions: null,
+          launches: [
+            { name: "North", lat: -33, lon: 151, conditions: "N-NE" },
+            { name: "South", lat: -33.01, lon: 151, conditions: " SE " },
+            { name: "Spare", lat: -33.02, lon: 151, conditions: "N-NE" },
+          ],
+        },
+        {
+          id: 10,
+          name: "Site Wins",
+          conditions: "W",
+          launches: [{ name: "A", lat: -33, lon: 151, conditions: "E" }],
+        },
+      ],
+    });
+    expect(parsed.sites.map((x) => x.conditionsText)).toEqual(["N-NE, SE", "W"]);
+  });
+
   it("skips a site with no launch position", () => {
     expect(skipped).toEqual(["No Launch Site"]);
   });
