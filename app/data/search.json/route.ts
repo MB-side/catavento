@@ -5,6 +5,7 @@ import { getEnabledCountries } from "@/lib/country";
 import { getSites } from "@/lib/data";
 import { directoryOrgs } from "@/lib/directory";
 import { eventSummary, upcomingEvents } from "@/lib/events-view";
+import { GEAR_SEARCH_WORDS } from "@/lib/gear";
 import { sitePath } from "@/lib/sites";
 import type { SearchDoc } from "@/lib/search";
 
@@ -22,7 +23,7 @@ export function GET(): Response {
       docs.push({ id: o.id, kind: "club", title: o.name, sub: [region(o.regionCode), c.name].filter(Boolean).join(", "), href: clubPath(o), country: c.code, text: (o.aliases ?? []).join(" ") });
     }
     for (const o of directoryOrgs(c)) {
-      docs.push({ id: o.id, kind: "org", title: o.name, sub: [o.locality, region(o.regionCode), c.name].filter(Boolean).join(", "), href: orgPath(o), country: c.code, text: [...(o.aliases ?? []), ...o.disciplines].join(" ") });
+      docs.push({ id: o.id, kind: "org", title: o.name, sub: [o.locality, region(o.regionCode), c.name].filter(Boolean).join(", "), href: orgPath(o), country: c.code, text: [...(o.aliases ?? []), ...o.disciplines, ...(o.sells ?? []).map((c) => GEAR_SEARCH_WORDS[c])].join(" ") });
     }
     for (const e of upcomingEvents(c, today)) {
       const s = eventSummary(e, c);

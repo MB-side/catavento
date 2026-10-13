@@ -41,7 +41,7 @@
     "correction": "Report a correction"
   },
   "home": {
-    "intro": "One place for flying sites and who manages them, events, gear, and tandem flights and lessons for people new to flying.",
+    "intro": "A free, independent directory of paragliding and hang gliding: every flying site and who manages it, clubs, schools and tandem flights, shops and events. Each listing links to its official source.",
     "searchLabel": "Search sites, clubs, schools and events",
     "searchPlaceholder": "Site, club, school or town",
     "searchButton": "Search",
@@ -58,12 +58,8 @@
     "yourSites": "Your sites",
     "openMySites": "Open My Sites",
     "comingUp": "Coming up",
-    "latestNotices": "Latest notices"
-  },
-  "comingSoon": {
-    "text": "This section is being built for the prototype.",
-    "feedbackPrompt": "Something you'd like to see here?",
-    "feedbackLink": "Tell us"
+    "latestNotices": "Latest notices",
+    "directoryLabel": "Free directory"
   },
   "pages": {
     "mySites": {
@@ -679,7 +675,30 @@
     "classifiedsHeading": "Classifieds are coming",
     "classifiedsText": "We're thinking about a place to buy and sell used gear. Tell us what you'd want from it.",
     "classifiedsLink": "Tell us",
-    "noneYet": "Nothing listed for {country} yet."
+    "noneYet": "Nothing listed for {country} yet.",
+    "filterHeading": "What are you after?",
+    "all": "Everything",
+    "sells": "Sells",
+    "categories": {
+      "paragliders": "Paraglider wings",
+      "mini-speed-wings": "Mini and speed wings",
+      "paramotors": "Paramotors and paramotor wings",
+      "hang-gliders": "Hang gliders",
+      "trikes": "Trikes",
+      "harnesses": "Harnesses",
+      "pod-harnesses": "Pod harnesses",
+      "reserves": "Reserve parachutes",
+      "instruments": "Instruments (varios, GPS, radios)",
+      "helmets-accessories": "Helmets and accessories",
+      "service": "Servicing and repairs"
+    },
+    "specificNote": "Looking for a particular model, size or class, such as an EN-B wing? Shops list what they stock on their own websites: check there, or ask them.",
+    "matches": {
+      "one": "1 business",
+      "other": "{count} businesses"
+    },
+    "categoriesNote": "What each business sells is taken from its own website, or from our research where a site couldn't be read. Categories only: we don't list stock.",
+    "findByType": "Find shops by what they sell"
   },
   "whatsOn": {
     "intro": "Competitions, fly-ins, club events and courses, from the national body and club websites.",
@@ -744,5 +763,74 @@
     "intro": "Flying sites, clubs, schools and events in {country}.",
     "bodyHeading": "National body",
     "comingUp": "Coming up"
+  },
+  "about": {
+    "whatHeading": "What Catavento is",
+    "whatText": "Catavento is a free, independent directory of paragliding and hang gliding: flying sites and who manages them, clubs, schools and tandem flights, shops, events and safety notices. It brings together information that's already public, says where each piece comes from, and links to the official source.",
+    "nameHeading": "Why the name",
+    "independentHeading": "Independent",
+    "independentText": "Catavento isn't affiliated with any national body, site guide, club, school or business. Being listed here isn't an endorsement, and no one pays to be listed.",
+    "prototypeHeading": "An early prototype",
+    "prototypeText": "Catavento is being shared with pilots, clubs and schools to find out what's useful. Information may be incomplete or out of date: always check the official source before you fly.",
+    "sourcesHeading": "Where the information comes from",
+    "sourcesText": "Every page lists its sources. See Sources for each one we use, Status for when each was last checked, and Bot policy for how we collect it.",
+    "feedbackHeading": "Tell us what you think",
+    "feedbackText": "What's useful, what's wrong and what's missing: we read everything."
+  },
+  "privacy": {
+    "intro": "Catavento doesn't know who you are, and it doesn't want to.",
+    "accountsHeading": "No accounts, no cookies",
+    "accountsText": "You don't sign up for anything. Catavento doesn't set cookies, track you or run analytics.",
+    "deviceHeading": "Your saved sites stay on your device",
+    "deviceText": "My Sites, your units and your speed limits are kept in your browser's storage on this device. They're never sent to us. Clearing your browser's data for this site removes them. A “Share my list” link contains only the sites' IDs.",
+    "servicesHeading": "Services your browser contacts",
+    "servicesIntro": "Some features load from other services, straight from your browser. Like any website, each of them can see your browser's internet address.",
+    "openMeteo": "Open-Meteo, for wind forecasts, whenever a page shows an outlook. The request contains the site's position, nothing about you.",
+    "openFreeMap": "OpenFreeMap, for map tiles, only when you open a map.",
+    "windy": "Windy, for its live wind map, only after you tap “Show live wind map”. Windy may set its own cookies.",
+    "links": "Links to weather stations, clubs, schools and other sites take you to those sites, under their own privacy policies.",
+    "feedbackHeading": "Feedback and corrections",
+    "feedbackText": "Our feedback and correction forms are Google Forms. Your answers go to the project's private Google Sheets. We ask for your email only if you'd like a reply, and we never publish anyone's name or email.",
+    "hostingHeading": "Hosting",
+    "hostingText": "The site is hosted on GitHub Pages. GitHub logs visitors' internet addresses for security; we don't see or use those logs.",
+    "hostingLink": "GitHub's note on data collection",
+    "peopleHeading": "People in the directory",
+    "peopleText": "We list organisations, not people. We don't copy committee members' names or personal contact details, even where a source publishes them.",
+    "contactHeading": "Questions",
+    "contactText": "Email us:"
+  },
+  "takedown": {
+    "intro": "If anything here is wrong, or you'd like us to stop using something, tell us. We'll act on it, usually within 24 hours.",
+    "whatHeading": "What we'll change or remove",
+    "what1": "Anything that's wrong or out of date.",
+    "what2": "Anything about you, your club, school or business that you'd rather wasn't here.",
+    "what3": "Anything a source asks us to stop using.",
+    "howHeading": "How to ask",
+    "howText": "Use “Report a correction” at the bottom of any page, or email us. Include the page's address and what should change.",
+    "formLink": "Report a correction",
+    "ownersHeading": "Website owners",
+    "ownersText": "To stop CataventoBot visiting your website, see the Bot policy."
+  },
+  "disclaimer": {
+    "standardHeading": "Before you fly",
+    "officialHeading": "Not official",
+    "officialText": "Catavento is independent and isn't affiliated with any national body, site guide, club, school or business. Site information is copied from public sources and may be out of date. The official site guide and the body managing a site have the final word.",
+    "forecastHeading": "The wind outlook",
+    "forecastText": "The outlook compares forecast wind direction with each site's published wind range. It doesn't take into account wind strength, gusts, thermals, cloud, rain, airspace or your experience, and forecasts can be wrong.",
+    "listingsHeading": "Listings",
+    "listingsText": "A listing isn't an endorsement or a recommendation. “Listed by” a national body means only that the national body's own directory lists it.",
+    "adviceHeading": "Not advice",
+    "adviceText": "Nothing here is flying instruction or legal advice."
+  },
+  "testers": {
+    "heading": "Helping test Catavento?",
+    "intro": "Thank you. Here are some things to try, in any order:",
+    "t1": "Find a site you know. Check its details, wind range and who manages it.",
+    "t2": "Star a few sites, then open My Sites and look at the 3-day outlook.",
+    "t3": "Look up your club, and tell us if anything's wrong or missing.",
+    "t4": "Try New to flying as if you'd never flown. Does it make sense?",
+    "t5": "On your phone, add Catavento to your home screen.",
+    "t6": "Search for a site, club or school.",
+    "outro": "Then tell us what was useful, what was wrong and what's missing."
   }
 }

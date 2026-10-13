@@ -45,3 +45,32 @@ export function nationalNotices(country: Country) {
     .filter((n) => n.scope === "national")
     .sort((a, b) => b.date.localeCompare(a.date));
 }
+
+/** JSON-LD for the events on What's on (docs/02 §7): one Event per item. */
+export function eventsJsonLd(events: EventItem[], country: Country): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@graph": events.map((e) => {
+      const org = e.organiserOrgId ? getOrganisation(e.organiserOrgId) : undefined;
+      const organiser = org?.name ?? e.organiserName;
+      return {
+        "@type": "Event",
+        name: e.title,
+        startDate: e.startDate,
+        ...(e.endDate ? { endDate: e.endDate } : {}),
+        url: e.url,
+        eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+        location: {
+          "@type": "Place",
+          name: e.locationText ?? (e.regionCode ? country.regionNames[e.regionCode] : country.name),
+          address: {
+            "@type": "PostalAddress",
+            ...(e.regionCode ? { addressRegion: country.regionNames[e.regionCode] } : {}),
+            addressCountry: country.code,
+          },
+        },
+        ...(organiser ? { organizer: { "@type": "Organization", name: organiser } } : {}),
+      };
+    }),
+  };
+}

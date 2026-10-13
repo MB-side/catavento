@@ -1,0 +1,54 @@
+# What each shop says it sells (D73), so the Shops page can answer "where do I get a vario?".
+# Categories: paragliders, mini-speed-wings, paramotors, hang-gliders, trikes, harnesses,
+# pod-harnesses, reserves, instruments, helmets-accessories, service.
+# Each entry cites where the categories come from, checked on the date given. We list categories
+# only, never stock, models or classes: those are on each shop's own website.
+- org: RTL-002 # Fly2Base: its site's shop menu
+  sells: [paragliders, mini-speed-wings, paramotors, harnesses, pod-harnesses, reserves, instruments, helmets-accessories, service]
+  source: https://fly2base.com
+  checked: "2026-10-13"
+- org: RTL-001 # Paragliding Shop: its site's shop menu (lists pod harnesses)
+  sells: [paragliders, mini-speed-wings, paramotors, harnesses, pod-harnesses, reserves, helmets-accessories]
+  source: https://paraglidingshop.com.au
+  checked: "2026-10-13"
+- org: RTL-003 # Planet Paragliding: research notes (its site declines automated visits)
+  sells: [paragliders, instruments, service]
+  source: https://planetparagliding.com.au
+  checked: "2026-10-08"
+- org: SCH-021 # Paratech: its Equipment Sales page
+  sells: [paragliders, harnesses, reserves, instruments]
+  source: https://www.paratechpg.com/equipment-sales
+  checked: "2026-10-13"
+- org: SCH-019 # Paragliding Queensland: official importer of Gin Gliders and Sup'Air (its site), whose own
+  # sites list paragliders, harnesses and reserves (gingliders.com, supair.com); repairs per its site
+  sells: [paragliders, harnesses, reserves, service]
+  source: https://www.paraglidingqueensland.com/
+  checked: "2026-10-13"
+- org: SCH-026 # SkySurf: its Paragliders sales page
+  sells: [paragliders, mini-speed-wings, paramotors, harnesses, reserves, instruments, helmets-accessories]
+  source: https://www.skysurf.com.au/paragliders/
+  checked: "2026-10-13"
+- org: SCH-027
+  sells: [paragliders, mini-speed-wings, paramotors, harnesses, reserves, instruments, helmets-accessories]
+  source: https://www.skysurf.com.au/paragliders/
+  checked: "2026-10-13"
+- org: SCH-011 # High Adventure: its site's shop menu
+  sells: [paragliders, paramotors, harnesses, reserves, helmets-accessories]
+  source: http://www.highadventure.com.au/
+  checked: "2026-10-13"
+- org: SCH-030 # Tribal Flight: research notes (its site declines automated visits)
+  sells: [paragliders, paramotors]
+  source: https://www.tribalflight.com.au
+  checked: "2026-10-08"
+- org: SVC-001 # Paragliding Repair Centre: its site
+  sells: [service]
+  source: https://paraglidingrepaircentre.com.au/
+  checked: "2026-10-13"
+- org: SCH-017 # Moyes (manufacturer and academy): its site's menu (hang gliding gear)
+  sells: [hang-gliders, harnesses, reserves, instruments, helmets-accessories]
+  source: https://www.moyes.com.au/
+  checked: "2026-10-13"
+- org: MFG-002 # Airborne Windsports: research notes
+  sells: [hang-gliders, trikes]
+  source: http://www.airborne.com.au
+  checked: "2026-10-08"

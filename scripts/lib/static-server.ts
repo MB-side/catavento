@@ -1,9 +1,10 @@
 // Minimal static server for out/ that behaves like GitHub Pages: serves the site under basePath,
-// maps /dir/ to /dir/index.html, and returns 404.html for anything missing. Used by Playwright
+// maps /dir/ to /dir/index.html, gzips text, and returns 404.html for anything missing. Used by Playwright
 // and the link checker so tests exercise the same URLs as the live site.
 import { createReadStream, existsSync, statSync } from "node:fs";
 import { createServer, type Server } from "node:http";
 import path from "node:path";
+import { createGzip } from "node:zlib";
 
 const TYPES: Record<string, string> = {
   ".html": "text/html; charset=utf-8",
@@ -63,10 +64,18 @@ export function startStaticServer(options: {
 
     const file = resolveFile(root, pathname);
     if (file) {
+      const type = TYPES[path.extname(file)] ?? "application/octet-stream";
+      // GitHub Pages compresses text, so measurements here should too.
+      const gzip =
+        /text|json|javascript|xml|svg|manifest/.test(type) &&
+        /\bgzip\b/.test(String(req.headers["accept-encoding"] ?? ""));
       res.writeHead(200, {
-        "Content-Type": TYPES[path.extname(file)] ?? "application/octet-stream",
+        "Content-Type": type,
+        ...(gzip ? { "Content-Encoding": "gzip", Vary: "Accept-Encoding" } : {}),
       });
-      createReadStream(file).pipe(res);
+      const stream = createReadStream(file);
+      if (gzip) stream.pipe(createGzip()).pipe(res);
+      else stream.pipe(res);
       return;
     }
     const notFound = path.join(root, "404.html");

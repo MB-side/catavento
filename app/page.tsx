@@ -88,7 +88,10 @@ export default function HomePage() {
             {siteConfig.name}
           </h1>
         </div>
-        <p className="mt-1 text-[1.125rem] font-medium text-muted-strong">
+        <p className="mt-1 flex flex-wrap items-center gap-2 text-[1.125rem] font-medium text-muted-strong">
+          <span className="rounded-full bg-info-tint px-2.5 py-0.5 text-[0.8125rem] font-semibold text-link">
+            {t("home.directoryLabel")}
+          </span>
           {siteConfig.descriptor}
         </p>
         <p className="mt-3 text-[1.0625rem]">{t("home.intro")}</p>

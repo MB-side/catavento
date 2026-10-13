@@ -61,6 +61,12 @@ export default async function WhereToBuyPage({
             ))}
           </ul>
           <p className="text-[0.9375rem] text-muted">{t("gear.brandsNote")}</p>
+          <Link
+            href={`/${country.code.toLowerCase()}/gear/shops`}
+            className="self-start font-semibold"
+          >
+            {t("gear.findByType")}
+          </Link>
         </>
       )}
     </div>

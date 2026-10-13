@@ -54,6 +54,31 @@ export default function FeedbackPage() {
           </p>
         </div>
       </div>
+      <section
+        aria-labelledby="testers"
+        className="mt-6 rounded-[14px] bg-info-tint p-4 lg:p-5"
+        data-testid="testers"
+      >
+        <h2 id="testers" className="font-condensed text-[1.375rem] font-bold">
+          {t("testers.heading")}
+        </h2>
+        <p className="mt-1">{t("testers.intro")}</p>
+        <ul className="mt-2 list-disc space-y-1 pl-5 text-muted-strong">
+          {(
+            [
+              "testers.t1",
+              "testers.t2",
+              "testers.t3",
+              "testers.t4",
+              "testers.t5",
+              "testers.t6",
+            ] as const
+          ).map((k) => (
+            <li key={k}>{t(k)}</li>
+          ))}
+        </ul>
+        <p className="mt-2 font-semibold">{t("testers.outro")}</p>
+      </section>
     </div>
   );
 }

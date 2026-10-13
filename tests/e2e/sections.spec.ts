@@ -199,3 +199,38 @@ for (const p of [
     expect(serious.map((v) => `${v.id}: ${v.help}`)).toEqual([]);
   });
 }
+
+test("Shops: 'What are you after?' narrows the list to businesses that sell it", async ({
+  page,
+}) => {
+  await page.goto("au/gear/shops/");
+  const count = async () =>
+    Number((await page.getByTestId("gear-count").innerText()).split(" ")[0]);
+  const all = await count();
+  const filter = page.getByTestId("gear-filter");
+  await filter.getByRole("button", { name: "Instruments (varios, GPS, radios)" }).click();
+  await expect(
+    filter.getByRole("button", { name: "Instruments (varios, GPS, radios)" }),
+  ).toHaveAttribute("aria-pressed", "true");
+  const instruments = await count();
+  expect(instruments).toBeGreaterThan(0);
+  expect(instruments).toBeLessThan(all);
+  for (const card of await page.getByTestId("org-card").all()) {
+    await expect(card).toContainText("Instruments (varios, GPS, radios)");
+  }
+  await filter.getByRole("button", { name: "Pod harnesses" }).click();
+  await expect(page.getByTestId("org-card").filter({ hasText: "Fly2Base" })).toBeVisible();
+  await expect(page.getByTestId("org-card").filter({ hasText: "Paratech" })).toHaveCount(0);
+  await expect(page.locator("main")).toContainText("such as an EN-B wing");
+});
+
+test("search finds shops by the gear people ask for", async ({ page }) => {
+  await page.goto("search/?q=vario");
+  await expect(
+    page.getByTestId("search-results").getByRole("link", { name: "Fly2Base" }),
+  ).toBeVisible();
+  await page.getByLabel("Search sites, clubs, schools and events").fill("pod harness");
+  await expect(
+    page.getByTestId("search-results").getByRole("link", { name: "Paragliding Shop" }),
+  ).toBeVisible();
+});
