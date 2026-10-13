@@ -7,6 +7,7 @@ import { eventSummary, eventsJsonLd, nationalNotices, upcomingEvents } from "@/l
 import { jsonLdScript } from "@/lib/seo";
 import { formatDate } from "@/lib/format";
 import { t } from "@/lib/messages";
+import { Anchor } from "@/components/ui/anchor";
 
 export function generateMetadata({ params }: PageProps<"/[country]/whats-on">) {
   return countryPageMetadata(params, "whatsOn");
@@ -50,7 +51,7 @@ export default async function WhatsOnPage({ params }: PageProps<"/[country]/what
           <ul className="mt-3 flex flex-col gap-1.5" data-testid="notices">
             {notices.map((n) => (
               <li key={n.id}>
-                <a href={n.url}>{n.title}</a>{" "}
+                <Anchor href={n.url}>{n.title}</Anchor>{" "}
                 <span className="text-[0.875rem] text-muted">· {formatDate(n.date, zone)}</span>
               </li>
             ))}

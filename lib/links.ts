@@ -3,6 +3,14 @@ import { siteConfig } from "@/site.config";
 import type { Country } from "./types";
 
 /**
+ * Whether a link leaves Catavento: any http(s) address outside the site itself. Email, phone and
+ * in-page links are not "outside" (they don't replace the page).
+ */
+export function isExternalHref(href: string, siteUrl: string = siteConfig.siteUrl): boolean {
+  return /^https?:\/\//i.test(href) && !href.startsWith(`${siteUrl}/`) && href !== siteUrl;
+}
+
+/**
  * The correction form with the page address (and record ID, on record pages) filled in, so
  * reports arrive tied to the right place (docs/02 §5.1).
  */

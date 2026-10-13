@@ -1,6 +1,7 @@
 import { t } from "@/lib/messages";
 import { pageMetadata } from "@/lib/seo";
 import { siteConfig } from "@/site.config";
+import { Anchor } from "@/components/ui/anchor";
 
 export const metadata = pageMetadata({
   title: t("pages.feedback.title"),
@@ -22,35 +23,35 @@ export default function FeedbackPage() {
       <div className="mt-6 flex flex-col gap-5 rounded-[14px] border border-border bg-surface p-4 lg:p-5">
         {formUrl && (
           <p>
-            <a
+            <Anchor
               href={formUrl}
               className={`${buttonClass} bg-action text-white hover:bg-action/90 hover:text-white`}
             >
               {t("pages.feedback.formLink")}
-            </a>
+            </Anchor>
           </p>
         )}
         <div>
           <p>{t("pages.feedback.correctionIntro")}</p>
           <p className="mt-2">
-            <a
+            <Anchor
               href={siteConfig.correctionForm.url}
               className={`${buttonClass} border border-border-strong bg-surface text-ink hover:bg-ground hover:text-ink`}
             >
               {t("pages.feedback.correctionLink")}
-            </a>
+            </Anchor>
           </p>
           <p className="mt-2 text-muted">{t("pages.feedback.includePage")}</p>
         </div>
         <div>
           <p>{t("pages.feedback.emailIntro")}</p>
           <p className="mt-1">
-            <a
+            <Anchor
               href={`mailto:${siteConfig.contactEmail}`}
               className="inline-flex min-h-11 items-center text-[1.125rem] font-semibold underline underline-offset-4"
             >
               {siteConfig.contactEmail}
-            </a>
+            </Anchor>
           </p>
         </div>
       </div>

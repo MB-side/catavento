@@ -12,6 +12,7 @@ import { t, tCount, type MessageKey } from "@/lib/messages";
 import { absoluteUrl, withBasePath } from "@/lib/paths";
 import { homeTitle } from "@/lib/seo";
 import { siteConfig } from "@/site.config";
+import { Anchor } from "@/components/ui/anchor";
 
 export const metadata: Metadata = {
   title: { absolute: homeTitle },
@@ -218,7 +219,7 @@ function ComingUp() {
           <ul className="mt-2 flex flex-col gap-1">
             {events.map((e) => (
               <li key={e.id}>
-                <a href={e.url}>{e.title}</a>{" "}
+                <Anchor href={e.url}>{e.title}</Anchor>{" "}
                 <span className="text-[0.875rem] text-muted">· {e.when}</span>
               </li>
             ))}
@@ -237,7 +238,7 @@ function ComingUp() {
           <ul className="mt-2 flex flex-col gap-1">
             {notices.map((n) => (
               <li key={n.id}>
-                <a href={n.url}>{n.title}</a>{" "}
+                <Anchor href={n.url}>{n.title}</Anchor>{" "}
                 <span className="text-[0.875rem] text-muted">· {formatDate(n.date, zone)}</span>
               </li>
             ))}

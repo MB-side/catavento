@@ -9,6 +9,7 @@ import { t } from "@/lib/messages";
 import { absoluteUrl } from "@/lib/paths";
 import { sitePath, stewardLabel } from "@/lib/sites";
 import type { Country, Organisation, Site, StewardRole } from "@/lib/types";
+import { Anchor } from "@/components/ui/anchor";
 
 const STEWARD_WORD: Partial<Record<StewardRole, "club" | "site_holder" | "operator">> = {
   club: "club",
@@ -54,21 +55,21 @@ function ContactButtons({
   return (
     <div className="mt-3 flex flex-wrap gap-2">
       {email && (
-        <a href={`mailto:${email}`} className={`${button} bg-ink text-white hover:text-white`}>
+        <Anchor href={`mailto:${email}`} className={`${button} bg-ink text-white hover:text-white`}>
           <Mail className="size-4" aria-hidden="true" />
           {t("site.steward.contact")}
           <span className="sr-only">: {name}</span>
-        </a>
+        </Anchor>
       )}
       {website && (
-        <a
+        <Anchor
           href={website}
           className={`${button} border border-border-strong bg-surface text-ink hover:text-ink`}
         >
           {t("site.steward.website")}
           <span className="sr-only">: {name}</span>
           <ExternalLink className="size-4" aria-hidden="true" />
-        </a>
+        </Anchor>
       )}
     </div>
   );
@@ -127,7 +128,7 @@ export function StewardPanel({ site, country, steward, listed, also }: StewardPa
           {also.map(({ org, note }) => (
             <li key={org.id}>
               <span className="font-semibold">{t("site.steward.also")}: </span>
-              {org.website ? <a href={org.website}>{org.name}</a> : org.name}
+              {org.website ? <Anchor href={org.website}>{org.name}</Anchor> : org.name}
               {note ? ` (${note})` : ""}
             </li>
           ))}
@@ -146,12 +147,12 @@ export function StewardPanel({ site, country, steward, listed, also }: StewardPa
       </div>
 
       {label === "notListed" && (
-        <a
+        <Anchor
           href={correctionFormUrl(absoluteUrl(sitePath(site)), site.id)}
           className="mt-3 inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
         >
           {t("site.steward.tellUs")}
-        </a>
+        </Anchor>
       )}
     </section>
   );

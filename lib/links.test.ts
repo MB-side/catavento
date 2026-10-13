@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { correctionFormUrl, windyEmbedUrl } from "./links";
+import { correctionFormUrl, isExternalHref, windyEmbedUrl } from "./links";
 
 const form = {
   url: "https://docs.google.com/forms/d/e/X/viewform",
@@ -37,5 +37,26 @@ describe("windyEmbedUrl", () => {
         "metricWind",
       ),
     ).toBe("kt");
+  });
+});
+
+describe("isExternalHref", () => {
+  const site = "https://example.org/catavento";
+  it("treats other websites as outside", () => {
+    expect(isExternalHref("https://siteguide.org.au/Sites/Details/Possums", site)).toBe(true);
+    expect(isExternalHref("http://open-meteo.com/", site)).toBe(true);
+  });
+  it("keeps the site's own pages, email, phone and in-page links in place", () => {
+    for (const href of [
+      "https://example.org/catavento/au/sites/",
+      "https://example.org/catavento",
+      "/catavento/au/",
+      "#main",
+      "mailto:hello@example.org",
+      "tel:0400000000",
+      "",
+    ]) {
+      expect(isExternalHref(href, site), href).toBe(false);
+    }
   });
 });

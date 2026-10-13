@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { ExternalLink } from "lucide-react";
 import { t, tOr } from "@/lib/messages";
+import { Anchor } from "@/components/ui/anchor";
 
 export interface SchoolSummary {
   id: string;
@@ -77,7 +78,9 @@ export function SchoolsExplorer({
       t("ntf.rowLink"),
       (s) =>
         s.website ? (
-          <a href={s.website}>{s.website.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}</a>
+          <Anchor href={s.website}>
+            {s.website.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "")}
+          </Anchor>
         ) : (
           np
         ),
@@ -221,14 +224,14 @@ export function SchoolsExplorer({
                   <span className="sr-only">: {s.name}</span>
                 </label>
                 {s.website && (
-                  <a
+                  <Anchor
                     href={s.website}
                     className="inline-flex min-h-11 items-center gap-1.5 font-semibold"
                   >
                     {t("ntf.visitSite")}
                     <span className="sr-only">: {s.name}</span>
                     <ExternalLink className="size-4" aria-hidden="true" />
-                  </a>
+                  </Anchor>
                 )}
               </div>
             </li>

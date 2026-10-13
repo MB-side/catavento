@@ -4,6 +4,7 @@ import { getProviders } from "@/lib/data";
 import { t, type MessageKey } from "@/lib/messages";
 import { pageMetadata } from "@/lib/seo";
 import { siteConfig } from "@/site.config";
+import { Anchor } from "@/components/ui/anchor";
 
 export const metadata = pageMetadata({
   title: t("pages.bot.title"),
@@ -103,12 +104,12 @@ export default function BotPage() {
         </h2>
         <p className="mt-1">
           {t("bot.contactText")}{" "}
-          <a
+          <Anchor
             href={`mailto:${siteConfig.contactEmail}`}
             className="font-semibold underline underline-offset-4"
           >
             {siteConfig.contactEmail}
-          </a>
+          </Anchor>
         </p>
       </section>
     </div>

@@ -113,3 +113,18 @@ test("the About page names no one", async ({ page }) => {
   await expect(page.locator("main")).not.toContainText("Who runs it");
   await expect(page.locator("main")).not.toContainText("is run by");
 });
+
+test("links to other websites open in a new tab and say so; the site's own links don't", async ({
+  page,
+}) => {
+  await page.goto("au/sites/nsw/stanwell-park-bald-hill/");
+  const outside = page.locator('main a[href^="http"]');
+  expect(await outside.count()).toBeGreaterThan(0);
+  for (const link of await outside.all()) {
+    await expect(link).toHaveAttribute("target", "_blank");
+    await expect(link).toHaveAttribute("rel", "noopener noreferrer");
+    await expect(link).toContainText("(opens in a new tab)");
+  }
+  const own = page.locator('main a[href^="/catavento/"]').first();
+  await expect(own).not.toHaveAttribute("target", "_blank");
+});

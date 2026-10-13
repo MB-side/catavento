@@ -4,6 +4,7 @@ import { PolicySection } from "@/components/layout/PolicySection";
 import { t } from "@/lib/messages";
 import { pageMetadata } from "@/lib/seo";
 import { siteConfig } from "@/site.config";
+import { Anchor } from "@/components/ui/anchor";
 
 export const metadata = pageMetadata({
   title: t("pages.takedown.title"),
@@ -26,8 +27,8 @@ export default function TakedownPage() {
       <PolicySection id="how" heading={t("takedown.howHeading")}>
         <p>{t("takedown.howText")}</p>
         <p className="flex flex-wrap gap-x-4">
-          <a href={siteConfig.correctionForm.url}>{t("takedown.formLink")}</a>
-          <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>
+          <Anchor href={siteConfig.correctionForm.url}>{t("takedown.formLink")}</Anchor>
+          <Anchor href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</Anchor>
         </p>
       </PolicySection>
       <PolicySection id="owners" heading={t("takedown.ownersHeading")}>

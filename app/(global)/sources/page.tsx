@@ -5,6 +5,7 @@ import { t, tOr, type MessageKey } from "@/lib/messages";
 import { pageMetadata } from "@/lib/seo";
 import type { Provider, Tier } from "@/lib/types";
 import { cn } from "@/lib/utils";
+import { Anchor } from "@/components/ui/anchor";
 
 export const metadata = pageMetadata({
   title: t("pages.sources.title"),
@@ -91,14 +92,14 @@ function ProviderCard({
         ))}
       </dl>
       {provider.homepage && (
-        <a
+        <Anchor
           href={provider.homepage}
           className="mt-3 inline-flex min-h-11 items-center gap-1.5 font-semibold underline underline-offset-4"
         >
           {t("sources.website")}
           <span className="sr-only">: {provider.name}</span>
           <ExternalLink className="size-4" aria-hidden="true" />
-        </a>
+        </Anchor>
       )}
     </li>
   );

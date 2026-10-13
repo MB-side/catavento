@@ -8,6 +8,7 @@ import { serviceCentres } from "@/lib/directory";
 import { t } from "@/lib/messages";
 import { siteConfig } from "@/site.config";
 import { pageMetadata } from "@/lib/seo";
+import { Anchor } from "@/components/ui/anchor";
 
 export async function generateMetadata({ params }: PageProps<"/[country]/gear/used">) {
   const country = await countryFromParams(params);
@@ -41,10 +42,10 @@ export default async function UsedGearPage({ params }: PageProps<"/[country]/gea
         </ul>
         <p className="mt-3 font-semibold">{t("gear.usedService")}</p>
         {country.nationalBody.equipmentUrl && (
-          <a href={country.nationalBody.equipmentUrl} className={`${linkButton} mt-3`}>
+          <Anchor href={country.nationalBody.equipmentUrl} className={`${linkButton} mt-3`}>
             {t("gear.usedAdvice", { body })}
             <ExternalLink className="size-4" aria-hidden="true" />
-          </a>
+          </Anchor>
         )}
       </section>
       {centres.length > 0 && (
@@ -66,12 +67,12 @@ export default async function UsedGearPage({ params }: PageProps<"/[country]/gea
           {t("gear.classifiedsHeading")}
         </h2>
         <p className="mt-1 text-muted-strong">{t("gear.classifiedsText")}</p>
-        <a
+        <Anchor
           href={siteConfig.feedbackFormUrl}
           className="mt-2 inline-flex min-h-11 items-center font-semibold underline underline-offset-4"
         >
           {t("gear.classifiedsLink")}
-        </a>
+        </Anchor>
       </section>
     </div>
   );

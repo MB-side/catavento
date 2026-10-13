@@ -22,6 +22,7 @@ import { summarise } from "@/lib/site-summary";
 import { siteSummaries, siteView } from "@/lib/site-view";
 import { mainLaunch, regionPath, regionSegmentOf, sitePath } from "@/lib/sites";
 import type { Site } from "@/lib/types";
+import { Anchor } from "@/components/ui/anchor";
 
 export const dynamicParams = false;
 
@@ -132,13 +133,13 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
         <div className="mt-3 flex flex-wrap items-center gap-2">
           {summary && <StarButton site={summary} withLabel />}
           {site.officialGuideUrl && (
-            <a
+            <Anchor
               href={site.officialGuideUrl}
               className="inline-flex min-h-11 items-center gap-2 rounded-[10px] bg-action px-4 font-semibold text-white no-underline hover:text-white"
             >
               {t("site.officialDetails")}
               <ExternalLink className="size-4" aria-hidden="true" />
-            </a>
+            </Anchor>
           )}
         </div>
       </header>
@@ -192,13 +193,13 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
               ))}
             </dl>
             {site.officialGuideUrl && (
-              <a
+              <Anchor
                 href={site.officialGuideUrl}
                 className="mt-3 inline-flex min-h-11 items-center gap-1.5 font-semibold underline underline-offset-4"
               >
                 {t("site.fullOfficialDetails")}
                 <ExternalLink className="size-4" aria-hidden="true" />
-              </a>
+              </Anchor>
             )}
             {siteSource && (
               <p className="mt-2 text-[0.8125rem] text-muted">
@@ -249,14 +250,14 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
                           .join(" · ")}
                       </p>
                     </div>
-                    <a
+                    <Anchor
                       href={station.url}
                       className="inline-flex min-h-11 items-center gap-1.5 rounded-[10px] border border-border-strong bg-surface px-3 font-semibold text-ink no-underline hover:text-ink"
                     >
                       {t("site.stations.open")}
                       <span className="sr-only">: {station.name}</span>
                       <ExternalLink className="size-4" aria-hidden="true" />
-                    </a>
+                    </Anchor>
                   </li>
                 ))}
               </ul>
@@ -284,13 +285,13 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
             <ul className="mt-3 flex flex-wrap gap-2">
               {forecastLinks.map((l) => (
                 <li key={l.label}>
-                  <a
+                  <Anchor
                     href={l.href}
                     className="inline-flex min-h-11 items-center gap-1.5 rounded-[10px] border border-border-strong bg-surface px-3 font-semibold text-ink no-underline hover:text-ink"
                   >
                     {l.label}
                     <ExternalLink className="size-4" aria-hidden="true" />
-                  </a>
+                  </Anchor>
                 </li>
               ))}
             </ul>
@@ -307,7 +308,7 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
                 <ul className="mt-2 flex flex-col gap-1">
                   {view.notices.map((n) => (
                     <li key={n.id}>
-                      <a href={n.url}>{n.title}</a>{" "}
+                      <Anchor href={n.url}>{n.title}</Anchor>{" "}
                       <span className="text-[0.875rem] text-muted">
                         · {formatDate(n.date, zone)}
                       </span>
@@ -333,7 +334,9 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
                 </p>
                 <ul className="mt-2 grid gap-1 sm:grid-cols-2">
                   {view.schools.map((o) => (
-                    <li key={o.id}>{o.website ? <a href={o.website}>{o.name}</a> : o.name}</li>
+                    <li key={o.id}>
+                      {o.website ? <Anchor href={o.website}>{o.name}</Anchor> : o.name}
+                    </li>
                   ))}
                 </ul>
               </>
@@ -357,9 +360,9 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
                         <span className="text-[1.375rem]">{d.day}</span>
                       </span>
                       <span>
-                        <a href={e.url} className="font-semibold">
+                        <Anchor href={e.url} className="font-semibold">
                           {e.title}
-                        </a>
+                        </Anchor>
                         {e.locationText && (
                           <span className="block text-[0.875rem] text-muted">{e.locationText}</span>
                         )}
@@ -442,7 +445,8 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
             const credit = p?.attribution.replace("{club name}", orgName ?? p.name);
             return (
               <li key={s.providerId}>
-                <a href={s.url}>{credit ?? s.providerId}</a> · {formatDate(s.fetchedAt, zone)}
+                <Anchor href={s.url}>{credit ?? s.providerId}</Anchor> ·{" "}
+                {formatDate(s.fetchedAt, zone)}
               </li>
             );
           })}

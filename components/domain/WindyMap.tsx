@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Wind } from "lucide-react";
 import { t } from "@/lib/messages";
+import { Anchor } from "@/components/ui/anchor";
 
 interface WindyMapProps {
   src: string; // built on the server with windyEmbedUrl()
@@ -43,9 +44,9 @@ export function WindyMap({ src, placeName }: WindyMapProps) {
         </div>
       )}
       <p className="border-t border-border px-4 py-2 text-[0.8125rem] text-muted">
-        <a href="https://www.windy.com" className="underline underline-offset-4">
+        <Anchor href="https://www.windy.com" className="underline underline-offset-4">
           {t("liveWind.credit")}
-        </a>
+        </Anchor>
       </p>
     </div>
   );

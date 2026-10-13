@@ -22,6 +22,7 @@ import {
 import { KMH_TO_KT } from "@/lib/outlook";
 import { withBasePath } from "@/lib/paths";
 import type { SiteSummary } from "@/lib/site-summary";
+import { Anchor } from "@/components/ui/anchor";
 
 const WTF_HOME = "https://wheretofly.info/";
 
@@ -249,13 +250,13 @@ export function MySitesDashboard({ sitesHref }: { sitesHref: string }) {
       ) : (
         <>
           <div className="flex flex-wrap items-start gap-3">
-            <a
+            <Anchor
               href={wtfLink(saved)}
               className="inline-flex min-h-11 items-center gap-2 rounded-[10px] bg-ink px-4 font-semibold text-white no-underline hover:text-white"
             >
               {t("mySites.wtf")}
               <ExternalLink className="size-4" aria-hidden="true" />
-            </a>
+            </Anchor>
             <ShareList ids={ids} />
           </div>
           <OutlookLegend includeUnrated={saved.some((s) => !s.windParsed)} />
@@ -280,13 +281,13 @@ export function MySitesDashboard({ sitesHref }: { sitesHref: string }) {
                   <ul className="mt-2 flex flex-wrap gap-2">
                     {s.stations.map((st) => (
                       <li key={st.url}>
-                        <a
+                        <Anchor
                           href={st.url}
                           className="inline-flex min-h-11 items-center gap-1.5 rounded-[10px] border border-border-strong bg-surface px-3 text-[0.875rem] font-semibold text-ink no-underline hover:text-ink"
                         >
                           {st.name}
                           <ExternalLink className="size-4" aria-hidden="true" />
-                        </a>
+                        </Anchor>
                       </li>
                     ))}
                   </ul>

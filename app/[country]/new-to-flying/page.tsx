@@ -6,6 +6,7 @@ import { card, h2, linkButton, PageHeader } from "@/components/layout/PageHeader
 import { countryFromParams } from "@/lib/country";
 import { schools } from "@/lib/directory";
 import { t } from "@/lib/messages";
+import { Anchor } from "@/components/ui/anchor";
 
 export function generateMetadata({ params }: PageProps<"/[country]/new-to-flying">) {
   return countryPageMetadata(params, "newToFlying");
@@ -54,16 +55,16 @@ export default async function NewToFlyingPage({ params }: PageProps<"/[country]/
         <p className="mt-2">{body.membershipLine}</p>
         <div className="mt-3 flex flex-wrap gap-2">
           {body.joinUrl && (
-            <a href={body.joinUrl} className={linkButton}>
+            <Anchor href={body.joinUrl} className={linkButton}>
               {t("ntf.joinLink")}
               <ExternalLink className="size-4" aria-hidden="true" />
-            </a>
+            </Anchor>
           )}
           {body.feesUrl && body.feesUrl !== body.joinUrl && (
-            <a href={body.feesUrl} className={linkButton}>
+            <Anchor href={body.feesUrl} className={linkButton}>
               {t("ntf.feesLink")}
               <ExternalLink className="size-4" aria-hidden="true" />
-            </a>
+            </Anchor>
           )}
         </div>
       </section>
