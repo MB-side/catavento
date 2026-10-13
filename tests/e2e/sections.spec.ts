@@ -248,3 +248,19 @@ test("a wind range from a club website is credited to the club", async ({ page }
     page.getByRole("link", { name: /Wind directions from the Mid North Coast Flyers Inc website/ }),
   ).toHaveAttribute("href", "https://mncf.tidyhq.com/public/pages/bartletts-reserve");
 });
+
+test("community sites show ParaglidingEarth's extra facts and possible directions", async ({
+  page,
+}) => {
+  await page.goto("au/sites/nsw/manilla-skyranch/");
+  const main = page.locator("main");
+  await expect(main).toContainText("m at takeoff");
+  await expect(main).toContainText("Kinds of flying");
+});
+
+test("New Zealand lists its ParaglidingEarth community sites", async ({ page }) => {
+  await page.goto("nz/sites/");
+  const count = Number((await page.getByTestId("site-count").innerText()).split(" ")[0]);
+  expect(count).toBeGreaterThan(100);
+  await expect(page.locator("body")).not.toContainText("SAFA");
+});

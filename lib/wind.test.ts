@@ -202,3 +202,23 @@ describe("lists of compass points", () => {
     expect(coversAll([{ fromDeg: 0, toDeg: 180 }])).toBe(false);
   });
 });
+
+describe("classifyWind with directions rated possible (D81)", () => {
+  const ne = [{ fromDeg: 22.5, toDeg: 67.5 }];
+  const possibleE = [{ fromDeg: 67.5, toDeg: 112.5 }];
+
+  it("calls a possible direction marginal, never within", () => {
+    expect(classifyWind(100, 20, ne, possibleE)).toBe("marginal");
+    expect(classifyWind(45, 20, ne, possibleE)).toBe("within");
+  });
+
+  it("still uses the 22.5° margin and the outside rule elsewhere", () => {
+    expect(classifyWind(10, 20, ne, possibleE)).toBe("marginal");
+    expect(classifyWind(200, 20, ne, possibleE)).toBe("outside");
+  });
+
+  it("works when only possible directions are known", () => {
+    expect(classifyWind(90, 20, [], possibleE)).toBe("marginal");
+    expect(classifyWind(270, 20, [], possibleE)).toBe("outside");
+  });
+});

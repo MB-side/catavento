@@ -206,8 +206,13 @@ test("Sources lists every provider with its tier and credit line", async ({ page
 test("country pages show counts worked out from the data", async ({ page }) => {
   await page.goto("au/");
   await expect(page.getByTestId("country-counts")).toContainText(/\d+ clubs/);
+  const nzSites = (
+    JSON.parse(
+      readFileSync(path.join(process.cwd(), "data", "generated", "sites.json"), "utf8"),
+    ) as { country: string; hidden?: boolean }[]
+  ).filter((s) => s.country === "NZ" && !s.hidden).length;
   await page.goto("nz/");
-  await expect(page.getByTestId("country-counts")).toContainText(/5 sites/);
+  await expect(page.getByTestId("country-counts")).toContainText(`${nzSites} sites`);
   await expect(page.getByTestId("country-counts")).toContainText(/11 clubs/);
 });
 

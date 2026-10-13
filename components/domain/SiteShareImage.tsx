@@ -60,6 +60,7 @@ export function SiteShareImage(p: SiteShareImageProps) {
             face: "#FFFFFF",
             edge: "#C9D3DC",
             range: "#1F4FBF",
+            marginal: "#F0A04B",
             ink: INK,
             label: "#3A4754",
           }}

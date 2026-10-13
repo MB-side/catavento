@@ -19,8 +19,8 @@
     "takeoff_description": "Description text that must not be copied.",
     "landing_lat": "-30.6831",
     "landing_lng": "150.597",
-    "takeoff_parking_lat": "",
-    "takeoff_parking_lng": "",
+    "takeoff_parking_lat": "-30.6800",
+    "takeoff_parking_lng": "150.6080",
     "landing_parking_lat": "",
     "landing_parking_lng": "",
     "N": "2",
@@ -41,7 +41,17 @@
     "pge_site_id": "4632",
     "last_edit": "2021-04-28",
     "pge_link": "http://www.paraglidingearth.com/?site=4632",
-    "ffvl_site_id": "0"
+    "ffvl_site_id": "0",
+    "landing": {
+     "site": "Manilla, Mt Borah (NSW)",
+     "landing_name": "Main paddock",
+     "landing_lat": "-30.6831",
+     "landing_lng": "150.597",
+     "landing_altitude": "538",
+     "landing_description": "Landing text that must not be copied."
+    },
+    "going_there": "Travel text that must not be copied. Call Someone on 0400 000 000.",
+    "flight_rules": "Rules text that must not be copied."
    }
   },
   {

@@ -1,9 +1,11 @@
 // ParaglidingEarth (green tier, CC BY-SA 3.0): its open data service, one download per country,
-// monthly. Facts only: name, takeoff position, good wind directions, PG/HG. Never descriptions.
+// monthly. Facts only: name, takeoff position and height, wind directions rated good or possible,
+// PG/HG, kinds of flying, landing and parking positions (D81). Never descriptions, rules, travel
+// notes or comments: the detailed download includes them, and they are dropped here.
 // In fully covered countries these become the "community data" layer for sites the primary guide
 // lacks (duplicates are dropped at build, docs/05 §5.3); in sample countries they only supply
 // coordinates and wind directions to sample sites pinned by ParaglidingEarth ID.
-import type { Discipline, Site, SourceRef } from "@/lib/types";
+import type { Discipline, FlyingType, Site, SitePoint, SourceRef } from "@/lib/types";
 import { parseWindRange } from "@/lib/wind";
 import { slugify, siteId } from "@/scripts/lib/data/ids";
 import { sha256 } from "../../core/fetcher";
@@ -11,19 +13,27 @@ import type { CountryScope, ProviderModule } from "../../core/runner";
 import type { RegionLookup } from "../../core/regions";
 
 export const PGE_API = "https://www.paraglidingearth.com/api/geojson/getCountrySites.php";
-export const READER_VERSION = 1;
+export const READER_VERSION = 2;
 
 const POINTS = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"] as const;
 
 export interface PgeFeature {
   id?: string;
   geometry: { type: string; coordinates: [number, number] };
-  properties: Record<string, string | undefined> & {
+  properties: Record<string, unknown> & {
     name: string;
+    takeoff_altitude?: string;
+    landing_lat?: string;
+    landing_lng?: string;
+    takeoff_parking_lat?: string;
+    takeoff_parking_lng?: string;
+    landing_parking_lat?: string;
+    landing_parking_lng?: string;
     pge_site_id: string;
     pge_link?: string;
     paragliding?: string;
     hanggliding?: string;
+    landing?: { landing_name?: string; landing_altitude?: string } | null;
   };
 }
 
@@ -39,9 +49,70 @@ export function cleanPgeName(name: string, stateCodes: string[]): string {
   return out;
 }
 
-/** Directions rated "good" (2). "Possible" (1) is left out, so nothing is overstated. */
+/** Directions rated "good" (2): the site's wind range. */
 export function goodDirections(p: PgeFeature["properties"]): string[] {
   return POINTS.filter((k) => p[k] === "2");
+}
+
+/** Directions rated "possible" (1): shown and judged as marginal, never as in range (D81). */
+export function possibleDirections(p: PgeFeature["properties"]): string[] {
+  return POINTS.filter((k) => p[k] === "1");
+}
+
+const FLYING: [string, FlyingType][] = [
+  ["thermals", "thermal"],
+  ["soaring", "soaring"],
+  ["xc", "xc"],
+  ["flatland", "flatland"],
+  ["winch", "winch"],
+];
+
+/** A positive number from a ParaglidingEarth field ("" and "0" mean not given). */
+function positive(v: string | undefined): number | undefined {
+  const n = Number(v);
+  return v && Number.isFinite(n) && n > 0 ? n : undefined;
+}
+
+/** A position from two fields, or nothing if either is missing, zero or out of range. */
+function position(
+  lat: string | undefined,
+  lon: string | undefined,
+): { lat: number; lon: number } | undefined {
+  const la = Number(lat);
+  const lo = Number(lon);
+  if (!lat || !lon || !Number.isFinite(la) || !Number.isFinite(lo)) return undefined;
+  if ((la === 0 && lo === 0) || Math.abs(la) > 90 || Math.abs(lo) > 180) return undefined;
+  return { lat: Number(la.toFixed(6)), lon: Number(lo.toFixed(6)) };
+}
+
+/** Kinds of flying, landings and parking: positions and short labels only. */
+export function extraFacts(
+  p: PgeFeature["properties"],
+): Pick<Site, "flyingTypes" | "landings" | "parking"> {
+  const flyingTypes = FLYING.filter(([k]) => p[k] === "1").map(([, t]) => t);
+  const landingAt = position(p.landing_lat, p.landing_lng);
+  const landingName = p.landing?.landing_name?.replace(/\s+/g, " ").trim().slice(0, 60);
+  const landings: SitePoint[] = landingAt
+    ? [
+        {
+          ...(landingName ? { name: landingName } : {}),
+          ...landingAt,
+          ...(positive(p.landing?.landing_altitude)
+            ? { altitudeM: positive(p.landing?.landing_altitude) }
+            : {}),
+        },
+      ]
+    : [];
+  const parking: SitePoint[] = [];
+  const tp = position(p.takeoff_parking_lat, p.takeoff_parking_lng);
+  if (tp) parking.push({ ...tp, serves: "takeoff" });
+  const lp = position(p.landing_parking_lat, p.landing_parking_lng);
+  if (lp) parking.push({ ...lp, serves: "landing" });
+  return {
+    ...(flyingTypes.length ? { flyingTypes } : {}),
+    ...(landings.length ? { landings } : {}),
+    ...(parking.length ? { parking } : {}),
+  };
 }
 
 export function toSite(
@@ -64,6 +135,9 @@ export function toSite(
   const id = siteId(country.code, regionCode, slug);
   const dirs = goodDirections(p);
   const wind = dirs.length ? parseWindRange(dirs.join(", ")) : undefined;
+  const possible = possibleDirections(p);
+  const marginal = possible.length ? parseWindRange(possible.join(", ")).ranges : undefined;
+  const altitudeM = positive(p.takeoff_altitude);
   const disciplines: Discipline[] = [];
   if (p.paragliding === "1") disciplines.push("PG");
   if (p.hanggliding === "1") disciplines.push("HG");
@@ -79,6 +153,7 @@ export function toSite(
       regionCode,
       windRanges: wind?.ranges ?? [],
       windRangeLabel: wind?.label ?? "See official details",
+      ...(marginal && marginal !== "all" && marginal.length ? { windMarginal: marginal } : {}),
       status: "unknown",
       stewardRole: "unknown",
       launches: [
@@ -88,8 +163,10 @@ export function toSite(
           lat: Number(lat.toFixed(6)),
           lon: Number(lon.toFixed(6)),
           precision: "exact",
+          ...(altitudeM ? { altitudeM } : {}),
         },
       ],
+      ...extraFacts(p),
       stationIds: [],
       disciplines,
       layer: "pge",
@@ -104,7 +181,10 @@ export const pge: ProviderModule = {
   async collect(ctx) {
     const downloads = [];
     for (const country of ctx.countries) {
-      const res = await ctx.fetcher.get(`${PGE_API}?iso=${country.code.toLowerCase()}`);
+      // "detailled" (sic) adds the landing's name and height; its text fields are never kept.
+      const res = await ctx.fetcher.get(
+        `${PGE_API}?iso=${country.code.toLowerCase()}&style=detailled`,
+      );
       downloads.push({ country, res });
     }
     const contentHash = sha256(

@@ -1,4 +1,5 @@
-// Wind rose (docs/06 §6): a circle with the published wind range shaded. 48 px on cards, about
+// Wind rose (docs/06 §6): a circle with the published wind range shaded, and directions a source
+// rates only "possible" shaded in the marginal colour (D81). 48 px on cards, about
 // 160 px on site pages with N/E/S/W labels. "All" fills the circle. Decorative: the range is
 // always given as text next to it.
 import type { WindArc } from "@/lib/types";
@@ -26,12 +27,14 @@ export const ROSE_COLOURS = {
   face: "var(--color-surface)",
   edge: "var(--color-border-strong)",
   range: "var(--color-in-range)",
+  marginal: "var(--color-marginal)",
   ink: "var(--color-ink)",
   label: "var(--color-muted-strong)",
 };
 
 interface WindRoseProps {
   ranges: WindArc[] | "all";
+  marginal?: WindArc[];
   size?: number;
   labels?: boolean;
   className?: string;
@@ -40,6 +43,7 @@ interface WindRoseProps {
 
 export function WindRose({
   ranges,
+  marginal = [],
   size = 48,
   labels = false,
   className,
@@ -59,6 +63,9 @@ export function WindRose({
       data-testid="wind-rose"
     >
       <circle cx={cx} cy={cx} r={r} fill={colours.face} stroke={colours.edge} strokeWidth="1.5" />
+      {marginal.map((a, i) => (
+        <path key={`m${i}`} d={slicePath(cx, r, a)} fill={colours.marginal} fillOpacity="0.85" />
+      ))}
       {arcs.map((a, i) => (
         <path key={i} d={slicePath(cx, r, a)} fill={colours.range} fillOpacity="0.85" />
       ))}

@@ -148,6 +148,14 @@ export const gearCategoriesFileSchema = z
   )
   .nullable();
 
+const sitePointSchema = z.object({
+  name: z.string().optional(),
+  lat: z.number().min(-90).max(90),
+  lon: z.number().min(-180).max(180),
+  altitudeM: z.number().optional(),
+  serves: z.enum(["takeoff", "landing"]).optional(),
+});
+
 /** Broken outside links accepted for now, each with a reason and a date to look again (D80). */
 export const linkExceptionsFileSchema = z
   .array(z.object({ url: httpUrl, reason: z.string().min(1), review: z.iso.date() }))
@@ -246,6 +254,9 @@ export const siteSchema = z.object({
     z.literal("all"),
     z.array(z.object({ fromDeg: z.number().min(0).max(360), toDeg: z.number().min(0).max(360) })),
   ]),
+  windMarginal: z
+    .array(z.object({ fromDeg: z.number().min(0).max(360), toDeg: z.number().min(0).max(360) }))
+    .optional(),
   windRangeLabel: z.string().min(1),
   ratingSystem: z.string().optional(),
   ippiLevel: z.number().int().optional(),
@@ -285,6 +296,9 @@ export const siteSchema = z.object({
   mainLandingName: z.string().optional(),
   stationIds: z.array(z.string()),
   stationDistancesKm: z.record(z.string(), z.number().positive()).optional(),
+  flyingTypes: z.array(z.enum(["thermal", "soaring", "xc", "flatland", "winch"])).optional(),
+  landings: z.array(sitePointSchema).optional(),
+  parking: z.array(sitePointSchema).optional(),
   windSource: z.object({ name: z.string(), url: httpUrl }).optional(),
   wtfSlug: z.string().optional(),
   pgeId: z.string().optional(),
@@ -503,6 +517,7 @@ export const countryInputSchema = z.object({
   ratingsNote: z.string().min(1),
   primarySiteSource: z.string().min(1),
   coverage: z.enum(["full", "sample"]),
+  communitySites: z.boolean().optional(),
 });
 export const countriesFileSchema = z
   .array(

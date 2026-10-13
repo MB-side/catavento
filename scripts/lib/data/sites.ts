@@ -98,8 +98,9 @@ export function dedupeSites(sites: Site[], warnings: BuildWarning[]): Site[] {
 }
 
 /**
- * Gives a hand-compiled site the takeoffs pinned to it in ParaglidingEarth (positions, wind
- * directions rated good, disciplines), crediting ParaglidingEarth. Never matched automatically.
+ * Gives a hand-compiled site the takeoffs pinned to it in ParaglidingEarth (positions and heights,
+ * wind directions rated good or possible, disciplines, kinds of flying, landings, parking),
+ * crediting ParaglidingEarth. Never matched automatically.
  */
 export function enrichFromPge(site: Site, pinned: string[], pgeSites: Site[], warnings: BuildWarning[]): void {
   const found = pinned
@@ -119,13 +120,21 @@ export function enrichFromPge(site: Site, pinned: string[], pgeSites: Site[], wa
   } else {
     site.windRangeLabel = UNPARSED_LABEL;
   }
+  const marginal = found.flatMap((p) => p.windMarginal ?? []);
+  if (marginal.length) site.windMarginal = mergeArcs(marginal);
+  const types = [...new Set(found.flatMap((p) => p.flyingTypes ?? []))];
+  if (types.length) site.flyingTypes = types;
+  const landings = found.flatMap((p) => p.landings ?? []);
+  if (landings.length) site.landings = landings;
+  const parking = found.flatMap((p) => p.parking ?? []);
+  if (parking.length) site.parking = parking;
   site.disciplines = [...new Set([...site.disciplines, ...found.flatMap((p) => p.disciplines)])];
   site.sources = [...site.sources, ...found.flatMap((p) => p.sources)];
 }
 
 /**
- * The community layer (ParaglidingEarth) is shown only in fully covered countries; in sample
- * countries it only feeds pinned sample sites. A community site whose ID is taken by another
+ * The community layer (ParaglidingEarth) is shown in fully covered countries and in sample
+ * countries that opt in (`communitySites`, D81); otherwise it only feeds pinned sample sites. A community site whose ID is taken by another
  * source's site gets its ParaglidingEarth ID added.
  */
 export function placeCommunitySites(sites: Site[], fullCountries: ReadonlySet<string>): Site[] {

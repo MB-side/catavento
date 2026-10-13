@@ -154,6 +154,19 @@ export interface Launch {
   altitudeM?: number;
 }
 
+/** Kinds of flying a community source says a site offers (ParaglidingEarth, D81). */
+export type FlyingType = "thermal" | "soaring" | "xc" | "flatland" | "winch";
+
+/** A landing or a parking spot, as a source places it. */
+export interface SitePoint {
+  name?: string;
+  lat: number;
+  lon: number;
+  altitudeM?: number;
+  /** Parking only: whether it serves the takeoff or the landing. */
+  serves?: "takeoff" | "landing";
+}
+
 export interface WindArc {
   fromDeg: number;
   toDeg: number;
@@ -174,6 +187,8 @@ export interface Site {
   ratingText?: string;
   conditionsText?: string;
   windRanges: WindArc[] | "all";
+  /** Directions a community source rates "possible" (not "good"): shown and judged as marginal (D81). */
+  windMarginal?: WindArc[];
   windRangeLabel: string;
   ratingSystem?: string;
   ippiLevel?: number;
@@ -190,6 +205,9 @@ export interface Site {
   stationIds: string[];
   /** Approximate distance (km) from the main launch, set by hand where a station's position isn't stored. */
   stationDistancesKm?: Record<string, number>;
+  flyingTypes?: FlyingType[];
+  landings?: SitePoint[];
+  parking?: SitePoint[];
   /** Where the wind directions came from, when not the site's main source (site-wind.yaml). */
   windSource?: { name: string; url: string };
   wtfSlug?: string;
@@ -331,6 +349,8 @@ export interface Country {
   ratingsNote: string;
   primarySiteSource: string;
   coverage: "full" | "sample";
+  /** Show the ParaglidingEarth community sites even though coverage is a sample (D81). */
+  communitySites?: boolean;
 }
 
 /** One line in the build/ingest report (docs/05 §6). Ingest fields arrive in M2. */

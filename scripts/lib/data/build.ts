@@ -143,7 +143,10 @@ export function buildData(input: BuildInputs): BuildOutputs {
     const site = sampleSites[i];
     if (site && sample.pgeIds?.length) enrichFromPge(site, sample.pgeIds, pgeSites, warnings);
   });
-  const fullCountries = new Set(input.countries.filter((c) => c.coverage === "full").map((c) => c.code));
+  // Countries whose ParaglidingEarth community sites are shown: full coverage, or opted in (D81).
+  const fullCountries = new Set(
+    input.countries.filter((c) => c.coverage === "full" || c.communitySites).map((c) => c.code),
+  );
   const sites = dedupeSites(placeCommunitySites([...collected, ...sampleSites], fullCountries), warnings);
   matchListedContacts(sites, organisations, input.clubAliases, warnings);
   confirmStewards(sites, organisations, input.stewardEvidence, warnings);
