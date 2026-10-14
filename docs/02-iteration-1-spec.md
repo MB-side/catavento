@@ -41,10 +41,11 @@ Build a credible, mostly real, static website that the founder can share with pi
 - Installable to the home screen (web app manifest)
 - **Country support**: country-first routes, country switcher, country configuration (`data/manual/countries.yaml`)
 - **New Zealand sample** (§5.14)
+- **Overview regions** (§5.15, D83): light "Flying elsewhere" sections for Europe and ten other countries
 
 ### Out of scope (Iteration 2 or later, see `docs/08`)
 
-Full New Zealand coverage, other countries, translation, accounts and sync, classifieds posting, enquiry forms, live wind values, alerts and push, Thursday digest email, club claim and admin, pilot reports, RSVPs, reviews, payments, sponsored listings, dark mode, logbook (never).
+Full New Zealand coverage, full coverage of other countries (clubs, gear, per-site pages), translation, accounts and sync, classifieds posting, enquiry forms, live wind values, alerts and push, Thursday digest email, club claim and admin, pilot reports, RSVPs, reviews, payments, sponsored listings, dark mode, logbook (never).
 
 ## 4. Pages and routes
 
@@ -70,6 +71,7 @@ All routes are statically generated. `[country]` is a lowercase ISO country code
 | `/[country]/new-to-flying/schools` | Schools directory with compare (up to 3) | n/a |
 | `/[country]/directory/[slug]` | Profile for any non-club organisation (school, tandem operator, shop, flight park, national body...) | n/a |
 | `/[country]/visiting-pilots` | Flying in that country as a visitor | n/a |
+| `/world`, `/world/[region]`, `/world/europe/[cc]` | Overview regions (§5.15): guide, site list and map, links | n/a |
 
 ## 5. Feature specifications
 
@@ -178,10 +180,20 @@ Purpose: prove that a second country works through configuration and data alone.
 
 - **Country config:** `data/manual/countries.yaml` (NZ entry: NZHGPA, regions, time zone, ratings note, `coverage: sample`).
 - **Organisations:** NZHGPA, the 11 clubs listed by NZHGPA, schools listed by NZHGPA, and the HighSide flight park (rows with country `NZ` in `data/seed/directory.csv`).
-- **Sites:** the five sites in `data/manual/nz-sample-sites.yaml`, with coordinates and wind directions matched from ParaglidingEarth (pge layer, attributed). They deliberately cover three steward cases: club (Port Hills, Te Mata Peak, Mount Maunganui), flight park with a club-published guide (Karioitahi Beach), and steward unknown (Coronet Peak).
+- **Sites:** ParaglidingEarth's NZ sites as community data (D81), and the five sites in `data/manual/nz-sample-sites.yaml`, with coordinates and wind directions matched from ParaglidingEarth (pge layer, attributed). They deliberately cover three steward cases: club (Port Hills, Te Mata Peak, Mount Maunganui), flight park with a club-published guide (Karioitahi Beach), and steward unknown (Coronet Peak).
 - **Station:** Holfuy station 213 (link only).
 - Every NZ page shows the **Sample coverage** notice (`docs/07` §10) and uses NZHGPA wording, NZ regions and the Pacific/Auckland time zone. **No SAFA text may appear on NZ pages.**
 - Optional (if quick): an `nzhgpa` ingest for the clubs and schools pages; otherwise seed only.
+
+### 5.15 Overview regions (D83)
+
+Purpose: a first port of call for visiting pilots and learners beyond Australia and New Zealand, without full coverage.
+
+- **Regions:** Europe as one region (a light page per country) and single-country destinations, listed in `data/manual/overview.yaml`.
+- **Guides:** how flying works for visitors and learners, written from official sources only (national federations, civil aviation authorities, FAI/CIVL), with sources and a checked date (`data/manual/guides.yaml`; 12-month use-by in the health check). Where no fact can be confirmed, the page says there's no guide yet.
+- **Sites:** ParaglidingEarth's sites as a list and a map, with no page per site; each entry opens to its facts, a link to its ParaglidingEarth page and the 3-day outlook on request.
+- **Links:** the national body, its site, club and school finders, and other good public sources.
+- Not included: clubs, stewards, gear, events or per-site pages for these regions.
 
 ## 6. User stories and acceptance criteria
 
@@ -221,6 +233,8 @@ Purpose: prove that a second country works through configuration and data alone.
 | **M5** | My Sites and outlook: storage, dashboard, Open-Meteo fetch, classification, Where To Fly link, share-my-list, manifest | S1, S2, S4 and S10 pass in Playwright |
 | **M6** | New to flying, Gear, What's on, Directory profiles, Visiting pilots, Search; drafted copy marked for review | S5 and S6 pass; founder has reviewed and approved all drafted copy |
 | **M7** | Consultation readiness: accessibility and performance pass, policy pages, feedback links, link checker, tester README | Section 7 targets met; no broken links; founder sign-off |
+| **M8** | Upkeep: daily health check and issue, monthly outside-link report, use-by dates for hand-entered facts (D79) | Health issue opens and closes on its own; founder approved |
+| **M9** | Overview regions (§5.15, D83) | Europe and ten destinations live with guides, site lists and maps; founder approved the wording |
 
 ## 9. Definition of done (Iteration 1)
 
