@@ -57,7 +57,7 @@ Use current stable versions at the time of building; record versions in `package
 ├─ messages/en.json               # every UI string
 ├─ app/                           # Next.js routes (docs/02 §4)
 │  ├─ [country]/...               # country-first routes
-│  ├─ (global)/...                # /, /my-sites, /search, policy pages
+│  ├─ (global)/...                # /, /my-sites, /search, policy pages, /world overview regions (D83)
 │  └─ layout.tsx                  # banner, nav, footer
 ├─ components/
 │  ├─ ui/                         # shadcn primitives
