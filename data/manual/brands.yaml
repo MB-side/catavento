@@ -30,13 +30,6 @@
           basis: self,
           source: http://www.northsideparagliding.com.au/product-category/equipment/harnesses,
           checked: 2026-10-14
-        },
-      {
-          org: org:au:paratech-paragliding,
-          role: dealer,
-          basis: self,
-          source: https://www.paratechpg.com/equipment-sales,
-          checked: 2026-10-14
         }
     ]
 - name: Aerial Pursuits
@@ -116,15 +109,8 @@
       {
           org: org:au:bright-flight,
           role: dealer,
-          basis: self,
-          source: https://brightflight.com.au/home/shop/,
-          checked: 2026-10-14
-        },
-      {
-          org: org:au:paratech-paragliding,
-          role: dealer,
-          basis: self,
-          source: https://www.paratechpg.com/equipment-sales,
+          basis: brand,
+          source: https://www.flybgd.com/en/paragliders/australia-9-2-0.html,
           checked: 2026-10-14
         }
     ]
@@ -153,6 +139,13 @@
           basis: self,
           source: https://www.seqparagliding.com/category/all-products,
           checked: 2026-10-14
+        },
+      {
+          org: org:au:moyes-hang-gliding-academy,
+          role: service_agent,
+          basis: brand,
+          source: https://finsterwalder-charly.de/en/contact/country-agencies-abroad.html,
+          checked: 2026-10-14
         }
     ]
 - name: Colorful Sky
@@ -177,8 +170,8 @@
       {
           org: org:au:tribal-flight-paragliding-fox-airsports,
           role: dealer,
-          basis: self,
-          source: https://tribalflight.com.au/collections/all,
+          basis: brand,
+          source: https://dudek.eu/en/dealers/,
           checked: 2026-10-14
         }
     ]
@@ -195,8 +188,20 @@
   distributors:
     [
       { org: RTL-003, role: core_importer },
-      { org: SCH-026, role: dealer },
-      { org: SCH-027, role: dealer },
+      {
+          org: SCH-026,
+          role: dealer,
+          basis: brand,
+          source: https://www.flowparagliders.com.au/flow-paragliders-dealers-australia/,
+          checked: 2026-10-14
+        },
+      {
+          org: SCH-027,
+          role: dealer,
+          basis: brand,
+          source: https://www.flowparagliders.com.au/flow-paragliders-dealers-australia/,
+          checked: 2026-10-14
+        },
       { org: SVC-001, role: certified_service },
       {
           org: org:au:airology,
@@ -208,48 +213,34 @@
       {
           org: org:au:melbourne-paragliding,
           role: dealer,
-          basis: self,
-          source: https://www.melbourneparagliding.com/accessories.html,
+          basis: brand,
+          source: https://www.flowparagliders.com.au/flow-paragliders-dealers-australia/,
           checked: 2026-10-14
         },
       {
           org: org:au:paragliding-tasmania,
           role: dealer,
-          basis: self,
-          source: https://www.paraglidingtasmania.com.au/shop,
+          basis: brand,
+          source: https://www.flowparagliders.com.au/flow-paragliders-dealers-australia/,
           checked: 2026-10-14
         },
       {
           org: org:au:seq-paragliding,
           role: dealer,
-          basis: self,
-          source: https://www.seqparagliding.com/category/all-products,
-          checked: 2026-10-14
-        },
-      {
-          org: org:au:skysurf-paragliding-canberra,
-          role: dealer,
-          basis: self,
-          source: https://www.skysurf.com.au/,
-          checked: 2026-10-14
-        },
-      {
-          org: org:au:skysurf-paragliding-wollongong,
-          role: dealer,
-          basis: self,
-          source: https://www.skysurf.com.au/,
+          basis: brand,
+          source: https://www.flowparagliders.com.au/flow-paragliders-dealers-australia/,
           checked: 2026-10-14
         }
     ]
 - name: Flymaster
   distributors:
     [
-      { org: RTL-002, role: core_importer },
+      { org: RTL-002, role: dealer },
       {
           org: org:au:cloudbase-paragliding,
-          role: dealer,
-          basis: self,
-          source: https://cloudbaseparagliding.com.au/,
+          role: official_importer,
+          basis: brand,
+          source: https://www.flymaster.net/distributors,
           checked: 2026-10-14
         },
       {
@@ -282,9 +273,9 @@
       source: https://hangglidingwa.com.au/Equipment.php
       checked: 2026-10-14
     - org: org:au:manilla-paragliding
-      role: core_importer
-      basis: self
-      source: https://www.flymanilla.com/
+      role: official_importer
+      basis: brand
+      source: https://naviter.com/naviter-dealers-for-free-flight/
       checked: 2026-10-14
     - org: org:au:moyes-hang-gliding-academy
       role: dealer
@@ -311,21 +302,20 @@
 - name: Gin
   distributors:
     [
-      { org: SCH-019, role: official_importer },
-      { org: RTL-002, role: core_importer },
+      {
+          org: SCH-019,
+          role: official_importer,
+          basis: brand,
+          source: https://www.gingliders.com/en/distributors/,
+          checked: 2026-10-14
+        },
+      { org: RTL-002, role: dealer },
       { org: RTL-001, role: dealer },
       {
           org: org:au:adventure-plus-paragliding,
           role: dealer,
-          basis: self,
-          source: https://www.adventureplusparagliding.com.au/shop/paragliders/,
-          checked: 2026-10-14
-        },
-      {
-          org: org:au:paragliding-queensland,
-          role: official_importer,
-          basis: self,
-          source: https://www.paraglidingqueensland.com/services,
+          basis: brand,
+          source: https://www.gingliders.com/en/distributors/,
           checked: 2026-10-14
         }
     ]
@@ -337,6 +327,11 @@
       role: dealer
       basis: self
       source: https://www.melbourneparagliding.com/accessories.html
+      checked: 2026-10-14
+    - org: org:au:tribal-flight-paragliding-fox-airsports
+      role: dealer
+      basis: brand
+      source: https://icaro-paragliders.com/en/dealers/
       checked: 2026-10-14
 - name: Icom
   distributors:
@@ -452,6 +447,21 @@
       basis: self
       source: https://hangglidingwa.com.au/Equipment.php
       checked: 2026-10-14
+    - org: org:au:sydney-hang-gliding-centre
+      role: dealer
+      basis: brand
+      source: https://moyes.com.au/contact-us/australian-dealer-list
+      checked: 2026-10-14
+    - org: org:au:freedom-airsports
+      role: dealer
+      basis: brand
+      source: https://moyes.com.au/contact-us/australian-dealer-list
+      checked: 2026-10-14
+    - org: org:au:oz-paragliding-hang-gliding
+      role: dealer
+      basis: brand
+      source: https://moyes.com.au/contact-us/australian-dealer-list
+      checked: 2026-10-14
 - name: Naviter
   distributors:
     - org: org:au:hang-gliding-wa
@@ -460,9 +470,9 @@
       source: https://hangglidingwa.com.au/Equipment.php
       checked: 2026-10-14
     - org: org:au:manilla-paragliding
-      role: core_importer
-      basis: self
-      source: https://www.flymanilla.com/
+      role: official_importer
+      basis: brand
+      source: https://naviter.com/naviter-dealers-for-free-flight/
       checked: 2026-10-14
     - org: org:au:melbourne-paragliding
       role: dealer
@@ -527,31 +537,10 @@
           checked: 2026-10-14
         },
       {
-          org: org:au:paratech-paragliding,
-          role: dealer,
-          basis: self,
-          source: https://www.paratechpg.com/equipment-sales,
-          checked: 2026-10-14
-        },
-      {
           org: org:au:seq-paragliding,
           role: dealer,
           basis: self,
           source: https://www.seqparagliding.com/category/all-products,
-          checked: 2026-10-14
-        },
-      {
-          org: org:au:skysurf-paragliding-canberra,
-          role: dealer,
-          basis: self,
-          source: https://www.skysurf.com.au/,
-          checked: 2026-10-14
-        },
-      {
-          org: org:au:skysurf-paragliding-wollongong,
-          role: dealer,
-          basis: self,
-          source: https://www.skysurf.com.au/,
           checked: 2026-10-14
         }
     ]
@@ -566,13 +555,6 @@
           role: core_importer,
           basis: self,
           source: https://activeflight.com.au/paragliding-equipment/,
-          checked: 2026-10-14
-        },
-      {
-          org: org:au:paratech-paragliding,
-          role: dealer,
-          basis: self,
-          source: https://www.paratechpg.com/equipment-sales,
           checked: 2026-10-14
         }
     ]
@@ -592,8 +574,8 @@
       {
           org: org:au:high-adventure,
           role: dealer,
-          basis: self,
-          source: https://www.highadventure.com.au/collections/paragliding-wings,
+          basis: brand,
+          source: https://flyozone.com/speed/find-a-dealer,
           checked: 2026-10-14
         },
       {
@@ -608,6 +590,13 @@
           role: official_importer,
           basis: self,
           source: https://skyoutparagliding.com/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:north-side-paragliding,
+          role: dealer,
+          basis: brand,
+          source: https://flyozone.com/speed/find-a-dealer,
           checked: 2026-10-14
         }
     ]
@@ -633,14 +622,7 @@
     [
       { org: RTL-002, role: core_importer },
       { org: RTL-001, role: dealer },
-      { org: SCH-021, role: service_agent },
-      {
-          org: org:au:paratech-paragliding,
-          role: dealer,
-          basis: self,
-          source: https://www.paratechpg.com/equipment-sales,
-          checked: 2026-10-14
-        }
+      { org: SCH-021, role: service_agent }
     ]
 - name: Raptor Designs
   distributors:
@@ -652,28 +634,40 @@
 - name: Skywalk
   distributors:
     [
-      { org: SCH-021, role: official_importer },
       { org: SVC-001, role: certified_service },
       {
           org: org:au:airology,
           role: dealer,
-          basis: self,
-          source: https://airology.com.au/,
+          basis: brand,
+          source: https://skywalk.info/distributor/,
           checked: 2026-10-14
         },
       {
           org: org:au:paratech-paragliding,
-          role: official_importer,
-          basis: self,
-          source: https://www.paratechpg.com/equipment-sales,
+          role: dealer,
+          basis: brand,
+          source: https://skywalk.info/distributor/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:planet-paragliding,
+          role: certified_service,
+          basis: brand,
+          source: https://skywalk.info/distributor/,
           checked: 2026-10-14
         }
     ]
 - name: Sup'Air
   distributors:
     [
-      { org: SCH-019, role: official_importer },
-      { org: RTL-002, role: core_importer },
+      {
+          org: SCH-019,
+          role: official_importer,
+          basis: brand,
+          source: https://supair.com/en/revendeurs/,
+          checked: 2026-10-14
+        },
+      { org: RTL-002, role: dealer },
       {
           org: org:au:airology,
           role: dealer,
@@ -684,15 +678,15 @@
       {
           org: org:au:bright-flight,
           role: dealer,
-          basis: self,
-          source: https://brightflight.com.au/home/shop/,
+          basis: brand,
+          source: https://supair.com/en/revendeurs/,
           checked: 2026-10-14
         },
       {
           org: org:au:cloudbase-paragliding,
-          role: dealer,
-          basis: self,
-          source: https://cloudbaseparagliding.com.au/,
+          role: official_importer,
+          basis: brand,
+          source: https://supair.com/en/revendeurs/,
           checked: 2026-10-14
         },
       {
@@ -703,17 +697,24 @@
           checked: 2026-10-14
         },
       {
-          org: org:au:paragliding-queensland,
-          role: official_importer,
-          basis: self,
-          source: https://www.paraglidingqueensland.com/services,
-          checked: 2026-10-14
-        },
-      {
           org: org:au:paratech-paragliding,
           role: dealer,
           basis: self,
           source: https://www.paratechpg.com/equipment-sales,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:sky-out-paragliding,
+          role: dealer,
+          basis: brand,
+          source: https://supair.com/en/revendeurs/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:skysurf-paragliding-wollongong,
+          role: dealer,
+          basis: brand,
+          source: https://supair.com/en/revendeurs/,
           checked: 2026-10-14
         }
     ]
@@ -833,6 +834,13 @@
           role: dealer,
           basis: self,
           source: https://skyoutparagliding.com/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:hang-gliding-wa,
+          role: dealer,
+          basis: brand,
+          source: https://www.woodyvalley.com/en/distributori/,
           checked: 2026-10-14
         }
     ]
