@@ -35,9 +35,9 @@ test.describe("S5: find a tandem near me", () => {
     for (const card of await nsw.getByTestId("org-card").all()) {
       await expect(card.getByRole("link").first()).toBeVisible();
     }
-    await expect(nsw.getByTestId("org-card").filter({ hasText: "HangglideOz" })).toContainText(
-      "Hang gliding",
-    );
+    await expect(
+      nsw.getByTestId("org-card").filter({ hasText: "Sydney Hang Gliding Centre" }),
+    ).toContainText("Hang gliding");
     // The only published price is Manilla Paragliding's; no other card shows a price.
     const priced = page.getByTestId("org-card").filter({ hasText: "A$" });
     await expect(priced).toHaveCount(1);
