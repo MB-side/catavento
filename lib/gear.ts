@@ -1,6 +1,6 @@
 // Gear categories (founder request, D73): what each shop says it sells, so people can find a shop
 // for a vario, a pod harness or a wing. Shared by the build, the shops page and search.
-import type { GearCategory } from "./types";
+import type { GearCategory, Organisation } from "./types";
 
 export type { GearCategory };
 
@@ -32,3 +32,9 @@ export const GEAR_SEARCH_WORDS: Record<GearCategory, string> = {
   "helmets-accessories": "helmet accessories speed bar carabiner",
   service: "service repair check line trim reserve repack",
 };
+
+/** Schools and tandem operators, which may also sell gear (shown as "Also a school", D84). */
+export const isSchool = (o: Pick<Organisation, "kind" | "additionalKinds">): boolean =>
+  o.kind === "school" ||
+  o.kind === "tandem_operator" ||
+  (o.additionalKinds ?? []).some((k) => k === "school" || k === "tandem_operator");

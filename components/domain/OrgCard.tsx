@@ -6,7 +6,8 @@ import { orgPath } from "@/lib/clubs";
 import { formatDate } from "@/lib/format";
 import { t, tOr } from "@/lib/messages";
 import { formatPrice } from "@/lib/money";
-import type { Offering, Organisation } from "@/lib/types";
+import { isSchool } from "@/lib/gear";
+import type { BrandLink, Offering, Organisation } from "@/lib/types";
 import { Anchor } from "@/components/ui/anchor";
 
 export function kindLabels(o: Organisation): string {
@@ -25,11 +26,15 @@ export function OrgCard({
   regionName,
   price,
   timeZone,
+  brands = [],
+  gearContext = false,
 }: {
   org: Organisation;
   regionName?: string;
   price?: Offering;
   timeZone: string;
+  brands?: BrandLink[];
+  gearContext?: boolean; // on the Shops page: mark schools that sell gear
 }) {
   const where = [org.locality, regionName].filter(Boolean).join(", ");
   return (
@@ -40,6 +45,11 @@ export function OrgCard({
       <Link href={orgPath(org)} className="font-condensed text-[1.25rem] leading-tight font-bold">
         {org.name}
       </Link>
+      {gearContext && isSchool(org) && (
+        <span className="self-start rounded-full bg-info-tint px-2 py-0.5 text-[0.75rem] font-semibold text-link">
+          {t("gear.alsoSchool")}
+        </span>
+      )}
       <p className="text-[0.875rem] text-muted">
         {[kindLabels(org), where].filter(Boolean).join(" · ")}
       </p>
@@ -51,6 +61,17 @@ export function OrgCard({
           <span className="font-semibold">{t("gear.sells")}:</span>{" "}
           {org.sells
             .map((c) => tOr(`gear.categories.${c}`, "gear.categories.paragliders"))
+            .join(", ")}
+          {org.sellsUsed && `, ${t("gear.usedToo")}`}
+        </p>
+      )}
+      {brands.length > 0 && (
+        <p className="text-[0.875rem]">
+          <span className="font-semibold">{t("gear.brandsLabel")}:</span>{" "}
+          {brands
+            .map(
+              (b) => `${b.name} (${tOr(`gear.role.${b.role}`, "gear.role.dealer").toLowerCase()})`,
+            )
             .join(", ")}
         </p>
       )}

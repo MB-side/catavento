@@ -128,8 +128,13 @@ describe("checkHealth", () => {
       siteWind: [
         { site: "site:au:nsw:x", source: "https://club.example/x", checked: "2025-09-01" },
       ],
+      dealerPages: [
+        { brand: "Brand", url: "https://brand.example/dealers", checked: "2025-09-01" },
+        { brand: "Fresh", url: "https://fresh.example/dealers", checked: "2026-09-01" },
+      ],
     });
-    expect(problems.map((p) => p.kind)).toEqual(["stale", "stale", "stale"]);
+    expect(problems.map((p) => p.kind)).toEqual(["stale", "stale", "stale", "stale"]);
+    expect(problems.at(-1)?.key).toBe("stale-dealers:Brand");
     expect(healthReport(problems, now)).toContain("### Hand-entered facts to re-check");
   });
 

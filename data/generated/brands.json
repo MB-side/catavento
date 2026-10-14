@@ -5,11 +5,134 @@
     "distributors": [
       {
         "orgId": "org:au:fly2base",
-        "role": "core_importer"
+        "role": "dealer",
+        "basis": "self"
       },
       {
         "orgId": "org:au:paratech-paragliding",
-        "role": "service_agent"
+        "role": "service_agent",
+        "basis": "self"
+      },
+      {
+        "orgId": "org:au:manilla-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.flymanilla.com/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:melbourne-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.melbourneparagliding.com/woody-valley-harness.html",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:north-side-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "http://www.northsideparagliding.com.au/product-category/equipment/harnesses",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://www.advance.swiss/en/dealer-finder",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:aerial-pursuits",
+    "name": "Aerial Pursuits",
+    "distributors": [
+      {
+        "orgId": "org:au:sydney-microlights",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.trikefan.com/microlightaccessories.php",
+        "checked": "2026-10-14"
+      }
+    ]
+  },
+  {
+    "id": "brand:air-hog",
+    "name": "Air Hog",
+    "distributors": [
+      {
+        "orgId": "org:au:sydney-microlights",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.trikefan.com/microlightaccessories.php",
+        "checked": "2026-10-14"
+      }
+    ]
+  },
+  {
+    "id": "brand:air3",
+    "name": "AIR3",
+    "distributors": [
+      {
+        "orgId": "org:au:bright-flight",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://brightflight.com.au/home/shop/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:seq-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.seqparagliding.com/category/all-products",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://www.fly-air3.com/en/buy-shop-store-paragliding-variometer/air3-partners/",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:airborne",
+    "name": "Airborne",
+    "distributors": [
+      {
+        "orgId": "org:au:dtk-microlights",
+        "role": "dealer",
+        "basis": "self",
+        "source": "http://dtkmicrolights.com.au/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:sydney-microlights",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.trikefan.com/microlightsales.php",
+        "checked": "2026-10-14"
+      }
+    ]
+  },
+  {
+    "id": "brand:airdesign",
+    "name": "AirDesign",
+    "distributors": [
+      {
+        "orgId": "org:au:cloudbase-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://cloudbaseparagliding.com.au/",
+        "checked": "2026-10-14"
+      }
+    ]
+  },
+  {
+    "id": "brand:airnest",
+    "name": "AirNest",
+    "distributors": [
+      {
+        "orgId": "org:au:high-adventure",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.highadventure.com.au/collections/paramotors",
+        "checked": "2026-10-14"
       }
     ]
   },
@@ -19,7 +142,38 @@
     "distributors": [
       {
         "orgId": "org:au:paragliding-repair-centre",
-        "role": "certified_service"
+        "role": "certified_service",
+        "basis": "self"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://www.apcoaviation.com/find-a-dealer/",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:ascent",
+    "name": "Ascent",
+    "distributors": [
+      {
+        "orgId": "org:au:manilla-paragliding",
+        "role": "core_importer",
+        "basis": "self",
+        "source": "https://www.flymanilla.com/",
+        "checked": "2026-10-14"
+      }
+    ]
+  },
+  {
+    "id": "brand:bf",
+    "name": "BF",
+    "distributors": [
+      {
+        "orgId": "org:au:seq-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.seqparagliding.com/category/all-products",
+        "checked": "2026-10-14"
       }
     ]
   },
@@ -29,17 +183,31 @@
     "distributors": [
       {
         "orgId": "org:au:fly2base",
-        "role": "core_importer"
+        "role": "core_importer",
+        "basis": "self"
       },
       {
         "orgId": "org:au:paragliding-shop",
-        "role": "dealer"
+        "role": "dealer",
+        "basis": "self"
       },
       {
         "orgId": "org:au:paratech-paragliding",
-        "role": "service_agent"
+        "role": "service_agent",
+        "basis": "self"
+      },
+      {
+        "orgId": "org:au:bright-flight",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://www.flybgd.com/en/paragliders/australia-9-2-0.html",
+        "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://www.flybgd.com/en/paragliders/australia-9-2-0.html",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:charly",
@@ -47,11 +215,73 @@
     "distributors": [
       {
         "orgId": "org:au:planet-paragliding",
-        "role": "core_importer"
+        "role": "dealer",
+        "basis": "self"
       },
       {
         "orgId": "org:au:fly2base",
-        "role": "core_importer"
+        "role": "service_agent",
+        "basis": "brand",
+        "source": "https://finsterwalder-charly.de/en/contact/country-agencies-abroad.html",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:active-flight-paragliding-center",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://activeflight.com.au/paragliding-equipment/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:manilla-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.flymanilla.com/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:seq-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.seqparagliding.com/category/all-products",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:moyes-hang-gliding-academy",
+        "role": "service_agent",
+        "basis": "brand",
+        "source": "https://finsterwalder-charly.de/en/contact/country-agencies-abroad.html",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://finsterwalder-charly.de/en/contact/country-agencies-abroad.html",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:colorful-sky",
+    "name": "Colorful Sky",
+    "distributors": [
+      {
+        "orgId": "org:au:seq-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.seqparagliding.com/category/all-products",
+        "checked": "2026-10-14"
+      }
+    ]
+  },
+  {
+    "id": "brand:companion",
+    "name": "Companion",
+    "distributors": [
+      {
+        "orgId": "org:au:manilla-paragliding",
+        "role": "core_importer",
+        "basis": "self",
+        "source": "https://www.flymanilla.com/",
+        "checked": "2026-10-14"
       }
     ]
   },
@@ -61,11 +291,37 @@
     "distributors": [
       {
         "orgId": "org:au:fly2base",
-        "role": "core_importer"
+        "role": "core_importer",
+        "basis": "self"
       },
       {
         "orgId": "org:au:paragliding-shop",
-        "role": "dealer"
+        "role": "dealer",
+        "basis": "self"
+      },
+      {
+        "orgId": "org:au:tribal-flight-paragliding-fox-airsports",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://dudek.eu/en/dealers/",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://dudek.eu/en/dealers/",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:dune-rider",
+    "name": "Dune Rider",
+    "distributors": [
+      {
+        "orgId": "org:au:cloudbase-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://cloudbaseparagliding.com.au/",
+        "checked": "2026-10-14"
       }
     ]
   },
@@ -75,7 +331,8 @@
     "distributors": [
       {
         "orgId": "org:au:paragliding-shop",
-        "role": "dealer"
+        "role": "dealer",
+        "basis": "self"
       }
     ]
   },
@@ -85,21 +342,61 @@
     "distributors": [
       {
         "orgId": "org:au:planet-paragliding",
-        "role": "core_importer"
+        "role": "core_importer",
+        "basis": "self"
       },
       {
         "orgId": "org:au:skysurf-paragliding-canberra",
-        "role": "dealer"
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://www.flowparagliders.com.au/flow-paragliders-dealers-australia/",
+        "checked": "2026-10-14"
       },
       {
         "orgId": "org:au:skysurf-paragliding-wollongong",
-        "role": "dealer"
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://www.flowparagliders.com.au/flow-paragliders-dealers-australia/",
+        "checked": "2026-10-14"
       },
       {
         "orgId": "org:au:paragliding-repair-centre",
-        "role": "certified_service"
+        "role": "certified_service",
+        "basis": "self"
+      },
+      {
+        "orgId": "org:au:airology",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://airology.com.au/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:melbourne-paragliding",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://www.flowparagliders.com.au/flow-paragliders-dealers-australia/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:paragliding-tasmania",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://www.flowparagliders.com.au/flow-paragliders-dealers-australia/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:seq-paragliding",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://www.flowparagliders.com.au/flow-paragliders-dealers-australia/",
+        "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://www.flowparagliders.com.au/flow-paragliders-dealers-australia/",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:flymaster",
@@ -107,9 +404,104 @@
     "distributors": [
       {
         "orgId": "org:au:fly2base",
-        "role": "core_importer"
+        "role": "dealer",
+        "basis": "self"
+      },
+      {
+        "orgId": "org:au:cloudbase-paragliding",
+        "role": "official_importer",
+        "basis": "brand",
+        "source": "https://www.flymaster.net/distributors",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:paratech-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.paratechpg.com/equipment-sales",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:skysurf-paragliding-canberra",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.skysurf.com.au/instruments/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:skysurf-paragliding-wollongong",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.skysurf.com.au/instruments/",
+        "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://www.flymaster.net/distributors",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:flytec",
+    "name": "Flytec",
+    "distributors": [
+      {
+        "orgId": "org:au:hang-gliding-wa",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://hangglidingwa.com.au/Equipment.php",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:manilla-paragliding",
+        "role": "official_importer",
+        "basis": "brand",
+        "source": "https://naviter.com/naviter-dealers-for-free-flight/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:moyes-hang-gliding-academy",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.moyes.com.au/store/instruments-radios",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:skysurf-paragliding-canberra",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.skysurf.com.au/instruments/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:skysurf-paragliding-wollongong",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.skysurf.com.au/instruments/",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://naviter.com/naviter-dealers-for-free-flight/",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:garmin",
+    "name": "Garmin",
+    "distributors": [
+      {
+        "orgId": "org:au:sydney-microlights",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.trikefan.com/microlightaccessories.php",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://www.garmin.com/en-AU/dealerlocator",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:gin",
@@ -117,17 +509,33 @@
     "distributors": [
       {
         "orgId": "org:au:paragliding-queensland",
-        "role": "official_importer"
+        "role": "official_importer",
+        "basis": "brand",
+        "source": "https://www.gingliders.com/en/distributors/",
+        "checked": "2026-10-14"
       },
       {
         "orgId": "org:au:fly2base",
-        "role": "core_importer"
+        "role": "dealer",
+        "basis": "self"
       },
       {
         "orgId": "org:au:paragliding-shop",
-        "role": "dealer"
+        "role": "dealer",
+        "basis": "self"
+      },
+      {
+        "orgId": "org:au:adventure-plus-paragliding",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://www.gingliders.com/en/distributors/",
+        "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://www.gingliders.com/en/distributors/",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:gradient",
@@ -135,9 +543,326 @@
     "distributors": [
       {
         "orgId": "org:au:paragliding-repair-centre",
-        "role": "certified_service"
+        "role": "certified_service",
+        "basis": "self"
       }
     ]
+  },
+  {
+    "id": "brand:icaro",
+    "name": "Icaro",
+    "distributors": [
+      {
+        "orgId": "org:au:melbourne-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.melbourneparagliding.com/accessories.html",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:tribal-flight-paragliding-fox-airsports",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://icaro-paragliders.com/en/dealers/",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://icaro-paragliders.com/en/dealers/",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:icom",
+    "name": "Icom",
+    "distributors": [
+      {
+        "orgId": "org:au:adventure-plus-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.adventureplusparagliding.com.au/shop/paragliders/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:bright-flight",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://brightflight.com.au/home/shop/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:hang-gliding-wa",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://hangglidingwa.com.au/Equipment.php",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:manilla-paragliding",
+        "role": "core_importer",
+        "basis": "self",
+        "source": "https://www.flymanilla.com/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:sydney-microlights",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.trikefan.com/microlightaccessories.php",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://www.icom-australia.com/where_to_buy/",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:kortel",
+    "name": "Kortel",
+    "distributors": [
+      {
+        "orgId": "org:au:cloudbase-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://cloudbaseparagliding.com.au/",
+        "checked": "2026-10-14"
+      }
+    ]
+  },
+  {
+    "id": "brand:lazer",
+    "name": "Lazer",
+    "distributors": [
+      {
+        "orgId": "org:au:manilla-paragliding",
+        "role": "core_importer",
+        "basis": "self",
+        "source": "https://www.flymanilla.com/",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://lazersport.com/pages/distributors",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:liberty",
+    "name": "Liberty",
+    "distributors": [
+      {
+        "orgId": "org:au:high-adventure",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.highadventure.com.au/collections/paramotors",
+        "checked": "2026-10-14"
+      }
+    ]
+  },
+  {
+    "id": "brand:little-cloud",
+    "name": "Little Cloud",
+    "distributors": [
+      {
+        "orgId": "org:au:bright-flight",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://brightflight.com.au/home/shop/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:seq-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.seqparagliding.com/category/all-products",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://littlecloud.fr/distributeurs/",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:lynx",
+    "name": "Lynx",
+    "distributors": [
+      {
+        "orgId": "org:au:sydney-microlights",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.trikefan.com/microlightaccessories.php",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://www.lynx-avionics.com/distributors/",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:macfly",
+    "name": "MacFly",
+    "distributors": [
+      {
+        "orgId": "org:au:high-adventure",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.highadventure.com.au/pages/paragliding-paramotoring-gear",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://www.macflyparamotors.com/carte-revendeurs_en.html",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:matrix",
+    "name": "Matrix",
+    "distributors": [
+      {
+        "orgId": "org:au:hang-gliding-wa",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://hangglidingwa.com.au/Equipment.php",
+        "checked": "2026-10-14"
+      }
+    ]
+  },
+  {
+    "id": "brand:metamorfisi",
+    "name": "Metamorfisi",
+    "distributors": [
+      {
+        "orgId": "org:au:hang-gliding-wa",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://hangglidingwa.com.au/Equipment.php",
+        "checked": "2026-10-14"
+      }
+    ]
+  },
+  {
+    "id": "brand:micro-avionics",
+    "name": "Micro Avionics",
+    "distributors": [
+      {
+        "orgId": "org:au:high-adventure",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.highadventure.com.au/pages/paragliding-paramotoring-gear",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:sydney-microlights",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.trikefan.com/microlightaccessories.php",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://microavionics.com/pages/global-distributors",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:mipbip",
+    "name": "MipBip",
+    "distributors": [
+      {
+        "orgId": "org:au:airology",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://airology.com.au/",
+        "checked": "2026-10-14"
+      }
+    ]
+  },
+  {
+    "id": "brand:moyes",
+    "name": "Moyes",
+    "distributors": [
+      {
+        "orgId": "org:au:hang-gliding-wa",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://hangglidingwa.com.au/Equipment.php",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:sydney-hang-gliding-centre",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://moyes.com.au/contact-us/australian-dealer-list",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:freedom-airsports",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://moyes.com.au/contact-us/australian-dealer-list",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:oz-paragliding-hang-gliding",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://moyes.com.au/contact-us/australian-dealer-list",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://moyes.com.au/contact-us/australian-dealer-list",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:naviter",
+    "name": "Naviter",
+    "distributors": [
+      {
+        "orgId": "org:au:hang-gliding-wa",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://hangglidingwa.com.au/Equipment.php",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:manilla-paragliding",
+        "role": "official_importer",
+        "basis": "brand",
+        "source": "https://naviter.com/naviter-dealers-for-free-flight/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:melbourne-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.melbourneparagliding.com/accessories.html",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:moyes-hang-gliding-academy",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.moyes.com.au/store/instruments-radios",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:paratech-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.paratechpg.com/equipment-sales",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://naviter.com/naviter-dealers-for-free-flight/",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:neo",
@@ -145,9 +870,34 @@
     "distributors": [
       {
         "orgId": "org:au:planet-paragliding",
-        "role": "core_importer"
+        "role": "core_importer",
+        "basis": "self"
+      },
+      {
+        "orgId": "org:au:airology",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://airology.com.au/",
+        "checked": "2026-10-14"
       }
     ]
+  },
+  {
+    "id": "brand:nirvana",
+    "name": "Nirvana",
+    "distributors": [
+      {
+        "orgId": "org:au:high-adventure",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.highadventure.com.au/pages/paragliding-paramotoring-gear",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://www.nirvana.cz/en/contact-info/dealers/",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:niviuk",
@@ -155,21 +905,57 @@
     "distributors": [
       {
         "orgId": "org:au:paragliding-shop",
-        "role": "dealer"
+        "role": "dealer",
+        "basis": "self"
       },
       {
         "orgId": "org:au:skysurf-paragliding-canberra",
-        "role": "dealer"
+        "role": "dealer",
+        "basis": "self"
       },
       {
         "orgId": "org:au:skysurf-paragliding-wollongong",
-        "role": "dealer"
+        "role": "dealer",
+        "basis": "self"
       },
       {
         "orgId": "org:au:paratech-paragliding",
-        "role": "service_agent"
+        "role": "service_agent",
+        "basis": "self"
+      },
+      {
+        "orgId": "org:au:bright-flight",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://brightflight.com.au/home/shop/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:future-wings-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.futurewings.com.au/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:high-adventure",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.highadventure.com.au/pages/paragliding-paramotoring-gear",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:seq-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.seqparagliding.com/category/all-products",
+        "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://niviuk.com/en/dealers",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:nova",
@@ -177,17 +963,33 @@
     "distributors": [
       {
         "orgId": "org:au:fly2base",
-        "role": "core_importer"
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://www.nova.eu/en/try-buy/",
+        "checked": "2026-10-14"
       },
       {
         "orgId": "org:au:paratech-paragliding",
-        "role": "service_agent"
+        "role": "service_agent",
+        "basis": "self"
       },
       {
         "orgId": "org:au:paragliding-repair-centre",
-        "role": "certified_service"
+        "role": "certified_service",
+        "basis": "self"
+      },
+      {
+        "orgId": "org:au:active-flight-paragliding-center",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://www.nova.eu/en/try-buy/",
+        "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://www.nova.eu/en/try-buy/",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:ozone",
@@ -195,17 +997,92 @@
     "distributors": [
       {
         "orgId": "org:au:planet-paragliding",
-        "role": "core_importer"
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://flyozone.com/speed/find-a-dealer",
+        "checked": "2026-10-14"
       },
       {
         "orgId": "org:au:fly2base",
-        "role": "core_importer"
+        "role": "dealer",
+        "basis": "self"
       },
       {
         "orgId": "org:au:paragliding-shop",
-        "role": "dealer"
+        "role": "dealer",
+        "basis": "self"
+      },
+      {
+        "orgId": "org:au:active-flight-paragliding-center",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://flyozone.com/speed/find-a-dealer",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:high-adventure",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://flyozone.com/speed/find-a-dealer",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:paragliding-tasmania",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.paraglidingtasmania.com.au/shop",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:sky-out-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://skyoutparagliding.com/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:north-side-paragliding",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://flyozone.com/speed/find-a-dealer",
+        "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://flyozone.com/paragliders/find-a-dealer",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:parajet",
+    "name": "Parajet",
+    "distributors": [
+      {
+        "orgId": "org:au:high-adventure",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.highadventure.com.au/pages/paragliding-paramotoring-gear",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:north-side-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "http://www.northsideparagliding.com.au/product-category/equipment/paramotors",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:tribal-flight-paragliding-fox-airsports",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://tribalflight.com.au/",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://parajet.com/find-your-local-dealer/",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:phi",
@@ -213,15 +1090,35 @@
     "distributors": [
       {
         "orgId": "org:au:fly2base",
-        "role": "core_importer"
+        "role": "core_importer",
+        "basis": "self"
       },
       {
         "orgId": "org:au:paragliding-shop",
-        "role": "dealer"
+        "role": "dealer",
+        "basis": "self"
       },
       {
         "orgId": "org:au:paratech-paragliding",
-        "role": "service_agent"
+        "role": "service_agent",
+        "basis": "self"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://phi-air.com/dealers/",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:raptor-designs",
+    "name": "Raptor Designs",
+    "distributors": [
+      {
+        "orgId": "org:au:sydney-microlights",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.trikefan.com/microlightaccessories.php",
+        "checked": "2026-10-14"
       }
     ]
   },
@@ -230,14 +1127,36 @@
     "name": "Skywalk",
     "distributors": [
       {
-        "orgId": "org:au:paratech-paragliding",
-        "role": "official_importer"
+        "orgId": "org:au:paragliding-repair-centre",
+        "role": "certified_service",
+        "basis": "self"
       },
       {
-        "orgId": "org:au:paragliding-repair-centre",
-        "role": "certified_service"
+        "orgId": "org:au:airology",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://skywalk.info/distributor/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:paratech-paragliding",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://skywalk.info/distributor/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:planet-paragliding",
+        "role": "certified_service",
+        "basis": "brand",
+        "source": "https://skywalk.info/distributor/",
+        "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://skywalk.info/distributor/",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:supair",
@@ -245,13 +1164,87 @@
     "distributors": [
       {
         "orgId": "org:au:paragliding-queensland",
-        "role": "official_importer"
+        "role": "official_importer",
+        "basis": "brand",
+        "source": "https://supair.com/en/revendeurs/",
+        "checked": "2026-10-14"
       },
       {
         "orgId": "org:au:fly2base",
-        "role": "core_importer"
+        "role": "dealer",
+        "basis": "self"
+      },
+      {
+        "orgId": "org:au:airology",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://airology.com.au/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:bright-flight",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://supair.com/en/revendeurs/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:cloudbase-paragliding",
+        "role": "official_importer",
+        "basis": "brand",
+        "source": "https://supair.com/en/revendeurs/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:melbourne-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.melbourneparagliding.com/accessories.html",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:paratech-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.paratechpg.com/equipment-sales",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:sky-out-paragliding",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://supair.com/en/revendeurs/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:skysurf-paragliding-wollongong",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://supair.com/en/revendeurs/",
+        "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://supair.com/en/revendeurs/",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:swing",
+    "name": "Swing",
+    "distributors": [
+      {
+        "orgId": "org:au:updraft-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://updraftparagliding.com.au/equipment/",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://www.swing.de/vertrieb/?lang=en",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:syride",
@@ -259,9 +1252,123 @@
     "distributors": [
       {
         "orgId": "org:au:fly2base",
-        "role": "core_importer"
+        "role": "dealer",
+        "basis": "self"
+      },
+      {
+        "orgId": "org:au:airology",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://airology.com.au/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:manilla-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.flymanilla.com/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:paratech-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.paratechpg.com/equipment-sales",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:seq-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.seqparagliding.com/category/all-products",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:sky-out-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://skyoutparagliding.com/",
+        "checked": "2026-10-14"
       }
     ]
+  },
+  {
+    "id": "brand:triple-seven",
+    "name": "Triple Seven",
+    "distributors": [
+      {
+        "orgId": "org:au:melbourne-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.melbourneparagliding.com/paragliders.html",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:paragliding-tasmania",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.paraglidingtasmania.com.au/shop",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:sky-out-paragliding",
+        "role": "official_importer",
+        "basis": "self",
+        "source": "https://skyoutparagliding.com/",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://777gliders.com/distributors/",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:u-turn",
+    "name": "U-Turn",
+    "distributors": [
+      {
+        "orgId": "org:au:hollywood-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "http://www.hollywoodparagliding.com.au/Equipment.html",
+        "checked": "2026-10-14"
+      }
+    ]
+  },
+  {
+    "id": "brand:up",
+    "name": "UP",
+    "distributors": [
+      {
+        "orgId": "org:au:high-adventure",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.highadventure.com.au/pages/paragliding-paramotoring-gear",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://www.up-paragliders.com/dealers",
+      "checked": "2026-10-14"
+    }
+  },
+  {
+    "id": "brand:vittorazi",
+    "name": "Vittorazi",
+    "distributors": [
+      {
+        "orgId": "org:au:tribal-flight-paragliding-fox-airsports",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://tribalflight.com.au/collections/all",
+        "checked": "2026-10-14"
+      }
+    ],
+    "dealerPage": {
+      "url": "https://vittorazi.com/en/dealers/",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:woody-valley",
@@ -269,13 +1376,56 @@
     "distributors": [
       {
         "orgId": "org:au:planet-paragliding",
-        "role": "core_importer"
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://www.woodyvalley.com/en/distributori/",
+        "checked": "2026-10-14"
       },
       {
         "orgId": "org:au:fly2base",
-        "role": "core_importer"
+        "role": "dealer",
+        "basis": "self"
+      },
+      {
+        "orgId": "org:au:airology",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://airology.com.au/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:melbourne-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.melbourneparagliding.com/woody-valley-harness.html",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:paragliding-tasmania",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://www.paraglidingtasmania.com.au/shop",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:sky-out-paragliding",
+        "role": "dealer",
+        "basis": "self",
+        "source": "https://skyoutparagliding.com/",
+        "checked": "2026-10-14"
+      },
+      {
+        "orgId": "org:au:hang-gliding-wa",
+        "role": "dealer",
+        "basis": "brand",
+        "source": "https://www.woodyvalley.com/en/distributori/",
+        "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://www.woodyvalley.com/en/distributori/",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:xc-tracer",
@@ -283,8 +1433,13 @@
     "distributors": [
       {
         "orgId": "org:au:fly2base",
-        "role": "core_importer"
+        "role": "core_importer",
+        "basis": "self"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://www.xctracer.com/reseller",
+      "checked": "2026-10-14"
+    }
   }
 ]

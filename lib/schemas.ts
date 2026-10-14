@@ -145,6 +145,7 @@ export const gearCategoriesFileSchema = z
     z.object({
       org: z.string().min(1),
       sells: z.array(gearCategorySchema).min(1),
+      used: z.boolean().optional(), // sells second-hand gear too (D84)
       source: httpUrl,
       checked: z.iso.date(),
     }),
@@ -187,6 +188,7 @@ const organisationShape = {
   aliases: z.array(z.string()).optional(),
   externalIds: z.record(z.string(), z.string()).optional(),
   sells: z.array(gearCategorySchema).optional(),
+  sellsUsed: z.boolean().optional(),
   disciplines: z.array(disciplineSchema),
   country: countryCode,
   regionCode: regionCode.optional(),
@@ -417,9 +419,14 @@ export const brandsFileSchema = z
             "service_agent",
             "certified_service",
           ]),
+          basis: z.enum(["brand", "self"]).optional(), // default "self" (D84)
+          source: httpUrl.optional(),
+          checked: z.iso.date().optional(),
         }),
       ),
       source: z.string().optional(),
+      // The brand's own dealer or distributor list, linked from Where to buy (D84).
+      dealerPage: z.object({ url: httpUrl, checked: z.iso.date() }).optional(),
     }),
   )
   .nullable();
@@ -438,8 +445,12 @@ export const brandSchema = z.object({
         "service_agent",
         "certified_service",
       ]),
+      basis: z.enum(["brand", "self"]),
+      source: httpUrl.optional(),
+      checked: z.iso.date().optional(),
     }),
   ),
+  dealerPage: z.object({ url: httpUrl, checked: z.iso.date() }).optional(),
 }) satisfies z.ZodType<Brand>;
 
 export const offeringSchema = z.object({

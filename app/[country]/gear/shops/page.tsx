@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { GearExplorer } from "@/components/domain/GearExplorer";
 import { card, PageHeader } from "@/components/layout/PageHeader";
 import { countryFromParams } from "@/lib/country";
-import { gearOrgs, priceFrom } from "@/lib/directory";
+import { brandsByOrg, gearOrgs, priceFrom } from "@/lib/directory";
 import { t } from "@/lib/messages";
 import { pageMetadata } from "@/lib/seo";
 
@@ -35,6 +35,7 @@ export default async function ShopsPage({ params }: PageProps<"/[country]/gear/s
           regionNames={country.regionNames}
           prices={Object.fromEntries(orgs.map((o) => [o.id, priceFrom(o.id)]))}
           timeZone={zone}
+          brands={brandsByOrg()}
         />
       )}
     </div>

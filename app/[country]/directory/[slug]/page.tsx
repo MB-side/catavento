@@ -55,7 +55,7 @@ export default async function DirectoryProfile({
   const brands = getBrands()
     .map((b) => ({
       brand: b,
-      roles: b.distributors.filter((d) => d.orgId === org.id).map((d) => d.role),
+      roles: b.distributors.filter((d) => d.orgId === org.id),
     }))
     .filter((x) => x.roles.length > 0);
   const related = (org.relatedOrgIds ?? []).map(getOrganisation).filter((o) => o !== undefined);
@@ -157,7 +157,12 @@ export default async function DirectoryProfile({
             {brands.map(({ brand, roles }) => (
               <li key={brand.id}>
                 <span className="font-semibold">{brand.name}</span>:{" "}
-                {roles.map((r) => tOr(`gear.role.${r}`, "gear.role.dealer")).join(", ")}
+                {roles
+                  .map(
+                    (r) =>
+                      `${tOr(`gear.role.${r.role}`, "gear.role.dealer")} (${r.basis === "brand" ? t("gear.basisBrand", { brand: brand.name }) : t("gear.basisSelf")})`,
+                  )
+                  .join(", ")}
               </li>
             ))}
           </ul>

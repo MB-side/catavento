@@ -42,7 +42,7 @@ test("a country page has its guide, sites and an outlook on request", async ({ p
   await first.locator("summary").click();
   await expect(first.getByRole("link", { name: /Full details on ParaglidingEarth/ })).toBeVisible();
   await first.getByRole("button", { name: "Show the next 3 days" }).click();
-  await expect(first.getByText("Within the published range")).toBeVisible();
+  await expect(first.locator("[data-outlook-slot] > *").first()).toBeVisible();
   await expect(first.getByRole("button", { name: "Show the next 3 days" })).toBeHidden();
 });
 

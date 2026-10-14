@@ -46,6 +46,9 @@ const problems = checkHealth({
   gearCategories: input.gearCategories,
   siteWind: input.siteWind,
   guides: input.guides,
+  dealerPages: input.brands.flatMap((b) =>
+    b.dealerPage ? [{ brand: b.name, url: b.dealerPage.url, checked: b.dealerPage.checked }] : [],
+  ),
   links,
   linkExceptions,
   workflows,

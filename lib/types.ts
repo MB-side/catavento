@@ -105,6 +105,7 @@ export interface Organisation {
   aliases?: string[];
   externalIds?: Record<string, string>; // codes other sources use for it, e.g. { safa: "CG" } (D60)
   sells?: GearCategory[]; // gear categories, as the shop publishes them (D73)
+  sellsUsed?: boolean; // it sells second-hand gear too (D84)
   disciplines: Discipline[];
   country: CountryCode;
   regionCode?: RegionCode;
@@ -281,7 +282,23 @@ export interface Brand {
   id: string;
   name: string;
   website?: string;
-  distributors: { orgId: string; role: DistributorRole }[];
+  distributors: {
+    orgId: string;
+    role: DistributorRole;
+    /** How we know (D84): the brand or its importer lists them, or the business says so itself. */
+    basis: "brand" | "self";
+    source?: string;
+    checked?: string;
+  }[];
+  /** The brand's own dealer or distributor list (D84). */
+  dealerPage?: { url: string; checked: string };
+}
+
+/** One business's link to a brand, for its card and profile (D84). */
+export interface BrandLink {
+  name: string;
+  role: DistributorRole;
+  basis: "brand" | "self";
 }
 
 export type OfferingType =
