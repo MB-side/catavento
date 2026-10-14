@@ -25,6 +25,8 @@ export const test = base.extend<{ fakeWeather: void }>({
   fakeWeather: [
     async ({ page }, use) => {
       await page.route("**/api.open-meteo.com/**", fakeForecast);
+      // Visit counting never runs in tests: it would slow every page and add test visits to the real counts.
+      await page.route(/gc\.zgo\.at|goatcounter\.com/, (route) => route.abort());
       await use();
     },
     { auto: true },
