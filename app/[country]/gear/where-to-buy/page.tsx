@@ -17,6 +17,15 @@ export async function generateMetadata({ params }: PageProps<"/[country]/gear/wh
 }
 
 /** Where to buy (docs/02 §5.8): each brand and the businesses that import, sell or service it. */
+// Importers first, then dealers, then service (D84).
+const ROLE_ORDER = [
+  "official_importer",
+  "core_importer",
+  "dealer",
+  "service_agent",
+  "certified_service",
+] as const;
+
 export default async function WhereToBuyPage({
   params,
 }: PageProps<"/[country]/gear/where-to-buy">) {
@@ -26,8 +35,9 @@ export default async function WhereToBuyPage({
     .map((b) => ({
       brand: b,
       who: b.distributors
-        .map((d) => ({ org: getOrganisation(d.orgId), role: d.role }))
-        .filter((x) => x.org?.country === country.code),
+        .map((d) => ({ org: getOrganisation(d.orgId), role: d.role, basis: d.basis }))
+        .filter((x) => x.org?.country === country.code)
+        .sort((a, b) => ROLE_ORDER.indexOf(a.role) - ROLE_ORDER.indexOf(b.role)),
     }))
     .filter((x) => x.who.length > 0);
   return (
@@ -46,12 +56,16 @@ export default async function WhereToBuyPage({
               <li key={brand.id} className={card}>
                 <h2 className="font-condensed text-[1.375rem] font-bold">{brand.name}</h2>
                 <ul className="mt-1 flex flex-col gap-1">
-                  {who.map(({ org, role }) =>
+                  {who.map(({ org, role, basis }) =>
                     org ? (
                       <li key={`${org.id}${role}`}>
                         <Link href={orgPath(org)}>{org.name}</Link>{" "}
                         <span className="text-[0.875rem] text-muted">
                           · {tOr(`gear.role.${role}`, "gear.role.dealer")}
+                          {" · "}
+                          {basis === "brand"
+                            ? t("gear.basisBrand", { brand: brand.name })
+                            : t("gear.basisSelf")}
                         </span>
                       </li>
                     ) : null,

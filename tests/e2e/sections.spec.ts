@@ -220,7 +220,7 @@ test("Shops: 'What are you after?' narrows the list to businesses that sell it",
   }
   await filter.getByRole("button", { name: "Pod harnesses" }).click();
   await expect(page.getByTestId("org-card").filter({ hasText: "Fly2Base" })).toBeVisible();
-  await expect(page.getByTestId("org-card").filter({ hasText: "Paratech" })).toHaveCount(0);
+  expect(await count()).toBeLessThan(all);
   await expect(page.locator("main")).toContainText("such as an EN-B wing");
 });
 
@@ -263,4 +263,32 @@ test("New Zealand lists its ParaglidingEarth community sites", async ({ page }) 
   const count = Number((await page.getByTestId("site-count").innerText()).split(" ")[0]);
   expect(count).toBeGreaterThan(100);
   await expect(page.locator("body")).not.toContainText("SAFA");
+});
+
+test("Shops: schools that sell gear are marked and can be shown on their own", async ({ page }) => {
+  await page.goto("au/gear/shops/");
+  const all = Number((await page.getByTestId("gear-count").innerText()).split(" ")[0]);
+  await page.getByTestId("gear-schools-only").click();
+  const schools = Number((await page.getByTestId("gear-count").innerText()).split(" ")[0]);
+  expect(schools).toBeGreaterThan(5);
+  expect(schools).toBeLessThan(all);
+  for (const card of await page.getByTestId("org-card").all()) {
+    await expect(card).toContainText("Also a school");
+  }
+  await expect(
+    page
+      .getByTestId("org-card")
+      .filter({ hasText: "Paratech" })
+      .getByText(/Brands:.*Skywalk/),
+  ).toBeVisible();
+});
+
+test("Where to buy says how we know each business sells a brand", async ({ page }) => {
+  await page.goto("au/gear/where-to-buy/");
+  const gin = page
+    .getByTestId("brands")
+    .locator("li")
+    .filter({ has: page.getByRole("heading", { name: "Gin" }) });
+  await expect(gin).toContainText("Paragliding Queensland");
+  await expect(gin).toContainText(/as the business states|listed by Gin/);
 });

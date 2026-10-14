@@ -59,12 +59,22 @@
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://activeflight.com.au/paragliding-equipment/",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:active-flight-paragliding-center",
-    "slug": "active-flight-paragliding-center"
+    "slug": "active-flight-paragliding-center",
+    "sells": [
+      "paragliders"
+    ],
+    "sellsUsed": true
   },
   {
     "legacyId": "SCH-002",
@@ -88,12 +98,27 @@
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://www.adventureplusparagliding.com.au/shop/",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:adventure-plus-paragliding",
-    "slug": "adventure-plus-paragliding"
+    "slug": "adventure-plus-paragliding",
+    "sells": [
+      "paragliders",
+      "harnesses",
+      "reserves",
+      "instruments",
+      "helmets-accessories",
+      "service"
+    ],
+    "sellsUsed": true
   },
   {
     "legacyId": "SCH-003",
@@ -174,12 +199,24 @@
         "url": "https://www.vhpa.org.au/schools.html",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://airology.com.au/",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-08",
     "verificationStatus": "needs_verification",
     "id": "org:au:airology",
-    "slug": "airology"
+    "slug": "airology",
+    "sells": [
+      "paragliders",
+      "harnesses",
+      "instruments",
+      "service"
+    ]
   },
   {
     "legacyId": "CLB-001",
@@ -303,12 +340,26 @@
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://brightflight.com.au/home/shop/",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:bright-flight",
-    "slug": "bright-flight"
+    "slug": "bright-flight",
+    "sells": [
+      "paragliders",
+      "harnesses",
+      "reserves",
+      "instruments",
+      "helmets-accessories",
+      "service"
+    ]
   },
   {
     "legacyId": "CLB-003",
@@ -440,12 +491,26 @@
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://cloudbaseparagliding.com.au/collections/paragliders",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:cloudbase-paragliding",
-    "slug": "cloudbase-paragliding"
+    "slug": "cloudbase-paragliding",
+    "sells": [
+      "paragliders",
+      "mini-speed-wings",
+      "harnesses",
+      "reserves",
+      "instruments",
+      "helmets-accessories"
+    ]
   },
   {
     "legacyId": "CLB-005",
@@ -542,12 +607,21 @@
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "http://dtkmicrolights.com.au/",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:dtk-microlights",
-    "slug": "dtk-microlights"
+    "slug": "dtk-microlights",
+    "sells": [
+      "trikes"
+    ]
   },
   {
     "legacyId": "CLB-007",
@@ -711,12 +785,24 @@
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://www.futurewings.com.au/shop",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:future-wings-paragliding",
-    "slug": "future-wings-paragliding"
+    "slug": "future-wings-paragliding",
+    "sells": [
+      "paragliders",
+      "harnesses",
+      "reserves",
+      "helmets-accessories"
+    ]
   },
   {
     "legacyId": "REG-002",
@@ -777,12 +863,26 @@
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://hangglidingwa.com.au/Equipment.php",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:hang-gliding-wa",
-    "slug": "hang-gliding-wa"
+    "slug": "hang-gliding-wa",
+    "sells": [
+      "hang-gliders",
+      "harnesses",
+      "instruments",
+      "helmets-accessories",
+      "reserves",
+      "service"
+    ]
   },
   {
     "legacyId": "TAN-001",
@@ -808,7 +908,8 @@
     "lastVerified": "2026-10-08",
     "verificationStatus": "needs_verification",
     "id": "org:au:hangglideoz",
-    "slug": "hangglideoz"
+    "slug": "hangglideoz",
+    "hidden": true
   },
   {
     "legacyId": "SCH-011",
@@ -839,6 +940,12 @@
         "url": "http://www.highadventure.com.au/",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://www.highadventure.com.au/pages/paragliding-paramotoring-gear",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
@@ -856,7 +963,8 @@
       "paramotors",
       "harnesses",
       "reserves",
-      "helmets-accessories"
+      "helmets-accessories",
+      "mini-speed-wings"
     ]
   },
   {
@@ -908,12 +1016,25 @@
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "http://www.hollywoodparagliding.com.au/Equipment.html",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:hollywood-paragliding",
-    "slug": "hollywood-paragliding"
+    "slug": "hollywood-paragliding",
+    "sells": [
+      "paragliders",
+      "harnesses",
+      "reserves",
+      "helmets-accessories",
+      "service"
+    ]
   },
   {
     "legacyId": "CLB-009",
@@ -974,12 +1095,27 @@
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://www.flymanilla.com/",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:manilla-paragliding",
-    "slug": "manilla-paragliding"
+    "slug": "manilla-paragliding",
+    "sells": [
+      "paragliders",
+      "harnesses",
+      "reserves",
+      "instruments",
+      "helmets-accessories",
+      "service"
+    ],
+    "sellsUsed": true
   },
   {
     "legacyId": "SCH-015",
@@ -1095,12 +1231,28 @@
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://www.melbourneparagliding.com/paragliders.html",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:melbourne-paragliding",
-    "slug": "melbourne-paragliding"
+    "slug": "melbourne-paragliding",
+    "sells": [
+      "paragliders",
+      "mini-speed-wings",
+      "harnesses",
+      "pod-harnesses",
+      "reserves",
+      "instruments",
+      "helmets-accessories",
+      "service"
+    ]
   },
   {
     "id": "org:au:mid-north-coast-flyers",
@@ -1167,6 +1319,12 @@
         "url": "https://www.moyes.com.au/",
         "fetchedAt": "2026-10-13",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://www.moyes.com.au/store",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
@@ -1185,7 +1343,8 @@
       "reserves",
       "instruments",
       "helmets-accessories"
-    ]
+    ],
+    "sellsUsed": true
   },
   {
     "legacyId": "CLB-011",
@@ -1380,12 +1539,27 @@
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "http://www.northsideparagliding.com.au/product-category/equipment",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:north-side-paragliding",
-    "slug": "north-side-paragliding"
+    "slug": "north-side-paragliding",
+    "sells": [
+      "paragliders",
+      "mini-speed-wings",
+      "paramotors",
+      "harnesses",
+      "reserves",
+      "instruments",
+      "helmets-accessories"
+    ]
   },
   {
     "legacyId": "CLB-015",
@@ -1660,12 +1834,26 @@
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://www.paraglidingtasmania.com.au/shop",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:paragliding-tasmania",
-    "slug": "paragliding-tasmania"
+    "slug": "paragliding-tasmania",
+    "sells": [
+      "paragliders",
+      "mini-speed-wings",
+      "harnesses",
+      "reserves",
+      "service"
+    ],
+    "sellsUsed": true
   },
   {
     "legacyId": "SCH-021",
@@ -1711,7 +1899,10 @@
       "paragliders",
       "harnesses",
       "reserves",
-      "instruments"
+      "instruments",
+      "mini-speed-wings",
+      "pod-harnesses",
+      "helmets-accessories"
     ]
   },
   {
@@ -1886,12 +2077,24 @@
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://www.seqparagliding.com/category/all-products",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:seq-paragliding",
-    "slug": "seq-paragliding"
+    "slug": "seq-paragliding",
+    "sells": [
+      "paragliders",
+      "harnesses",
+      "reserves",
+      "instruments"
+    ]
   },
   {
     "legacyId": "SCH-024",
@@ -1943,12 +2146,25 @@
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://skyoutparagliding.com/shop-main/",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:sky-out-paragliding",
-    "slug": "sky-out-paragliding"
+    "slug": "sky-out-paragliding",
+    "sells": [
+      "paragliders",
+      "harnesses",
+      "reserves",
+      "instruments",
+      "helmets-accessories"
+    ]
   },
   {
     "legacyId": "CLB-017",
@@ -2052,6 +2268,12 @@
         "url": "https://www.skysurf.com.au/paragliders/",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://www.skysurf.com.au/equipment/",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
@@ -2105,6 +2327,12 @@
         "providerId": "org-websites",
         "url": "https://www.skysurf.com.au/paragliders/",
         "fetchedAt": "2026-10-08",
+        "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://www.skysurf.com.au/equipment/",
+        "fetchedAt": "2026-10-14",
         "licence": "facts"
       }
     ],
@@ -2499,12 +2727,24 @@
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://www.trikefan.com/microlightsales.php",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:sydney-microlights",
-    "slug": "sydney-microlights"
+    "slug": "sydney-microlights",
+    "sells": [
+      "trikes",
+      "helmets-accessories",
+      "instruments"
+    ],
+    "sellsUsed": true
   },
   {
     "legacyId": "SCH-104",
@@ -2686,6 +2926,12 @@
         "url": "https://www.tribalflight.com.au",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://tribalflight.com.au/collections/all",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
@@ -2724,12 +2970,23 @@
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
         "fetchedAt": "2026-10-08",
         "licence": "facts"
+      },
+      {
+        "providerId": "org-websites",
+        "url": "https://updraftparagliding.com.au/equipment/",
+        "fetchedAt": "2026-10-14",
+        "licence": "facts"
       }
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
     "id": "org:au:updraft-paragliding",
-    "slug": "updraft-paragliding"
+    "slug": "updraft-paragliding",
+    "sells": [
+      "paragliders",
+      "harnesses",
+      "service"
+    ]
   },
   {
     "id": "org:au:upper-murray-free-flyers",
@@ -2947,7 +3204,8 @@
     "lastVerified": "2026-10-08",
     "verificationStatus": "needs_verification",
     "id": "org:au:xckms",
-    "slug": "xckms"
+    "slug": "xckms",
+    "hidden": true
   },
   {
     "legacyId": "NZ-SCH-004",

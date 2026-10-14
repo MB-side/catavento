@@ -6,42 +6,835 @@
 #   certified_service  certified to service, as it publishes
 # `org` is a seed legacy ID (merged shop rows point at their school, docs/10 D40).
 - name: Advance
-  distributors: [{ org: RTL-002, role: core_importer }, { org: SCH-021, role: service_agent }]
+  distributors:
+    [
+      { org: RTL-002, role: core_importer },
+      { org: SCH-021, role: service_agent },
+      {
+          org: org:au:manilla-paragliding,
+          role: core_importer,
+          basis: self,
+          source: https://www.flymanilla.com/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:melbourne-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://www.melbourneparagliding.com/woody-valley-harness.html,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:north-side-paragliding,
+          role: dealer,
+          basis: self,
+          source: http://www.northsideparagliding.com.au/product-category/equipment/harnesses,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:paratech-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://www.paratechpg.com/equipment-sales,
+          checked: 2026-10-14
+        }
+    ]
+- name: Aerial Pursuits
+  distributors:
+    - org: org:au:sydney-microlights
+      role: dealer
+      basis: self
+      source: https://www.trikefan.com/microlightaccessories.php
+      checked: 2026-10-14
+- name: Air Hog
+  distributors:
+    - org: org:au:sydney-microlights
+      role: dealer
+      basis: self
+      source: https://www.trikefan.com/microlightaccessories.php
+      checked: 2026-10-14
+- name: AIR3
+  distributors:
+    - org: org:au:bright-flight
+      role: dealer
+      basis: self
+      source: https://brightflight.com.au/home/shop/
+      checked: 2026-10-14
+    - org: org:au:seq-paragliding
+      role: dealer
+      basis: self
+      source: https://www.seqparagliding.com/category/all-products
+      checked: 2026-10-14
+- name: Airborne
+  distributors:
+    - org: org:au:dtk-microlights
+      role: dealer
+      basis: self
+      source: http://dtkmicrolights.com.au/
+      checked: 2026-10-14
+    - org: org:au:sydney-microlights
+      role: dealer
+      basis: self
+      source: https://www.trikefan.com/microlightsales.php
+      checked: 2026-10-14
+- name: AirDesign
+  distributors:
+    - org: org:au:cloudbase-paragliding
+      role: dealer
+      basis: self
+      source: https://cloudbaseparagliding.com.au/
+      checked: 2026-10-14
+- name: AirNest
+  distributors:
+    - org: org:au:high-adventure
+      role: dealer
+      basis: self
+      source: https://www.highadventure.com.au/collections/paramotors
+      checked: 2026-10-14
 - name: Apco
-  distributors: [{ org: SVC-001, role: certified_service }]
+  distributors: [ { org: SVC-001, role: certified_service } ]
+- name: Ascent
+  distributors:
+    - org: org:au:manilla-paragliding
+      role: core_importer
+      basis: self
+      source: https://www.flymanilla.com/
+      checked: 2026-10-14
+- name: BF
+  distributors:
+    - org: org:au:seq-paragliding
+      role: dealer
+      basis: self
+      source: https://www.seqparagliding.com/category/all-products
+      checked: 2026-10-14
 - name: BGD
-  distributors: [{ org: RTL-002, role: core_importer }, { org: RTL-001, role: dealer }, { org: SCH-021, role: service_agent }]
+  distributors:
+    [
+      { org: RTL-002, role: core_importer },
+      { org: RTL-001, role: dealer },
+      { org: SCH-021, role: service_agent },
+      {
+          org: org:au:bright-flight,
+          role: dealer,
+          basis: self,
+          source: https://brightflight.com.au/home/shop/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:paratech-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://www.paratechpg.com/equipment-sales,
+          checked: 2026-10-14
+        }
+    ]
 - name: Charly
-  distributors: [{ org: RTL-003, role: core_importer }, { org: RTL-002, role: core_importer }]
+  distributors:
+    [
+      { org: RTL-003, role: core_importer },
+      { org: RTL-002, role: core_importer },
+      {
+          org: org:au:active-flight-paragliding-center,
+          role: core_importer,
+          basis: self,
+          source: https://activeflight.com.au/paragliding-equipment/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:manilla-paragliding,
+          role: core_importer,
+          basis: self,
+          source: https://www.flymanilla.com/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:seq-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://www.seqparagliding.com/category/all-products,
+          checked: 2026-10-14
+        }
+    ]
+- name: Colorful Sky
+  distributors:
+    - org: org:au:seq-paragliding
+      role: dealer
+      basis: self
+      source: https://www.seqparagliding.com/category/all-products
+      checked: 2026-10-14
+- name: Companion
+  distributors:
+    - org: org:au:manilla-paragliding
+      role: core_importer
+      basis: self
+      source: https://www.flymanilla.com/
+      checked: 2026-10-14
 - name: Dudek
-  distributors: [{ org: RTL-002, role: core_importer }, { org: RTL-001, role: dealer }]
+  distributors:
+    [
+      { org: RTL-002, role: core_importer },
+      { org: RTL-001, role: dealer },
+      {
+          org: org:au:tribal-flight-paragliding-fox-airsports,
+          role: dealer,
+          basis: self,
+          source: https://tribalflight.com.au/collections/all,
+          checked: 2026-10-14
+        }
+    ]
+- name: Dune Rider
+  distributors:
+    - org: org:au:cloudbase-paragliding
+      role: dealer
+      basis: self
+      source: https://cloudbaseparagliding.com.au/
+      checked: 2026-10-14
 - name: Flare
-  distributors: [{ org: RTL-001, role: dealer }]
+  distributors: [ { org: RTL-001, role: dealer } ]
 - name: Flow
-  distributors: [{ org: RTL-003, role: core_importer }, { org: SCH-026, role: dealer }, { org: SCH-027, role: dealer }, { org: SVC-001, role: certified_service }]
+  distributors:
+    [
+      { org: RTL-003, role: core_importer },
+      { org: SCH-026, role: dealer },
+      { org: SCH-027, role: dealer },
+      { org: SVC-001, role: certified_service },
+      {
+          org: org:au:airology,
+          role: dealer,
+          basis: self,
+          source: https://airology.com.au/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:melbourne-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://www.melbourneparagliding.com/accessories.html,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:paragliding-tasmania,
+          role: dealer,
+          basis: self,
+          source: https://www.paraglidingtasmania.com.au/shop,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:seq-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://www.seqparagliding.com/category/all-products,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:skysurf-paragliding-canberra,
+          role: dealer,
+          basis: self,
+          source: https://www.skysurf.com.au/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:skysurf-paragliding-wollongong,
+          role: dealer,
+          basis: self,
+          source: https://www.skysurf.com.au/,
+          checked: 2026-10-14
+        }
+    ]
 - name: Flymaster
-  distributors: [{ org: RTL-002, role: core_importer }]
+  distributors:
+    [
+      { org: RTL-002, role: core_importer },
+      {
+          org: org:au:cloudbase-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://cloudbaseparagliding.com.au/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:paratech-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://www.paratechpg.com/equipment-sales,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:skysurf-paragliding-canberra,
+          role: dealer,
+          basis: self,
+          source: https://www.skysurf.com.au/instruments/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:skysurf-paragliding-wollongong,
+          role: dealer,
+          basis: self,
+          source: https://www.skysurf.com.au/instruments/,
+          checked: 2026-10-14
+        }
+    ]
+- name: Flytec
+  distributors:
+    - org: org:au:hang-gliding-wa
+      role: dealer
+      basis: self
+      source: https://hangglidingwa.com.au/Equipment.php
+      checked: 2026-10-14
+    - org: org:au:manilla-paragliding
+      role: core_importer
+      basis: self
+      source: https://www.flymanilla.com/
+      checked: 2026-10-14
+    - org: org:au:moyes-hang-gliding-academy
+      role: dealer
+      basis: self
+      source: https://www.moyes.com.au/store/instruments-radios
+      checked: 2026-10-14
+    - org: org:au:skysurf-paragliding-canberra
+      role: dealer
+      basis: self
+      source: https://www.skysurf.com.au/instruments/
+      checked: 2026-10-14
+    - org: org:au:skysurf-paragliding-wollongong
+      role: dealer
+      basis: self
+      source: https://www.skysurf.com.au/instruments/
+      checked: 2026-10-14
+- name: Garmin
+  distributors:
+    - org: org:au:sydney-microlights
+      role: dealer
+      basis: self
+      source: https://www.trikefan.com/microlightaccessories.php
+      checked: 2026-10-14
 - name: Gin
-  distributors: [{ org: SCH-019, role: official_importer }, { org: RTL-002, role: core_importer }, { org: RTL-001, role: dealer }]
+  distributors:
+    [
+      { org: SCH-019, role: official_importer },
+      { org: RTL-002, role: core_importer },
+      { org: RTL-001, role: dealer },
+      {
+          org: org:au:adventure-plus-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://www.adventureplusparagliding.com.au/shop/paragliders/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:paragliding-queensland,
+          role: official_importer,
+          basis: self,
+          source: https://www.paraglidingqueensland.com/services,
+          checked: 2026-10-14
+        }
+    ]
 - name: Gradient
-  distributors: [{ org: SVC-001, role: certified_service }]
+  distributors: [ { org: SVC-001, role: certified_service } ]
+- name: Icaro
+  distributors:
+    - org: org:au:melbourne-paragliding
+      role: dealer
+      basis: self
+      source: https://www.melbourneparagliding.com/accessories.html
+      checked: 2026-10-14
+- name: Icom
+  distributors:
+    - org: org:au:adventure-plus-paragliding
+      role: dealer
+      basis: self
+      source: https://www.adventureplusparagliding.com.au/shop/paragliders/
+      checked: 2026-10-14
+    - org: org:au:bright-flight
+      role: dealer
+      basis: self
+      source: https://brightflight.com.au/home/shop/
+      checked: 2026-10-14
+    - org: org:au:hang-gliding-wa
+      role: dealer
+      basis: self
+      source: https://hangglidingwa.com.au/Equipment.php
+      checked: 2026-10-14
+    - org: org:au:manilla-paragliding
+      role: core_importer
+      basis: self
+      source: https://www.flymanilla.com/
+      checked: 2026-10-14
+    - org: org:au:sydney-microlights
+      role: dealer
+      basis: self
+      source: https://www.trikefan.com/microlightaccessories.php
+      checked: 2026-10-14
+- name: Kortel
+  distributors:
+    - org: org:au:cloudbase-paragliding
+      role: dealer
+      basis: self
+      source: https://cloudbaseparagliding.com.au/
+      checked: 2026-10-14
+- name: Lazer
+  distributors:
+    - org: org:au:manilla-paragliding
+      role: core_importer
+      basis: self
+      source: https://www.flymanilla.com/
+      checked: 2026-10-14
+- name: Liberty
+  distributors:
+    - org: org:au:high-adventure
+      role: dealer
+      basis: self
+      source: https://www.highadventure.com.au/collections/paramotors
+      checked: 2026-10-14
+- name: Little Cloud
+  distributors:
+    - org: org:au:bright-flight
+      role: dealer
+      basis: self
+      source: https://brightflight.com.au/home/shop/
+      checked: 2026-10-14
+    - org: org:au:seq-paragliding
+      role: dealer
+      basis: self
+      source: https://www.seqparagliding.com/category/all-products
+      checked: 2026-10-14
+- name: Lynx
+  distributors:
+    - org: org:au:sydney-microlights
+      role: dealer
+      basis: self
+      source: https://www.trikefan.com/microlightaccessories.php
+      checked: 2026-10-14
+- name: MacFly
+  distributors:
+    - org: org:au:high-adventure
+      role: dealer
+      basis: self
+      source: https://www.highadventure.com.au/pages/paragliding-paramotoring-gear
+      checked: 2026-10-14
+- name: Matrix
+  distributors:
+    - org: org:au:hang-gliding-wa
+      role: dealer
+      basis: self
+      source: https://hangglidingwa.com.au/Equipment.php
+      checked: 2026-10-14
+- name: Metamorfisi
+  distributors:
+    - org: org:au:hang-gliding-wa
+      role: dealer
+      basis: self
+      source: https://hangglidingwa.com.au/Equipment.php
+      checked: 2026-10-14
+- name: Micro Avionics
+  distributors:
+    - org: org:au:high-adventure
+      role: dealer
+      basis: self
+      source: https://www.highadventure.com.au/pages/paragliding-paramotoring-gear
+      checked: 2026-10-14
+    - org: org:au:sydney-microlights
+      role: dealer
+      basis: self
+      source: https://www.trikefan.com/microlightaccessories.php
+      checked: 2026-10-14
+- name: MipBip
+  distributors:
+    - org: org:au:airology
+      role: dealer
+      basis: self
+      source: https://airology.com.au/
+      checked: 2026-10-14
+- name: Moyes
+  distributors:
+    - org: org:au:hang-gliding-wa
+      role: dealer
+      basis: self
+      source: https://hangglidingwa.com.au/Equipment.php
+      checked: 2026-10-14
+- name: Naviter
+  distributors:
+    - org: org:au:hang-gliding-wa
+      role: dealer
+      basis: self
+      source: https://hangglidingwa.com.au/Equipment.php
+      checked: 2026-10-14
+    - org: org:au:manilla-paragliding
+      role: core_importer
+      basis: self
+      source: https://www.flymanilla.com/
+      checked: 2026-10-14
+    - org: org:au:melbourne-paragliding
+      role: dealer
+      basis: self
+      source: https://www.melbourneparagliding.com/accessories.html
+      checked: 2026-10-14
+    - org: org:au:moyes-hang-gliding-academy
+      role: dealer
+      basis: self
+      source: https://www.moyes.com.au/store/instruments-radios
+      checked: 2026-10-14
+    - org: org:au:paratech-paragliding
+      role: dealer
+      basis: self
+      source: https://www.paratechpg.com/equipment-sales
+      checked: 2026-10-14
 - name: Neo
-  distributors: [{ org: RTL-003, role: core_importer }]
+  distributors:
+    [
+      { org: RTL-003, role: core_importer },
+      {
+          org: org:au:airology,
+          role: dealer,
+          basis: self,
+          source: https://airology.com.au/,
+          checked: 2026-10-14
+        }
+    ]
+- name: Nirvana
+  distributors:
+    - org: org:au:high-adventure
+      role: dealer
+      basis: self
+      source: https://www.highadventure.com.au/pages/paragliding-paramotoring-gear
+      checked: 2026-10-14
 - name: Niviuk
-  distributors: [{ org: RTL-001, role: dealer }, { org: SCH-026, role: dealer }, { org: SCH-027, role: dealer }, { org: SCH-021, role: service_agent }]
+  distributors:
+    [
+      { org: RTL-001, role: dealer },
+      { org: SCH-026, role: dealer },
+      { org: SCH-027, role: dealer },
+      { org: SCH-021, role: service_agent },
+      {
+          org: org:au:bright-flight,
+          role: dealer,
+          basis: self,
+          source: https://brightflight.com.au/home/shop/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:future-wings-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://www.futurewings.com.au/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:high-adventure,
+          role: dealer,
+          basis: self,
+          source: https://www.highadventure.com.au/pages/paragliding-paramotoring-gear,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:paratech-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://www.paratechpg.com/equipment-sales,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:seq-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://www.seqparagliding.com/category/all-products,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:skysurf-paragliding-canberra,
+          role: dealer,
+          basis: self,
+          source: https://www.skysurf.com.au/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:skysurf-paragliding-wollongong,
+          role: dealer,
+          basis: self,
+          source: https://www.skysurf.com.au/,
+          checked: 2026-10-14
+        }
+    ]
 - name: Nova
-  distributors: [{ org: RTL-002, role: core_importer }, { org: SCH-021, role: service_agent }, { org: SVC-001, role: certified_service }]
+  distributors:
+    [
+      { org: RTL-002, role: core_importer },
+      { org: SCH-021, role: service_agent },
+      { org: SVC-001, role: certified_service },
+      {
+          org: org:au:active-flight-paragliding-center,
+          role: core_importer,
+          basis: self,
+          source: https://activeflight.com.au/paragliding-equipment/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:paratech-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://www.paratechpg.com/equipment-sales,
+          checked: 2026-10-14
+        }
+    ]
 - name: Ozone
-  distributors: [{ org: RTL-003, role: core_importer }, { org: RTL-002, role: core_importer }, { org: RTL-001, role: dealer }]
+  distributors:
+    [
+      { org: RTL-003, role: core_importer },
+      { org: RTL-002, role: core_importer },
+      { org: RTL-001, role: dealer },
+      {
+          org: org:au:active-flight-paragliding-center,
+          role: core_importer,
+          basis: self,
+          source: https://activeflight.com.au/paragliding-equipment/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:high-adventure,
+          role: dealer,
+          basis: self,
+          source: https://www.highadventure.com.au/collections/paragliding-wings,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:paragliding-tasmania,
+          role: dealer,
+          basis: self,
+          source: https://www.paraglidingtasmania.com.au/shop,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:sky-out-paragliding,
+          role: official_importer,
+          basis: self,
+          source: https://skyoutparagliding.com/,
+          checked: 2026-10-14
+        }
+    ]
+- name: Parajet
+  distributors:
+    - org: org:au:high-adventure
+      role: dealer
+      basis: self
+      source: https://www.highadventure.com.au/pages/paragliding-paramotoring-gear
+      checked: 2026-10-14
+    - org: org:au:north-side-paragliding
+      role: dealer
+      basis: self
+      source: http://www.northsideparagliding.com.au/product-category/equipment/paramotors
+      checked: 2026-10-14
+    - org: org:au:tribal-flight-paragliding-fox-airsports
+      role: dealer
+      basis: self
+      source: https://tribalflight.com.au/
+      checked: 2026-10-14
 - name: PHI
-  distributors: [{ org: RTL-002, role: core_importer }, { org: RTL-001, role: dealer }, { org: SCH-021, role: service_agent }]
+  distributors:
+    [
+      { org: RTL-002, role: core_importer },
+      { org: RTL-001, role: dealer },
+      { org: SCH-021, role: service_agent },
+      {
+          org: org:au:paratech-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://www.paratechpg.com/equipment-sales,
+          checked: 2026-10-14
+        }
+    ]
+- name: Raptor Designs
+  distributors:
+    - org: org:au:sydney-microlights
+      role: dealer
+      basis: self
+      source: https://www.trikefan.com/microlightaccessories.php
+      checked: 2026-10-14
 - name: Skywalk
-  distributors: [{ org: SCH-021, role: official_importer }, { org: SVC-001, role: certified_service }]
+  distributors:
+    [
+      { org: SCH-021, role: official_importer },
+      { org: SVC-001, role: certified_service },
+      {
+          org: org:au:airology,
+          role: dealer,
+          basis: self,
+          source: https://airology.com.au/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:paratech-paragliding,
+          role: official_importer,
+          basis: self,
+          source: https://www.paratechpg.com/equipment-sales,
+          checked: 2026-10-14
+        }
+    ]
 - name: Sup'Air
-  distributors: [{ org: SCH-019, role: official_importer }, { org: RTL-002, role: core_importer }]
+  distributors:
+    [
+      { org: SCH-019, role: official_importer },
+      { org: RTL-002, role: core_importer },
+      {
+          org: org:au:airology,
+          role: dealer,
+          basis: self,
+          source: https://airology.com.au/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:bright-flight,
+          role: dealer,
+          basis: self,
+          source: https://brightflight.com.au/home/shop/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:cloudbase-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://cloudbaseparagliding.com.au/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:melbourne-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://www.melbourneparagliding.com/accessories.html,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:paragliding-queensland,
+          role: official_importer,
+          basis: self,
+          source: https://www.paraglidingqueensland.com/services,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:paratech-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://www.paratechpg.com/equipment-sales,
+          checked: 2026-10-14
+        }
+    ]
+- name: Swing
+  distributors:
+    - org: org:au:updraft-paragliding
+      role: dealer
+      basis: self
+      source: https://updraftparagliding.com.au/equipment/
+      checked: 2026-10-14
 - name: Syride
-  distributors: [{ org: RTL-002, role: core_importer }]
+  distributors:
+    [
+      { org: RTL-002, role: core_importer },
+      {
+          org: org:au:airology,
+          role: dealer,
+          basis: self,
+          source: https://airology.com.au/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:manilla-paragliding,
+          role: core_importer,
+          basis: self,
+          source: https://www.flymanilla.com/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:paratech-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://www.paratechpg.com/equipment-sales,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:seq-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://www.seqparagliding.com/category/all-products,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:sky-out-paragliding,
+          role: core_importer,
+          basis: self,
+          source: https://skyoutparagliding.com/,
+          checked: 2026-10-14
+        }
+    ]
+- name: Triple Seven
+  distributors:
+    - org: org:au:melbourne-paragliding
+      role: dealer
+      basis: self
+      source: https://www.melbourneparagliding.com/paragliders.html
+      checked: 2026-10-14
+    - org: org:au:paragliding-tasmania
+      role: dealer
+      basis: self
+      source: https://www.paraglidingtasmania.com.au/shop
+      checked: 2026-10-14
+    - org: org:au:sky-out-paragliding
+      role: official_importer
+      basis: self
+      source: https://skyoutparagliding.com/
+      checked: 2026-10-14
+- name: U-Turn
+  distributors:
+    - org: org:au:hollywood-paragliding
+      role: dealer
+      basis: self
+      source: http://www.hollywoodparagliding.com.au/Equipment.html
+      checked: 2026-10-14
+- name: UP
+  distributors:
+    - org: org:au:high-adventure
+      role: dealer
+      basis: self
+      source: https://www.highadventure.com.au/pages/paragliding-paramotoring-gear
+      checked: 2026-10-14
+- name: Vittorazi
+  distributors:
+    - org: org:au:tribal-flight-paragliding-fox-airsports
+      role: dealer
+      basis: self
+      source: https://tribalflight.com.au/collections/all
+      checked: 2026-10-14
 - name: Woody Valley
-  distributors: [{ org: RTL-003, role: core_importer }, { org: RTL-002, role: core_importer }]
+  distributors:
+    [
+      { org: RTL-003, role: core_importer },
+      { org: RTL-002, role: core_importer },
+      {
+          org: org:au:airology,
+          role: dealer,
+          basis: self,
+          source: https://airology.com.au/,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:melbourne-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://www.melbourneparagliding.com/woody-valley-harness.html,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:paragliding-tasmania,
+          role: dealer,
+          basis: self,
+          source: https://www.paraglidingtasmania.com.au/shop,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:sky-out-paragliding,
+          role: dealer,
+          basis: self,
+          source: https://skyoutparagliding.com/,
+          checked: 2026-10-14
+        }
+    ]
 - name: XC Tracer
-  distributors: [{ org: RTL-002, role: core_importer }]
+  distributors: [ { org: RTL-002, role: core_importer } ]

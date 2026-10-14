@@ -76,12 +76,16 @@ export interface BuildInputs {
   sampleSites: SampleSiteInput[];
   sampleSitesChecked: string;
   offerings: OfferingInput[];
-  gearCategories: { org: string; sells: GearCategory[]; source: string; checked: string }[];
+  gearCategories: { org: string; sells: GearCategory[]; used?: boolean; source: string; checked: string }[];
   siteWind: SiteWindInput[];
   overview: OverviewRegion[];
   guides: CountryGuide[];
   ingestedOverviewSites: OverviewSite[];
-  brands: { name: string; website?: string; distributors: { org: string; role: Brand["distributors"][number]["role"] }[] }[];
+  brands: {
+    name: string;
+    website?: string;
+    distributors: { org: string; role: Brand["distributors"][number]["role"]; basis?: "brand" | "self"; source?: string; checked?: string }[];
+  }[];
 }
 
 export interface BuildOutputs {
@@ -178,6 +182,7 @@ export function buildData(input: BuildInputs): BuildOutputs {
       continue;
     }
     org.sells = [...new Set([...(org.sells ?? []), ...entry.sells])];
+    if (entry.used) org.sellsUsed = true;
     if (!org.sources.some((s) => s.url === entry.source)) {
       org.sources = [...org.sources, { providerId: "org-websites", url: entry.source, fetchedAt: entry.checked, licence: "facts" }];
     }
@@ -283,7 +288,9 @@ export function buildData(input: BuildInputs): BuildOutputs {
         distributors: b.distributors.flatMap((d) => {
           const orgId = resolveOrgRef(d.org, withClubs);
           if (!orgId) warnings.push({ code: "brand-org-missing", message: `brands.yaml: ${b.name}: no organisation ${d.org}` });
-          return orgId ? [{ orgId, role: d.role }] : [];
+          return orgId
+            ? [{ orgId, role: d.role, basis: d.basis ?? "self", ...(d.source ? { source: d.source } : {}), ...(d.checked ? { checked: d.checked } : {}) }]
+            : [];
         }),
       }))
       .sort(byId),

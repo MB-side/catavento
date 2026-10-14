@@ -1,8 +1,8 @@
 // Directory views (docs/02 §5.8–5.9): schools, tandem providers, gear businesses and profiles,
 // gathered from lib/data at build time.
 import "server-only";
-import { getOfferings, getOrganisations } from "@/lib/data";
-import type { Country, Offering, Organisation, OrgKind } from "@/lib/types";
+import { getBrands, getOfferings, getOrganisations } from "@/lib/data";
+import type { BrandLink, Country, Offering, Organisation, OrgKind } from "@/lib/types";
 
 const has = (o: Organisation, kinds: OrgKind[]) =>
   kinds.includes(o.kind) || (o.additionalKinds ?? []).some((k) => kinds.includes(k));
@@ -35,8 +35,11 @@ export function tandemProviders(country: Country): Organisation[] {
 }
 
 export function gearOrgs(country: Country): Organisation[] {
-  return directoryOrgs(country).filter((o) =>
-    has(o, ["retailer", "importer_distributor", "manufacturer", "service_centre"]),
+  // Shops, importers and service centres, plus schools and others that sell gear (D84).
+  return directoryOrgs(country).filter(
+    (o) =>
+      has(o, ["retailer", "importer_distributor", "manufacturer", "service_centre"]) ||
+      (o.sells?.length ?? 0) > 0,
   );
 }
 
@@ -57,4 +60,15 @@ export function byRegion(country: Country, orgs: Organisation[]) {
   return keys
     .map((code) => ({ code, orgs: orgs.filter((o) => (o.regionCode ?? "") === code) }))
     .filter((g) => g.orgs.length > 0);
+}
+
+/** Every business's brands, keyed by organisation ID. */
+export function brandsByOrg(): Record<string, BrandLink[]> {
+  const out: Record<string, BrandLink[]> = {};
+  for (const b of getBrands()) {
+    for (const d of b.distributors)
+      (out[d.orgId] ??= []).push({ name: b.name, role: d.role, basis: d.basis });
+  }
+  for (const list of Object.values(out)) list.sort((a, b) => a.name.localeCompare(b.name));
+  return out;
 }

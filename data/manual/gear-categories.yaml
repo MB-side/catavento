@@ -4,51 +4,306 @@
 # Each entry cites where the categories come from, checked on the date given. We list categories
 # only, never stock, models or classes: those are on each shop's own website.
 - org: RTL-002 # Fly2Base: its site's shop menu
-  sells: [paragliders, mini-speed-wings, paramotors, harnesses, pod-harnesses, reserves, instruments, helmets-accessories, service]
+  sells:
+    [
+      paragliders,
+      mini-speed-wings,
+      paramotors,
+      harnesses,
+      pod-harnesses,
+      reserves,
+      instruments,
+      helmets-accessories,
+      service
+    ]
   source: https://fly2base.com
   checked: "2026-10-13"
 - org: RTL-001 # Paragliding Shop: its site's shop menu (lists pod harnesses)
-  sells: [paragliders, mini-speed-wings, paramotors, harnesses, pod-harnesses, reserves, helmets-accessories]
+  sells:
+    [
+      paragliders,
+      mini-speed-wings,
+      paramotors,
+      harnesses,
+      pod-harnesses,
+      reserves,
+      helmets-accessories
+    ]
   source: https://paraglidingshop.com.au
   checked: "2026-10-13"
 - org: RTL-003 # Planet Paragliding: research notes (its site declines automated visits)
-  sells: [paragliders, instruments, service]
+  sells: [ paragliders, instruments, service ]
   source: https://planetparagliding.com.au
   checked: "2026-10-08"
 - org: SCH-021 # Paratech: its Equipment Sales page
-  sells: [paragliders, harnesses, reserves, instruments]
+  sells: [ paragliders, harnesses, reserves, instruments ]
   source: https://www.paratechpg.com/equipment-sales
   checked: "2026-10-13"
 - org: SCH-019 # Paragliding Queensland: official importer of Gin Gliders and Sup'Air (its site), whose own
   # sites list paragliders, harnesses and reserves (gingliders.com, supair.com); repairs per its site
-  sells: [paragliders, harnesses, reserves, service]
+  sells: [ paragliders, harnesses, reserves, service ]
   source: https://www.paraglidingqueensland.com/
   checked: "2026-10-13"
 - org: SCH-026 # SkySurf: its Paragliders sales page
-  sells: [paragliders, mini-speed-wings, paramotors, harnesses, reserves, instruments, helmets-accessories]
+  sells:
+    [
+      paragliders,
+      mini-speed-wings,
+      paramotors,
+      harnesses,
+      reserves,
+      instruments,
+      helmets-accessories
+    ]
   source: https://www.skysurf.com.au/paragliders/
   checked: "2026-10-13"
 - org: SCH-027
-  sells: [paragliders, mini-speed-wings, paramotors, harnesses, reserves, instruments, helmets-accessories]
+  sells:
+    [
+      paragliders,
+      mini-speed-wings,
+      paramotors,
+      harnesses,
+      reserves,
+      instruments,
+      helmets-accessories
+    ]
   source: https://www.skysurf.com.au/paragliders/
   checked: "2026-10-13"
 - org: SCH-011 # High Adventure: its site's shop menu
-  sells: [paragliders, paramotors, harnesses, reserves, helmets-accessories]
+  sells: [ paragliders, paramotors, harnesses, reserves, helmets-accessories ]
   source: http://www.highadventure.com.au/
   checked: "2026-10-13"
 - org: SCH-030 # Tribal Flight: research notes (its site declines automated visits)
-  sells: [paragliders, paramotors]
+  sells: [ paragliders, paramotors ]
   source: https://www.tribalflight.com.au
   checked: "2026-10-08"
 - org: SVC-001 # Paragliding Repair Centre: its site
-  sells: [service]
+  sells: [ service ]
   source: https://paraglidingrepaircentre.com.au/
   checked: "2026-10-13"
 - org: SCH-017 # Moyes (manufacturer and academy): its site's menu (hang gliding gear)
-  sells: [hang-gliders, harnesses, reserves, instruments, helmets-accessories]
+  sells: [ hang-gliders, harnesses, reserves, instruments, helmets-accessories ]
   source: https://www.moyes.com.au/
   checked: "2026-10-13"
 - org: MFG-002 # Airborne Windsports: research notes
-  sells: [hang-gliders, trikes]
+  sells: [ hang-gliders, trikes ]
   source: http://www.airborne.com.au
   checked: "2026-10-08"
+- org: org:au:active-flight-paragliding-center
+  sells:
+    - paragliders
+  used: true
+  source: https://activeflight.com.au/paragliding-equipment/
+  checked: 2026-10-14
+- org: org:au:adventure-plus-paragliding
+  sells:
+    - paragliders
+    - harnesses
+    - reserves
+    - instruments
+    - helmets-accessories
+    - service
+  used: true
+  source: https://www.adventureplusparagliding.com.au/shop/
+  checked: 2026-10-14
+- org: org:au:airology
+  sells:
+    - paragliders
+    - harnesses
+    - instruments
+    - service
+  source: https://airology.com.au/
+  checked: 2026-10-14
+- org: org:au:bright-flight
+  sells:
+    - paragliders
+    - harnesses
+    - reserves
+    - instruments
+    - helmets-accessories
+    - service
+  source: https://brightflight.com.au/home/shop/
+  checked: 2026-10-14
+- org: org:au:cloudbase-paragliding
+  sells:
+    - paragliders
+    - mini-speed-wings
+    - harnesses
+    - reserves
+    - instruments
+    - helmets-accessories
+  source: https://cloudbaseparagliding.com.au/collections/paragliders
+  checked: 2026-10-14
+- org: org:au:dtk-microlights
+  sells:
+    - trikes
+  source: http://dtkmicrolights.com.au/
+  checked: 2026-10-14
+- org: org:au:future-wings-paragliding
+  sells:
+    - paragliders
+    - harnesses
+    - reserves
+    - helmets-accessories
+  source: https://www.futurewings.com.au/shop
+  checked: 2026-10-14
+- org: org:au:hang-gliding-wa
+  sells:
+    - hang-gliders
+    - harnesses
+    - instruments
+    - helmets-accessories
+    - reserves
+    - service
+  source: https://hangglidingwa.com.au/Equipment.php
+  checked: 2026-10-14
+- org: org:au:high-adventure
+  sells:
+    - paragliders
+    - mini-speed-wings
+    - paramotors
+    - harnesses
+    - reserves
+    - helmets-accessories
+  source: https://www.highadventure.com.au/pages/paragliding-paramotoring-gear
+  checked: 2026-10-14
+- org: org:au:hollywood-paragliding
+  sells:
+    - paragliders
+    - harnesses
+    - reserves
+    - helmets-accessories
+    - service
+  source: http://www.hollywoodparagliding.com.au/Equipment.html
+  checked: 2026-10-14
+- org: org:au:manilla-paragliding
+  sells:
+    - paragliders
+    - harnesses
+    - reserves
+    - instruments
+    - helmets-accessories
+    - service
+  used: true
+  source: https://www.flymanilla.com/
+  checked: 2026-10-14
+- org: org:au:melbourne-paragliding
+  sells:
+    - paragliders
+    - mini-speed-wings
+    - harnesses
+    - pod-harnesses
+    - reserves
+    - instruments
+    - helmets-accessories
+    - service
+  source: https://www.melbourneparagliding.com/paragliders.html
+  checked: 2026-10-14
+- org: org:au:moyes-hang-gliding-academy
+  sells:
+    - hang-gliders
+    - harnesses
+    - reserves
+    - instruments
+    - helmets-accessories
+  used: true
+  source: https://www.moyes.com.au/store
+  checked: 2026-10-14
+- org: org:au:north-side-paragliding
+  sells:
+    - paragliders
+    - mini-speed-wings
+    - paramotors
+    - harnesses
+    - reserves
+    - instruments
+    - helmets-accessories
+  source: http://www.northsideparagliding.com.au/product-category/equipment
+  checked: 2026-10-14
+- org: org:au:paragliding-queensland
+  sells:
+    - paragliders
+    - harnesses
+    - service
+  source: https://www.paraglidingqueensland.com/
+  checked: 2026-10-14
+- org: org:au:paragliding-tasmania
+  sells:
+    - paragliders
+    - mini-speed-wings
+    - harnesses
+    - reserves
+    - service
+  used: true
+  source: https://www.paraglidingtasmania.com.au/shop
+  checked: 2026-10-14
+- org: org:au:paratech-paragliding
+  sells:
+    - paragliders
+    - mini-speed-wings
+    - harnesses
+    - pod-harnesses
+    - reserves
+    - instruments
+    - helmets-accessories
+  source: https://www.paratechpg.com/equipment-sales
+  checked: 2026-10-14
+- org: org:au:seq-paragliding
+  sells:
+    - paragliders
+    - harnesses
+    - reserves
+    - instruments
+  source: https://www.seqparagliding.com/category/all-products
+  checked: 2026-10-14
+- org: org:au:sky-out-paragliding
+  sells:
+    - paragliders
+    - harnesses
+    - reserves
+    - instruments
+    - helmets-accessories
+  source: https://skyoutparagliding.com/shop-main/
+  checked: 2026-10-14
+- org: org:au:skysurf-paragliding-canberra
+  sells:
+    - paragliders
+    - mini-speed-wings
+    - harnesses
+    - reserves
+    - instruments
+    - helmets-accessories
+  source: https://www.skysurf.com.au/equipment/
+  checked: 2026-10-14
+- org: org:au:skysurf-paragliding-wollongong
+  sells:
+    - paragliders
+    - mini-speed-wings
+    - harnesses
+    - reserves
+    - instruments
+    - helmets-accessories
+  source: https://www.skysurf.com.au/equipment/
+  checked: 2026-10-14
+- org: org:au:sydney-microlights
+  sells:
+    - trikes
+    - helmets-accessories
+    - instruments
+  used: true
+  source: https://www.trikefan.com/microlightsales.php
+  checked: 2026-10-14
+- org: org:au:tribal-flight-paragliding-fox-airsports
+  sells:
+    - paragliders
+    - paramotors
+  source: https://tribalflight.com.au/collections/all
+  checked: 2026-10-14
+- org: org:au:updraft-paragliding
+  sells:
+    - paragliders
+    - harnesses
+    - service
+  source: https://updraftparagliding.com.au/equipment/
+  checked: 2026-10-14

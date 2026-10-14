@@ -753,7 +753,13 @@
       "other": "{count} businesses"
     },
     "categoriesNote": "What each business sells is taken from its own website, or from our research where a site couldn't be read. Categories only: we don't list stock.",
-    "findByType": "Find shops by what they sell"
+    "findByType": "Find shops by what they sell",
+    "alsoSchool": "Also a school",
+    "schoolsOnly": "Schools that sell gear",
+    "usedToo": "used gear too",
+    "brandsLabel": "Brands",
+    "basisBrand": "listed by {brand}",
+    "basisSelf": "as the business states"
   },
   "whatsOn": {
     "intro": "Competitions, fly-ins, club events and courses, from the national body and club websites.",

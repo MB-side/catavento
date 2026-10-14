@@ -4,9 +4,9 @@
 // the businesses that say they sell it. Pre-rendered in full, so it works without JavaScript.
 import { useState } from "react";
 import { OrgCard } from "@/components/domain/OrgCard";
-import { GEAR_CATEGORIES, type GearCategory } from "@/lib/gear";
+import { GEAR_CATEGORIES, isSchool, type GearCategory } from "@/lib/gear";
 import { t, tOr } from "@/lib/messages";
-import type { Offering, Organisation } from "@/lib/types";
+import type { BrandLink, Offering, Organisation } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 export function GearExplorer({
@@ -14,15 +14,21 @@ export function GearExplorer({
   regionNames,
   prices,
   timeZone,
+  brands = {},
 }: {
   orgs: Organisation[];
   regionNames: Record<string, string>;
   prices: Record<string, Offering | undefined>;
   timeZone: string;
+  brands?: Record<string, BrandLink[]>;
 }) {
   const [want, setWant] = useState<GearCategory | "">("");
+  const [schoolsOnly, setSchoolsOnly] = useState(false);
   const offered = GEAR_CATEGORIES.filter((c) => orgs.some((o) => o.sells?.includes(c)));
-  const shown = want ? orgs.filter((o) => o.sells?.includes(want)) : orgs;
+  const anySchools = orgs.some(isSchool);
+  const shown = orgs.filter(
+    (o) => (!want || o.sells?.includes(want)) && (!schoolsOnly || isSchool(o)),
+  );
   const form = new Intl.PluralRules("en").select(shown.length) === "one" ? "one" : "other";
   const chip = (on: boolean) =>
     cn(
@@ -56,6 +62,17 @@ export function GearExplorer({
             </button>
           ))}
         </div>
+        {anySchools && (
+          <button
+            type="button"
+            aria-pressed={schoolsOnly}
+            onClick={() => setSchoolsOnly((v) => !v)}
+            className={cn(chip(schoolsOnly), "mt-3")}
+            data-testid="gear-schools-only"
+          >
+            {t("gear.schoolsOnly")}
+          </button>
+        )}
         <p className="mt-3 text-[0.875rem] text-muted">{t("gear.specificNote")}</p>
       </fieldset>
       <p aria-live="polite" className="font-semibold" data-testid="gear-count">
@@ -69,6 +86,8 @@ export function GearExplorer({
             regionName={o.regionCode ? regionNames[o.regionCode] : undefined}
             price={prices[o.id]}
             timeZone={timeZone}
+            brands={brands[o.id]}
+            gearContext
           />
         ))}
       </ul>
