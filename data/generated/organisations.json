@@ -808,7 +808,8 @@
     "lastVerified": "2026-10-08",
     "verificationStatus": "needs_verification",
     "id": "org:au:hangglideoz",
-    "slug": "hangglideoz"
+    "slug": "hangglideoz",
+    "hidden": true
   },
   {
     "legacyId": "SCH-011",
@@ -2947,7 +2948,8 @@
     "lastVerified": "2026-10-08",
     "verificationStatus": "needs_verification",
     "id": "org:au:xckms",
-    "slug": "xckms"
+    "slug": "xckms",
+    "hidden": true
   },
   {
     "legacyId": "NZ-SCH-004",

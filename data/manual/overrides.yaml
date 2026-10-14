@@ -40,9 +40,13 @@ site:au:nsw:possum-shoot: { hidden: true, note: "Duplicate of site:au:nsw:possum
 TAN-001:
   website: https://www.hangglideoz.com.au/
   sources: [{ providerId: org-websites, url: "https://www.hangglideoz.com.au/", fetchedAt: "2026-10-13", licence: facts }]
-  note: "Website found 2026-10-13; replaces the dead VisitNSW source"
+  note: "Website found 2026-10-13; replaces the dead VisitNSW source. Hidden 2026-10-14: its website says the business is closing (founder)"
+  hidden: true
 
 # Warren Wind Sports: only source a 2012 article, no website, not in SAFA's school directory, and
 # nothing current found online (checked 2026-10-13). Hidden at the founder's request; one line
 # brings it back if it's shown to be operating.
 SCH-105: { hidden: true, note: "No current evidence of operation (founder, 2026-10-13)" }
+
+# XCkms: its web address no longer resolves (checked 2026-10-14). Hidden at the founder's request.
+SCH-103: { hidden: true, note: "Website gone (founder, 2026-10-14)" }
