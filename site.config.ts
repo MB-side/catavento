@@ -2,6 +2,13 @@
 
 export type SpeedUnit = "kmh" | "kt";
 
+/** Cookie-less visit counting (D85). Off until `enabled` is true and `code` is the GoatCounter site name. */
+export interface AnalyticsConfig {
+  enabled: boolean;
+  provider: "goatcounter";
+  code: string;
+}
+
 export const siteConfig = {
   name: "Catavento",
   descriptor: "Paragliding and hang gliding, all in one place",
@@ -22,7 +29,7 @@ export const siteConfig = {
     recordField: "entry.1432268283", // "Record ID", filled in on record pages
   },
   contactEmail: "housethermal.app@gmail.com", // takedown, bot policy and feedback fallback; replace with a Catavento address when one exists
-  analytics: { enabled: false, provider: "" },
+  analytics: { enabled: true, provider: "goatcounter", code: "catavento" } as AnalyticsConfig,
   showPartnerPreviews: false, // docs/02 §5.13
   allowIndexing: false, // search engines kept out until consultation launch (M7)
   defaultCountry: "AU",

@@ -1,5 +1,6 @@
 import { PageHeader } from "@/components/layout/PageHeader";
 import { PolicySection } from "@/components/layout/PolicySection";
+import { analyticsScript } from "@/lib/analytics";
 import { t } from "@/lib/messages";
 import { pageMetadata } from "@/lib/seo";
 import { siteConfig } from "@/site.config";
@@ -16,12 +17,18 @@ const GITHUB_DATA =
 
 /** Privacy (docs/07 §8). Not legal advice. */
 export default function PrivacyPage() {
+  const counting = analyticsScript(siteConfig.analytics) !== null;
   return (
     <div className="flex flex-col gap-4">
       <PageHeader title={t("pages.privacy.title")} intro={t("privacy.intro")} />
       <PolicySection id="accounts" heading={t("privacy.accountsHeading")}>
-        <p>{t("privacy.accountsText")}</p>
+        <p>{t(counting ? "privacy.accountsTextCounting" : "privacy.accountsText")}</p>
       </PolicySection>
+      {counting && (
+        <PolicySection id="counting" heading={t("privacy.countingHeading")}>
+          <p>{t("privacy.countingText")}</p>
+        </PolicySection>
+      )}
       <PolicySection id="device" heading={t("privacy.deviceHeading")}>
         <p>{t("privacy.deviceText")}</p>
       </PolicySection>

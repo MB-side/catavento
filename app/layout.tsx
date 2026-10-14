@@ -7,6 +7,7 @@ import { BottomTabBar } from "@/components/layout/SiteNav";
 import { t } from "@/lib/messages";
 import { absoluteUrl, withBasePath } from "@/lib/paths";
 import { homeTitle, jsonLdScript, organizationJsonLd, robots } from "@/lib/seo";
+import { Analytics } from "@/components/layout/Analytics";
 import { siteConfig } from "@/site.config";
 import "./globals.css";
 import { Anchor } from "@/components/ui/anchor";
@@ -68,6 +69,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </main>
         <SiteFooter />
         <BottomTabBar />
+        <Analytics />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: jsonLdScript(organizationJsonLd()) }}
