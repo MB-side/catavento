@@ -717,7 +717,9 @@
       "service_agent": "Agent",
       "certified_service": "Certified service"
     },
-    "brandsNote": "Roles are as each business describes itself. Brands not listed may still be available: ask the shops.",
+    "brandsNote": "Each line says how we know: the brand lists the business, or the business says so on its own website. Brands not listed may still be available: ask the shops.",
+    "dealerPagesNote": "Brands keep their own lists of dealers and importers. Check there for the latest.",
+    "dealerPage": "{brand}'s own dealer list",
     "usedIntro": "Used gear can be a good way to start, as long as it suits you and is in good condition. Before you buy, check:",
     "used1": "the wing's certification class, and that its weight range suits you;",
     "used2": "its age and how many hours it has flown;",

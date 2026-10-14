@@ -85,6 +85,7 @@ export interface BuildInputs {
     name: string;
     website?: string;
     distributors: { org: string; role: Brand["distributors"][number]["role"]; basis?: "brand" | "self"; source?: string; checked?: string }[];
+    dealerPage?: Brand["dealerPage"];
   }[];
 }
 
@@ -292,6 +293,7 @@ export function buildData(input: BuildInputs): BuildOutputs {
             ? [{ orgId, role: d.role, basis: d.basis ?? "self", ...(d.source ? { source: d.source } : {}), ...(d.checked ? { checked: d.checked } : {}) }]
             : [];
         }),
+        ...(b.dealerPage ? { dealerPage: b.dealerPage } : {}),
       }))
       .sort(byId),
     offerings,

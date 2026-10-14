@@ -290,6 +290,8 @@ export interface Brand {
     source?: string;
     checked?: string;
   }[];
+  /** The brand's own dealer or distributor list (D84). */
+  dealerPage?: { url: string; checked: string };
 }
 
 /** One business's link to a brand, for its card and profile (D84). */

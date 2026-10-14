@@ -291,4 +291,13 @@ test("Where to buy says how we know each business sells a brand", async ({ page 
     .filter({ has: page.getByRole("heading", { name: "Gin" }) });
   await expect(gin).toContainText("Paragliding Queensland");
   await expect(gin).toContainText(/as the business states|listed by Gin/);
+  // Each brand links to its own dealer list, in a new tab.
+  const nova = page
+    .getByTestId("brands")
+    .locator("li")
+    .filter({ has: page.getByRole("heading", { name: "Nova" }) });
+  await expect(nova.getByRole("link", { name: /Nova's own dealer list/ })).toHaveAttribute(
+    "href",
+    "https://www.nova.eu/en/try-buy/",
+  );
 });

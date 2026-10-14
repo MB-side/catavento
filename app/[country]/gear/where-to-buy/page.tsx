@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { card, PageHeader } from "@/components/layout/PageHeader";
+import { Anchor } from "@/components/ui/anchor";
 import { orgPath } from "@/lib/clubs";
 import { countryFromParams } from "@/lib/country";
 import { getBrands, getOrganisation } from "@/lib/data";
@@ -47,6 +48,7 @@ export default async function WhereToBuyPage({
         intro={t("gear.whereText", { country: country.name })}
         crumb={{ href: `/${country.code.toLowerCase()}/gear`, label: t("pages.gear.title") }}
       />
+      {brands.length > 0 && <p>{t("gear.dealerPagesNote")}</p>}
       {brands.length === 0 ? (
         <p className={card}>{t("gear.noneYet", { country: country.name })}</p>
       ) : (
@@ -71,6 +73,13 @@ export default async function WhereToBuyPage({
                     ) : null,
                   )}
                 </ul>
+                {brand.dealerPage && (
+                  <p className="mt-2 text-[0.9375rem]">
+                    <Anchor href={brand.dealerPage.url}>
+                      {t("gear.dealerPage", { brand: brand.name })}
+                    </Anchor>
+                  </p>
+                )}
               </li>
             ))}
           </ul>
