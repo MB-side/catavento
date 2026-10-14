@@ -5,7 +5,13 @@ import type { Provider, ProviderRun } from "@/lib/types";
 const DAY_MS = 86_400_000;
 
 /** How long hand-entered facts stay fresh before they're re-checked on the official page. */
-export const USE_BY_DAYS = { prices: 183, gear: 365, siteWind: 365, guides: 365, dealerPages: 365 } as const;
+export const USE_BY_DAYS = {
+  prices: 183,
+  gear: 365,
+  siteWind: 365,
+  guides: 365,
+  dealerPages: 365,
+} as const;
 /** The outside-link check runs monthly; a report older than this means it has stopped. */
 export const LINK_REPORT_MAX_DAYS = 45;
 

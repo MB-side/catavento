@@ -84,7 +84,11 @@
         "source": "https://www.seqparagliding.com/category/all-products",
         "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://www.fly-air3.com/en/buy-shop-store-paragliding-variometer/air3-partners/",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:airborne",
@@ -141,7 +145,11 @@
         "role": "certified_service",
         "basis": "self"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://www.apcoaviation.com/find-a-dealer/",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:ascent",
@@ -489,7 +497,11 @@
         "source": "https://www.trikefan.com/microlightaccessories.php",
         "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://www.garmin.com/en-AU/dealerlocator",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:gin",
@@ -599,7 +611,11 @@
         "source": "https://www.trikefan.com/microlightaccessories.php",
         "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://www.icom-australia.com/where_to_buy/",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:kortel",
@@ -625,7 +641,11 @@
         "source": "https://www.flymanilla.com/",
         "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://lazersport.com/pages/distributors",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:liberty",
@@ -658,7 +678,11 @@
         "source": "https://www.seqparagliding.com/category/all-products",
         "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://littlecloud.fr/distributeurs/",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:lynx",
@@ -671,7 +695,11 @@
         "source": "https://www.trikefan.com/microlightaccessories.php",
         "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://www.lynx-avionics.com/distributors/",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:macfly",
@@ -684,7 +712,11 @@
         "source": "https://www.highadventure.com.au/pages/paragliding-paramotoring-gear",
         "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://www.macflyparamotors.com/carte-revendeurs_en.html",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:matrix",
@@ -730,7 +762,11 @@
         "source": "https://www.trikefan.com/microlightaccessories.php",
         "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://microavionics.com/pages/global-distributors",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:mipbip",
@@ -857,7 +893,11 @@
         "source": "https://www.highadventure.com.au/pages/paragliding-paramotoring-gear",
         "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://www.nirvana.cz/en/contact-info/dealers/",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:niviuk",
@@ -1038,7 +1078,11 @@
         "source": "https://tribalflight.com.au/",
         "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://parajet.com/find-your-local-dealer/",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:phi",
@@ -1320,7 +1364,11 @@
         "source": "https://tribalflight.com.au/collections/all",
         "checked": "2026-10-14"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://vittorazi.com/en/dealers/",
+      "checked": "2026-10-14"
+    }
   },
   {
     "id": "brand:woody-valley",
@@ -1388,6 +1436,10 @@
         "role": "core_importer",
         "basis": "self"
       }
-    ]
+    ],
+    "dealerPage": {
+      "url": "https://www.xctracer.com/reseller",
+      "checked": "2026-10-14"
+    }
   }
 ]
