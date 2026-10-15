@@ -144,3 +144,19 @@ test("each page a visitor moves to is counted, once, with its own path", async (
       expect.objectContaining({ path: expect.stringMatching(/\/au\/gear\/where-to-buy\/$/) }),
     ]);
 });
+
+test("a click on a link to another website is counted, naming only the site and page", async ({
+  page,
+}) => {
+  await page.route("https://www.nova.eu/**", (route) => route.fulfill({ body: "ok" }));
+  await page.goto("au/gear/where-to-buy/");
+  const popup = page.waitForEvent("popup");
+  await page.getByRole("link", { name: /Nova's own dealer list/ }).click();
+  await popup;
+  const counted = await page.evaluate(
+    () => (window as unknown as { __counted: unknown[] }).__counted,
+  );
+  expect(counted).toEqual([
+    { path: "outbound/www.nova.eu/en/try-buy", title: "www.nova.eu", event: true },
+  ]);
+});

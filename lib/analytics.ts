@@ -11,3 +11,24 @@ export function analyticsScript(config: AnalyticsConfig): { src: string; endpoin
     return null;
   return { src: GOATCOUNTER_SCRIPT, endpoint: `https://${config.code}.goatcounter.com/count` };
 }
+
+/**
+ * A click on a link to another website, as GoatCounter counts it (D87): the other site's address
+ * without any query or fragment, never who clicked. Links within this site, email and phone links
+ * are not counted.
+ */
+export function outboundEvent(
+  href: string,
+  siteOrigin: string,
+): { path: string; title: string } | null {
+  let url: URL;
+  try {
+    url = new URL(href, siteOrigin);
+  } catch {
+    return null;
+  }
+  if (url.protocol !== "http:" && url.protocol !== "https:") return null;
+  if (url.origin === siteOrigin) return null;
+  const path = `${url.hostname}${url.pathname}`.replace(/\/+$/, "");
+  return { path: `outbound/${path}`, title: url.hostname };
+}
