@@ -74,7 +74,9 @@ export default async function VisitingPilotsPage({
         <h2 id="help" className={h2}>
           {t("visiting.helpHeading")}
         </h2>
-        <p className="mt-1 text-muted">{t("visiting.helpIntro")}</p>
+        <p className="mt-1 text-muted">
+          {t("visiting.helpIntro")} {t("visiting.notExhaustive")}
+        </p>
         <div className="mt-3">
           <VisitorHelpList help={help} orgHrefs={orgHrefs} />
         </div>
@@ -83,7 +85,9 @@ export default async function VisitingPilotsPage({
         <h2 id="tours" className={h2}>
           {t("visiting.toursHeading")}
         </h2>
-        <p className="mt-1 text-muted">{t("visiting.toursIntro")}</p>
+        <p className="mt-1 text-muted">
+          {t("visiting.toursIntro")} {t("visiting.notExhaustive")}
+        </p>
         <div className="mt-3">
           <TourList tours={getTourOperators(country.code)} names={names} pages={pages} />
         </div>

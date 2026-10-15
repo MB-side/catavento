@@ -264,11 +264,8 @@
       "code": "europe",
       "name": "Europe",
       "visitors": [
-        "Hang gliding and paragliding rules are set by each country, so licence, insurance and airspace requirements differ from one country to the next.",
-        "EU aviation law leaves the airworthiness and insurance rules for hang gliders and paragliders to each country.",
-        "Many countries have guest rules that let visiting pilots fly if they hold an IPPI card. Check each country's guest rules before you travel.",
-        "The IPPI card, from FAI/CIVL via national associations, shows your skill level abroad, but it is valid only with a current national licence or rating card.",
-        "The IPPI card gives no insurance cover. Countries such as France and Switzerland make third-party liability insurance compulsory."
+        "Rules for visiting pilots are set by each country, so licence and insurance requirements differ from one country to the next.",
+        "Many countries let visitors fly with an IPPI card plus a current national licence. The IPPI card gives no insurance cover."
       ],
       "learners": [],
       "links": [
@@ -297,7 +294,8 @@
         "https://www.fai.org/page/civl-ippi-SUI",
         "https://www.shv-fsvl.ch/en/education/foreign-licence/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://www.ehpu.org/"
     },
     {
       "code": "FR",
@@ -307,10 +305,8 @@
         "url": "https://federation.ffvl.fr/"
       },
       "visitors": [
-        "The IPPI card is accepted in France. Third-party liability insurance is compulsory, but no minimum amount of cover is set.",
-        "French rules also require the landowner's agreement for the take-off and landing places you use.",
-        "Foreign pilots can join the FFVL and get the same insurance cover as French members, but need a medical certificate in French from a doctor registered in Europe.",
-        "You may not fly in class A–D airspace, prohibited areas or active restricted areas, or above 3450 m except in authorised parts of the Alps and Pyrenees."
+        "The IPPI card is accepted in France, and third-party liability insurance is compulsory.",
+        "Foreign pilots can join the FFVL and get the same insurance cover as French members."
       ],
       "learners": [
         "The FFVL awards its school label for one season at a time. EFVL schools are run by state-qualified professionals and club-schools (CEFVL) by volunteer federation-qualified instructors.",
@@ -362,7 +358,8 @@
       "checked": "2026-10-13",
       "practice": [
         "At Saint-André-les-Alpes, the local school says visiting pilots are welcome on the Chalvet site and that it will tell them about the day's conditions and the site's features. Shuttles run by the local club and the commune leave from the school."
-      ]
+      ],
+      "rulesUrl": "https://federation.ffvl.fr/french-flying-rules"
     },
     {
       "code": "CH",
@@ -373,9 +370,7 @@
       },
       "visitors": [
         "Pilots living abroad may fly occasionally with an IPPI card at level IV or V. Commercial tandem flying and instructing need Swiss licences.",
-        "Liability insurance with at least CHF 1 million of cover is compulsory. The SHV sells guest cover for 30 days or up to 120 consecutive days.",
-        "Every glider flown in Switzerland needs a registration number at least 40 cm high on its underside. The SHV issues one free, with no membership needed.",
-        "Every airspace user is required by law to check the daily airspace bulletin (DABS) and current NOTAMs."
+        "Liability insurance is compulsory, and every glider needs a registration number, which the SHV issues free."
       ],
       "learners": [
         "Training is done at SHV-certified flight schools. You start on a practice slope, then make high flights supervised by an instructor over the radio.",
@@ -430,7 +425,8 @@
         "https://www.shv-fsvl.ch/en/federation/translate-to-englisch-rechtliche-grundlagen/",
         "https://shv-fsvl.ch/en/education/foreign-licence"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://www.shv-fsvl.ch/en/education/foreign-licence/"
     },
     {
       "code": "DE",
@@ -440,10 +436,8 @@
         "url": "https://www.dhv.de/en/"
       },
       "visitors": [
-        "If you live outside Germany, you can fly there with your home licence plus an FAI IPPI card at stage 4 or 5. Stage 4 does not allow cross-country flights.",
-        "You must hold third-party liability insurance. DHV's English rules page gives a minimum cover of 750,000 SDR (special drawing rights).",
-        "Carry a ready-to-use reserve parachute and wear a helmet. Paragliding pilots must also wear a certified back protector.",
-        "The guest rule is for non-commercial flying and does not cover passenger (tandem) flights. Contact the local club before flying a new site."
+        "If you live outside Germany, you can fly with your home licence plus an IPPI card at stage 4 or 5, and third-party liability insurance.",
+        "The guest rule is for non-commercial flying and does not cover tandem flights. Contact the local club before flying a new site."
       ],
       "learners": [
         "The A licence is the first level of Germany's state pilot licence. It combines basic training (training slope or winch) with high-altitude training.",
@@ -494,7 +488,8 @@
       "practice": [
         "At Tegelberg and Buchenberg, every paraglider and hang glider pilot needs a site-briefing card, the 'green card', issued through the local flight school. Pilots show it to lift staff.",
         "At the Wasserkuppe, guest pilots register once on the local club's website and buy day tickets there. The club posts any temporary limits on guest flying."
-      ]
+      ],
+      "rulesUrl": "https://www.dhv.de/en/dhv/german-flying-rules/"
     },
     {
       "code": "AT",
@@ -504,9 +499,8 @@
         "url": "https://aeroclub.at/de/sportverband/sektionen/haenge-paragleiten"
       },
       "visitors": [
-        "You need a recognised licence to fly in Austria. The Austrian Aero Club (ÖAeC) is the aviation authority for hang gliding and paragliding.",
-        "Austria's Guest Flight Regulation accepts licences from 20 listed countries, including Australia, Germany, Italy and Switzerland, without separate recognition.",
-        "This general acceptance does not cover tandem or powered flying. Pilots with other licences can apply to ÖAeC for validation, or get a one-year certificate from an approved Austrian school."
+        "You need a recognised licence. Licences from 20 listed countries, including Australia, Germany, Italy and Switzerland, are accepted without separate recognition.",
+        "This does not cover tandem or powered flying. Pilots with other licences can apply to the Austrian Aero Club (ÖAeC) for validation."
       ],
       "learners": [
         "Choose a flight school approved by ÖAeC. ÖAeC publishes the list of approved hang gliding and paragliding schools.",
@@ -564,7 +558,8 @@
       "checked": "2026-10-13",
       "practice": [
         "At the Elfer site in the Stubai valley, the lift company has handed supervision of the landing field to the local flight school, which gives site briefings during its opening hours."
-      ]
+      ],
+      "rulesUrl": "https://aeroclub.at/uploads/download/GasteflugVO__Fassung_vom_01_03_2017.pdf"
     },
     {
       "code": "IT",
@@ -574,10 +569,8 @@
         "url": "https://www.fivl.it/"
       },
       "visitors": [
-        "FIVL tells visiting pilots to carry their IPPI card so clubs can check their level, and says level 4 is the minimum for cross-country flying.",
-        "Third-party liability insurance is a legal requirement. FIVL's visitor page gives a minimum cover of EUR 1.6 million.",
-        "If your own cover falls short, FIVL sells a renewable 30-day liability policy for foreign pilots that is valid in Italy only.",
-        "Contact the clubs in the region before you fly. Site managers can set restrictions, and ignoring them breaks the law."
+        "Visiting pilots should carry their IPPI card so clubs can check their level. Third-party liability insurance is a legal requirement.",
+        "FIVL sells a 30-day liability policy for foreign pilots whose own cover falls short. Contact the clubs in the region before you fly."
       ],
       "learners": [
         "The free flight licence (attestato di volo libero) can only be obtained at schools certified by the Aero Club d'Italia. FIVL publishes the list.",
@@ -629,9 +622,9 @@
       ],
       "checked": "2026-10-13",
       "practice": [
-        "At Monte Grappa (Bassano), the area's tourist consortium strongly recommends that pilots use the shuttle services to reach the launches because parking is scarce. Pilots also need the area's Fly Card.",
-        "The national federation explains that foreign pilots may fly in Italy if their own liability insurance meets Italian minimums. If it does not, the federation sells a 30-day policy for visiting pilots. This is about insurance, not local site knowledge."
-      ]
+        "At Monte Grappa (Bassano), the area's tourist consortium strongly recommends that pilots use the shuttle services to reach the launches because parking is scarce. Pilots also need the area's Fly Card."
+      ],
+      "rulesUrl": "https://www.fivl.it/foreign-pilots/rules-for-hg-pg-pilots"
     },
     {
       "code": "LI",
@@ -641,10 +634,8 @@
         "url": "https://www.shv-fsvl.ch/en/"
       },
       "visitors": [
-        "Liechtenstein applies Swiss aviation law under a 2003 agreement with Switzerland. Switzerland's Federal Office of Civil Aviation (FOCA/BAZL) acts as its aviation authority.",
-        "SHV's guest rules for pilots living outside Switzerland and Liechtenstein allow occasional solo flights with an IPPI card at level IV or V.",
-        "Liability insurance with at least CHF 1 million cover is compulsory.",
-        "A foreign tandem licence allows occasional, non-commercial tandem flights. Commercial tandem flights need a Swiss licence."
+        "Liechtenstein applies Swiss aviation law, and the SHV's guest rules cover pilots living outside Switzerland and Liechtenstein.",
+        "Visitors may fly solo occasionally with an IPPI card at level IV or V. Liability insurance is compulsory."
       ],
       "learners": [
         "Once you live in Liechtenstein, you need a Swiss licence in the matching category.",
@@ -690,7 +681,8 @@
         "https://www.shv-fsvl.ch/en/education/moving-to-switzerland/",
         "https://www.shv-fsvl.ch/en/education/flight-schools/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://www.shv-fsvl.ch/en/education/foreign-licence/"
     },
     {
       "code": "ES",
@@ -700,10 +692,8 @@
         "url": "https://rfae.es/"
       },
       "visitors": [
-        "Spain's aviation authority (AESA) says no aviation law sets a pilot licence or on-board documents for paragliders and hang gliders.",
-        "AESA notes that, depending on the region and its sports federation, some document may be required, so check locally before flying.",
-        "Fly by day under visual flight rules, outside controlled, restricted and prohibited airspace, active danger areas, towns and crowds.",
-        "The maximum is 10,000 ft pressure altitude; up to 13,000 ft is allowed for less than 30 minutes in total."
+        "Spain's aviation authority (AESA) says no aviation law sets a pilot licence for paragliders and hang gliders.",
+        "Depending on the region and its sports federation, some document may be required, so check locally before flying."
       ],
       "learners": [
         "RFAE rules say you train at a school recognised by the RFAE or a regional federation, holding a federation licence from day one.",
@@ -734,7 +724,8 @@
         "https://rfae.es/es/section/formacion",
         "https://rfae.es/es/section/documentos-parapente"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://www.seguridadaerea.gob.es/es/ambitos/aviacion-general/ala-delta-parapente-y-paramotor"
     },
     {
       "code": "PT",
@@ -744,9 +735,8 @@
         "url": "https://www2021.fpvl.pt/"
       },
       "visitors": [
-        "Portuguese law requires free-flight pilots to hold third-party liability insurance and show the policy within five days if inspectors ask.",
-        "Foreign free-flight licences can be validated by Portugal's aviation authority only where a reciprocity agreement with the issuing authority exists.",
-        "FPVL rules treat valid licences from FAI-member national bodies as equal to its local-flight licence without thermal flying; higher levels need more."
+        "Portuguese law requires free-flight pilots to hold third-party liability insurance.",
+        "FPVL treats valid licences from FAI-member national bodies as equal to its local-flight licence without thermal flying; higher levels need more."
       ],
       "learners": [
         "The FPVL says learners should choose an FPVL-certified school using certified instructors and approved teaching methods.",
@@ -780,7 +770,8 @@
         "https://www2021.fpvl.pt/associados-escolas/",
         "https://www2021.fpvl.pt/seguros-desportivos-fpvl/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://www2021.fpvl.pt/legislacao-e-regulamentos/"
     },
     {
       "code": "GB",
@@ -790,10 +781,8 @@
         "url": "https://www.bhpa.co.uk/"
       },
       "visitors": [
-        "Carry proof of suitable third-party insurance; BHPA members have £5 million cover, and most UK sites were negotiated on that basis.",
-        "Be ready to show an IPPI card proving you are suitably qualified to fly a particular site.",
-        "Sites are run by about 60 local BHPA clubs with their own rules; some are members-only, which requires BHPA membership (short-term options exist).",
-        "Check NOTAMs every time you fly, carry an up-to-date aeronautical chart for cross-country, and don't use 144 MHz ham radio in flight."
+        "Visitors need proof of suitable third-party insurance and should be ready to show an IPPI card proving they are qualified for a site.",
+        "Sites are run by local BHPA clubs with their own rules. Some are members-only, which requires BHPA membership (short-term options exist)."
       ],
       "learners": [
         "The BHPA says initial instruction should always be at a BHPA registered school; find one by postcode or on its map.",
@@ -833,7 +822,8 @@
       "practice": [
         "UK sites are looked after by local BHPA clubs, so visiting pilots should contact the club for the area first; it can brief them on sites and local rules. Overseas pilots need proof of third-party insurance and an IPPI card.",
         "In the Lake District, Cumbria Soaring Club sites are open to visiting pilots without membership, as long as they follow the club's online sites guide."
-      ]
+      ],
+      "rulesUrl": "https://www.bhpa.co.uk/safety/visitors"
     },
     {
       "code": "IE",
@@ -843,10 +833,8 @@
         "url": "https://www.ihpa.ie/"
       },
       "visitors": [
-        "Join the IHPA as a free Visiting Pilot member; it lasts 90 days in any calendar year if you aren't normally resident.",
-        "All pilots must sign the IHPA Waiver of Indemnity and hold appropriate third-party insurance covering property or livestock damage.",
-        "Don't enter Class C airspace without air traffic control permission; some sites are restricted by airspace or minimum experience.",
-        "Tandem flights for reward and paramotoring need a licence from the Irish Aviation Authority."
+        "Visitors can join the IHPA as a free Visiting Pilot member, for up to 90 days in a calendar year.",
+        "All pilots must sign the IHPA Waiver of Indemnity and hold appropriate third-party insurance."
       ],
       "learners": [
         "The IHPA doesn't run training; to learn paragliding you go to an IHPA-approved school, which it lists on its site.",
@@ -880,7 +868,8 @@
         "https://ihpa.ie/index.php/home/about-us",
         "https://www.ihpa.ie/index.php/flight-safety/restricted-flying-sites"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://ihpa.ie/index.php/home/advice-for-visiting-pilots"
     },
     {
       "code": "NO",
@@ -890,10 +879,8 @@
         "url": "https://nlf.no/grener/hps/"
       },
       "visitors": [
-        "Visiting pilots who belong to a foreign hang gliding or paragliding organisation and hold a valid licence may fly as guests for up to 6 months.",
-        "Carry your licence and proof of third-party insurance, and show them on request. NLF also recognises the IPPI system.",
-        "Tandem flights with friends and family are allowed, but commercial tandem flights by visitors are not.",
-        "Anyone with a Norwegian address must hold a Norwegian licence, whatever their nationality."
+        "Pilots who belong to a foreign hang gliding or paragliding organisation and hold a valid licence may fly as guests for up to 6 months.",
+        "Carry your licence and proof of third-party insurance. NLF recognises the IPPI system. Commercial tandem flights by visitors are not allowed."
       ],
       "learners": [
         "Beginner training happens in clubs affiliated with NLF, as an intensive course over 9 to 12 days or as weekend courses.",
@@ -925,7 +912,8 @@
         "https://nlf.no/grener/hps/for-visiting-pilots/",
         "https://nlf.no/grener/hps/om-hps/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://nlf.no/grener/hps/for-visiting-pilots/"
     },
     {
       "code": "SE",
@@ -935,10 +923,8 @@
         "url": "https://flygsport.se/grenar/skarmflyg/paragliding"
       },
       "visitors": [
-        "Visiting pilots need liability insurance with cover at least equal to the Swedish members' liability insurance; accident insurance is strongly recommended.",
-        "Sweden follows the IPPI system, and SSFF strongly recommends carrying your IPPI card when flying.",
-        "Paragliding in Sweden follows general aviation VFR rules; SSFF's English page sets out the basic right-of-way rules.",
-        "New national rules for paragliders and hang gliders (TSFS 2026:48, Swedish Transport Agency) took effect on 4 May 2026."
+        "Visiting pilots need liability insurance with cover at least equal to Swedish members' insurance; accident insurance is strongly recommended.",
+        "Sweden follows the IPPI system, and SSFF strongly recommends carrying your IPPI card when flying."
       ],
       "learners": [
         "Start by contacting an SSFF-approved instructor and booking a student course; the SSFF site has an instructor finder.",
@@ -976,7 +962,8 @@
         "https://www.transportstyrelsen.se/sv/om-oss/dina-rattigheter-lagar-och-regler/lagar-och-regler/information-om-nya-eller-andrade-regler/nya-foreskrifter-om-flygning-med-flygskarm-och-hangglidare/",
         "https://www-2025.fai.org/node/175088"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://flygsport.se/grenar/skarmflyg/paragliding/english"
     },
     {
       "code": "FI",
@@ -987,7 +974,7 @@
       },
       "visitors": [
         "The IPPI card is not required by law in Finland, but it is recommended because its levels match the Finnish system.",
-        "Insurance is not required by law, though some airports or airfields may require it; guests are advised to bring insurance from home."
+        "Insurance is not required by law, though some airfields may require it; guests are advised to bring insurance from home."
       ],
       "learners": [
         "Courses are run by clubs around the country; ask a club for details. Paragliding and hang gliding have separate training programmes.",
@@ -1015,7 +1002,8 @@
         "https://www-2025.fai.org/node/175072",
         "https://ilmailuliitto.fi/ilmailuliitto/ilmaileminen/lajit/varjoliito/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://ilmailuliitto.fi/ilmailuliitto/ilmaileminen/lajit/varjoliito/"
     },
     {
       "code": "DK",
@@ -1025,10 +1013,7 @@
         "url": "https://dhpu.dk/"
       },
       "visitors": [
-        "You need a licence of at least IPPI 4 (bring the certificate); you may fly on your national licence for a maximum of 30 days.",
-        "You need third-party liability insurance and an EN 966 helmet, and a reserve to fly above 150 m.",
-        "Check NOTAMs and navigational warnings before every flight, including dune soaring; military ranges may be flown only when open with no live firing.",
-        "Cross-country flying needs IPPI 5b, and the maximum altitude anywhere in Denmark is 1050 m (3500 ft MSL)."
+        "Visitors need a licence of at least IPPI 4 and third-party liability insurance, and may fly on their national licence for up to 30 days."
       ],
       "learners": [
         "To start training, contact your local club or DHPU; DHPU has a map of clubs.",
@@ -1065,7 +1050,8 @@
         "https://dhpu.dk/bliv-pilot/",
         "https://dhpu.dk/flyvesteder/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://dhpu.dk/for-visiting-pilots-en/"
     },
     {
       "code": "IS",
@@ -1087,7 +1073,8 @@
       "sources": [
         "https://www.flugmal.is/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://www.flugmal.is/"
     },
     {
       "code": "NL",
@@ -1098,9 +1085,7 @@
       },
       "visitors": [
         "Visiting pilots with an IPPI 3 equivalent licence may launch at the dune soaring sites; KNVvL strongly recommends lessons if you lack strong-wind experience.",
-        "Winch towing is the main launch method; without an equivalent licence plus IPPI 3, you must launch under an instructor at a KNVvL-authorised school.",
-        "You need IPPI 5 to fly further than gliding distance from the tow site.",
-        "Walking in the dunes is forbidden (they are protected), so stay on official paths or risk a fine."
+        "Winch towing is the main launch method. Without an equivalent licence plus IPPI 3, you launch under an instructor at a KNVvL-authorised school."
       ],
       "learners": [
         "Under Dutch government rules, paragliding needs the Paragliding Pilot Licence (PgPL), issued by KNVvL.",
@@ -1134,7 +1119,8 @@
         "https://www.knvvl.nl/paragliding/opleidingen",
         "https://www.rijksoverheid.nl/vraag-en-antwoord/luchtvaart/heb-ik-een-brevet-nodig-voor-ballonvaren-zweefvliegen-schermvliegen-en-deltavliegen"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://www.knvvl.nl/paragliding/visiting-pilots"
     },
     {
       "code": "BE",
@@ -1144,7 +1130,7 @@
         "url": "https://fbvl.be/"
       },
       "visitors": [
-        "FBVL insurance is not available to new members who do not live in Belgium, so visitors need their own liability insurance.",
+        "Visitors need their own liability insurance, as FBVL insurance is not available to new members who do not live in Belgium.",
         "The FBVL Pilote and Pilote XC licences match IPPI levels 4 and 5."
       ],
       "learners": [
@@ -1178,13 +1164,14 @@
         "https://fbvl.be/reglements-brevets",
         "https://www-2025.fai.org/node/175068"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://fbvl.be/reglements-brevets"
     },
     {
       "code": "LU",
       "name": "Luxembourg",
       "visitors": [
-        "Visiting pilots must register for a free guest membership with Cumulux, valid until the end of December, before launching from any of its sites.",
+        "Visiting pilots must register for a free Cumulux guest membership before launching from any of its sites.",
         "Flying at Luxembourg's official sites requires an internationally recognised licence."
       ],
       "learners": [
@@ -1209,7 +1196,8 @@
         "https://www.cumulux.lu/en/guest-registration/",
         "https://www.cumulux.lu/en/get-flying/learn-to-fly/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://www.cumulux.lu/en/guest-registration/"
     },
     {
       "code": "PL",
@@ -1220,9 +1208,7 @@
       },
       "visitors": [
         "Pilots whose home-country documents allow unsupervised paragliding or hang gliding may fly in Poland within those privileges.",
-        "You must carry your pilot document and proof of third-party liability insurance when flying (they may stay at launch or landing for local flights).",
-        "Third-party liability insurance is compulsory from your first flight in Polish airspace; the legal minimum is 10,000 SDR per event.",
-        "Pilots, student pilots and passengers must wear a helmet."
+        "Third-party liability insurance is compulsory. Carry your pilot document and proof of insurance when flying."
       ],
       "learners": [
         "Polish pilots hold a state qualification certificate for paraglider or hang glider pilots; the minimum age is 15, with guardian consent for minors."
@@ -1253,7 +1239,8 @@
         "https://api.sejm.gov.pl/eli/acts/DU/2019/1497/text.pdf",
         "https://api.sejm.gov.pl/eli/acts/DU/2025/1431/text.pdf"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://www.aeroklub-polski.pl/"
     },
     {
       "code": "CZ",
@@ -1263,8 +1250,7 @@
         "url": "https://www.laacr.cz/"
       },
       "visitors": [
-        "The Czech CAA lets foreign sport flying devices fly without prior permission if conditions are met, including a valid home licence, liability insurance and day VFR.",
-        "Third-party liability insurance is compulsory; the legal minimum for a sport flying device up to 150 kg is CZK 100,000."
+        "Foreign pilots may fly without prior permission if conditions are met, including a valid home licence and third-party liability insurance, which is compulsory."
       ],
       "learners": [
         "Paragliding training is done at training centres registered with LAA ČR.",
@@ -1304,7 +1290,8 @@
         "https://www.laacr.cz/tml/files/2022/04/LA1_11.4.2022.pdf",
         "https://www.laacr.cz/padakove-kluzaky/pk-registrovana-strediska-pilotniho-vycviku/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://www.caa.gov.cz/en/?p=47714"
     },
     {
       "code": "SK",
@@ -1314,9 +1301,8 @@
         "url": "https://www.laa.sk/"
       },
       "visitors": [
-        "LAA SR says the IPPI card is recognised only at association level and does not by itself make flying in Slovak airspace legal.",
-        "Pilots from outside the EU must ask the Transport Authority to recognise their licence at least 30 days before flying.",
-        "A third-party liability insurance certificate must be carried on every sport or leisure flight."
+        "The IPPI card is recognised only at association level and does not by itself make flying in Slovak airspace legal.",
+        "Pilots from outside the EU must have their licence recognised by the Transport Authority. Carry a liability insurance certificate on every flight."
       ],
       "learners": [
         "Training is done with an instructor at an LAA SR approved training centre, covering theory and practice.",
@@ -1359,7 +1345,8 @@
         "https://www.laa.sk/pre-buducich-piloto/ako-sa-stat-pilotom/",
         "https://www.laa.sk/pre-buducich-piloto/schvalene-vycvikove-strediska-laa-sr-2-2/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://www.laa.sk/flying-of-foreign-pilots-over-the-area-of-slovak-republic/"
     },
     {
       "code": "HU",
@@ -1369,8 +1356,7 @@
         "url": "https://hffa.hu/"
       },
       "visitors": [
-        "Paragliders and hang gliders must have valid third-party liability insurance; HFFA gives the minimum as HUF 10 million.",
-        "In Hungary your wing must carry an identification number."
+        "Paragliders and hang gliders must have valid third-party liability insurance, and your wing must carry an identification number."
       ],
       "learners": [
         "Training is given by national training organisations registered with the aviation authority, which issue a certificate of training and exams.",
@@ -1406,7 +1392,8 @@
         "https://hffa.hu/english/",
         "https://hffa.hu/wp-content/uploads/2024/04/jogszabalyi-eloirasok-siklorepulokre.pdf"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://hffa.hu/english/"
     },
     {
       "code": "SI",
@@ -1416,9 +1403,7 @@
         "url": "https://sffa.org/"
       },
       "visitors": [
-        "Foreign pilots may fly with a valid home licence plus an FAI sporting licence or IPPI card; without one of these, only under an instructor's supervision.",
-        "Paragliders and hang gliders may fly only in uncontrolled class G airspace.",
-        "Foreign instructors need a special permit from the aviation authority before teaching in Slovenia."
+        "Foreign pilots may fly with a valid home licence plus an FAI sporting licence or IPPI card; without one of these, only under an instructor's supervision."
       ],
       "learners": [
         "Training starts from age 15 with an authorised instructor, after a theory course and written test; under-18s need parental consent.",
@@ -1458,7 +1443,8 @@
       "checked": "2026-10-13",
       "practice": [
         "The Soča Valley tourist office says flying independently there needs a good knowledge of local conditions and advises talking to a flying instructor before you fly."
-      ]
+      ],
+      "rulesUrl": "https://old.sffa.org/en/flying-rules-slovenia.html"
     },
     {
       "code": "HR",
@@ -1500,7 +1486,8 @@
       "sources": [
         "https://www.zakon.hr/cms.htm?id=12596"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://www.caf.hr/"
     },
     {
       "code": "RO",
@@ -1511,8 +1498,7 @@
       },
       "visitors": [
         "Visiting pilots need a valid pilot licence of at least IPPI level 4 and third-party insurance.",
-        "Every pilot must file a VFR notification on the CAA's vfr.caa.ro portal at least 30 minutes before each flight, even when flying in a group.",
-        "You must close the flight within 15 minutes of landing, or search and rescue may be started."
+        "Every flight must be notified on the CAA's VFR portal before take-off and closed after landing."
       ],
       "learners": [
         "AZLR is the only entity accredited by the Romanian CAA (AACR) for this field and lists the paragliding schools.",
@@ -1549,7 +1535,8 @@
         "https://azlr.ro/info/",
         "https://azlr.ro/info/licentaparapanta/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://azlr.ro/info/visiting-pilots-en/"
     },
     {
       "code": "BG",
@@ -1586,7 +1573,8 @@
       "sources": [
         "https://caa.bg/sites/default/files/upload/documents/2020-08/naredba_1_ot_9012014_g_za_registraciq_pyrvonacalno_opredelqne_poddyrjane_na_letatelnata_godnost_eksp_0.pdf"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://www.caa.bg/"
     },
     {
       "code": "GR",
@@ -1597,9 +1585,7 @@
       },
       "visitors": [
         "Visiting pilots staying one to three months show a Greek club their IPPI card, home licence and liability insurance, and join as temporary members.",
-        "Visitors fly under Greek rules, with the privileges of the licence level they hold at home.",
-        "Under ELAO's paragliding rules, a reserve parachute, a VHF radio and live tracking are compulsory on every flight.",
-        "Flying within 10 nautical miles of an aerodrome or in airways is not allowed unless air traffic services are told before the flight."
+        "Visitors fly under Greek rules, with the privileges of the licence level they hold at home."
       ],
       "learners": [
         "Only ELAO-approved schools may teach paragliding, and training follows the FAI/CIVL SPP (CIVL's pilot training standard) standard.",
@@ -1634,7 +1620,8 @@
         "https://eap.elao.gr/index.php?option=com_content&view=article&id=124&Itemid=116",
         "https://www-2025.fai.org/member/gre-nac"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://eap.elao.gr/index.php?option=com_content&view=article&id=124&Itemid=116"
     },
     {
       "code": "CY",
@@ -1659,7 +1646,8 @@
         "https://www-2025.fai.org/member/cyp-nac",
         "https://www.caf.org.cy/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://www.caf.org.cy/"
     },
     {
       "code": "AL",
@@ -1669,10 +1657,7 @@
         "url": "https://nac.org.al/"
       },
       "visitors": [
-        "On request, Albania's Civil Aviation Authority (AAC) can validate a foreign paragliding or hang gliding licence for up to one year.",
-        "To convert to an Albanian licence, a foreign pilot needs an AAC theory check, a flight check with an authorised examiner, a medical certificate and the required flight time.",
-        "Licence holders may fly only by day in visual weather conditions (VMC).",
-        "A helmet is required, and you must not fly higher than 10 m above the ground without a reserve parachute."
+        "On request, Albania's Civil Aviation Authority (AAC) can validate a foreign paragliding or hang gliding licence for up to one year."
       ],
       "learners": [
         "Training must be at an AAC-approved training organisation, and student pilots must be at least 15 before their first flight.",
@@ -1703,7 +1688,8 @@
         "https://nac.org.al/disiplina.php?d=paragliding",
         "https://www-2025.fai.org/member/alb-nac"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://www.aac.gov.al/pilotet-e-paraglajdit-dhe-deltaplanit/"
     },
     {
       "code": "BA",
@@ -1728,7 +1714,8 @@
         "https://www-2025.fai.org/member/bih-nac",
         "https://www.vzsbih.ba/index.php/vazduhoplovni-sportovi/paraglajding"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://www.vzsbih.ba/index.php/vazduhoplovni-sportovi/paraglajding"
     },
     {
       "code": "ME",
@@ -1738,9 +1725,8 @@
         "url": "https://www-2025.fai.org/member/mne-nac"
       },
       "visitors": [
-        "You may fly in Montenegro on a valid paraglider licence from an EU member state, or a valid IPPI or APPI card, within its privileges.",
-        "Paragliders may be flown only with valid licences and ratings, serviceable equipment and a medical certificate suited to the rating.",
-        "To convert a foreign licence, you need a valid medical certificate, a theory test in aviation regulations and a practical test with an authorised examiner."
+        "You may fly on a valid paraglider licence from an EU member state, or a valid IPPI or APPI card, within its privileges.",
+        "You also need a medical certificate suited to your rating."
       ],
       "learners": [
         "A Montenegrin paraglider licence needs age 16 or over, completed training, a passed licence exam and a valid medical certificate."
@@ -1769,7 +1755,8 @@
         "https://caa.me/en/node/1276",
         "https://www-2025.fai.org/member/mne-nac"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://caa.me/en/node/1276"
     },
     {
       "code": "MK",
@@ -1779,9 +1766,8 @@
         "url": "https://www-2025.fai.org/member/mkd-nac"
       },
       "visitors": [
-        "A valid free-flight licence (paraglider or hang glider) from a foreign aviation authority or other authorised body lets you fly without a local licence.",
-        "Flights are made from aerodromes, airfields and sites entered in the Civil Aviation Agency's register.",
-        "Pilots must notify the responsible air traffic control 30 minutes before take-off, and close the flight 30 minutes after landing."
+        "A valid free-flight licence from a foreign aviation authority or other authorised body lets you fly without a local licence.",
+        "Pilots must notify air traffic control before take-off and close the flight after landing."
       ],
       "learners": [
         "Tandem passengers must be adults who give written consent; children aged 10 or more may fly with written consent and a parent at take-off."
@@ -1800,7 +1786,8 @@
         "https://www.caa.gov.mk/wp-content/uploads/2021/09/Flaer-krila-za-slobodno-letanje.pdf",
         "https://www-2025.fai.org/member/mkd-nac"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://www.caa.gov.mk/wp-content/uploads/2021/09/Flaer-krila-za-slobodno-letanje.pdf"
     },
     {
       "code": "RS",
@@ -1840,7 +1827,8 @@
         "https://cad.gov.rs/en/strana/20491/paraglider-pilots",
         "https://www-2025.fai.org/member/srb-nac"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://vss.rs/paraglajding/"
     },
     {
       "code": "EE",
@@ -1851,7 +1839,7 @@
       },
       "visitors": [
         "The Estonian Air Sports Federation says third-party liability insurance is not required for paragliding in Estonia.",
-        "Most free-flight launches in Estonia are by vehicle winch tow, usually to about 500 m."
+        "Most free-flight launches in Estonia are by vehicle winch tow."
       ],
       "learners": [
         "The federation's paragliding committee issues pilot certificates; you apply through a member club, and these clubs also run the training.",
@@ -1876,7 +1864,8 @@
         "https://www.lennusport.org/file/PG_PPG_system_estonia_ENG.pdf",
         "https://www-2025.fai.org/member/est-nac"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://www.lennusport.org/tiib-ja-motovari/"
     },
     {
       "code": "LV",
@@ -1907,7 +1896,8 @@
         "https://likumi.lv/ta/id/356594",
         "https://www-2025.fai.org/member/lat-nac"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://aeroclub.lv/"
     },
     {
       "code": "LT",
@@ -1936,7 +1926,8 @@
         "https://www-2025.fai.org/member/ltu-nac",
         "https://www.lrvalstybe.lt/valstybine-institucija/lietuvos-skraidykliu-ir-parasparniu-sporto-federacija-9426"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://aeroclub.lt/"
     },
     {
       "code": "NP",
@@ -1946,10 +1937,8 @@
         "url": "https://caanepal.gov.np/"
       },
       "visitors": [
-        "Paragliding in Nepal is regulated by the Civil Aviation Authority of Nepal (CAAN), and its directive binds all paragliding and hang gliding operations.",
-        "CAAN's 2018 directive lets its authorised agency issue an authorisation to fly to holders of a foreign paragliding licence.",
-        "CAAN publishes paragliding zones, with take-off and landing points and height limits, in AIP Nepal section ENR 5.5.",
-        "In Pokhara's Mandredhunga/Torepani paragliding zone, CAAN allows operations from 11 am to 4:30 pm, in visual flight conditions only."
+        "Paragliding in Nepal is regulated by the Civil Aviation Authority of Nepal (CAAN).",
+        "Holders of a foreign paragliding licence can get an authorisation to fly from CAAN's authorised agency."
       ],
       "learners": [
         "Paragliding and hang gliding training organisations in Nepal, local or foreign, need CAAN approval on the recommendation of its authorised agency.",
@@ -1974,7 +1963,8 @@
         "https://e-aip.caanepal.gov.np/_uploads/_pdf/e2d8b2e13f696b4465772a3adc426ffc.pdf",
         "https://e-aip.caanepal.gov.np/_uploads/_pdf/8ec30f7b9ab189cd32187011dbdd806b.pdf"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://caanepal.gov.np/"
     },
     {
       "code": "IN",
@@ -1984,10 +1974,8 @@
         "url": "https://aeroclubofindia.com/"
       },
       "visitors": [
-        "Rules differ by state. In Himachal Pradesh (Bir Billing, Manali), a solo pilot must apply to the District Tourism Development Officer at least one month ahead.",
-        "In Himachal Pradesh, solo flying permission is issued for three months, and the pilot needs a licence recognised by BHPA, USHGA, FAI or APPI.",
-        "In Himachal Pradesh, foreign pilots may join an aero sports operation only if cleared by the District Tourism Development Officer and flying under a registered operator.",
-        "In Himachal Pradesh, aero sports may only take place at sites identified by the state's Technical Committee and notified by the Director of Tourism."
+        "Rules differ by state. In Himachal Pradesh (Bir Billing, Manali), solo pilots must get permission from the District Tourism Development Officer.",
+        "Himachal Pradesh requires a licence recognised by BHPA, USHGA, FAI or APPI, and flying only at sites notified by the state."
       ],
       "learners": [
         "Himachal Pradesh's rules recognise a paragliding course from the Atal Bihari Vajpayee Institute of Mountaineering and Allied Sports (ABVIMAS) in Manali.",
@@ -2021,7 +2009,8 @@
         "https://civilaviation.gov.in/sites/default/files/2024-07/NAS%20Guidelines%202023%2007th%20August%202023.pdf",
         "https://abvimas.org/course/paragliding-course-list"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://himachaltourism.gov.in/wp-content/uploads/2022/06/Himachal-Pradesh-Aero-Sports-Rules-2022.pdf"
     },
     {
       "code": "TR",
@@ -2031,7 +2020,7 @@
         "url": "https://thsf.org.tr/"
       },
       "visitors": [
-        "The Turkish Air Sports Federation (THSF) has been Türkiye's FAI member since 23 February 2026 and sets paragliding pilot levels and training rules."
+        "The Turkish Air Sports Federation (THSF) is Türkiye's FAI member and sets paragliding pilot levels and training rules."
       ],
       "learners": [
         "Paragliding training is run by sports clubs registered with THSF, or by other organisations that have signed a protocol with the federation.",
@@ -2066,7 +2055,8 @@
       "checked": "2026-10-13",
       "practice": [
         "Solo pilots flying from Babadağ register through the Fethiye–Babadağ flight-area system, which takes amateur-pilot applications with pilot level and certificate. It also posts a daily flag per launch, and no one launches on a red flag."
-      ]
+      ],
+      "rulesUrl": "https://thsf.org.tr/"
     },
     {
       "code": "ZA",
@@ -2076,10 +2066,8 @@
         "url": "https://sahpa.co.za/"
       },
       "visitors": [
-        "Civil Aviation Regulations Part 94 require all pilots, including visitors, to be SAHPA members; visitors can take a 3- or 6-month Foreign Pilot Membership.",
-        "You need third-party liability aviation insurance; SAHPA's foreign membership includes it.",
-        "Visitors need an IPPI 4 card or higher; IPPI 3 or below must fly under an approved school, and tandem needs an IPPI 6 tandem rating.",
-        "You need the landowner's permission to launch, and foreign instructors may not train or fly commercial tandems in South Africa."
+        "All pilots, including visitors, must be SAHPA members. A 3- or 6-month Foreign Pilot Membership includes third-party liability insurance.",
+        "Visitors need an IPPI 4 card or higher; IPPI 3 or below must fly under an approved school."
       ],
       "learners": [
         "New pilots must complete a training programme with an approved school before getting a SAHPA National Pilot's Licence.",
@@ -2116,7 +2104,8 @@
       "checked": "2026-10-13",
       "practice": [
         "Visiting pilots need SAHPA foreign temporary membership (3 or 6 months, with third-party insurance) and an IPPI 4 card; IPPI 3 or below must fly under an approved school's supervision."
-      ]
+      ],
+      "rulesUrl": "https://sahpa.co.za/membership/foreign-membership/"
     },
     {
       "code": "CO",
@@ -2126,10 +2115,8 @@
         "url": "https://www.fedeaereos.org/"
       },
       "visitors": [
-        "Pilots who live outside Colombia must show an IPPI card plus a valid, current licence or proficiency certificate from their home country, and a copy of their passport.",
-        "Visiting pilots must also get a temporary flight licence issued by Fedeaereos.",
-        "Apart from students in training, paraglider pilots may only fly if they are registered with or affiliated to a paragliding club.",
-        "Clubs that manage a flying site can require a Fedeaereos-endorsed pilot certificate before you fly there; airspace use follows Aerocivil (civil aviation authority) rules."
+        "Pilots who live outside Colombia need an IPPI card, a current home-country licence and a temporary flight licence from Fedeaereos.",
+        "Apart from students in training, paraglider pilots may only fly if registered with or affiliated to a paragliding club."
       ],
       "learners": [
         "Training must be done at a paragliding school recognised by Fedeaereos.",
@@ -2159,7 +2146,8 @@
         "https://www.fedeaereos.org/",
         "https://www.fedeaereos.org/clublist.php"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://www.fedeaereos.org/"
     },
     {
       "code": "BR",
@@ -2169,9 +2157,7 @@
         "url": "https://www.cbvl.esp.br/"
       },
       "visitors": [
-        "Under ANAC rule RBAC 103, every free-flight pilot must hold an ANAC sport-aviation registration (cadastro aerodesportista), certified through an ANAC-accredited association.",
-        "The registration certificate must be carried when flying, on paper or digitally.",
-        "Free flight is only legal inside airspace set aside for sport aviation, published by DECEA (Brazil's airspace authority) on its AISWEB site.",
+        "Every free-flight pilot must hold an ANAC sport-aviation registration (cadastro aerodesportista), certified through an accredited association, and carry it when flying.",
         "Launch sites are run by clubs or public bodies, and many clubs require a CBVL rating before you can launch."
       ],
       "learners": [
@@ -2224,7 +2210,8 @@
       "practice": [
         "At Pico da Ibituruna (Governador Valadares) the local administration requires pilots to register through the city's website; the club notes guesthouses that offer a retrieve service for pilots.",
         "At Pedra Bonita (São Conrado, Rio) the club charges pilots who are not members a daily flying fee and requires a current CBVL card."
-      ]
+      ],
+      "rulesUrl": "https://www.cbvl.esp.br/piloto-cbvl/prova-da-anac/"
     },
     {
       "code": "US",
@@ -2234,10 +2221,8 @@
         "url": "https://www.ushpa.org/"
       },
       "visitors": [
-        "Visitors can join USHPA with a temporary 10-day membership from a USHPA instructor, chapter officer or approved event organiser; membership includes the liability insurance most landowners require.",
-        "Without a USHPA rating, visitors must carry both their home-country rating documents and a valid IPPI card.",
-        "Chapters that manage sites set minimum pilot ratings and should allow only USHPA members to fly their insured sites.",
-        "FAA Part 103 needs no pilot certificate, but limits flying to daylight and bans flights over congested areas or in controlled airspace without ATC authorisation."
+        "Visitors can join USHPA with a temporary 10-day membership, which includes the liability insurance most landowners require.",
+        "Without a USHPA rating, carry your home-country rating documents and a valid IPPI card. Chapters that manage sites set minimum ratings."
       ],
       "learners": [
         "Start with a USHPA-certified instructor, who activates a 60-day Student membership or provides a temporary 10-day membership.",
@@ -2281,7 +2266,8 @@
       "checked": "2026-10-13",
       "practice": [
         "Torrey Pines Gliderport asks foreign pilots for P3-equivalent experience (IPPI card, 150 flights, 50 hours), a quick ground-handling review with an instructor and a logbook check before flying."
-      ]
+      ],
+      "rulesUrl": "https://www.ushpa.org/USHPA/Pilot_Resources/Public/pilotresources/international-pilot-information.aspx"
     },
     {
       "code": "CA",
@@ -2291,10 +2277,8 @@
         "url": "https://hpac.ca/"
       },
       "visitors": [
-        "Visitors need a temporary HPAC membership, valid for 60 days, to fly most Canadian sites.",
-        "Insurance from your home association is not valid in Canada as primary cover; landowners require all pilots to carry Canadian insurance.",
-        "Canadian Aviation Regulations (CAR 602.29) ban night flying; HPAC says controlled airspace also needs a Category 4 medical certificate and a pass in the HAGAR exam.",
-        "Only Banff, Jasper, Kootenay and Yoho national parks allow free flight, each under Parks Canada rules; all other national parks are closed to it."
+        "Visitors need a 60-day temporary HPAC membership to fly most sites. Landowners require Canadian insurance; home-association insurance is not valid as primary cover.",
+        "Only Banff, Jasper, Kootenay and Yoho national parks allow free flight; all other national parks are closed to it."
       ],
       "learners": [
         "Learn with an HPAC-certified instructor or school; your instructor sends in your HPAC membership application and rating form.",
@@ -2342,7 +2326,8 @@
       "checked": "2026-10-13",
       "practice": [
         "Visiting pilots need a 60-day temporary HPAC membership for Canadian insurance to fly most sites, and HPAC advises contacting local pilots, a school or the club for a site orientation."
-      ]
+      ],
+      "rulesUrl": "https://hpac.ca/pilot/visiting-pilots/"
     },
     {
       "code": "ID",
@@ -2352,10 +2337,8 @@
         "url": "https://pbfasi.id/"
       },
       "visitors": [
-        "FASI's paragliding committee says all visiting and local pilots need current FASI Paralayang membership to fly legally in Indonesia.",
-        "The Visiting Pilot Membership is free for pilots with a current home-country licence, is best arranged before arrival, and is renewable once in any 3-month period.",
-        "For recreational flying, PB FASI asks visitors to email an FAI Sporting Licence, a valid national pilot licence, and valid international insurance, which it says is mandatory.",
-        "Visiting pilots may not fly tandems unless they hold a KITAS (stay permit) and FASI Paralayang approval; paid or instructional tandems are banned."
+        "All visiting pilots need current FASI Paralayang membership. The Visiting Pilot Membership is free for pilots with a current home-country licence.",
+        "PB FASI says valid international insurance is mandatory."
       ],
       "learners": [
         "FASI's paragliding committee advises finding an instructor or school near you, then joining a local paragliding club."
@@ -2387,26 +2370,35 @@
         "https://pbfasi.id/foreign-pilot-registration/",
         "https://www.paragliding.web.id/flying_in_indonesia/how_to_fly"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "rulesUrl": "https://pbfasi.id/foreign-pilot-registration/"
     },
     {
       "code": "world",
       "name": "Anywhere",
       "visitors": [
-        "The IPPI card, from FAI/CIVL via national associations, shows your skill level abroad, but it is valid only with a current national licence or rating card.",
-        "The IPPI card gives no insurance cover. Check what insurance the country you visit requires before you go."
+        "The IPPI card, from FAI/CIVL via national associations, shows your skill level abroad, but is valid only with a current national licence or rating card.",
+        "The IPPI card gives no insurance cover. Check what insurance the country you visit requires."
       ],
       "learners": [],
       "links": [
         {
           "label": "IPPI card (FAI/CIVL)",
           "url": "https://www.fai.org/page/civl-ippi-card"
+        },
+        {
+          "label": "Paragliding Map (site guide)",
+          "url": "https://www.paraglidingmap.com/"
         }
       ],
       "sources": [
         "https://www.fai.org/page/civl-ippi-card"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "practice": [
+        "Local pilots are often the best source of a site briefing. Site guides such as Paragliding Map list a local contact for many sites, and pilots often message them before visiting, commonly by WhatsApp."
+      ],
+      "rulesUrl": "https://www.fai.org/page/civl-ippi-card"
     },
     {
       "code": "AU",
@@ -2416,12 +2408,9 @@
         "url": "https://safa.asn.au/"
       },
       "visitors": [
-        "Overseas pilots must hold SAFA Visiting Pilot Membership and SAFA authorisation before flying; it includes compulsory third-party insurance, and travel or home-country insurance does not replace it.",
-        "Apply online with your current overseas licence and ratings (IPPI, APPI or similar) plus logbook copies; if your home licence has expired you cannot apply.",
-        "Once SAFA confirms your membership (allow 1 to 5 days), complete the visiting pilot online workbook and exam; your authorisation ends when the membership or your foreign qualification expires.",
-        "Visiting members may not fly tandem or carry passengers without a SAFA check flight and written approval, and may never fly tandems for payment or instruction.",
-        "Most sites do not need local club membership, but some do, including Mystic at Bright (Victoria) and Canungra (Queensland).",
-        "Airspace is regulated by CASA and checking it is your responsibility; airband radio use needs an operator licence, and overseas radio authorisations under the Chicago Convention are recognised with proof."
+        "Overseas pilots must hold SAFA Visiting Pilot Membership and SAFA authorisation before flying. It includes compulsory third-party insurance.",
+        "You need a current overseas licence and ratings (IPPI, APPI or similar), and must complete SAFA's visiting pilot workbook and exam.",
+        "Most sites do not need local club membership, but some do."
       ],
       "learners": [],
       "links": [
@@ -2462,7 +2451,8 @@
       "checked": "2026-10-16",
       "practice": [
         "Before your first flights, contact the club that manages the site for its rules and hazards, report to the duty pilot if one is appointed, and carry proof of membership and logbook."
-      ]
+      ],
+      "rulesUrl": "https://safa.asn.au/pilot-tools/visiting-international-pilots/"
     },
     {
       "code": "NZ",
@@ -2472,12 +2462,9 @@
         "url": "https://nzhgpa.org.nz/"
       },
       "visitors": [
-        "NZHGPA membership is required by law to fly a paraglider or hang glider in New Zealand, and it includes compulsory public liability insurance needed to use flying sites.",
-        "Visiting pilot membership suits stays under 4 months; it lasts 4 months from approval and cannot be taken again within 12 months, so longer stays need full membership.",
-        "Accepted qualifications are an IPPI card at level 4 or above with a current national licence, or a listed national licence (for example Australian PG3 or above); others are checked case by case.",
-        "You fly with the same restrictions as at home; an expired home licence is not valid, and if your licence requires supervision you must fly under a New Zealand instructor.",
-        "To apply, pass the online NZHGPA VFR exam, then send your licence, IPPI card and exam certificate in English; wait for approval and your Pilot ID Number (up to 5 working days) before flying.",
-        "Some sites need a site induction or permit first, including Barnicoat (Nelson), the Queenstown gondola site and several Wellington sites."
+        "NZHGPA membership, which includes public liability insurance, is required by law to fly. Visiting pilot membership suits stays under 4 months.",
+        "Accepted qualifications include an IPPI card at level 4 or above with a current national licence. You must also pass an online VFR exam.",
+        "Some sites need a site induction or permit first."
       ],
       "learners": [],
       "links": [
@@ -2518,7 +2505,8 @@
       "checked": "2026-10-16",
       "practice": [
         "Always check with local pilots through a local club or school before flying a new site; many site names and locations are deliberately not published."
-      ]
+      ],
+      "rulesUrl": "https://nzhgpa.org.nz/flying-in-nz/"
     }
   ]
 }

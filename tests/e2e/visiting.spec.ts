@@ -37,6 +37,7 @@ test("a country page shows its rules, who helps on the ground, its tours and its
   await page.goto("visiting/fr/");
   await expect(page.getByRole("heading", { name: "Visiting France", level: 1 })).toBeVisible();
   await expect(page.getByTestId("visitor-rules").first()).toContainText("IPPI");
+  await expect(page.getByTestId("rules-notice").first()).toContainText("FFVL");
   const help = visiting.help.filter((h) => h.country === "FR");
   if (help.length > 0) {
     await expect(page.getByTestId("visitor-help").locator("li.flex")).toHaveCount(help.length);
@@ -61,7 +62,13 @@ test("the Australian visiting page adds the rules for overseas pilots and help o
   page,
 }) => {
   await page.goto("au/visiting-pilots/");
-  await expect(page.getByTestId("visitor-rules")).toContainText("Visiting Pilot Membership");
+  await expect(page.getByTestId("visitor-rules")).toContainText("SAFA");
+  // The rules are a summary: the page says so and links to SAFA's own page.
+  const notice = page.getByTestId("rules-notice");
+  await expect(notice).toContainText("not legal advice");
+  await expect(
+    notice.getByRole("link", { name: /current rules for visiting pilots/ }),
+  ).toHaveAttribute("href", /safa\.asn\.au/);
   await expect(page.getByRole("heading", { name: "Help on the ground" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Flying tours here" })).toBeVisible();
 });

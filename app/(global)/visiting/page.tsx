@@ -62,7 +62,9 @@ export default function VisitingPage() {
   const tours = getTourOperators().length;
   return (
     <div className="flex flex-col gap-6">
-      <PageHeader title={t("pages.visiting.title")} intro={t("visiting.hubIntro")} />
+      <PageHeader title={t("pages.visiting.title")} intro={t("visiting.hubIntro")}>
+        <p className="mt-2 max-w-3xl text-muted">{t("visiting.notExhaustive")}</p>
+      </PageHeader>
 
       <section aria-labelledby="home" data-testid="visiting-home">
         <h2 id="home" className={h2}>

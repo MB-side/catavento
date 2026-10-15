@@ -701,6 +701,7 @@ export const countryGuideSchema = z.object({
   sources: z.array(httpUrl),
   checked: z.iso.date(),
   practice: z.array(z.string().min(1)).optional(),
+  rulesUrl: httpUrl.optional(),
 }) satisfies z.ZodType<CountryGuide>;
 
 export const guidesFileSchema = z.array(countryGuideSchema).nullable();

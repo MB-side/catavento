@@ -4,6 +4,7 @@ import { formatDate } from "@/lib/format";
 import { t } from "@/lib/messages";
 import type { CountryGuide } from "@/lib/types";
 import { Anchor } from "@/components/ui/anchor";
+import { RulesNotice } from "./RulesNotice";
 
 const h3 = "font-condensed text-[1.25rem] font-bold";
 
@@ -32,6 +33,7 @@ export function VisitorRules({
           ))}
         </ul>
       )}
+      {guide.visitors.length > 0 && <RulesNotice guide={guide} />}
       {guide.practice && guide.practice.length > 0 && (
         <div>
           <h3 className={h3}>{t("visiting.practiceHeading")}</h3>

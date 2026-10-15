@@ -41,7 +41,7 @@
     "privacy": "Privacy",
     "disclaimer": "Disclaimer",
     "feedback": "Feedback",
-    "independence": "Catavento is an independent prototype. Information comes from public sources and is credited on every page.",
+    "independence": "Catavento is an independent prototype. Information comes from public sources and is credited on every page. It is indicative, not complete: there is always more out there, and we add it as we find it.",
     "correction": "Report a correction"
   },
   "home": {
@@ -718,19 +718,19 @@
     "ratingsHeading": "Ratings",
     "forecastHeading": "Weather and forecasts",
     "forecastText": "Each site page shows a 3-day wind outlook and links to forecast services. Save sites to My Sites to see them together.",
-    "hubIntro": "Flying somewhere new? Catavento gathers where to find out how flying works in each country, who helps visiting pilots on the ground (site briefings, guiding, lifts up the hill), and who runs flying tours. The sources hold the details: check with them before you fly.",
+    "hubIntro": "Flying somewhere new? Catavento gathers where to find out how flying works in each country, who helps visiting pilots on the ground (site briefings, guiding, lifts up the hill), and who runs flying tours. The sources hold the details, so it's worth checking with them before you fly.",
     "beforeAnyTrip": "Before any trip",
     "homeHeading": "Australia and New Zealand",
     "homeNote": "Our fullest coverage: sites, clubs, schools, shops and events.",
     "otherHeading": "Other destinations",
     "toursCard": "Flying tours worldwide",
     "countryTitle": "Visiting {country}",
-    "countryIntro": "Where to find out how flying works in {country}, who helps visiting pilots on the ground, and who runs tours here. The sources hold the details: check with them before you fly.",
+    "countryIntro": "Where to find out how flying works in {country}, who helps visiting pilots on the ground, and who runs tours here. The sources hold the details, so it's worth checking with them before you fly.",
     "rulesHeading": "Before you fly",
     "rulesMissing": "We haven't gathered the rules for visitors here yet. Ask the national body or a local school or club before you fly.",
     "practiceHeading": "Finding local knowledge",
     "helpHeading": "Help on the ground",
-    "helpIntro": "Businesses whose own websites say they help visiting pilots. Contact them before you go.",
+    "helpIntro": "Businesses whose own websites say they help visiting pilots. It's worth contacting them before you go.",
     "helpNone": "We haven't found anyone here yet. The national body's lists of schools and clubs are a good place to start.",
     "offered": "On offer here",
     "toursHeading": "Flying tours here",
@@ -761,7 +761,13 @@
       "courses": "Courses"
     },
     "fromWorld": "Visiting {country}: help on the ground and flying tours",
-    "checkedSources": "Checked {date}. Sources:"
+    "checkedSources": "Checked {date}. Sources:",
+    "summaryNote": "A short summary, not legal advice. Rules change, so check {body}'s current requirements before you fly.",
+    "summaryNoteGeneric": "A short summary, not legal advice. Rules change, so check the current requirements with the national body of the country you're visiting.",
+    "rulesLink": "{body}: current rules for visiting pilots",
+    "rulesLinkGeneric": "Current rules for visiting pilots",
+    "summaryChecked": "Summary checked {date}.",
+    "notExhaustive": "These lists are indicative, not complete. We add more as we find them, so there are likely others not listed here."
   },
   "gear": {
     "intro": "Where to buy, service and check flying equipment in {country}.",

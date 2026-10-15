@@ -21,7 +21,9 @@ export default function ToursPage() {
         title={t("pages.tours.title")}
         intro={t("visiting.toursPageIntro")}
         crumb={{ href: `${visitingPath()}/`, label: t("pages.visiting.title") }}
-      />
+      >
+        <p className="mt-2 max-w-3xl text-muted">{t("visiting.notExhaustive")}</p>
+      </PageHeader>
       <TourList tours={getTourOperators()} names={names} pages={pages} />
       <p className="rounded-[14px] bg-notice-tint p-4 text-notice-text">{t("site.disclaimer")}</p>
     </div>

@@ -476,8 +476,10 @@ export interface CountryGuide {
   links: { label: string; url: string }[];
   sources: string[];
   checked: string; // ISO date the facts were checked
-  /** How visiting pilots usually find local knowledge here, from official sources (D89). */
+  /** How visiting pilots usually find local knowledge here (D89). */
   practice?: string[];
+  /** The official page with the current rules for visiting pilots (D89). */
+  rulesUrl?: string;
 }
 
 /** What a business offers a visiting, already-qualified pilot (D89). */
