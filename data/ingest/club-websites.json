@@ -1,7 +1,7 @@
 {
   "providerId": "club-websites",
-  "fetchedAt": "2026-10-12T09:17:42.632Z",
-  "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c",
+  "fetchedAt": "2026-10-15T19:56:54.715Z",
+  "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a",
   "events": [],
   "notices": [
     {
@@ -16,9 +16,9 @@
         {
           "providerId": "club-websites",
           "url": "https://www.chgpc.org.nz/blog-feed.xml",
-          "fetchedAt": "2026-10-12T09:17:42.632Z",
+          "fetchedAt": "2026-10-15T19:56:54.716Z",
           "licence": "facts",
-          "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+          "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
         }
       ]
     },
@@ -34,9 +34,9 @@
         {
           "providerId": "club-websites",
           "url": "https://www.chgpc.org.nz/blog-feed.xml",
-          "fetchedAt": "2026-10-12T09:17:42.632Z",
+          "fetchedAt": "2026-10-15T19:56:54.716Z",
           "licence": "facts",
-          "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+          "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
         }
       ]
     },
@@ -52,9 +52,9 @@
         {
           "providerId": "club-websites",
           "url": "https://www.chgpc.org.nz/blog-feed.xml",
-          "fetchedAt": "2026-10-12T09:17:42.632Z",
+          "fetchedAt": "2026-10-15T19:56:54.716Z",
           "licence": "facts",
-          "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+          "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
         }
       ]
     }
@@ -76,9 +76,9 @@
       "source": {
         "providerId": "club-websites",
         "url": "https://acthpa.org/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     },
     {
@@ -93,24 +93,9 @@
       "source": {
         "providerId": "club-websites",
         "url": "https://www.flycanungra.com.au/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
-      }
-    },
-    {
-      "id": "evidence:org:au:central-coast-sky-surfers:b1cb65b6",
-      "orgId": "org:au:central-coast-sky-surfers",
-      "url": "https://www.centralcoastskysurfers.com/flying-sites/",
-      "siteIds": [
-        "site:au:nsw:crackneck-lookout"
-      ],
-      "source": {
-        "providerId": "club-websites",
-        "url": "https://www.centralcoastskysurfers.com/flying-sites/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
-        "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     },
     {
@@ -127,9 +112,9 @@
       "source": {
         "providerId": "club-websites",
         "url": "https://www.dynasoarers.vhpa.org.au/sites.shtml",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     },
     {
@@ -142,9 +127,9 @@
       "source": {
         "providerId": "club-websites",
         "url": "https://mss.org.au/Information/LaunchSites/tabid/76/Default.aspx",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     },
     {
@@ -159,9 +144,9 @@
       "source": {
         "providerId": "club-websites",
         "url": "https://mncf.tidyhq.com/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     },
     {
@@ -182,9 +167,9 @@
       "source": {
         "providerId": "club-websites",
         "url": "https://www.nevhgc.net/sites",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     },
     {
@@ -200,9 +185,9 @@
       "source": {
         "providerId": "club-websites",
         "url": "https://sites.google.com/site/sahpgahome/ourflyingsites",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     },
     {
@@ -216,9 +201,9 @@
       "source": {
         "providerId": "club-websites",
         "url": "https://www.flystanwell.com.au/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     },
     {
@@ -236,9 +221,9 @@
       "source": {
         "providerId": "club-websites",
         "url": "https://www.freeflyers.com.au/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     },
     {
@@ -256,9 +241,9 @@
       "source": {
         "providerId": "club-websites",
         "url": "https://www.flysydney.com.au/public/pages/site-guides",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     },
     {
@@ -272,9 +257,9 @@
       "source": {
         "providerId": "club-websites",
         "url": "https://www.flysydney.com.au/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     }
   ]

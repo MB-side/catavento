@@ -58,9 +58,9 @@
       {
         "providerId": "club-websites",
         "url": "https://acthpa.org/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:act-hang-gliding-and-paragliding-association"
@@ -182,9 +182,9 @@
       {
         "providerId": "club-websites",
         "url": "https://mncf.tidyhq.com/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       },
       {
         "providerId": "club-websites",
@@ -559,9 +559,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.flysydney.com.au/public/pages/site-guides",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:sydney-paragliding-and-hang-gliding-club"
@@ -1002,9 +1002,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.flysydney.com.au/public/pages/site-guides",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:sydney-paragliding-and-hang-gliding-club"
@@ -1028,7 +1028,7 @@
     ],
     "windRangeLabel": "E–SE",
     "status": "open",
-    "stewardRole": "club",
+    "stewardRole": "unknown",
     "listedContact": {
       "name": "Central Coast Sky Surfers Inc",
       "url": "http://www.centralcoastskysurfers.com/",
@@ -1065,16 +1065,8 @@
         "fetchedAt": "2026-10-13T03:23:11.281Z",
         "licence": "facts",
         "contentHash": "1a0e2d11e9236f1c710c375961f7c0a43ee139f9eefbafb94e93be210e8b60bb"
-      },
-      {
-        "providerId": "club-websites",
-        "url": "https://www.centralcoastskysurfers.com/flying-sites/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
-        "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
       }
-    ],
-    "stewardOrgId": "org:au:central-coast-sky-surfers"
+    ]
   },
   {
     "id": "site:au:nsw:crescent-head",
@@ -1734,9 +1726,9 @@
       {
         "providerId": "club-websites",
         "url": "https://mncf.tidyhq.com/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:mid-north-coast-flyers"
@@ -1928,9 +1920,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.flystanwell.com.au/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:stanwell-park-hang-gliding-paragliding-club"
@@ -2006,9 +1998,9 @@
       {
         "providerId": "club-websites",
         "url": "https://acthpa.org/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:act-hang-gliding-and-paragliding-association"
@@ -2351,9 +2343,9 @@
       {
         "providerId": "club-websites",
         "url": "https://acthpa.org/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:act-hang-gliding-and-paragliding-association"
@@ -2417,9 +2409,9 @@
       {
         "providerId": "club-websites",
         "url": "https://acthpa.org/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:act-hang-gliding-and-paragliding-association"
@@ -2483,9 +2475,9 @@
       {
         "providerId": "club-websites",
         "url": "https://acthpa.org/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:act-hang-gliding-and-paragliding-association"
@@ -2716,9 +2708,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.flysydney.com.au/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:sydney-paragliding-and-hang-gliding-club"
@@ -2839,9 +2831,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.flysydney.com.au/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:sydney-paragliding-and-hang-gliding-club"
@@ -2983,9 +2975,9 @@
       {
         "providerId": "club-websites",
         "url": "https://mss.org.au/Information/LaunchSites/tabid/76/Default.aspx",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:manilla-skysailors"
@@ -3326,9 +3318,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.flysydney.com.au/public/pages/site-guides",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:sydney-paragliding-and-hang-gliding-club"
@@ -3955,9 +3947,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.flysydney.com.au/public/pages/site-guides",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:sydney-paragliding-and-hang-gliding-club"
@@ -4249,9 +4241,9 @@
       {
         "providerId": "club-websites",
         "url": "https://acthpa.org/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:act-hang-gliding-and-paragliding-association"
@@ -4538,9 +4530,9 @@
       {
         "providerId": "club-websites",
         "url": "https://mncf.tidyhq.com/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:mid-north-coast-flyers"
@@ -4824,9 +4816,9 @@
       {
         "providerId": "club-websites",
         "url": "https://acthpa.org/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:act-hang-gliding-and-paragliding-association"
@@ -4934,9 +4926,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.flystanwell.com.au/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:stanwell-park-hang-gliding-paragliding-club"
@@ -5263,9 +5255,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.flysydney.com.au/public/pages/site-guides",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:sydney-paragliding-and-hang-gliding-club"
@@ -5411,9 +5403,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.flysydney.com.au/public/pages/site-guides",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:sydney-paragliding-and-hang-gliding-club"
@@ -5828,9 +5820,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.flycanungra.com.au/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:canungra-hang-gliding-club"
@@ -5927,9 +5919,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.freeflyers.com.au/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:sunshine-coast-free-flyers-association"
@@ -6270,9 +6262,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.flycanungra.com.au/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:canungra-hang-gliding-club"
@@ -7204,9 +7196,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.flycanungra.com.au/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:canungra-hang-gliding-club"
@@ -7267,9 +7259,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.freeflyers.com.au/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:sunshine-coast-free-flyers-association"
@@ -7526,9 +7518,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.freeflyers.com.au/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:sunshine-coast-free-flyers-association",
@@ -7711,9 +7703,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.freeflyers.com.au/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:sunshine-coast-free-flyers-association"
@@ -7945,9 +7937,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.freeflyers.com.au/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:sunshine-coast-free-flyers-association"
@@ -8007,9 +7999,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.freeflyers.com.au/",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:sunshine-coast-free-flyers-association",
@@ -8308,9 +8300,9 @@
       {
         "providerId": "club-websites",
         "url": "https://sites.google.com/site/sahpgahome/ourflyingsites",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:south-australian-hang-gliding-paragliding-association"
@@ -9015,9 +9007,9 @@
       {
         "providerId": "club-websites",
         "url": "https://sites.google.com/site/sahpgahome/ourflyingsites",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:south-australian-hang-gliding-paragliding-association"
@@ -9347,9 +9339,9 @@
       {
         "providerId": "club-websites",
         "url": "https://sites.google.com/site/sahpgahome/ourflyingsites",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:south-australian-hang-gliding-paragliding-association"
@@ -9615,9 +9607,9 @@
       {
         "providerId": "club-websites",
         "url": "https://sites.google.com/site/sahpgahome/ourflyingsites",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:south-australian-hang-gliding-paragliding-association"
@@ -11646,9 +11638,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.dynasoarers.vhpa.org.au/sites.shtml",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:dynasoarers-hang-gliding-club"
@@ -11710,9 +11702,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.dynasoarers.vhpa.org.au/sites.shtml",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:dynasoarers-hang-gliding-club"
@@ -13289,9 +13281,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.nevhgc.net/sites",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:north-east-victoria-hang-gliding-club"
@@ -13600,9 +13592,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.nevhgc.net/sites",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:north-east-victoria-hang-gliding-club"
@@ -13862,9 +13854,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.nevhgc.net/sites",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:north-east-victoria-hang-gliding-club"
@@ -13922,9 +13914,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.nevhgc.net/sites",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:north-east-victoria-hang-gliding-club"
@@ -14273,9 +14265,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.nevhgc.net/sites",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:north-east-victoria-hang-gliding-club"
@@ -14755,9 +14747,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.nevhgc.net/sites",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:north-east-victoria-hang-gliding-club"
@@ -14858,9 +14850,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.nevhgc.net/sites",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:north-east-victoria-hang-gliding-club"
@@ -14922,9 +14914,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.dynasoarers.vhpa.org.au/sites.shtml",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:dynasoarers-hang-gliding-club"
@@ -15079,9 +15071,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.dynasoarers.vhpa.org.au/sites.shtml",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:dynasoarers-hang-gliding-club"
@@ -15568,9 +15560,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.dynasoarers.vhpa.org.au/sites.shtml",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:dynasoarers-hang-gliding-club"
@@ -15684,9 +15676,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.nevhgc.net/sites",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:north-east-victoria-hang-gliding-club"
@@ -15901,9 +15893,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.nevhgc.net/sites",
-        "fetchedAt": "2026-10-12T09:17:42.632Z",
+        "fetchedAt": "2026-10-15T19:56:54.716Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "49fbe2acbfc74a5b0ee6d38f0c191d981a2656669c57de482324c2e7271e226a"
       }
     ],
     "stewardOrgId": "org:au:north-east-victoria-hang-gliding-club"
