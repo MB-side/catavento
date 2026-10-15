@@ -762,7 +762,7 @@
     },
     "fromWorld": "Visiting {country}: help on the ground and flying tours",
     "checkedSources": "Checked {date}. Sources:",
-    "summaryNote": "A short summary, not legal advice. Rules change, so check {body}'s current requirements before you fly.",
+    "summaryNote": "A short summary, not legal advice. Rules change, so check the current requirements with {body} before you fly.",
     "summaryNoteGeneric": "A short summary, not legal advice. Rules change, so check the current requirements with the national body of the country you're visiting.",
     "rulesLink": "{body}: current rules for visiting pilots",
     "rulesLinkGeneric": "Current rules for visiting pilots",
