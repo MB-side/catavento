@@ -17,6 +17,8 @@ import { formatDate } from "@/lib/format";
 import { t, tCount } from "@/lib/messages";
 import { isGroup, mapDataPath, worldPath } from "@/lib/overview";
 import { pageMetadata } from "@/lib/seo";
+import { visitingPath } from "@/lib/visiting";
+import { hasVisitingPage } from "@/lib/visiting-pages";
 
 export const dynamicParams = false;
 
@@ -77,6 +79,14 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
           <OverviewGuide guide={guide} name={region.name} />
         </div>
       </section>
+
+      {only && hasVisitingPage(only.code) && (
+        <p>
+          <Link href={`${visitingPath(only.code)}/`} className="font-semibold">
+            {t("visiting.fromWorld", { country: only.name })}
+          </Link>
+        </p>
+      )}
 
       <p className="rounded-[14px] bg-notice-tint p-4 text-notice-text">{t("site.disclaimer")}</p>
 

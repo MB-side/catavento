@@ -21,6 +21,7 @@ export const desktopNav: NavItem[] = [
   { label: "nav.whatsOn", path: "/whats-on" },
   { label: "nav.gear", path: "/gear" },
   { label: "nav.newToFlying", path: "/new-to-flying" },
+  { label: "nav.visiting", path: "/visiting", global: true },
 ];
 
 /** Phone bottom tab bar (D32): five tabs, the same sections as the desktop bar. */
@@ -34,6 +35,7 @@ export const phoneTabs: NavItem[] = [
 
 /** Phone menu (docs/06 §5). Country and Settings join in M1 and M5. */
 export const phoneMenu: NavItem[] = [
+  { label: "nav.visiting", path: "/visiting", global: true },
   { label: "footer.about", path: "/about", global: true },
   { label: "footer.sources", path: "/sources", global: true },
   { label: "footer.status", path: "/status", global: true },

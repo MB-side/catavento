@@ -21,6 +21,9 @@ import type {
   CountryGuide,
   OverviewRegion,
   OverviewSite,
+  TourOperator,
+  VisitorHelp,
+  VisitorService,
 } from "./types";
 
 // ---------- shared pieces ----------
@@ -697,6 +700,82 @@ export const countryGuideSchema = z.object({
   links: z.array(z.object({ label: z.string().min(1), url: httpUrl })),
   sources: z.array(httpUrl),
   checked: z.iso.date(),
+  practice: z.array(z.string().min(1)).optional(),
 }) satisfies z.ZodType<CountryGuide>;
 
 export const guidesFileSchema = z.array(countryGuideSchema).nullable();
+
+// ---------- visiting pilots (D89) ----------
+
+export const visitorServiceSchema = z.enum([
+  "guiding",
+  "site-briefing",
+  "shuttle",
+  "tours",
+  "gear-hire",
+  "accommodation",
+  "flight-park",
+  "licence-help",
+  "tandem",
+  "courses",
+]) satisfies z.ZodType<VisitorService>;
+
+const isoCountry = z.string().regex(/^[A-Z]{2}$/);
+
+/** data/manual/visiting.yaml: who helps visiting pilots, and who runs flying tours. */
+export const visitingFileSchema = z
+  .object({
+    help: z
+      .array(
+        z.object({
+          country: isoCountry,
+          org: z.string().min(1).optional(), // organisation ID or seed legacy ID, for listed businesses
+          name: z.string().min(1).optional(),
+          website: httpUrl.optional(),
+          area: z.string().min(1).optional(),
+          services: z.array(visitorServiceSchema).min(1),
+          note: z.string().min(1).optional(),
+          source: httpUrl,
+          checked: z.iso.date(),
+        }),
+      )
+      .default([]),
+    tours: z
+      .array(
+        z.object({
+          name: z.string().min(1),
+          website: httpUrl,
+          basedIn: isoCountry,
+          destinations: z.array(isoCountry).min(1),
+          forPilots: z.string().min(1).optional(),
+          source: httpUrl,
+          checked: z.iso.date(),
+        }),
+      )
+      .default([]),
+  })
+  .nullable();
+
+export const visitorHelpSchema = z.object({
+  id: z.string(),
+  country: isoCountry,
+  name: z.string().min(1),
+  website: httpUrl.optional(),
+  orgId: z.string().optional(),
+  area: z.string().min(1).optional(),
+  services: z.array(visitorServiceSchema).min(1),
+  note: z.string().min(1).optional(),
+  source: httpUrl,
+  checked: z.iso.date(),
+}) satisfies z.ZodType<VisitorHelp>;
+
+export const tourOperatorSchema = z.object({
+  id: z.string(),
+  name: z.string().min(1),
+  website: httpUrl,
+  basedIn: isoCountry,
+  destinations: z.array(isoCountry).min(1),
+  forPilots: z.string().min(1).optional(),
+  source: httpUrl,
+  checked: z.iso.date(),
+}) satisfies z.ZodType<TourOperator>;

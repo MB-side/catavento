@@ -23,6 +23,8 @@ import type {
   CountryGuide,
   OverviewRegion,
   OverviewSite,
+  TourOperator,
+  VisitorHelp,
 } from "@/lib/types";
 import {
   applyOrgMerges,
@@ -87,6 +89,10 @@ export interface BuildInputs {
     distributors: { org: string; role: Brand["distributors"][number]["role"]; basis?: "brand" | "self"; source?: string; checked?: string }[];
     dealerPage?: Brand["dealerPage"];
   }[];
+  visiting: {
+    help: (Omit<VisitorHelp, "id" | "name" | "orgId"> & { name?: string; org?: string })[];
+    tours: Omit<TourOperator, "id">[];
+  };
 }
 
 export interface BuildOutputs {
@@ -102,6 +108,7 @@ export interface BuildOutputs {
   resources: Resource[];
   overview: { regions: OverviewRegion[]; guides: CountryGuide[] };
   overviewSites: OverviewSite[];
+  visiting: { help: VisitorHelp[]; tours: TourOperator[] };
   report: BuildReport;
 }
 
@@ -253,10 +260,40 @@ export function buildData(input: BuildInputs): BuildOutputs {
   const overviewSites = input.ingestedOverviewSites
     .filter((s) => overviewCodes.has(s.country))
     .sort((a, b) => a.country.localeCompare(b.country) || a.name.localeCompare(b.name) || a.id.localeCompare(b.id));
-  const guideCodes = new Set(["europe", ...overviewCodes]);
+  const guideCodes = new Set(["world", "europe", ...overviewCodes, ...input.countries.map((c) => c.code)]);
   for (const g of input.guides) {
     if (!guideCodes.has(g.code)) warnings.push({ code: "guide-unknown", message: `guides.yaml: "${g.code}" is not an overview region or country` });
   }
+
+  // Visiting pilots (D89): listed businesses take their name and website from the directory, and
+  // hidden ones drop out with them.
+  const helpIds = new Set<string>();
+  const visitorHelp: VisitorHelp[] = input.visiting.help.flatMap(({ org: ref, ...h }) => {
+    const orgId = ref ? resolveOrgRef(ref, withClubs) : undefined;
+    const org = orgId ? withClubs.find((o) => o.id === orgId) : undefined;
+    if (ref && !org) {
+      warnings.push({ code: "visiting-org-missing", message: `visiting.yaml: no organisation ${ref}` });
+      return [];
+    }
+    if (org?.hidden) return [];
+    const name = org?.name ?? h.name;
+    if (!name) {
+      warnings.push({ code: "visiting-name-missing", message: `visiting.yaml: an entry for ${h.country} has neither org nor name` });
+      return [];
+    }
+    let id = `help:${h.country.toLowerCase()}:${slugify(name)}`;
+    for (let n = 2; helpIds.has(id); n++) id = `help:${h.country.toLowerCase()}:${slugify(name)}-${n}`;
+    helpIds.add(id);
+    const website = org?.website ?? h.website;
+    return [{ ...h, id, name, ...(website ? { website } : {}), ...(org ? { orgId: org.id } : {}) }];
+  });
+  const tourIds = new Set<string>();
+  const tours: TourOperator[] = input.visiting.tours.map((t) => {
+    let id = `tour:${slugify(t.name)}`;
+    for (let n = 2; tourIds.has(id); n++) id = `tour:${slugify(t.name)}-${n}`;
+    tourIds.add(id);
+    return { ...t, id, destinations: [...new Set(t.destinations)].sort() };
+  });
 
   const visible = withClubs.filter((o) => !o.hidden);
   const counts: Record<string, number> = {
@@ -300,6 +337,10 @@ export function buildData(input: BuildInputs): BuildOutputs {
     resources: seed.resources.sort(byId),
     overview: { regions: input.overview, guides: input.guides },
     overviewSites,
+    visiting: {
+      help: visitorHelp.sort((a, b) => a.country.localeCompare(b.country) || a.name.localeCompare(b.name)),
+      tours: tours.sort((a, b) => a.name.localeCompare(b.name)),
+    },
     report: { build: { counts, warnings }, providers: input.runs },
   };
 }

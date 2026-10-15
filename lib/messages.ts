@@ -43,7 +43,14 @@ const pluralRules = new Intl.PluralRules("en");
 
 /** Count with the right singular or plural form, e.g. tCount("counts.clubs", 1) → "1 club". */
 export function tCount(
-  base: "counts.sites" | "counts.clubs" | "counts.schools" | "counts.gear" | "counts.stations",
+  base:
+    | "counts.sites"
+    | "counts.clubs"
+    | "counts.schools"
+    | "counts.gear"
+    | "counts.stations"
+    | "counts.help"
+    | "counts.tours",
   count: number,
 ): string {
   const form = pluralRules.select(count) === "one" ? "one" : "other";

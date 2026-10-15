@@ -356,9 +356,13 @@
         "https://efvl.ffvl.fr/carte_choisir_ecole",
         "https://efvl.ffvl.fr/brevets_ffvl",
         "https://federation.ffvl.fr/pages/rechercher-un-site-pratique",
-        "https://federation.ffvl.fr/ou-pratiquer-ensuite"
+        "https://federation.ffvl.fr/ou-pratiquer-ensuite",
+        "https://www.aerogliss.com/infos-pratiques/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "practice": [
+        "At Saint-André-les-Alpes, the local school says visiting pilots are welcome on the Chalvet site and that it will tell them about the day's conditions and the site's features. Shuttles run by the local club and the commune leave from the school."
+      ]
     },
     {
       "code": "CH",
@@ -423,7 +427,8 @@
         "https://www.shv-fsvl.ch/en/fluggebiete-sicherheit/fluggebiete/airspace/",
         "https://www.shv-fsvl.ch/en/education/translate-to-englisch-wie-werde-ich-pilot/",
         "https://www.shv-fsvl.ch/en/education/flight-schools/",
-        "https://www.shv-fsvl.ch/en/federation/translate-to-englisch-rechtliche-grundlagen/"
+        "https://www.shv-fsvl.ch/en/federation/translate-to-englisch-rechtliche-grundlagen/",
+        "https://shv-fsvl.ch/en/education/foreign-licence"
       ],
       "checked": "2026-10-13"
     },
@@ -481,9 +486,15 @@
         "https://www.dhv.de/en/dhv/german-flying-rules/",
         "https://www.dhv.de/en/sites-nature/flying-sites/",
         "https://www.dhv.de/fliegen/ausbildung/a-lizenz/",
-        "https://www.dhv.de/en/training/schools/"
+        "https://www.dhv.de/en/training/schools/",
+        "https://flugschule-tegelberg.de/flugschule-tegelberg-deine-flugschule-im-allgaeu-einweisungskarte-tegelberg/",
+        "https://papillon.de/wasserkuppe/fluggebiete-rhoen/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "practice": [
+        "At Tegelberg and Buchenberg, every paraglider and hang glider pilot needs a site-briefing card, the 'green card', issued through the local flight school. Pilots show it to lift staff.",
+        "At the Wasserkuppe, guest pilots register once on the local club's website and buy day tickets there. The club posts any temporary limits on guest flying."
+      ]
     },
     {
       "code": "AT",
@@ -547,9 +558,13 @@
         "https://aeroclub.at/de/behoerde/download",
         "https://aeroclub.at/uploads/download/OeAeC_FAA_ZPH_006_i04_anerkennung_fs_und_hgpg_berechtigungen.pdf",
         "https://aeroclub.at/de/fliegenlernen/fliegenlernen/paragleiten",
-        "https://www.aeroclub.at/uploads/download/OeAeC_FAA_ato_HPG_001_i041_haenge_paragleiterschulen.pdf"
+        "https://www.aeroclub.at/uploads/download/OeAeC_FAA_ato_HPG_001_i041_haenge_paragleiterschulen.pdf",
+        "https://www.parafly.at/paragliding-fluggebiet-elfer-im-stubaital/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "practice": [
+        "At the Elfer site in the Stubai valley, the lift company has handed supervision of the landing field to the local flight school, which gives site briefings during its opening hours."
+      ]
     },
     {
       "code": "IT",
@@ -609,9 +624,14 @@
         "https://www.fivl.it/foreign-pilots/rules-for-hg-pg-pilots/airspace-restrictions-stranieri",
         "https://www.fivl.it/sul-territorio/elenco-scuole",
         "https://poliziadistato.it/articolo/pdf/37626",
-        "https://www.aeci.it/ippi-card-360"
+        "https://www.aeci.it/ippi-card-360",
+        "https://www.vivereilgrappa.it/it/decolli-e-atterraggi.htm"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "practice": [
+        "At Monte Grappa (Bassano), the area's tourist consortium strongly recommends that pilots use the shuttle services to reach the launches because parking is scarce. Pilots also need the area's Fly Card.",
+        "The national federation explains that foreign pilots may fly in Italy if their own liability insurance meets Italian minimums. If it does not, the federation sells a 30-day policy for visiting pilots. This is about insurance, not local site knowledge."
+      ]
     },
     {
       "code": "LI",
@@ -806,9 +826,14 @@
         "https://www.bhpa.co.uk/safety/visitors",
         "https://www.bhpa.co.uk/clubs",
         "https://www.bhpa.co.uk/schools",
-        "https://bhpa.co.uk/sport/learn_to_fly"
+        "https://bhpa.co.uk/sport/learn_to_fly",
+        "https://www.cumbriasoaringclub.co.uk/about-us"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "practice": [
+        "UK sites are looked after by local BHPA clubs, so visiting pilots should contact the club for the area first; it can brief them on sites and local rules. Overseas pilots need proof of third-party insurance and an IPPI card.",
+        "In the Lake District, Cumbria Soaring Club sites are open to visiting pilots without membership, as long as they follow the club's online sites guide."
+      ]
     },
     {
       "code": "IE",
@@ -1427,9 +1452,13 @@
       ],
       "sources": [
         "https://www.uradni-list.si/glasilo-uradni-list-rs/vsebina/1999-01-0616/",
-        "https://old.sffa.org/en/flying-rules-slovenia.html"
+        "https://old.sffa.org/en/flying-rules-slovenia.html",
+        "https://www.soca-valley.com/en/summer/paragliding/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "practice": [
+        "The Soča Valley tourist office says flying independently there needs a good knowledge of local conditions and advises talking to a flying instructor before you fly."
+      ]
     },
     {
       "code": "HR",
@@ -2031,9 +2060,13 @@
         "https://thsf.org.tr/wp-content/uploads/2026/04/Turkiye-Hava-Sporlari-Federasyonu-Yamac-Parasutu-ve-Yelkenkanat-Sporcu-Pilot-Egitim-Talimati.pdf",
         "https://thsf.org.tr/mevzuat/",
         "https://thsf.org.tr/kuluplerimiz/",
-        "https://thsf.org.tr/yamac-parasutu-pilotlari-dikkat-denklik-basvurulari-1-haziranda-basliyor/"
+        "https://thsf.org.tr/yamac-parasutu-pilotlari-dikkat-denklik-basvurulari-1-haziranda-basliyor/",
+        "https://shmfethiye.kapadokya.edu.tr/en/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "practice": [
+        "Solo pilots flying from Babadağ register through the Fethiye–Babadağ flight-area system, which takes amateur-pilot applications with pilot level and certificate. It also posts a daily flag per launch, and no one launches on a red flag."
+      ]
     },
     {
       "code": "ZA",
@@ -2080,7 +2113,10 @@
         "https://sahpa.co.za/about/",
         "https://sahpa.co.za/schools/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "practice": [
+        "Visiting pilots need SAHPA foreign temporary membership (3 or 6 months, with third-party insurance) and an IPPI 4 card; IPPI 3 or below must fly under an approved school's supervision."
+      ]
     },
     {
       "code": "CO",
@@ -2180,9 +2216,15 @@
         "https://www.cbvl.esp.br/espaco-aereo/normas",
         "https://www.cbvl.esp.br/piloto-cbvl/porque-se-associar/",
         "https://www.cbvl.esp.br/aprenda-a-voar/perguntas-frequentes-sobre-voo-livre/",
-        "https://www.cbvl.esp.br/piloto-cbvl/sistema-de-niveis/"
+        "https://www.cbvl.esp.br/piloto-cbvl/sistema-de-niveis/",
+        "https://avli.com.br/sitio-de-voo/",
+        "https://cscvl.com.br/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "practice": [
+        "At Pico da Ibituruna (Governador Valadares) the local administration requires pilots to register through the city's website; the club notes guesthouses that offer a retrieve service for pilots.",
+        "At Pedra Bonita (São Conrado, Rio) the club charges pilots who are not members a daily flying fee and requires a current CBVL card."
+      ]
     },
     {
       "code": "US",
@@ -2233,9 +2275,13 @@
         "https://www.ushpa.org/USHPA/Pilot_Resources/chapters/Public/PilotResources/Chapters.aspx?hkey=5e0f83c4-b56c-478c-84f0-9cca441b9a17",
         "https://www.ushpa.org/USHPA/Learn_to_fly/Become_a_pilot/Public/LearnToFly/become-a-pilot.aspx?hkey=e12ace22-bbe5-4838-b12e-764680618303",
         "https://www.ushpa.org/USHPA/Pilot_Resources/FAA_Resources/Public/PilotResources/faa-resources.aspx?hkey=0b3582c2-0ff1-42fa-929e-b4904a95d92b",
-        "https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-103"
+        "https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-103",
+        "https://www.flytorrey.com/visiting-pilot/"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "practice": [
+        "Torrey Pines Gliderport asks foreign pilots for P3-equivalent experience (IPPI card, 150 flights, 50 hours), a quick ground-handling review with an instructor and a logbook check before flying."
+      ]
     },
     {
       "code": "CA",
@@ -2293,7 +2339,10 @@
         "https://hpac.ca/joining-hpac-for-the-first-time/",
         "https://laws-lois.justice.gc.ca/eng/regulations/SOR-96-433/FullText.html"
       ],
-      "checked": "2026-10-13"
+      "checked": "2026-10-13",
+      "practice": [
+        "Visiting pilots need a 60-day temporary HPAC membership for Canadian insurance to fly most sites, and HPAC advises contacting local pilots, a school or the club for a site orientation."
+      ]
     },
     {
       "code": "ID",
@@ -2339,6 +2388,137 @@
         "https://www.paragliding.web.id/flying_in_indonesia/how_to_fly"
       ],
       "checked": "2026-10-13"
+    },
+    {
+      "code": "world",
+      "name": "Anywhere",
+      "visitors": [
+        "The IPPI card, from FAI/CIVL via national associations, shows your skill level abroad, but it is valid only with a current national licence or rating card.",
+        "The IPPI card gives no insurance cover. Check what insurance the country you visit requires before you go."
+      ],
+      "learners": [],
+      "links": [
+        {
+          "label": "IPPI card (FAI/CIVL)",
+          "url": "https://www.fai.org/page/civl-ippi-card"
+        }
+      ],
+      "sources": [
+        "https://www.fai.org/page/civl-ippi-card"
+      ],
+      "checked": "2026-10-13"
+    },
+    {
+      "code": "AU",
+      "name": "Australia",
+      "nationalBody": {
+        "name": "Sports Aviation Federation of Australia (SAFA)",
+        "url": "https://safa.asn.au/"
+      },
+      "visitors": [
+        "Overseas pilots must hold SAFA Visiting Pilot Membership and SAFA authorisation before flying; it includes compulsory third-party insurance, and travel or home-country insurance does not replace it.",
+        "Apply online with your current overseas licence and ratings (IPPI, APPI or similar) plus logbook copies; if your home licence has expired you cannot apply.",
+        "Once SAFA confirms your membership (allow 1 to 5 days), complete the visiting pilot online workbook and exam; your authorisation ends when the membership or your foreign qualification expires.",
+        "Visiting members may not fly tandem or carry passengers without a SAFA check flight and written approval, and may never fly tandems for payment or instruction.",
+        "Most sites do not need local club membership, but some do, including Mystic at Bright (Victoria) and Canungra (Queensland).",
+        "Airspace is regulated by CASA and checking it is your responsibility; airband radio use needs an operator licence, and overseas radio authorisations under the Chicago Convention are recognised with proof."
+      ],
+      "learners": [],
+      "links": [
+        {
+          "label": "Visiting international pilots (SAFA)",
+          "url": "https://safa.asn.au/pilot-tools/visiting-international-pilots/"
+        },
+        {
+          "label": "Visiting pilot information pack (PDF)",
+          "url": "https://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47OTh0NE5kdkpISzdqNDlpUkFWa1Ewdz09"
+        },
+        {
+          "label": "Apply for membership online",
+          "url": "https://members.safa.asn.au/safa_register_start.php"
+        },
+        {
+          "label": "Find a club",
+          "url": "https://safa.asn.au/local-clubs/"
+        },
+        {
+          "label": "Find a school",
+          "url": "https://safa.asn.au/training/flight-schools/"
+        },
+        {
+          "label": "Australian National Site Guide",
+          "url": "https://siteguide.org.au/"
+        },
+        {
+          "label": "CASA rules for self-administering organisations (Part 149)",
+          "url": "https://www.casa.gov.au/rules/regulatory-framework/casr/part-149-casr-approved-self-administering-organisations"
+        }
+      ],
+      "sources": [
+        "https://safa.asn.au/pilot-tools/visiting-international-pilots/",
+        "https://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47OTh0NE5kdkpISzdqNDlpUkFWa1Ewdz09",
+        "https://siteguide.org.au/"
+      ],
+      "checked": "2026-10-16",
+      "practice": [
+        "Before your first flights, contact the club that manages the site for its rules and hazards, report to the duty pilot if one is appointed, and carry proof of membership and logbook."
+      ]
+    },
+    {
+      "code": "NZ",
+      "name": "New Zealand",
+      "nationalBody": {
+        "name": "New Zealand Hang Gliding and Paragliding Association (NZHGPA)",
+        "url": "https://nzhgpa.org.nz/"
+      },
+      "visitors": [
+        "NZHGPA membership is required by law to fly a paraglider or hang glider in New Zealand, and it includes compulsory public liability insurance needed to use flying sites.",
+        "Visiting pilot membership suits stays under 4 months; it lasts 4 months from approval and cannot be taken again within 12 months, so longer stays need full membership.",
+        "Accepted qualifications are an IPPI card at level 4 or above with a current national licence, or a listed national licence (for example Australian PG3 or above); others are checked case by case.",
+        "You fly with the same restrictions as at home; an expired home licence is not valid, and if your licence requires supervision you must fly under a New Zealand instructor.",
+        "To apply, pass the online NZHGPA VFR exam, then send your licence, IPPI card and exam certificate in English; wait for approval and your Pilot ID Number (up to 5 working days) before flying.",
+        "Some sites need a site induction or permit first, including Barnicoat (Nelson), the Queenstown gondola site and several Wellington sites."
+      ],
+      "learners": [],
+      "links": [
+        {
+          "label": "Flying in New Zealand (NZHGPA)",
+          "url": "https://nzhgpa.org.nz/flying-in-nz/"
+        },
+        {
+          "label": "Membership and fees",
+          "url": "https://nzhgpa.org.nz/membership/"
+        },
+        {
+          "label": "Join online",
+          "url": "https://member.nzhgpa.org.nz/join-us"
+        },
+        {
+          "label": "Local clubs",
+          "url": "https://nzhgpa.org.nz/local-clubs/"
+        },
+        {
+          "label": "Find a school",
+          "url": "https://nzhgpa.org.nz/finding-a-school/"
+        },
+        {
+          "label": "Site inductions and airspace",
+          "url": "https://nzhgpa.org.nz/site-inductions/"
+        },
+        {
+          "label": "Emergency information",
+          "url": "https://nzhgpa.org.nz/safety/"
+        }
+      ],
+      "sources": [
+        "https://nzhgpa.org.nz/flying-in-nz/",
+        "https://nzhgpa.org.nz/membership/",
+        "https://nzhgpa.org.nz/site-inductions/"
+      ],
+      "checked": "2026-10-16",
+      "practice": [
+        "Always check with local pilots through a local club or school before flying a new site; many site names and locations are deliberately not published."
+      ]
     }
   ]
 }
