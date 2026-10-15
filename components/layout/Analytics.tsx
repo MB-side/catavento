@@ -1,6 +1,7 @@
 // Cookie-less visit counting (D85). Renders nothing unless the config turns it on.
 import { analyticsScript } from "@/lib/analytics";
 import { siteConfig } from "@/site.config";
+import { CountOutboundClicks } from "./CountOutboundClicks";
 import { CountPageChanges } from "./CountPageChanges";
 
 export function Analytics() {
@@ -10,6 +11,7 @@ export function Analytics() {
     <>
       <script async src={script.src} data-goatcounter={script.endpoint} />
       <CountPageChanges />
+      <CountOutboundClicks />
     </>
   );
 }
