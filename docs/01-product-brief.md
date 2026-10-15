@@ -71,7 +71,7 @@ Page inventory and routes: `docs/02` §4.
 | Seasonal | "Where can I travel? What course next?" | Site pages, club pages, destination guides |
 | One-off, high value | "Where can I do a tandem? How do I learn?" | New to flying (arrives mostly from search) |
 
-Acquire through the one-off questions, retain through the daily and weekly ones, and only later monetise the high-value moments (`docs/08`).
+Acquire through the one-off questions, retain through the daily and weekly ones, and earn from the high-value moments when it makes sense (`docs/08`).
 
 **Built-in spread:** every site page has a rich share image, so links pasted into club group chats advertise the hub.
 

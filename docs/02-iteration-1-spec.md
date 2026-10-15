@@ -17,7 +17,7 @@ Build a credible, mostly real, static website that the founder can share with pi
 |---|---|
 | Hosted on **GitHub Pages** (static files only, non-commercial use, deployments must finish within 10 minutes) | Next.js **static export**; no server code, no API routes, no database |
 | **No server-side collection of user data** | No accounts, no forms that post to us. My Sites lives in the browser's localStorage. Feedback goes to an external form |
-| **No transactions, no monetisation** | No sponsored slots live, no payments. A config flag can show clearly labelled *examples* during consultation |
+| **No payments on GitHub Pages** | Its terms don't allow running an online business on it. Revenue options (`docs/08` §3) need a move to another host first; a config flag can show clearly labelled *examples* meanwhile |
 | Data refreshed by **scheduled GitHub Actions** | A daily check-in runs the ingest scripts that are due, writes JSON into the repo, and triggers a rebuild |
 | Must not block **Iteration 2** (Vercel + Supabase) | Keep data access behind one module (`lib/data`), keep types in one place, and avoid static-export-only patterns that are hard to undo |
 
@@ -43,9 +43,9 @@ Build a credible, mostly real, static website that the founder can share with pi
 - **New Zealand sample** (§5.14)
 - **Overview regions** (§5.15, D83): light "Flying elsewhere" sections for Europe and ten other countries
 
-### Out of scope (Iteration 2 or later, see `docs/08`)
+### Not built yet (later, see `docs/08`; any of it can be brought forward)
 
-Full New Zealand coverage, full coverage of other countries (clubs, gear, per-site pages), translation, accounts and sync, classifieds posting, enquiry forms, live wind values, alerts and push, Thursday digest email, club claim and admin, pilot reports, RSVPs, reviews, payments, sponsored listings, dark mode, logbook (never).
+Full New Zealand coverage, full coverage of other countries (clubs, gear, per-site pages), accounts and sync, classifieds posting, enquiry forms, live wind values, alerts and push, Thursday digest email, club claim and admin, pilot reports, RSVPs, reviews, payments, sponsored listings, dark mode, logbook (never).
 
 ## 4. Pages and routes
 
