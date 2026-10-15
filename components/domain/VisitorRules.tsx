@@ -43,7 +43,7 @@ export function VisitorRules({
         </div>
       )}
       <p className="text-[0.875rem] text-muted">
-        {t("world.guideChecked", { date: formatDate(guide.checked, "UTC") })}{" "}
+        {t("visiting.checkedSources", { date: formatDate(guide.checked, "UTC") })}{" "}
         {guide.sources.map((s, i) => (
           <span key={s}>
             {i > 0 && " · "}

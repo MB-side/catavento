@@ -760,7 +760,8 @@
       "tandem": "Tandem flights",
       "courses": "Courses"
     },
-    "fromWorld": "Visiting {country}: help on the ground and flying tours"
+    "fromWorld": "Visiting {country}: help on the ground and flying tours",
+    "checkedSources": "Checked {date}. Sources:"
   },
   "gear": {
     "intro": "Where to buy, service and check flying equipment in {country}.",
