@@ -133,3 +133,14 @@ test("the Sources page thanks the people behind the information", async ({ page 
   await page.goto("sources/");
   await expect(page.getByTestId("sources-thanks")).toContainText("Thank you");
 });
+
+test("each page a visitor moves to is counted, once, with its own path", async ({ page }) => {
+  await page.goto("au/gear/");
+  await page.getByRole("link", { name: "Where to buy" }).first().click();
+  await expect(page).toHaveURL(/\/au\/gear\/where-to-buy\/$/);
+  await expect
+    .poll(() => page.evaluate(() => (window as unknown as { __counted: unknown[] }).__counted))
+    .toEqual([
+      expect.objectContaining({ path: expect.stringMatching(/\/au\/gear\/where-to-buy\/$/) }),
+    ]);
+});
