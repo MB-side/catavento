@@ -46,7 +46,9 @@ test("a country page shows its rules, who helps on the ground, its tours and its
   const tours = visiting.tours.filter((t) => t.destinations.includes("FR"));
   if (tours.length > 0)
     await expect(page.getByTestId("tour-list").locator(":scope > li")).toHaveCount(tours.length);
-  await expect(page.getByRole("link", { name: "Sites in France on a map" })).toBeVisible();
+  // The map shows straight away, with France's sites.
+  await expect(page.getByRole("heading", { name: "Sites on the map" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Sites in France on a map" }).first()).toBeVisible();
 });
 
 test("the tours page lists every operator", async ({ page }) => {
@@ -70,6 +72,7 @@ test("the Australian visiting page adds the rules for overseas pilots and help o
     notice.getByRole("link", { name: /current rules for visiting pilots/ }),
   ).toHaveAttribute("href", /safa\.asn\.au/);
   await expect(page.getByRole("heading", { name: "Help on the ground" })).toBeVisible();
+  await expect(page.getByTestId("visiting-map")).toBeVisible();
   await expect(page.getByRole("heading", { name: "Flying tours here" })).toBeVisible();
 });
 

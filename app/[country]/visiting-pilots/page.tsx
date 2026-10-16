@@ -3,7 +3,9 @@ import { notFound } from "next/navigation";
 import { ExternalLink } from "lucide-react";
 import { countryPageMetadata } from "@/components/layout/CountryPage";
 import { card, h2, linkButton, PageHeader } from "@/components/layout/PageHeader";
+import { CountrySitesMap } from "@/components/domain/CountrySitesMap";
 import { TourList } from "@/components/domain/TourList";
+import { siteSummaries } from "@/lib/site-view";
 import { VisitorHelpList } from "@/components/domain/VisitorHelpList";
 import { VisitorRules } from "@/components/domain/VisitorRules";
 import { orgPath } from "@/lib/clubs";
@@ -42,6 +44,17 @@ export default async function VisitingPilotsPage({
         intro={t("visiting.intro", { country: country.name })}
         crumb={{ href: `${visitingPath()}/`, label: t("pages.visiting.title") }}
       />
+      <section aria-labelledby="map">
+        <h2 id="map" className={h2}>
+          {t("visiting.mapHeading")}
+        </h2>
+        <div className="mt-3">
+          <CountrySitesMap sites={siteSummaries(country)} />
+        </div>
+        <p className="mt-2">
+          <Link href={`${seg}/sites/`}>{t("visiting.mapAllSites")}</Link>
+        </p>
+      </section>
       <section aria-labelledby="membership" className={card}>
         <h2 id="membership" className={h2}>
           {t("visiting.membershipHeading")}

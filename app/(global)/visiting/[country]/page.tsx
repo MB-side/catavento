@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { OverviewMap } from "@/components/domain/OverviewMap";
 import { TourList } from "@/components/domain/TourList";
 import { VisitorHelpList } from "@/components/domain/VisitorHelpList";
 import { VisitorRules } from "@/components/domain/VisitorRules";
@@ -9,12 +10,13 @@ import Link from "next/link";
 import {
   getGuide,
   getOverviewRegion,
+  getOverviewSites,
   getTourOperators,
   getVisitingCountries,
   getVisitorHelp,
 } from "@/lib/data";
 import { t } from "@/lib/messages";
-import { isGroup, worldPath } from "@/lib/overview";
+import { isGroup, mapDataPath, worldPath } from "@/lib/overview";
 import { pageMetadata } from "@/lib/seo";
 import { visitingPath } from "@/lib/visiting";
 import { countryLookups } from "@/lib/visiting-pages";
@@ -61,6 +63,7 @@ export default async function VisitingCountryPage({
     ? `${worldPath(region, isGroup(region) ? c.code : undefined)}/`
     : undefined;
   const { names, pages } = countryLookups();
+  const hasSites = region !== undefined && getOverviewSites(c.code).length > 0;
   return (
     <div className="flex flex-col gap-6">
       <PageHeader
@@ -68,6 +71,26 @@ export default async function VisitingCountryPage({
         intro={t("visiting.countryIntro", { country: c.name })}
         crumb={{ href: `${visitingPath()}/`, label: t("pages.visiting.title") }}
       />
+
+      {hasSites && region && (
+        <section aria-labelledby="map">
+          <h2 id="map" className={h2}>
+            {t("visiting.mapHeading")}
+          </h2>
+          <div className="mt-3">
+            <OverviewMap
+              dataPath={mapDataPath(region)}
+              countryNames={{ [c.code]: c.name }}
+              only={c.code}
+            />
+          </div>
+          {worldHref && (
+            <p className="mt-2">
+              <Link href={worldHref}>{t("visiting.sitesWorld", { country: c.name })}</Link>
+            </p>
+          )}
+        </section>
+      )}
 
       <section aria-labelledby="rules" className={card}>
         <h2 id="rules" className={h2}>

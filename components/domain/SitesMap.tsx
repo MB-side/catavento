@@ -3,6 +3,7 @@
 // The sites map (docs/02 §5.5): MapLibre with OpenFreeMap tiles (D61), loaded only when the
 // visitor opens it. Launches are clustered; tapping one shows the site with a link to its page.
 // The list beside it stays the main, accessible interface; if the map fails, the list still works.
+import { mainGroup } from "@/lib/map-view";
 import maplibregl, { type GeoJSONSource, type Map as MapLibreMap } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { useEffect, useRef, useState } from "react";
@@ -246,7 +247,9 @@ export default function SitesMap({
 function fit(map: MapLibreMap, sites: SiteSummary[], points: MapPoint[] = []) {
   if (sites.length === 0) return;
   const bounds = new maplibregl.LngLatBounds();
-  for (const s of sites) bounds.extend([s.lon as number, s.lat as number]);
+  // Open on where most sites are; far-off territories stay on the map, a scroll away (D90).
+  const located = sites.map((s) => ({ lat: s.lat as number, lon: s.lon as number }));
+  for (const s of mainGroup(located)) bounds.extend([s.lon, s.lat]);
   for (const p of points) bounds.extend([p.lon, p.lat]);
   map.fitBounds(bounds, { padding: 40, maxZoom: 11, duration: 0 });
 }
