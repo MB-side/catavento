@@ -476,4 +476,56 @@ export interface CountryGuide {
   links: { label: string; url: string }[];
   sources: string[];
   checked: string; // ISO date the facts were checked
+  /** How visiting pilots usually find local knowledge here (D89). */
+  practice?: string[];
+  /** The official page with the current rules for visiting pilots (D89). */
+  rulesUrl?: string;
+}
+
+/** What a business offers a visiting, already-qualified pilot (D89). */
+export type VisitorService =
+  | "guiding"
+  | "site-briefing"
+  | "shuttle"
+  | "tours"
+  | "gear-hire"
+  | "accommodation"
+  | "flight-park"
+  | "licence-help"
+  | "tandem"
+  | "courses";
+
+/** A business that helps visiting pilots on the ground, from its own website (D89). */
+export interface VisitorHelp {
+  id: string;
+  country: string; // ISO code
+  name: string;
+  website?: string;
+  /** Set when the business is already in the directory (Australia and New Zealand). */
+  orgId?: string;
+  area?: string;
+  services: VisitorService[];
+  note?: string;
+  source: string;
+  checked: string;
+}
+
+/** A business that runs organised flying trips for qualified pilots (D89). */
+export interface TourOperator {
+  id: string;
+  name: string;
+  website: string;
+  basedIn: string; // ISO code
+  destinations: string[]; // ISO codes
+  forPilots?: string;
+  source: string;
+  checked: string;
+}
+
+/** A country with a visiting-pilots page (D89). */
+export interface VisitingCountry {
+  code: string; // ISO code
+  name: string;
+  /** "home" for the fully covered countries, the overview region's slug, or "elsewhere" for tour-only countries. */
+  group: string;
 }

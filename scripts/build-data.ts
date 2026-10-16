@@ -14,6 +14,8 @@ import {
   offeringSchema,
   resourceSchema,
   overviewSiteSchema,
+  tourOperatorSchema,
+  visitorHelpSchema,
   countryGuideSchema,
   overviewRegionSchema,
   siteSchema,
@@ -62,6 +64,8 @@ function main(): void {
   validate("overview regions", overviewRegionSchema, out.overview.regions);
   validate("guides", countryGuideSchema, out.overview.guides);
   validate("overview sites", overviewSiteSchema, out.overviewSites);
+  validate("visitor help", visitorHelpSchema, out.visiting.help);
+  validate("tour operators", tourOperatorSchema, out.visiting.tours);
 
   for (const [file, records] of [
     ["organisations.json", out.organisations],
@@ -91,6 +95,7 @@ function main(): void {
   write("resources.json", out.resources);
   write("overview.json", out.overview);
   write("overview-sites.json", out.overviewSites);
+  write("visiting.json", out.visiting);
   write("_report.json", out.report);
 
   const c = out.report.build.counts;

@@ -1,0 +1,1762 @@
+{
+  "help": [
+    {
+      "country": "AT",
+      "name": "Fliegercamp Oberes Drautal",
+      "website": "https://www.fliegercamp.at/",
+      "area": "Greifenburg (Emberger Alm, Drau valley)",
+      "services": [
+        "shuttle",
+        "accommodation"
+      ],
+      "note": "A lakeside campsite with rooms. It runs a daily shuttle to launch (depending on demand) from the swimming-lake car park, with fixed departure times and no booking.",
+      "source": "https://www.fliegercamp.at/",
+      "checked": "2026-10-16",
+      "id": "help:at:fliegercamp-oberes-drautal"
+    },
+    {
+      "country": "AT",
+      "name": "Flugschule Lienz",
+      "website": "https://www.flugschule-lienz.at/",
+      "area": "Lienz (East Tyrol)",
+      "services": [
+        "courses",
+        "tandem"
+      ],
+      "source": "https://www.flugschule-lienz.at/",
+      "checked": "2026-10-16",
+      "id": "help:at:flugschule-lienz"
+    },
+    {
+      "country": "AT",
+      "name": "Fly Kössen (Flugschule Kössen)",
+      "website": "https://www.fly-koessen.at/",
+      "area": "Kössen (Unterberg, Kaiserwinkl)",
+      "services": [
+        "gear-hire",
+        "courses",
+        "tandem"
+      ],
+      "note": "Its test centre lets pilots try demonstration gliders at Unterberg; this is test flying, not general rental. It also runs training and further-training courses.",
+      "source": "https://www.fly-koessen.at/testcenter/",
+      "checked": "2026-10-16",
+      "id": "help:at:fly-kossen-flugschule-kossen"
+    },
+    {
+      "country": "AT",
+      "name": "Parafly",
+      "website": "https://www.parafly.at/",
+      "area": "Neustift (Elfer, Stubai valley)",
+      "services": [
+        "site-briefing",
+        "tandem"
+      ],
+      "note": "Gives site briefings for the Elfer area during opening hours and supervises the landing field. It also runs cross-country weeks abroad and offers glider checks.",
+      "source": "https://www.parafly.at/paragliding-fluggebiet-elfer-im-stubaital/",
+      "checked": "2026-10-16",
+      "id": "help:at:parafly"
+    },
+    {
+      "country": "AT",
+      "name": "Zillertaler Flugschule",
+      "website": "https://www.zillertaler-flugschule.com/",
+      "area": "Mayrhofen (Zillertal)",
+      "services": [
+        "courses",
+        "tandem"
+      ],
+      "note": "Runs further-training and refresher courses for paraglider and hang glider pilots, plus flying trips including hike-and-fly.",
+      "source": "https://www.zillertaler-flugschule.com/fortbildung/uebersicht",
+      "checked": "2026-10-16",
+      "id": "help:at:zillertaler-flugschule"
+    },
+    {
+      "country": "AU",
+      "services": [
+        "licence-help",
+        "tandem",
+        "courses"
+      ],
+      "note": "Conversion course for pilots trained overseas; training logbook must be shown.",
+      "source": "https://www.adventureplusparagliding.com.au/product/conversion-paragliding-course",
+      "checked": "2026-10-16",
+      "id": "help:au:adventure-plus-paragliding",
+      "name": "Adventure Plus Paragliding",
+      "website": "https://www.adventureplusparagliding.com.au/",
+      "orgId": "org:au:adventure-plus-paragliding"
+    },
+    {
+      "country": "AU",
+      "services": [
+        "accommodation",
+        "tandem",
+        "courses"
+      ],
+      "note": "On-site cabins at the Laurieton school are offered to course students at extra cost; tours are to Bali.",
+      "source": "https://www.highadventure.com.au/pages/accommodation",
+      "checked": "2026-10-16",
+      "id": "help:au:high-adventure",
+      "name": "High Adventure",
+      "website": "http://www.highadventure.com.au/",
+      "orgId": "org:au:high-adventure"
+    },
+    {
+      "country": "AU",
+      "services": [
+        "shuttle",
+        "accommodation",
+        "tandem",
+        "courses"
+      ],
+      "note": "Pilots need SAFA and local club (MSS) membership to fly Mt Borah; the hill shuttle runs on flying days Oct to April.",
+      "source": "https://www.flymanilla.com/ManillaEvents,AccomInfo/Location,Travel,TransportandXCRetrieveInfo/tabid/147/Default.aspx",
+      "checked": "2026-10-16",
+      "id": "help:au:manilla-paragliding",
+      "name": "Manilla Paragliding",
+      "website": "https://www.flymanilla.com/",
+      "orgId": "org:au:manilla-paragliding"
+    },
+    {
+      "country": "AU",
+      "services": [
+        "guiding",
+        "tandem",
+        "courses"
+      ],
+      "note": "Guided XC flying is part of its XC courses for licensed pilots; tours are to Europe.",
+      "source": "https://www.melbourneparagliding.com/xc-courses.html",
+      "checked": "2026-10-16",
+      "id": "help:au:melbourne-paragliding",
+      "name": "Melbourne Paragliding",
+      "website": "https://www.melbourneparagliding.com/",
+      "orgId": "org:au:melbourne-paragliding"
+    },
+    {
+      "country": "AU",
+      "services": [
+        "licence-help",
+        "tandem",
+        "courses"
+      ],
+      "source": "http://www.northsideparagliding.com.au/",
+      "checked": "2026-10-16",
+      "id": "help:au:north-side-paragliding",
+      "name": "North Side Paragliding",
+      "website": "http://www.northsideparagliding.com.au/",
+      "orgId": "org:au:north-side-paragliding"
+    },
+    {
+      "country": "AU",
+      "services": [
+        "accommodation",
+        "tandem",
+        "courses"
+      ],
+      "note": "Rents a farm-stay house at Oz Sky Ranch and has student accommodation; tours run in Queenstown, New Zealand.",
+      "source": "https://ozparaglidingandhanggliding.com.au/accommodation",
+      "checked": "2026-10-16",
+      "id": "help:au:oz-paragliding-hang-gliding",
+      "name": "Oz Paragliding & Hang Gliding",
+      "website": "https://ozparaglidingandhanggliding.com.au/",
+      "orgId": "org:au:oz-paragliding-hang-gliding"
+    },
+    {
+      "country": "AU",
+      "services": [
+        "guiding",
+        "shuttle",
+        "licence-help",
+        "tandem",
+        "courses"
+      ],
+      "note": "Asks pilots to contact them to arrange; licence conversions are run on demand.",
+      "source": "https://www.paratechpg.com/xc-coaching",
+      "checked": "2026-10-16",
+      "id": "help:au:paratech-paragliding",
+      "name": "Paratech Paragliding",
+      "website": "https://www.paratechpg.com/",
+      "orgId": "org:au:paratech-paragliding"
+    },
+    {
+      "country": "AU",
+      "services": [
+        "guiding",
+        "tandem",
+        "courses"
+      ],
+      "note": "Guided XC flying is part of a course for licensed SAFA pilots; tours are to Europe.",
+      "source": "https://skyoutparagliding.com/thermal-xc-lite",
+      "checked": "2026-10-16",
+      "id": "help:au:sky-out-paragliding",
+      "name": "Sky Out Paragliding",
+      "website": "http://www.skyoutparagliding.com/",
+      "orgId": "org:au:sky-out-paragliding"
+    },
+    {
+      "country": "AU",
+      "services": [
+        "guiding",
+        "site-briefing",
+        "tandem",
+        "courses"
+      ],
+      "note": "Coaching days need current SAFA membership and PG2 or higher; dates are arranged on request.",
+      "source": "https://updraftparagliding.com.au/coaching",
+      "checked": "2026-10-16",
+      "id": "help:au:updraft-paragliding",
+      "name": "Updraft Paragliding",
+      "website": "http://www.updraftparagliding.com.au/",
+      "orgId": "org:au:updraft-paragliding"
+    },
+    {
+      "country": "BR",
+      "name": "Eagle Paragliding",
+      "website": "https://www.paragliding.com/",
+      "area": "Espírito Santo (Alfredo Chaves, Castelo, Baixo Guandu)",
+      "services": [
+        "guiding",
+        "shuttle",
+        "accommodation"
+      ],
+      "note": "XC tour moving between three Espírito Santo sites, with hotels, retrieves and daily debriefs.",
+      "source": "https://www.paragliding.com/services/tours/brazil-paragliding-tours/",
+      "checked": "2026-10-16",
+      "id": "help:br:eagle-paragliding"
+    },
+    {
+      "country": "CA",
+      "name": "Freedom Flight Park",
+      "website": "https://freedomflightpark.weebly.com/",
+      "area": "Lumby (Okanagan)",
+      "services": [
+        "flight-park"
+      ],
+      "note": "Private flight park with two launches nearby, a grass runway, hangars and a pilots' lounge.",
+      "source": "https://freedomflightpark.weebly.com/",
+      "checked": "2026-10-16",
+      "id": "help:ca:freedom-flight-park"
+    },
+    {
+      "country": "CA",
+      "name": "Paraglide Canada",
+      "website": "https://www.paraglidecanada.com/",
+      "area": "Okanagan (Vernon, Kelowna)",
+      "services": [
+        "site-briefing"
+      ],
+      "note": "Publishes Okanagan site information for pilots, including insurance needs and a site that needs a NOTAM.",
+      "source": "https://www.paraglidecanada.com/pages/okanagan-site-information",
+      "checked": "2026-10-16",
+      "id": "help:ca:paraglide-canada"
+    },
+    {
+      "country": "CA",
+      "name": "Revelstoke Paragliding",
+      "website": "https://revelstokeparagliding.com/",
+      "area": "Revelstoke (Mount Mackenzie)",
+      "services": [
+        "site-briefing"
+      ],
+      "note": "Publishes the visiting-pilot rules for Revelstoke Mountain Resort: P3 site (P2 under instructor supervision), HPAC insurance, waivers, gondola and a paid shuttle to launch.",
+      "source": "https://revelstokeparagliding.com/visiting-pilot-info/",
+      "checked": "2026-10-16",
+      "id": "help:ca:revelstoke-paragliding"
+    },
+    {
+      "country": "CH",
+      "name": "Flyingcenter Oberwallis",
+      "website": "https://www.flyingcenter.ch/",
+      "area": "Fieschertal (Fiesch, Aletsch Arena)",
+      "services": [
+        "courses",
+        "tandem"
+      ],
+      "note": "Its yearly programme lists a thermal and cross-country course and flying trips to the Piedmont, Stubai, Slovenia and the Dolomites.",
+      "source": "http://www.flyingcenter.ch/infos/jahresprogramm",
+      "checked": "2026-10-16",
+      "id": "help:ch:flyingcenter-oberwallis"
+    },
+    {
+      "country": "CH",
+      "name": "Paramania Flying School",
+      "website": "https://paramania.ch/",
+      "area": "S. Antonino (Ticino)",
+      "services": [
+        "courses",
+        "tandem"
+      ],
+      "note": "Runs a two-day SIV course at Monte Generoso; the lift up to launch is not included.",
+      "source": "https://paramania.ch/?page_id=117",
+      "checked": "2026-10-16",
+      "id": "help:ch:paramania-flying-school"
+    },
+    {
+      "country": "CH",
+      "name": "Swissgliders",
+      "website": "https://www.swissgliders.ch/",
+      "area": "Thun, Bern and Interlaken (Bernese Oberland)",
+      "services": [
+        "courses",
+        "tandem"
+      ],
+      "note": "Runs SIV over water, tandem-pilot training and flying trips (northern Italy, Castelluccio).",
+      "source": "https://www.swissgliders.ch/weiterbildung/",
+      "checked": "2026-10-16",
+      "id": "help:ch:swissgliders"
+    },
+    {
+      "country": "CH",
+      "name": "Time to fly",
+      "website": "https://www.flybeo.ch/",
+      "area": "Bernese Oberland",
+      "services": [
+        "courses",
+        "tandem"
+      ],
+      "source": "https://www.flybeo.ch/weiterbildung",
+      "checked": "2026-10-16",
+      "id": "help:ch:time-to-fly"
+    },
+    {
+      "country": "CH",
+      "name": "Verbier Summits",
+      "website": "https://verbier-summits.com/",
+      "area": "Verbier / Le Châble (Valais)",
+      "services": [
+        "guiding",
+        "courses",
+        "accommodation",
+        "tandem"
+      ],
+      "note": "Runs fly-guide weeks for qualified pilots, with guides flying alongside them, plus thermal and cross-country clinics. Accommodation is available with its holidays.",
+      "source": "https://verbier-summits.com/paragliding-holidays-alps/",
+      "checked": "2026-10-16",
+      "id": "help:ch:verbier-summits"
+    },
+    {
+      "country": "CO",
+      "name": "Cloudbase Colombia",
+      "website": "https://www.cloudbasecolombia.com/",
+      "area": "Roldanillo",
+      "services": [
+        "accommodation"
+      ],
+      "note": "13-room pilot hotel in central Roldanillo; offers multilingual support and flying-site information during the stay.",
+      "source": "https://www.cloudbasecolombia.com/english/hotel-cloudbase/",
+      "checked": "2026-10-16",
+      "id": "help:co:cloudbase-colombia"
+    },
+    {
+      "country": "CO",
+      "name": "Colombia Paragliding",
+      "website": "https://colombiaparagliding.com/",
+      "area": "Cauca Valley (Piedechinche, Roldanillo, Ansermanuevo, Apia, Jericó)",
+      "services": [
+        "guiding",
+        "shuttle",
+        "accommodation"
+      ],
+      "note": "10- or 15-day guided road trips for beginner to intermediate pilots, with retrieves, transport to sites and lodging included.",
+      "source": "https://colombiaparagliding.com/tours/",
+      "checked": "2026-10-16",
+      "id": "help:co:colombia-paragliding"
+    },
+    {
+      "country": "CO",
+      "name": "Eagle Paragliding",
+      "website": "https://www.paragliding.com/",
+      "area": "Valle del Cauca (Los Tanques launch)",
+      "services": [
+        "guiding",
+        "site-briefing"
+      ],
+      "note": "US school running week-long Colombia tours with daily coaching and debriefs; it owns the Los Tanques launch, which it says is open to all pilots.",
+      "source": "https://www.paragliding.com/services/tours/colombia-paragliding-tour/",
+      "checked": "2026-10-16",
+      "id": "help:co:eagle-paragliding"
+    },
+    {
+      "country": "CO",
+      "name": "Passion Paragliding",
+      "website": "https://www.passionparagliding.com/",
+      "area": "Cauca Valley (Roldanillo, Piedechinche, Apia, Ansermanuevo)",
+      "services": [
+        "guiding",
+        "shuttle",
+        "accommodation"
+      ],
+      "note": "XC tours from CP level with hotel stays, retrieve vehicles and trackers; also a trip for low-airtime pilots.",
+      "source": "https://www.passionparagliding.com/colombia",
+      "checked": "2026-10-16",
+      "id": "help:co:passion-paragliding"
+    },
+    {
+      "country": "DE",
+      "name": "Adventure Sports",
+      "website": "https://www.adventure-sports.de/",
+      "area": "Lenggries (Brauneck, Bavarian Alps)",
+      "services": [
+        "courses",
+        "tandem"
+      ],
+      "note": "Runs training camps at the Brauneck and cross-country camps in the Pinzgau and Kitzbühel areas for pilots who already fly.",
+      "source": "https://www.adventure-sports.de/kurs-kategorie/trainings-camp/",
+      "checked": "2026-10-16",
+      "id": "help:de:adventure-sports"
+    },
+    {
+      "country": "DE",
+      "name": "Flugschule Milz",
+      "website": "https://flugschule-milz.de/",
+      "area": "Sonthofen (Allgäu)",
+      "services": [
+        "guiding",
+        "site-briefing",
+        "courses",
+        "tandem"
+      ],
+      "note": "Its four-day Allgäu tours take licensed pilots to new sites in the Allgäu and nearby Tyrol, with instructor radio support, weather briefings and site briefings.",
+      "source": "https://flugschule-milz.de/allgaeu-tour/",
+      "checked": "2026-10-16",
+      "id": "help:de:flugschule-milz"
+    },
+    {
+      "country": "DE",
+      "name": "Flugschule Tegelberg",
+      "website": "https://www.flugschule-tegelberg.de/",
+      "area": "Schwangau (Tegelberg and Buchenberg, Allgäu)",
+      "services": [
+        "site-briefing",
+        "tandem"
+      ],
+      "note": "Issues the digital site-briefing card (the 'green card') that pilots need to fly Tegelberg and Buchenberg and must show to lift staff. Processing can take up to 72 hours.",
+      "source": "https://flugschule-tegelberg.de/flugschule-tegelberg-deine-flugschule-im-allgaeu-einweisungskarte-tegelberg/",
+      "checked": "2026-10-16",
+      "id": "help:de:flugschule-tegelberg"
+    },
+    {
+      "country": "DE",
+      "name": "OASE Flugschule",
+      "website": "https://www.oase-paragliding.com/",
+      "area": "Obermaiselstein (Nebelhorn and Weiherkopf, Allgäu)",
+      "services": [
+        "gear-hire",
+        "courses",
+        "tandem"
+      ],
+      "note": "Hires out gliders, harnesses and complete kits by the day or week, with optional liability insurance. It also runs cross-country seminars and trips.",
+      "source": "https://oase-paragliding.com/gleitschirmservice/gleitschirmverleih/",
+      "checked": "2026-10-16",
+      "id": "help:de:oase-flugschule"
+    },
+    {
+      "country": "DE",
+      "name": "Papillon Paragliding",
+      "website": "https://www.papillon.de/",
+      "area": "Wasserkuppe (Rhön)",
+      "services": [
+        "courses"
+      ],
+      "note": "Runs a cross-country training week in the Rhön for pilots from A-licence level, plus SIV courses and cross-country weeks abroad.",
+      "source": "https://papillon.de/str-woche-rhoen/",
+      "checked": "2026-10-16",
+      "id": "help:de:papillon-paragliding"
+    },
+    {
+      "country": "ES",
+      "name": "Entrenúvols",
+      "website": "https://entrenuvols.com/",
+      "area": "Àger (Catalonia)",
+      "services": [
+        "guiding",
+        "shuttle",
+        "gear-hire",
+        "courses",
+        "tandem"
+      ],
+      "note": "Sells one-flight or one-day passes for visiting pilots with in-flight assistance and transport, with own or school equipment; also SIV and thermal/XC courses.",
+      "source": "https://entrenuvols.com/escola-de-parapent/forfets/",
+      "checked": "2026-10-16",
+      "id": "help:es:entrenuvols"
+    },
+    {
+      "country": "ES",
+      "name": "Fly Spain",
+      "website": "https://www.flyspain.co.uk/",
+      "area": "Algodonales (Andalusia)",
+      "services": [
+        "guiding",
+        "courses",
+        "tandem"
+      ],
+      "note": "BHPA-registered school running guided and coached weeks for qualified pilots, plus coaching tandem flights.",
+      "source": "https://www.flyspain.co.uk/paragliding-courses/guided-paragliding-holidays-europe/",
+      "checked": "2026-10-16",
+      "id": "help:es:fly-spain"
+    },
+    {
+      "country": "ES",
+      "name": "flyPiedrahita",
+      "website": "https://flypiedrahita.com/",
+      "area": "Piedrahita (Castile and León)",
+      "services": [
+        "guiding",
+        "shuttle",
+        "accommodation",
+        "tandem",
+        "courses"
+      ],
+      "note": "Week packages with airport collection, bed and breakfast, retrieves along a planned route, guidance and XC tandem flights; an XC-only option without accommodation is offered.",
+      "source": "https://flypiedrahita.com/",
+      "checked": "2026-10-16",
+      "id": "help:es:flypiedrahita"
+    },
+    {
+      "country": "ES",
+      "name": "Lejair",
+      "website": "http://www.lejair.co.uk/",
+      "area": "Algodonales (Andalusia)",
+      "services": [
+        "guiding",
+        "courses"
+      ],
+      "note": "BHPA-registered school offering guided weeks for both hang glider and paraglider pilots, and advanced thermal courses.",
+      "source": "http://www.lejair.com/",
+      "checked": "2026-10-16",
+      "id": "help:es:lejair"
+    },
+    {
+      "country": "ES",
+      "name": "ParaglidingGuide",
+      "website": "https://paraglidingguide.com/",
+      "area": "Algodonales (Andalusia)",
+      "services": [
+        "guiding",
+        "site-briefing",
+        "shuttle",
+        "accommodation",
+        "tandem"
+      ],
+      "note": "Guided weeks for qualified pilots with daily briefings, site choice, transport and retrieves, and accommodation; season runs from March.",
+      "source": "https://paraglidingguide.com/pilot-development-xc-guiding-in-spain/",
+      "checked": "2026-10-16",
+      "id": "help:es:paraglidingguide"
+    },
+    {
+      "country": "ES",
+      "name": "Parapente Pirineos",
+      "website": "https://www.parapentepirineos.com/",
+      "area": "Castejón de Sos (Aragon)",
+      "services": [
+        "courses",
+        "tandem"
+      ],
+      "note": "Runs cross-country courses for autonomous pilots on planned Pyrenees routes, besides tandem flights and an equipment shop.",
+      "source": "https://www.parapentepirineos.com/en/cross-country-xc/",
+      "checked": "2026-10-16",
+      "id": "help:es:parapente-pirineos"
+    },
+    {
+      "country": "FR",
+      "name": "2 Ski Fly",
+      "website": "https://www.2skifly.com/",
+      "area": "Samoëns (Giffre valley, Haute-Savoie)",
+      "services": [
+        "courses",
+        "tandem"
+      ],
+      "note": "Its course list includes a 'site discovery' course, plus cross-country, thermal and SIV courses (SIV at Lake Annecy).",
+      "source": "https://www.2skifly.com/stages-parapente-samoens/",
+      "checked": "2026-10-16",
+      "id": "help:fr:2-ski-fly"
+    },
+    {
+      "country": "FR",
+      "name": "Aérogliss",
+      "website": "https://www.aerogliss.com/",
+      "area": "Saint-André-les-Alpes (Chalvet, Haut Verdon)",
+      "services": [
+        "site-briefing",
+        "shuttle",
+        "courses",
+        "tandem"
+      ],
+      "note": "Says it gives visiting pilots information about the day's conditions and site details. Shuttles to launch leave from the school April to November, with a per-ride fee for independent pilots.",
+      "source": "https://www.aerogliss.com/infos-pratiques/",
+      "checked": "2026-10-16",
+      "id": "help:fr:aerogliss"
+    },
+    {
+      "country": "FR",
+      "name": "Air Attitude",
+      "website": "https://air-attitude.com/",
+      "area": "Accous (Aspe valley, Pyrenees)",
+      "services": [
+        "guiding",
+        "courses",
+        "tandem"
+      ],
+      "note": "Runs guided Saturday-morning hike-and-fly outings around Accous, led by two instructors, as well as improvement and first cross-country courses.",
+      "source": "https://air-attitude.com/stage/",
+      "checked": "2026-10-16",
+      "id": "help:fr:air-attitude"
+    },
+    {
+      "country": "FR",
+      "name": "Air Sports Chamonix",
+      "website": "https://www.airsportschamonix.fr/",
+      "area": "Chamonix-Mont-Blanc",
+      "services": [
+        "courses",
+        "tandem"
+      ],
+      "note": "Runs cross-country courses and SIV courses for pilots who already fly.",
+      "source": "https://www.airsportschamonix.fr/stages-de-parapente/nos-stages-cross/",
+      "checked": "2026-10-16",
+      "id": "help:fr:air-sports-chamonix"
+    },
+    {
+      "country": "FR",
+      "name": "Chamonix Parapente",
+      "website": "https://www.chamonix-parapente.fr/",
+      "area": "Chamonix-Mont-Blanc",
+      "services": [
+        "courses",
+        "tandem"
+      ],
+      "note": "Offers progression, cross-country and high-mountain flying days, plus flying trips to other destinations.",
+      "source": "https://www.chamonix-parapente.fr/stages-et-voyages-parapente",
+      "checked": "2026-10-16",
+      "id": "help:fr:chamonix-parapente"
+    },
+    {
+      "country": "FR",
+      "name": "Espace 3D",
+      "website": "https://www.espace3d.fr/",
+      "area": "Doussard (Lake Annecy)",
+      "services": [
+        "courses",
+        "tandem"
+      ],
+      "note": "Its cross-country course is for licensed pilots flying their own equipment, with a radio supplied. It also runs SIV and Dune du Pilat courses.",
+      "source": "https://www.espace3d.fr/produit/stage-cross/",
+      "checked": "2026-10-16",
+      "id": "help:fr:espace-3d"
+    },
+    {
+      "country": "FR",
+      "name": "Prévol",
+      "website": "https://www.prevol.com/",
+      "area": "Saint-Hilaire-du-Touvet (Chartreuse, near Grenoble)",
+      "services": [
+        "courses",
+        "tandem"
+      ],
+      "note": "Runs courses for experienced pilots on thermal flying, cross-country and hike-and-fly.",
+      "source": "https://www.prevol.com/stages/",
+      "checked": "2026-10-16",
+      "id": "help:fr:prevol"
+    },
+    {
+      "country": "GB",
+      "name": "Air Ventures",
+      "website": "https://airventures.co.uk/",
+      "area": "Keswick (Lake District)",
+      "services": [
+        "courses",
+        "tandem"
+      ],
+      "note": "BHPA school whose speedflying course is open to pilots, with specialist equipment included; also tandem flights.",
+      "source": "https://airventures.co.uk/speed-flying/",
+      "checked": "2026-10-16",
+      "id": "help:gb:air-ventures"
+    },
+    {
+      "country": "GB",
+      "name": "Axis Paragliding and Paramotoring",
+      "website": "https://www.paraglide.co.uk/",
+      "area": "Abergavenny (South Wales)",
+      "services": [
+        "courses",
+        "tandem"
+      ],
+      "note": "Sells a Club Pilot hill conversion course and assessment or retraining days, charged by the day.",
+      "source": "https://www.paraglide.co.uk/paragliding-courses-south-wales-c-9/",
+      "checked": "2026-10-16",
+      "id": "help:gb:axis-paragliding-and-paramotoring"
+    },
+    {
+      "country": "GB",
+      "name": "Crickhowell Paragliding",
+      "website": "https://crickhowellparagliding.com/",
+      "area": "Brecon Beacons (South Wales)",
+      "services": [
+        "guiding",
+        "courses",
+        "tandem"
+      ],
+      "note": "Cross-country guiding for visiting pilots and groups, refresher days, and conversion of overseas ratings to the UK Club Pilot rating.",
+      "source": "https://crickhowellparagliding.com/pilot-development-and-refresher-training/",
+      "checked": "2026-10-16",
+      "id": "help:gb:crickhowell-paragliding"
+    },
+    {
+      "country": "GB",
+      "name": "Derbyshire Flying Centre",
+      "website": "https://d-f-c.co.uk/",
+      "area": "Peak District (Derbyshire)",
+      "services": [
+        "guiding",
+        "courses"
+      ],
+      "note": "Offers a two-day post-Club Pilot guiding course tailored to visiting pilots and pilots trained abroad; contact the school before booking.",
+      "source": "https://d-f-c.co.uk/paragliding-courses/post-club-pilot-paragliding/",
+      "checked": "2026-10-16",
+      "id": "help:gb:derbyshire-flying-centre"
+    },
+    {
+      "country": "GB",
+      "name": "Ginger Air",
+      "website": "https://gingerair.co.uk/",
+      "area": "Peak District (Derbyshire)",
+      "services": [
+        "courses",
+        "tandem"
+      ],
+      "note": "BHPA development school with one- to five-day coaching courses for Club Pilots and returning pilots on Peak District hills.",
+      "source": "https://gingerair.co.uk/product/5-day-cp-plus-course/",
+      "checked": "2026-10-16",
+      "id": "help:gb:ginger-air"
+    },
+    {
+      "country": "GR",
+      "name": "Olympic Wings",
+      "website": "https://paragliding.olympicwings.com/",
+      "area": "Mount Olympus (Neos Panteleimonas); tours to Peloponnese and Delphi",
+      "services": [
+        "guiding",
+        "site-briefing",
+        "shuttle",
+        "accommodation",
+        "courses"
+      ],
+      "note": "Licensed tour operator packaging accommodation, transfers to take-off and landing, and guided flying with briefings; runs South Peloponnese tours in spring and autumn 2027.",
+      "source": "https://paragliding.olympicwings.com/services/",
+      "checked": "2026-10-16",
+      "id": "help:gr:olympic-wings"
+    },
+    {
+      "country": "GR",
+      "name": "Paragliding Safaris",
+      "website": "https://www.paraglidingsafaris.com/",
+      "area": "Lefkada and Drama",
+      "services": [
+        "guiding",
+        "shuttle",
+        "accommodation"
+      ],
+      "note": "Guided Greece tour with transport to sites, retrieves, site fees, food and accommodation; dates on request.",
+      "source": "https://www.paraglidingsafaris.com/greece",
+      "checked": "2026-10-16",
+      "id": "help:gr:paragliding-safaris"
+    },
+    {
+      "country": "ID",
+      "name": "Cloudbase Paragliding",
+      "website": "https://cloudbaseparagliding.com.au/",
+      "area": "Lombok (Sky Lancing)",
+      "services": [
+        "courses",
+        "site-briefing"
+      ],
+      "note": "Australian school running week-long small-group coaching tours at Sky Lancing on Lombok.",
+      "source": "https://cloudbaseparagliding.com.au/pages/indonesia",
+      "checked": "2026-10-16",
+      "id": "help:id:cloudbase-paragliding"
+    },
+    {
+      "country": "ID",
+      "name": "High Adventure Paragliding",
+      "website": "https://www.highadventure.com.au/",
+      "area": "Bali (Nusa Dua, Riug launch)",
+      "services": [
+        "guiding",
+        "site-briefing",
+        "courses"
+      ],
+      "note": "Australian school running 4 to 5 day Bali tours with daily briefings and supervised flying, plus endorsement courses; Candidasa tours moved to Nusa Dua after that site closed in 2026.",
+      "source": "https://www.highadventure.com.au/products/bali-general-tour",
+      "checked": "2026-10-16",
+      "id": "help:id:high-adventure-paragliding"
+    },
+    {
+      "country": "ID",
+      "name": "Temple Pilots",
+      "website": "https://www.templepilots.com/",
+      "area": "Bali",
+      "services": [
+        "courses",
+        "site-briefing"
+      ],
+      "note": "Coastal soaring clinics in Bali for APPI 3 pilots, with supervised flying and briefings.",
+      "source": "https://www.templepilots.com/paragliding-tours/bali-bliss/",
+      "checked": "2026-10-16",
+      "id": "help:id:temple-pilots"
+    },
+    {
+      "country": "IN",
+      "name": "Himalayan Sky Safaris",
+      "website": "https://www.himalayanskysafaris.com/",
+      "area": "Bir Billing",
+      "services": [
+        "guiding",
+        "accommodation"
+      ],
+      "note": "Ten-day guided flying safaris from Bir with 1:1, 1:2 or small-group guiding, including hotel nights away, vol-biv and a catered camp.",
+      "source": "https://www.himalayanskysafaris.com/guided-safaris",
+      "checked": "2026-10-16",
+      "id": "help:in:himalayan-sky-safaris"
+    },
+    {
+      "country": "IN",
+      "name": "Nirvana Adventures",
+      "website": "https://www.flynirvana.com/",
+      "area": "Kamshet",
+      "services": [
+        "accommodation",
+        "courses"
+      ],
+      "note": "Runs the Native Place guesthouse at Kamshet (dorms, rooms, tents); also thermalling and XC clinics, including an intro-to-XC course in Bir.",
+      "source": "https://www.flynirvana.com/accommodation/",
+      "checked": "2026-10-16",
+      "id": "help:in:nirvana-adventures"
+    },
+    {
+      "country": "IN",
+      "name": "Passion Paragliding",
+      "website": "https://www.passionparagliding.com/",
+      "area": "Bir Billing",
+      "services": [
+        "guiding",
+        "site-briefing",
+        "accommodation"
+      ],
+      "note": "Guided XC trip for autonomous pilots (CP level and some XC experience) with a hotel stay, morning briefings and a vol-biv night.",
+      "source": "https://www.passionparagliding.com/india",
+      "checked": "2026-10-16",
+      "id": "help:in:passion-paragliding"
+    },
+    {
+      "country": "IN",
+      "name": "Sky Summits",
+      "website": "https://www.skysummits.com/",
+      "area": "Bir Billing",
+      "services": [
+        "guiding",
+        "shuttle",
+        "site-briefing",
+        "accommodation"
+      ],
+      "note": "Guided XC trips with daily mountain transport, site and weather briefings and twin-share accommodation; no retrieve service (local taxis are used).",
+      "source": "https://www.skysummits.com/india.html",
+      "checked": "2026-10-16",
+      "id": "help:in:sky-summits"
+    },
+    {
+      "country": "IN",
+      "name": "Temple Pilots",
+      "website": "https://www.templepilots.com/",
+      "area": "Kamshet",
+      "services": [
+        "courses"
+      ],
+      "note": "Kamshet school offering licence validation and pilot evaluation, SIV, thermalling and XC courses, and flying tours.",
+      "source": "https://www.templepilots.com/",
+      "checked": "2026-10-16",
+      "id": "help:in:temple-pilots"
+    },
+    {
+      "country": "IT",
+      "name": "Aero Club Monte Cornizzolo",
+      "website": "https://www.cornizzolo.com/",
+      "area": "Suello (Monte Cornizzolo, Lecco)",
+      "services": [
+        "shuttle",
+        "courses",
+        "tandem"
+      ],
+      "note": "Runs timetabled shuttles from the landing field to launch. Booking is compulsory, and a ride only goes when enough people are booked. It also runs SIV courses.",
+      "source": "https://www.cornizzolo.com/servizio-navetta/",
+      "checked": "2026-10-16",
+      "id": "help:it:aero-club-monte-cornizzolo"
+    },
+    {
+      "country": "IT",
+      "name": "Flylibell",
+      "website": "https://www.flylibell.com/",
+      "area": "Valsassina (Lake Como)",
+      "services": [
+        "courses",
+        "tandem"
+      ],
+      "note": "Runs a two-day advanced course for licensed pilots on thermalling and conditions, and an SIV course.",
+      "source": "https://www.flylibell.com/corsi-parapendio/corso-parapendio-avanzato",
+      "checked": "2026-10-16",
+      "id": "help:it:flylibell"
+    },
+    {
+      "country": "IT",
+      "name": "Scuola Peter Pan",
+      "website": "https://www.scuolapeterpan.it/",
+      "area": "Turin (Piedmont)",
+      "services": [
+        "courses",
+        "tandem"
+      ],
+      "note": "Runs summer SIV courses at three levels on Lago di Annone or Lake Annecy. Pilots need a valid licence and their own recent glider.",
+      "source": "https://www.scuolapeterpan.it/corsi-siv-parapendio-torino/",
+      "checked": "2026-10-16",
+      "id": "help:it:scuola-peter-pan"
+    },
+    {
+      "country": "IT",
+      "name": "Vivere il Grappa (Consorzio Turistico del Monte Grappa)",
+      "website": "https://www.vivereilgrappa.it/",
+      "area": "Borso del Grappa / Bassano (Monte Grappa)",
+      "services": [
+        "flight-park",
+        "shuttle"
+      ],
+      "note": "This tourist consortium runs the Fly Card for the Monte Grappa launches and landings, publishes launch and landing details, and lists shuttle contacts. It strongly recommends shuttles because parking at launch is limited.",
+      "source": "https://www.vivereilgrappa.it/it/decolli-e-atterraggi.htm",
+      "checked": "2026-10-16",
+      "id": "help:it:vivere-il-grappa-consorzio-turistico-del-monte-grappa"
+    },
+    {
+      "country": "IT",
+      "name": "Yeti Extreme",
+      "website": "https://www.yetiextreme.it/",
+      "area": "Costermano (Lake Garda, Monte Baldo)",
+      "services": [
+        "courses",
+        "tandem"
+      ],
+      "note": "The site lists post-licence courses, SIV courses and flying trips. Its course pages had no readable detail when checked.",
+      "source": "https://www.yetiextreme.it/",
+      "checked": "2026-10-16",
+      "id": "help:it:yeti-extreme"
+    },
+    {
+      "country": "NP",
+      "name": "Blue Sky Paragliding",
+      "website": "http://www.paragliding-nepal.com/",
+      "area": "Pokhara (Sarangkot), Bandipur, Sirkot",
+      "services": [
+        "guiding",
+        "gear-hire",
+        "accommodation",
+        "courses"
+      ],
+      "note": "Offers personal XC guiding, tours, XC and SIV courses, equipment rental and accommodation; says it handles the CAAN and NAA permits for visiting pilots.",
+      "source": "http://www.paragliding-nepal.com/paragliding-xc-guiding-nepal.html",
+      "checked": "2026-10-16",
+      "id": "help:np:blue-sky-paragliding"
+    },
+    {
+      "country": "NP",
+      "name": "Let Fly Paragliding",
+      "website": "http://www.letflyparagliding.com/",
+      "area": "Pokhara and Sirkot",
+      "services": [
+        "guiding",
+        "site-briefing",
+        "accommodation",
+        "shuttle"
+      ],
+      "note": "10-day XC clinic tour around Pokhara for P2+ autonomous pilots, about 3 to 4 pilots per guide, with lodging and local transport included.",
+      "source": "http://www.letflyparagliding.com/nepal-clinic-and-tours-1",
+      "checked": "2026-10-16",
+      "id": "help:np:let-fly-paragliding"
+    },
+    {
+      "country": "NZ",
+      "services": [
+        "site-briefing"
+      ],
+      "note": "Pilots buy a daily, weekly or longer flight-park membership before flying.",
+      "source": "https://www.highside.nz",
+      "checked": "2026-10-16",
+      "id": "help:nz:highside-flight-park-karioitahi-beach",
+      "name": "HighSide flight park (Karioitahi Beach)",
+      "website": "https://www.highside.nz",
+      "orgId": "org:nz:highside-flight-park"
+    },
+    {
+      "country": "PT",
+      "name": "Fly with Behrooz",
+      "website": "https://www.flywithbehrooz.com/",
+      "area": "Sesimbra (Lisbon coast); XC tours inland",
+      "services": [
+        "guiding",
+        "shuttle",
+        "courses",
+        "tandem"
+      ],
+      "note": "Guided coastal soaring days and weeks from Sesimbra with transfers, plus XC tours inland with radio coaching and retrieves.",
+      "source": "https://www.flywithbehrooz.com/",
+      "checked": "2026-10-16",
+      "id": "help:pt:fly-with-behrooz"
+    },
+    {
+      "country": "PT",
+      "name": "Madeira Paragliding",
+      "website": "https://www.madeira-paragliding.com/",
+      "area": "Arco da Calheta (Madeira)",
+      "services": [
+        "site-briefing",
+        "tandem"
+      ],
+      "note": "Operates a private take-off at Arco da Calheta and invites visiting pilots, offering tips from local pilots; also flies tandem passengers.",
+      "source": "https://www.madeira-paragliding.com/",
+      "checked": "2026-10-16",
+      "id": "help:pt:madeira-paragliding"
+    },
+    {
+      "country": "PT",
+      "name": "ParaglidingGuide (Portugal coastal trip)",
+      "website": "https://paraglidingguide.com/portugal/",
+      "area": "Portuguese coast (Algarve to Lisbon)",
+      "services": [
+        "guiding"
+      ],
+      "note": "Spain-based operator running a weather-led coastal week in Portugal for competent pilots, usually in late February.",
+      "source": "https://paraglidingguide.com/portugal/",
+      "checked": "2026-10-16",
+      "id": "help:pt:paraglidingguide-portugal-coastal-trip"
+    },
+    {
+      "country": "SI",
+      "name": "Antofaya Expeditions",
+      "website": "http://www.antofaya.com/",
+      "area": "Soča Valley (Tolmin, Kobarid, Lijak)",
+      "services": [
+        "guiding",
+        "shuttle",
+        "accommodation"
+      ],
+      "note": "International tour organiser running an annual guided XC trip based in the Soča Valley; the 2026 trip was full.",
+      "source": "http://www.antofaya.com/slovenia/",
+      "checked": "2026-10-16",
+      "id": "help:si:antofaya-expeditions"
+    },
+    {
+      "country": "SI",
+      "name": "Jelkin Hram",
+      "website": "https://www.jelkin-hram.com/",
+      "area": "Drežnica, Kobarid (Soča Valley)",
+      "services": [
+        "shuttle",
+        "guiding",
+        "accommodation"
+      ],
+      "note": "Paragliding centre with guesthouse, shuttle to take-offs for guests and other pilots (book ahead), airport transfers, a test centre and a local guide on request.",
+      "source": "https://www.jelkin-hram.com/en/paragliding-slovenia-kobarid/",
+      "checked": "2026-10-16",
+      "id": "help:si:jelkin-hram"
+    },
+    {
+      "country": "SI",
+      "name": "Sky Summits",
+      "website": "https://www.skysummits.com/",
+      "area": "Kobarid (Soča Valley), combined with Bassano (Italy)",
+      "services": [
+        "guiding",
+        "accommodation"
+      ],
+      "note": "Two-week guided XC trip split between Bassano and Kobarid, for pilots at CP plus 30 hours or above; next run August 2027.",
+      "source": "https://www.skysummits.com/julian.html",
+      "checked": "2026-10-16",
+      "id": "help:si:sky-summits"
+    },
+    {
+      "country": "TR",
+      "name": "Babadağ Teleferik",
+      "website": "https://www.babadagteleferik.com.tr/en/",
+      "area": "Ölüdeniz (Babadağ)",
+      "services": [
+        "shuttle"
+      ],
+      "note": "Cable car from Ölüdeniz with chairlifts on to the 1800 m and 1900 m stations near the launches; one ticket covers the chairlifts.",
+      "source": "https://www.babadagteleferik.com.tr/en/teleferik-telesiyej-bilet/",
+      "checked": "2026-10-16",
+      "id": "help:tr:babadag-teleferik"
+    },
+    {
+      "country": "TR",
+      "name": "Blue World Paragliding",
+      "website": "https://www.jockysanderson.com/",
+      "area": "Ölüdeniz (Babadağ)",
+      "services": [
+        "courses"
+      ],
+      "note": "SIV courses launched from Babadağ over water, with a rescue boat and one-to-one radio instruction.",
+      "source": "https://www.jockysanderson.com/pages/v2_siv",
+      "checked": "2026-10-16",
+      "id": "help:tr:blue-world-paragliding"
+    },
+    {
+      "country": "TR",
+      "name": "Condor Air Sports",
+      "website": "https://condorairsports.com/",
+      "area": "Çameli (Denizli)",
+      "services": [
+        "guiding",
+        "site-briefing",
+        "shuttle",
+        "courses"
+      ],
+      "note": "Daily XC guiding with a morning site and weather briefing, transport to launch and retrieve; also runs XC tours and SIV clinics.",
+      "source": "https://condorairsports.com/guiding/",
+      "checked": "2026-10-16",
+      "id": "help:tr:condor-air-sports"
+    },
+    {
+      "country": "TR",
+      "name": "Sky Sports Paragliding",
+      "website": "https://skysports-turkey.com/en/",
+      "area": "Ölüdeniz (Babadağ)",
+      "services": [
+        "courses"
+      ],
+      "note": "Runs SIV courses over the sea from Babadağ for pilots with at least 100 flights and insurance; the ride up the mountain is included.",
+      "source": "https://skysports-turkey.com/en/siv-2/",
+      "checked": "2026-10-16",
+      "id": "help:tr:sky-sports-paragliding"
+    },
+    {
+      "country": "US",
+      "name": "Cloud 9 Paragliding",
+      "website": "https://paragliders.com/",
+      "area": "Point of the Mountain (Utah)",
+      "services": [
+        "gear-hire"
+      ],
+      "note": "Lends demo gliders free to rated visiting pilots at the Point's flight parks, matched to USHPA rating.",
+      "source": "https://paragliders.com/glider-demos/",
+      "checked": "2026-10-16",
+      "id": "help:us:cloud-9-paragliding"
+    },
+    {
+      "country": "US",
+      "name": "Eagle Paragliding",
+      "website": "https://www.paragliding.com/",
+      "area": "Santa Barbara (California)",
+      "services": [
+        "courses"
+      ],
+      "note": "Runs thermal and XC clinics and private coaching for pilots.",
+      "source": "https://www.paragliding.com/",
+      "checked": "2026-10-16",
+      "id": "help:us:eagle-paragliding"
+    },
+    {
+      "country": "US",
+      "name": "Lookout Mountain Flight Park",
+      "website": "https://flylookout.com/",
+      "area": "Lookout Mountain (Georgia)",
+      "services": [
+        "flight-park",
+        "accommodation",
+        "gear-hire"
+      ],
+      "note": "Flight park with a hang glider ramp and a P2 paragliding launch, camping and cabins, and gear rental; pilots need a USHPA rating and club membership.",
+      "source": "https://flylookout.com/lookout-mountain-flight-park/",
+      "checked": "2026-10-16",
+      "id": "help:us:lookout-mountain-flight-park"
+    },
+    {
+      "country": "US",
+      "name": "Torrey Pines Gliderport",
+      "website": "https://www.flytorrey.com/",
+      "area": "Torrey Pines (San Diego, California)",
+      "services": [
+        "flight-park",
+        "gear-hire",
+        "courses"
+      ],
+      "note": "Coastal gliderport with a day fee or annual pass for rated pilots, demo and rental gear, and supervised flying for P2/H3 pilots.",
+      "source": "https://www.flytorrey.com/pilot-services/",
+      "checked": "2026-10-16",
+      "id": "help:us:torrey-pines-gliderport"
+    },
+    {
+      "country": "US",
+      "name": "Wallaby Ranch",
+      "website": "https://wallaby.com/",
+      "area": "Orlando area (Florida)",
+      "services": [
+        "flight-park",
+        "gear-hire",
+        "courses"
+      ],
+      "note": "Aerotow hang gliding flight park with over 50 gliders to rent and aerotow rating training.",
+      "source": "https://wallaby.com/services",
+      "checked": "2026-10-16",
+      "id": "help:us:wallaby-ranch"
+    },
+    {
+      "country": "ZA",
+      "name": "Air School Paragliding",
+      "website": "https://airschool.co.za/",
+      "area": "Cape Town, Porterville",
+      "services": [
+        "courses"
+      ],
+      "note": "SAHPA lists it for guiding; its own site offers coaching workshops and mentorship for licensed pilots.",
+      "source": "https://airschool.co.za/",
+      "checked": "2026-10-16",
+      "id": "help:za:air-school-paragliding"
+    },
+    {
+      "country": "ZA",
+      "name": "Birdmen Paragliding",
+      "website": "https://www.birdmen.co.za/",
+      "area": "Cape Town, Porterville, Wilderness",
+      "services": [
+        "guiding",
+        "accommodation",
+        "courses"
+      ],
+      "note": "Listed by SAHPA for guiding and flying tours; runs guided tours across Western Cape sites, mentorship programmes and pilot accommodation.",
+      "source": "https://www.birdmen.co.za/",
+      "checked": "2026-10-16",
+      "id": "help:za:birdmen-paragliding"
+    },
+    {
+      "country": "ZA",
+      "name": "Cloudbase Paragliding",
+      "website": "https://cloudbase.co.za/",
+      "area": "Wilderness",
+      "services": [
+        "accommodation",
+        "gear-hire",
+        "courses"
+      ],
+      "note": "Has a visiting-pilots page and offers B&B accommodation for pilots, local and international tours, and equipment rental.",
+      "source": "https://cloudbase.co.za/",
+      "checked": "2026-10-16",
+      "id": "help:za:cloudbase-paragliding"
+    },
+    {
+      "country": "ZA",
+      "name": "Sky Safari Adventures",
+      "website": "https://www.skysafari.co.za/",
+      "area": "Cape Town",
+      "services": [
+        "guiding"
+      ],
+      "note": "Listed by SAHPA for guiding and flying tours; qualified pilots can book local site guiding or join group tours on set dates.",
+      "source": "https://www.skysafari.co.za/",
+      "checked": "2026-10-16",
+      "id": "help:za:sky-safari-adventures"
+    },
+    {
+      "country": "ZA",
+      "name": "Wallend Air",
+      "website": "https://wallendair.com/",
+      "area": "Wilderness",
+      "services": [
+        "guiding",
+        "accommodation"
+      ],
+      "note": "Small-group XC flying with in-flight radio guidance; also lists accommodation.",
+      "source": "https://wallendair.com/",
+      "checked": "2026-10-16",
+      "id": "help:za:wallend-air"
+    }
+  ],
+  "tours": [
+    {
+      "name": "Air Damien",
+      "website": "https://airdamien.com/",
+      "basedIn": "MX",
+      "destinations": [
+        "BR",
+        "CO",
+        "IT",
+        "MX"
+      ],
+      "source": "https://airdamien.com/tours/",
+      "checked": "2026-10-16",
+      "id": "tour:air-damien"
+    },
+    {
+      "name": "AirXpansion",
+      "website": "https://airxpansion.com/",
+      "basedIn": "US",
+      "destinations": [
+        "CO"
+      ],
+      "forPilots": "P2 pilots with current experience",
+      "source": "https://airxpansion.com/pages/colombia-airxpansion-paragliding-tours",
+      "checked": "2026-10-16",
+      "id": "tour:airxpansion"
+    },
+    {
+      "name": "Antofaya Expeditions",
+      "website": "http://www.antofaya.com/",
+      "basedIn": "CL",
+      "destinations": [
+        "CL"
+      ],
+      "forPilots": "Novice to advanced pilots; coaching matched to level",
+      "source": "http://www.antofaya.com/iqq/",
+      "checked": "2026-10-16",
+      "id": "tour:antofaya-expeditions"
+    },
+    {
+      "name": "Birdmen Paragliding",
+      "website": "https://www.birdmen.co.za/",
+      "basedIn": "ZA",
+      "destinations": [
+        "ZA"
+      ],
+      "forPilots": "Low-airtime to experienced pilots; plan set by skill level",
+      "source": "https://www.birdmen.co.za/guided-paragliding-tours",
+      "checked": "2026-10-16",
+      "id": "tour:birdmen-paragliding"
+    },
+    {
+      "name": "Eagle Paragliding",
+      "website": "https://www.paragliding.com/",
+      "basedIn": "US",
+      "destinations": [
+        "BR",
+        "CO"
+      ],
+      "forPilots": "Pilots wanting coaching and XC progression",
+      "source": "https://www.paragliding.com/services/tours/",
+      "checked": "2026-10-16",
+      "id": "tour:eagle-paragliding"
+    },
+    {
+      "name": "Escape Paragliding",
+      "website": "https://escapexc.net/",
+      "basedIn": "GB",
+      "destinations": [
+        "CO",
+        "IN",
+        "MK",
+        "SI"
+      ],
+      "forPilots": "All levels; XC and competition skills",
+      "source": "https://escapexc.net/calendar/",
+      "checked": "2026-10-16",
+      "id": "tour:escape-paragliding"
+    },
+    {
+      "name": "Flumen",
+      "website": "https://paraglidingmexico.com/en/",
+      "basedIn": "MX",
+      "destinations": [
+        "CO",
+        "MX"
+      ],
+      "forPilots": "Pilots on EN-A or EN-B wings",
+      "source": "https://paraglidingmexico.com/en/courses/cross-country-tours",
+      "checked": "2026-10-16",
+      "id": "tour:flumen"
+    },
+    {
+      "name": "Fly Adventure",
+      "website": "https://flyadventure.mk/",
+      "basedIn": "MK",
+      "destinations": [
+        "MK"
+      ],
+      "source": "https://flyadventure.mk/tour/paragliding-tours-holidays-in-macedonia/",
+      "checked": "2026-10-16",
+      "id": "tour:fly-adventure"
+    },
+    {
+      "name": "Fly Cape Town",
+      "website": "https://flycapetown.co.za/",
+      "basedIn": "ZA",
+      "destinations": [
+        "ZA"
+      ],
+      "forPilots": "Tailored to each pilot's experience",
+      "source": "https://flycapetown.co.za/guided-paragliding-tours/",
+      "checked": "2026-10-16",
+      "id": "tour:fly-cape-town"
+    },
+    {
+      "name": "Fly Krushevo",
+      "website": "https://flykrushevo.com/",
+      "basedIn": "MK",
+      "destinations": [
+        "MK"
+      ],
+      "source": "https://flykrushevo.com/tour/paragliding-guided-tours-krushevo-north-macedonia/",
+      "checked": "2026-10-16",
+      "id": "tour:fly-krushevo"
+    },
+    {
+      "name": "Fly Mexico",
+      "website": "https://www.flymexico.com/",
+      "basedIn": "MX",
+      "destinations": [
+        "MX"
+      ],
+      "forPilots": "All levels; paragliding and hang gliding packages",
+      "source": "https://www.flymexico.com/prices",
+      "checked": "2026-10-16",
+      "id": "tour:fly-mexico"
+    },
+    {
+      "name": "Fly Spain",
+      "website": "https://www.flyspain.co.uk/",
+      "basedIn": "ES",
+      "destinations": [
+        "BR",
+        "CO",
+        "ES",
+        "IT"
+      ],
+      "forPilots": "Qualified pilots",
+      "source": "https://www.flyspain.co.uk/paragliding-school-calendar/?coursesCategoryId=13",
+      "checked": "2026-10-16",
+      "id": "tour:fly-spain"
+    },
+    {
+      "name": "Fly with Andy",
+      "website": "https://www.flywithandy.com/en/",
+      "basedIn": "CH",
+      "destinations": [
+        "BG",
+        "HU",
+        "MK",
+        "ZA"
+      ],
+      "source": "https://www.flywithandy.com/en/reisen/paragliding-tour-south-africa-2026/",
+      "checked": "2026-10-16",
+      "id": "tour:fly-with-andy"
+    },
+    {
+      "name": "Flymorocco",
+      "website": "https://flymorocco.info/",
+      "basedIn": "MA",
+      "destinations": [
+        "MA"
+      ],
+      "forPilots": "Pilot tours (coastal and mountain) plus training weeks",
+      "source": "https://flymorocco.info/en/tours",
+      "checked": "2026-10-16",
+      "id": "tour:flymorocco"
+    },
+    {
+      "name": "High Adventure",
+      "website": "https://www.highadventure.com.au/",
+      "basedIn": "AU",
+      "destinations": [
+        "ID"
+      ],
+      "forPilots": "Licensed pilots; separate groups for PG2-3 and PG4-5",
+      "source": "https://www.highadventure.com.au/products/bali-general-tour",
+      "checked": "2026-10-16",
+      "id": "tour:high-adventure"
+    },
+    {
+      "name": "Let Fly Paragliding",
+      "website": "http://www.letflyparagliding.com/",
+      "basedIn": "US",
+      "destinations": [
+        "IT",
+        "NP"
+      ],
+      "forPilots": "P2 and above, launching and landing on their own",
+      "source": "http://www.letflyparagliding.com/nepal-clinic-and-tours-1",
+      "checked": "2026-10-16",
+      "id": "tour:let-fly-paragliding"
+    },
+    {
+      "name": "Manilla Paragliding",
+      "website": "https://www.flymanilla.com/",
+      "basedIn": "AU",
+      "destinations": [
+        "AU"
+      ],
+      "forPilots": "Licensed visiting pilots; thermalling clinics and an informal XC week at Mt Borah",
+      "source": "https://www.flymanilla.com/ManillaEvents,AccomInfo/tabid/145/Default.aspx",
+      "checked": "2026-10-16",
+      "id": "tour:manilla-paragliding"
+    },
+    {
+      "name": "Mid Wales Paragliding Centre",
+      "website": "https://mwpgc.co.uk/",
+      "basedIn": "GB",
+      "destinations": [
+        "MA"
+      ],
+      "forPilots": "Newly qualified (post Club Pilot) pilots",
+      "source": "https://mwpgc.co.uk/product/post-cp-flying-holiday-morocco/",
+      "checked": "2026-10-16",
+      "id": "tour:mid-wales-paragliding-centre"
+    },
+    {
+      "name": "Pal Takats",
+      "website": "https://paltakats.com/",
+      "basedIn": "HU",
+      "destinations": [
+        "BT",
+        "CO",
+        "HU",
+        "MX"
+      ],
+      "forPilots": "XC and competition pilots",
+      "source": "https://paltakats.com/course",
+      "checked": "2026-10-16",
+      "id": "tour:pal-takats"
+    },
+    {
+      "name": "Papillon Paragliding",
+      "website": "https://papillon.de/",
+      "basedIn": "DE",
+      "destinations": [
+        "AT",
+        "CN",
+        "DK",
+        "ES",
+        "GR",
+        "IT",
+        "KZ",
+        "MN",
+        "PT",
+        "SI",
+        "TR",
+        "ZA"
+      ],
+      "source": "https://papillon.de/fernreisen/",
+      "checked": "2026-10-16",
+      "id": "tour:papillon-paragliding"
+    },
+    {
+      "name": "Para Clinics Aotearoa",
+      "website": "https://www.paraclinicsaotearoa.co.nz/",
+      "basedIn": "NZ",
+      "destinations": [
+        "NZ"
+      ],
+      "source": "https://www.paraclinicsaotearoa.co.nz/",
+      "checked": "2026-10-16",
+      "id": "tour:para-clinics-aotearoa"
+    },
+    {
+      "name": "Paraglide Africa",
+      "website": "https://www.paraglideafrica.com/",
+      "basedIn": "ZA",
+      "destinations": [
+        "ZA"
+      ],
+      "source": "https://www.paraglideafrica.com/pages/tours",
+      "checked": "2026-10-16",
+      "id": "tour:paraglide-africa"
+    },
+    {
+      "name": "Paragliding Center Bassano",
+      "website": "https://paraglidingcenterbassano.com/",
+      "basedIn": "IT",
+      "destinations": [
+        "IT"
+      ],
+      "forPilots": "Intermediate pilots already thermalling, aiming for a first 100 km XC",
+      "source": "https://paraglidingcenterbassano.com/bassano-feltre-the-100km/",
+      "checked": "2026-10-16",
+      "id": "tour:paragliding-center-bassano"
+    },
+    {
+      "name": "Paragliding Safaris",
+      "website": "https://www.paraglidingsafaris.com/",
+      "basedIn": "AT",
+      "destinations": [
+        "AT",
+        "CO",
+        "IT",
+        "TR"
+      ],
+      "forPilots": "Small groups; training focused on each pilot",
+      "source": "https://www.paraglidingsafaris.com/colombia-xctours",
+      "checked": "2026-10-16",
+      "id": "tour:paragliding-safaris"
+    },
+    {
+      "name": "ParaglidingGuide",
+      "website": "https://paraglidingguide.com/",
+      "basedIn": "ES",
+      "destinations": [
+        "CO",
+        "ES",
+        "PT"
+      ],
+      "forPilots": "Independent pilots; guided weeks, post-CP development and XC coaching",
+      "source": "https://paraglidingguide.com/colombia/",
+      "checked": "2026-10-16",
+      "id": "tour:paraglidingguide"
+    },
+    {
+      "name": "ParaPro",
+      "website": "https://parapro.co.nz/",
+      "basedIn": "NZ",
+      "destinations": [
+        "NZ"
+      ],
+      "forPilots": "Paramotor pilots",
+      "source": "https://parapro.co.nz/keep-flying/new-zealand-paramotor-tour-2027/",
+      "checked": "2026-10-16",
+      "id": "tour:parapro"
+    },
+    {
+      "name": "Passion Paragliding",
+      "website": "https://www.passionparagliding.com/",
+      "basedIn": "GB",
+      "destinations": [
+        "CO",
+        "ES",
+        "IN",
+        "MK",
+        "TR"
+      ],
+      "forPilots": "Qualified pilots; XC trips, thermal clinics and SIV",
+      "source": "https://www.passionparagliding.com/booking",
+      "checked": "2026-10-16",
+      "id": "tour:passion-paragliding"
+    },
+    {
+      "name": "Penguin Paragliding",
+      "website": "https://www.penguinparagliding.com/",
+      "basedIn": "US",
+      "destinations": [
+        "CO",
+        "FR",
+        "ID"
+      ],
+      "forPilots": "Pilots who launch and land on their own; non-flying partners welcome",
+      "source": "https://www.penguinparagliding.com/tours.html",
+      "checked": "2026-10-16",
+      "id": "tour:penguin-paragliding"
+    },
+    {
+      "name": "Red Tail Paragliding",
+      "website": "https://redtailparagliding.com/",
+      "basedIn": "US",
+      "destinations": [
+        "CO",
+        "MK"
+      ],
+      "forPilots": "P2 and up; Macedonia asks for 20 h thermalling or a 20 km XC",
+      "source": "https://redtailparagliding.com/macedonia-xc-tour/",
+      "checked": "2026-10-16",
+      "id": "tour:red-tail-paragliding"
+    },
+    {
+      "name": "S.A Paragliding Tours",
+      "website": "https://saparagliding.co.za/",
+      "basedIn": "ZA",
+      "destinations": [
+        "NA",
+        "RE",
+        "ZA"
+      ],
+      "source": "https://saparagliding.co.za/tours/",
+      "checked": "2026-10-16",
+      "id": "tour:s-a-paragliding-tours"
+    },
+    {
+      "name": "Sea to Sky Paragliding",
+      "website": "https://www.seatoskyparagliding.com/",
+      "basedIn": "CA",
+      "destinations": [
+        "MX"
+      ],
+      "source": "https://www.seatoskyparagliding.com/paragliding-tours/",
+      "checked": "2026-10-16",
+      "id": "tour:sea-to-sky-paragliding"
+    },
+    {
+      "name": "SEQ Paragliding",
+      "website": "https://www.seqparagliding.com/",
+      "basedIn": "AU",
+      "destinations": [
+        "AT",
+        "IT",
+        "SI"
+      ],
+      "forPilots": "Two tours: lower-airtime pilots new to the Alps, and pilots with thermalling and outlanding experience",
+      "source": "https://www.seqparagliding.com/tours",
+      "checked": "2026-10-16",
+      "id": "tour:seq-paragliding"
+    },
+    {
+      "name": "Sky Summits",
+      "website": "https://www.skysummits.com/",
+      "basedIn": "GB",
+      "destinations": [
+        "CO",
+        "FR",
+        "IN",
+        "IT",
+        "MK",
+        "SI"
+      ],
+      "forPilots": "Guided XC for qualified pilots, plus post-Club Pilot (CP+) coaching",
+      "source": "https://www.skysummits.com/",
+      "checked": "2026-10-16",
+      "id": "tour:sky-summits"
+    },
+    {
+      "name": "Temple Pilots",
+      "website": "https://www.templepilots.com/",
+      "basedIn": "IN",
+      "destinations": [
+        "GR",
+        "ID",
+        "IN",
+        "IT"
+      ],
+      "forPilots": "APPI-rated pilots; entry level set per tour",
+      "source": "https://www.templepilots.com/paragliding-tours/bali-bliss/",
+      "checked": "2026-10-16",
+      "id": "tour:temple-pilots"
+    },
+    {
+      "name": "Wings & Waves",
+      "website": "https://www.wingsandwaves.co.nz/",
+      "basedIn": "NZ",
+      "destinations": [
+        "AT",
+        "FR",
+        "IT",
+        "NZ"
+      ],
+      "forPilots": "Club pilots building thermal and XC skills",
+      "source": "https://www.wingsandwaves.co.nz/europe2026",
+      "checked": "2026-10-16",
+      "id": "tour:wings-waves"
+    },
+    {
+      "name": "Zion Paragliding",
+      "website": "https://www.zionparagliding.com/",
+      "basedIn": "CR",
+      "destinations": [
+        "CL",
+        "CR",
+        "IT",
+        "US"
+      ],
+      "forPilots": "Separate intermediate and advanced tours",
+      "source": "https://www.zionparagliding.com/iquique-unlimited-paragliding-tour",
+      "checked": "2026-10-16",
+      "id": "tour:zion-paragliding"
+    }
+  ]
+}

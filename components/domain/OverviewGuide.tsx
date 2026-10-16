@@ -4,6 +4,7 @@ import { formatDate } from "@/lib/format";
 import { t } from "@/lib/messages";
 import type { CountryGuide } from "@/lib/types";
 import { Anchor } from "@/components/ui/anchor";
+import { RulesNotice } from "./RulesNotice";
 
 const h3 = "font-condensed text-[1.25rem] font-bold";
 
@@ -31,6 +32,9 @@ export function OverviewGuide({ guide, name }: { guide?: CountryGuide; name: str
               <li key={f}>{f}</li>
             ))}
           </ul>
+          <div className="mt-3">
+            <RulesNotice guide={guide} />
+          </div>
         </div>
       )}
       {guide.learners.length > 0 && (

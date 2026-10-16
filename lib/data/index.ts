@@ -20,6 +20,8 @@ import {
   overviewSiteSchema,
   overviewRegionSchema,
   countryGuideSchema,
+  tourOperatorSchema,
+  visitorHelpSchema,
 } from "@/lib/schemas";
 import type {
   Brand,
@@ -39,6 +41,9 @@ import type {
   CountryGuide,
   OverviewRegion,
   OverviewSite,
+  TourOperator,
+  VisitingCountry,
+  VisitorHelp,
 } from "@/lib/types";
 
 const GENERATED = path.join(process.cwd(), "data", "generated");
@@ -202,4 +207,64 @@ export function getGuide(code: string): CountryGuide | undefined {
 export function getOverviewSites(country?: string): OverviewSite[] {
   const all = load("overview-sites.json", z.array(overviewSiteSchema));
   return country ? all.filter((s) => s.country === country.toUpperCase()) : all;
+}
+
+// ---------- visiting pilots (D89) ----------
+
+const visitingSchema = z.object({
+  help: z.array(visitorHelpSchema),
+  tours: z.array(tourOperatorSchema),
+});
+
+/** Businesses that help visiting pilots on the ground, optionally in one country. */
+export function getVisitorHelp(country?: string): VisitorHelp[] {
+  const all = load("visiting.json", visitingSchema).help;
+  return country ? all.filter((h) => sameCountry(h.country, country)) : all;
+}
+
+/** Flying tour operators, optionally only those with trips to one country. */
+export function getTourOperators(destination?: string): TourOperator[] {
+  const all = load("visiting.json", visitingSchema).tours;
+  return destination
+    ? all.filter((t) => t.destinations.some((d) => sameCountry(d, destination)))
+    : all;
+}
+
+/** The display name for a country code: a fully covered country or an overview country. */
+export function getCountryName(code: string): string | undefined {
+  const upper = code.toUpperCase();
+  return (
+    getCountries().find((c) => c.code === upper)?.name ??
+    getOverviewRegions()
+      .flatMap((r) => r.countries)
+      .find((c) => c.code === upper)?.name
+  );
+}
+
+/**
+ * Countries with a visiting-pilots page: the fully covered countries, then every overview country
+ * that has a guide, someone helping on the ground, or tours going there.
+ */
+export function getVisitingCountries(): VisitingCountry[] {
+  const home: VisitingCountry[] = getCountries()
+    .filter((c) => c.enabled)
+    .map((c) => ({ code: c.code, name: c.name, group: "home" }));
+  const homeCodes = new Set(home.map((c) => c.code));
+  const tourCodes = new Set(getTourOperators().flatMap((t) => t.destinations));
+  const helpCodes = new Set(getVisitorHelp().map((h) => h.country));
+  const seen = new Set<string>();
+  const overview = getOverviewRegions().flatMap((r) =>
+    r.countries
+      .filter((c) => !homeCodes.has(c.code))
+      .filter((c) => getGuide(c.code) || helpCodes.has(c.code) || tourCodes.has(c.code))
+      .filter((c) => !seen.has(c.code) && seen.add(c.code))
+      .map((c) => ({ code: c.code, name: c.name, group: r.slug })),
+  );
+  // Countries that only tours go to so far get a page too, named in English.
+  const regionName = new Intl.DisplayNames(["en"], { type: "region" });
+  const elsewhere = [...tourCodes]
+    .filter((code) => !homeCodes.has(code) && !seen.has(code))
+    .map((code) => ({ code, name: regionName.of(code) ?? code, group: "elsewhere" }))
+    .sort((a, b) => a.name.localeCompare(b.name));
+  return [...home, ...overview, ...elsewhere];
 }
