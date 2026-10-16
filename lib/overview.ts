@@ -50,11 +50,16 @@ export function toMapSite(region: OverviewRegion, s: OverviewSite): MapSite {
   };
 }
 
+/** A ParaglidingEarth site's own page, from its ID ("pge:13095"). */
+export const pgeSiteUrl = (id: string): string =>
+  `https://www.paraglidingearth.com/?site=${id.replace(/^pge:/, "")}`;
+
 export function mapSiteToSummary(m: MapSite, countryName: string): SiteSummary {
   return {
     id: m.i,
     name: m.n,
     href: m.h,
+    ...(m.i.startsWith("pge:") ? { externalHref: pgeSiteUrl(m.i) } : {}),
     regionCode: m.c,
     regionName: countryName,
     status: "unknown",

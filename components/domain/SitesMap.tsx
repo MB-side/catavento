@@ -33,8 +33,19 @@ function popupContent(s: SiteSummary): HTMLElement {
   // Built from DOM nodes, never HTML strings, so names can't inject markup.
   const box = document.createElement("div");
   const link = document.createElement("a");
-  link.href = withBasePath(s.href);
   link.textContent = s.name;
+  if (s.externalHref) {
+    // Overview sites open their source's page in a new tab, like every outside link (D90).
+    link.href = s.externalHref;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    const note = document.createElement("span");
+    note.className = "sr-only";
+    note.textContent = ` ${t("links.newTab")}`;
+    link.append(note);
+  } else {
+    link.href = withBasePath(s.href);
+  }
   link.style.fontWeight = "700";
   box.append(link);
   const line = document.createElement("div");
