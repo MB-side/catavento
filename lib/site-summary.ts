@@ -6,6 +6,8 @@ export interface SiteSummary {
   id: string;
   name: string;
   href: string;
+  /** The source's own page for the site, opened in a new tab from the map (D90). */
+  externalHref?: string;
   regionCode: string;
   regionName: string;
   status: Site["status"];

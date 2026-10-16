@@ -72,6 +72,7 @@ describe("map records", () => {
       windParsed: true,
       community: true,
       href: "/world/europe/fr/#site-123",
+      externalHref: "https://www.paraglidingearth.com/?site=123",
     });
   });
 

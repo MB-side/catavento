@@ -767,7 +767,9 @@
     "rulesLink": "{body}: current rules for visiting pilots",
     "rulesLinkGeneric": "Current rules for visiting pilots",
     "summaryChecked": "Summary checked {date}.",
-    "notExhaustive": "These lists are indicative, not complete. We add more as we find them, so there are likely others not listed here."
+    "notExhaustive": "These lists are indicative, not complete. We add more as we find them, so there are likely others not listed here.",
+    "mapHeading": "Sites on the map",
+    "mapAllSites": "All sites, with their wind directions and who looks after them"
   },
   "gear": {
     "intro": "Where to buy, service and check flying equipment in {country}.",
