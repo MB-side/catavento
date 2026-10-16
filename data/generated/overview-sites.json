@@ -46074,6 +46074,4119 @@
     "fetchedAt": "2026-10-13T09:54:36.474Z"
   },
   {
+    "id": "pge:16185",
+    "name": "1200",
+    "country": "CL",
+    "lat": -22.8888,
+    "lon": -70.2476,
+    "altitudeM": 369,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=16185",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:11494",
+    "name": "Algarrobo Mirasol",
+    "country": "CL",
+    "lat": -33.3286,
+    "lon": -71.6483,
+    "altitudeM": 46,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "WSW–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "landing": {
+      "lat": -33.3315,
+      "lon": -71.6504
+    },
+    "url": "https://www.paraglidingearth.com/?site=11494",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:21753",
+    "name": "Almendral",
+    "country": "CL",
+    "lat": -32.7404,
+    "lon": -70.682,
+    "altitudeM": 807,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21753",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:19224",
+    "name": "Alto Caleta Buena North",
+    "country": "CL",
+    "lat": -19.8688,
+    "lon": -70.118,
+    "altitudeM": 749,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=19224",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:22324",
+    "name": "Alto Hospicio",
+    "country": "CL",
+    "lat": -20.2736,
+    "lon": -70.1103,
+    "altitudeM": 542,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "SSW–NNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "landing": {
+      "lat": -20.2813,
+      "lon": -70.1287
+    },
+    "url": "https://www.paraglidingearth.com/?site=22324",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:14649",
+    "name": "Batuco",
+    "country": "CL",
+    "lat": -33.1866,
+    "lon": -70.8269,
+    "altitudeM": 757,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "ESE–SSW",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=14649",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:11219",
+    "name": "Black Park",
+    "country": "CL",
+    "lat": -33.3317,
+    "lon": -70.6675,
+    "altitudeM": 759,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "SSW–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": -33.3371,
+      "lon": -70.6641
+    },
+    "url": "https://www.paraglidingearth.com/?site=11219",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:12844",
+    "name": "Brillador",
+    "country": "CL",
+    "lat": -29.829,
+    "lon": -71.2146,
+    "altitudeM": 435,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=12844",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:17143",
+    "name": "Calfuco",
+    "country": "CL",
+    "lat": -39.7871,
+    "lon": -73.3905,
+    "altitudeM": 15,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "SSW–NNW",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=17143",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:16948",
+    "name": "Casa Piedra",
+    "country": "CL",
+    "lat": -38.4792,
+    "lon": -73.5147,
+    "altitudeM": 89,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "SSW–WNW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": -38.4795,
+      "lon": -73.5171
+    },
+    "url": "https://www.paraglidingearth.com/?site=16948",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:11008",
+    "name": "Cerro Challupen",
+    "country": "CL",
+    "lat": -39.4777,
+    "lon": -72.121,
+    "altitudeM": 626,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSW–WNW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": -39.5045,
+      "lon": -72.1094
+    },
+    "url": "https://www.paraglidingearth.com/?site=11008",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:19853",
+    "name": "Cerro Cochento",
+    "country": "CL",
+    "lat": -37.704,
+    "lon": -72.3011,
+    "altitudeM": 360,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "SSE–WSW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "flatland"
+    ],
+    "landing": {
+      "lat": -37.713,
+      "lon": -72.3002
+    },
+    "url": "https://www.paraglidingearth.com/?site=19853",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:22544",
+    "name": "Cerro de entrenamiento",
+    "country": "CL",
+    "lat": -32.6745,
+    "lon": -70.6849,
+    "altitudeM": 844,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22544",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:15537",
+    "name": "Cerro Del Padre",
+    "country": "CL",
+    "lat": -38.4756,
+    "lon": -71.3541,
+    "altitudeM": 1300,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "WSW–NNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "landing": {
+      "lat": -38.4724,
+      "lon": -71.3668
+    },
+    "url": "https://www.paraglidingearth.com/?site=15537",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:21623",
+    "name": "Cerro El Almendro",
+    "country": "CL",
+    "lat": -32.6707,
+    "lon": -70.5711,
+    "altitudeM": 1892,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21623",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:21389",
+    "name": "Cerro el Carmen al Almanecer -'el Alamain'",
+    "country": "CL",
+    "lat": -33.3701,
+    "lon": -70.6185,
+    "altitudeM": 944,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "SSE–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21389",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:12843",
+    "name": "Cerro Grande",
+    "country": "CL",
+    "lat": -29.9573,
+    "lon": -71.2113,
+    "altitudeM": 384,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=12843",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:10004",
+    "name": "Cerro Mariposa (Ma. Luisa)",
+    "country": "CL",
+    "lat": -38.7165,
+    "lon": -72.5929,
+    "altitudeM": 282,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "SSW–NNW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "landing": {
+      "lat": -38.7177,
+      "lon": -72.6002
+    },
+    "url": "https://www.paraglidingearth.com/?site=10004",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:14491",
+    "name": "Cerro Maule",
+    "country": "CL",
+    "lat": -38.8152,
+    "lon": -73.4011,
+    "altitudeM": 57,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "WSW–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "landing": {
+      "lat": -38.814,
+      "lon": -73.4017
+    },
+    "url": "https://www.paraglidingearth.com/?site=14491",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:20049",
+    "name": "Cerro Provincia",
+    "country": "CL",
+    "lat": -33.4252,
+    "lon": -70.4393,
+    "altitudeM": 2718,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=20049",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:17286",
+    "name": "Cleta Hornos",
+    "country": "CL",
+    "lat": -29.6082,
+    "lon": -71.2874,
+    "altitudeM": 22,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=17286",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:19929",
+    "name": "Club de Planeadores Vitacura",
+    "country": "CL",
+    "lat": -32.8029,
+    "lon": -70.5192,
+    "altitudeM": 1173,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=19929",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:19223",
+    "name": "Cobija Beach",
+    "country": "CL",
+    "lat": -22.5874,
+    "lon": -70.2478,
+    "altitudeM": 277,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=19223",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:15513",
+    "name": "Colina",
+    "country": "CL",
+    "lat": -33.1727,
+    "lon": -70.6819,
+    "altitudeM": 834,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "ESE–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": -33.175,
+      "lon": -70.6884
+    },
+    "url": "https://www.paraglidingearth.com/?site=15513",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:9998",
+    "name": "Coliumo",
+    "country": "CL",
+    "lat": -36.5479,
+    "lon": -72.9744,
+    "altitudeM": 141,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "SSW–WNW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "landing": {
+      "lat": -36.5515,
+      "lon": -72.9761
+    },
+    "url": "https://www.paraglidingearth.com/?site=9998",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:19559",
+    "name": "Conaripe",
+    "country": "CL",
+    "lat": -39.5188,
+    "lon": -72.0342,
+    "altitudeM": 625,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "SSE–NNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "xc"
+    ],
+    "landing": {
+      "lat": -39.5294,
+      "lon": -72.0388
+    },
+    "url": "https://www.paraglidingearth.com/?site=19559",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:17852",
+    "name": "Corralco",
+    "country": "CL",
+    "lat": -38.3862,
+    "lon": -71.5692,
+    "altitudeM": 2159,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "SSE–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "xc"
+    ],
+    "landing": {
+      "lat": -38.3989,
+      "lon": -71.5537
+    },
+    "url": "https://www.paraglidingearth.com/?site=17852",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:6650",
+    "name": "Cuesta Barriga",
+    "country": "CL",
+    "lat": -33.5259,
+    "lon": -70.9239,
+    "altitudeM": 737,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6650",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:23263",
+    "name": "Despegue 1 Pataguas",
+    "country": "CL",
+    "lat": -32.9016,
+    "lon": -71.1872,
+    "altitudeM": 453,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23263",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:19679",
+    "name": "Domos",
+    "country": "CL",
+    "lat": -33.3006,
+    "lon": -70.5134,
+    "altitudeM": 1473,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSW–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "landing": {
+      "lat": -33.306,
+      "lon": -70.5135
+    },
+    "url": "https://www.paraglidingearth.com/?site=19679",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:17287",
+    "name": "Duna Escuela frente brillador",
+    "country": "CL",
+    "lat": -29.8388,
+    "lon": -71.244,
+    "altitudeM": 197,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=17287",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:21175",
+    "name": "El Loa Ridge 550",
+    "country": "CL",
+    "lat": -21.3704,
+    "lon": -70.0604,
+    "altitudeM": 554,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21175",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:16228",
+    "name": "El Manzano",
+    "country": "CL",
+    "lat": -33.5816,
+    "lon": -70.379,
+    "altitudeM": 1245,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=16228",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:6717",
+    "name": "Farellones",
+    "country": "CL",
+    "lat": -33.3493,
+    "lon": -70.3058,
+    "altitudeM": 2580,
+    "windRanges": [
+      {
+        "fromDeg": 292.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "WNW–NNE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "xc"
+    ],
+    "landing": {
+      "lat": -33.3484,
+      "lon": -70.3159
+    },
+    "url": "https://www.paraglidingearth.com/?site=6717",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:20077",
+    "name": "Franciscano",
+    "country": "CL",
+    "lat": -33.3199,
+    "lon": -70.2626,
+    "altitudeM": 3544,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=20077",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:6690",
+    "name": "Iquique - Alto Hospicio",
+    "country": "CL",
+    "lat": -20.2819,
+    "lon": -70.1076,
+    "altitudeM": 506,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "SSW–NNW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6690",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:6654",
+    "name": "Iquique - Clavijo",
+    "country": "CL",
+    "lat": -20.2427,
+    "lon": -70.1184,
+    "altitudeM": 526,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6654",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:6934",
+    "name": "Iquique - Palo Buque",
+    "country": "CL",
+    "lat": -20.3833,
+    "lon": -70.1536,
+    "altitudeM": 217,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSE–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6934",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:23782",
+    "name": "Jahuel",
+    "country": "CL",
+    "lat": -32.6758,
+    "lon": -70.593,
+    "altitudeM": 1249,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23782",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:19704",
+    "name": "La Piramide",
+    "country": "CL",
+    "lat": -33.3814,
+    "lon": -70.6081,
+    "altitudeM": 726,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      },
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "SSE–SSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=19704",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:23262",
+    "name": "Laguna Seca",
+    "country": "CL",
+    "lat": -32.9045,
+    "lon": -71.2018,
+    "altitudeM": 171,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23262",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:17263",
+    "name": "Lagunillas",
+    "country": "CL",
+    "lat": -33.607,
+    "lon": -70.2823,
+    "altitudeM": 2483,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=17263",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:10003",
+    "name": "Lirquen",
+    "country": "CL",
+    "lat": -36.7039,
+    "lon": -72.9756,
+    "altitudeM": 71,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "SSW–WNW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "landing": {
+      "lat": -36.7036,
+      "lon": -72.9772
+    },
+    "url": "https://www.paraglidingearth.com/?site=10003",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:18829",
+    "name": "Llico Bajo",
+    "country": "CL",
+    "lat": -41.3036,
+    "lon": -73.8428,
+    "altitudeM": 53,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "SSW–NNW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "landing": {
+      "lat": -41.3044,
+      "lon": -73.8433
+    },
+    "url": "https://www.paraglidingearth.com/?site=18829",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:12842",
+    "name": "Lomas del Rincon",
+    "country": "CL",
+    "lat": -32.7341,
+    "lon": -71.3573,
+    "altitudeM": 468,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=12842",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:22668",
+    "name": "Lonquén",
+    "country": "CL",
+    "lat": -33.7097,
+    "lon": -70.8421,
+    "altitudeM": 501,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "WSW–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "flatland"
+    ],
+    "landing": {
+      "lat": -33.7103,
+      "lon": -70.8482
+    },
+    "url": "https://www.paraglidingearth.com/?site=22668",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:21752",
+    "name": "Los Mantos",
+    "country": "CL",
+    "lat": -32.6736,
+    "lon": -70.9012,
+    "altitudeM": 1304,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21752",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:15512",
+    "name": "Los Pelados",
+    "country": "CL",
+    "lat": -33.2786,
+    "lon": -70.4803,
+    "altitudeM": 2163,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=15512",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:19212",
+    "name": "Los Verdes",
+    "country": "CL",
+    "lat": -20.4268,
+    "lon": -70.1276,
+    "altitudeM": 777,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "SSW–NNW",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=19212",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:13835",
+    "name": "Machali",
+    "country": "CL",
+    "lat": -34.0634,
+    "lon": -70.5378,
+    "altitudeM": 1535,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=13835",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:13842",
+    "name": "Machali",
+    "country": "CL",
+    "lat": -33.9859,
+    "lon": -70.5547,
+    "altitudeM": 2008,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=13842",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:11786",
+    "name": "Machalí",
+    "country": "CL",
+    "lat": -34.1701,
+    "lon": -70.6316,
+    "altitudeM": 731,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=11786",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:13286",
+    "name": "Maitencillo",
+    "country": "CL",
+    "lat": -32.6782,
+    "lon": -71.4422,
+    "altitudeM": 78,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "SSW–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "landing": {
+      "lat": -32.6761,
+      "lon": -71.4435
+    },
+    "url": "https://www.paraglidingearth.com/?site=13286",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:17200",
+    "name": "Masito",
+    "country": "CL",
+    "lat": -20.829,
+    "lon": -70.1422,
+    "altitudeM": 772,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=17200",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:16716",
+    "name": "Medanoso Dune",
+    "country": "CL",
+    "lat": -27.1311,
+    "lon": -70.1525,
+    "altitudeM": 1298,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "SSW–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": -27.1372,
+      "lon": -70.1492
+    },
+    "url": "https://www.paraglidingearth.com/?site=16716",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:21754",
+    "name": "Morro Saavedra",
+    "country": "CL",
+    "lat": -32.9577,
+    "lon": -70.6987,
+    "altitudeM": 1320,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21754",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:22359",
+    "name": "Natales",
+    "country": "CL",
+    "lat": -52.0953,
+    "lon": -72.3604,
+    "altitudeM": 625,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22359",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:11009",
+    "name": "Panguipulli",
+    "country": "CL",
+    "lat": -39.6534,
+    "lon": -72.1955,
+    "altitudeM": 551,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "SSW–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "landing": {
+      "lat": -39.6562,
+      "lon": -72.2164
+    },
+    "url": "https://www.paraglidingearth.com/?site=11009",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:16145",
+    "name": "Paposo",
+    "country": "CL",
+    "lat": -25.0214,
+    "lon": -70.4573,
+    "altitudeM": 299,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=16145",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:21706",
+    "name": "Parapente Pucon",
+    "country": "CL",
+    "lat": -39.2668,
+    "lon": -71.9749,
+    "altitudeM": 223,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      },
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "WSW–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "winch"
+    ],
+    "landing": {
+      "lat": -39.265,
+      "lon": -71.9741
+    },
+    "url": "https://www.paraglidingearth.com/?site=21706",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:14490",
+    "name": "Parapente Tirua",
+    "country": "CL",
+    "lat": -38.3626,
+    "lon": -73.5018,
+    "altitudeM": 181,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      },
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "WSW–WNW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "landing": {
+      "lat": -38.3648,
+      "lon": -73.5078
+    },
+    "url": "https://www.paraglidingearth.com/?site=14490",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:23783",
+    "name": "pata de Guanaco",
+    "country": "CL",
+    "lat": -32.704,
+    "lon": -70.5948,
+    "altitudeM": 1339,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23783",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:6714",
+    "name": "Patillos",
+    "country": "CL",
+    "lat": -20.7391,
+    "lon": -70.1559,
+    "altitudeM": 164,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "WSW–WNW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6714",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:11937",
+    "name": "Pavillon de Pica",
+    "country": "CL",
+    "lat": -20.9133,
+    "lon": -70.1329,
+    "altitudeM": 221,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=11937",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:17196",
+    "name": "Pimpineles",
+    "country": "CL",
+    "lat": -23.5036,
+    "lon": -70.3824,
+    "altitudeM": 375,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=17196",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:6652",
+    "name": "Pisagua",
+    "country": "CL",
+    "lat": -19.5932,
+    "lon": -70.2005,
+    "altitudeM": 338,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6652",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:19825",
+    "name": "Playa Blanca",
+    "country": "CL",
+    "lat": -37.0585,
+    "lon": -73.141,
+    "altitudeM": 25,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "NNE–SSE",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": -37.0569,
+      "lon": -73.1416
+    },
+    "url": "https://www.paraglidingearth.com/?site=19825",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:13058",
+    "name": "Pochoco Flypark",
+    "country": "CL",
+    "lat": -33.358,
+    "lon": -70.4528,
+    "altitudeM": 1640,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=13058",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:6806",
+    "name": "Rancagua",
+    "country": "CL",
+    "lat": -34.2199,
+    "lon": -70.6223,
+    "altitudeM": 1184,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6806",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:14737",
+    "name": "San Antonio",
+    "country": "CL",
+    "lat": -32.6978,
+    "lon": -71.3541,
+    "altitudeM": 672,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=14737",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:10005",
+    "name": "San Ignacio",
+    "country": "CL",
+    "lat": -39.8387,
+    "lon": -73.3991,
+    "altitudeM": 62,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "SSW–NNW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "landing": {
+      "lat": -39.8386,
+      "lon": -73.4024
+    },
+    "url": "https://www.paraglidingearth.com/?site=10005",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:11716",
+    "name": "San Marcos",
+    "country": "CL",
+    "lat": -21.0745,
+    "lon": -70.1107,
+    "altitudeM": 582,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSW–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=11716",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:6718",
+    "name": "Santuario de la Naturaleza",
+    "country": "CL",
+    "lat": -33.3139,
+    "lon": -70.4754,
+    "altitudeM": 1509,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6718",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:19382",
+    "name": "Talca-Pencahue",
+    "country": "CL",
+    "lat": -35.3625,
+    "lon": -71.7273,
+    "altitudeM": 560,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windLabel": "ESE–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": -35.3816,
+      "lon": -71.7174
+    },
+    "url": "https://www.paraglidingearth.com/?site=19382",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:12841",
+    "name": "Tambillos",
+    "country": "CL",
+    "lat": -30.2242,
+    "lon": -71.1887,
+    "altitudeM": 821,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "winch"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=12841",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:17073",
+    "name": "Teno - San Isidro",
+    "country": "CL",
+    "lat": -34.8314,
+    "lon": -71.2275,
+    "altitudeM": 682,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSE–WSW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "landing": {
+      "lat": -34.8516,
+      "lon": -71.2376
+    },
+    "url": "https://www.paraglidingearth.com/?site=17073",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:16494",
+    "name": "Termas de Puritama",
+    "country": "CL",
+    "lat": -22.6859,
+    "lon": -67.9877,
+    "altitudeM": 4146,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=16494",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:14183",
+    "name": "The 1200 - Antofagasta",
+    "country": "CL",
+    "lat": -22.9622,
+    "lon": -70.2679,
+    "altitudeM": 753,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=14183",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:9997",
+    "name": "Tome",
+    "country": "CL",
+    "lat": -36.6402,
+    "lon": -72.9584,
+    "altitudeM": 130,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "WSW–NNW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "landing": {
+      "lat": -36.6353,
+      "lon": -72.9579
+    },
+    "url": "https://www.paraglidingearth.com/?site=9997",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:19782",
+    "name": "Truful",
+    "country": "CL",
+    "lat": -38.8757,
+    "lon": -71.6485,
+    "altitudeM": 1211,
+    "windRanges": [
+      {
+        "fromDeg": 292.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "WNW–NNE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "landing": {
+      "lat": -38.8302,
+      "lon": -71.6521
+    },
+    "url": "https://www.paraglidingearth.com/?site=19782",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:15514",
+    "name": "Tunquen",
+    "country": "CL",
+    "lat": -33.2953,
+    "lon": -71.6514,
+    "altitudeM": 30,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=15514",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:6719",
+    "name": "Vizcachas",
+    "country": "CL",
+    "lat": -33.5906,
+    "lon": -70.4971,
+    "altitudeM": 1045,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "SSW–WNW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "landing": {
+      "lat": -33.597,
+      "lon": -70.5045
+    },
+    "url": "https://www.paraglidingearth.com/?site=6719",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:16258",
+    "name": "Volcan Villarrica",
+    "country": "CL",
+    "lat": -39.4184,
+    "lon": -71.9403,
+    "altitudeM": 2783,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=16258",
+    "fetchedAt": "2026-10-16T03:57:16.187Z"
+  },
+  {
+    "id": "pge:21747",
+    "name": "802",
+    "country": "CN",
+    "lat": 43.354,
+    "lon": 117.706,
+    "altitudeM": 1912,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      },
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "WSW–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21747",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23768",
+    "name": "AnJi YuFeng/驭风",
+    "country": "CN",
+    "lat": 30.4854,
+    "lon": 119.447,
+    "altitudeM": 664,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 30.4981,
+      "lon": 119.443
+    },
+    "url": "https://www.paraglidingearth.com/?site=23768",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:9740",
+    "name": "Anning",
+    "country": "CN",
+    "lat": 24.9681,
+    "lon": 102.402,
+    "altitudeM": 2491,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSE–WSW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 24.9548,
+      "lon": 102.379
+    },
+    "url": "https://www.paraglidingearth.com/?site=9740",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23771",
+    "name": "BaiHe/白鹤",
+    "country": "CN",
+    "lat": 29.2377,
+    "lon": 120.908,
+    "altitudeM": 535,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "landing": {
+      "lat": 29.242,
+      "lon": 120.928
+    },
+    "url": "https://www.paraglidingearth.com/?site=23771",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:21634",
+    "name": "Baimachang",
+    "country": "CN",
+    "lat": 25.9018,
+    "lon": 99.9092,
+    "altitudeM": 3051,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      },
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "WSW–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21634",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:17394",
+    "name": "Bamianshan",
+    "country": "CN",
+    "lat": 28.8364,
+    "lon": 109.254,
+    "altitudeM": 1250,
+    "windRanges": "all",
+    "windLabel": "All",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 28.8374,
+      "lon": 109.262
+    },
+    "url": "https://www.paraglidingearth.com/?site=17394",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:22074",
+    "name": "Big Love",
+    "country": "CN",
+    "lat": 22.3334,
+    "lon": 114.257,
+    "altitudeM": 246,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windLabel": "NNE–ENE",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 22.3376,
+      "lon": 114.259
+    },
+    "url": "https://www.paraglidingearth.com/?site=22074",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:7288",
+    "name": "Chicheng chaoyang cliff",
+    "country": "CN",
+    "lat": 40.704,
+    "lon": 116.061,
+    "altitudeM": 781,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      },
+      {
+        "fromDeg": 202.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "ESE–SSW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=7288",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23448",
+    "name": "DaJianShan/大尖山",
+    "country": "CN",
+    "lat": 30.3503,
+    "lon": 120.762,
+    "altitudeM": 179,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "landing": {
+      "lat": 30.3516,
+      "lon": 120.755
+    },
+    "url": "https://www.paraglidingearth.com/?site=23448",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:21635",
+    "name": "Dali 3 Pagodas",
+    "country": "CN",
+    "lat": 25.6965,
+    "lon": 100.11,
+    "altitudeM": 3010,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21635",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23553",
+    "name": "DaMingShan",
+    "country": "CN",
+    "lat": 23.5523,
+    "lon": 108.341,
+    "altitudeM": 829,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23553",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:21566",
+    "name": "Daping",
+    "country": "CN",
+    "lat": 30.6432,
+    "lon": 103.398,
+    "altitudeM": 954,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21566",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:10870",
+    "name": "Dongchuan, north face",
+    "country": "CN",
+    "lat": 26.1345,
+    "lon": 103.225,
+    "altitudeM": 2643,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSE–WNW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "landing": {
+      "lat": 26.11,
+      "lon": 103.192
+    },
+    "url": "https://www.paraglidingearth.com/?site=10870",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23897",
+    "name": "Douchuan Mountain",
+    "country": "CN",
+    "lat": 31.9146,
+    "lon": 104.812,
+    "altitudeM": 1016,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23897",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:7583",
+    "name": "Dujiangyan zipingpu",
+    "country": "CN",
+    "lat": 31.0467,
+    "lon": 103.558,
+    "altitudeM": 1275,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 337.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windLabel": "ESE–NNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 31.0447,
+      "lon": 103.57
+    },
+    "url": "https://www.paraglidingearth.com/?site=7583",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:10309",
+    "name": "exploration",
+    "country": "CN",
+    "lat": 25.0288,
+    "lon": 103.011,
+    "altitudeM": 2671,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      },
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "ENE–SSE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "landing": {
+      "lat": 24.9571,
+      "lon": 103.012
+    },
+    "url": "https://www.paraglidingearth.com/?site=10309",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23559",
+    "name": "Fly ZhiYou",
+    "country": "CN",
+    "lat": 40.2103,
+    "lon": 117.315,
+    "altitudeM": 336,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23559",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23772",
+    "name": "Fuyang DieKong/叠空",
+    "country": "CN",
+    "lat": 29.9931,
+    "lon": 119.611,
+    "altitudeM": 432,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "landing": {
+      "lat": 29.9844,
+      "lon": 119.619
+    },
+    "url": "https://www.paraglidingearth.com/?site=23772",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:19562",
+    "name": "Goujiding",
+    "country": "CN",
+    "lat": 22.1811,
+    "lon": 111.601,
+    "altitudeM": 855,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "ENE–SSW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "landing": {
+      "lat": 22.1602,
+      "lon": 111.626
+    },
+    "url": "https://www.paraglidingearth.com/?site=19562",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:22718",
+    "name": "Gujianshan/古剑山",
+    "country": "CN",
+    "lat": 28.9649,
+    "lon": 106.628,
+    "altitudeM": 797,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 28.9673,
+      "lon": 106.644
+    },
+    "url": "https://www.paraglidingearth.com/?site=22718",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:19970",
+    "name": "Gulang",
+    "country": "CN",
+    "lat": 37.4943,
+    "lon": 102.876,
+    "altitudeM": 2277,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=19970",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:9842",
+    "name": "Haikou",
+    "country": "CN",
+    "lat": 24.867,
+    "lon": 102.626,
+    "altitudeM": 2214,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 157.5
+      },
+      {
+        "fromDeg": 202.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "ENE–SSE, SSW–NNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "landing": {
+      "lat": 24.8663,
+      "lon": 102.611
+    },
+    "url": "https://www.paraglidingearth.com/?site=9842",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:19569",
+    "name": "HAIXIHAI －1",
+    "country": "CN",
+    "lat": 26.2977,
+    "lon": 99.9577,
+    "altitudeM": 2384,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 26.3014,
+      "lon": 99.977
+    },
+    "url": "https://www.paraglidingearth.com/?site=19569",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:21640",
+    "name": "Hanghai road",
+    "country": "CN",
+    "lat": 26.696,
+    "lon": 100.722,
+    "altitudeM": 2155,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21640",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23905",
+    "name": "Hanyuan",
+    "country": "CN",
+    "lat": 29.3823,
+    "lon": 102.66,
+    "altitudeM": 1730,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 29.3618,
+      "lon": 102.639
+    },
+    "url": "https://www.paraglidingearth.com/?site=23905",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:17399",
+    "name": "Hebao island No. 1",
+    "country": "CN",
+    "lat": 21.8602,
+    "lon": 113.16,
+    "altitudeM": 55,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "ESE–WSW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "soaring",
+      "xc",
+      "winch"
+    ],
+    "landing": {
+      "lat": 21.8589,
+      "lon": 113.161
+    },
+    "url": "https://www.paraglidingearth.com/?site=17399",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:17401",
+    "name": "Hebao island No. 2",
+    "country": "CN",
+    "lat": 21.8605,
+    "lon": 113.172,
+    "altitudeM": 86,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "ESE–WSW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "soaring",
+      "winch"
+    ],
+    "landing": {
+      "lat": 21.8589,
+      "lon": 113.161
+    },
+    "url": "https://www.paraglidingearth.com/?site=17401",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:21740",
+    "name": "Heimifeng",
+    "country": "CN",
+    "lat": 28.454,
+    "lon": 112.987,
+    "altitudeM": 266,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 28.4517,
+      "lon": 112.976
+    },
+    "url": "https://www.paraglidingearth.com/?site=21740",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23102",
+    "name": "HongJiaoLing International Paragliding Flight Camp",
+    "country": "CN",
+    "lat": 18.5729,
+    "lon": 110.111,
+    "altitudeM": 424,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23102",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:21823",
+    "name": "Hua Shan",
+    "country": "CN",
+    "lat": 31.8535,
+    "lon": 120.289,
+    "altitudeM": 233,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windLabel": "ESE–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "landing": {
+      "lat": 31.8455,
+      "lon": 120.282
+    },
+    "url": "https://www.paraglidingearth.com/?site=21823",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:22913",
+    "name": "HuanXian",
+    "country": "CN",
+    "lat": 29.9119,
+    "lon": 114.815,
+    "altitudeM": 429,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22913",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23803",
+    "name": "HuiXian International Flying Club Taking Off Site",
+    "country": "CN",
+    "lat": 35.4688,
+    "lon": 113.489,
+    "altitudeM": 665,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23803",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23863",
+    "name": "Jindouyun 筋斗云",
+    "country": "CN",
+    "lat": 31.1564,
+    "lon": 103.778,
+    "altitudeM": 1346,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 31.1631,
+      "lon": 103.791
+    },
+    "url": "https://www.paraglidingearth.com/?site=23863",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23552",
+    "name": "JingDeZhen",
+    "country": "CN",
+    "lat": 29.4503,
+    "lon": 117.533,
+    "altitudeM": 609,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23552",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:21642",
+    "name": "Jinggu",
+    "country": "CN",
+    "lat": 23.5103,
+    "lon": 100.657,
+    "altitudeM": 1571,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21642",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23767",
+    "name": "JinJiaShan/金家山",
+    "country": "CN",
+    "lat": 29.7842,
+    "lon": 119.51,
+    "altitudeM": 467,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "landing": {
+      "lat": 29.7757,
+      "lon": 119.516
+    },
+    "url": "https://www.paraglidingearth.com/?site=23767",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:22905",
+    "name": "JiuHuaShan",
+    "country": "CN",
+    "lat": 30.5981,
+    "lon": 117.806,
+    "altitudeM": 414,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      },
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      },
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "ENE–ESE, WSW–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22905",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:15385",
+    "name": "JiuLong/九龙",
+    "country": "CN",
+    "lat": 31.4119,
+    "lon": 104.111,
+    "altitudeM": 1402,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=15385",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23484",
+    "name": "kamayami paragliding(nanxijiang river)",
+    "country": "CN",
+    "lat": 28.3406,
+    "lon": 120.774,
+    "altitudeM": 520,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23484",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:21741",
+    "name": "Lianhuashan",
+    "country": "CN",
+    "lat": 28.1303,
+    "lon": 112.79,
+    "altitudeM": 311,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 28.12,
+      "lon": 112.797
+    },
+    "url": "https://www.paraglidingearth.com/?site=21741",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:21638",
+    "name": "Lijiang Tower",
+    "country": "CN",
+    "lat": 26.9357,
+    "lon": 100.101,
+    "altitudeM": 3115,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21638",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:11451",
+    "name": "Linzhou T1/林州1号",
+    "country": "CN",
+    "lat": 36.1489,
+    "lon": 113.735,
+    "altitudeM": 1188,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      },
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "ENE–ESE",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "landing": {
+      "lat": 36.1516,
+      "lon": 113.772
+    },
+    "url": "https://www.paraglidingearth.com/?site=11451",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:16915",
+    "name": "LinZhou TO 2",
+    "country": "CN",
+    "lat": 36.0313,
+    "lon": 113.714,
+    "altitudeM": 1085,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=16915",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:22910",
+    "name": "Linzhou/林州三号",
+    "country": "CN",
+    "lat": 35.9976,
+    "lon": 113.694,
+    "altitudeM": 1015,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22910",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:17023",
+    "name": "Lion Mountain North Slope",
+    "country": "CN",
+    "lat": 22.8053,
+    "lon": 115.016,
+    "altitudeM": 278,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=17023",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23899",
+    "name": "Little Cloud",
+    "country": "CN",
+    "lat": 30.7886,
+    "lon": 104.539,
+    "altitudeM": 834,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 30.7928,
+      "lon": 104.555
+    },
+    "url": "https://www.paraglidingearth.com/?site=23899",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:21598",
+    "name": "LTX",
+    "country": "CN",
+    "lat": 26.0006,
+    "lon": 99.8523,
+    "altitudeM": 2949,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21598",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:21599",
+    "name": "LTX",
+    "country": "CN",
+    "lat": 25.9991,
+    "lon": 99.854,
+    "altitudeM": 2952,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      },
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "NNE–ENE, WSW–NNW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "landing": {
+      "lat": 25.9944,
+      "lon": 99.8117
+    },
+    "url": "https://www.paraglidingearth.com/?site=21599",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23769",
+    "name": "LuNiao/鸬鸟",
+    "country": "CN",
+    "lat": 30.4666,
+    "lon": 119.726,
+    "altitudeM": 304,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "landing": {
+      "lat": 30.458,
+      "lon": 119.725
+    },
+    "url": "https://www.paraglidingearth.com/?site=23769",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:22717",
+    "name": "Luojiayu",
+    "country": "CN",
+    "lat": 39.6234,
+    "lon": 115.834,
+    "altitudeM": 399,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 39.618,
+      "lon": 115.837
+    },
+    "url": "https://www.paraglidingearth.com/?site=22717",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23898",
+    "name": "Manbuyunduan",
+    "country": "CN",
+    "lat": 30.5598,
+    "lon": 104.328,
+    "altitudeM": 848,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 30.5595,
+      "lon": 104.333
+    },
+    "url": "https://www.paraglidingearth.com/?site=23898",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:21637",
+    "name": "Mekong north",
+    "country": "CN",
+    "lat": 25.726,
+    "lon": 99.1592,
+    "altitudeM": 3308,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21637",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:21636",
+    "name": "Mekong North",
+    "country": "CN",
+    "lat": 25.6236,
+    "lon": 99.1765,
+    "altitudeM": 3306,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21636",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:21641",
+    "name": "Mekong tunnel pass",
+    "country": "CN",
+    "lat": 24.8997,
+    "lon": 100.313,
+    "altitudeM": 2141,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21641",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23558",
+    "name": "mt. babaoshan",
+    "country": "CN",
+    "lat": 40.4981,
+    "lon": 115.414,
+    "altitudeM": 1666,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23558",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23670",
+    "name": "Mt. Bailongshan",
+    "country": "CN",
+    "lat": 38.8974,
+    "lon": 115.076,
+    "altitudeM": 356,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23670",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:22864",
+    "name": "mt. DaQingShan",
+    "country": "CN",
+    "lat": 40.9303,
+    "lon": 111.719,
+    "altitudeM": 1534,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 40.9125,
+      "lon": 111.726
+    },
+    "url": "https://www.paraglidingearth.com/?site=22864",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:22154",
+    "name": "mt. Huanghuashan/黄花山",
+    "country": "CN",
+    "lat": 40.163,
+    "lon": 117.584,
+    "altitudeM": 624,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 40.1469,
+      "lon": 117.578
+    },
+    "url": "https://www.paraglidingearth.com/?site=22154",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:7280",
+    "name": "mt. MiaoFengshan",
+    "country": "CN",
+    "lat": 40.0778,
+    "lon": 116.047,
+    "altitudeM": 1209,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "NNE–SSE",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 40.0753,
+      "lon": 116.103
+    },
+    "url": "https://www.paraglidingearth.com/?site=7280",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23247",
+    "name": "Mt.MingyueShan/明月山",
+    "country": "CN",
+    "lat": 27.6072,
+    "lon": 114.237,
+    "altitudeM": 815,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 27.6182,
+      "lon": 114.242
+    },
+    "url": "https://www.paraglidingearth.com/?site=23247",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23310",
+    "name": "mt.wansuishan",
+    "country": "CN",
+    "lat": 41.2153,
+    "lon": 124.141,
+    "altitudeM": 675,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 41.2171,
+      "lon": 124.126
+    },
+    "url": "https://www.paraglidingearth.com/?site=23310",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:11445",
+    "name": "Mt.Wugong",
+    "country": "CN",
+    "lat": 27.4527,
+    "lon": 114.171,
+    "altitudeM": 1918,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "ESE–WSW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 27.4971,
+      "lon": 114.117
+    },
+    "url": "https://www.paraglidingearth.com/?site=11445",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23437",
+    "name": "mumianshan",
+    "country": "CN",
+    "lat": 22.8609,
+    "lon": 114.284,
+    "altitudeM": 472,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 22.8529,
+      "lon": 114.275
+    },
+    "url": "https://www.paraglidingearth.com/?site=23437",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:21901",
+    "name": "Mutianyu Great Wall",
+    "country": "CN",
+    "lat": 40.4499,
+    "lon": 116.55,
+    "altitudeM": 846,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21901",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:17398",
+    "name": "NaoBei Mountain",
+    "country": "CN",
+    "lat": 22.1094,
+    "lon": 113.525,
+    "altitudeM": 293,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "ESE–SSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "landing": {
+      "lat": 22.1094,
+      "lon": 113.525
+    },
+    "url": "https://www.paraglidingearth.com/?site=17398",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:16605",
+    "name": "Ningbou New Site",
+    "country": "CN",
+    "lat": 29.383,
+    "lon": 121.662,
+    "altitudeM": 405,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=16605",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:22123",
+    "name": "Niucao Mountain",
+    "country": "CN",
+    "lat": 31.0462,
+    "lon": 116.261,
+    "altitudeM": 1344,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22123",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:9883",
+    "name": "north mountain sunset dam",
+    "country": "CN",
+    "lat": 34.0283,
+    "lon": 108.919,
+    "altitudeM": 861,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "SSW–NNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=9883",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23896",
+    "name": "Puhong",
+    "country": "CN",
+    "lat": 31.0829,
+    "lon": 103.662,
+    "altitudeM": 1190,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 31.0695,
+      "lon": 103.669
+    },
+    "url": "https://www.paraglidingearth.com/?site=23896",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:17391",
+    "name": "Qi'ao island No. 1",
+    "country": "CN",
+    "lat": 22.435,
+    "lon": 113.645,
+    "altitudeM": 89,
+    "windRanges": [
+      {
+        "fromDeg": 292.5,
+        "toDeg": 67.5
+      }
+    ],
+    "windLabel": "WNW–ENE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "landing": {
+      "lat": 22.433,
+      "lon": 113.657
+    },
+    "url": "https://www.paraglidingearth.com/?site=17391",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:17390",
+    "name": "Qi'ao island No. 2",
+    "country": "CN",
+    "lat": 22.4323,
+    "lon": 113.659,
+    "altitudeM": 51,
+    "windRanges": [
+      {
+        "fromDeg": 292.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "WNW–NNE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "landing": {
+      "lat": 22.4332,
+      "lon": 113.657
+    },
+    "url": "https://www.paraglidingearth.com/?site=17390",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:17392",
+    "name": "Qi'ao island No. 3",
+    "country": "CN",
+    "lat": 22.4204,
+    "lon": 113.653,
+    "altitudeM": 130,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windLabel": "NNE–ESE",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 22.4255,
+      "lon": 113.655
+    },
+    "url": "https://www.paraglidingearth.com/?site=17392",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:17393",
+    "name": "Qi'ao island No. 4",
+    "country": "CN",
+    "lat": 22.4136,
+    "lon": 113.648,
+    "altitudeM": 67,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "ESE–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "landing": {
+      "lat": 22.4105,
+      "lon": 113.646
+    },
+    "url": "https://www.paraglidingearth.com/?site=17393",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:19561",
+    "name": "Qiguling",
+    "country": "CN",
+    "lat": 22.0746,
+    "lon": 111.587,
+    "altitudeM": 207,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "NNE–SSE",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "landing": {
+      "lat": 22.0726,
+      "lon": 111.597
+    },
+    "url": "https://www.paraglidingearth.com/?site=19561",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:21222",
+    "name": "Ren Shou",
+    "country": "CN",
+    "lat": 29.9132,
+    "lon": 104.086,
+    "altitudeM": 648,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      },
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "ENE–SSE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": 29.9108,
+      "lon": 104.095
+    },
+    "url": "https://www.paraglidingearth.com/?site=21222",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23770",
+    "name": "ShaoXing HeiBao/黑豹",
+    "country": "CN",
+    "lat": 29.6247,
+    "lon": 120.959,
+    "altitudeM": 386,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "landing": {
+      "lat": 29.6193,
+      "lon": 120.952
+    },
+    "url": "https://www.paraglidingearth.com/?site=23770",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:22863",
+    "name": "Shijinglong Ski",
+    "country": "CN",
+    "lat": 40.5258,
+    "lon": 115.961,
+    "altitudeM": 621,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 40.5227,
+      "lon": 115.963
+    },
+    "url": "https://www.paraglidingearth.com/?site=22863",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:13485",
+    "name": "Shuidi Shan",
+    "country": "CN",
+    "lat": 22.8967,
+    "lon": 114.939,
+    "altitudeM": 577,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=13485",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:7279",
+    "name": "Simatai Great Wall",
+    "country": "CN",
+    "lat": 40.658,
+    "lon": 117.285,
+    "altitudeM": 597,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      },
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "SSE–SSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=7279",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:13613",
+    "name": "Siu Ying Tsui",
+    "country": "CN",
+    "lat": 22.6892,
+    "lon": 114.533,
+    "altitudeM": 131,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=13613",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23823",
+    "name": "the Whale",
+    "country": "CN",
+    "lat": 40.5017,
+    "lon": 116.785,
+    "altitudeM": 656,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23823",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:21784",
+    "name": "Tiantaishan Mountain",
+    "country": "CN",
+    "lat": 30.3103,
+    "lon": 103.147,
+    "altitudeM": 1152,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 30.3034,
+      "lon": 103.16
+    },
+    "url": "https://www.paraglidingearth.com/?site=21784",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:19560",
+    "name": "Wangliaoling, Hailing island",
+    "country": "CN",
+    "lat": 21.5668,
+    "lon": 111.83,
+    "altitudeM": 100,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "ENE–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "landing": {
+      "lat": 21.5681,
+      "lon": 111.833
+    },
+    "url": "https://www.paraglidingearth.com/?site=19560",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:10195",
+    "name": "Xi Shan West mountain",
+    "country": "CN",
+    "lat": 24.9101,
+    "lon": 102.633,
+    "altitudeM": 2248,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      },
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "ENE–SSE",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": 24.9128,
+      "lon": 102.644
+    },
+    "url": "https://www.paraglidingearth.com/?site=10195",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:10308",
+    "name": "Xi Shan West mountain lower launch",
+    "country": "CN",
+    "lat": 24.9235,
+    "lon": 102.637,
+    "altitudeM": 2162,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      },
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "ENE–SSE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": 24.9162,
+      "lon": 102.643
+    },
+    "url": "https://www.paraglidingearth.com/?site=10308",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:14074",
+    "name": "Xi Wah Shan",
+    "country": "CN",
+    "lat": 23.0828,
+    "lon": 114.825,
+    "altitudeM": 689,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=14074",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:9840",
+    "name": "Yang Zhong Hai",
+    "country": "CN",
+    "lat": 24.9609,
+    "lon": 102.99,
+    "altitudeM": 2173,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "NNE–SSE",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 24.9661,
+      "lon": 103.011
+    },
+    "url": "https://www.paraglidingearth.com/?site=9840",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:12358",
+    "name": "YongAnShan",
+    "country": "CN",
+    "lat": 29.8735,
+    "lon": 119.921,
+    "altitudeM": 374,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      },
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "WSW–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=12358",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23813",
+    "name": "YueLiangWan/月亮湾",
+    "country": "CN",
+    "lat": 30.6905,
+    "lon": 118.541,
+    "altitudeM": 587,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 30.7136,
+      "lon": 118.548
+    },
+    "url": "https://www.paraglidingearth.com/?site=23813",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:9839",
+    "name": "yuxi",
+    "country": "CN",
+    "lat": 24.4138,
+    "lon": 102.606,
+    "altitudeM": 2403,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSE–WSW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "xc"
+    ],
+    "landing": {
+      "lat": 24.4248,
+      "lon": 102.568
+    },
+    "url": "https://www.paraglidingearth.com/?site=9839",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23916",
+    "name": "yuzui850",
+    "country": "CN",
+    "lat": 31.0054,
+    "lon": 103.562,
+    "altitudeM": 1559,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 31.0145,
+      "lon": 103.588
+    },
+    "url": "https://www.paraglidingearth.com/?site=23916",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:19565",
+    "name": "Zaomushan",
+    "country": "CN",
+    "lat": 22.7208,
+    "lon": 112.776,
+    "altitudeM": 775,
+    "windRanges": "all",
+    "windLabel": "All",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 22.7405,
+      "lon": 112.747
+    },
+    "url": "https://www.paraglidingearth.com/?site=19565",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:13643",
+    "name": "ZhangFang",
+    "country": "CN",
+    "lat": 39.5916,
+    "lon": 115.703,
+    "altitudeM": 428,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "ESE–SSW",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 39.5832,
+      "lon": 115.705
+    },
+    "url": "https://www.paraglidingearth.com/?site=13643",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:12227",
+    "name": "ziwuzhen",
+    "country": "CN",
+    "lat": 34.0283,
+    "lon": 108.919,
+    "altitudeM": 864,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=12227",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23917",
+    "name": "同温层 > ENGLISH please - otherwise site will be cancelled!",
+    "country": "CN",
+    "lat": 30.8181,
+    "lon": 104.563,
+    "altitudeM": 576,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 30.817,
+      "lon": 104.567
+    },
+    "url": "https://www.paraglidingearth.com/?site=23917",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:23833",
+    "name": "大幕山滑翔伞基地",
+    "country": "CN",
+    "lat": 29.7352,
+    "lon": 114.645,
+    "altitudeM": 519,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 29.7454,
+      "lon": 114.643
+    },
+    "url": "https://www.paraglidingearth.com/?site=23833",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
+    "id": "pge:21734",
+    "name": "太舞滑雪场",
+    "country": "CN",
+    "lat": 40.8747,
+    "lon": 115.457,
+    "altitudeM": 1819,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "ESE–SSW",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 40.8669,
+      "lon": 115.479
+    },
+    "url": "https://www.paraglidingearth.com/?site=21734",
+    "fetchedAt": "2026-10-16T03:57:33.880Z"
+  },
+  {
     "id": "pge:17201",
     "name": "Aguazul",
     "country": "CO",
@@ -48666,6 +52779,1169 @@
     },
     "url": "https://www.paraglidingearth.com/?site=10212",
     "fetchedAt": "2026-10-13T09:57:13.634Z"
+  },
+  {
+    "id": "pge:22879",
+    "name": "Alto Palomo - Bajos del Toro",
+    "country": "CR",
+    "lat": 10.1945,
+    "lon": -84.3137,
+    "altitudeM": 1950,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "NNE–ESE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 10.2138,
+      "lon": -84.3045
+    },
+    "url": "https://www.paraglidingearth.com/?site=22879",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22166",
+    "name": "Atirro La Suiza",
+    "country": "CR",
+    "lat": 9.84138,
+    "lon": -83.6516,
+    "altitudeM": 594,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22166",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:23158",
+    "name": "Bahía Ballena",
+    "country": "CR",
+    "lat": 9.21114,
+    "lon": -83.7721,
+    "altitudeM": 577,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSE–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23158",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:10544",
+    "name": "Bebedero",
+    "country": "CR",
+    "lat": 9.89672,
+    "lon": -84.1577,
+    "altitudeM": 1765,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      },
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "NNE–ENE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": 9.90186,
+      "lon": -84.1553
+    },
+    "url": "https://www.paraglidingearth.com/?site=10544",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22373",
+    "name": "Caballito",
+    "country": "CR",
+    "lat": 10.2184,
+    "lon": -85.345,
+    "altitudeM": 415,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": 10.2252,
+      "lon": -85.3331
+    },
+    "url": "https://www.paraglidingearth.com/?site=22373",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:23935",
+    "name": "CEREZO ADVENTURE LAUNCH",
+    "country": "CR",
+    "lat": 9.97619,
+    "lon": -83.7216,
+    "altitudeM": 1612,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "NNE–SSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23935",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22877",
+    "name": "Cerro Colón",
+    "country": "CR",
+    "lat": 10.2995,
+    "lon": -84.3963,
+    "altitudeM": 1270,
+    "windRanges": [
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      },
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "NNW–NNE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 10.3041,
+      "lon": -84.41
+    },
+    "url": "https://www.paraglidingearth.com/?site=22877",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:23294",
+    "name": "Cerro Pelón",
+    "country": "CR",
+    "lat": 9.31461,
+    "lon": -83.5306,
+    "altitudeM": 1150,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 202.5
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "SSW–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "landing": {
+      "lat": 9.30595,
+      "lon": -83.5347
+    },
+    "url": "https://www.paraglidingearth.com/?site=23294",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:10542",
+    "name": "Dominical - Escaleras - C.R.",
+    "country": "CR",
+    "lat": 9.23783,
+    "lon": -83.8177,
+    "altitudeM": 519,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSE–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 9.2339,
+      "lon": -83.8434
+    },
+    "url": "https://www.paraglidingearth.com/?site=10542",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:19665",
+    "name": "El Cerro Poas",
+    "country": "CR",
+    "lat": 10.0522,
+    "lon": -84.2555,
+    "altitudeM": 1118,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      },
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "ESE–SSE",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": 10.0473,
+      "lon": -84.252
+    },
+    "url": "https://www.paraglidingearth.com/?site=19665",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22840",
+    "name": "Escalera al Cielo",
+    "country": "CR",
+    "lat": 9.60326,
+    "lon": -84.2239,
+    "altitudeM": 630,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSE–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "landing": {
+      "lat": 9.59813,
+      "lon": -84.2322
+    },
+    "url": "https://www.paraglidingearth.com/?site=22840",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:10540",
+    "name": "Jaco",
+    "country": "CR",
+    "lat": 9.64686,
+    "lon": -84.6144,
+    "altitudeM": 243,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "SSE–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "winch"
+    ],
+    "landing": {
+      "lat": 9.63761,
+      "lon": -84.617
+    },
+    "url": "https://www.paraglidingearth.com/?site=10540",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22370",
+    "name": "Jacó New Launch",
+    "country": "CR",
+    "lat": 9.61484,
+    "lon": -84.6013,
+    "altitudeM": 383,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22370",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22371",
+    "name": "Jacó New Launch",
+    "country": "CR",
+    "lat": 9.61484,
+    "lon": -84.6013,
+    "altitudeM": 383,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22371",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22379",
+    "name": "La Palmera",
+    "country": "CR",
+    "lat": 10.4168,
+    "lon": -84.3683,
+    "altitudeM": 391,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      },
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "NNE–ENE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": 10.4277,
+      "lon": -84.3667
+    },
+    "url": "https://www.paraglidingearth.com/?site=22379",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:23100",
+    "name": "La Rana Roja",
+    "country": "CR",
+    "lat": 9.37928,
+    "lon": -83.992,
+    "altitudeM": 450,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSE–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "landing": {
+      "lat": 9.35447,
+      "lon": -83.9925
+    },
+    "url": "https://www.paraglidingearth.com/?site=23100",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22878",
+    "name": "Laguna de Hule",
+    "country": "CR",
+    "lat": 10.3116,
+    "lon": -84.2047,
+    "altitudeM": 734,
+    "windRanges": [
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      }
+    ],
+    "windLabel": "NNW–NNE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 10.3195,
+      "lon": -84.2067
+    },
+    "url": "https://www.paraglidingearth.com/?site=22878",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:23793",
+    "name": "Las Delicias",
+    "country": "CR",
+    "lat": 9.10364,
+    "lon": -83.5086,
+    "altitudeM": 735,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windLabel": "ESE–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23793",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:23211",
+    "name": "Las Virtudes",
+    "country": "CR",
+    "lat": 9.99114,
+    "lon": -83.7418,
+    "altitudeM": 2120,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      },
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "ENE–ESE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23211",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:15887",
+    "name": "Lepanto",
+    "country": "CR",
+    "lat": 9.9415,
+    "lon": -85.0622,
+    "altitudeM": 516,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSE–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 9.9423,
+      "lon": -85.0311
+    },
+    "url": "https://www.paraglidingearth.com/?site=15887",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22165",
+    "name": "Mirador la Torre Ciudad Neilly",
+    "country": "CR",
+    "lat": 8.67971,
+    "lon": -82.9369,
+    "altitudeM": 606,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSW–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "flatland"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22165",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:10539",
+    "name": "Nemaclys Lookout",
+    "country": "CR",
+    "lat": 9.93954,
+    "lon": -84.7256,
+    "altitudeM": 95,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSW–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 9.9371,
+      "lon": -84.7262
+    },
+    "url": "https://www.paraglidingearth.com/?site=10539",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22754",
+    "name": "Nosarita",
+    "country": "CR",
+    "lat": 10.022,
+    "lon": -85.4841,
+    "altitudeM": 603,
+    "windRanges": [
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      },
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "NNW–NNE",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 10.0347,
+      "lon": -85.4997
+    },
+    "url": "https://www.paraglidingearth.com/?site=22754",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:23172",
+    "name": "Palmar Norte",
+    "country": "CR",
+    "lat": 9.00007,
+    "lon": -83.4728,
+    "altitudeM": 775,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSE–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23172",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:23796",
+    "name": "Palmital H&F",
+    "country": "CR",
+    "lat": 9.40156,
+    "lon": -83.5136,
+    "altitudeM": 3267,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "ESE–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23796",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:10545",
+    "name": "Parapente Turrialba",
+    "country": "CR",
+    "lat": 9.9607,
+    "lon": -83.7485,
+    "altitudeM": 1607,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "NNE–SSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 9.95267,
+      "lon": -83.7385
+    },
+    "url": "https://www.paraglidingearth.com/?site=10545",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22499",
+    "name": "Pilas",
+    "country": "CR",
+    "lat": 9.94477,
+    "lon": -85.2289,
+    "altitudeM": 470,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 9.95638,
+      "lon": -85.2224
+    },
+    "url": "https://www.paraglidingearth.com/?site=22499",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:23368",
+    "name": "Platanares",
+    "country": "CR",
+    "lat": 9.12745,
+    "lon": -83.6289,
+    "altitudeM": 1094,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23368",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22167",
+    "name": "Puerto Cortés",
+    "country": "CR",
+    "lat": 9.05909,
+    "lon": -83.5651,
+    "altitudeM": 912,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22167",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22162",
+    "name": "Rivas",
+    "country": "CR",
+    "lat": 9.44661,
+    "lon": -83.6434,
+    "altitudeM": 1459,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc",
+      "flatland"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22162",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:21561",
+    "name": "Rivas Alex's Launch",
+    "country": "CR",
+    "lat": 9.45381,
+    "lon": -83.6811,
+    "altitudeM": 1617,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSW–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "landing": {
+      "lat": 9.42526,
+      "lon": -83.6583
+    },
+    "url": "https://www.paraglidingearth.com/?site=21561",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22545",
+    "name": "San Miguel (Barranca)",
+    "country": "CR",
+    "lat": 10.0201,
+    "lon": -84.7062,
+    "altitudeM": 406,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSW–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 10.0112,
+      "lon": -84.7249
+    },
+    "url": "https://www.paraglidingearth.com/?site=22545",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22778",
+    "name": "Santa Elena",
+    "country": "CR",
+    "lat": 10.0045,
+    "lon": -85.4703,
+    "altitudeM": 783,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 10.0116,
+      "lon": -85.4664
+    },
+    "url": "https://www.paraglidingearth.com/?site=22778",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22164",
+    "name": "Sarapiquí San Miguel",
+    "country": "CR",
+    "lat": 10.308,
+    "lon": -84.1842,
+    "altitudeM": 695,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "NNE–ESE",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22164",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22444",
+    "name": "Socorro",
+    "country": "CR",
+    "lat": 9.93133,
+    "lon": -85.4045,
+    "altitudeM": 578,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 9.91013,
+      "lon": -85.4017
+    },
+    "url": "https://www.paraglidingearth.com/?site=22444",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22446",
+    "name": "The Point/Zapotal",
+    "country": "CR",
+    "lat": 10.0187,
+    "lon": -85.2958,
+    "altitudeM": 669,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 10.0225,
+      "lon": -85.2608
+    },
+    "url": "https://www.paraglidingearth.com/?site=22446",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22916",
+    "name": "V. Poas",
+    "country": "CR",
+    "lat": 10.1572,
+    "lon": -84.2278,
+    "altitudeM": 2224,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "SSE–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": 10.1249,
+      "lon": -84.2286
+    },
+    "url": "https://www.paraglidingearth.com/?site=22916",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:23101",
+    "name": "Volcan Arenal",
+    "country": "CR",
+    "lat": 10.4624,
+    "lon": -84.7009,
+    "altitudeM": 1580,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 10.4713,
+      "lon": -84.6674
+    },
+    "url": "https://www.paraglidingearth.com/?site=23101",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:23947",
+    "name": "VOLCANIC ASCENT AT LAS ABRAS",
+    "country": "CR",
+    "lat": 9.99673,
+    "lon": -83.7313,
+    "altitudeM": 1958,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "NNE–ENE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "xc",
+      "flatland"
+    ],
+    "landing": {
+      "lat": 9.97578,
+      "lon": -83.7215
+    },
+    "url": "https://www.paraglidingearth.com/?site=23947",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:23183",
+    "name": "Zapotal",
+    "country": "CR",
+    "lat": 10.0176,
+    "lon": -85.2903,
+    "altitudeM": 671,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23183",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
+  },
+  {
+    "id": "pge:22163",
+    "name": "Zion's launch",
+    "country": "CR",
+    "lat": 9.47463,
+    "lon": -83.6267,
+    "altitudeM": 1958,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22163",
+    "fetchedAt": "2026-10-16T03:57:19.733Z"
   },
   {
     "id": "pge:11357",
@@ -160233,6 +165509,126 @@
     "fetchedAt": "2026-10-13T09:55:48.887Z"
   },
   {
+    "id": "pge:16989",
+    "name": "31km",
+    "country": "KZ",
+    "lat": 43.1511,
+    "lon": 76.6498,
+    "altitudeM": 1289,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=16989",
+    "fetchedAt": "2026-10-16T03:57:37.277Z"
+  },
+  {
+    "id": "pge:21594",
+    "name": "Gory Karatau",
+    "country": "KZ",
+    "lat": 42.7094,
+    "lon": 71.0918,
+    "altitudeM": 1090,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21594",
+    "fetchedAt": "2026-10-16T03:57:37.277Z"
+  },
+  {
+    "id": "pge:23453",
+    "name": "Kokterek",
+    "country": "KZ",
+    "lat": 49.1172,
+    "lon": 84.5472,
+    "altitudeM": 1221,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23453",
+    "fetchedAt": "2026-10-16T03:57:37.277Z"
+  },
+  {
+    "id": "pge:14316",
+    "name": "Kosmostanciya",
+    "country": "KZ",
+    "lat": 43.0437,
+    "lon": 76.9318,
+    "altitudeM": 3086,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=14316",
+    "fetchedAt": "2026-10-16T03:57:37.277Z"
+  },
+  {
+    "id": "pge:10169",
+    "name": "Taldy",
+    "country": "KZ",
+    "lat": 50.393,
+    "lon": 79.7826,
+    "altitudeM": 201,
+    "windRanges": "all",
+    "windLabel": "All",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "flatland",
+      "winch"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=10169",
+    "fetchedAt": "2026-10-16T03:57:37.277Z"
+  },
+  {
+    "id": "pge:15158",
+    "name": "Tekeli",
+    "country": "KZ",
+    "lat": 44.8381,
+    "lon": 78.6839,
+    "altitudeM": 1226,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=15158",
+    "fetchedAt": "2026-10-16T03:57:37.277Z"
+  },
+  {
+    "id": "pge:9773",
+    "name": "Ush Konyr",
+    "country": "KZ",
+    "lat": 43.1269,
+    "lon": 76.4653,
+    "altitudeM": 1948,
+    "windRanges": [
+      {
+        "fromDeg": 292.5,
+        "toDeg": 67.5
+      }
+    ],
+    "windLabel": "WNW–ENE",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=9773",
+    "fetchedAt": "2026-10-16T03:57:37.277Z"
+  },
+  {
     "id": "pge:6646",
     "name": "Bagaslaviskis",
     "country": "LT",
@@ -163139,6 +168535,54 @@
     "fetchedAt": "2026-10-13T09:56:08.989Z"
   },
   {
+    "id": "pge:23474",
+    "name": "Bayanzurh Mountain",
+    "country": "MN",
+    "lat": 47.8968,
+    "lon": 107.142,
+    "altitudeM": 1817,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23474",
+    "fetchedAt": "2026-10-16T03:57:40.642Z"
+  },
+  {
+    "id": "pge:23923",
+    "name": "JoMo Takeoff",
+    "country": "MN",
+    "lat": 47.7076,
+    "lon": 92.0025,
+    "altitudeM": 1449,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23923",
+    "fetchedAt": "2026-10-16T03:57:40.642Z"
+  },
+  {
+    "id": "pge:23788",
+    "name": "Sugar take off",
+    "country": "MN",
+    "lat": 49.3577,
+    "lon": 93.1216,
+    "altitudeM": 1228,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23788",
+    "fetchedAt": "2026-10-16T03:57:40.642Z"
+  },
+  {
     "id": "pge:15364",
     "name": "bahrija kuncizjoni",
     "country": "MT",
@@ -163428,6 +168872,2748 @@
     ],
     "url": "https://www.paraglidingearth.com/?site=9285",
     "fetchedAt": "2026-10-13T09:56:12.424Z"
+  },
+  {
+    "id": "pge:17074",
+    "name": "Alto Lucero",
+    "country": "MX",
+    "lat": 19.6135,
+    "lon": -96.7147,
+    "altitudeM": 1060,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      },
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "NNE–ESE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "landing": {
+      "lat": 19.6186,
+      "lon": -96.7086
+    },
+    "url": "https://www.paraglidingearth.com/?site=17074",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:21322",
+    "name": "Antenas de Vizcaya",
+    "country": "MX",
+    "lat": 25.6052,
+    "lon": -103.191,
+    "altitudeM": 1348,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      },
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "NNE–ENE",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21322",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:23160",
+    "name": "Atotonilco",
+    "country": "MX",
+    "lat": 20.5593,
+    "lon": -102.554,
+    "altitudeM": 2091,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "SSW–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23160",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:18117",
+    "name": "Boca Paila Dune",
+    "country": "MX",
+    "lat": 20.0893,
+    "lon": -87.4753,
+    "altitudeM": 1,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "ENE–SSE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "landing": {
+      "lat": 20.0891,
+      "lon": -87.4752
+    },
+    "url": "https://www.paraglidingearth.com/?site=18117",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:23847",
+    "name": "Cañada de Moreno",
+    "country": "MX",
+    "lat": 21.2789,
+    "lon": -100.357,
+    "altitudeM": 2144,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23847",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:10722",
+    "name": "Cantamar",
+    "country": "MX",
+    "lat": 32.212,
+    "lon": -116.915,
+    "altitudeM": 43,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "WSW–NNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=10722",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:15193",
+    "name": "cantil de las aguilas",
+    "country": "MX",
+    "lat": 21.3696,
+    "lon": -101.655,
+    "altitudeM": 2603,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSW–WSW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "landing": {
+      "lat": 21.3586,
+      "lon": -101.668
+    },
+    "url": "https://www.paraglidingearth.com/?site=15193",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:21435",
+    "name": "Cerro Pelon Alternate el Peñon",
+    "country": "MX",
+    "lat": 19.0357,
+    "lon": -100.133,
+    "altitudeM": 1697,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21435",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:6800",
+    "name": "Chalchihuapan - Puebla",
+    "country": "MX",
+    "lat": 18.9632,
+    "lon": -98.3421,
+    "altitudeM": 2336,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSE–WSW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "flatland"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6800",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:22244",
+    "name": "Chupaderos",
+    "country": "MX",
+    "lat": 24.1357,
+    "lon": -104.702,
+    "altitudeM": 2123,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      },
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "WSW–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22244",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:23546",
+    "name": "Coetzala",
+    "country": "MX",
+    "lat": 18.7715,
+    "lon": -96.934,
+    "altitudeM": 1300,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      },
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "NNE–ENE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": 18.7854,
+      "lon": -96.92
+    },
+    "url": "https://www.paraglidingearth.com/?site=23546",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:17238",
+    "name": "Concha Chinas",
+    "country": "MX",
+    "lat": 20.581,
+    "lon": -105.238,
+    "altitudeM": 131,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "SSW–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": 20.6061,
+      "lon": -105.238
+    },
+    "url": "https://www.paraglidingearth.com/?site=17238",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:23577",
+    "name": "Cuervitos",
+    "country": "MX",
+    "lat": 32.138,
+    "lon": -116.875,
+    "altitudeM": 229,
+    "windRanges": [
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "WNW–NNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 32.124,
+      "lon": -116.886
+    },
+    "url": "https://www.paraglidingearth.com/?site=23577",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:23578",
+    "name": "Cuervos",
+    "country": "MX",
+    "lat": 32.1414,
+    "lon": -116.873,
+    "altitudeM": 291,
+    "windRanges": [],
+    "windMarginal": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 32.124,
+      "lon": -116.886
+    },
+    "url": "https://www.paraglidingearth.com/?site=23578",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:14566",
+    "name": "Despegue Bistro",
+    "country": "MX",
+    "lat": 18.9814,
+    "lon": -99.5032,
+    "altitudeM": 2412,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      },
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "ESE–SSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 18.9783,
+      "lon": -99.4883
+    },
+    "url": "https://www.paraglidingearth.com/?site=14566",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:22041",
+    "name": "Doña Juana",
+    "country": "MX",
+    "lat": 20.8242,
+    "lon": -100.668,
+    "altitudeM": 2357,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 157.5
+      },
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "NNE–ENE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22041",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:16149",
+    "name": "El Chante",
+    "country": "MX",
+    "lat": 20.3067,
+    "lon": -103.393,
+    "altitudeM": 2043,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=16149",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:23144",
+    "name": "El Cubilete",
+    "country": "MX",
+    "lat": 21.0046,
+    "lon": -101.371,
+    "altitudeM": 2341,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSW–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": 20.9851,
+      "lon": -101.378
+    },
+    "url": "https://www.paraglidingearth.com/?site=23144",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:6797",
+    "name": "El Mirador",
+    "country": "MX",
+    "lat": 25.6225,
+    "lon": -100.312,
+    "altitudeM": 1014,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 292.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "NNE–ESE",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": 25.6462,
+      "lon": -100.33
+    },
+    "url": "https://www.paraglidingearth.com/?site=6797",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:9853",
+    "name": "El Picacho - Malinalco",
+    "country": "MX",
+    "lat": 19.0078,
+    "lon": -99.4709,
+    "altitudeM": 2451,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      },
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "ESE–SSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "landing": {
+      "lat": 18.9966,
+      "lon": -99.4788
+    },
+    "url": "https://www.paraglidingearth.com/?site=9853",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:22140",
+    "name": "El Piedrero SLP",
+    "country": "MX",
+    "lat": 22.0456,
+    "lon": -100.923,
+    "altitudeM": 2081,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "NNE–ESE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22140",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:10048",
+    "name": "El Salto",
+    "country": "MX",
+    "lat": 21.0646,
+    "lon": -100.249,
+    "altitudeM": 2043,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windLabel": "NNE–ESE",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=10048",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:19616",
+    "name": "El Toro Bull Hill",
+    "country": "MX",
+    "lat": 19.5,
+    "lon": -104.19,
+    "altitudeM": 800,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSE–WNW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=19616",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:21972",
+    "name": "El Wejo",
+    "country": "MX",
+    "lat": 21.7525,
+    "lon": -102.721,
+    "altitudeM": 2357,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSW–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 21.7677,
+      "lon": -102.745
+    },
+    "url": "https://www.paraglidingearth.com/?site=21972",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:6733",
+    "name": "Escalera",
+    "country": "MX",
+    "lat": 19.6401,
+    "lon": -101.001,
+    "altitudeM": 2245,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "SSE–SSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6733",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:22146",
+    "name": "Fly In Chiapas Despegue",
+    "country": "MX",
+    "lat": 16.7082,
+    "lon": -92.9037,
+    "altitudeM": 1037,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "landing": {
+      "lat": 16.6859,
+      "lon": -92.9268
+    },
+    "url": "https://www.paraglidingearth.com/?site=22146",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:6827",
+    "name": "Fortin de las Flores",
+    "country": "MX",
+    "lat": 18.8697,
+    "lon": -97.0038,
+    "altitudeM": 1294,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      },
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "ENE–SSE",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "landing": {
+      "lat": 18.865,
+      "lon": -96.9919
+    },
+    "url": "https://www.paraglidingearth.com/?site=6827",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:10217",
+    "name": "Frailes",
+    "country": "MX",
+    "lat": 22.7254,
+    "lon": -102.54,
+    "altitudeM": 2574,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      },
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "ENE–ESE",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=10217",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:6754",
+    "name": "Gravedad Cero, Tapalpa, Jalisco",
+    "country": "MX",
+    "lat": 19.9422,
+    "lon": -103.654,
+    "altitudeM": 2212,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "NNE–ESE",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6754",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:22049",
+    "name": "Helipuerto",
+    "country": "MX",
+    "lat": 25.5009,
+    "lon": -103.458,
+    "altitudeM": 1615,
+    "windRanges": [
+      {
+        "fromDeg": 337.5,
+        "toDeg": 67.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      },
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "NNW–ENE",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22049",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:23019",
+    "name": "Huimilpan",
+    "country": "MX",
+    "lat": 20.3583,
+    "lon": -100.259,
+    "altitudeM": 2650,
+    "windRanges": [
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "WNW–NNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23019",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:15332",
+    "name": "Ixtapan de la sal",
+    "country": "MX",
+    "lat": 18.894,
+    "lon": -99.7213,
+    "altitudeM": 2431,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      },
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "SSE–SSW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "landing": {
+      "lat": 18.8667,
+      "lon": -99.7393
+    },
+    "url": "https://www.paraglidingearth.com/?site=15332",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:20627",
+    "name": "Izta Volcano",
+    "country": "MX",
+    "lat": 19.1726,
+    "lon": -98.6389,
+    "altitudeM": 5082,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=20627",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:23846",
+    "name": "La Barreta",
+    "country": "MX",
+    "lat": 20.8155,
+    "lon": -100.537,
+    "altitudeM": 2524,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 20.8154,
+      "lon": -100.534
+    },
+    "url": "https://www.paraglidingearth.com/?site=23846",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:10133",
+    "name": "La Ceja Tapalpa",
+    "country": "MX",
+    "lat": 19.9354,
+    "lon": -103.654,
+    "altitudeM": 2150,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      }
+    ],
+    "windLabel": "ENE–SSW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 19.9413,
+      "lon": 103.618
+    },
+    "url": "https://www.paraglidingearth.com/?site=10133",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:21971",
+    "name": "La Cementera",
+    "country": "MX",
+    "lat": 29.0612,
+    "lon": -110.943,
+    "altitudeM": 401,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSW–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21971",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:22141",
+    "name": "La Chincheta",
+    "country": "MX",
+    "lat": 21.9969,
+    "lon": -100.931,
+    "altitudeM": 2188,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windLabel": "NNE–ENE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22141",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:6815",
+    "name": "La Cumbre - Colima",
+    "country": "MX",
+    "lat": 19.1813,
+    "lon": -103.692,
+    "altitudeM": 772,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "ESE–SSE",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6815",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:22243",
+    "name": "La Ferrería",
+    "country": "MX",
+    "lat": 23.9316,
+    "lon": -104.675,
+    "altitudeM": 2136,
+    "windRanges": [
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      }
+    ],
+    "windLabel": "NNW–NNE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22243",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:22043",
+    "name": "La Jolla",
+    "country": "MX",
+    "lat": 20.8173,
+    "lon": -100.543,
+    "altitudeM": 2625,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSE–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22043",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:9851",
+    "name": "La Malinche",
+    "country": "MX",
+    "lat": 18.9226,
+    "lon": -99.5972,
+    "altitudeM": 2249,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "ESE–WSW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "landing": {
+      "lat": 18.9096,
+      "lon": -99.5973
+    },
+    "url": "https://www.paraglidingearth.com/?site=9851",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:20074",
+    "name": "La Mancha Beach",
+    "country": "MX",
+    "lat": 19.5832,
+    "lon": -96.3781,
+    "altitudeM": 48,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=20074",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:13693",
+    "name": "la ondonada",
+    "country": "MX",
+    "lat": 20.0015,
+    "lon": -103.661,
+    "altitudeM": 2105,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=13693",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:23149",
+    "name": "La Popa",
+    "country": "MX",
+    "lat": 26.1563,
+    "lon": -100.779,
+    "altitudeM": 1723,
+    "windRanges": [],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23149",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:6948",
+    "name": "La Salina",
+    "country": "MX",
+    "lat": 32.0628,
+    "lon": -116.863,
+    "altitudeM": 173,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "SSW–NNW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": 32.0638,
+      "lon": -116.869
+    },
+    "url": "https://www.paraglidingearth.com/?site=6948",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:6711",
+    "name": "La Tinaja",
+    "country": "MX",
+    "lat": 25.3933,
+    "lon": -100.207,
+    "altitudeM": 1681,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      },
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "NNE–ESE",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "landing": {
+      "lat": 25.4332,
+      "lon": -100.169
+    },
+    "url": "https://www.paraglidingearth.com/?site=6711",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:21436",
+    "name": "Lampazos alternate El Peñon",
+    "country": "MX",
+    "lat": 19.0625,
+    "lon": -100.227,
+    "altitudeM": 1498,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21436",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:15732",
+    "name": "Las Antenas",
+    "country": "MX",
+    "lat": 31.6755,
+    "lon": -116.625,
+    "altitudeM": 472,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=15732",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:11225",
+    "name": "Loma Maria",
+    "country": "MX",
+    "lat": 18.9286,
+    "lon": -97.1122,
+    "altitudeM": 1833,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "NNE–ESE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "landing": {
+      "lat": 18.929,
+      "lon": -97.0996
+    },
+    "url": "https://www.paraglidingearth.com/?site=11225",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:22260",
+    "name": "Lombardía",
+    "country": "MX",
+    "lat": 19.1743,
+    "lon": -102.067,
+    "altitudeM": 872,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "landing": {
+      "lat": 19.1704,
+      "lon": -102.068
+    },
+    "url": "https://www.paraglidingearth.com/?site=22260",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:22044",
+    "name": "Memo Fly",
+    "country": "MX",
+    "lat": 21.1861,
+    "lon": -99.904,
+    "altitudeM": 2156,
+    "windRanges": [
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      },
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "NNW–NNE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22044",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:23764",
+    "name": "Naranjal",
+    "country": "MX",
+    "lat": 18.7952,
+    "lon": -96.9739,
+    "altitudeM": 1471,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      },
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "ENE–ESE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 18.8079,
+      "lon": -96.9601
+    },
+    "url": "https://www.paraglidingearth.com/?site=23764",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:22777",
+    "name": "Nevado",
+    "country": "MX",
+    "lat": 19.111,
+    "lon": -99.7462,
+    "altitudeM": 4420,
+    "windRanges": [],
+    "windMarginal": [
+      {
+        "fromDeg": 337.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22777",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:13495",
+    "name": "Nogalera",
+    "country": "MX",
+    "lat": 25.3597,
+    "lon": -100.154,
+    "altitudeM": 1063,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      },
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "NNE–ENE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "landing": {
+      "lat": 25.3762,
+      "lon": -100.145
+    },
+    "url": "https://www.paraglidingearth.com/?site=13495",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:6697",
+    "name": "Patzcuaro",
+    "country": "MX",
+    "lat": 19.5171,
+    "lon": -101.641,
+    "altitudeM": 2324,
+    "windRanges": [
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      },
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "NNW–NNE",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6697",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:23672",
+    "name": "Picacho",
+    "country": "MX",
+    "lat": 21.8774,
+    "lon": -102.422,
+    "altitudeM": 2348,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      },
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "ENE–ESE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": 21.8781,
+      "lon": -102.406
+    },
+    "url": "https://www.paraglidingearth.com/?site=23672",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:22042",
+    "name": "Picachos",
+    "country": "MX",
+    "lat": 20.8753,
+    "lon": -100.733,
+    "altitudeM": 2090,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "WSW–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=22042",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:21780",
+    "name": "Pueblitos",
+    "country": "MX",
+    "lat": 27.7214,
+    "lon": -105.239,
+    "altitudeM": 1970,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      },
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "ESE–SSE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21780",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:22993",
+    "name": "Rayones",
+    "country": "MX",
+    "lat": 25.1052,
+    "lon": -99.9692,
+    "altitudeM": 941,
+    "windRanges": [],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "landing": {
+      "lat": 25.1362,
+      "lon": -99.9611
+    },
+    "url": "https://www.paraglidingearth.com/?site=22993",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:14249",
+    "name": "Rinconada",
+    "country": "MX",
+    "lat": 25.668,
+    "lon": -100.74,
+    "altitudeM": 1579,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "landing": {
+      "lat": 25.6597,
+      "lon": -100.718
+    },
+    "url": "https://www.paraglidingearth.com/?site=14249",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:10904",
+    "name": "Rusty Pelican",
+    "country": "MX",
+    "lat": 19.784,
+    "lon": -90.6317,
+    "altitudeM": 60,
+    "windRanges": [
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "WNW–NNW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "landing": {
+      "lat": 19.7931,
+      "lon": -90.624
+    },
+    "url": "https://www.paraglidingearth.com/?site=10904",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:23042",
+    "name": "San Antonio de Las Alazanas",
+    "country": "MX",
+    "lat": 25.2478,
+    "lon": -100.569,
+    "altitudeM": 2267,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      },
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSE–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23042",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:23020",
+    "name": "San Bernardino Chalchihuapan",
+    "country": "MX",
+    "lat": 18.963,
+    "lon": -98.3601,
+    "altitudeM": 2212,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      },
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "SSE–SSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc",
+      "flatland"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23020",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:21437",
+    "name": "San Pedro alternate El Peñon",
+    "country": "MX",
+    "lat": 19.0483,
+    "lon": -100.188,
+    "altitudeM": 1674,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=21437",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:23018",
+    "name": "Tangano",
+    "country": "MX",
+    "lat": 20.5704,
+    "lon": -100.352,
+    "altitudeM": 2023,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      },
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "WSW–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "flatland"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23018",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:23417",
+    "name": "Tecuitata",
+    "country": "MX",
+    "lat": 21.4686,
+    "lon": -105.161,
+    "altitudeM": 456,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      },
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "WSW–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": 21.4627,
+      "lon": -105.182
+    },
+    "url": "https://www.paraglidingearth.com/?site=23417",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:22992",
+    "name": "Teleferico",
+    "country": "MX",
+    "lat": 25.6431,
+    "lon": -100.245,
+    "altitudeM": 1123,
+    "windRanges": [
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      },
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "WNW–NNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": 25.6604,
+      "lon": -100.268
+    },
+    "url": "https://www.paraglidingearth.com/?site=22992",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:19808",
+    "name": "Tepoztlan",
+    "country": "MX",
+    "lat": 19.0131,
+    "lon": -99.0904,
+    "altitudeM": 2330,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      },
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "ESE–SSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "landing": {
+      "lat": 18.9922,
+      "lon": -99.0895
+    },
+    "url": "https://www.paraglidingearth.com/?site=19808",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:16050",
+    "name": "Teta Azul de la Misión",
+    "country": "MX",
+    "lat": 26.8488,
+    "lon": -111.903,
+    "altitudeM": 126,
+    "windRanges": [
+      {
+        "fromDeg": 337.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "NNW–SSE",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 26.8556,
+      "lon": -111.91
+    },
+    "url": "https://www.paraglidingearth.com/?site=16050",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:23159",
+    "name": "Trepa Trepa",
+    "country": "MX",
+    "lat": 20.7615,
+    "lon": -102.61,
+    "altitudeM": 2369,
+    "windRanges": [],
+    "windMarginal": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=23159",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:17976",
+    "name": "Tulancingo",
+    "country": "MX",
+    "lat": 20.1456,
+    "lon": -98.3036,
+    "altitudeM": 2409,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windLabel": "NNE–ESE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": 20.1462,
+      "lon": -98.2982
+    },
+    "url": "https://www.paraglidingearth.com/?site=17976",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:18116",
+    "name": "Tulum",
+    "country": "MX",
+    "lat": 20.2098,
+    "lon": -87.4304,
+    "altitudeM": 1,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "ENE–SSE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "landing": {
+      "lat": 20.2099,
+      "lon": -87.4303
+    },
+    "url": "https://www.paraglidingearth.com/?site=18116",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:6790",
+    "name": "Tuxpan",
+    "country": "MX",
+    "lat": 19.5693,
+    "lon": -100.492,
+    "altitudeM": 2295,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6790",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:10599",
+    "name": "Tuxpan - Iguala",
+    "country": "MX",
+    "lat": 18.3882,
+    "lon": -99.4739,
+    "altitudeM": 1671,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      },
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "SSE–SSW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=10599",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:9867",
+    "name": "Valle de Bravo - El Peñon",
+    "country": "MX",
+    "lat": 19.0616,
+    "lon": -100.091,
+    "altitudeM": 2336,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      },
+      {
+        "fromDeg": 292.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "SSE–WNW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 19.0426,
+      "lon": -100.105
+    },
+    "url": "https://www.paraglidingearth.com/?site=9867",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:6749",
+    "name": "Valle de Bravo - La Torre",
+    "country": "MX",
+    "lat": 19.1846,
+    "lon": -100.114,
+    "altitudeM": 2166,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      },
+      {
+        "fromDeg": 292.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "WSW–WNW",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 19.1834,
+      "lon": -100.128
+    },
+    "url": "https://www.paraglidingearth.com/?site=6749",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:11634",
+    "name": "Vergel de la Sierra",
+    "country": "MX",
+    "lat": 21.3698,
+    "lon": -101.655,
+    "altitudeM": 2610,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSE–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 21.3843,
+      "lon": -101.635
+    },
+    "url": "https://www.paraglidingearth.com/?site=11634",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:23416",
+    "name": "Volcán Ceboruco",
+    "country": "MX",
+    "lat": 21.106,
+    "lon": -104.503,
+    "altitudeM": 1818,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "SSE–SSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 21.0651,
+      "lon": -104.489
+    },
+    "url": "https://www.paraglidingearth.com/?site=23416",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:14199",
+    "name": "Volcano Nevado de Colima",
+    "country": "MX",
+    "lat": 19.5611,
+    "lon": -103.611,
+    "altitudeM": 4025,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=14199",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:9857",
+    "name": "Yelapa Tapa",
+    "country": "MX",
+    "lat": 20.474,
+    "lon": -105.461,
+    "altitudeM": 660,
+    "windRanges": [],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "landing": {
+      "lat": 20.4889,
+      "lon": -105.444
+    },
+    "url": "https://www.paraglidingearth.com/?site=9857",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:9856",
+    "name": "Yelapa Tapita",
+    "country": "MX",
+    "lat": 20.4842,
+    "lon": -105.445,
+    "altitudeM": 191,
+    "windRanges": [
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "NNW–NNE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "landing": {
+      "lat": 20.4889,
+      "lon": -105.444
+    },
+    "url": "https://www.paraglidingearth.com/?site=9856",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:11173",
+    "name": "Zaachila",
+    "country": "MX",
+    "lat": 16.9328,
+    "lon": -96.8532,
+    "altitudeM": 2314,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      },
+      {
+        "fromDeg": 337.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windLabel": "NNE–SSE",
+    "disciplines": [
+      "PG",
+      "HG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc",
+      "flatland"
+    ],
+    "landing": {
+      "lat": 16.9482,
+      "lon": -96.814
+    },
+    "url": "https://www.paraglidingearth.com/?site=11173",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:9250",
+    "name": "Zitacuaro",
+    "country": "MX",
+    "lat": 19.3989,
+    "lon": -100.368,
+    "altitudeM": 2198,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "WSW–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "landing": {
+      "lat": 19.4045,
+      "lon": -100.395
+    },
+    "url": "https://www.paraglidingearth.com/?site=9250",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:10220",
+    "name": "Zopilotes",
+    "country": "MX",
+    "lat": 22.8242,
+    "lon": -102.556,
+    "altitudeM": 2500,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "WSW–NNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "landing": {
+      "lat": 22.8215,
+      "lon": -102.561
+    },
+    "url": "https://www.paraglidingearth.com/?site=10220",
+    "fetchedAt": "2026-10-16T03:57:12.473Z"
+  },
+  {
+    "id": "pge:16653",
+    "name": "Büllsport 1",
+    "country": "NA",
+    "lat": -24.1504,
+    "lon": 16.3462,
+    "altitudeM": 1712,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=16653",
+    "fetchedAt": "2026-10-16T03:57:23.177Z"
+  },
+  {
+    "id": "pge:13843",
+    "name": "Farm Moreson Maltahoehe District",
+    "country": "NA",
+    "lat": -25.0961,
+    "lon": 16.9023,
+    "altitudeM": 1423,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=13843",
+    "fetchedAt": "2026-10-16T03:57:23.177Z"
+  },
+  {
+    "id": "pge:16177",
+    "name": "Henties Bay",
+    "country": "NA",
+    "lat": -22.0813,
+    "lon": 14.2438,
+    "altitudeM": 8,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=16177",
+    "fetchedAt": "2026-10-16T03:57:23.177Z"
+  },
+  {
+    "id": "pge:13332",
+    "name": "Hohingeslost",
+    "country": "NA",
+    "lat": -29.2884,
+    "lon": 21.1555,
+    "altitudeM": 833,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=13332",
+    "fetchedAt": "2026-10-16T03:57:23.177Z"
+  },
+  {
+    "id": "pge:17307",
+    "name": "Langstrand Dunes",
+    "country": "NA",
+    "lat": -22.7685,
+    "lon": 14.5434,
+    "altitudeM": 13,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=17307",
+    "fetchedAt": "2026-10-16T03:57:23.177Z"
+  },
+  {
+    "id": "pge:13838",
+    "name": "Pokweni",
+    "country": "NA",
+    "lat": -23.6401,
+    "lon": 17.7223,
+    "altitudeM": 1274,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=13838",
+    "fetchedAt": "2026-10-16T03:57:23.177Z"
+  },
+  {
+    "id": "pge:16139",
+    "name": "Sandwich Harbour",
+    "country": "NA",
+    "lat": -23.3086,
+    "lon": 14.4999,
+    "altitudeM": 23,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=16139",
+    "fetchedAt": "2026-10-16T03:57:23.177Z"
+  },
+  {
+    "id": "pge:11619",
+    "name": "Spreets Hoogte",
+    "country": "NA",
+    "lat": -23.6337,
+    "lon": 16.184,
+    "altitudeM": 1634,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc",
+      "flatland"
+    ],
+    "landing": {
+      "lat": -23.6337,
+      "lon": 16.184
+    },
+    "url": "https://www.paraglidingearth.com/?site=11619",
+    "fetchedAt": "2026-10-16T03:57:23.177Z"
+  },
+  {
+    "id": "pge:13283",
+    "name": "Take off Pad Burgsdorf",
+    "country": "NA",
+    "lat": -25.0015,
+    "lon": 16.903,
+    "altitudeM": 1389,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=13283",
+    "fetchedAt": "2026-10-16T03:57:23.177Z"
+  },
+  {
+    "id": "pge:16647",
+    "name": "Torra Bay",
+    "country": "NA",
+    "lat": -20.3271,
+    "lon": 13.2886,
+    "altitudeM": 26,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=16647",
+    "fetchedAt": "2026-10-16T03:57:23.177Z"
+  },
+  {
+    "id": "pge:19359",
+    "name": "Vogelberg",
+    "country": "NA",
+    "lat": -23.057,
+    "lon": 14.986,
+    "altitudeM": 518,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 22.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 67.5
+      },
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "SSE–NNE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "soaring"
+    ],
+    "landing": {
+      "lat": -23.0544,
+      "lon": 14.9854
+    },
+    "url": "https://www.paraglidingearth.com/?site=19359",
+    "fetchedAt": "2026-10-16T03:57:23.177Z"
   },
   {
     "id": "pge:17657",
@@ -183063,6 +191249,399 @@
     ],
     "url": "https://www.paraglidingearth.com/?site=22817",
     "fetchedAt": "2026-10-13T09:56:30.003Z"
+  },
+  {
+    "id": "pge:6896",
+    "name": "bellemene",
+    "country": "RE",
+    "lat": -21.0224,
+    "lon": 55.3212,
+    "altitudeM": 713,
+    "windRanges": [
+      {
+        "fromDeg": 247.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "WSW–NNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "landing": {
+      "lat": -21.0033,
+      "lon": 55.2983
+    },
+    "url": "https://www.paraglidingearth.com/?site=6896",
+    "fetchedAt": "2026-10-16T03:57:26.621Z"
+  },
+  {
+    "id": "pge:14451",
+    "name": "bellemene 1200",
+    "country": "RE",
+    "lat": -21.0198,
+    "lon": 55.3527,
+    "altitudeM": 1092,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=14451",
+    "fetchedAt": "2026-10-16T03:57:26.621Z"
+  },
+  {
+    "id": "pge:6876",
+    "name": "colimacon 800",
+    "country": "RE",
+    "lat": -21.1316,
+    "lon": 55.3032,
+    "altitudeM": 770,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "SSW–NNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "landing": {
+      "lat": -21.1524,
+      "lon": 55.279
+    },
+    "url": "https://www.paraglidingearth.com/?site=6876",
+    "fetchedAt": "2026-10-16T03:57:26.621Z"
+  },
+  {
+    "id": "pge:6904",
+    "name": "colimacons 1500",
+    "country": "RE",
+    "lat": -21.1674,
+    "lon": 55.3541,
+    "altitudeM": 1528,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "landing": {
+      "lat": -21.1524,
+      "lon": 55.2791
+    },
+    "url": "https://www.paraglidingearth.com/?site=6904",
+    "fetchedAt": "2026-10-16T03:57:26.621Z"
+  },
+  {
+    "id": "pge:6878",
+    "name": "dos d'ane",
+    "country": "RE",
+    "lat": -20.9774,
+    "lon": 55.3687,
+    "altitudeM": 858,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 292.5
+      }
+    ],
+    "windLabel": "SSE–WNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "landing": {
+      "lat": -21.0033,
+      "lon": 55.356
+    },
+    "url": "https://www.paraglidingearth.com/?site=6878",
+    "fetchedAt": "2026-10-16T03:57:26.621Z"
+  },
+  {
+    "id": "pge:6895",
+    "name": "le dimitile",
+    "country": "RE",
+    "lat": -21.1901,
+    "lon": 55.4846,
+    "altitudeM": 1648,
+    "windRanges": [
+      {
+        "fromDeg": 112.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "ESE–SSE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "landing": {
+      "lat": -21.2477,
+      "lon": 55.4662
+    },
+    "url": "https://www.paraglidingearth.com/?site=6895",
+    "fetchedAt": "2026-10-16T03:57:26.621Z"
+  },
+  {
+    "id": "pge:6891",
+    "name": "maido",
+    "country": "RE",
+    "lat": -21.0593,
+    "lon": 55.3818,
+    "altitudeM": 2012,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "landing": {
+      "lat": -21.0033,
+      "lon": 55.356
+    },
+    "url": "https://www.paraglidingearth.com/?site=6891",
+    "fetchedAt": "2026-10-16T03:57:26.621Z"
+  },
+  {
+    "id": "pge:6908",
+    "name": "MAKES",
+    "country": "RE",
+    "lat": -21.19,
+    "lon": 55.4075,
+    "altitudeM": 1438,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "SSE–SSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "landing": {
+      "lat": -21.2053,
+      "lon": 55.398
+    },
+    "url": "https://www.paraglidingearth.com/?site=6908",
+    "fetchedAt": "2026-10-16T03:57:26.621Z"
+  },
+  {
+    "id": "pge:6890",
+    "name": "matouta",
+    "country": "RE",
+    "lat": -21.3591,
+    "lon": 55.6964,
+    "altitudeM": 451,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windLabel": "ENE–SSE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6890",
+    "fetchedAt": "2026-10-16T03:57:26.621Z"
+  },
+  {
+    "id": "pge:6889",
+    "name": "piton des neiges",
+    "country": "RE",
+    "lat": -21.0997,
+    "lon": 55.4808,
+    "altitudeM": 2173,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 247.5
+      }
+    ],
+    "windLabel": "SSW–WSW",
+    "disciplines": [
+      "PG"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6889",
+    "fetchedAt": "2026-10-16T03:57:26.621Z"
+  },
+  {
+    "id": "pge:6893",
+    "name": "piton entonnoir",
+    "country": "RE",
+    "lat": -21.3568,
+    "lon": 55.6145,
+    "altitudeM": 441,
+    "windRanges": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "SSE–SSW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6893",
+    "fetchedAt": "2026-10-16T03:57:26.621Z"
+  },
+  {
+    "id": "pge:6894",
+    "name": "piton rond",
+    "country": "RE",
+    "lat": -21.1549,
+    "lon": 55.5976,
+    "altitudeM": 1413,
+    "windRanges": [],
+    "windLabel": "See official details",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6894",
+    "fetchedAt": "2026-10-16T03:57:26.621Z"
+  },
+  {
+    "id": "pge:6888",
+    "name": "piton textor",
+    "country": "RE",
+    "lat": -21.1876,
+    "lon": 55.6351,
+    "altitudeM": 2129,
+    "windRanges": [
+      {
+        "fromDeg": 22.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windLabel": "NNE–ESE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6888",
+    "fetchedAt": "2026-10-16T03:57:26.621Z"
+  },
+  {
+    "id": "pge:6892",
+    "name": "plaine des gregues",
+    "country": "RE",
+    "lat": -21.3207,
+    "lon": 55.5932,
+    "altitudeM": 930,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 157.5
+      }
+    ],
+    "windMarginal": [
+      {
+        "fromDeg": 157.5,
+        "toDeg": 202.5
+      }
+    ],
+    "windLabel": "ENE–SSE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal",
+      "soaring",
+      "xc"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6892",
+    "fetchedAt": "2026-10-16T03:57:26.621Z"
+  },
+  {
+    "id": "pge:6879",
+    "name": "riviere des remparts",
+    "country": "RE",
+    "lat": -21.192,
+    "lon": 55.64,
+    "altitudeM": 2148,
+    "windRanges": [
+      {
+        "fromDeg": 67.5,
+        "toDeg": 112.5
+      }
+    ],
+    "windLabel": "ENE–ESE",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6879",
+    "fetchedAt": "2026-10-16T03:57:26.621Z"
+  },
+  {
+    "id": "pge:6877",
+    "name": "Saint Leu 1400",
+    "country": "RE",
+    "lat": -21.1509,
+    "lon": 55.3427,
+    "altitudeM": 1390,
+    "windRanges": [
+      {
+        "fromDeg": 202.5,
+        "toDeg": 337.5
+      }
+    ],
+    "windLabel": "SSW–NNW",
+    "disciplines": [
+      "PG"
+    ],
+    "flyingTypes": [
+      "thermal"
+    ],
+    "url": "https://www.paraglidingearth.com/?site=6877",
+    "fetchedAt": "2026-10-16T03:57:26.621Z"
   },
   {
     "id": "pge:14324",

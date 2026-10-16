@@ -56,3 +56,13 @@ regions:
   - { slug: united-states, name: United States, countries: [{ code: US, name: United States }] }
   - { slug: canada, name: Canada, countries: [{ code: CA, name: Canada }] }
   - { slug: indonesia, name: Indonesia, countries: [{ code: ID, name: Indonesia }] }
+  # Destinations that flying tours go to (D91), added 2026-10-16.
+  - { slug: mexico, name: Mexico, countries: [{ code: MX, name: Mexico }] }
+  - { slug: chile, name: Chile, countries: [{ code: CL, name: Chile }] }
+  - { slug: costa-rica, name: Costa Rica, countries: [{ code: CR, name: Costa Rica }] }
+  - { slug: namibia, name: Namibia, countries: [{ code: NA, name: Namibia }] }
+  - { slug: reunion, name: Réunion, countries: [{ code: RE, name: Réunion }] }
+  - { slug: bhutan, name: Bhutan, countries: [{ code: BT, name: Bhutan }] }
+  - { slug: china, name: China, countries: [{ code: CN, name: China }] }
+  - { slug: kazakhstan, name: Kazakhstan, countries: [{ code: KZ, name: Kazakhstan }] }
+  - { slug: mongolia, name: Mongolia, countries: [{ code: MN, name: Mongolia }] }

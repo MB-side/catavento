@@ -1011,6 +1011,55 @@ help:
       Lancing on Lombok.
     source: https://cloudbaseparagliding.com.au/pages/indonesia
     checked: 2026-10-16
+  - country: MX
+    name: Flumen Paragliding School (Paragliding Mexico)
+    website: https://paraglidingmexico.com/en/
+    area: Valle de Bravo
+    services:
+      - guiding
+      - site-briefing
+      - shuttle
+      - courses
+      - accommodation
+    note: Daily guiding at El Peñón for visiting pilots in the winter season, plus
+      SIV clinics and XC courses.
+    source: https://paraglidingmexico.com/en/courses/guide-service-coaching-at-el-penon
+    checked: 2026-10-16
+  - country: MX
+    name: Fly Mexico
+    website: https://www.flymexico.com/
+    area: Valle de Bravo
+    services:
+      - guiding
+      - shuttle
+      - accommodation
+      - gear-hire
+    note: Paragliding and hang gliding packages with guides, launch transport,
+      retrieve and lodging; hang gliders available.
+    source: https://www.flymexico.com/
+    checked: 2026-10-16
+  - country: MX
+    name: Club Peñón
+    website: https://clubpenon.org/
+    area: Valle de Bravo (El Peñón)
+    services:
+      - flight-park
+      - site-briefing
+    note: Non-profit club that runs the El Peñón launch; visiting pilots buy an
+      entrance pass.
+    source: https://clubpenon.org/pages/club-rules
+    checked: 2026-10-16
+  - country: RE
+    name: Ligue de Vol Libre de La Réunion (LVLR)
+    website: https://www.lvlr.re/
+    area: Saint-Leu
+    services:
+      - shuttle
+      - site-briefing
+    note: League shuttle to the Colimaçons launch for FFVL licence holders; visitor
+      registration brings site and local-rule information.
+    source: https://www.lvlr.re/la-vie-de-la-la-ligue/navettes-mat%C3%A9riels
+    checked: 2026-10-16
 tours:
   - name: Manilla Paragliding
     website: https://www.flymanilla.com/

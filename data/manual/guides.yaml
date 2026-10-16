@@ -1652,3 +1652,88 @@
     - NZHGPA advises checking with local pilots through a club or school before
       flying a new site. Many site names and locations are deliberately not
       published.
+- code: MX
+  name: Mexico
+  visitors:
+    - The IPPI card is accepted in Mexico.
+    - No insurance is legally required; the national association recommends
+      medical insurance.
+  learners: []
+  links:
+    - label: "FAI/CIVL IPPI card information: Mexico"
+      url: https://www.fai.org/page/civl-ippi-MEX
+    - label: "Club Peñón: El Peñón site rules (Valle de Bravo)"
+      url: https://clubpenon.org/pages/club-rules
+    - label: "Club Peñón: site information and emergency contacts"
+      url: https://clubpenon.org/pages/info
+  sources:
+    - https://www-2025.fai.org/page/civl-ippi-MEX
+    - https://clubpenon.org/pages/club-rules
+  rulesUrl: https://www.fai.org/page/civl-ippi-MEX
+  practice:
+    - Club Peñón, which runs the El Peñón launch at Valle de Bravo, requires
+      IPPI 3 pilots to fly with an instructor or guide at midday from November
+      to May.
+  checked: 2026-10-16
+- code: CL
+  name: Chile
+  nationalBody:
+    name: Federación Chilena de Parapente (FECHPA)
+    url: https://www.fechpa.cl/
+  visitors: []
+  learners: []
+  links:
+    - label: Federación Chilena de Parapente (FECHPA)
+      url: https://www.fechpa.cl/
+  sources: []
+  checked: 2026-10-16
+- code: RE
+  name: Réunion
+  nationalBody:
+    name: Fédération Française de Vol Libre (FFVL)
+    url: https://federation.ffvl.fr/
+  visitors:
+    - "French rules apply: no licence is legally required, the IPPI card is
+      accepted and training to FFVL brevet level is strongly recommended."
+    - Third-party liability insurance is a legal requirement; FFVL membership
+      and its insurance are open to pilots from any country.
+    - The Réunion league (LVLR) asks visiting pilots to register online so it
+      can send site, weather and local-rule information.
+  learners: []
+  links:
+    - label: Ligue de Vol Libre de La Réunion (LVLR)
+      url: https://www.lvlr.re/
+    - label: "LVLR: visiting pilot registration and information"
+      url: https://www.lvlr.re/commissions/s%C3%A9curit%C3%A9/informations-visiteurs
+    - label: Charte du Vol Libre à la Réunion (PDF, French)
+      url: https://www.reunion.fr/app/uploads/crt-reunion/2022/10/Charte-du-Vol-Libre-a-la-Reunion_VF_27_04_2021.pdf
+    - label: "FAI/CIVL IPPI card information: France"
+      url: https://www.fai.org/page/civl-ippi-FRA
+    - label: "LVLR: shuttle to the Colimaçons launch"
+      url: https://www.lvlr.re/la-vie-de-la-la-ligue/navettes-mat%C3%A9riels
+  sources:
+    - https://www-2025.fai.org/page/civl-ippi-FRA
+    - https://www.reunion.fr/app/uploads/crt-reunion/2022/10/Charte-du-Vol-Libre-a-la-Reunion_VF_27_04_2021.pdf
+    - https://www.lvlr.re/commissions/s%C3%A9curit%C3%A9/informations-visiteurs
+  rulesUrl: https://www.lvlr.re/commissions/s%C3%A9curit%C3%A9/informations-visiteurs
+  practice:
+    - The Réunion league (LVLR) can arrange a welcome briefing for visiting
+      pilots on local weather, sites and contacts, on request through its
+      website.
+  checked: 2026-10-16
+- code: CN
+  name: China
+  visitors:
+    - Foreign pilots need official approval to take part in air sports in China,
+      arranged through the national or a provincial aero sports association.
+    - Applications include the pilot's licence and site and airspace approvals,
+      supplied with the inviting organisation's endorsement.
+  learners: []
+  links:
+    - label: "Beijing Municipal Sports Bureau: approval for foreign air sports pilots
+        (Word document, Chinese)"
+      url: https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202204/W020220413536806949751.doc
+  sources:
+    - https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202204/W020220413536806949751.doc
+  rulesUrl: https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202204/W020220413536806949751.doc
+  checked: 2026-10-16
