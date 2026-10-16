@@ -47,6 +47,8 @@ export interface HealthInput {
   siteWind: { site: string; source: string; checked: string }[];
   /** Overview country guides (D83). */
   guides?: { code: string; name: string; checked: string }[];
+  /** Countries flying tours go to that have no overview entry yet (D91). */
+  newTourDestinations?: string[];
   /** Brands' own dealer lists linked from Where to buy (D84). */
   dealerPages?: { brand: string; url: string; checked: string }[];
   links?: LinkReport;
@@ -176,6 +178,13 @@ export function checkHealth(input: HealthInput): HealthProblem[] {
         text: `Country guide for ${g.name}, checked ${g.checked}: re-check its facts against the official sources it lists`,
       });
     }
+  }
+  for (const code of input.newTourDestinations ?? []) {
+    out.push({
+      kind: "stale",
+      key: `tour-destination:${code}`,
+      text: `Flying tours go to ${code}, which has no country overview yet: add it to data/manual/overview.yaml, collect its ParaglidingEarth sites, and research its rules and help on the ground (D91)`,
+    });
   }
   for (const d of input.dealerPages ?? []) {
     if (daysSince(d.checked, now) > USE_BY_DAYS.dealerPages) {

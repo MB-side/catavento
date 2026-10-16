@@ -195,4 +195,9 @@ describe("checkHealth: country guides (D83)", () => {
     });
     expect(stale.map((p) => p.key)).toEqual(["stale-guide:FR"]);
   });
+
+  it("flags countries tours go to that have no overview yet", () => {
+    const problems = checkHealth({ ...base, newTourDestinations: ["MX"] });
+    expect(problems.map((p) => p.key)).toEqual(["tour-destination:MX"]);
+  });
 });

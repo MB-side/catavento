@@ -46,6 +46,15 @@ const problems = checkHealth({
   gearCategories: input.gearCategories,
   siteWind: input.siteWind,
   guides: input.guides,
+  newTourDestinations: (() => {
+    const known = new Set([
+      ...input.countries.map((c) => c.code),
+      ...input.overview.flatMap((r) => r.countries.map((c) => c.code)),
+    ]);
+    return [...new Set(input.visiting.tours.flatMap((t) => t.destinations))]
+      .filter((code) => !known.has(code))
+      .sort();
+  })(),
   dealerPages: input.brands.flatMap((b) =>
     b.dealerPage ? [{ brand: b.name, url: b.dealerPage.url, checked: b.dealerPage.checked }] : [],
   ),
