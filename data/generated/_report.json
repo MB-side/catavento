@@ -611,8 +611,8 @@
   "providers": {
     "ansg": {
       "status": "unchanged",
-      "startedAt": "2026-10-20T20:03:22.780Z",
-      "finishedAt": "2026-10-20T20:03:26.778Z",
+      "startedAt": "2026-10-21T20:15:36.441Z",
+      "finishedAt": "2026-10-21T20:15:40.411Z",
       "recordsFound": 246,
       "recordsChanged": 0,
       "warnings": [
@@ -648,7 +648,7 @@
         "Gull Rock: wind directions not readable (\"none\")"
       ],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-10-20T20:03:26.778Z",
+      "lastSuccessAt": "2026-10-21T20:15:40.411Z",
       "contentHash": "8cfaf01d65aae953a9ef80678871081a8316d36b5881b8eecb495c7d8beb1012",
       "sourceVersion": "4|\"894\""
     },
@@ -676,11 +676,13 @@
     },
     "club-websites": {
       "status": "warning",
-      "startedAt": "2026-10-18T18:44:13.492Z",
-      "finishedAt": "2026-10-18T18:50:08.293Z",
-      "recordsFound": 15,
+      "startedAt": "2026-10-21T20:15:40.411Z",
+      "finishedAt": "2026-10-21T20:20:19.606Z",
+      "recordsFound": 14,
       "recordsChanged": 15,
       "warnings": [
+        "North East Victoria Hang Gliding Club Inc: website not read (robots.txt does not allow https://www.nevhgc.net/)",
+        "Paradise Flyers QLD: website not read (robots.txt does not allow https://www.paradiseflyers.org.au/)",
         "Southern Microlight Club Inc: website not read (robots.txt does not allow https://www.southernmicrolightclub.com.au/)",
         "The Pico Club Incorporated: website not read (robots.txt does not allow https://www.thepico.com.au/)",
         "Western Victorian Hang Gliding Club Inc: website not read (robots.txt does not allow https://www.wvhgc.tidyhq.com/)",
@@ -688,8 +690,8 @@
         "Hawkes Bay club: website not read (robots.txt does not allow https://www.soarhawkesbay.co.nz)"
       ],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-10-18T18:50:08.293Z",
-      "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c",
+      "lastSuccessAt": "2026-10-21T20:20:19.606Z",
+      "contentHash": "fd46e0e431fc1ca8f94a6ee58d6f719f54b5ee1c5ef6c7ef24c258867f8f74a8",
       "info": [
         "ACT Hang-gliding and Paragliding Association (ACTHPA): its website names 7 of the 8 sites listed for it",
         "Blue Mountains Hang Gliding Club Inc: nothing to collect",
@@ -704,11 +706,9 @@
         "Mid North Coast Flyers Inc: its website names 3 of the 8 sites listed for it",
         "Newcastle Hang Gliding Club Inc: nothing to collect",
         "Newcastle Paragliding Club: nothing to collect",
-        "North East Victoria Hang Gliding Club Inc: its website names 9 of the 10 sites listed for it",
         "North Queensland Regional Association (NQRA): nothing to collect",
         "Northern Rivers Hang Gliding and Paragliding Club Inc: nothing to collect",
         "NSW Hang-gliding and Paragliding Association (NSWHPA): nothing to collect",
-        "Paradise Flyers QLD: nothing to collect",
         "Queensland Sports Aviators (QSA): nothing to collect",
         "Skyhigh Paragliding Club Inc: nothing to collect",
         "South Australian Hang Gliding & Paragliding Association (SAHPGA): its website names 4 of the 8 sites listed for it",
