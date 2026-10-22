@@ -1475,6 +1475,19 @@
       "id": "tour:fly-mexico"
     },
     {
+      "name": "Fly Paragliding Tours",
+      "website": "https://www.flyparaglidingtours.com/",
+      "basedIn": "AU",
+      "destinations": [
+        "KZ",
+        "NZ"
+      ],
+      "forPilots": "Guided tours with daily briefings, route planning and one-to-one coaching for progressing pilots",
+      "source": "https://www.flyparaglidingtours.com/",
+      "checked": "2026-10-22",
+      "id": "tour:fly-paragliding-tours"
+    },
+    {
       "name": "Fly Spain",
       "website": "https://www.flyspain.co.uk/",
       "basedIn": "ES",
