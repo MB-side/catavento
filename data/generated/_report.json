@@ -611,8 +611,8 @@
   "providers": {
     "ansg": {
       "status": "unchanged",
-      "startedAt": "2026-10-21T20:15:36.441Z",
-      "finishedAt": "2026-10-21T20:15:40.411Z",
+      "startedAt": "2026-10-22T20:13:43.364Z",
+      "finishedAt": "2026-10-22T20:13:48.080Z",
       "recordsFound": 246,
       "recordsChanged": 0,
       "warnings": [
@@ -648,7 +648,7 @@
         "Gull Rock: wind directions not readable (\"none\")"
       ],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-10-21T20:15:40.411Z",
+      "lastSuccessAt": "2026-10-22T20:13:48.080Z",
       "contentHash": "8cfaf01d65aae953a9ef80678871081a8316d36b5881b8eecb495c7d8beb1012",
       "sourceVersion": "4|\"894\""
     },
