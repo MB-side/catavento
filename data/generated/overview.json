@@ -374,6 +374,10 @@
         {
           "label": "ParaglidingEarth site guide",
           "url": "https://www.paraglidingearth.com/"
+        },
+        {
+          "label": "Burnair map",
+          "url": "https://map.burnair.cloud/"
         }
       ],
       "sources": [
@@ -497,8 +501,8 @@
           "url": "https://airspace.shv-fsvl.ch/map"
         },
         {
-          "label": "burnair map",
-          "url": "https://www.burnair.ch/"
+          "label": "Burnair map",
+          "url": "https://map.burnair.cloud/"
         },
         {
           "label": "ParaglidingEarth: Switzerland",
@@ -623,8 +627,8 @@
           "url": "https://service.dhv.de/db3/gelaende"
         },
         {
-          "label": "burnair map",
-          "url": "https://www.burnair.ch/"
+          "label": "Burnair map",
+          "url": "https://map.burnair.cloud/"
         },
         {
           "label": "ParaglidingEarth: Austria",
@@ -689,8 +693,8 @@
           "url": "https://service.dhv.de/db3/gelaende"
         },
         {
-          "label": "burnair map",
-          "url": "https://www.burnair.ch/"
+          "label": "Burnair map",
+          "url": "https://map.burnair.cloud/"
         },
         {
           "label": "ParaglidingEarth: Italy",
@@ -753,8 +757,8 @@
           "url": "https://airspace.shv-fsvl.ch/map"
         },
         {
-          "label": "burnair map",
-          "url": "https://www.burnair.ch/"
+          "label": "Burnair map",
+          "url": "https://map.burnair.cloud/"
         },
         {
           "label": "DHV site database (includes the Alps)",

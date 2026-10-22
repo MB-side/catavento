@@ -141,11 +141,13 @@ export default async function VisitingCountryPage({
               <Link href={worldHref}>{t("visiting.sitesWorld", { country: c.name })}</Link>
             </li>
           )}
-          {guide?.links.map((l) => (
-            <li key={l.url}>
-              <Anchor href={l.url}>{l.label}</Anchor>
-            </li>
-          ))}
+          {[...(guide?.links ?? []), ...(regionGuide?.links ?? [])]
+            .filter((l, i, all) => all.findIndex((x) => x.url === l.url) === i)
+            .map((l) => (
+              <li key={l.url}>
+                <Anchor href={l.url}>{l.label}</Anchor>
+              </li>
+            ))}
         </ul>
       </section>
 

@@ -21,6 +21,8 @@
       url: https://www.xcontest.org/world/en/
     - label: ParaglidingEarth site guide
       url: https://www.paraglidingearth.com/
+    - label: Burnair map
+      url: https://map.burnair.cloud/
   sources:
     - https://www.ehpu.org/policy
     - https://www.ehpu.org/
@@ -114,8 +116,8 @@
       url: https://www.shv-fsvl.ch/en/fluggebiete-sicherheit/fluggebiete/airspace/
     - label: SHV airspace map
       url: https://airspace.shv-fsvl.ch/map
-    - label: burnair map
-      url: https://www.burnair.ch/
+    - label: Burnair map
+      url: https://map.burnair.cloud/
     - label: "ParaglidingEarth: Switzerland"
       url: https://www.paraglidingearth.com/?country=ch
   sources:
@@ -210,8 +212,8 @@
       url: https://aeroclub.at/uploads/download/GasteflugVO__Fassung_vom_01_03_2017.pdf
     - label: DHV site database (includes the Alps)
       url: https://service.dhv.de/db3/gelaende
-    - label: burnair map
-      url: https://www.burnair.ch/
+    - label: Burnair map
+      url: https://map.burnair.cloud/
     - label: "ParaglidingEarth: Austria"
       url: https://www.paraglidingearth.com/?country=at
     - label: XContest Austria
@@ -259,8 +261,8 @@
       url: https://www.aeci.it/
     - label: DHV site database (includes the Alps)
       url: https://service.dhv.de/db3/gelaende
-    - label: burnair map
-      url: https://www.burnair.ch/
+    - label: Burnair map
+      url: https://map.burnair.cloud/
     - label: "ParaglidingEarth: Italy"
       url: https://www.paraglidingearth.com/?country=it
     - label: XContest cross-country flights
@@ -305,8 +307,8 @@
       url: https://www.shv-fsvl.ch/en/translate-to-englisch-einfach-finden/translate-to-englisch-clubs/
     - label: SHV airspace map
       url: https://airspace.shv-fsvl.ch/map
-    - label: burnair map
-      url: https://www.burnair.ch/
+    - label: Burnair map
+      url: https://map.burnair.cloud/
     - label: DHV site database (includes the Alps)
       url: https://service.dhv.de/db3/gelaende
     - label: "ParaglidingEarth: Liechtenstein"
