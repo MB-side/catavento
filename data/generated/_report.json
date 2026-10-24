@@ -4,7 +4,7 @@
       "organisations": 107,
       "clubs": 43,
       "schools": 42,
-      "sites": 543,
+      "sites": 542,
       "stations": 48,
       "resources": 27,
       "providers": 24,
@@ -605,16 +605,21 @@
       {
         "code": "contact-dropped",
         "message": "2 unmatched Site Guide contacts not shown (a name with no link)"
+      },
+      {
+        "code": "id-removed",
+        "message": "site:au:vic:castlemaine-aerodrome-ycal was published before and is now gone; pin it in overrides.yaml if it was renamed",
+        "recordId": "site:au:vic:castlemaine-aerodrome-ycal"
       }
     ]
   },
   "providers": {
     "ansg": {
-      "status": "unchanged",
-      "startedAt": "2026-10-23T19:59:49.153Z",
-      "finishedAt": "2026-10-23T19:59:53.526Z",
-      "recordsFound": 246,
-      "recordsChanged": 0,
+      "status": "warning",
+      "startedAt": "2026-10-24T18:53:15.851Z",
+      "finishedAt": "2026-10-24T18:53:21.504Z",
+      "recordsFound": 245,
+      "recordsChanged": 246,
       "warnings": [
         "Eucla: wind directions not readable (\"none\")",
         "Barn Hill (The Bluff): wind directions not readable (\"none\")",
@@ -648,9 +653,9 @@
         "Gull Rock: wind directions not readable (\"none\")"
       ],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-10-23T19:59:53.527Z",
-      "contentHash": "8cfaf01d65aae953a9ef80678871081a8316d36b5881b8eecb495c7d8beb1012",
-      "sourceVersion": "4|\"894\""
+      "lastSuccessAt": "2026-10-24T18:53:21.504Z",
+      "contentHash": "21ba0f55454d46caefa54742b229255c7fa3e932235b5bb1d26e4acf9e07747e",
+      "sourceVersion": "4|\"896\""
     },
     "safa": {
       "status": "unchanged",
@@ -676,13 +681,11 @@
     },
     "club-websites": {
       "status": "warning",
-      "startedAt": "2026-10-21T20:15:40.411Z",
-      "finishedAt": "2026-10-21T20:20:19.606Z",
-      "recordsFound": 14,
+      "startedAt": "2026-10-24T18:53:21.505Z",
+      "finishedAt": "2026-10-24T18:58:07.466Z",
+      "recordsFound": 15,
       "recordsChanged": 15,
       "warnings": [
-        "North East Victoria Hang Gliding Club Inc: website not read (robots.txt does not allow https://www.nevhgc.net/)",
-        "Paradise Flyers QLD: website not read (robots.txt does not allow https://www.paradiseflyers.org.au/)",
         "Southern Microlight Club Inc: website not read (robots.txt does not allow https://www.southernmicrolightclub.com.au/)",
         "The Pico Club Incorporated: website not read (robots.txt does not allow https://www.thepico.com.au/)",
         "Western Victorian Hang Gliding Club Inc: website not read (robots.txt does not allow https://www.wvhgc.tidyhq.com/)",
@@ -690,8 +693,8 @@
         "Hawkes Bay club: website not read (robots.txt does not allow https://www.soarhawkesbay.co.nz)"
       ],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-10-21T20:20:19.606Z",
-      "contentHash": "fd46e0e431fc1ca8f94a6ee58d6f719f54b5ee1c5ef6c7ef24c258867f8f74a8",
+      "lastSuccessAt": "2026-10-24T18:58:07.466Z",
+      "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c",
       "info": [
         "ACT Hang-gliding and Paragliding Association (ACTHPA): its website names 7 of the 8 sites listed for it",
         "Blue Mountains Hang Gliding Club Inc: nothing to collect",
@@ -706,9 +709,11 @@
         "Mid North Coast Flyers Inc: its website names 3 of the 8 sites listed for it",
         "Newcastle Hang Gliding Club Inc: nothing to collect",
         "Newcastle Paragliding Club: nothing to collect",
+        "North East Victoria Hang Gliding Club Inc: its website names 9 of the 10 sites listed for it",
         "North Queensland Regional Association (NQRA): nothing to collect",
         "Northern Rivers Hang Gliding and Paragliding Club Inc: nothing to collect",
         "NSW Hang-gliding and Paragliding Association (NSWHPA): nothing to collect",
+        "Paradise Flyers QLD: nothing to collect",
         "Queensland Sports Aviators (QSA): nothing to collect",
         "Skyhigh Paragliding Club Inc: nothing to collect",
         "South Australian Hang Gliding & Paragliding Association (SAHPGA): its website names 4 of the 8 sites listed for it",

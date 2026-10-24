@@ -1455,7 +1455,17 @@
     "externalIds": {
       "safa": "NV"
     },
-    "siteIds": [],
+    "siteIds": [
+      "site:au:vic:gundowring-savhill",
+      "site:au:vic:mannys",
+      "site:au:vic:mt-buffalo-reeds-lookout-paraglider-launch",
+      "site:au:vic:mt-buffalo-the-gorge-hg-ramp",
+      "site:au:vic:mt-emu",
+      "site:au:vic:murmungee",
+      "site:au:vic:mystic",
+      "site:au:vic:tawonga-gap",
+      "site:au:vic:the-pines-buckland-ridge"
+    ],
     "stationIds": [],
     "regionalAssociationId": "org:au:victorian-hang-gliding-and-paragliding-association"
   },
