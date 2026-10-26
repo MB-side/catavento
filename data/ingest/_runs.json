@@ -1,8 +1,8 @@
 {
   "ansg": {
     "status": "unchanged",
-    "startedAt": "2026-10-25T19:08:42.033Z",
-    "finishedAt": "2026-10-25T19:08:46.207Z",
+    "startedAt": "2026-10-26T21:09:59.648Z",
+    "finishedAt": "2026-10-26T21:10:03.384Z",
     "recordsFound": 245,
     "recordsChanged": 0,
     "warnings": [
@@ -39,18 +39,18 @@
     ],
     "sourceVersion": "4|\"896\"",
     "guardDecision": "accepted",
-    "lastSuccessAt": "2026-10-25T19:08:46.207Z",
+    "lastSuccessAt": "2026-10-26T21:10:03.384Z",
     "contentHash": "21ba0f55454d46caefa54742b229255c7fa3e932235b5bb1d26e4acf9e07747e"
   },
   "safa": {
     "status": "unchanged",
-    "startedAt": "2026-10-19T21:10:53.937Z",
-    "finishedAt": "2026-10-19T21:14:19.274Z",
+    "startedAt": "2026-10-26T21:06:33.406Z",
+    "finishedAt": "2026-10-26T21:09:59.648Z",
     "recordsFound": 111,
     "recordsChanged": 0,
     "warnings": [],
     "guardDecision": "accepted",
-    "lastSuccessAt": "2026-10-19T21:14:19.274Z",
+    "lastSuccessAt": "2026-10-26T21:09:59.648Z",
     "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
   },
   "pge": {
