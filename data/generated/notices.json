@@ -11,9 +11,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.chgpc.org.nz/blog-feed.xml",
-        "fetchedAt": "2026-10-24T18:53:21.505Z",
+        "fetchedAt": "2026-10-27T20:49:14.323Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "eaee0d520e40e16c97194fb6107b47b049fd2081e7addb5a9bd2cf8e4e93777c"
       }
     ]
   },
@@ -131,9 +131,9 @@
       {
         "providerId": "club-websites",
         "url": "https://www.chgpc.org.nz/blog-feed.xml",
-        "fetchedAt": "2026-10-24T18:53:21.505Z",
+        "fetchedAt": "2026-10-27T20:49:14.323Z",
         "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
+        "contentHash": "eaee0d520e40e16c97194fb6107b47b049fd2081e7addb5a9bd2cf8e4e93777c"
       }
     ]
   },
@@ -168,24 +168,6 @@
         "fetchedAt": "2026-10-12T08:34:19.005Z",
         "licence": "facts",
         "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
-      }
-    ]
-  },
-  {
-    "id": "notice:club:b06fd3b81946",
-    "title": "Deep dive: Cliffs & Castle Rock",
-    "date": "2026-04-29",
-    "url": "https://www.chgpc.org.nz/post/deep-dive-taylors-cliffs-gondola-castle-rock",
-    "country": "NZ",
-    "scope": "club",
-    "orgId": "org:nz:canterbury-club",
-    "sources": [
-      {
-        "providerId": "club-websites",
-        "url": "https://www.chgpc.org.nz/blog-feed.xml",
-        "fetchedAt": "2026-10-24T18:53:21.505Z",
-        "licence": "facts",
-        "contentHash": "0cd84770abbba0108d473e112fb61a417ecf2411fdac99cf72fcaf24730fff9c"
       }
     ]
   },
