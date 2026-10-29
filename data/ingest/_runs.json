@@ -1,8 +1,8 @@
 {
   "ansg": {
     "status": "unchanged",
-    "startedAt": "2026-10-28T21:12:33.363Z",
-    "finishedAt": "2026-10-28T21:12:37.386Z",
+    "startedAt": "2026-10-29T21:16:00.738Z",
+    "finishedAt": "2026-10-29T21:16:04.606Z",
     "recordsFound": 245,
     "recordsChanged": 0,
     "warnings": [
@@ -39,7 +39,7 @@
     ],
     "sourceVersion": "4|\"896\"",
     "guardDecision": "accepted",
-    "lastSuccessAt": "2026-10-28T21:12:37.386Z",
+    "lastSuccessAt": "2026-10-29T21:16:04.606Z",
     "contentHash": "21ba0f55454d46caefa54742b229255c7fa3e932235b5bb1d26e4acf9e07747e"
   },
   "safa": {
