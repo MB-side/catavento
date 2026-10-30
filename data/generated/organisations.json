@@ -464,7 +464,9 @@
     ],
     "lastVerified": "2026-10-12",
     "verificationStatus": "listed_by_national_body",
-    "siteIds": [],
+    "siteIds": [
+      "site:au:nsw:crackneck-lookout"
+    ],
     "stationIds": [],
     "regionalAssociationId": "org:au:nsw-hang-gliding-and-paragliding-association"
   },

@@ -1,8 +1,8 @@
 {
   "ansg": {
     "status": "unchanged",
-    "startedAt": "2026-10-29T21:16:00.738Z",
-    "finishedAt": "2026-10-29T21:16:04.606Z",
+    "startedAt": "2026-10-30T20:55:56.537Z",
+    "finishedAt": "2026-10-30T20:56:00.950Z",
     "recordsFound": 245,
     "recordsChanged": 0,
     "warnings": [
@@ -39,7 +39,7 @@
     ],
     "sourceVersion": "4|\"896\"",
     "guardDecision": "accepted",
-    "lastSuccessAt": "2026-10-29T21:16:04.606Z",
+    "lastSuccessAt": "2026-10-30T20:56:00.950Z",
     "contentHash": "21ba0f55454d46caefa54742b229255c7fa3e932235b5bb1d26e4acf9e07747e"
   },
   "safa": {
@@ -66,12 +66,11 @@
   },
   "club-websites": {
     "status": "warning",
-    "startedAt": "2026-10-27T20:49:14.323Z",
-    "finishedAt": "2026-10-27T20:54:01.511Z",
-    "recordsFound": 13,
-    "recordsChanged": 15,
+    "startedAt": "2026-10-30T20:56:00.951Z",
+    "finishedAt": "2026-10-30T21:00:48.414Z",
+    "recordsFound": 14,
+    "recordsChanged": 14,
     "warnings": [
-      "Central Coast Sky Surfers Inc: website not read (robots.txt does not allow https://www.centralcoastskysurfers.com/)",
       "Southern Microlight Club Inc: website not read (robots.txt does not allow https://www.southernmicrolightclub.com.au/)",
       "The Pico Club Incorporated: website not read (robots.txt does not allow https://www.thepico.com.au/)",
       "Western Victorian Hang Gliding Club Inc: website not read (robots.txt does not allow https://www.wvhgc.tidyhq.com/)",
@@ -79,13 +78,14 @@
       "Hawkes Bay club: website not read (robots.txt does not allow https://www.soarhawkesbay.co.nz)"
     ],
     "guardDecision": "accepted",
-    "lastSuccessAt": "2026-10-27T20:54:01.511Z",
-    "contentHash": "eaee0d520e40e16c97194fb6107b47b049fd2081e7addb5a9bd2cf8e4e93777c",
+    "lastSuccessAt": "2026-10-30T21:00:48.414Z",
+    "contentHash": "ce022e347bd99930905b0d26f23e3a9caaf48137689180a61be92d1132205521",
     "info": [
       "ACT Hang-gliding and Paragliding Association (ACTHPA): its website names 7 of the 8 sites listed for it",
       "Blue Mountains Hang Gliding Club Inc: nothing to collect",
       "Cairns Hang Gliding Club Inc: nothing to collect",
       "Canungra Hang Gliding Club Inc: its website names 3 of the 4 sites listed for it",
+      "Central Coast Sky Surfers Inc: its website names 1 of the 2 sites listed for it",
       "Dynasoarers Hang Gliding Club Inc: its website names 5 of the 17 sites listed for it",
       "Hang Gliding & Paragliding Association of Western Australia (HGAWA): nothing to collect",
       "Illawarra Gliding Club Inc: nothing to collect",
