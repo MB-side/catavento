@@ -1,10 +1,10 @@
 {
   "ansg": {
-    "status": "unchanged",
-    "startedAt": "2026-10-30T20:55:56.537Z",
-    "finishedAt": "2026-10-30T20:56:00.950Z",
+    "status": "warning",
+    "startedAt": "2026-10-31T20:08:25.313Z",
+    "finishedAt": "2026-10-31T20:08:31.465Z",
     "recordsFound": 245,
-    "recordsChanged": 0,
+    "recordsChanged": 245,
     "warnings": [
       "Eucla: wind directions not readable (\"none\")",
       "Barn Hill (The Bluff): wind directions not readable (\"none\")",
@@ -37,10 +37,10 @@
       "Killarney: wind directions not readable (\"none\")",
       "Gull Rock: wind directions not readable (\"none\")"
     ],
-    "sourceVersion": "4|\"896\"",
     "guardDecision": "accepted",
-    "lastSuccessAt": "2026-10-30T20:56:00.950Z",
-    "contentHash": "21ba0f55454d46caefa54742b229255c7fa3e932235b5bb1d26e4acf9e07747e"
+    "lastSuccessAt": "2026-10-31T20:08:31.465Z",
+    "contentHash": "a38416359b89259067596e295f9c279f5be78e0650aa3fe125ca49998072333d",
+    "sourceVersion": "4|\"897\""
   },
   "safa": {
     "status": "unchanged",
