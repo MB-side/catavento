@@ -1,27 +1,5 @@
 [
   {
-    "id": "event:safa:62692",
-    "title": "Canungra Sports Cup",
-    "startDate": "2026-09-26",
-    "endDate": "2026-10-03",
-    "type": "competition",
-    "disciplines": [],
-    "locationText": "Canungra",
-    "country": "AU",
-    "regionCode": "AU-QLD",
-    "organiserName": "Canungra Hang Gliding and Paragliding Club",
-    "url": "https://safa.asn.au/event/canungra-sports-cup/",
-    "sources": [
-      {
-        "providerId": "safa",
-        "url": "https://safa.asn.au/event/canungra-sports-cup/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
-        "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
-      }
-    ]
-  },
-  {
     "id": "event:safa:64861",
     "title": "50th anniversary of Free flight @ Stanwell Park",
     "startDate": "2026-10-17",
@@ -36,9 +14,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/event/50th-anniversary-of-free-flight-stanwell-park/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ],
     "organiserOrgId": "org:au:stanwell-park-hang-gliding-paragliding-club"
@@ -57,9 +35,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/event/fly-from-everest-end-polio-now-movie-event/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   }

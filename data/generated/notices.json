@@ -1,5 +1,39 @@
 [
   {
+    "id": "notice:safa:05c10ff173a1",
+    "title": "Gin Gliders Safety Notice: GTO 3 Line Length",
+    "date": "2026-10-14",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47NjZXSldQZ3RMUStpVTRua0tvc0llUT09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "licence": "facts",
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+      }
+    ]
+  },
+  {
+    "id": "notice:safa:6d7110399241",
+    "title": "- Ozone Safety Notice: Angel SQ Pro and Sublite Pods Upgrade",
+    "date": "2026-10-12",
+    "url": "http://members.safa.asn.au/isonic-downloaddoc.php?docid=0X0X1X1X47a3VueGZydHUvZmo5Q3R3cVhwSW9UUT09",
+    "country": "AU",
+    "scope": "national",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/pilot-tools/resources/",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "licence": "facts",
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+      }
+    ]
+  },
+  {
     "id": "notice:club:b1c9b608f15c",
     "title": "Change to Club Radio Channel",
     "date": "2026-10-06",
@@ -28,9 +62,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -45,9 +79,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -62,9 +96,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -79,9 +113,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -96,9 +130,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -113,9 +147,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -148,9 +182,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -165,9 +199,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -182,9 +216,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -199,9 +233,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -216,9 +250,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -233,9 +267,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -250,9 +284,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -267,9 +301,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -284,9 +318,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -301,9 +335,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -318,9 +352,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -335,9 +369,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -352,9 +386,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -369,9 +403,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -386,9 +420,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -403,9 +437,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -420,9 +454,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -437,9 +471,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -454,9 +488,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -471,9 +505,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -488,9 +522,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -505,9 +539,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -522,9 +556,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -539,9 +573,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -556,9 +590,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -573,9 +607,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -590,9 +624,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -607,9 +641,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -624,9 +658,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -641,9 +675,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   },
@@ -658,9 +692,9 @@
       {
         "providerId": "safa",
         "url": "https://safa.asn.au/pilot-tools/resources/",
-        "fetchedAt": "2026-10-12T08:34:19.005Z",
+        "fetchedAt": "2026-11-02T23:38:31.670Z",
         "licence": "facts",
-        "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
       }
     ]
   }

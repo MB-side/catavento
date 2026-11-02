@@ -9,8 +9,8 @@
       "resources": 27,
       "providers": 24,
       "offerings": 1,
-      "events": 3,
-      "notices": 39,
+      "events": 2,
+      "notices": 41,
       "overviewSites": 9397
     },
     "warnings": [
@@ -611,8 +611,8 @@
   "providers": {
     "ansg": {
       "status": "unchanged",
-      "startedAt": "2026-11-01T20:39:36.153Z",
-      "finishedAt": "2026-11-01T20:39:40.228Z",
+      "startedAt": "2026-11-02T23:41:54.044Z",
+      "finishedAt": "2026-11-02T23:41:58.269Z",
       "recordsFound": 245,
       "recordsChanged": 0,
       "warnings": [
@@ -648,20 +648,20 @@
         "Gull Rock: wind directions not readable (\"none\")"
       ],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-11-01T20:39:40.228Z",
+      "lastSuccessAt": "2026-11-02T23:41:58.270Z",
       "contentHash": "a38416359b89259067596e295f9c279f5be78e0650aa3fe125ca49998072333d",
       "sourceVersion": "4|\"897\""
     },
     "safa": {
-      "status": "unchanged",
-      "startedAt": "2026-10-26T21:06:33.406Z",
-      "finishedAt": "2026-10-26T21:09:59.648Z",
-      "recordsFound": 111,
-      "recordsChanged": 0,
+      "status": "ok",
+      "startedAt": "2026-11-02T23:38:31.667Z",
+      "finishedAt": "2026-11-02T23:41:54.044Z",
+      "recordsFound": 112,
+      "recordsChanged": 113,
       "warnings": [],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-10-26T21:09:59.648Z",
-      "contentHash": "c01ef58518be2620d8d30aaf865cd047dfbae1af82c8e6c584b8b65abbf344a9"
+      "lastSuccessAt": "2026-11-02T23:41:54.044Z",
+      "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
     },
     "pge": {
       "status": "ok",
@@ -675,11 +675,11 @@
       "contentHash": "22541882c7e98b019e6a8a7062dff1cd93cfb5a6ec82f589b9befd9b5ed29779"
     },
     "club-websites": {
-      "status": "warning",
-      "startedAt": "2026-10-30T20:56:00.951Z",
-      "finishedAt": "2026-10-30T21:00:48.414Z",
+      "status": "unchanged",
+      "startedAt": "2026-11-02T23:41:58.270Z",
+      "finishedAt": "2026-11-02T23:46:38.131Z",
       "recordsFound": 14,
-      "recordsChanged": 14,
+      "recordsChanged": 0,
       "warnings": [
         "Southern Microlight Club Inc: website not read (robots.txt does not allow https://www.southernmicrolightclub.com.au/)",
         "The Pico Club Incorporated: website not read (robots.txt does not allow https://www.thepico.com.au/)",
@@ -688,7 +688,7 @@
         "Hawkes Bay club: website not read (robots.txt does not allow https://www.soarhawkesbay.co.nz)"
       ],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-10-30T21:00:48.414Z",
+      "lastSuccessAt": "2026-11-02T23:46:38.131Z",
       "contentHash": "ce022e347bd99930905b0d26f23e3a9caaf48137689180a61be92d1132205521",
       "info": [
         "ACT Hang-gliding and Paragliding Association (ACTHPA): its website names 7 of the 8 sites listed for it",
