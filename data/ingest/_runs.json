@@ -1,10 +1,10 @@
 {
   "ansg": {
-    "status": "unchanged",
-    "startedAt": "2026-11-03T21:52:14.562Z",
-    "finishedAt": "2026-11-03T21:52:18.540Z",
-    "recordsFound": 245,
-    "recordsChanged": 0,
+    "status": "warning",
+    "startedAt": "2026-11-04T22:00:33.869Z",
+    "finishedAt": "2026-11-04T22:00:39.547Z",
+    "recordsFound": 246,
+    "recordsChanged": 246,
     "warnings": [
       "Eucla: wind directions not readable (\"none\")",
       "Barn Hill (The Bluff): wind directions not readable (\"none\")",
@@ -35,12 +35,13 @@
       "Montes: wind directions not readable (\"PG SE to ENE 5-15kt / HG: ESE through to ENE 4-20kt.\")",
       "Ma Ma Creek: wind directions not readable (\"Several. E/NE, ~150m height difference\")",
       "Killarney: wind directions not readable (\"none\")",
-      "Gull Rock: wind directions not readable (\"none\")"
+      "Gull Rock: wind directions not readable (\"none\")",
+      "Black Cliffs: wind directions not readable (\"none\")"
     ],
-    "sourceVersion": "4|\"897\"",
     "guardDecision": "accepted",
-    "lastSuccessAt": "2026-11-03T21:52:18.540Z",
-    "contentHash": "a38416359b89259067596e295f9c279f5be78e0650aa3fe125ca49998072333d"
+    "lastSuccessAt": "2026-11-04T22:00:39.547Z",
+    "contentHash": "dc265ccce86f01733a6f6cd25d4e9fdddfbc93a8864dbdfde7bbc8894211ee67",
+    "sourceVersion": "4|\"900\""
   },
   "safa": {
     "status": "ok",

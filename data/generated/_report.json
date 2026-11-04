@@ -376,6 +376,11 @@
       },
       {
         "code": "dedupe-merged",
+        "message": "site:au:vic:flowerdale-3-sisters duplicates site:au:vic:three-sisters-flowerdale (148 m); kept the latter",
+        "recordId": "site:au:vic:flowerdale-3-sisters"
+      },
+      {
+        "code": "dedupe-merged",
         "message": "site:au:vic:gordon-22859 duplicates site:au:vic:gordon (42 m); kept the latter",
         "recordId": "site:au:vic:gordon-22859"
       },
@@ -486,7 +491,7 @@
       },
       {
         "code": "dedupe-merged",
-        "message": "site:au:vic:thirteenth-beach duplicates site:au:vic:barwon-heads-13th-beach (169 m); kept the latter",
+        "message": "site:au:vic:thirteenth-beach duplicates site:au:vic:barwon-heads-13th-beach (136 m); kept the latter",
         "recordId": "site:au:vic:thirteenth-beach"
       },
       {
@@ -605,16 +610,21 @@
       {
         "code": "contact-dropped",
         "message": "2 unmatched Site Guide contacts not shown (a name with no link)"
+      },
+      {
+        "code": "id-removed",
+        "message": "site:au:vic:flowerdale-3-sisters was published before and is now gone; pin it in overrides.yaml if it was renamed",
+        "recordId": "site:au:vic:flowerdale-3-sisters"
       }
     ]
   },
   "providers": {
     "ansg": {
-      "status": "unchanged",
-      "startedAt": "2026-11-03T21:52:14.562Z",
-      "finishedAt": "2026-11-03T21:52:18.540Z",
-      "recordsFound": 245,
-      "recordsChanged": 0,
+      "status": "warning",
+      "startedAt": "2026-11-04T22:00:33.869Z",
+      "finishedAt": "2026-11-04T22:00:39.547Z",
+      "recordsFound": 246,
+      "recordsChanged": 246,
       "warnings": [
         "Eucla: wind directions not readable (\"none\")",
         "Barn Hill (The Bluff): wind directions not readable (\"none\")",
@@ -645,12 +655,13 @@
         "Montes: wind directions not readable (\"PG SE to ENE 5-15kt / HG: ESE through to ENE 4-20kt.\")",
         "Ma Ma Creek: wind directions not readable (\"Several. E/NE, ~150m height difference\")",
         "Killarney: wind directions not readable (\"none\")",
-        "Gull Rock: wind directions not readable (\"none\")"
+        "Gull Rock: wind directions not readable (\"none\")",
+        "Black Cliffs: wind directions not readable (\"none\")"
       ],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-11-03T21:52:18.540Z",
-      "contentHash": "a38416359b89259067596e295f9c279f5be78e0650aa3fe125ca49998072333d",
-      "sourceVersion": "4|\"897\""
+      "lastSuccessAt": "2026-11-04T22:00:39.547Z",
+      "contentHash": "dc265ccce86f01733a6f6cd25d4e9fdddfbc93a8864dbdfde7bbc8894211ee67",
+      "sourceVersion": "4|\"900\""
     },
     "safa": {
       "status": "ok",
