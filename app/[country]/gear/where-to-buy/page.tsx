@@ -3,13 +3,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { card, linkButton, PageHeader } from "@/components/layout/PageHeader";
 import { Anchor } from "@/components/ui/anchor";
-import { groupBrands, sortMakes } from "@/lib/brand-groups";
+import { type BrandGroupKey, groupBrands, OTHER_GROUPS, sortMakes } from "@/lib/brand-groups";
 import { orgPath } from "@/lib/clubs";
 import { countryFromParams } from "@/lib/country";
 import { getBrands, getOrganisation } from "@/lib/data";
 import { t, tOr } from "@/lib/messages";
 import { pageMetadata } from "@/lib/seo";
-import type { Brand } from "@/lib/types";
+import type { Brand, DistributorRole, Organisation } from "@/lib/types";
 
 const regionNames = new Intl.DisplayNames(["en"], { type: "region" });
 
@@ -47,17 +47,27 @@ export default async function WhereToBuyPage({
   const main = all
     .filter((b) => b.officialList && (b.dealerPage || b.website))
     .sort((a, b) => a.name.localeCompare(b.name));
-  const groups = groupBrands(main);
-  const brands = all
-    .filter((b) => !b.officialList)
-    .map((b) => ({
-      brand: b,
-      who: b.distributors
-        .map((d) => ({ org: getOrganisation(d.orgId), role: d.role, basis: d.basis }))
-        .filter((x) => x.org?.country === country.code)
+  const mainGroups = groupBrands(main);
+  // Instruments, radios, helmets and other gear: the brand's own list, plus the businesses here
+  // that sell it, as the brand or the business publishes (D84, D98).
+  const sellers = new Map<string, Seller[]>(
+    all.map((b) => [
+      b.id,
+      b.distributors
+        .flatMap((d) => {
+          const org = getOrganisation(d.orgId);
+          return org && org.country === country.code ? [{ org, role: d.role, basis: d.basis }] : [];
+        })
         .sort((a, b) => ROLE_ORDER.indexOf(a.role) - ROLE_ORDER.indexOf(b.role)),
-    }))
-    .filter((x) => x.who.length > 0);
+    ]),
+  );
+  const other = all.filter(
+    (b) => !b.officialList && (b.dealerPage || b.website || (sellers.get(b.id)?.length ?? 0) > 0),
+  );
+  const otherGroups = groupBrands(other, OTHER_GROUPS);
+  const ungrouped = other
+    .filter((b) => !b.makes?.length)
+    .sort((a, b) => a.name.localeCompare(b.name));
   return (
     <div className="flex flex-col gap-6">
       <PageHeader
@@ -70,49 +80,17 @@ export default async function WhereToBuyPage({
           {t("gear.mainBrandsHeading")}
         </h2>
         <p>{t("gear.mainBrandsIntro")}</p>
-        {groups.length > 0 && (
-          <nav aria-label={t("gear.groupsNav")} data-testid="brand-group-nav">
-            <ul className="flex flex-wrap gap-2">
-              {groups.map((g) => (
-                <li key={g.key}>
-                  <a href={`#brands-${g.key}`} className={linkButton}>
-                    {t(`gear.group.${g.key}.title`)}
-                    <span className="text-[0.875rem] font-normal text-muted">
-                      {g.brands.length}
-                    </span>
-                  </a>
-                </li>
-              ))}
-              <li>
-                <a href="#brands-a-z" className={linkButton}>
-                  {t("gear.allBrandsShort")}
-                </a>
-              </li>
-            </ul>
-          </nav>
-        )}
-        {groups.map((g) => (
-          <section
-            key={g.key}
-            id={`brands-${g.key}`}
-            aria-labelledby={`brands-${g.key}-title`}
-            className="flex scroll-mt-24 flex-col gap-3"
-            data-testid="brand-group"
-          >
-            <div>
-              <h3 id={`brands-${g.key}-title`} className="font-condensed text-[1.375rem] font-bold">
-                {t(`gear.group.${g.key}.title`)}
-              </h3>
-              <p className="text-muted">{t(`gear.group.${g.key}.text`)}</p>
-            </div>
-            <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              {g.brands.map((b) => (
-                <BrandCard key={b.id} brand={b} countryCode={country.code} />
-              ))}
-            </ul>
-          </section>
+        <GroupNav
+          groups={mainGroups}
+          label={t("gear.groupsNav")}
+          extra={{ href: "#brands-a-z", label: t("gear.allBrandsShort") }}
+        />
+        {mainGroups.map((g) => (
+          <GroupSection key={g.key} group={g} countryCode={country.code} />
         ))}
-        {groups.length > 0 && <p className="text-[0.9375rem] text-muted">{t("gear.groupsNote")}</p>}
+        {mainGroups.length > 0 && (
+          <p className="text-[0.9375rem] text-muted">{t("gear.groupsNote")}</p>
+        )}
         <section
           id="brands-a-z"
           aria-labelledby="brands-a-z-title"
@@ -142,56 +120,129 @@ export default async function WhereToBuyPage({
           </ul>
         </section>
       </section>
-      <h2 className="font-condensed text-[1.5rem] font-bold">{t("gear.otherBrandsHeading")}</h2>
-      {brands.length === 0 ? (
-        <p className={card}>{t("gear.noneYet", { country: country.name })}</p>
-      ) : (
-        <>
-          <ul className="grid gap-3 md:grid-cols-2 xl:grid-cols-3" data-testid="brands">
-            {brands.map(({ brand, who }) => (
-              <li key={brand.id} className={card}>
-                <h3 className="font-condensed text-[1.375rem] font-bold">{brand.name}</h3>
-                <ul className="mt-1 flex flex-col gap-1">
-                  {who.map(({ org, role, basis }) =>
-                    org ? (
-                      <li key={`${org.id}${role}`}>
-                        <Link href={orgPath(org)}>{org.name}</Link>{" "}
-                        <span className="text-[0.875rem] text-muted">
-                          · {tOr(`gear.role.${role}`, "gear.role.dealer")}
-                          {" · "}
-                          {basis === "brand"
-                            ? t("gear.basisBrand", { brand: brand.name })
-                            : t("gear.basisSelf")}
-                        </span>
-                      </li>
-                    ) : null,
-                  )}
-                </ul>
-                {brand.dealerPage && (
-                  <p className="mt-2 text-[0.9375rem]">
-                    <Anchor href={brand.dealerPage.url}>
-                      {t("gear.dealerPage", { brand: brand.name })}
-                    </Anchor>
-                  </p>
-                )}
-              </li>
-            ))}
-          </ul>
-          <p className="text-[0.9375rem] text-muted">{t("gear.brandsNote")}</p>
-          <Link
-            href={`/${country.code.toLowerCase()}/gear/shops`}
-            className="self-start font-semibold"
+      <section aria-labelledby="other-brands" className="flex flex-col gap-4" data-testid="brands">
+        <h2 id="other-brands" className="font-condensed text-[1.5rem] font-bold">
+          {t("gear.otherBrandsHeading")}
+        </h2>
+        <p>{t("gear.otherBrandsIntro", { country: country.name })}</p>
+        <GroupNav groups={otherGroups} label={t("gear.otherGroupsNav")} />
+        {otherGroups.map((g) => (
+          <GroupSection key={g.key} group={g} countryCode={country.code} sellers={sellers} />
+        ))}
+        {ungrouped.length > 0 && (
+          <section
+            aria-labelledby="brands-more-title"
+            className="flex flex-col gap-3"
+            data-testid="brand-group"
           >
-            {t("gear.findByType")}
-          </Link>
-        </>
-      )}
+            <h3 id="brands-more-title" className="font-condensed text-[1.375rem] font-bold">
+              {t("gear.moreBrandsHeading")}
+            </h3>
+            <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              {ungrouped.map((b) => (
+                <BrandCard
+                  key={b.id}
+                  brand={b}
+                  countryCode={country.code}
+                  sellers={sellers.get(b.id)}
+                />
+              ))}
+            </ul>
+          </section>
+        )}
+        <p className="text-[0.9375rem] text-muted">{t("gear.otherNote")}</p>
+        <Link
+          href={`/${country.code.toLowerCase()}/gear/shops`}
+          className="self-start font-semibold"
+        >
+          {t("gear.findByType")}
+        </Link>
+      </section>
     </div>
   );
 }
 
-/** One main brand: what it makes, where it is based, and its own dealer list (D98). */
-function BrandCard({ brand, countryCode }: { brand: Brand; countryCode: string }) {
+interface Seller {
+  org: Organisation;
+  role: DistributorRole;
+  basis: "brand" | "self";
+}
+
+/** Buttons that jump to each group on the page, with how many brands it has. */
+function GroupNav({
+  groups,
+  label,
+  extra,
+}: {
+  groups: { key: BrandGroupKey; brands: Brand[] }[];
+  label: string;
+  extra?: { href: string; label: string };
+}) {
+  if (groups.length === 0) return null;
+  return (
+    <nav aria-label={label} data-testid="brand-group-nav">
+      <ul className="flex flex-wrap gap-2">
+        {groups.map((g) => (
+          <li key={g.key}>
+            <a href={`#brands-${g.key}`} className={linkButton}>
+              {t(`gear.group.${g.key}.title`)}
+              <span className="text-[0.875rem] font-normal text-muted">{g.brands.length}</span>
+            </a>
+          </li>
+        ))}
+        {extra && (
+          <li>
+            <a href={extra.href} className={linkButton}>
+              {extra.label}
+            </a>
+          </li>
+        )}
+      </ul>
+    </nav>
+  );
+}
+
+function GroupSection({
+  group,
+  countryCode,
+  sellers,
+}: {
+  group: { key: BrandGroupKey; brands: Brand[] };
+  countryCode: string;
+  sellers?: Map<string, Seller[]>;
+}) {
+  return (
+    <section
+      id={`brands-${group.key}`}
+      aria-labelledby={`brands-${group.key}-title`}
+      className="flex scroll-mt-24 flex-col gap-3"
+      data-testid="brand-group"
+    >
+      <div>
+        <h3 id={`brands-${group.key}-title`} className="font-condensed text-[1.375rem] font-bold">
+          {t(`gear.group.${group.key}.title`)}
+        </h3>
+        <p className="text-muted">{t(`gear.group.${group.key}.text`)}</p>
+      </div>
+      <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {group.brands.map((b) => (
+          <BrandCard key={b.id} brand={b} countryCode={countryCode} sellers={sellers?.get(b.id)} />
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+/** One brand: what it makes, where it is based, its own dealer list, and who sells it here (D98). */
+function BrandCard({
+  brand,
+  countryCode,
+  sellers,
+}: {
+  brand: Brand;
+  countryCode: string;
+  sellers?: Seller[];
+}) {
   const local = brand.basedIn === countryCode;
   return (
     <li className={`${card} flex flex-col gap-2`} data-testid="brand-card">
@@ -199,7 +250,7 @@ function BrandCard({ brand, countryCode }: { brand: Brand; countryCode: string }
         <h4 className="text-[1.0625rem] font-bold">{brand.name}</h4>
         {brand.basedIn && (
           <p className={`text-[0.875rem] ${local ? "font-semibold text-good-text" : "text-muted"}`}>
-            {t("gear.basedIn", { country: regionNames.of(brand.basedIn) ?? brand.basedIn })}
+            {regionNames.of(brand.basedIn) ?? brand.basedIn}
           </p>
         )}
       </div>
@@ -215,21 +266,42 @@ function BrandCard({ brand, countryCode }: { brand: Brand; countryCode: string }
           ))}
         </ul>
       )}
+      {sellers && sellers.length > 0 && (
+        <div className="text-[0.9375rem]">
+          <p className="font-semibold">{t("gear.soldHere")}</p>
+          <ul className="flex flex-col gap-0.5">
+            {sellers.map(({ org, role, basis }) => (
+              <li key={`${org.id}${role}`}>
+                <Link href={orgPath(org)}>{org.name}</Link>{" "}
+                <span className="text-[0.8125rem] text-muted">
+                  · {tOr(`gear.role.${role}`, "gear.role.dealer")}
+                  {" · "}
+                  {basis === "brand"
+                    ? t("gear.basisBrand", { brand: brand.name })
+                    : t("gear.basisSelf")}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
       <p className="mt-auto pt-1">
         {brand.dealerPage ? (
           <Anchor href={brand.dealerPage.url} className="font-semibold">
-            {t("gear.dealersButton")}
+            {t(brand.officialList ? "gear.dealersButton" : "gear.brandDealersButton")}
             <span className="sr-only"> {t("gear.forBrand", { brand: brand.name })}</span>
           </Anchor>
-        ) : (
+        ) : brand.website ? (
           <>
-            <span className="text-[0.9375rem] text-muted">{t("gear.noDealerShort")} </span>
+            {brand.officialList && (
+              <span className="text-[0.9375rem] text-muted">{t("gear.noDealerShort")} </span>
+            )}
             <Anchor href={brand.website} className="font-semibold">
-              {t("gear.contactBrand")}
+              {t(brand.officialList ? "gear.contactBrand" : "gear.brandWebsite")}
               <span className="sr-only"> {brand.name}</span>
             </Anchor>
           </>
-        )}
+        ) : null}
       </p>
     </li>
   );

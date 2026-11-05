@@ -115,9 +115,9 @@ test("gear: brands lead to their dealers, and used-gear advice links to SAFA", a
     .getByRole("listitem")
     .filter({ has: page.getByRole("heading") });
   expect(await brands.count()).toBeGreaterThan(10);
-  await expect(page.getByRole("heading", { name: "Flymaster" }).locator("..")).toContainText(
-    "Cloudbase Paragliding",
-  );
+  await expect(
+    page.getByTestId("brands").getByTestId("brand-card").filter({ hasText: "Flymaster" }).first(),
+  ).toContainText("Cloudbase Paragliding");
   await page.goto("au/gear/used/");
   await expect(page.getByRole("link", { name: /advice on buying equipment/ })).toHaveAttribute(
     "href",
@@ -300,7 +300,7 @@ test("Where to buy: main brands are grouped by kind of flying, with facts from t
     group(title)
       .getByTestId("brand-card")
       .filter({ has: page.getByRole("heading", { name, exact: true }) });
-  await expect(card("Hang gliders", "Moyes")).toContainText("Based in Australia");
+  await expect(card("Hang gliders", "Moyes")).toContainText("Australia");
   await expect(
     card("Hang gliders", "Moyes").getByRole("link", { name: /Official dealers/ }),
   ).toHaveAttribute("href", /moyes\.com\.au/);
@@ -331,9 +331,27 @@ test("Where to buy: main brands point to their own official dealer lists; other 
   const brand = (name: string) =>
     page
       .getByTestId("brands")
-      .locator("li")
-      .filter({ has: page.getByRole("heading", { name }) });
-  await expect(brand("Ozone")).toHaveCount(0);
+      .getByTestId("brand-card")
+      .filter({ has: page.getByRole("heading", { name, exact: true }) })
+      .first();
+  await expect(
+    page.getByTestId("brands").getByRole("heading", { name: "Ozone", exact: true }),
+  ).toHaveCount(0);
+  // Instruments are grouped too, and New Zealand sees the same brands (D98).
+  await expect(brand("BlueFly")).toContainText("Australia");
   await expect(brand("Flymaster")).toContainText("Cloudbase Paragliding");
   await expect(brand("Flymaster")).toContainText(/as the business states|listed by Flymaster/);
+});
+
+test("Where to buy in New Zealand shows the same brand groups for other gear (D98)", async ({
+  page,
+}) => {
+  await page.goto("nz/gear/where-to-buy/");
+  const instruments = page
+    .getByTestId("brands")
+    .getByTestId("brand-group")
+    .filter({ has: page.getByRole("heading", { name: "Instruments", exact: true }) });
+  await expect(
+    instruments.getByTestId("brand-card").filter({ hasText: "XC Tracer" }),
+  ).toBeVisible();
 });

@@ -68,6 +68,9 @@
   dealerPage:
     url: https://www.fly-air3.com/en/buy-shop-store-paragliding-variometer/air3-partners/
     checked: 2026-10-14
+  website: https://www.fly-air3.com/
+  makes: [instruments, accessories]
+  basedIn: BE
 - name: Airborne
   distributors:
     - org: org:au:dtk-microlights
@@ -121,6 +124,9 @@
       basis: self
       source: https://www.flymanilla.com/
       checked: 2026-10-14
+  website: http://www.ascentvario.com/
+  makes: [instruments, accessories]
+  basedIn: US
 - name: BF
   distributors:
     - org: org:au:seq-paragliding
@@ -200,6 +206,9 @@
   dealerPage:
     url: https://finsterwalder-charly.de/en/contact/country-agencies-abroad.html
     checked: 2026-10-14
+  website: https://finsterwalder-charly.de/
+  makes: [helmets, accessories]
+  basedIn: DE
 - name: Colorful Sky
   distributors:
     - org: org:au:seq-paragliding
@@ -357,6 +366,9 @@
   dealerPage:
     url: https://www.flymaster.net/distributors
     checked: 2026-10-14
+  website: https://www.flymaster.net/
+  makes: [instruments, accessories]
+  basedIn: PT
 - name: Flytec
   distributors:
     - org: org:au:hang-gliding-wa
@@ -397,6 +409,9 @@
   dealerPage:
     url: https://www.garmin.com/en-AU/dealerlocator
     checked: 2026-10-14
+  website: https://www.garmin.com/
+  makes: [instruments]
+  basedIn: US
 - name: Gin
   distributors:
     [
@@ -476,6 +491,9 @@
   dealerPage:
     url: https://www.icom-australia.com/where_to_buy/
     checked: 2026-10-14
+  website: https://www.icomjapan.com/
+  makes: [radios]
+  basedIn: JP
 - name: Kortel
   distributors:
     - org: org:au:cloudbase-paragliding
@@ -542,6 +560,9 @@
   dealerPage:
     url: https://www.lynx-avionics.com/distributors/
     checked: 2026-10-14
+  website: https://www.lynx-avionics.com/
+  makes: [radios, helmets, accessories]
+  basedIn: GB
 - name: MacFly
   distributors:
     - org: org:au:high-adventure
@@ -587,6 +608,9 @@
   dealerPage:
     url: https://microavionics.com/pages/global-distributors
     checked: 2026-10-14
+  website: https://microavionics.com/
+  makes: [radios, helmets, accessories]
+  basedIn: GB
 - name: MipBip
   distributors:
     - org: org:au:airology
@@ -653,6 +677,9 @@
   dealerPage:
     url: https://naviter.com/naviter-dealers-for-free-flight/
     checked: 2026-10-14
+  website: https://naviter.com/
+  makes: [instruments]
+  basedIn: SI
 - name: Neo
   distributors:
     [
@@ -1023,6 +1050,9 @@
           checked: 2026-10-14
         }
     ]
+  website: https://www.syride.com/
+  makes: [instruments]
+  basedIn: FR
 - name: Triple Seven
   distributors:
     - org: org:au:melbourne-paragliding
@@ -1154,6 +1184,9 @@
     url: https://www.xctracer.com/reseller
     checked: 2026-10-14
 
+  website: https://www.xctracer.com/
+  makes: [instruments, accessories]
+  basedIn: CH
 # Main brands added 2026-11-05 from each brand's own website (D95, D96).
 - name: Aeros
   distributors: []
@@ -1291,3 +1324,33 @@
   basedIn: ES
   website: https://www.windtech.es/en/index.html
   noDealerListChecked: 2026-11-05
+
+# Instrument makers added 2026-11-05 from each brand's own website (D98).
+- name: BlueFly
+  distributors: []
+  website: https://www.blueflyvario.com/
+  makes: [instruments]
+  basedIn: AU
+- name: Digifly
+  distributors: []
+  dealerPage:
+    url: https://digifly.com/distributori-autorizzati/
+    checked: 2026-11-05
+  website: https://digifly.com/
+  makes: [instruments]
+  basedIn: IT
+- name: Skybean
+  distributors: []
+  website: https://skybean.eu/
+  makes: [instruments, accessories]
+  basedIn: SK
+- name: Skytraxx
+  distributors: []
+  website: https://www.skytraxx.eu/
+  makes: [instruments, accessories]
+  basedIn: DE
+- name: Stodeus
+  distributors: []
+  website: https://www.stodeus.com/
+  makes: [instruments]
+  basedIn: FR

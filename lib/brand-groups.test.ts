@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { groupBrands, sortMakes } from "./brand-groups";
+import { groupBrands, OTHER_GROUPS, sortMakes } from "./brand-groups";
 import type { BrandMake } from "./types";
 
 const b = (name: string, makes?: BrandMake[]) => ({ name, makes });
@@ -32,5 +32,19 @@ describe("sortMakes", () => {
       "reserves",
       "speed-wings",
     ]);
+  });
+});
+
+describe("groupBrands with other gear", () => {
+  it("groups instruments, radios and helmets, leaving out main equipment", () => {
+    const groups = groupBrands(
+      [
+        b("Vario", ["instruments"]),
+        b("Lid", ["helmets", "accessories"]),
+        b("Wing", ["paragliders"]),
+      ],
+      OTHER_GROUPS,
+    );
+    expect(groups.map((g) => g.key)).toEqual(["instruments", "helmets", "accessories"]);
   });
 });

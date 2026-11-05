@@ -416,6 +416,11 @@ export const brandMakeSchema = z.enum([
   "hang-gliders",
   "paramotors",
   "engines",
+  "instruments",
+  "radios",
+  "helmets",
+  "accessories",
+  "microlight",
 ]);
 
 export const brandsFileSchema = z

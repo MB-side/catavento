@@ -308,7 +308,12 @@ export type BrandMake =
   | "reserves"
   | "hang-gliders"
   | "paramotors"
-  | "engines";
+  | "engines"
+  | "instruments"
+  | "radios"
+  | "helmets"
+  | "accessories"
+  | "microlight";
 
 /** One business's link to a brand, for its card and profile (D84). */
 export interface BrandLink {

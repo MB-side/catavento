@@ -855,6 +855,20 @@
       "speed-wings": {
         "title": "Speed wings and mini wings",
         "text": "Small, fast wings for speed flying and speed riding."
+      },
+      "instruments": {
+        "title": "Instruments",
+        "text": "Varios, GPS and flight computers, and trackers."
+      },
+      "radios": { "title": "Radios and headsets", "text": "Radios, headsets and push-to-talk." },
+      "helmets": { "title": "Helmets", "text": "Helmets made for free flight." },
+      "accessories": {
+        "title": "Accessories",
+        "text": "Carabiners, speed bars, flight decks, bags and more."
+      },
+      "microlight": {
+        "title": "Trikes and microlights",
+        "text": "Trikes, trike wings and microlight parts."
       }
     },
     "make": {
@@ -865,20 +879,31 @@
       "reserves": "Reserves",
       "hang-gliders": "Hang gliders",
       "paramotors": "Paramotors",
-      "engines": "Engines"
+      "engines": "Engines",
+      "instruments": "Instruments",
+      "radios": "Radios",
+      "helmets": "Helmets",
+      "accessories": "Accessories",
+      "microlight": "Microlight"
     },
     "makesLabel": "Makes",
-    "basedIn": "Based in {country}",
     "dealersButton": "Official dealers",
     "forBrand": "for {brand}",
     "noDealerShort": "No dealer list.",
-    "groupsNote": "What each brand makes and where it is based are taken from its own website. Brands are listed A to Z: Catavento doesn't rank them.",
+    "groupsNote": "What each brand makes and its home country are taken from its own website. Brands are listed A to Z: Catavento doesn't rank them.",
     "allBrandsShort": "All brands A to Z",
     "allBrandsHeading": "All main brands, A to Z",
     "officialDealers": "official dealers",
     "noDealerList": "no dealer list we could find.",
     "contactBrand": "Contact the brand",
-    "otherBrandsHeading": "Instruments, radios, helmets and other gear"
+    "otherBrandsHeading": "Instruments, radios, helmets and other gear",
+    "otherBrandsIntro": "Where a brand publishes its own dealer list, we link to it. Under each brand, the businesses in {country} that sell it, as the brand or the business publishes.",
+    "otherGroupsNav": "Other gear by type",
+    "moreBrandsHeading": "More brands",
+    "soldHere": "Sold here by",
+    "brandDealersButton": "Brand's dealer list",
+    "brandWebsite": "Brand's website",
+    "otherNote": "Each business line says how we know: the brand lists the business, or the business says so on its own website. Brands not listed may still be available: ask the shops."
   },
   "whatsOn": {
     "intro": "Competitions, fly-ins, club events and courses, from the national body and club websites.",

@@ -64,6 +64,7 @@
   {
     "id": "brand:air3",
     "name": "AIR3",
+    "website": "https://www.fly-air3.com/",
     "distributors": [
       {
         "orgId": "org:au:bright-flight",
@@ -83,7 +84,12 @@
     "dealerPage": {
       "url": "https://www.fly-air3.com/en/buy-shop-store-paragliding-variometer/air3-partners/",
       "checked": "2026-10-14"
-    }
+    },
+    "makes": [
+      "instruments",
+      "accessories"
+    ],
+    "basedIn": "BE"
   },
   {
     "id": "brand:airborne",
@@ -136,6 +142,7 @@
   {
     "id": "brand:ascent",
     "name": "Ascent",
+    "website": "http://www.ascentvario.com/",
     "distributors": [
       {
         "orgId": "org:au:manilla-paragliding",
@@ -144,7 +151,12 @@
         "source": "https://www.flymanilla.com/",
         "checked": "2026-10-14"
       }
-    ]
+    ],
+    "makes": [
+      "instruments",
+      "accessories"
+    ],
+    "basedIn": "US"
   },
   {
     "id": "brand:axis",
@@ -189,8 +201,19 @@
     "basedIn": "AT"
   },
   {
+    "id": "brand:bluefly",
+    "name": "BlueFly",
+    "website": "https://www.blueflyvario.com/",
+    "distributors": [],
+    "makes": [
+      "instruments"
+    ],
+    "basedIn": "AU"
+  },
+  {
     "id": "brand:charly",
     "name": "Charly",
+    "website": "https://finsterwalder-charly.de/",
     "distributors": [
       {
         "orgId": "org:au:planet-paragliding",
@@ -236,7 +259,12 @@
     "dealerPage": {
       "url": "https://finsterwalder-charly.de/en/contact/country-agencies-abroad.html",
       "checked": "2026-10-14"
-    }
+    },
+    "makes": [
+      "helmets",
+      "accessories"
+    ],
+    "basedIn": "DE"
   },
   {
     "id": "brand:colorful-sky",
@@ -258,6 +286,20 @@
       "reserves"
     ],
     "basedIn": "CH"
+  },
+  {
+    "id": "brand:digifly",
+    "name": "Digifly",
+    "website": "https://digifly.com/",
+    "distributors": [],
+    "dealerPage": {
+      "url": "https://digifly.com/distributori-autorizzati/",
+      "checked": "2026-11-05"
+    },
+    "makes": [
+      "instruments"
+    ],
+    "basedIn": "IT"
   },
   {
     "id": "brand:dudek",
@@ -336,6 +378,7 @@
   {
     "id": "brand:flymaster",
     "name": "Flymaster",
+    "website": "https://www.flymaster.net/",
     "distributors": [
       {
         "orgId": "org:au:fly2base",
@@ -374,7 +417,12 @@
     "dealerPage": {
       "url": "https://www.flymaster.net/distributors",
       "checked": "2026-10-14"
-    }
+    },
+    "makes": [
+      "instruments",
+      "accessories"
+    ],
+    "basedIn": "PT"
   },
   {
     "id": "brand:flytec",
@@ -436,6 +484,7 @@
   {
     "id": "brand:garmin",
     "name": "Garmin",
+    "website": "https://www.garmin.com/",
     "distributors": [
       {
         "orgId": "org:au:sydney-microlights",
@@ -448,7 +497,11 @@
     "dealerPage": {
       "url": "https://www.garmin.com/en-AU/dealerlocator",
       "checked": "2026-10-14"
-    }
+    },
+    "makes": [
+      "instruments"
+    ],
+    "basedIn": "US"
   },
   {
     "id": "brand:gin",
@@ -510,6 +563,7 @@
   {
     "id": "brand:icom",
     "name": "Icom",
+    "website": "https://www.icomjapan.com/",
     "distributors": [
       {
         "orgId": "org:au:adventure-plus-paragliding",
@@ -550,7 +604,11 @@
     "dealerPage": {
       "url": "https://www.icom-australia.com/where_to_buy/",
       "checked": "2026-10-14"
-    }
+    },
+    "makes": [
+      "radios"
+    ],
+    "basedIn": "JP"
   },
   {
     "id": "brand:independence",
@@ -636,6 +694,7 @@
   {
     "id": "brand:lynx",
     "name": "Lynx",
+    "website": "https://www.lynx-avionics.com/",
     "distributors": [
       {
         "orgId": "org:au:sydney-microlights",
@@ -648,7 +707,13 @@
     "dealerPage": {
       "url": "https://www.lynx-avionics.com/distributors/",
       "checked": "2026-10-14"
-    }
+    },
+    "makes": [
+      "radios",
+      "helmets",
+      "accessories"
+    ],
+    "basedIn": "GB"
   },
   {
     "id": "brand:mac-para",
@@ -698,6 +763,7 @@
   {
     "id": "brand:micro-avionics",
     "name": "Micro Avionics",
+    "website": "https://microavionics.com/",
     "distributors": [
       {
         "orgId": "org:au:high-adventure",
@@ -717,7 +783,13 @@
     "dealerPage": {
       "url": "https://microavionics.com/pages/global-distributors",
       "checked": "2026-10-14"
-    }
+    },
+    "makes": [
+      "radios",
+      "helmets",
+      "accessories"
+    ],
+    "basedIn": "GB"
   },
   {
     "id": "brand:miniplane",
@@ -764,6 +836,7 @@
   {
     "id": "brand:naviter",
     "name": "Naviter",
+    "website": "https://naviter.com/",
     "distributors": [
       {
         "orgId": "org:au:hang-gliding-wa",
@@ -804,7 +877,11 @@
     "dealerPage": {
       "url": "https://naviter.com/naviter-dealers-for-free-flight/",
       "checked": "2026-10-14"
-    }
+    },
+    "makes": [
+      "instruments"
+    ],
+    "basedIn": "SI"
   },
   {
     "id": "brand:neo",
@@ -996,6 +1073,17 @@
     "basedIn": "CZ"
   },
   {
+    "id": "brand:skybean",
+    "name": "Skybean",
+    "website": "https://skybean.eu/",
+    "distributors": [],
+    "makes": [
+      "instruments",
+      "accessories"
+    ],
+    "basedIn": "SK"
+  },
+  {
     "id": "brand:skyman",
     "name": "Skyman",
     "website": "https://www.skyman.aero/",
@@ -1010,6 +1098,17 @@
       "speed-wings",
       "harnesses",
       "reserves"
+    ],
+    "basedIn": "DE"
+  },
+  {
+    "id": "brand:skytraxx",
+    "name": "Skytraxx",
+    "website": "https://www.skytraxx.eu/",
+    "distributors": [],
+    "makes": [
+      "instruments",
+      "accessories"
     ],
     "basedIn": "DE"
   },
@@ -1047,6 +1146,16 @@
       "reserves"
     ],
     "basedIn": "BR"
+  },
+  {
+    "id": "brand:stodeus",
+    "name": "Stodeus",
+    "website": "https://www.stodeus.com/",
+    "distributors": [],
+    "makes": [
+      "instruments"
+    ],
+    "basedIn": "FR"
   },
   {
     "id": "brand:supair",
@@ -1087,6 +1196,7 @@
   {
     "id": "brand:syride",
     "name": "Syride",
+    "website": "https://www.syride.com/",
     "distributors": [
       {
         "orgId": "org:au:fly2base",
@@ -1128,7 +1238,11 @@
         "source": "https://skyoutparagliding.com/",
         "checked": "2026-10-14"
       }
-    ]
+    ],
+    "makes": [
+      "instruments"
+    ],
+    "basedIn": "FR"
   },
   {
     "id": "brand:triple-seven",
@@ -1234,6 +1348,7 @@
   {
     "id": "brand:xc-tracer",
     "name": "XC Tracer",
+    "website": "https://www.xctracer.com/",
     "distributors": [
       {
         "orgId": "org:au:fly2base",
@@ -1244,6 +1359,11 @@
     "dealerPage": {
       "url": "https://www.xctracer.com/reseller",
       "checked": "2026-10-14"
-    }
+    },
+    "makes": [
+      "instruments",
+      "accessories"
+    ],
+    "basedIn": "CH"
   }
 ]
