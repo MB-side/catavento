@@ -1,19 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CalendarDays, Compass, Map as MapIcon, Search, Wrench } from "lucide-react";
+import { ArrowRight, Search } from "lucide-react";
 import { LogoMark } from "@/components/brand/Logo";
 import { YourSitesStrip } from "@/components/domain/YourSitesStrip";
-import { defaultCountrySegment } from "@/lib/country-codes";
-import { getCountry, getEnabledCountries } from "@/lib/country";
-import { eventSummary, nationalNotices, upcomingEvents } from "@/lib/events-view";
-import { formatDate } from "@/lib/format";
+import { getEnabledCountries } from "@/lib/country";
 import { getCounts, getOverviewRegions, type CountryCounts } from "@/lib/data";
 import { worldPath } from "@/lib/overview";
-import { t, tCount, type MessageKey } from "@/lib/messages";
+import { visitingPath } from "@/lib/visiting";
+import { t, tCount } from "@/lib/messages";
 import { absoluteUrl, withBasePath } from "@/lib/paths";
 import { homeTitle } from "@/lib/seo";
 import { siteConfig } from "@/site.config";
-import { Anchor } from "@/components/ui/anchor";
 
 export const metadata: Metadata = {
   title: { absolute: homeTitle },
@@ -21,37 +18,6 @@ export const metadata: Metadata = {
 };
 
 type CountKey = "counts.sites" | "counts.schools" | "counts.gear";
-
-const sections: {
-  label: MessageKey;
-  text: MessageKey;
-  path: string;
-  Icon: typeof MapIcon;
-  count?: [CountKey, keyof CountryCounts];
-}[] = [
-  {
-    label: "nav.sites",
-    text: "home.sites",
-    path: "/sites",
-    Icon: MapIcon,
-    count: ["counts.sites", "sites"],
-  },
-  { label: "nav.whatsOn", text: "home.whatsOn", path: "/whats-on", Icon: CalendarDays },
-  {
-    label: "nav.gear",
-    text: "home.gear",
-    path: "/gear",
-    Icon: Wrench,
-    count: ["counts.gear", "gear"],
-  },
-  {
-    label: "nav.newToFlying",
-    text: "home.newToFlying",
-    path: "/new-to-flying",
-    Icon: Compass,
-    count: ["counts.schools", "schools"],
-  },
-];
 
 /** "27 clubs · 36 schools": only the counts that are above zero. */
 function countLine(counts: CountryCounts): string {
@@ -73,9 +39,7 @@ function countLine(counts: CountryCounts): string {
  * visitors with saved sites on this device (M5, client-side only), and "Coming up" events (M6).
  */
 export default function HomePage() {
-  const country = defaultCountrySegment;
   const countries = getEnabledCountries();
-  const homeCounts = getCounts(country);
 
   return (
     <div className="flex flex-col gap-10">
@@ -122,35 +86,6 @@ export default function HomePage() {
         </form>
       </section>
 
-      <section aria-labelledby="sections">
-        <h2 id="sections" className="font-condensed text-[1.375rem] font-bold">
-          {t("home.sectionsHeading")}
-        </h2>
-        <ul className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {sections.map(({ label, text, path, Icon, count }) => (
-            <li key={path}>
-              <Link
-                href={`/${country}${path}/`}
-                className="flex h-full min-h-11 flex-col gap-1 rounded-[14px] border border-border bg-surface p-4 text-ink hover:border-link hover:text-ink lg:p-5"
-              >
-                <span className="flex items-center gap-2 font-condensed text-[1.25rem] font-bold">
-                  <Icon className="size-5 text-action" aria-hidden="true" />
-                  {t(label)}
-                </span>
-                <span className="text-muted">{t(text)}</span>
-                {count && homeCounts[count[1]] > 0 && (
-                  <span className="mt-auto pt-1 text-[0.875rem] font-semibold text-muted-strong">
-                    {tCount(count[0], homeCounts[count[1]])}
-                  </span>
-                )}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <ComingUp />
-
       <section aria-labelledby="countries">
         <h2 id="countries" className="font-condensed text-[1.375rem] font-bold">
           {t("home.countriesHeading")}
@@ -190,6 +125,11 @@ export default function HomePage() {
           {t("home.elsewhereHeading")}
         </h2>
         <p className="mt-1 max-w-3xl text-muted-strong">{t("home.elsewhereText")}</p>
+        <p className="mt-2">
+          <Link href={`${visitingPath()}/`} className="font-semibold">
+            {t("home.allDestinations")}
+          </Link>
+        </p>
         <ul className="mt-3 flex flex-wrap gap-2" data-testid="home-elsewhere">
           {getOverviewRegions().map((r) => (
             <li key={r.slug}>
@@ -215,56 +155,5 @@ export default function HomePage() {
         <p className="mt-1 text-muted-strong">{siteConfig.whyTheName}</p>
       </section>
     </div>
-  );
-}
-
-/** Coming up (D37): the next events and latest notices in the default country, when there are any. */
-function ComingUp() {
-  const country = getCountry(defaultCountrySegment);
-  if (!country) return null;
-  const zone = country.timezones[0] ?? "UTC";
-  const events = upcomingEvents(country, new Date().toISOString().slice(0, 10))
-    .slice(0, 3)
-    .map((e) => eventSummary(e, country));
-  const notices = nationalNotices(country).slice(0, 3);
-  if (events.length === 0 && notices.length === 0) return null;
-  return (
-    <section aria-labelledby="coming-up" className="grid gap-4 md:grid-cols-2">
-      <h2 id="coming-up" className="sr-only">
-        {t("home.comingUp")}
-      </h2>
-      {events.length > 0 && (
-        <div className="rounded-[14px] border border-border bg-surface p-4 lg:p-5">
-          <h3 className="font-condensed text-[1.375rem] font-bold">{t("home.comingUp")}</h3>
-          <ul className="mt-2 flex flex-col gap-1">
-            {events.map((e) => (
-              <li key={e.id}>
-                <Anchor href={e.url}>{e.title}</Anchor>{" "}
-                <span className="text-[0.875rem] text-muted">· {e.when}</span>
-              </li>
-            ))}
-          </ul>
-          <Link
-            href={`/${defaultCountrySegment}/whats-on`}
-            className="mt-2 inline-flex min-h-11 items-center font-semibold"
-          >
-            {t("pages.whatsOn.title")}
-          </Link>
-        </div>
-      )}
-      {notices.length > 0 && (
-        <div className="rounded-[14px] border border-border bg-surface p-4 lg:p-5">
-          <h3 className="font-condensed text-[1.375rem] font-bold">{t("home.latestNotices")}</h3>
-          <ul className="mt-2 flex flex-col gap-1">
-            {notices.map((n) => (
-              <li key={n.id}>
-                <Anchor href={n.url}>{n.title}</Anchor>{" "}
-                <span className="text-[0.875rem] text-muted">· {formatDate(n.date, zone)}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </section>
   );
 }

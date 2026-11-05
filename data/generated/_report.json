@@ -610,11 +610,6 @@
       {
         "code": "contact-dropped",
         "message": "2 unmatched Site Guide contacts not shown (a name with no link)"
-      },
-      {
-        "code": "id-removed",
-        "message": "site:au:vic:flowerdale-3-sisters was published before and is now gone; pin it in overrides.yaml if it was renamed",
-        "recordId": "site:au:vic:flowerdale-3-sisters"
       }
     ]
   },
