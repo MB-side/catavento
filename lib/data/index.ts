@@ -42,7 +42,6 @@ import type {
   OverviewRegion,
   OverviewSite,
   TourOperator,
-  VisitingCountry,
   VisitorHelp,
 } from "@/lib/types";
 
@@ -239,32 +238,4 @@ export function getCountryName(code: string): string | undefined {
       .flatMap((r) => r.countries)
       .find((c) => c.code === upper)?.name
   );
-}
-
-/**
- * Countries with a visiting-pilots page: the fully covered countries, then every overview country
- * that has a guide, someone helping on the ground, or tours going there.
- */
-export function getVisitingCountries(): VisitingCountry[] {
-  const home: VisitingCountry[] = getCountries()
-    .filter((c) => c.enabled)
-    .map((c) => ({ code: c.code, name: c.name, group: "home" }));
-  const homeCodes = new Set(home.map((c) => c.code));
-  const tourCodes = new Set(getTourOperators().flatMap((t) => t.destinations));
-  const helpCodes = new Set(getVisitorHelp().map((h) => h.country));
-  const seen = new Set<string>();
-  const overview = getOverviewRegions().flatMap((r) =>
-    r.countries
-      .filter((c) => !homeCodes.has(c.code))
-      .filter((c) => getGuide(c.code) || helpCodes.has(c.code) || tourCodes.has(c.code))
-      .filter((c) => !seen.has(c.code) && seen.add(c.code))
-      .map((c) => ({ code: c.code, name: c.name, group: r.slug })),
-  );
-  // Countries that only tours go to so far get a page too, named in English.
-  const regionName = new Intl.DisplayNames(["en"], { type: "region" });
-  const elsewhere = [...tourCodes]
-    .filter((code) => !homeCodes.has(code) && !seen.has(code))
-    .map((code) => ({ code, name: regionName.of(code) ?? code, group: "elsewhere" }))
-    .sort((a, b) => a.name.localeCompare(b.name));
-  return [...home, ...overview, ...elsewhere];
 }

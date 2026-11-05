@@ -2,7 +2,18 @@
 
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-import { CalendarDays, Compass, Map as MapIcon, Menu, Search, Star, Wrench, X } from "lucide-react";
+import {
+  CalendarDays,
+  Compass,
+  Globe,
+  ListChecks,
+  Map as MapIcon,
+  Menu,
+  Search,
+  Star,
+  Wrench,
+  X,
+} from "lucide-react";
 import { t } from "@/lib/messages";
 import { cn } from "@/lib/utils";
 import { desktopNav, isActive, navHref, phoneMenu, phoneTabs, type NavIcon } from "./nav-items";
@@ -10,16 +21,16 @@ import { useCurrentCountry } from "./useCurrentCountry";
 
 /** Desktop top-bar links: active item in `action` on `action-tint` (docs/06 §5). */
 export function DesktopNav() {
-  const { pathname, country } = useCurrentCountry();
+  const { pathname, country, sections } = useCurrentCountry();
   return (
     <nav aria-label={t("nav.label")} className="hidden lg:block">
       <ul className="flex items-center gap-1">
         {desktopNav.map((item) => {
-          const active = isActive(item, country, pathname);
+          const active = isActive(item, country, pathname, sections);
           return (
             <li key={item.label}>
               <Link
-                href={navHref(item, country)}
+                href={navHref(item, country, sections)}
                 aria-current={active ? "page" : undefined}
                 className={cn(
                   "inline-flex min-h-11 items-center rounded-[10px] px-3 text-[0.9375rem] font-semibold",
@@ -55,7 +66,7 @@ export function SearchLink({ className }: { className?: string }) {
 
 /** Phone top bar: search and the menu. New to flying is a bottom tab (D32). */
 export function PhoneTopActions() {
-  const { country, pathname } = useCurrentCountry();
+  const { country, pathname, sections } = useCurrentCountry();
   const menuRef = useRef<HTMLDetailsElement>(null);
 
   // Close the menu after navigating (the layout persists between pages).
@@ -84,7 +95,7 @@ export function PhoneTopActions() {
           {phoneMenu.map((item) => (
             <li key={item.label}>
               <Link
-                href={navHref(item, country)}
+                href={navHref(item, country, sections)}
                 className="flex min-h-11 items-center rounded-[10px] px-3 font-medium text-ink hover:bg-ground hover:text-ink"
               >
                 {t(item.label)}
@@ -103,11 +114,13 @@ const tabIcons: Record<NavIcon, typeof Star> = {
   whatsOn: CalendarDays,
   gear: Wrench,
   newToFlying: Compass,
+  rules: ListChecks,
+  destinations: Globe,
 };
 
 /** Phone bottom tab bar (D32): five tabs, icons above labels, tabs ≥ 56 px tall. */
 export function BottomTabBar() {
-  const { pathname, country } = useCurrentCountry();
+  const { pathname, country, sections } = useCurrentCountry();
   return (
     <nav
       aria-label={t("nav.phoneTabs")}
@@ -115,12 +128,12 @@ export function BottomTabBar() {
     >
       <ul className="mx-auto grid max-w-xl grid-cols-5">
         {phoneTabs.map((item) => {
-          const active = isActive(item, country, pathname);
+          const active = isActive(item, country, pathname, sections);
           const Icon = tabIcons[item.icon ?? "mySites"];
           return (
             <li key={item.label}>
               <Link
-                href={navHref(item, country)}
+                href={navHref(item, country, sections)}
                 aria-current={active ? "page" : undefined}
                 className={cn(
                   "flex min-h-14 flex-col items-center justify-center gap-0.5 px-1 text-center text-[0.75rem] leading-tight font-semibold",

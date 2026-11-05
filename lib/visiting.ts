@@ -39,9 +39,7 @@ export function sortHelp(help: VisitorHelp[]): VisitorHelp[] {
   return [...help].sort((a, b) => score(a) - score(b) || a.name.localeCompare(b.name));
 }
 
-/** Where a country's visiting page lives: the fully covered countries keep theirs in their own section. */
-export function visitingHref(c: { code: string; group: string }): string {
-  return c.group === "home"
-    ? `/${c.code.toLowerCase()}/visiting-pilots/`
-    : `${visitingPath(c.code)}/`;
+/** A country's page (D93): every country has one, at /<code>/. */
+export function visitingHref(c: { code: string }): string {
+  return `/${c.code.toLowerCase()}/`;
 }

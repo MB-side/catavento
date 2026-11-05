@@ -67,12 +67,12 @@ test("home starts with choosing a country, then destinations; country sections l
     "href",
     /\/visiting\/$/,
   );
-  const countries = page.getByRole("region", { name: "Browse by country" });
+  const countries = page.getByRole("region", { name: "Where are you flying?" });
   await expect(countries.getByRole("link", { name: /Australia/ })).toHaveAttribute(
     "href",
     /\/au\/$/,
   );
-  await expect(countries.getByRole("link", { name: /New Zealand.*Sample/ })).toBeVisible();
+  await expect(countries.getByRole("link", { name: /New Zealand.*Partial/ })).toBeVisible();
 
   await page.getByLabel("Search sites, clubs, schools and events").fill("Stanwell");
   await page.getByRole("search").getByRole("button", { name: "Search" }).click();
@@ -121,10 +121,10 @@ test("navigation reaches each section in the current country", async ({ page }) 
   if (isPhone(page)) {
     const tabs = page.getByRole("navigation", { name: "Sections" });
     for (const [label, path] of [
-      ["Sites", "nz/sites/"],
-      ["What's on", "nz/whats-on/"],
-      ["Gear", "nz/gear/"],
-      ["New to flying", "nz/new-to-flying/"],
+      ["Map", "nz/sites/"],
+      ["Before you fly", "nz/visiting-pilots/"],
+      ["Fly with someone", "nz/new-to-flying/"],
+      ["Destinations", "visiting/"],
       ["My Sites", "my-sites/"],
     ] as const) {
       await tabs.getByRole("link", { name: label, exact: true }).click();
@@ -143,9 +143,11 @@ test("navigation reaches each section in the current country", async ({ page }) 
     const nav = page.getByRole("navigation", { name: "Main" });
     for (const [label, path] of [
       ["Sites & map", "nz/sites/"],
-      ["What's on", "nz/whats-on/"],
+      ["Before you fly", "nz/visiting-pilots/"],
+      ["Fly with someone", "nz/new-to-flying/"],
       ["Gear", "nz/gear/"],
-      ["New to flying", "nz/new-to-flying/"],
+      ["What's on", "nz/whats-on/"],
+      ["Destinations", "visiting/"],
       ["My Sites", "my-sites/"],
     ] as const) {
       await nav.getByRole("link", { name: label }).click();
@@ -167,7 +169,7 @@ test("there is no Clubs section in the navigation (D31)", async ({ page }) => {
 test("interactive controls in the bars meet the 44 px touch target", async ({ page }) => {
   await page.goto("au/");
   const controls = page.locator(
-    "header a:visible, header summary:visible, [data-testid=prototype-banner] button, nav[aria-label=Sections] a:visible",
+    "[data-testid=site-header] a:visible, [data-testid=site-header] summary:visible, [data-testid=site-header] select, [data-testid=prototype-banner] button, nav[aria-label=Sections] a:visible",
   );
   const count = await controls.count();
   expect(count).toBeGreaterThan(3);

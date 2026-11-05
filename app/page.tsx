@@ -5,8 +5,9 @@ import { LogoMark } from "@/components/brand/Logo";
 import { YourSitesStrip } from "@/components/domain/YourSitesStrip";
 import { getEnabledCountries } from "@/lib/country";
 import { getCounts, getOverviewRegions, type CountryCounts } from "@/lib/data";
-import { worldPath } from "@/lib/overview";
-import { visitingPath } from "@/lib/visiting";
+import { isGroup, worldPath } from "@/lib/overview";
+import { visitingHref, visitingPath } from "@/lib/visiting";
+import { CoverageBadge } from "@/components/domain/CoverageBadge";
 import { t, tCount } from "@/lib/messages";
 import { absoluteUrl, withBasePath } from "@/lib/paths";
 import { homeTitle } from "@/lib/seo";
@@ -100,11 +101,9 @@ export default function HomePage() {
                 <span>
                   <span className="flex items-center gap-2 font-condensed text-[1.25rem] font-bold">
                     {c.name}
-                    {c.coverage === "sample" && (
-                      <span className="rounded-full bg-prototype-tint px-2 py-0.5 font-sans text-[0.75rem] font-semibold text-prototype-text">
-                        {t("home.sampleLabel")}
-                      </span>
-                    )}
+                    <span className="font-sans">
+                      <CoverageBadge coverage={c.coverage === "full" ? "full" : "partial"} />
+                    </span>
                   </span>
                   <span className="block text-muted">
                     {t("home.nationalBody", { name: c.nationalBody.name })}
@@ -134,7 +133,9 @@ export default function HomePage() {
           {getOverviewRegions().map((r) => (
             <li key={r.slug}>
               <Link
-                href={`${worldPath(r)}/`}
+                href={
+                  isGroup(r) ? `${worldPath(r)}/` : visitingHref(r.countries[0] ?? { code: "" })
+                }
                 className="inline-flex min-h-11 items-center rounded-full border border-border bg-surface px-4 font-semibold text-ink hover:border-link hover:text-ink"
               >
                 {r.name}

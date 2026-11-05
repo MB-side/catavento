@@ -521,11 +521,3 @@ export interface TourOperator {
   source: string;
   checked: string;
 }
-
-/** A country with a visiting-pilots page (D89). */
-export interface VisitingCountry {
-  code: string; // ISO code
-  name: string;
-  /** "home" for the fully covered countries, the overview region's slug, or "elsewhere" for tour-only countries. */
-  group: string;
-}

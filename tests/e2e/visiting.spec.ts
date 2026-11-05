@@ -17,38 +17,12 @@ test("the visiting hub lists Australia, New Zealand and overseas countries, and 
 }) => {
   await page.goto("visiting/");
   const home = page.getByTestId("visiting-home");
-  await expect(home.getByRole("link", { name: /Australia/ })).toHaveAttribute(
-    "href",
-    /\/au\/visiting-pilots\/$/,
-  );
+  await expect(home.getByRole("link", { name: /Australia/ })).toHaveAttribute("href", /\/au\/$/);
   await expect(home.getByRole("link", { name: /New Zealand/ })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Europe", level: 2 })).toBeVisible();
-  await expect(page.getByRole("link", { name: /^France/ })).toHaveAttribute(
-    "href",
-    /\/visiting\/fr\/$/,
-  );
+  await expect(page.getByRole("link", { name: /^France/ })).toHaveAttribute("href", /\/fr\/$/);
   if (visiting.tours.length > 0) await expect(page.getByTestId("tours-link")).toBeVisible();
   await expect(page.getByTestId("visitor-rules")).toContainText("IPPI");
-});
-
-test("a country page shows its rules, who helps on the ground, its tours and its sources", async ({
-  page,
-}) => {
-  await page.goto("visiting/fr/");
-  await expect(page.getByRole("heading", { name: "Visiting France", level: 1 })).toBeVisible();
-  await expect(page.getByTestId("visitor-rules").first()).toContainText("IPPI");
-  await expect(page.getByTestId("rules-notice").first()).toContainText("FFVL");
-  const help = visiting.help.filter((h) => h.country === "FR");
-  if (help.length > 0) {
-    await expect(page.getByTestId("visitor-help").locator("li.flex")).toHaveCount(help.length);
-    await expect(page.getByTestId("visitor-help")).toContainText("Source:");
-  }
-  const tours = visiting.tours.filter((t) => t.destinations.includes("FR"));
-  if (tours.length > 0)
-    await expect(page.getByTestId("tour-list").locator(":scope > li")).toHaveCount(tours.length);
-  // The map shows straight away, with France's sites.
-  await expect(page.getByRole("heading", { name: "Sites on the map" })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Sites in France on a map" }).first()).toBeVisible();
 });
 
 test("the tours page lists every operator", async ({ page }) => {
@@ -76,15 +50,7 @@ test("the Australian visiting page adds the rules for overseas pilots and help o
   await expect(page.getByRole("heading", { name: "Flying tours here" })).toBeVisible();
 });
 
-test("overview country pages link to their visiting page", async ({ page }) => {
-  await page.goto("world/europe/fr/");
-  await expect(page.getByRole("link", { name: /Visiting France/ })).toHaveAttribute(
-    "href",
-    /\/visiting\/fr\/$/,
-  );
-});
-
-for (const p of ["visiting/", "visiting/fr/", "visiting/tours/", "au/visiting-pilots/"]) {
+for (const p of ["visiting/tours/", "au/visiting-pilots/"]) {
   test(`no serious accessibility problems on /${p}`, async ({ page }) => {
     await page.goto(p);
     const results = await new AxeBuilder({ page })

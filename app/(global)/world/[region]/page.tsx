@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Forward } from "@/components/layout/Forward";
 import { ArrowRight } from "lucide-react";
 import { OverviewGuide } from "@/components/domain/OverviewGuide";
 import { OverviewMap } from "@/components/domain/OverviewMap";
-import { OverviewSiteList } from "@/components/domain/OverviewSiteList";
 import { PageHeader } from "@/components/layout/PageHeader";
 import {
   getGuide,
@@ -17,8 +17,7 @@ import { formatDate } from "@/lib/format";
 import { t, tCount } from "@/lib/messages";
 import { isGroup, mapDataPath, worldPath } from "@/lib/overview";
 import { pageMetadata } from "@/lib/seo";
-import { visitingPath } from "@/lib/visiting";
-import { hasVisitingPage } from "@/lib/visiting-pages";
+import { visitingHref, visitingPath } from "@/lib/visiting";
 
 export const dynamicParams = false;
 
@@ -42,13 +41,16 @@ export async function generateMetadata({
 
 const h2 = "font-condensed text-[1.5rem] font-bold";
 
-/** An overview region (D83): Europe with its countries, or a destination with its sites. */
+/**
+ * An overview region (D83): Europe, with a map of all its sites and a link to each country's page.
+ * A single-country destination forwards to that country's own page (D93).
+ */
 export default async function RegionPage({ params }: { params: Promise<{ region: string }> }) {
   const region = getOverviewRegion((await params).region);
   if (!region) notFound();
-  const group = isGroup(region);
-  const only = group ? undefined : region.countries[0];
-  const guide = getGuide(group ? region.slug : (only?.code ?? ""));
+  if (!isGroup(region))
+    return <Forward to={visitingHref({ code: region.countries[0]?.code ?? "" })} />;
+  const guide = getGuide(region.slug);
   const codes = new Set(region.countries.map((c) => c.code));
   const sites = getOverviewSites().filter((s) => codes.has(s.country));
   const names = Object.fromEntries(region.countries.map((c) => [c.code, c.name]));
@@ -58,7 +60,7 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
     <div className="flex flex-col gap-6">
       <PageHeader
         title={region.name}
-        crumb={{ href: "/world", label: t("pages.world.title") }}
+        crumb={{ href: `${visitingPath()}/`, label: t("pages.visiting.title") }}
         intro={t("world.overviewIntro")}
       >
         <p className="mt-2">
@@ -80,14 +82,6 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
         </div>
       </section>
 
-      {only && hasVisitingPage(only.code) && (
-        <p>
-          <Link href={`${visitingPath(only.code)}/`} className="font-semibold">
-            {t("visiting.fromWorld", { country: only.name })}
-          </Link>
-        </p>
-      )}
-
       <p className="rounded-[14px] bg-notice-tint p-4 text-notice-text">{t("site.disclaimer")}</p>
 
       <section aria-labelledby="map">
@@ -100,55 +94,35 @@ export default async function RegionPage({ params }: { params: Promise<{ region:
         </div>
       </section>
 
-      {group ? (
-        <section aria-labelledby="countries">
-          <h2 id="countries" className={h2}>
-            {t("world.countriesHeading")}
-          </h2>
-          <ul
-            className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3"
-            data-testid="world-countries"
-          >
-            {region.countries.map((c) => {
-              const n = sites.filter((s) => s.country === c.code).length;
-              const body = getGuide(c.code)?.nationalBody;
-              return (
-                <li key={c.code}>
-                  <Link
-                    href={`${worldPath(region, c.code)}/`}
-                    className="flex h-full min-h-11 items-center justify-between gap-3 rounded-[14px] border border-border bg-surface p-4 text-ink hover:border-link hover:text-ink"
-                  >
-                    <span>
-                      <span className="block font-condensed text-[1.125rem] font-bold">
-                        {c.name}
-                      </span>
-                      <span className="block text-[0.875rem] text-muted">
-                        {[body?.name, n > 0 ? tCount("counts.sites", n) : undefined]
-                          .filter(Boolean)
-                          .join(" · ")}
-                      </span>
+      <section aria-labelledby="countries">
+        <h2 id="countries" className={h2}>
+          {t("world.countriesHeading")}
+        </h2>
+        <ul className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3" data-testid="world-countries">
+          {region.countries.map((c) => {
+            const n = sites.filter((s) => s.country === c.code).length;
+            const body = getGuide(c.code)?.nationalBody;
+            return (
+              <li key={c.code}>
+                <Link
+                  href={visitingHref(c)}
+                  className="flex h-full min-h-11 items-center justify-between gap-3 rounded-[14px] border border-border bg-surface p-4 text-ink hover:border-link hover:text-ink"
+                >
+                  <span>
+                    <span className="block font-condensed text-[1.125rem] font-bold">{c.name}</span>
+                    <span className="block text-[0.875rem] text-muted">
+                      {[body?.name, n > 0 ? tCount("counts.sites", n) : undefined]
+                        .filter(Boolean)
+                        .join(" · ")}
                     </span>
-                    <ArrowRight className="size-5 shrink-0 text-action" aria-hidden="true" />
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </section>
-      ) : (
-        <section aria-labelledby="sites">
-          <h2 id="sites" className={h2}>
-            {t("world.sitesHeading")}
-          </h2>
-          <div className="mt-3">
-            {sites.length > 0 ? (
-              <OverviewSiteList sites={sites} dataPath={mapDataPath(region)} />
-            ) : (
-              <p className="text-muted">{t("world.sitesNone", { country: region.name })}</p>
-            )}
-          </div>
-        </section>
-      )}
+                  </span>
+                  <ArrowRight className="size-5 shrink-0 text-action" aria-hidden="true" />
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
 
       {checked && (
         <p className="text-[0.875rem] text-muted">

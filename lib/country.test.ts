@@ -38,7 +38,9 @@ describe("countryFromPath", () => {
   it("finds the country segment on country pages only", () => {
     expect(countryFromPath("/au/clubs/")).toBe("au");
     expect(countryFromPath("/nz")).toBe("nz");
+    expect(countryFromPath("/fr/")).toBe("fr");
     expect(countryFromPath("/about/")).toBeUndefined();
+    expect(countryFromPath("/visiting/")).toBeUndefined();
     expect(countryFromPath("/")).toBeUndefined();
   });
 });

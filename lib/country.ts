@@ -34,3 +34,8 @@ export async function countryFromParams(
 export function fullCoverageCountries(): Country[] {
   return getEnabledCountries().filter((c) => c.coverage === "full");
 }
+
+/** Route params for pages that exist only in the fully or partly covered countries (D93). */
+export function enabledCountryParams(): { country: string }[] {
+  return getEnabledCountries().map((c) => ({ country: c.code.toLowerCase() }));
+}

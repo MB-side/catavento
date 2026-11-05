@@ -1,7 +1,8 @@
 // sitemap.xml (docs/02 §7): every page, built at export time.
 import type { MetadataRoute } from "next";
 import { getEnabledCountries } from "@/lib/country";
-import { getOverviewRegions, getSites, getVisitingCountries } from "@/lib/data";
+import { getCountryProfiles } from "@/lib/country-profile";
+import { getOverviewRegions, getSites } from "@/lib/data";
 import { isGroup, worldPath } from "@/lib/overview";
 import { absoluteUrl } from "@/lib/paths";
 import { regionPath, sitePath } from "@/lib/sites";
@@ -40,15 +41,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     urls.push(...[...new Set(sites.map((s) => s.regionCode))].map(regionPath));
     urls.push(...sites.map(sitePath));
   }
-  urls.push(worldPath());
-  for (const region of getOverviewRegions()) {
-    urls.push(worldPath(region));
-    if (isGroup(region)) urls.push(...region.countries.map((c) => worldPath(region, c.code)));
-  }
+  // Every other country has one page (D93); Europe keeps its map of the whole region.
   urls.push(
-    ...getVisitingCountries()
-      .filter((c) => c.group !== "home")
-      .map((c) => `/visiting/${c.code.toLowerCase()}`),
+    ...getCountryProfiles()
+      .filter((p) => !p.country)
+      .map((p) => `/${p.code.toLowerCase()}`),
   );
+  for (const region of getOverviewRegions().filter(isGroup)) urls.push(worldPath(region));
   return urls.map((u) => ({ url: absoluteUrl(u) }));
 }

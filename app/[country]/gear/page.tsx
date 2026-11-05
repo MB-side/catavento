@@ -1,3 +1,4 @@
+import { enabledCountryParams } from "@/lib/country";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { countryPageMetadata } from "@/components/layout/CountryPage";
@@ -6,6 +7,11 @@ import { countryFromParams } from "@/lib/country";
 import { getBrands } from "@/lib/data";
 import { gearOrgs } from "@/lib/directory";
 import { t } from "@/lib/messages";
+
+// Only Australia and New Zealand have this section; other countries have one page (D93).
+export function generateStaticParams() {
+  return enabledCountryParams();
+}
 
 export function generateMetadata({ params }: PageProps<"/[country]/gear">) {
   return countryPageMetadata(params, "gear");

@@ -1,3 +1,4 @@
+import { enabledCountryParams } from "@/lib/country";
 import { notFound } from "next/navigation";
 import { kindLabels } from "@/components/domain/OrgCard";
 import { SchoolsExplorer, type SchoolSummary } from "@/components/domain/SchoolsExplorer";
@@ -9,6 +10,11 @@ import { priceFrom, schools } from "@/lib/directory";
 import { t, tOr } from "@/lib/messages";
 import { formatPrice } from "@/lib/money";
 import { pageMetadata } from "@/lib/seo";
+
+// Only Australia and New Zealand have this section; other countries have one page (D93).
+export function generateStaticParams() {
+  return enabledCountryParams();
+}
 
 export async function generateMetadata({ params }: PageProps<"/[country]/new-to-flying/schools">) {
   const country = await countryFromParams(params);

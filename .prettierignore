@@ -6,6 +6,7 @@ playwright-report/
 test-results/
 data/
 design/
+public/vendor/
 docs/
 *.md
 

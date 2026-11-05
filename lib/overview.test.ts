@@ -45,10 +45,10 @@ describe("overview paths (D83)", () => {
     expect(isGroup(nepal)).toBe(false);
   });
 
-  it("points a pin at the site's entry on its country's page, or the destination's page", () => {
+  it("points a pin at the site's entry on its country's page (D93)", () => {
     expect(siteAnchor(site)).toBe("site-123");
-    expect(overviewSiteHref(europe, site)).toBe("/world/europe/fr/#site-123");
-    expect(overviewSiteHref(nepal, { ...site, country: "NP" })).toBe("/world/nepal/#site-123");
+    expect(overviewSiteHref(europe, site)).toBe("/fr/#site-123");
+    expect(overviewSiteHref(nepal, { ...site, country: "NP" })).toBe("/np/#site-123");
   });
 });
 
@@ -64,14 +64,14 @@ describe("map records", () => {
       w: "W–NW",
       r: [{ fromDeg: 270, toDeg: 315 }],
       m: [{ fromDeg: 225, toDeg: 270 }],
-      h: "/world/europe/fr/#site-123",
+      h: "/fr/#site-123",
     });
     expect(mapSiteToSummary(m, "France")).toMatchObject({
       name: "Col",
       regionName: "France",
       windParsed: true,
       community: true,
-      href: "/world/europe/fr/#site-123",
+      href: "/fr/#site-123",
       externalHref: "https://www.paraglidingearth.com/?site=123",
     });
   });
