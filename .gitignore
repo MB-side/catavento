@@ -20,6 +20,9 @@ data/cache/
 # background research stays private (founder decision, 2026-10-10)
 docs/research/
 
+# copied from node_modules at build time (scripts/copy-vendor.ts)
+public/vendor/
+
 # misc
 .DS_Store
 *.pem

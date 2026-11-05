@@ -4,7 +4,8 @@
 // visitor opens it. Launches are clustered; tapping one shows the site with a link to its page.
 // The list beside it stays the main, accessible interface; if the map fails, the list still works.
 import { mainGroup } from "@/lib/map-view";
-import maplibregl, { type GeoJSONSource, type Map as MapLibreMap } from "maplibre-gl";
+import * as maplibregl from "maplibre-gl";
+import type { GeoJSONSource, Map as MapLibreMap } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { useEffect, useRef, useState } from "react";
 import { t } from "@/lib/messages";
@@ -99,6 +100,8 @@ export default function SitesMap({
     if (!container.current || mapRef.current) return;
     let map: MapLibreMap;
     try {
+      // MapLibre 6 loads its worker from a file copied into the site at build time (D92).
+      maplibregl.setWorkerUrl(withBasePath("/vendor/maplibre-gl-worker.js"));
       map = new maplibregl.Map({
         container: container.current,
         style: MAP_STYLE,
