@@ -193,3 +193,9 @@ for (const p of [
     expect(serious.map((v) => `${v.id}: ${v.help}`)).toEqual([]);
   });
 }
+
+test("the map's worker script ships with the site (MapLibre 6, D92)", async ({ request }) => {
+  const res = await request.get("vendor/maplibre-gl-worker.js");
+  expect(res.status()).toBe(200);
+  expect(res.headers()["content-type"]).toMatch(/javascript/);
+});
