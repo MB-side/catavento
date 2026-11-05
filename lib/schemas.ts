@@ -431,6 +431,7 @@ export const brandsFileSchema = z
       // The brand's own dealer or distributor list, linked from Where to buy (D84).
       dealerPage: z.object({ url: httpUrl, checked: z.iso.date() }).optional(),
       officialList: z.boolean().optional(), // D94
+      noDealerListChecked: z.iso.date().optional(), // D96: when we last found no dealer list
     }),
   )
   .nullable();

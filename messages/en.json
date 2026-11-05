@@ -790,7 +790,7 @@
       "service_agent": "Agent",
       "certified_service": "Certified service"
     },
-    "brandsNote": "For wings, harnesses, reserves, hang gliders and paramotors, we only show businesses named on the brand's own dealer list. For other gear, each line says whether the brand lists the business or the business says so itself. Brands not listed may still be available: ask the shops.",
+    "brandsNote": "Each line says how we know: the brand lists the business, or the business says so on its own website. Brands not listed may still be available: ask the shops.",
     "dealerPagesNote": "Brands keep their own lists of dealers and importers. Check there for the latest.",
     "dealerPage": "{brand}'s own dealer list",
     "usedIntro": "Used gear can be a good way to start, as long as it suits you and is in good condition. Before you buy, check:",
@@ -835,7 +835,12 @@
     "brandsLabel": "Brands",
     "basisBrand": "listed by {brand}",
     "basisSelf": "as the business states",
-    "noConfirmedDealer": "We couldn't confirm a dealer in {country} from {brand}'s own list. Check it directly:"
+    "mainBrandsHeading": "Wings, harnesses, reserves, hang gliders and paramotors",
+    "mainBrandsIntro": "Each brand lists its official dealers and importers on its own website. Contact them there: the brand's list is always the most up to date.",
+    "officialDealers": "official dealers",
+    "noDealerList": "no dealer list we could find.",
+    "contactBrand": "Contact the brand",
+    "otherBrandsHeading": "Instruments, radios, helmets and other gear"
   },
   "whatsOn": {
     "intro": "Competitions, fly-ins, club events and courses, from the national body and club websites.",

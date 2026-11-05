@@ -89,6 +89,7 @@ export interface BuildInputs {
     distributors: { org: string; role: Brand["distributors"][number]["role"]; basis?: "brand" | "self"; source?: string; checked?: string }[];
     dealerPage?: Brand["dealerPage"];
     officialList?: boolean;
+    noDealerListChecked?: string;
   }[];
   visiting: {
     help: (Omit<VisitorHelp, "id" | "name" | "orgId"> & { name?: string; org?: string })[];
@@ -324,9 +325,9 @@ export function buildData(input: BuildInputs): BuildOutputs {
         id: `brand:${slugify(b.name)}`,
         name: b.name,
         website: b.website,
-        // Main equipment brands show only businesses the brand itself lists (D94).
+        // Main equipment brands name no dealers: the brand's own list is the source (D94, D95).
         distributors: b.distributors.flatMap((d) => {
-          if (b.officialList && d.basis !== "brand") return [];
+          if (b.officialList) return [];
           const orgId = resolveOrgRef(d.org, withClubs);
           if (!orgId) warnings.push({ code: "brand-org-missing", message: `brands.yaml: ${b.name}: no organisation ${d.org}` });
           return orgId

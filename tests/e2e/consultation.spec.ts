@@ -151,7 +151,11 @@ test("a click on a link to another website is counted, naming only the site and 
   await page.route("https://www.nova.eu/**", (route) => route.fulfill({ body: "ok" }));
   await page.goto("au/gear/where-to-buy/");
   const popup = page.waitForEvent("popup");
-  await page.getByRole("link", { name: /Nova's own dealer list/ }).click();
+  await page
+    .getByTestId("main-brands")
+    .locator("li", { hasText: "Nova" })
+    .getByRole("link", { name: /official dealers/ })
+    .click();
   await popup;
   const counted = await page.evaluate(
     () => (window as unknown as { __counted: unknown[] }).__counted,

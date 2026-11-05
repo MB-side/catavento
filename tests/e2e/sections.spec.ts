@@ -106,17 +106,17 @@ test("the learning pathway links to the national body; New Zealand gets the shor
   expect((await request.get("nz/new-to-flying/costs/")).status()).toBe(404);
 });
 
-test("gear: brands lead to the businesses that sell them, and used-gear advice links to SAFA", async ({
-  page,
-}) => {
+test("gear: brands lead to their dealers, and used-gear advice links to SAFA", async ({ page }) => {
   await page.goto("au/gear/where-to-buy/");
+  // Main brands each point to their own list (D95); other gear lists the businesses that sell it.
+  expect(await page.getByTestId("main-brands").getByRole("listitem").count()).toBeGreaterThan(25);
   const brands = page
     .getByTestId("brands")
     .getByRole("listitem")
     .filter({ has: page.getByRole("heading") });
-  expect(await brands.count()).toBeGreaterThan(15);
-  await expect(page.getByRole("heading", { name: "Ozone" }).locator("..")).toContainText(
-    "Planet Paragliding",
+  expect(await brands.count()).toBeGreaterThan(10);
+  await expect(page.getByRole("heading", { name: "Flymaster" }).locator("..")).toContainText(
+    "Cloudbase Paragliding",
   );
   await page.goto("au/gear/used/");
   await expect(page.getByRole("link", { name: /advice on buying equipment/ })).toHaveAttribute(
@@ -279,45 +279,33 @@ test("Shops: schools that sell gear are marked and can be shown on their own", a
     page
       .getByTestId("org-card")
       .filter({ hasText: "Paratech" })
-      .getByText(/Brands:.*Skywalk/),
+      .getByText(/Brands:.*Flymaster/),
   ).toBeVisible();
 });
 
-test("Where to buy says how we know each business sells a brand", async ({ page }) => {
-  await page.goto("au/gear/where-to-buy/");
-  const gin = page
-    .getByTestId("brands")
-    .locator("li")
-    .filter({ has: page.getByRole("heading", { name: "Gin" }) });
-  await expect(gin).toContainText("Paragliding Queensland");
-  await expect(gin).toContainText(/as the business states|listed by Gin/);
-  // Each brand links to its own dealer list, in a new tab.
-  const nova = page
-    .getByTestId("brands")
-    .locator("li")
-    .filter({ has: page.getByRole("heading", { name: "Nova" }) });
-  await expect(nova.getByRole("link", { name: /Nova's own dealer list/ })).toHaveAttribute(
-    "href",
-    "https://www.nova.eu/en/try-buy/",
-  );
-});
-
-test("main brands list only businesses named on the brand's own dealer list (D94)", async ({
+test("Where to buy: main brands point to their own official dealer lists; other gear says how we know (D95)", async ({
   page,
 }) => {
   await page.goto("au/gear/where-to-buy/");
+  const main = page.getByTestId("main-brands");
+  for (const [name, url] of [
+    ["Nova", "https://www.nova.eu/en/try-buy/"],
+    ["Ozone", "https://flyozone.com/paragliders/find-a-dealer"],
+    ["Niviuk", "https://niviuk.com/en/dealers"],
+    ["Flare", "https://go-flare.com/partner/"],
+  ] as const) {
+    await expect(
+      main.locator("li", { hasText: name }).getByRole("link", { name: /official dealers/ }),
+    ).toHaveAttribute("href", url);
+  }
+  // No dealer names for main brands: the brand's own list is the source.
+  await expect(main).not.toContainText("Paragliding Shop");
   const brand = (name: string) =>
     page
       .getByTestId("brands")
       .locator("li")
       .filter({ has: page.getByRole("heading", { name }) });
-  for (const name of ["Flare", "Niviuk", "Dudek"]) {
-    await expect(brand(name)).not.toContainText("Paragliding Shop");
-  }
-  await expect(brand("Ozone")).toContainText("Paragliding Shop");
-  await expect(brand("Ozone")).not.toContainText("as the business states");
-  await expect(brand("Niviuk")).toContainText("We couldn't confirm a dealer");
-  await expect(
-    brand("Niviuk").getByRole("link", { name: /Niviuk's own dealer list/ }),
-  ).toBeVisible();
+  await expect(brand("Ozone")).toHaveCount(0);
+  await expect(brand("Flymaster")).toContainText("Cloudbase Paragliding");
+  await expect(brand("Flymaster")).toContainText(/as the business states|listed by Flymaster/);
 });

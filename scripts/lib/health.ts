@@ -11,6 +11,9 @@ export const USE_BY_DAYS = {
   siteWind: 365,
   guides: 365,
   dealerPages: 365,
+  /** Main brands' official dealer lists, and brands that publish none, are re-checked twice a year (D96). */
+  mainDealerPages: 183,
+  noDealerList: 183,
 } as const;
 /** The outside-link check runs monthly; a report older than this means it has stopped. */
 export const LINK_REPORT_MAX_DAYS = 45;
@@ -50,7 +53,9 @@ export interface HealthInput {
   /** Countries flying tours go to that have no overview entry yet (D91). */
   newTourDestinations?: string[];
   /** Brands' own dealer lists linked from Where to buy (D84). */
-  dealerPages?: { brand: string; url: string; checked: string }[];
+  dealerPages?: { brand: string; url: string; checked: string; main?: boolean }[];
+  /** Main brands that published no dealer list when last checked (D96). */
+  noDealerLists?: { brand: string; website: string; checked: string }[];
   links?: LinkReport;
   linkExceptions?: LinkException[];
   /** Each workflow's most recent finished run, newest first (from GitHub). */
@@ -187,11 +192,22 @@ export function checkHealth(input: HealthInput): HealthProblem[] {
     });
   }
   for (const d of input.dealerPages ?? []) {
-    if (daysSince(d.checked, now) > USE_BY_DAYS.dealerPages) {
+    if (
+      daysSince(d.checked, now) > (d.main ? USE_BY_DAYS.mainDealerPages : USE_BY_DAYS.dealerPages)
+    ) {
       out.push({
         kind: "stale",
         key: `stale-dealers:${d.brand}`,
-        text: `${d.brand}'s dealer list, checked ${d.checked}: check ${d.url} is still its dealer page`,
+        text: `${d.brand}'s dealer list, checked ${d.checked}: check ${d.url} is still its official dealer page`,
+      });
+    }
+  }
+  for (const d of input.noDealerLists ?? []) {
+    if (daysSince(d.checked, now) > USE_BY_DAYS.noDealerList) {
+      out.push({
+        kind: "stale",
+        key: `no-dealer-list:${d.brand}`,
+        text: `${d.brand} published no dealer list when checked ${d.checked}: look on ${d.website} for one. If there is one, add it as the brand's dealerPage in data/manual/brands.yaml; if not, set its noDealerListChecked to today`,
       });
     }
   }

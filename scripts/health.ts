@@ -56,7 +56,21 @@ const problems = checkHealth({
       .sort();
   })(),
   dealerPages: input.brands.flatMap((b) =>
-    b.dealerPage ? [{ brand: b.name, url: b.dealerPage.url, checked: b.dealerPage.checked }] : [],
+    b.dealerPage
+      ? [
+          {
+            brand: b.name,
+            url: b.dealerPage.url,
+            checked: b.dealerPage.checked,
+            main: b.officialList === true,
+          },
+        ]
+      : [],
+  ),
+  noDealerLists: input.brands.flatMap((b) =>
+    b.officialList && !b.dealerPage && b.website && b.noDealerListChecked
+      ? [{ brand: b.name, website: b.website, checked: b.noDealerListChecked }]
+      : [],
   ),
   links,
   linkExceptions,
