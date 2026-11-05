@@ -35,6 +35,7 @@
   dealerPage:
     url: https://www.advance.swiss/en/dealer-finder
     checked: 2026-10-14
+  officialList: true
 - name: Aerial Pursuits
   distributors:
     - org: org:au:sydney-microlights
@@ -76,6 +77,7 @@
       basis: self
       source: https://www.trikefan.com/microlightsales.php
       checked: 2026-10-14
+  officialList: true
 - name: AirDesign
   distributors:
     - org: org:au:cloudbase-paragliding
@@ -83,6 +85,7 @@
       basis: self
       source: https://cloudbaseparagliding.com.au/
       checked: 2026-10-14
+  officialList: true
 - name: AirNest
   distributors:
     - org: org:au:high-adventure
@@ -90,11 +93,13 @@
       basis: self
       source: https://www.highadventure.com.au/collections/paramotors
       checked: 2026-10-14
+  officialList: true
 - name: Apco
   distributors: [ { org: SVC-001, role: certified_service } ]
   dealerPage:
     url: https://www.apcoaviation.com/find-a-dealer/
     checked: 2026-10-14
+  officialList: true
 - name: Ascent
   distributors:
     - org: org:au:manilla-paragliding
@@ -109,6 +114,7 @@
       basis: self
       source: https://www.seqparagliding.com/category/all-products
       checked: 2026-10-14
+  officialList: true
 - name: BGD
   distributors:
     [
@@ -121,11 +127,19 @@
           basis: brand,
           source: https://www.flybgd.com/en/paragliders/australia-9-2-0.html,
           checked: 2026-10-14
+        },
+      {
+          org: org:au:paragliding-repair-centre,
+          role: dealer,
+          basis: brand,
+          source: https://www.flybgd.com/en/paragliders/australia-9-2-0.html,
+          checked: 2026-10-14
         }
     ]
   dealerPage:
     url: https://www.flybgd.com/en/paragliders/australia-9-2-0.html
     checked: 2026-10-14
+  officialList: true
 - name: Charly
   distributors:
     [
@@ -176,6 +190,7 @@
       basis: self
       source: https://www.seqparagliding.com/category/all-products
       checked: 2026-10-14
+  officialList: true
 - name: Companion
   distributors:
     - org: org:au:manilla-paragliding
@@ -183,6 +198,7 @@
       basis: self
       source: https://www.flymanilla.com/
       checked: 2026-10-14
+  officialList: true
 - name: Dudek
   distributors:
     [
@@ -199,6 +215,7 @@
   dealerPage:
     url: https://dudek.eu/en/dealers/
     checked: 2026-10-14
+  officialList: true
 - name: Dune Rider
   distributors:
     - org: org:au:cloudbase-paragliding
@@ -206,8 +223,13 @@
       basis: self
       source: https://cloudbaseparagliding.com.au/
       checked: 2026-10-14
+  officialList: true
 - name: Flare
   distributors: [ { org: RTL-001, role: dealer } ]
+  officialList: true
+  dealerPage:
+    url: https://go-flare.com/partner/
+    checked: 2026-11-05
 - name: Flow
   distributors:
     [
@@ -254,11 +276,19 @@
           basis: brand,
           source: https://www.flowparagliders.com.au/flow-paragliders-dealers-australia/,
           checked: 2026-10-14
+        },
+      {
+          org: org:au:paragliding-repair-centre,
+          role: dealer,
+          basis: brand,
+          source: https://www.flowparagliders.com.au/flow-paragliders-dealers-australia/,
+          checked: 2026-10-14
         }
     ]
   dealerPage:
     url: https://www.flowparagliders.com.au/flow-paragliders-dealers-australia/
     checked: 2026-10-14
+  officialList: true
 - name: Flymaster
   distributors:
     [
@@ -358,8 +388,10 @@
   dealerPage:
     url: https://www.gingliders.com/en/distributors/
     checked: 2026-10-14
+  officialList: true
 - name: Gradient
   distributors: [ { org: SVC-001, role: certified_service } ]
+  officialList: true
 - name: Icaro
   distributors:
     - org: org:au:melbourne-paragliding
@@ -375,6 +407,7 @@
   dealerPage:
     url: https://icaro-paragliders.com/en/dealers/
     checked: 2026-10-14
+  officialList: true
 - name: Icom
   distributors:
     - org: org:au:adventure-plus-paragliding
@@ -412,6 +445,7 @@
       basis: self
       source: https://cloudbaseparagliding.com.au/
       checked: 2026-10-14
+  officialList: true
 - name: Lazer
   distributors:
     - org: org:au:manilla-paragliding
@@ -429,6 +463,7 @@
       basis: self
       source: https://www.highadventure.com.au/collections/paramotors
       checked: 2026-10-14
+  officialList: true
 - name: Little Cloud
   distributors:
     - org: org:au:bright-flight
@@ -444,6 +479,7 @@
   dealerPage:
     url: https://littlecloud.fr/distributeurs/
     checked: 2026-10-14
+  officialList: true
 - name: Lynx
   distributors:
     - org: org:au:sydney-microlights
@@ -464,6 +500,7 @@
   dealerPage:
     url: https://www.macflyparamotors.com/carte-revendeurs_en.html
     checked: 2026-10-14
+  officialList: true
 - name: Matrix
   distributors:
     - org: org:au:hang-gliding-wa
@@ -471,6 +508,7 @@
       basis: self
       source: https://hangglidingwa.com.au/Equipment.php
       checked: 2026-10-14
+  officialList: true
 - name: Metamorfisi
   distributors:
     - org: org:au:hang-gliding-wa
@@ -478,6 +516,7 @@
       basis: self
       source: https://hangglidingwa.com.au/Equipment.php
       checked: 2026-10-14
+  officialList: true
 - name: Micro Avionics
   distributors:
     - org: org:au:high-adventure
@@ -525,6 +564,7 @@
   dealerPage:
     url: https://moyes.com.au/contact-us/australian-dealer-list
     checked: 2026-10-14
+  officialList: true
 - name: Naviter
   distributors:
     - org: org:au:hang-gliding-wa
@@ -567,6 +607,7 @@
           checked: 2026-10-14
         }
     ]
+  officialList: true
 - name: Nirvana
   distributors:
     - org: org:au:high-adventure
@@ -577,6 +618,7 @@
   dealerPage:
     url: https://www.nirvana.cz/en/contact-info/dealers/
     checked: 2026-10-14
+  officialList: true
 - name: Niviuk
   distributors:
     [
@@ -616,6 +658,7 @@
   dealerPage:
     url: https://niviuk.com/en/dealers
     checked: 2026-10-14
+  officialList: true
 - name: Nova
   distributors:
     [
@@ -639,6 +682,7 @@
   dealerPage:
     url: https://www.nova.eu/en/try-buy/
     checked: 2026-10-14
+  officialList: true
 - name: Ozone
   distributors:
     [
@@ -685,11 +729,26 @@
           basis: brand,
           source: https://flyozone.com/speed/find-a-dealer,
           checked: 2026-10-14
+        },
+      {
+          org: org:au:paragliding-shop,
+          role: dealer,
+          basis: brand,
+          source: https://flyozone.com/speed/find-a-dealer,
+          checked: 2026-10-14
+        },
+      {
+          org: org:au:paragliding-repair-centre,
+          role: dealer,
+          basis: brand,
+          source: https://flyozone.com/speed/find-a-dealer,
+          checked: 2026-10-14
         }
     ]
   dealerPage:
     url: https://flyozone.com/paragliders/find-a-dealer
     checked: 2026-10-14
+  officialList: true
 - name: Parajet
   distributors:
     - org: org:au:high-adventure
@@ -710,6 +769,7 @@
   dealerPage:
     url: https://parajet.com/find-your-local-dealer/
     checked: 2026-10-14
+  officialList: true
 - name: PHI
   distributors:
     [
@@ -720,6 +780,7 @@
   dealerPage:
     url: https://phi-air.com/dealers/
     checked: 2026-10-14
+  officialList: true
 - name: Raptor Designs
   distributors:
     - org: org:au:sydney-microlights
@@ -756,6 +817,7 @@
   dealerPage:
     url: https://skywalk.info/distributor/
     checked: 2026-10-14
+  officialList: true
 - name: Sup'Air
   distributors:
     [
@@ -820,6 +882,7 @@
   dealerPage:
     url: https://supair.com/en/revendeurs/
     checked: 2026-10-14
+  officialList: true
 - name: Swing
   distributors:
     - org: org:au:updraft-paragliding
@@ -830,6 +893,7 @@
   dealerPage:
     url: https://www.swing.de/vertrieb/?lang=en
     checked: 2026-10-14
+  officialList: true
 - name: Syride
   distributors:
     [
@@ -890,6 +954,7 @@
   dealerPage:
     url: https://777gliders.com/distributors/
     checked: 2026-10-14
+  officialList: true
 - name: U-Turn
   distributors:
     - org: org:au:hollywood-paragliding
@@ -897,6 +962,7 @@
       basis: self
       source: http://www.hollywoodparagliding.com.au/Equipment.html
       checked: 2026-10-14
+  officialList: true
 - name: UP
   distributors:
     - org: org:au:high-adventure
@@ -907,6 +973,7 @@
   dealerPage:
     url: https://www.up-paragliders.com/dealers
     checked: 2026-10-14
+  officialList: true
 - name: Vittorazi
   distributors:
     - org: org:au:tribal-flight-paragliding-fox-airsports
@@ -917,6 +984,7 @@
   dealerPage:
     url: https://vittorazi.com/en/dealers/
     checked: 2026-10-14
+  officialList: true
 - name: Woody Valley
   distributors:
     [
@@ -962,11 +1030,19 @@
           basis: brand,
           source: https://www.woodyvalley.com/en/distributori/,
           checked: 2026-10-14
+        },
+      {
+          org: org:au:paragliding-repair-centre,
+          role: dealer,
+          basis: brand,
+          source: https://www.woodyvalley.com/en/distributori/,
+          checked: 2026-10-14
         }
     ]
   dealerPage:
     url: https://www.woodyvalley.com/en/distributori/
     checked: 2026-10-14
+  officialList: true
 - name: XC Tracer
   distributors: [ { org: RTL-002, role: core_importer } ]
   dealerPage:

@@ -50,3 +50,7 @@ SCH-105: { hidden: true, note: "No current evidence of operation (founder, 2026-
 
 # XCkms: its web address no longer resolves (checked 2026-10-14). Hidden at the founder's request.
 SCH-103: { hidden: true, note: "Website gone (founder, 2026-10-14)" }
+
+# Paragliding Shop: a pilot's feedback (2026-11-05) says it is based near Byron Bay, not Sydney. Its own
+# site gives no address; Ozone's own dealer list places it at Fernleigh, NSW (Byron hinterland).
+RTL-001: { locality: "Fernleigh, near Byron Bay", note: "Location from Ozone's dealer list, checked 2026-10-14; feedback 2026-11-05" }
