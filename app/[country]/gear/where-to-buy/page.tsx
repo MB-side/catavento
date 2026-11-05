@@ -38,7 +38,13 @@ export default async function WhereToBuyPage({
 }: PageProps<"/[country]/gear/where-to-buy">) {
   const country = await countryFromParams(params);
   if (!country) notFound();
-  const brands = getBrands()
+  const all = getBrands();
+  // Wings, harnesses, reserves, hang gliders, paramotors: the brand's own list is the source (D95).
+  const main = all
+    .filter((b) => b.officialList && (b.dealerPage || b.website))
+    .sort((a, b) => a.name.localeCompare(b.name));
+  const brands = all
+    .filter((b) => !b.officialList)
     .map((b) => ({
       brand: b,
       who: b.distributors
@@ -46,8 +52,7 @@ export default async function WhereToBuyPage({
         .filter((x) => x.org?.country === country.code)
         .sort((a, b) => ROLE_ORDER.indexOf(a.role) - ROLE_ORDER.indexOf(b.role)),
     }))
-    // A main brand with no dealer we could confirm still appears, pointing to its own list (D94).
-    .filter((x) => x.who.length > 0 || x.brand.dealerPage);
+    .filter((x) => x.who.length > 0);
   return (
     <div className="flex flex-col gap-6">
       <PageHeader
@@ -55,7 +60,32 @@ export default async function WhereToBuyPage({
         intro={t("gear.whereText", { country: country.name })}
         crumb={{ href: `/${country.code.toLowerCase()}/gear`, label: t("pages.gear.title") }}
       />
-      {brands.length > 0 && <p>{t("gear.dealerPagesNote")}</p>}
+      <section aria-labelledby="main-brands" className="flex flex-col gap-3">
+        <h2 id="main-brands" className="font-condensed text-[1.5rem] font-bold">
+          {t("gear.mainBrandsHeading")}
+        </h2>
+        <p>{t("gear.mainBrandsIntro")}</p>
+        <ul
+          className="grid gap-x-6 gap-y-2 sm:grid-cols-2 lg:grid-cols-3"
+          data-testid="main-brands"
+        >
+          {main.map((b) => (
+            <li key={b.id}>
+              <span className="font-semibold">{b.name}</span>
+              {": "}
+              {b.dealerPage ? (
+                <Anchor href={b.dealerPage.url}>{t("gear.officialDealers")}</Anchor>
+              ) : (
+                <>
+                  {t("gear.noDealerList")}{" "}
+                  <Anchor href={b.website}>{t("gear.contactBrand")}</Anchor>
+                </>
+              )}
+            </li>
+          ))}
+        </ul>
+      </section>
+      <h2 className="font-condensed text-[1.5rem] font-bold">{t("gear.otherBrandsHeading")}</h2>
       {brands.length === 0 ? (
         <p className={card}>{t("gear.noneYet", { country: country.name })}</p>
       ) : (
@@ -63,12 +93,7 @@ export default async function WhereToBuyPage({
           <ul className="grid gap-3 md:grid-cols-2 xl:grid-cols-3" data-testid="brands">
             {brands.map(({ brand, who }) => (
               <li key={brand.id} className={card}>
-                <h2 className="font-condensed text-[1.375rem] font-bold">{brand.name}</h2>
-                {who.length === 0 && (
-                  <p className="mt-1 text-[0.9375rem] text-muted-strong">
-                    {t("gear.noConfirmedDealer", { brand: brand.name, country: country.name })}
-                  </p>
-                )}
+                <h3 className="font-condensed text-[1.375rem] font-bold">{brand.name}</h3>
                 <ul className="mt-1 flex flex-col gap-1">
                   {who.map(({ org, role, basis }) =>
                     org ? (
