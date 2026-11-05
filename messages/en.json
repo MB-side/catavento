@@ -29,7 +29,7 @@
     "closeMenu": "Close menu",
     "skipToContent": "Skip to content",
     "phoneTabs": "Sections",
-    "visiting": "Visiting"
+    "visiting": "Destinations"
   },
   "footer": {
     "label": "Site information",
@@ -65,7 +65,8 @@
     "openMySites": "Open My Sites",
     "comingUp": "Coming up",
     "latestNotices": "Latest notices",
-    "directoryLabel": "Free directory"
+    "directoryLabel": "Free directory",
+    "allDestinations": "All destinations: rules for visitors, help on the ground and flying tours"
   },
   "pages": {
     "mySites": {
@@ -146,7 +147,7 @@
       "summary": "What you need to know to fly here as a visitor."
     },
     "visiting": {
-      "title": "Visiting pilots",
+      "title": "Destinations",
       "summary": "Flying somewhere new? Where to find the local rules, who helps visiting pilots on the ground, and who runs flying tours."
     },
     "tours": {

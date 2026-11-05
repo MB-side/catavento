@@ -58,12 +58,15 @@ test("home page has the brand title, descriptor and Organization JSON-LD", async
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
 });
 
-test("home is an overview: search, sections and countries", async ({ page }) => {
+test("home starts with choosing a country, then destinations; country sections live on each country's page", async ({
+  page,
+}) => {
   await page.goto("");
-  const sections = page.getByRole("region", { name: "What's here" });
-  for (const name of ["Sites & map", "What's on", "Gear", "New to flying"]) {
-    await expect(sections.getByRole("link", { name: new RegExp(name) })).toBeVisible();
-  }
+  await expect(page.getByRole("region", { name: "What's here" })).toHaveCount(0);
+  await expect(page.getByRole("link", { name: /All destinations/ })).toHaveAttribute(
+    "href",
+    /\/visiting\/$/,
+  );
   const countries = page.getByRole("region", { name: "Browse by country" });
   await expect(countries.getByRole("link", { name: /Australia/ })).toHaveAttribute(
     "href",
