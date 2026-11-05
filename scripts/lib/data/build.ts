@@ -89,6 +89,7 @@ export interface BuildInputs {
     distributors: { org: string; role: Brand["distributors"][number]["role"]; basis?: "brand" | "self"; source?: string; checked?: string }[];
     dealerPage?: Brand["dealerPage"];
     officialList?: boolean;
+    noDealerListChecked?: string;
   }[];
   visiting: {
     help: (Omit<VisitorHelp, "id" | "name" | "orgId"> & { name?: string; org?: string })[];

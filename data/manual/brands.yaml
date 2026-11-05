@@ -80,6 +80,7 @@
       checked: 2026-10-14
   officialList: true
   website: https://www.airborne.com.au
+  noDealerListChecked: 2026-11-05
 - name: AirDesign
   distributors:
     - org: org:au:cloudbase-paragliding
@@ -89,6 +90,7 @@
       checked: 2026-10-14
   officialList: true
   website: https://www.ad-gliders.com
+  noDealerListChecked: 2026-11-05
 - name: AirNest
   distributors:
     - org: org:au:high-adventure
@@ -630,6 +632,7 @@
     ]
   officialList: true
   website: https://www.neo-paragliders.fr/
+  noDealerListChecked: 2026-11-05
 - name: Nirvana
   distributors:
     - org: org:au:high-adventure
@@ -996,6 +999,7 @@
       checked: 2026-10-14
   officialList: true
   website: https://u-turn.de/
+  noDealerListChecked: 2026-11-05
 - name: UP
   distributors:
     - org: org:au:high-adventure

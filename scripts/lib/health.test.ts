@@ -200,4 +200,18 @@ describe("checkHealth: country guides (D83)", () => {
     const problems = checkHealth({ ...base, newTourDestinations: ["MX"] });
     expect(problems.map((p) => p.key)).toEqual(["tour-destination:MX"]);
   });
+
+  it("re-checks main brands' dealer lists, and brands with none, twice a year (D96)", () => {
+    const problems = checkHealth({
+      ...base,
+      dealerPages: [
+        { brand: "Main", url: "https://main.example/dealers", checked: "2026-03-01", main: true },
+        { brand: "Other", url: "https://other.example/dealers", checked: "2026-03-01" },
+      ],
+      noDealerLists: [
+        { brand: "NoList", website: "https://nolist.example/", checked: "2026-03-01" },
+      ],
+    });
+    expect(problems.map((p) => p.key)).toEqual(["stale-dealers:Main", "no-dealer-list:NoList"]);
+  });
 });
