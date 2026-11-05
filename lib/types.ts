@@ -294,7 +294,26 @@ export interface Brand {
   dealerPage?: { url: string; checked: string };
   /** Wings, harnesses, reserves, hang gliders, paramotors: we point to the brand's own dealer list (D94, D95). */
   officialList?: boolean;
+  /** What the brand makes under its own name, from its own website (D98). */
+  makes?: BrandMake[];
+  /** ISO 3166-1 alpha-2 code of the country the brand is based in, from its own website (D98). */
+  basedIn?: string;
 }
+
+export type BrandMake =
+  | "paragliders"
+  | "paramotor-wings"
+  | "speed-wings"
+  | "harnesses"
+  | "reserves"
+  | "hang-gliders"
+  | "paramotors"
+  | "engines"
+  | "instruments"
+  | "radios"
+  | "helmets"
+  | "accessories"
+  | "microlight";
 
 /** One business's link to a brand, for its card and profile (D84). */
 export interface BrandLink {

@@ -407,6 +407,22 @@ export const stewardEvidenceSchema = z.object({
   source: sourceRefSchema,
 }) satisfies z.ZodType<StewardEvidence>;
 
+export const brandMakeSchema = z.enum([
+  "paragliders",
+  "paramotor-wings",
+  "speed-wings",
+  "harnesses",
+  "reserves",
+  "hang-gliders",
+  "paramotors",
+  "engines",
+  "instruments",
+  "radios",
+  "helmets",
+  "accessories",
+  "microlight",
+]);
+
 export const brandsFileSchema = z
   .array(
     z.object({
@@ -432,6 +448,11 @@ export const brandsFileSchema = z
       dealerPage: z.object({ url: httpUrl, checked: z.iso.date() }).optional(),
       officialList: z.boolean().optional(), // D94
       noDealerListChecked: z.iso.date().optional(), // D96: when we last found no dealer list
+      makes: z.array(brandMakeSchema).optional(), // D98
+      basedIn: z
+        .string()
+        .regex(/^[A-Z]{2}$/)
+        .optional(), // D98
     }),
   )
   .nullable();
@@ -457,6 +478,11 @@ export const brandSchema = z.object({
   ),
   dealerPage: z.object({ url: httpUrl, checked: z.iso.date() }).optional(),
   officialList: z.boolean().optional(),
+  makes: z.array(brandMakeSchema).optional(),
+  basedIn: z
+    .string()
+    .regex(/^[A-Z]{2}$/)
+    .optional(),
 }) satisfies z.ZodType<Brand>;
 
 export const offeringSchema = z.object({
