@@ -836,7 +836,45 @@
     "basisBrand": "listed by {brand}",
     "basisSelf": "as the business states",
     "mainBrandsHeading": "Wings, harnesses, reserves, hang gliders and paramotors",
-    "mainBrandsIntro": "Each brand lists its official dealers and importers on its own website. Contact them there: the brand's list is always the most up to date.",
+    "mainBrandsIntro": "Each brand lists its official dealers and importers on its own website: the brand's list is always the most up to date. Pick your kind of flying, then open the brand's list.",
+    "groupsNav": "Brands by kind of flying",
+    "group": {
+      "paragliders": { "title": "Paragliders", "text": "Wings for foot-launched free flight." },
+      "harnesses-reserves": {
+        "title": "Harnesses and reserves",
+        "text": "What you fly in, and the reserve parachute you carry."
+      },
+      "hang-gliders": {
+        "title": "Hang gliders",
+        "text": "Wings with a rigid frame, flown from a harness."
+      },
+      "paramotoring": {
+        "title": "Paramotoring",
+        "text": "Paramotors, their engines, and wings made for powered flight."
+      },
+      "speed-wings": {
+        "title": "Speed wings and mini wings",
+        "text": "Small, fast wings for speed flying and speed riding."
+      }
+    },
+    "make": {
+      "paragliders": "Paragliders",
+      "paramotor-wings": "Paramotor wings",
+      "speed-wings": "Speed wings",
+      "harnesses": "Harnesses",
+      "reserves": "Reserves",
+      "hang-gliders": "Hang gliders",
+      "paramotors": "Paramotors",
+      "engines": "Engines"
+    },
+    "makesLabel": "Makes",
+    "basedIn": "Based in {country}",
+    "dealersButton": "Official dealers",
+    "forBrand": "for {brand}",
+    "noDealerShort": "No dealer list.",
+    "groupsNote": "What each brand makes and where it is based are taken from its own website. Brands are listed A to Z: Catavento doesn't rank them.",
+    "allBrandsShort": "All brands A to Z",
+    "allBrandsHeading": "All main brands, A to Z",
     "officialDealers": "official dealers",
     "noDealerList": "no dealer list we could find.",
     "contactBrand": "Contact the brand",

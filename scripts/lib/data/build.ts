@@ -90,6 +90,8 @@ export interface BuildInputs {
     dealerPage?: Brand["dealerPage"];
     officialList?: boolean;
     noDealerListChecked?: string;
+    makes?: Brand["makes"];
+    basedIn?: string;
   }[];
   visiting: {
     help: (Omit<VisitorHelp, "id" | "name" | "orgId"> & { name?: string; org?: string })[];
@@ -336,6 +338,8 @@ export function buildData(input: BuildInputs): BuildOutputs {
         }),
         ...(b.dealerPage ? { dealerPage: b.dealerPage } : {}),
         ...(b.officialList ? { officialList: true } : {}),
+        ...(b.makes?.length ? { makes: b.makes } : {}),
+        ...(b.basedIn ? { basedIn: b.basedIn } : {}),
       }))
       .sort(byId),
     offerings,

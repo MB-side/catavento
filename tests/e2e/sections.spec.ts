@@ -283,6 +283,34 @@ test("Shops: schools that sell gear are marked and can be shown on their own", a
   ).toBeVisible();
 });
 
+test("Where to buy: main brands are grouped by kind of flying, with facts from their own sites (D98)", async ({
+  page,
+}) => {
+  await page.goto("au/gear/where-to-buy/");
+  const nav = page.getByTestId("brand-group-nav");
+  await expect(nav.getByRole("link", { name: /Hang gliders/ })).toHaveAttribute(
+    "href",
+    "#brands-hang-gliders",
+  );
+  const group = (title: string) =>
+    page
+      .getByTestId("brand-group")
+      .filter({ has: page.getByRole("heading", { name: title, exact: true, level: 3 }) });
+  const card = (title: string, name: string) =>
+    group(title)
+      .getByTestId("brand-card")
+      .filter({ has: page.getByRole("heading", { name, exact: true }) });
+  await expect(card("Hang gliders", "Moyes")).toContainText("Based in Australia");
+  await expect(
+    card("Hang gliders", "Moyes").getByRole("link", { name: /Official dealers/ }),
+  ).toHaveAttribute("href", /moyes\.com\.au/);
+  // A brand appears under every kind of flying it makes something for.
+  await expect(card("Paragliders", "Ozone")).toBeVisible();
+  await expect(card("Paramotoring", "Ozone")).toBeVisible();
+  await expect(card("Paramotoring", "Vittorazi")).toContainText("Engines");
+  await expect(page.getByText("Catavento doesn't rank them")).toBeVisible();
+});
+
 test("Where to buy: main brands point to their own official dealer lists; other gear says how we know (D95)", async ({
   page,
 }) => {

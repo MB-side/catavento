@@ -8,7 +8,12 @@
       "url": "https://www.advance.swiss/en/dealer-finder",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "harnesses"
+    ],
+    "basedIn": "CH"
   },
   {
     "id": "brand:aerial-pursuits",
@@ -32,7 +37,16 @@
       "url": "https://aeros.com.ua/contact_us",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "hang-gliders",
+      "harnesses",
+      "reserves",
+      "paragliders",
+      "paramotor-wings",
+      "speed-wings"
+    ],
+    "basedIn": "UA"
   },
   {
     "id": "brand:air-hog",
@@ -76,14 +90,24 @@
     "name": "Airborne",
     "website": "https://www.airborne.com.au",
     "distributors": [],
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "hang-gliders"
+    ],
+    "basedIn": "AU"
   },
   {
     "id": "brand:airdesign",
     "name": "AirDesign",
     "website": "https://www.ad-gliders.com",
     "distributors": [],
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "AT"
   },
   {
     "id": "brand:airnest",
@@ -100,7 +124,14 @@
       "url": "https://www.apcoaviation.com/find-a-dealer/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "paramotor-wings",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "IL"
   },
   {
     "id": "brand:ascent",
@@ -124,7 +155,14 @@
       "url": "https://axispara.cz/dealers/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "paramotor-wings",
+      "speed-wings",
+      "reserves"
+    ],
+    "basedIn": "CZ"
   },
   {
     "id": "brand:bf",
@@ -141,7 +179,14 @@
       "url": "https://www.flybgd.com/en/paragliders/australia-9-2-0.html",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "paramotor-wings",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "AT"
   },
   {
     "id": "brand:charly",
@@ -208,7 +253,11 @@
       "url": "https://www.advance.swiss/en/dealer-finder",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "reserves"
+    ],
+    "basedIn": "CH"
   },
   {
     "id": "brand:dudek",
@@ -219,7 +268,14 @@
       "url": "https://dudek.eu/dealers/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "paramotor-wings",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "PL"
   },
   {
     "id": "brand:dune-rider",
@@ -236,7 +292,13 @@
       "url": "https://go-flare.com/partner/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "speed-wings",
+      "paramotor-wings",
+      "harnesses"
+    ],
+    "basedIn": "DE"
   },
   {
     "id": "brand:flow",
@@ -247,7 +309,14 @@
       "url": "https://www.flowparagliders.com.au/flow-paragliders-dealers-australia/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "paramotor-wings",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "AU"
   },
   {
     "id": "brand:fly-products",
@@ -258,7 +327,11 @@
       "url": "https://flyproducts.com/rivenditori/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paramotors"
+    ],
+    "basedIn": "IT"
   },
   {
     "id": "brand:flymaster",
@@ -353,7 +426,12 @@
     "name": "Fresh Breeze",
     "website": "https://www.fresh-breeze.de/en/",
     "distributors": [],
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paramotors",
+      "paramotor-wings"
+    ],
+    "basedIn": "DE"
   },
   {
     "id": "brand:garmin",
@@ -381,7 +459,15 @@
       "url": "https://www.gingliders.com/en/distributors/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "speed-wings",
+      "paramotor-wings",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "KR"
   },
   {
     "id": "brand:gradient",
@@ -398,7 +484,13 @@
       "url": "https://icaro-paragliders.com/en/dealers/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "DE"
   },
   {
     "id": "brand:icaro-2000",
@@ -409,7 +501,11 @@
       "url": "https://www.icaro2000.com/Dealers/Hanggliders/Dealers.htm",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "hang-gliders"
+    ],
+    "basedIn": "IT"
   },
   {
     "id": "brand:icom",
@@ -465,7 +561,13 @@
       "url": "https://www.independence.aero/en/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "DE"
   },
   {
     "id": "brand:kortel",
@@ -476,7 +578,12 @@
       "url": "https://www.korteldesign.com/gb/stores",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "FR"
   },
   {
     "id": "brand:lazer",
@@ -504,7 +611,10 @@
       "url": "https://libertyparamotors.com/pages/store-locator",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paramotors"
+    ]
   },
   {
     "id": "brand:little-cloud",
@@ -515,7 +625,13 @@
       "url": "https://littlecloud.fr/distributeurs/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "speed-wings",
+      "harnesses"
+    ],
+    "basedIn": "FR"
   },
   {
     "id": "brand:lynx",
@@ -543,7 +659,14 @@
       "url": "https://www.macpara.com/en/contacts/importers/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "paramotor-wings",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "CZ"
   },
   {
     "id": "brand:macfly",
@@ -554,7 +677,11 @@
       "url": "https://www.macflyparamotors.com/carte-revendeurs_en.html",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paramotors"
+    ],
+    "basedIn": "FR"
   },
   {
     "id": "brand:matrix",
@@ -597,7 +724,12 @@
     "name": "Miniplane",
     "website": "https://www.miniplane.it/",
     "distributors": [],
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paramotors",
+      "engines"
+    ],
+    "basedIn": "IT"
   },
   {
     "id": "brand:mipbip",
@@ -621,7 +753,13 @@
       "url": "https://moyes.com.au/contact-us/australian-dealer-list",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "hang-gliders",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "AU"
   },
   {
     "id": "brand:naviter",
@@ -673,7 +811,11 @@
     "name": "Neo",
     "website": "https://www.neo-paragliders.fr/",
     "distributors": [],
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "harnesses"
+    ],
+    "basedIn": "FR"
   },
   {
     "id": "brand:nirvana",
@@ -684,7 +826,11 @@
       "url": "https://www.nirvana.cz/en/contact-info/dealers/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paramotors"
+    ],
+    "basedIn": "CZ"
   },
   {
     "id": "brand:niviuk",
@@ -695,7 +841,14 @@
       "url": "https://niviuk.com/en/dealers",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "paramotor-wings",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "ES"
   },
   {
     "id": "brand:nova",
@@ -706,7 +859,13 @@
       "url": "https://www.nova.eu/en/try-buy/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "AT"
   },
   {
     "id": "brand:ozone",
@@ -717,7 +876,15 @@
       "url": "https://flyozone.com/paragliders/find-a-dealer",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "harnesses",
+      "reserves",
+      "paramotor-wings",
+      "speed-wings"
+    ],
+    "basedIn": "GB"
   },
   {
     "id": "brand:pap",
@@ -728,7 +895,11 @@
       "url": "https://papteam.com/shopfinder/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paramotors"
+    ],
+    "basedIn": "ES"
   },
   {
     "id": "brand:parajet",
@@ -739,7 +910,11 @@
       "url": "https://parajet.com/find-your-local-dealer/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paramotors"
+    ],
+    "basedIn": "GB"
   },
   {
     "id": "brand:phi",
@@ -750,7 +925,12 @@
       "url": "https://phi-air.com/dealers/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "harnesses"
+    ],
+    "basedIn": "AT"
   },
   {
     "id": "brand:polini-thor",
@@ -761,7 +941,11 @@
       "url": "https://www.polinithor.com/en/thor-dealers/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "engines"
+    ],
+    "basedIn": "IT"
   },
   {
     "id": "brand:raptor-designs",
@@ -785,7 +969,12 @@
       "url": "https://www.scoutaviation.com/paramotoring/contact/find-dealer/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paramotors",
+      "harnesses"
+    ],
+    "basedIn": "SK"
   },
   {
     "id": "brand:sky-paragliders",
@@ -796,7 +985,15 @@
       "url": "https://sky-cz.com/en/dealers",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "speed-wings",
+      "paramotor-wings",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "CZ"
   },
   {
     "id": "brand:skyman",
@@ -807,7 +1004,14 @@
       "url": "https://www.skyman.aero/en/dealers/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "speed-wings",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "DE"
   },
   {
     "id": "brand:skywalk",
@@ -818,7 +1022,14 @@
       "url": "https://skywalk.info/distributor/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "speed-wings",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "DE"
   },
   {
     "id": "brand:sol-paragliders",
@@ -829,7 +1040,13 @@
       "url": "https://www.solparagliders.com.br/revendedores.php",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "BR"
   },
   {
     "id": "brand:supair",
@@ -840,7 +1057,13 @@
       "url": "https://supair.com/en/revendeurs/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "FR"
   },
   {
     "id": "brand:swing",
@@ -851,7 +1074,15 @@
       "url": "https://www.swing.de/vertrieb/?lang=en",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "paramotor-wings",
+      "speed-wings",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "DE"
   },
   {
     "id": "brand:syride",
@@ -908,14 +1139,26 @@
       "url": "https://777gliders.com/distributors/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "SI"
   },
   {
     "id": "brand:u-turn",
     "name": "U-Turn",
     "website": "https://u-turn.de/",
     "distributors": [],
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "DE"
   },
   {
     "id": "brand:up",
@@ -926,7 +1169,11 @@
       "url": "https://www.up-paragliders.com/dealers",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders"
+    ],
+    "basedIn": "DE"
   },
   {
     "id": "brand:vittorazi",
@@ -937,21 +1184,36 @@
       "url": "https://vittorazi.com/en/dealers/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "engines"
+    ],
+    "basedIn": "IT"
   },
   {
     "id": "brand:wills-wing",
     "name": "Wills Wing",
     "website": "https://willswing.org/",
     "distributors": [],
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "hang-gliders"
+    ],
+    "basedIn": "US"
   },
   {
     "id": "brand:windtech",
     "name": "Windtech",
     "website": "https://www.windtech.es/en/index.html",
     "distributors": [],
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "paragliders",
+      "speed-wings",
+      "paramotor-wings",
+      "reserves"
+    ],
+    "basedIn": "ES"
   },
   {
     "id": "brand:woody-valley",
@@ -962,7 +1224,12 @@
       "url": "https://www.woodyvalley.com/en/distributori/",
       "checked": "2026-11-05"
     },
-    "officialList": true
+    "officialList": true,
+    "makes": [
+      "harnesses",
+      "reserves"
+    ],
+    "basedIn": "IT"
   },
   {
     "id": "brand:xc-tracer",

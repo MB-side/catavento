@@ -36,6 +36,8 @@
     url: https://www.advance.swiss/en/dealer-finder
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, harnesses]
+  basedIn: CH
   website: https://www.advance.swiss
 - name: Aerial Pursuits
   distributors:
@@ -79,6 +81,8 @@
       source: https://www.trikefan.com/microlightsales.php
       checked: 2026-10-14
   officialList: true
+  makes: [hang-gliders]
+  basedIn: AU
   website: https://www.airborne.com.au
   noDealerListChecked: 2026-11-05
 - name: AirDesign
@@ -89,6 +93,8 @@
       source: https://cloudbaseparagliding.com.au/
       checked: 2026-10-14
   officialList: true
+  makes: [paragliders, harnesses, reserves]
+  basedIn: AT
   website: https://www.ad-gliders.com
   noDealerListChecked: 2026-11-05
 - name: AirNest
@@ -105,6 +111,8 @@
     url: https://www.apcoaviation.com/find-a-dealer/
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, paramotor-wings, harnesses, reserves]
+  basedIn: IL
   website: https://www.apcoaviation.com
 - name: Ascent
   distributors:
@@ -146,6 +154,8 @@
     url: https://www.flybgd.com/en/paragliders/australia-9-2-0.html
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, paramotor-wings, harnesses, reserves]
+  basedIn: AT
   website: https://www.flybgd.com
 - name: Charly
   distributors:
@@ -206,6 +216,8 @@
       source: https://www.flymanilla.com/
       checked: 2026-10-14
   officialList: true
+  makes: [reserves]
+  basedIn: CH
   website: https://www.advance.swiss
   dealerPage:
     url: https://www.advance.swiss/en/dealer-finder
@@ -227,6 +239,8 @@
     url: https://dudek.eu/dealers/
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, paramotor-wings, harnesses, reserves]
+  basedIn: PL
   website: https://dudek.eu
 - name: Dune Rider
   distributors:
@@ -239,6 +253,8 @@
 - name: Flare
   distributors: [ { org: RTL-001, role: dealer } ]
   officialList: true
+  makes: [speed-wings, paramotor-wings, harnesses]
+  basedIn: DE
   dealerPage:
     url: https://go-flare.com/partner/
     checked: 2026-11-05
@@ -302,6 +318,8 @@
     url: https://www.flowparagliders.com.au/flow-paragliders-dealers-australia/
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, paramotor-wings, harnesses, reserves]
+  basedIn: AU
   website: https://www.flowparagliders.com.au
 - name: Flymaster
   distributors:
@@ -403,6 +421,8 @@
     url: https://www.gingliders.com/en/distributors/
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, speed-wings, paramotor-wings, harnesses, reserves]
+  basedIn: KR
   website: https://www.gingliders.com
 - name: Gradient
   distributors: [ { org: SVC-001, role: certified_service } ]
@@ -423,6 +443,8 @@
     url: https://icaro-paragliders.com/en/dealers/
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, harnesses, reserves]
+  basedIn: DE
   website: https://icaro-paragliders.com
 - name: Icom
   distributors:
@@ -465,6 +487,8 @@
     url: https://www.korteldesign.com/gb/stores
     checked: 2026-11-05
   officialList: true
+  makes: [harnesses, reserves]
+  basedIn: FR
   website: https://www.korteldesign.com
 - name: Lazer
   distributors:
@@ -484,6 +508,7 @@
       source: https://www.highadventure.com.au/collections/paramotors
       checked: 2026-10-14
   officialList: true
+  makes: [paramotors]
   website: https://libertyparamotors.com
   dealerPage:
     url: https://libertyparamotors.com/pages/store-locator
@@ -504,6 +529,8 @@
     url: https://littlecloud.fr/distributeurs/
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, speed-wings, harnesses]
+  basedIn: FR
   website: https://littlecloud.fr
 - name: Lynx
   distributors:
@@ -526,6 +553,8 @@
     url: https://www.macflyparamotors.com/carte-revendeurs_en.html
     checked: 2026-11-05
   officialList: true
+  makes: [paramotors]
+  basedIn: FR
   website: https://www.macflyparamotors.com/
 - name: Matrix
   distributors:
@@ -591,6 +620,8 @@
     url: https://moyes.com.au/contact-us/australian-dealer-list
     checked: 2026-11-05
   officialList: true
+  makes: [hang-gliders, harnesses, reserves]
+  basedIn: AU
   website: https://moyes.com.au/
 - name: Naviter
   distributors:
@@ -635,6 +666,8 @@
         }
     ]
   officialList: true
+  makes: [harnesses]
+  basedIn: FR
   website: https://www.neo-paragliders.fr/
   noDealerListChecked: 2026-11-05
 - name: Nirvana
@@ -648,6 +681,8 @@
     url: https://www.nirvana.cz/en/contact-info/dealers/
     checked: 2026-11-05
   officialList: true
+  makes: [paramotors]
+  basedIn: CZ
   website: https://www.nirvana.cz/
 - name: Niviuk
   distributors:
@@ -689,6 +724,8 @@
     url: https://niviuk.com/en/dealers
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, paramotor-wings, harnesses, reserves]
+  basedIn: ES
   website: https://niviuk.com/
 - name: Nova
   distributors:
@@ -714,6 +751,8 @@
     url: https://www.nova.eu/en/try-buy/
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, harnesses, reserves]
+  basedIn: AT
   website: https://www.nova.eu/
 - name: Ozone
   distributors:
@@ -781,6 +820,8 @@
     url: https://flyozone.com/paragliders/find-a-dealer
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, harnesses, reserves, paramotor-wings, speed-wings]
+  basedIn: GB
   website: https://flyozone.com/
 - name: Parajet
   distributors:
@@ -803,6 +844,8 @@
     url: https://parajet.com/find-your-local-dealer/
     checked: 2026-11-05
   officialList: true
+  makes: [paramotors]
+  basedIn: GB
   website: https://parajet.com/
 - name: PHI
   distributors:
@@ -815,6 +858,8 @@
     url: https://phi-air.com/dealers/
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, harnesses]
+  basedIn: AT
   website: https://phi-air.com/
 - name: Raptor Designs
   distributors:
@@ -853,6 +898,8 @@
     url: https://skywalk.info/distributor/
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, speed-wings, harnesses, reserves]
+  basedIn: DE
   website: https://skywalk.info/
 - name: Sup'Air
   distributors:
@@ -919,6 +966,8 @@
     url: https://supair.com/en/revendeurs/
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, harnesses, reserves]
+  basedIn: FR
   website: https://supair.com/
 - name: Swing
   distributors:
@@ -931,6 +980,8 @@
     url: https://www.swing.de/vertrieb/?lang=en
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, paramotor-wings, speed-wings, harnesses, reserves]
+  basedIn: DE
   website: https://www.swing.de/
 - name: Syride
   distributors:
@@ -993,6 +1044,8 @@
     url: https://777gliders.com/distributors/
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, harnesses, reserves]
+  basedIn: SI
   website: https://777gliders.com/
 - name: U-Turn
   distributors:
@@ -1002,6 +1055,8 @@
       source: http://www.hollywoodparagliding.com.au/Equipment.html
       checked: 2026-10-14
   officialList: true
+  makes: [paragliders, harnesses, reserves]
+  basedIn: DE
   website: https://u-turn.de/
   noDealerListChecked: 2026-11-05
 - name: UP
@@ -1015,6 +1070,8 @@
     url: https://www.up-paragliders.com/dealers
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders]
+  basedIn: DE
   website: https://www.up-paragliders.com/
 - name: Vittorazi
   distributors:
@@ -1027,6 +1084,8 @@
     url: https://vittorazi.com/en/dealers/
     checked: 2026-11-05
   officialList: true
+  makes: [engines]
+  basedIn: IT
   website: https://vittorazi.com/
 - name: Woody Valley
   distributors:
@@ -1086,6 +1145,8 @@
     url: https://www.woodyvalley.com/en/distributori/
     checked: 2026-11-05
   officialList: true
+  makes: [harnesses, reserves]
+  basedIn: IT
   website: https://www.woodyvalley.com/
 - name: XC Tracer
   distributors: [ { org: RTL-002, role: core_importer } ]
@@ -1100,6 +1161,8 @@
     url: https://aeros.com.ua/contact_us
     checked: 2026-11-05
   officialList: true
+  makes: [hang-gliders, harnesses, reserves, paragliders, paramotor-wings, speed-wings]
+  basedIn: UA
   website: https://aeros.com.ua/
 - name: Axis
   distributors: []
@@ -1107,6 +1170,8 @@
     url: https://axispara.cz/dealers/
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, paramotor-wings, speed-wings, reserves]
+  basedIn: CZ
   website: https://axispara.cz/
 - name: Fly Products
   distributors: []
@@ -1114,6 +1179,8 @@
     url: https://flyproducts.com/rivenditori/
     checked: 2026-11-05
   officialList: true
+  makes: [paramotors]
+  basedIn: IT
   website: https://flyproducts.com/
 - name: Icaro 2000
   distributors: []
@@ -1121,6 +1188,8 @@
     url: https://www.icaro2000.com/Dealers/Hanggliders/Dealers.htm
     checked: 2026-11-05
   officialList: true
+  makes: [hang-gliders]
+  basedIn: IT
   website: https://www.icaro2000.com/
 - name: Independence
   distributors: []
@@ -1128,6 +1197,8 @@
     url: https://www.independence.aero/en/
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, harnesses, reserves]
+  basedIn: DE
   website: https://www.independence.aero/en/
 - name: Mac Para
   distributors: []
@@ -1135,6 +1206,8 @@
     url: https://www.macpara.com/en/contacts/importers/
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, paramotor-wings, harnesses, reserves]
+  basedIn: CZ
   website: https://www.macpara.com/en
 - name: PAP
   distributors: []
@@ -1142,6 +1215,8 @@
     url: https://papteam.com/shopfinder/
     checked: 2026-11-05
   officialList: true
+  makes: [paramotors]
+  basedIn: ES
   website: https://papteam.com/
 - name: Polini Thor
   distributors: []
@@ -1149,6 +1224,8 @@
     url: https://www.polinithor.com/en/thor-dealers/
     checked: 2026-11-05
   officialList: true
+  makes: [engines]
+  basedIn: IT
   website: https://www.polinithor.com/
 - name: Scout
   distributors: []
@@ -1156,6 +1233,8 @@
     url: https://www.scoutaviation.com/paramotoring/contact/find-dealer/
     checked: 2026-11-05
   officialList: true
+  makes: [paramotors, harnesses]
+  basedIn: SK
   website: https://www.scoutaviation.com/
 - name: Sky Paragliders
   distributors: []
@@ -1163,6 +1242,8 @@
     url: https://sky-cz.com/en/dealers
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, speed-wings, paramotor-wings, harnesses, reserves]
+  basedIn: CZ
   website: https://sky-cz.com/
 - name: Skyman
   distributors: []
@@ -1170,6 +1251,8 @@
     url: https://www.skyman.aero/en/dealers/
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, speed-wings, harnesses, reserves]
+  basedIn: DE
   website: https://www.skyman.aero/
 - name: Sol Paragliders
   distributors: []
@@ -1177,24 +1260,34 @@
     url: https://www.solparagliders.com.br/revendedores.php
     checked: 2026-11-05
   officialList: true
+  makes: [paragliders, harnesses, reserves]
+  basedIn: BR
   website: https://www.solparagliders.com.br/
 - name: Fresh Breeze
   distributors: []
   officialList: true
+  makes: [paramotors, paramotor-wings]
+  basedIn: DE
   website: https://www.fresh-breeze.de/en/
   noDealerListChecked: 2026-11-05
 - name: Miniplane
   distributors: []
   officialList: true
+  makes: [paramotors, engines]
+  basedIn: IT
   website: https://www.miniplane.it/
   noDealerListChecked: 2026-11-05
 - name: Wills Wing
   distributors: []
   officialList: true
+  makes: [hang-gliders]
+  basedIn: US
   website: https://willswing.org/
   noDealerListChecked: 2026-11-05
 - name: Windtech
   distributors: []
   officialList: true
+  makes: [paragliders, speed-wings, paramotor-wings, reserves]
+  basedIn: ES
   website: https://www.windtech.es/en/index.html
   noDealerListChecked: 2026-11-05
