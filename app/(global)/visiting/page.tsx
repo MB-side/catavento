@@ -2,17 +2,12 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { VisitorRules } from "@/components/domain/VisitorRules";
 import { card, h2, PageHeader } from "@/components/layout/PageHeader";
-import {
-  getGuide,
-  getOverviewRegions,
-  getTourOperators,
-  getVisitingCountries,
-  getVisitorHelp,
-} from "@/lib/data";
+import { CoverageBadge } from "@/components/domain/CoverageBadge";
+import { getCountryProfiles, type CountryProfile } from "@/lib/country-profile";
+import { getGuide, getOverviewRegions, getTourOperators, getVisitorHelp } from "@/lib/data";
 import { t, tCount } from "@/lib/messages";
 import { isGroup } from "@/lib/overview";
 import { pageMetadata } from "@/lib/seo";
-import type { VisitingCountry } from "@/lib/types";
 import { TOURS_PATH, visitingHref } from "@/lib/visiting";
 
 export const metadata = pageMetadata({
@@ -24,7 +19,7 @@ export const metadata = pageMetadata({
 const tile =
   "flex h-full min-h-11 items-center justify-between gap-3 rounded-[14px] border border-border bg-surface p-4 text-ink hover:border-link hover:text-ink";
 
-function CountryTile({ c, note }: { c: VisitingCountry; note?: string }) {
+function CountryTile({ c, note }: { c: CountryProfile; note?: string }) {
   const help = getVisitorHelp(c.code).length;
   const tours = getTourOperators(c.code).length;
   const parts = [
@@ -36,7 +31,10 @@ function CountryTile({ c, note }: { c: VisitingCountry; note?: string }) {
     <li>
       <Link href={visitingHref(c)} className={tile}>
         <span>
-          <span className="block font-condensed text-[1.25rem] font-bold">{c.name}</span>
+          <span className="flex flex-wrap items-center gap-2">
+            <span className="font-condensed text-[1.25rem] font-bold">{c.name}</span>
+            <CoverageBadge coverage={c.coverage} />
+          </span>
           {parts.length > 0 && (
             <span className="block text-[0.875rem] text-muted">{parts.join(" · ")}</span>
           )}
@@ -51,14 +49,10 @@ const grid = "mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3";
 
 /** Visiting pilots (D89): every country with a visiting page, flying tours, and rules for any trip. */
 export default function VisitingPage() {
-  const countries = getVisitingCountries();
-  const home = countries.filter((c) => c.group === "home");
-  const regions = getOverviewRegions();
-  const groups = regions.filter(isGroup);
-  const destinations = countries.filter((c) => {
-    const r = regions.find((x) => x.slug === c.group);
-    return (r && !isGroup(r)) || c.group === "elsewhere";
-  });
+  const countries = getCountryProfiles();
+  const home = countries.filter((c) => c.country);
+  const groups = getOverviewRegions().filter(isGroup);
+  const destinations = countries.filter((c) => !c.country && (!c.region || !isGroup(c.region)));
   const tours = getTourOperators().length;
   return (
     <div className="flex flex-col gap-6">
@@ -92,7 +86,7 @@ export default function VisitingPage() {
       )}
 
       {groups.map((r) => {
-        const inGroup = countries.filter((c) => c.group === r.slug);
+        const inGroup = countries.filter((c) => c.region?.slug === r.slug);
         return inGroup.length > 0 ? (
           <section key={r.slug} aria-labelledby={`group-${r.slug}`}>
             <h2 id={`group-${r.slug}`} className={h2}>

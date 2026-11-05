@@ -9,10 +9,18 @@ export const countrySegments: readonly string[] = siteConfig.enabledCountries.ma
 export const defaultCountrySegment = siteConfig.defaultCountry.toLowerCase();
 
 /**
- * The country segment a path belongs to, or undefined for global pages.
+ * The country segment a path belongs to, or undefined for global pages. Every country has a page at
+ * /<two-letter code>/ (D93); no global page has a two-letter name.
  * Accepts paths with or without the basePath already removed (as usePathname returns them).
  */
 export function countryFromPath(pathname: string): string | undefined {
-  const first = pathname.split("/").find((part) => part !== "");
-  return first !== undefined && countrySegments.includes(first) ? first : undefined;
+  const parts = pathname.split("/").filter((part) => part !== "");
+  const first = parts[0] === siteConfig.basePath.replace(/^\//, "") ? parts[1] : parts[0];
+  return first !== undefined && /^[a-z]{2}$/.test(first) ? first : undefined;
 }
+
+/** Whether a country has the full set of sections (Australia, New Zealand) or a single page. */
+export const hasSections = (segment: string): boolean => countrySegments.includes(segment);
+
+/** Where the visitor's last country is remembered, on their own device only. */
+export const COUNTRY_KEY = "catavento.country";

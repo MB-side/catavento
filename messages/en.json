@@ -29,7 +29,10 @@
     "closeMenu": "Close menu",
     "skipToContent": "Skip to content",
     "phoneTabs": "Sections",
-    "visiting": "Destinations"
+    "visiting": "Destinations",
+    "map": "Map",
+    "beforeYouFly": "Before you fly",
+    "flyWithSomeone": "Fly with someone"
   },
   "footer": {
     "label": "Site information",
@@ -56,7 +59,7 @@
     "newToFlying": "Tandem flights, learning to fly, and schools.",
     "elsewhereHeading": "Flying elsewhere",
     "elsewhereText": "Travelling? A short overview of other countries: where the sites are, how flying works for visitors and learners, and who to contact.",
-    "countriesHeading": "Browse by country",
+    "countriesHeading": "Where are you flying?",
     "nationalBody": "National body: {name}",
     "sampleLabel": "Sample",
     "building": "This is a prototype for community feedback. Everything here comes from public sources and is credited on each page. Tell us what's useful and what's missing.",
@@ -968,5 +971,55 @@
     "t5": "On your phone, add Catavento to your home screen.",
     "t6": "Search for a site, club or school.",
     "outro": "Then tell us what was useful, what was wrong and what's missing."
+  },
+  "countryPage": {
+    "title": "Flying in {country}",
+    "summary": "Sites, rules for visitors, local contacts, schools and help on the ground, tours, gear, events and weather in {country}.",
+    "intro": "Where the sites are, what visitors need to know, and who can help, with every fact linked to its source.",
+    "coverage": {
+      "full": "Full coverage",
+      "partial": "Partial",
+      "overview": "Overview"
+    },
+    "sections": {
+      "map": "Sites on the map",
+      "rules": "Before you fly",
+      "contacts": "Local contacts",
+      "learn": "Learn and fly with someone",
+      "tours": "Flying tours here",
+      "gear": "Gear",
+      "events": "Events and notices",
+      "more": "Weather and more sources"
+    },
+    "allSites": "All {count} sites, with wind directions, an outlook and who looks after each one",
+    "siteListLink": "List of all {count} sites",
+    "siteListHeading": "All sites in {country}",
+    "noSites": "ParaglidingEarth lists no sites here yet.",
+    "visitorGuide": "Full guide for visiting pilots",
+    "clubsLine": "{count} clubs look after {country}'s sites. Each site page names its club.",
+    "findClub": "Find a club",
+    "contactsPointer": "We haven't gathered local contacts for {country} yet.",
+    "askBody": "Ask {body} about local clubs.",
+    "learnLine": "{schools} schools and tandem flights in {country}.",
+    "learnLinks": "Learning to fly and tandem flights",
+    "learnersHeading": "Learning to fly here",
+    "helpHeading": "Help for visiting pilots",
+    "gearLine": "Shops and service centres, schools that sell gear, and who sells each brand.",
+    "gearShops": "Shops",
+    "gearWhere": "Where to buy",
+    "gearUsed": "Used gear",
+    "gearPointer": "We haven't gathered shops for {country} yet. Many brands list their dealers by country:",
+    "eventsLink": "Events and notices in {country}",
+    "eventsPointer": "We haven't gathered events for {country} yet.",
+    "eventsAskBody": "{body} publishes its own events and notices.",
+    "weatherLine": "Live wind links for {stations} weather stations, and a 3-day outlook on every site page.",
+    "morePointer": "More about flying here: ParaglidingEarth's page for {country}.",
+    "switcherLabel": "Flying in",
+    "chooseCountry": "Choose a country",
+    "otherCountries": "Other countries"
+  },
+  "forward": {
+    "text": "This page has moved.",
+    "link": "Go to its new page"
   }
 }

@@ -11,9 +11,11 @@ const h3 = "font-condensed text-[1.25rem] font-bold";
 export function VisitorRules({
   guide,
   showBody = true,
+  showPractice = true,
 }: {
   guide?: CountryGuide;
   showBody?: boolean;
+  showPractice?: boolean;
 }) {
   if (!guide || (guide.visitors.length === 0 && !guide.practice?.length)) {
     return <p className="text-muted-strong">{t("visiting.rulesMissing")}</p>;
@@ -34,7 +36,7 @@ export function VisitorRules({
         </ul>
       )}
       {guide.visitors.length > 0 && <RulesNotice guide={guide} />}
-      {guide.practice && guide.practice.length > 0 && (
+      {showPractice && guide.practice && guide.practice.length > 0 && (
         <div>
           <h3 className={h3}>{t("visiting.practiceHeading")}</h3>
           <ul className="mt-1 list-disc space-y-1 pl-5">

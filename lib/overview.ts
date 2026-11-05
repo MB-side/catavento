@@ -14,9 +14,9 @@ export function worldPath(region?: OverviewRegion | string, country?: string): s
 /** The list entry a map pin points at. */
 export const siteAnchor = (s: Pick<OverviewSite, "id">): string => `site-${s.id.slice(4)}`;
 
-/** Where a site is listed: its country's page in a group, or the destination's page. */
-export function overviewSiteHref(region: OverviewRegion, s: OverviewSite): string {
-  return `${worldPath(region, isGroup(region) ? s.country : undefined)}/#${siteAnchor(s)}`;
+/** Where a site is listed: at the foot of its country's page (D93). */
+export function overviewSiteHref(_region: OverviewRegion, s: OverviewSite): string {
+  return `/${s.country.toLowerCase()}/#${siteAnchor(s)}`;
 }
 
 /** The region's map data file, written at build time. */

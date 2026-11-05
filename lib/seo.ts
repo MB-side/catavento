@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/site.config";
 import { absoluteUrl } from "./paths";
 
-/** Title for the home page: "Catavento · Paragliding and hang gliding in Australia, all in one place". */
+/** Title for the home page: "Catavento · Paragliding and hang gliding, country by country". */
 export const homeTitle = `${siteConfig.name} · ${siteConfig.titleDescriptor}`;
 
 /** Robots directive for every page; indexing stays off until consultation launch. */

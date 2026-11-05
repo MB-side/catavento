@@ -40,8 +40,8 @@ describe("visiting", () => {
 });
 
 describe("visitingHref", () => {
-  it("keeps Australia and New Zealand in their own sections", () => {
-    expect(visitingHref({ code: "AU", group: "home" })).toBe("/au/visiting-pilots/");
-    expect(visitingHref({ code: "FR", group: "europe" })).toBe("/visiting/fr/");
+  it("goes to each country's own page (D93)", () => {
+    expect(visitingHref({ code: "AU" })).toBe("/au/");
+    expect(visitingHref({ code: "FR" })).toBe("/fr/");
   });
 });

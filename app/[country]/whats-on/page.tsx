@@ -1,3 +1,4 @@
+import { enabledCountryParams } from "@/lib/country";
 import { notFound } from "next/navigation";
 import { EventsExplorer } from "@/components/domain/EventsExplorer";
 import { countryPageMetadata } from "@/components/layout/CountryPage";
@@ -8,6 +9,11 @@ import { jsonLdScript } from "@/lib/seo";
 import { formatDate } from "@/lib/format";
 import { t } from "@/lib/messages";
 import { Anchor } from "@/components/ui/anchor";
+
+// Only Australia and New Zealand have this section; other countries have one page (D93).
+export function generateStaticParams() {
+  return enabledCountryParams();
+}
 
 export function generateMetadata({ params }: PageProps<"/[country]/whats-on">) {
   return countryPageMetadata(params, "whatsOn");

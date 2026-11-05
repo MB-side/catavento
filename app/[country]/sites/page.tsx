@@ -1,3 +1,4 @@
+import { enabledCountryParams } from "@/lib/country";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { SitesExplorer } from "@/components/domain/SitesExplorer";
@@ -6,6 +7,11 @@ import { getCountry } from "@/lib/country";
 import { t } from "@/lib/messages";
 import { siteSummaries } from "@/lib/site-view";
 import { regionPath } from "@/lib/sites";
+
+// Only Australia and New Zealand have this section; other countries have one page (D93).
+export function generateStaticParams() {
+  return enabledCountryParams();
+}
 
 export function generateMetadata({ params }: PageProps<"/[country]/sites">) {
   return countryPageMetadata(params, "sites");

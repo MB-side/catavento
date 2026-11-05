@@ -1,3 +1,4 @@
+import { enabledCountryParams } from "@/lib/country";
 import { notFound } from "next/navigation";
 import { GearExplorer } from "@/components/domain/GearExplorer";
 import { card, PageHeader } from "@/components/layout/PageHeader";
@@ -5,6 +6,11 @@ import { countryFromParams } from "@/lib/country";
 import { brandsByOrg, gearOrgs, priceFrom } from "@/lib/directory";
 import { t } from "@/lib/messages";
 import { pageMetadata } from "@/lib/seo";
+
+// Only Australia and New Zealand have this section; other countries have one page (D93).
+export function generateStaticParams() {
+  return enabledCountryParams();
+}
 
 export async function generateMetadata({ params }: PageProps<"/[country]/gear/shops">) {
   const country = await countryFromParams(params);

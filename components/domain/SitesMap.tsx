@@ -122,7 +122,9 @@ export default function SitesMap({
       if (!map.isStyleLoaded() || /style|source/i.test(String(e.error?.message ?? "")))
         setFailed(true);
     });
-    map.on("load", () => {
+    // Add the sites as soon as the style is ready, without waiting for the starting view's tiles
+    // ("load" waits for those, which delays the move to a far-off country by several seconds).
+    map.once("style.load", () => {
       map.addSource("sites", {
         type: "geojson",
         data,

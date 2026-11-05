@@ -1,3 +1,4 @@
+import { enabledCountryParams } from "@/lib/country";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ExternalLink } from "lucide-react";
@@ -15,6 +16,11 @@ import { visitingPath } from "@/lib/visiting";
 import { countryLookups } from "@/lib/visiting-pages";
 import { t } from "@/lib/messages";
 import { Anchor } from "@/components/ui/anchor";
+
+// Only Australia and New Zealand have this section; other countries have one page (D93).
+export function generateStaticParams() {
+  return enabledCountryParams();
+}
 
 export function generateMetadata({ params }: PageProps<"/[country]/visiting-pilots">) {
   return countryPageMetadata(params, "visitingPilots");

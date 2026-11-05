@@ -1,3 +1,4 @@
+import { enabledCountryParams } from "@/lib/country";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ExternalLink } from "lucide-react";
@@ -7,6 +8,11 @@ import { t } from "@/lib/messages";
 import { DISCIPLINE_PAGES } from "@/lib/learn";
 import { pageMetadata } from "@/lib/seo";
 import { Anchor } from "@/components/ui/anchor";
+
+// Only Australia and New Zealand have this section; other countries have one page (D93).
+export function generateStaticParams() {
+  return enabledCountryParams();
+}
 
 export async function generateMetadata({ params }: PageProps<"/[country]/new-to-flying/learn">) {
   const country = await countryFromParams(params);
