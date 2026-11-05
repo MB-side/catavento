@@ -24,6 +24,17 @@
     ]
   },
   {
+    "id": "brand:aeros",
+    "name": "Aeros",
+    "website": "https://aeros.com.ua/",
+    "distributors": [],
+    "dealerPage": {
+      "url": "https://aeros.com.ua/contact_us",
+      "checked": "2026-11-05"
+    },
+    "officialList": true
+  },
+  {
     "id": "brand:air-hog",
     "name": "Air Hog",
     "distributors": [
@@ -103,6 +114,17 @@
         "checked": "2026-10-14"
       }
     ]
+  },
+  {
+    "id": "brand:axis",
+    "name": "Axis",
+    "website": "https://axispara.cz/",
+    "distributors": [],
+    "dealerPage": {
+      "url": "https://axispara.cz/dealers/",
+      "checked": "2026-11-05"
+    },
+    "officialList": true
   },
   {
     "id": "brand:bf",
@@ -228,6 +250,17 @@
     "officialList": true
   },
   {
+    "id": "brand:fly-products",
+    "name": "Fly Products",
+    "website": "https://flyproducts.com/",
+    "distributors": [],
+    "dealerPage": {
+      "url": "https://flyproducts.com/rivenditori/",
+      "checked": "2026-11-05"
+    },
+    "officialList": true
+  },
+  {
     "id": "brand:flymaster",
     "name": "Flymaster",
     "distributors": [
@@ -316,6 +349,13 @@
     }
   },
   {
+    "id": "brand:fresh-breeze",
+    "name": "Fresh Breeze",
+    "website": "https://www.fresh-breeze.de/en/",
+    "distributors": [],
+    "officialList": true
+  },
+  {
     "id": "brand:garmin",
     "name": "Garmin",
     "distributors": [
@@ -356,6 +396,17 @@
     "distributors": [],
     "dealerPage": {
       "url": "https://icaro-paragliders.com/en/dealers/",
+      "checked": "2026-11-05"
+    },
+    "officialList": true
+  },
+  {
+    "id": "brand:icaro-2000",
+    "name": "Icaro 2000",
+    "website": "https://www.icaro2000.com/",
+    "distributors": [],
+    "dealerPage": {
+      "url": "https://www.icaro2000.com/Dealers/Hanggliders/Dealers.htm",
       "checked": "2026-11-05"
     },
     "officialList": true
@@ -406,9 +457,25 @@
     }
   },
   {
+    "id": "brand:independence",
+    "name": "Independence",
+    "website": "https://www.independence.aero/en/",
+    "distributors": [],
+    "dealerPage": {
+      "url": "https://www.independence.aero/en/",
+      "checked": "2026-11-05"
+    },
+    "officialList": true
+  },
+  {
     "id": "brand:kortel",
     "name": "Kortel",
+    "website": "https://www.korteldesign.com",
     "distributors": [],
+    "dealerPage": {
+      "url": "https://www.korteldesign.com/gb/stores",
+      "checked": "2026-11-05"
+    },
     "officialList": true
   },
   {
@@ -468,6 +535,17 @@
     }
   },
   {
+    "id": "brand:mac-para",
+    "name": "Mac Para",
+    "website": "https://www.macpara.com/en",
+    "distributors": [],
+    "dealerPage": {
+      "url": "https://www.macpara.com/en/contacts/importers/",
+      "checked": "2026-11-05"
+    },
+    "officialList": true
+  },
+  {
     "id": "brand:macfly",
     "name": "MacFly",
     "website": "https://www.macflyparamotors.com/",
@@ -513,6 +591,13 @@
       "url": "https://microavionics.com/pages/global-distributors",
       "checked": "2026-10-14"
     }
+  },
+  {
+    "id": "brand:miniplane",
+    "name": "Miniplane",
+    "website": "https://www.miniplane.it/",
+    "distributors": [],
+    "officialList": true
   },
   {
     "id": "brand:mipbip",
@@ -635,6 +720,17 @@
     "officialList": true
   },
   {
+    "id": "brand:pap",
+    "name": "PAP",
+    "website": "https://papteam.com/",
+    "distributors": [],
+    "dealerPage": {
+      "url": "https://papteam.com/shopfinder/",
+      "checked": "2026-11-05"
+    },
+    "officialList": true
+  },
+  {
     "id": "brand:parajet",
     "name": "Parajet",
     "website": "https://parajet.com/",
@@ -657,6 +753,17 @@
     "officialList": true
   },
   {
+    "id": "brand:polini-thor",
+    "name": "Polini Thor",
+    "website": "https://www.polinithor.com/",
+    "distributors": [],
+    "dealerPage": {
+      "url": "https://www.polinithor.com/en/thor-dealers/",
+      "checked": "2026-11-05"
+    },
+    "officialList": true
+  },
+  {
     "id": "brand:raptor-designs",
     "name": "Raptor Designs",
     "distributors": [
@@ -670,12 +777,56 @@
     ]
   },
   {
+    "id": "brand:scout",
+    "name": "Scout",
+    "website": "https://www.scoutaviation.com/",
+    "distributors": [],
+    "dealerPage": {
+      "url": "https://www.scoutaviation.com/paramotoring/contact/find-dealer/",
+      "checked": "2026-11-05"
+    },
+    "officialList": true
+  },
+  {
+    "id": "brand:sky-paragliders",
+    "name": "Sky Paragliders",
+    "website": "https://sky-cz.com/",
+    "distributors": [],
+    "dealerPage": {
+      "url": "https://sky-cz.com/en/dealers",
+      "checked": "2026-11-05"
+    },
+    "officialList": true
+  },
+  {
+    "id": "brand:skyman",
+    "name": "Skyman",
+    "website": "https://www.skyman.aero/",
+    "distributors": [],
+    "dealerPage": {
+      "url": "https://www.skyman.aero/en/dealers/",
+      "checked": "2026-11-05"
+    },
+    "officialList": true
+  },
+  {
     "id": "brand:skywalk",
     "name": "Skywalk",
     "website": "https://skywalk.info/",
     "distributors": [],
     "dealerPage": {
       "url": "https://skywalk.info/distributor/",
+      "checked": "2026-11-05"
+    },
+    "officialList": true
+  },
+  {
+    "id": "brand:sol-paragliders",
+    "name": "Sol Paragliders",
+    "website": "https://www.solparagliders.com.br/",
+    "distributors": [],
+    "dealerPage": {
+      "url": "https://www.solparagliders.com.br/revendedores.php",
       "checked": "2026-11-05"
     },
     "officialList": true
@@ -786,6 +937,20 @@
       "url": "https://vittorazi.com/en/dealers/",
       "checked": "2026-11-05"
     },
+    "officialList": true
+  },
+  {
+    "id": "brand:wills-wing",
+    "name": "Wills Wing",
+    "website": "https://willswing.org/",
+    "distributors": [],
+    "officialList": true
+  },
+  {
+    "id": "brand:windtech",
+    "name": "Windtech",
+    "website": "https://www.windtech.es/en/index.html",
+    "distributors": [],
     "officialList": true
   },
   {

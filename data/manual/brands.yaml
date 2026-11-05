@@ -461,7 +461,11 @@
       basis: self
       source: https://cloudbaseparagliding.com.au/
       checked: 2026-10-14
+  dealerPage:
+    url: https://www.korteldesign.com/gb/stores
+    checked: 2026-11-05
   officialList: true
+  website: https://www.korteldesign.com
 - name: Lazer
   distributors:
     - org: org:au:manilla-paragliding
@@ -1088,3 +1092,109 @@
   dealerPage:
     url: https://www.xctracer.com/reseller
     checked: 2026-10-14
+
+# Main brands added 2026-11-05 from each brand's own website (D95, D96).
+- name: Aeros
+  distributors: []
+  dealerPage:
+    url: https://aeros.com.ua/contact_us
+    checked: 2026-11-05
+  officialList: true
+  website: https://aeros.com.ua/
+- name: Axis
+  distributors: []
+  dealerPage:
+    url: https://axispara.cz/dealers/
+    checked: 2026-11-05
+  officialList: true
+  website: https://axispara.cz/
+- name: Fly Products
+  distributors: []
+  dealerPage:
+    url: https://flyproducts.com/rivenditori/
+    checked: 2026-11-05
+  officialList: true
+  website: https://flyproducts.com/
+- name: Icaro 2000
+  distributors: []
+  dealerPage:
+    url: https://www.icaro2000.com/Dealers/Hanggliders/Dealers.htm
+    checked: 2026-11-05
+  officialList: true
+  website: https://www.icaro2000.com/
+- name: Independence
+  distributors: []
+  dealerPage:
+    url: https://www.independence.aero/en/
+    checked: 2026-11-05
+  officialList: true
+  website: https://www.independence.aero/en/
+- name: Mac Para
+  distributors: []
+  dealerPage:
+    url: https://www.macpara.com/en/contacts/importers/
+    checked: 2026-11-05
+  officialList: true
+  website: https://www.macpara.com/en
+- name: PAP
+  distributors: []
+  dealerPage:
+    url: https://papteam.com/shopfinder/
+    checked: 2026-11-05
+  officialList: true
+  website: https://papteam.com/
+- name: Polini Thor
+  distributors: []
+  dealerPage:
+    url: https://www.polinithor.com/en/thor-dealers/
+    checked: 2026-11-05
+  officialList: true
+  website: https://www.polinithor.com/
+- name: Scout
+  distributors: []
+  dealerPage:
+    url: https://www.scoutaviation.com/paramotoring/contact/find-dealer/
+    checked: 2026-11-05
+  officialList: true
+  website: https://www.scoutaviation.com/
+- name: Sky Paragliders
+  distributors: []
+  dealerPage:
+    url: https://sky-cz.com/en/dealers
+    checked: 2026-11-05
+  officialList: true
+  website: https://sky-cz.com/
+- name: Skyman
+  distributors: []
+  dealerPage:
+    url: https://www.skyman.aero/en/dealers/
+    checked: 2026-11-05
+  officialList: true
+  website: https://www.skyman.aero/
+- name: Sol Paragliders
+  distributors: []
+  dealerPage:
+    url: https://www.solparagliders.com.br/revendedores.php
+    checked: 2026-11-05
+  officialList: true
+  website: https://www.solparagliders.com.br/
+- name: Fresh Breeze
+  distributors: []
+  officialList: true
+  website: https://www.fresh-breeze.de/en/
+  noDealerListChecked: 2026-11-05
+- name: Miniplane
+  distributors: []
+  officialList: true
+  website: https://www.miniplane.it/
+  noDealerListChecked: 2026-11-05
+- name: Wills Wing
+  distributors: []
+  officialList: true
+  website: https://willswing.org/
+  noDealerListChecked: 2026-11-05
+- name: Windtech
+  distributors: []
+  officialList: true
+  website: https://www.windtech.es/en/index.html
+  noDealerListChecked: 2026-11-05
