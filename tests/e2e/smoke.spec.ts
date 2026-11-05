@@ -46,7 +46,7 @@ test.describe("every page", () => {
 test("home page has the brand title, descriptor and Organization JSON-LD", async ({ page }) => {
   await page.goto("");
   await expect(page).toHaveTitle(
-    "Catavento · Paragliding and hang gliding in Australia, all in one place",
+    "Catavento · Paragliding and hang gliding, country by country",
   );
   await expect(page.locator("h1")).toHaveText("Catavento");
   const jsonLd = await page.locator('script[type="application/ld+json"]').first().textContent();

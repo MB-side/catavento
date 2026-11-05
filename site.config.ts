@@ -11,8 +11,8 @@ export interface AnalyticsConfig {
 
 export const siteConfig = {
   name: "Catavento",
-  descriptor: "Paragliding and hang gliding, all in one place",
-  titleDescriptor: "Paragliding and hang gliding in Australia, all in one place",
+  descriptor: "Paragliding and hang gliding, country by country",
+  titleDescriptor: "Paragliding and hang gliding, country by country",
   // Draft copy for founder review (docs/07 §9).
   whyTheName:
     "Catavento is Portuguese for pinwheel: it means \u201ccatch the wind\u201d. Like a pinwheel, everything here turns around one centre: the sites, clubs, schools and pilots of free flight.",
