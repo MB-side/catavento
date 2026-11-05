@@ -46,7 +46,8 @@ export default async function WhereToBuyPage({
         .filter((x) => x.org?.country === country.code)
         .sort((a, b) => ROLE_ORDER.indexOf(a.role) - ROLE_ORDER.indexOf(b.role)),
     }))
-    .filter((x) => x.who.length > 0);
+    // A main brand with no dealer we could confirm still appears, pointing to its own list (D94).
+    .filter((x) => x.who.length > 0 || x.brand.dealerPage);
   return (
     <div className="flex flex-col gap-6">
       <PageHeader
@@ -63,6 +64,11 @@ export default async function WhereToBuyPage({
             {brands.map(({ brand, who }) => (
               <li key={brand.id} className={card}>
                 <h2 className="font-condensed text-[1.375rem] font-bold">{brand.name}</h2>
+                {who.length === 0 && (
+                  <p className="mt-1 text-[0.9375rem] text-muted-strong">
+                    {t("gear.noConfirmedDealer", { brand: brand.name, country: country.name })}
+                  </p>
+                )}
                 <ul className="mt-1 flex flex-col gap-1">
                   {who.map(({ org, role, basis }) =>
                     org ? (

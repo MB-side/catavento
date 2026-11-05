@@ -292,6 +292,8 @@ export interface Brand {
   }[];
   /** The brand's own dealer or distributor list (D84). */
   dealerPage?: { url: string; checked: string };
+  /** Wings, harnesses, reserves, hang gliders, paramotors: only businesses the brand itself lists (D94). */
+  officialList?: boolean;
 }
 
 /** One business's link to a brand, for its card and profile (D84). */

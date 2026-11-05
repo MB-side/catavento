@@ -301,3 +301,23 @@ test("Where to buy says how we know each business sells a brand", async ({ page 
     "https://www.nova.eu/en/try-buy/",
   );
 });
+
+test("main brands list only businesses named on the brand's own dealer list (D94)", async ({
+  page,
+}) => {
+  await page.goto("au/gear/where-to-buy/");
+  const brand = (name: string) =>
+    page
+      .getByTestId("brands")
+      .locator("li")
+      .filter({ has: page.getByRole("heading", { name }) });
+  for (const name of ["Flare", "Niviuk", "Dudek"]) {
+    await expect(brand(name)).not.toContainText("Paragliding Shop");
+  }
+  await expect(brand("Ozone")).toContainText("Paragliding Shop");
+  await expect(brand("Ozone")).not.toContainText("as the business states");
+  await expect(brand("Niviuk")).toContainText("We couldn't confirm a dealer");
+  await expect(
+    brand("Niviuk").getByRole("link", { name: /Niviuk's own dealer list/ }),
+  ).toBeVisible();
+});

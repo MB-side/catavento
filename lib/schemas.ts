@@ -430,6 +430,7 @@ export const brandsFileSchema = z
       source: z.string().optional(),
       // The brand's own dealer or distributor list, linked from Where to buy (D84).
       dealerPage: z.object({ url: httpUrl, checked: z.iso.date() }).optional(),
+      officialList: z.boolean().optional(), // D94
     }),
   )
   .nullable();
@@ -454,6 +455,7 @@ export const brandSchema = z.object({
     }),
   ),
   dealerPage: z.object({ url: httpUrl, checked: z.iso.date() }).optional(),
+  officialList: z.boolean().optional(),
 }) satisfies z.ZodType<Brand>;
 
 export const offeringSchema = z.object({
