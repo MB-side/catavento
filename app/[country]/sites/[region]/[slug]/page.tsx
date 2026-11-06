@@ -349,6 +349,9 @@ export default async function SitePage({ params }: PageProps<"/[country]/sites/[
                 </li>
               ))}
             </ul>
+            <p className="mt-3">
+              <Link href="/tools/">{t("site.forecasts.moreTools")}</Link>
+            </p>
           </section>
 
           {(view.steward ?? view.listed) && (

@@ -1,6 +1,7 @@
 // Builds every generated data file from already-parsed inputs (docs/03 §6). Pure: the file
 // reading and writing lives in scripts/build-data.ts, so the whole pipeline is testable.
 import type {
+  PilotTool,
   BuildReport,
   BuildWarning,
   Club,
@@ -93,6 +94,7 @@ export interface BuildInputs {
     makes?: Brand["makes"];
     basedIn?: string;
   }[];
+  tools: Omit<PilotTool, "id">[];
   visiting: {
     help: (Omit<VisitorHelp, "id" | "name" | "orgId"> & { name?: string; org?: string })[];
     tours: Omit<TourOperator, "id">[];
@@ -110,6 +112,7 @@ export interface BuildOutputs {
   brands: Brand[];
   offerings: Offering[];
   resources: Resource[];
+  tools: PilotTool[];
   overview: { regions: OverviewRegion[]; guides: CountryGuide[] };
   overviewSites: OverviewSite[];
   visiting: { help: VisitorHelp[]; tours: TourOperator[] };
@@ -344,6 +347,7 @@ export function buildData(input: BuildInputs): BuildOutputs {
       .sort(byId),
     offerings,
     resources: seed.resources.sort(byId),
+    tools: input.tools.map((t) => ({ id: `tool:${slugify(t.name)}`, ...t })),
     overview: { regions: input.overview, guides: input.guides },
     overviewSites,
     visiting: {

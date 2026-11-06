@@ -38,12 +38,15 @@
     "label": "Site information",
     "about": "About",
     "sources": "Sources and attribution",
+    "tools": "Pilot tools",
     "status": "Status",
     "bot": "Bot policy",
     "takedown": "Takedown",
     "privacy": "Privacy",
     "disclaimer": "Disclaimer",
     "feedback": "Feedback",
+    "toolsLink": "Pilot tools: forecasts, flight maps, logbooks and more",
+    "paraglidableCountry": "{country} on Paraglidable, an experimental AI forecast for free flight in Europe",
     "independence": "Catavento is an independent prototype. Information comes from public sources and is credited on every page. It is indicative, not complete: there is always more out there, and we add it as we find it.",
     "correction": "Report a correction"
   },
@@ -91,6 +94,10 @@
     "sources": {
       "title": "Sources and attribution",
       "summary": "Every source we use, how often we check it and how it is credited."
+    },
+    "tools": {
+      "title": "Pilot tools",
+      "summary": "Websites and apps pilots find useful: forecasts, live wind, flying sites, flight maps, airspace, logbooks, travel and learning."
     },
     "status": {
       "title": "Status",
@@ -223,6 +230,28 @@
     "landingMap": "Landing on a map",
     "showOutlook": "Show the next 3 days",
     "checked": "checked {date}"
+  },
+  "tools": {
+    "intro": "Websites and apps that pilots find useful, from forecasts to logbooks. Catavento doesn't run them or check what they say: each one is its own source, so open it to see the latest.",
+    "groupsNav": "Tools by type",
+    "open": "Open {name}",
+    "note": "Know a tool that belongs here? Tell us through the feedback form.",
+    "group": {
+      "forecasts": { "title": "Forecasts and planning", "text": "Forecasts made for free flight." },
+      "live-wind": { "title": "Live wind", "text": "Weather stations at flying sites, read live." },
+      "sites": { "title": "Flying sites", "text": "Guides and maps of where to launch." },
+      "flights": {
+        "title": "Where pilots fly",
+        "text": "Flights other pilots have logged, on a map."
+      },
+      "airspace": {
+        "title": "Airspace",
+        "text": "Where you can and can't fly, and at what height."
+      },
+      "logbooks": { "title": "Logbooks", "text": "Keep a record of your own flights." },
+      "travel": { "title": "Travel", "text": "Ideas for where to fly next." },
+      "learning": { "title": "Learning", "text": "Podcasts and magazines." }
+    }
   },
   "sources": {
     "intro": "Catavento brings together public information from many places. Every record shows where it came from and when it was checked. This page lists every source, what we use from it, how often we check it, and the credit we show.",
@@ -430,7 +459,8 @@
       "intro": "Forecast wind direction at this launch, compared with the published range. For thermals, cloud and more detail, try:",
       "wtf": "Where To Fly",
       "skysight": "SkySight",
-      "pgmap": "Paragliding Map"
+      "pgmap": "Paragliding Map",
+      "moreTools": "More pilot tools"
     },
     "facts": {
       "heading": "Before you fly",

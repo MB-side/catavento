@@ -15,6 +15,7 @@ import {
   offeringSchema,
   providerSchema,
   resourceSchema,
+  pilotToolSchema,
   siteSchema,
   stationSchema,
   overviewSiteSchema,
@@ -36,6 +37,7 @@ import type {
   Organisation,
   Provider,
   Resource,
+  PilotTool,
   Site,
   Station,
   CountryGuide,
@@ -147,6 +149,11 @@ export function getOfferings(orgId?: string): Offering[] {
 
 export function getBrands(): Brand[] {
   return load("brands.json", z.array(brandSchema));
+}
+
+/** Outside tools for pilots (D99), in file order. */
+export function getTools(): PilotTool[] {
+  return load("tools.json", z.array(pilotToolSchema));
 }
 
 export function getResources(): Resource[] {

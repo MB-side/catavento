@@ -11,6 +11,7 @@ import {
   siteWindFileSchema,
   overviewFileSchema,
   guidesFileSchema,
+  toolsFileSchema,
   visitingFileSchema,
   countriesFileSchema,
   nzSampleSitesFileSchema,
@@ -80,6 +81,7 @@ export function readInputs(root: string = process.cwd()): BuildInputs {
     siteWind: readYaml("site-wind.yaml", siteWindFileSchema) ?? [],
     overview: readYaml("overview.yaml", overviewFileSchema).regions,
     guides: readYaml("guides.yaml", guidesFileSchema) ?? [],
+    tools: readYaml("tools.yaml", toolsFileSchema) ?? [],
     visiting: readYaml("visiting.yaml", visitingFileSchema) ?? { help: [], tours: [] },
     ingestedOverviewSites: ingestFiles.flatMap((f) => f.overviewSites ?? []),
   };

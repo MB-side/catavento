@@ -2,6 +2,8 @@
 // Zealand fill them from the directory; other countries from their guide, the visiting-pilot data and
 // ParaglidingEarth, with a pointer to the best source where we hold nothing yet.
 import Link from "next/link";
+import { mainGroup } from "@/lib/map-view";
+import { centreOf, paraglidableHref } from "@/lib/tools";
 import { CountrySitesMap } from "@/components/domain/CountrySitesMap";
 import { OverviewMap } from "@/components/domain/OverviewMap";
 import { OverviewSiteList } from "@/components/domain/OverviewSiteList";
@@ -91,6 +93,8 @@ export function CountryProfilePage({ profile }: { profile: CountryProfile }) {
   const notices = country ? nationalNotices(country).slice(0, 3) : [];
   const zone = country?.timezones[0] ?? "UTC";
   const pge = `https://www.paraglidingearth.com/?country=${code.toLowerCase()}`;
+  // Paraglidable covers Europe only (D99): link it over the country's main group of sites.
+  const centre = region?.slug === "europe" ? centreOf(mainGroup(overviewSites)) : undefined;
 
   return (
     <div className="flex flex-col gap-5" data-testid="country-page">
@@ -307,6 +311,18 @@ export function CountryProfilePage({ profile }: { profile: CountryProfile }) {
           <p>{t("countryPage.weatherLine", { stations: String(counts?.stations ?? 0) })}</p>
         )}
         {country && <LiveWind country={country} />}
+        <p>
+          <Link href="/tools/" className="font-semibold">
+            {t("footer.toolsLink")}
+          </Link>
+        </p>
+        {centre && (
+          <p>
+            <Anchor href={paraglidableHref(centre.lat, centre.lon)}>
+              {t("footer.paraglidableCountry", { country: name })}
+            </Anchor>
+          </p>
+        )}
         {links.length > 0 ? (
           <ul className="flex flex-col gap-1">
             {links.map((l) => (

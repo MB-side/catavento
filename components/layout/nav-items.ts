@@ -41,6 +41,7 @@ export const phoneTabs: NavItem[] = [
 export const phoneMenu: NavItem[] = [
   { label: "nav.gear", path: "/gear", anchor: "gear" },
   { label: "nav.whatsOn", path: "/whats-on", anchor: "events" },
+  { label: "footer.tools", path: "/tools", global: true },
   { label: "footer.about", path: "/about", global: true },
   { label: "footer.sources", path: "/sources", global: true },
   { label: "footer.status", path: "/status", global: true },
@@ -49,6 +50,7 @@ export const phoneMenu: NavItem[] = [
 
 /** Footer links (docs/02 §5.1). */
 export const footerNav: NavItem[] = [
+  { label: "footer.tools", path: "/tools", global: true },
   { label: "footer.about", path: "/about", global: true },
   { label: "footer.sources", path: "/sources", global: true },
   { label: "footer.status", path: "/status", global: true },
