@@ -1,0 +1,148 @@
+[
+  {
+    "id": "tool:where-to-fly",
+    "name": "Where To Fly",
+    "url": "https://wheretofly.info/",
+    "group": "forecasts",
+    "summary": "Forecasts, RASP soaring data and paragliding values for flying sites, on the web and as an app.",
+    "countries": [
+      "AU"
+    ],
+    "checked": "2026-11-06"
+  },
+  {
+    "id": "tool:paragliding-map",
+    "name": "Paragliding Map",
+    "url": "https://www.paraglidingmap.com/app/",
+    "group": "forecasts",
+    "summary": "A world map of flying sites with a forecast for each.",
+    "checked": "2026-11-06"
+  },
+  {
+    "id": "tool:paraglidable",
+    "name": "Paraglidable",
+    "url": "https://paraglidable.com/",
+    "group": "forecasts",
+    "summary": "An experimental forecast that uses AI to estimate how suitable each coming day is for flying and for cross-country. Covers Europe; it showed nothing for Australia or New Zealand when we checked. Free; run by one pilot in France.",
+    "checked": "2026-11-06"
+  },
+  {
+    "id": "tool:freeflightwx",
+    "name": "FreeFlightWx",
+    "url": "https://freeflightwx.com/",
+    "group": "live-wind",
+    "summary": "Live readings from weather stations at flying sites around Australia.",
+    "countries": [
+      "AU"
+    ],
+    "checked": "2026-11-06"
+  },
+  {
+    "id": "tool:holfuy",
+    "name": "Holfuy",
+    "url": "https://holfuy.com/",
+    "group": "live-wind",
+    "summary": "Weather stations with live wind readings and webcams at flying sites worldwide.",
+    "checked": "2026-11-06"
+  },
+  {
+    "id": "tool:australian-national-site-guide",
+    "name": "Australian National Site Guide",
+    "url": "https://siteguide.org.au/",
+    "group": "sites",
+    "summary": "The national guide to Australian flying sites, with site rules and contacts.",
+    "countries": [
+      "AU"
+    ],
+    "checked": "2026-11-06"
+  },
+  {
+    "id": "tool:paraglidingearth",
+    "name": "ParaglidingEarth",
+    "url": "https://www.paraglidingearth.com/",
+    "group": "sites",
+    "summary": "A worldwide database of flying sites, kept up by pilots.",
+    "checked": "2026-11-06"
+  },
+  {
+    "id": "tool:xc-atlas",
+    "name": "XC Atlas",
+    "url": "https://xcatlas.org/",
+    "group": "sites",
+    "summary": "A map for exploring launch sites around the world.",
+    "checked": "2026-11-06"
+  },
+  {
+    "id": "tool:paraglidable-v2",
+    "name": "Paraglidable v2",
+    "url": "https://paraglidable.net/",
+    "group": "flights",
+    "summary": "Maps of where pilots actually fly, built from GPS tracks, and where thermals are likely. From the maker of Paraglidable; covers Europe, with nothing yet for Australia when we checked.",
+    "checked": "2026-11-06"
+  },
+  {
+    "id": "tool:xcontest",
+    "name": "XContest",
+    "url": "https://www.xcontest.org/",
+    "group": "flights",
+    "summary": "The online cross-country contest where pilots upload their flights; anyone can browse them by country and site.",
+    "checked": "2026-11-06"
+  },
+  {
+    "id": "tool:australian-ppg-xcontest",
+    "name": "Australian PPG XContest",
+    "url": "https://paramotors.xcontest.org/ppgxc-australia",
+    "group": "flights",
+    "summary": "XContest's cross-country league for paramotor pilots in Australia.",
+    "countries": [
+      "AU"
+    ],
+    "checked": "2026-11-06"
+  },
+  {
+    "id": "tool:aircheck",
+    "name": "AirCheck",
+    "url": "http://xcaustralia.org/aircheck/aircheck.php",
+    "group": "airspace",
+    "summary": "Shows Australian airspace with your flight's altitude, and offers airspace files to download. Free.",
+    "countries": [
+      "AU"
+    ],
+    "checked": "2026-11-06"
+  },
+  {
+    "id": "tool:paralog",
+    "name": "Paralog",
+    "url": "https://www.paralogbook.de/",
+    "group": "logbooks",
+    "summary": "An online flight logbook with 3D replays, a heatmap of your tracks, statistics and badges. Free, with no ads.",
+    "checked": "2026-11-06"
+  },
+  {
+    "id": "tool:xc-mag-travel-guide",
+    "name": "XC Mag travel guide",
+    "url": "https://xcmag.com/travel-guide/",
+    "group": "travel",
+    "summary": "Destination guides for free flight, by continent and by the best months to go. Some articles need a subscription.",
+    "checked": "2026-11-06"
+  },
+  {
+    "id": "tool:cloudbase-mayhem-forecasting-episodes",
+    "name": "Cloudbase Mayhem (forecasting episodes)",
+    "url": "https://www.cloudbasemayhem.com/humanflight/forecasting/",
+    "group": "learning",
+    "summary": "A podcast of interviews with pilots; this page gathers the episodes on forecasting.",
+    "checked": "2026-11-06"
+  },
+  {
+    "id": "tool:skysailor",
+    "name": "Skysailor",
+    "url": "https://safa.asn.au/news/skysailor/current-issues/",
+    "group": "learning",
+    "summary": "SAFA's magazine for Australian pilots, with recent issues online.",
+    "countries": [
+      "AU"
+    ],
+    "checked": "2026-11-06"
+  }
+]

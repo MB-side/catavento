@@ -13,6 +13,7 @@ import {
   noticeSchema,
   offeringSchema,
   resourceSchema,
+  pilotToolSchema,
   overviewSiteSchema,
   tourOperatorSchema,
   visitorHelpSchema,
@@ -61,6 +62,7 @@ function main(): void {
   validate("brands", brandSchema, out.brands);
   validate("offerings", offeringSchema, out.offerings);
   validate("resources", resourceSchema, out.resources);
+  validate("tools", pilotToolSchema, out.tools);
   validate("overview regions", overviewRegionSchema, out.overview.regions);
   validate("guides", countryGuideSchema, out.overview.guides);
   validate("overview sites", overviewSiteSchema, out.overviewSites);
@@ -92,6 +94,7 @@ function main(): void {
   write("notices.json", out.notices);
   write("brands.json", out.brands);
   write("offerings.json", out.offerings);
+  write("tools.json", out.tools);
   write("resources.json", out.resources);
   write("overview.json", out.overview);
   write("overview-sites.json", out.overviewSites);

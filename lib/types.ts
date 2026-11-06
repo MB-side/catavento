@@ -358,6 +358,22 @@ export interface Resource {
   countries?: CountryCode[];
 }
 
+/** Outside tools for pilots, linked from the Pilot tools page (D99). Hand-entered, facts only. */
+export type ToolGroup =
+  "forecasts" | "live-wind" | "sites" | "flights" | "airspace" | "logbooks" | "travel" | "learning";
+
+export interface PilotTool {
+  id: string;
+  name: string;
+  url: string;
+  group: ToolGroup;
+  /** One factual line in our own words: what it is, and whether it is free where the tool says. */
+  summary: string;
+  /** Only useful in these countries; absent means anywhere. */
+  countries?: CountryCode[];
+  checked: string;
+}
+
 export interface NationalBody {
   orgId: string;
   name: string;

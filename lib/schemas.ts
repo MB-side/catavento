@@ -11,6 +11,7 @@ import type {
   Offering,
   Organisation,
   Provider,
+  PilotTool,
   Resource,
   Site,
   SiteStationEntry,
@@ -511,6 +512,29 @@ export const offeringSchema = z.object({
   url: httpUrl,
   source: sourceRefSchema,
 }) satisfies z.ZodType<Offering>;
+
+export const toolGroupSchema = z.enum([
+  "forecasts",
+  "live-wind",
+  "sites",
+  "flights",
+  "airspace",
+  "logbooks",
+  "travel",
+  "learning",
+]);
+
+export const pilotToolSchema = z.object({
+  id: z.string().regex(/^tool:[a-z0-9-]+$/),
+  name: z.string().min(1),
+  url: httpUrl,
+  group: toolGroupSchema,
+  summary: z.string().min(1),
+  countries: z.array(countryCode).optional(),
+  checked: z.iso.date(),
+}) satisfies z.ZodType<PilotTool>;
+
+export const toolsFileSchema = z.array(pilotToolSchema.omit({ id: true })).nullable();
 
 export const resourceSchema = z.object({
   id: z.string().regex(/^resource:[a-z0-9-]+$/),
