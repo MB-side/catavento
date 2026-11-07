@@ -1702,6 +1702,32 @@
     "regionalAssociationId": "org:au:queensland-sports-aviators"
   },
   {
+    "legacyId": "SVC-002",
+    "kind": "service_centre",
+    "name": "Paragliding Lab",
+    "disciplines": [
+      "PG"
+    ],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "locality": "Sydney",
+    "website": "https://www.paraglidinglab.com.au/",
+    "emailPublic": "service@paraglidinglab.com.au",
+    "summary": "Paraglider and parakite service centre: inspections, servicing, line trim and replacement, reserve repacks, pre-purchase inspections (per its website)",
+    "sources": [
+      {
+        "providerId": "org-websites",
+        "url": "https://www.paraglidinglab.com.au/",
+        "fetchedAt": "2026-11-06",
+        "licence": "facts"
+      }
+    ],
+    "lastVerified": "2026-11-06",
+    "verificationStatus": "verified_public_source",
+    "id": "org:au:paragliding-lab",
+    "slug": "paragliding-lab"
+  },
+  {
     "legacyId": "SCH-019",
     "kind": "school",
     "name": "Paragliding Queensland",
