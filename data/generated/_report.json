@@ -615,11 +615,11 @@
   },
   "providers": {
     "ansg": {
-      "status": "unchanged",
-      "startedAt": "2026-11-10T21:51:51.114Z",
-      "finishedAt": "2026-11-10T21:51:55.254Z",
+      "status": "warning",
+      "startedAt": "2026-11-11T22:52:06.505Z",
+      "finishedAt": "2026-11-11T22:52:12.647Z",
       "recordsFound": 246,
-      "recordsChanged": 0,
+      "recordsChanged": 246,
       "warnings": [
         "Eucla: wind directions not readable (\"none\")",
         "Barn Hill (The Bluff): wind directions not readable (\"none\")",
@@ -654,9 +654,9 @@
         "Black Cliffs: wind directions not readable (\"none\")"
       ],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-11-10T21:51:55.254Z",
-      "contentHash": "950a8adbe48191f277898ce2123571cfc5c10d770458d418ccc7c4a1dd0895a1",
-      "sourceVersion": "4|\"901\""
+      "lastSuccessAt": "2026-11-11T22:52:12.647Z",
+      "contentHash": "dedfa56647aaf14985e473e3bba04fe44e1a67cfed55d9283fa48427c4a2682d",
+      "sourceVersion": "4|\"902\""
     },
     "safa": {
       "status": "unchanged",
@@ -682,8 +682,8 @@
     },
     "club-websites": {
       "status": "warning",
-      "startedAt": "2026-11-08T20:38:55.109Z",
-      "finishedAt": "2026-11-08T20:43:43.182Z",
+      "startedAt": "2026-11-11T22:52:12.647Z",
+      "finishedAt": "2026-11-11T22:57:07.261Z",
       "recordsFound": 14,
       "recordsChanged": 15,
       "warnings": [
@@ -694,8 +694,8 @@
         "Hawkes Bay club: website not read (robots.txt does not allow https://www.soarhawkesbay.co.nz)"
       ],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-11-08T20:43:43.182Z",
-      "contentHash": "ce022e347bd99930905b0d26f23e3a9caaf48137689180a61be92d1132205521",
+      "lastSuccessAt": "2026-11-11T22:57:07.261Z",
+      "contentHash": "c369c69484244c2bdcc5e233e7cc5a340e55d2fdea470c0d2944709c807b5968",
       "info": [
         "ACT Hang-gliding and Paragliding Association (ACTHPA): its website names 7 of the 8 sites listed for it",
         "Blue Mountains Hang Gliding Club Inc: nothing to collect",
