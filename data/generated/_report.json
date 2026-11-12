@@ -615,11 +615,11 @@
   },
   "providers": {
     "ansg": {
-      "status": "warning",
-      "startedAt": "2026-11-11T22:52:06.505Z",
-      "finishedAt": "2026-11-11T22:52:12.647Z",
+      "status": "unchanged",
+      "startedAt": "2026-11-12T22:20:46.080Z",
+      "finishedAt": "2026-11-12T22:20:50.143Z",
       "recordsFound": 246,
-      "recordsChanged": 246,
+      "recordsChanged": 0,
       "warnings": [
         "Eucla: wind directions not readable (\"none\")",
         "Barn Hill (The Bluff): wind directions not readable (\"none\")",
@@ -654,7 +654,7 @@
         "Black Cliffs: wind directions not readable (\"none\")"
       ],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-11-11T22:52:12.647Z",
+      "lastSuccessAt": "2026-11-12T22:20:50.143Z",
       "contentHash": "dedfa56647aaf14985e473e3bba04fe44e1a67cfed55d9283fa48427c4a2682d",
       "sourceVersion": "4|\"902\""
     },
@@ -670,13 +670,14 @@
       "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
     },
     "pge": {
-      "status": "ok",
-      "startedAt": "2026-10-13T09:53:54.527Z",
-      "finishedAt": "2026-10-13T09:57:35.407Z",
-      "recordsFound": 9443,
-      "recordsChanged": 9443,
-      "warnings": [],
-      "guardDecision": "accepted",
+      "status": "failed",
+      "startedAt": "2026-11-12T22:20:50.143Z",
+      "finishedAt": "2026-11-12T22:20:50.901Z",
+      "recordsFound": 0,
+      "recordsChanged": 0,
+      "warnings": [
+        "robots.txt does not allow https://www.paraglidingearth.com/api/geojson/getCountrySites.php?iso=au&style=detailled"
+      ],
       "lastSuccessAt": "2026-10-13T09:57:35.407Z",
       "contentHash": "22541882c7e98b019e6a8a7062dff1cd93cfb5a6ec82f589b9befd9b5ed29779"
     },
