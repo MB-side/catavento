@@ -1,8 +1,8 @@
 {
   "ansg": {
     "status": "unchanged",
-    "startedAt": "2026-11-12T22:20:46.080Z",
-    "finishedAt": "2026-11-12T22:20:50.143Z",
+    "startedAt": "2026-11-13T22:03:12.716Z",
+    "finishedAt": "2026-11-13T22:03:16.932Z",
     "recordsFound": 246,
     "recordsChanged": 0,
     "warnings": [
@@ -40,7 +40,7 @@
     ],
     "sourceVersion": "4|\"902\"",
     "guardDecision": "accepted",
-    "lastSuccessAt": "2026-11-12T22:20:50.143Z",
+    "lastSuccessAt": "2026-11-13T22:03:16.932Z",
     "contentHash": "dedfa56647aaf14985e473e3bba04fe44e1a67cfed55d9283fa48427c4a2682d"
   },
   "safa": {
@@ -56,8 +56,8 @@
   },
   "pge": {
     "status": "failed",
-    "startedAt": "2026-11-12T22:20:50.143Z",
-    "finishedAt": "2026-11-12T22:20:50.901Z",
+    "startedAt": "2026-11-13T22:03:16.932Z",
+    "finishedAt": "2026-11-13T22:03:17.616Z",
     "recordsFound": 0,
     "recordsChanged": 0,
     "warnings": [
