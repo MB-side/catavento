@@ -615,11 +615,11 @@
   },
   "providers": {
     "ansg": {
-      "status": "unchanged",
-      "startedAt": "2026-11-13T22:03:12.716Z",
-      "finishedAt": "2026-11-13T22:03:16.932Z",
+      "status": "warning",
+      "startedAt": "2026-11-14T20:49:51.481Z",
+      "finishedAt": "2026-11-14T20:49:57.454Z",
       "recordsFound": 246,
-      "recordsChanged": 0,
+      "recordsChanged": 246,
       "warnings": [
         "Eucla: wind directions not readable (\"none\")",
         "Barn Hill (The Bluff): wind directions not readable (\"none\")",
@@ -654,9 +654,9 @@
         "Black Cliffs: wind directions not readable (\"none\")"
       ],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-11-13T22:03:16.932Z",
-      "contentHash": "dedfa56647aaf14985e473e3bba04fe44e1a67cfed55d9283fa48427c4a2682d",
-      "sourceVersion": "4|\"902\""
+      "lastSuccessAt": "2026-11-14T20:49:57.454Z",
+      "contentHash": "31bf25a162c3e4d0284640d4c606d17de3c2f18b2a96d8b9981af1fbeee64382",
+      "sourceVersion": "4|\"903\""
     },
     "safa": {
       "status": "unchanged",
@@ -671,8 +671,8 @@
     },
     "pge": {
       "status": "failed",
-      "startedAt": "2026-11-13T22:03:16.932Z",
-      "finishedAt": "2026-11-13T22:03:17.616Z",
+      "startedAt": "2026-11-14T20:49:57.454Z",
+      "finishedAt": "2026-11-14T20:49:58.041Z",
       "recordsFound": 0,
       "recordsChanged": 0,
       "warnings": [
@@ -682,11 +682,11 @@
       "contentHash": "22541882c7e98b019e6a8a7062dff1cd93cfb5a6ec82f589b9befd9b5ed29779"
     },
     "club-websites": {
-      "status": "warning",
-      "startedAt": "2026-11-11T22:52:12.647Z",
-      "finishedAt": "2026-11-11T22:57:07.261Z",
+      "status": "unchanged",
+      "startedAt": "2026-11-14T20:49:58.041Z",
+      "finishedAt": "2026-11-14T20:54:52.995Z",
       "recordsFound": 14,
-      "recordsChanged": 15,
+      "recordsChanged": 0,
       "warnings": [
         "Southern Microlight Club Inc: website not read (robots.txt does not allow https://www.southernmicrolightclub.com.au/)",
         "The Pico Club Incorporated: website not read (robots.txt does not allow https://www.thepico.com.au/)",
@@ -695,7 +695,7 @@
         "Hawkes Bay club: website not read (robots.txt does not allow https://www.soarhawkesbay.co.nz)"
       ],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-11-11T22:57:07.261Z",
+      "lastSuccessAt": "2026-11-14T20:54:52.995Z",
       "contentHash": "c369c69484244c2bdcc5e233e7cc5a340e55d2fdea470c0d2944709c807b5968",
       "info": [
         "ACT Hang-gliding and Paragliding Association (ACTHPA): its website names 7 of the 8 sites listed for it",
