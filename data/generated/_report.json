@@ -615,11 +615,11 @@
   },
   "providers": {
     "ansg": {
-      "status": "warning",
-      "startedAt": "2026-11-14T20:49:51.481Z",
-      "finishedAt": "2026-11-14T20:49:57.454Z",
+      "status": "unchanged",
+      "startedAt": "2026-11-15T21:07:59.579Z",
+      "finishedAt": "2026-11-15T21:08:03.939Z",
       "recordsFound": 246,
-      "recordsChanged": 246,
+      "recordsChanged": 0,
       "warnings": [
         "Eucla: wind directions not readable (\"none\")",
         "Barn Hill (The Bluff): wind directions not readable (\"none\")",
@@ -654,7 +654,7 @@
         "Black Cliffs: wind directions not readable (\"none\")"
       ],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-11-14T20:49:57.454Z",
+      "lastSuccessAt": "2026-11-15T21:08:03.939Z",
       "contentHash": "31bf25a162c3e4d0284640d4c606d17de3c2f18b2a96d8b9981af1fbeee64382",
       "sourceVersion": "4|\"903\""
     },
@@ -671,8 +671,8 @@
     },
     "pge": {
       "status": "failed",
-      "startedAt": "2026-11-14T20:49:57.454Z",
-      "finishedAt": "2026-11-14T20:49:58.041Z",
+      "startedAt": "2026-11-15T21:08:03.939Z",
+      "finishedAt": "2026-11-15T21:08:04.999Z",
       "recordsFound": 0,
       "recordsChanged": 0,
       "warnings": [
