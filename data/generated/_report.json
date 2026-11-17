@@ -9,7 +9,7 @@
       "resources": 27,
       "providers": 24,
       "offerings": 1,
-      "events": 2,
+      "events": 0,
       "notices": 41,
       "overviewSites": 9397
     },
@@ -615,11 +615,11 @@
   },
   "providers": {
     "ansg": {
-      "status": "unchanged",
-      "startedAt": "2026-11-15T21:07:59.579Z",
-      "finishedAt": "2026-11-15T21:08:03.939Z",
+      "status": "warning",
+      "startedAt": "2026-11-17T00:24:12.868Z",
+      "finishedAt": "2026-11-17T00:24:18.609Z",
       "recordsFound": 246,
-      "recordsChanged": 0,
+      "recordsChanged": 246,
       "warnings": [
         "Eucla: wind directions not readable (\"none\")",
         "Barn Hill (The Bluff): wind directions not readable (\"none\")",
@@ -654,25 +654,25 @@
         "Black Cliffs: wind directions not readable (\"none\")"
       ],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-11-15T21:08:03.939Z",
-      "contentHash": "31bf25a162c3e4d0284640d4c606d17de3c2f18b2a96d8b9981af1fbeee64382",
-      "sourceVersion": "4|\"903\""
+      "lastSuccessAt": "2026-11-17T00:24:18.609Z",
+      "contentHash": "46cd885208021cba1bd79be78c8cd7d7ebcec39a37d2973515259f6141750908",
+      "sourceVersion": "4|\"904\""
     },
     "safa": {
-      "status": "unchanged",
-      "startedAt": "2026-11-10T00:20:25.554Z",
-      "finishedAt": "2026-11-10T00:24:04.955Z",
-      "recordsFound": 112,
-      "recordsChanged": 0,
+      "status": "ok",
+      "startedAt": "2026-11-17T00:20:34.657Z",
+      "finishedAt": "2026-11-17T00:24:12.868Z",
+      "recordsFound": 111,
+      "recordsChanged": 113,
       "warnings": [],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-11-10T00:24:04.955Z",
-      "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+      "lastSuccessAt": "2026-11-17T00:24:12.868Z",
+      "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
     },
     "pge": {
       "status": "failed",
-      "startedAt": "2026-11-15T21:08:03.939Z",
-      "finishedAt": "2026-11-15T21:08:04.999Z",
+      "startedAt": "2026-11-17T00:24:18.609Z",
+      "finishedAt": "2026-11-17T00:24:19.250Z",
       "recordsFound": 0,
       "recordsChanged": 0,
       "warnings": [

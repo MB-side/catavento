@@ -1,7 +1,7 @@
 {
   "providerId": "safa",
-  "fetchedAt": "2026-11-02T23:38:31.667Z",
-  "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd",
+  "fetchedAt": "2026-11-17T00:20:34.657Z",
+  "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede",
   "orgs": [
     {
       "id": "safa:club:ACTHPA",
@@ -17,9 +17,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=ACTHPA",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -35,9 +35,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=AL",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -54,9 +54,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=BB",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -74,9 +74,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=CB",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -94,9 +94,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=CC",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -113,9 +113,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=CG",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -133,9 +133,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=CN",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -151,9 +151,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=DB",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -170,9 +170,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=DS",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -188,9 +188,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=FTC",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -206,9 +206,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=HF",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -224,9 +224,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=HGAWA",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -243,9 +243,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=IL",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -262,9 +262,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=LB",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -281,9 +281,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=MH",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -300,9 +300,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=MN",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -320,9 +320,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=NB",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -339,9 +339,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=NC",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -357,9 +357,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=NQLD",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -376,9 +376,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=NSWHPA",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -396,9 +396,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=NSWPC",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -416,9 +416,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=NV",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -435,9 +435,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=PC",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -454,9 +454,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=PFI",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -472,9 +472,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SAHPGA",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -492,9 +492,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SCFFA",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -511,9 +511,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SEQLD",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -529,9 +529,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SH",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -549,9 +549,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SK",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -569,9 +569,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SP",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -587,9 +587,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=STF",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -605,9 +605,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=SWAir",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -623,9 +623,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=THPA",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -642,9 +642,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=TM",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -660,9 +660,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=UMFFI",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -679,9 +679,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=VHPA",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -698,9 +698,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=VT",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -717,9 +717,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=WSP",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -736,9 +736,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=WV",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -755,9 +755,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/find-a-club/club/?id=WW",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -776,9 +776,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -797,9 +797,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -819,9 +819,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -840,9 +840,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -861,9 +861,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -882,9 +882,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -902,9 +902,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -923,9 +923,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -944,9 +944,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -965,9 +965,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -986,9 +986,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1007,9 +1007,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1028,9 +1028,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1049,9 +1049,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1069,9 +1069,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1090,9 +1090,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1111,9 +1111,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1132,9 +1132,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1153,9 +1153,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1174,9 +1174,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1195,9 +1195,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1216,9 +1216,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1237,9 +1237,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1257,9 +1257,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1278,9 +1278,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1299,9 +1299,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1320,9 +1320,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1341,9 +1341,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1362,9 +1362,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1383,9 +1383,9 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     },
     {
@@ -1404,55 +1404,34 @@
       "source": {
         "providerId": "safa",
         "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
-        "fetchedAt": "2026-11-02T23:38:31.670Z",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
         "licence": "facts",
-        "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
+      }
+    },
+    {
+      "id": "safa:school:xckms",
+      "providerId": "safa",
+      "kind": "school",
+      "name": "XCkms",
+      "country": "AU",
+      "regionCode": "AU-VIC",
+      "website": "https://xckms.com/",
+      "emailPublic": "webbie@xckms.com",
+      "phonePublic": "0417530972",
+      "disciplines": [
+        "PG"
+      ],
+      "source": {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/learn-to-fly/flight-schools/",
+        "fetchedAt": "2026-11-17T00:20:34.659Z",
+        "licence": "facts",
+        "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
       }
     }
   ],
-  "events": [
-    {
-      "id": "event:safa:64861",
-      "title": "50th anniversary of Free flight @ Stanwell Park",
-      "startDate": "2026-10-17",
-      "type": "other",
-      "disciplines": [],
-      "locationText": "Stanwell Park Landing Zone, Stanwell Park",
-      "country": "AU",
-      "regionCode": "AU-NSW",
-      "organiserName": "FlyStanwell Inc",
-      "url": "https://safa.asn.au/event/50th-anniversary-of-free-flight-stanwell-park/",
-      "sources": [
-        {
-          "providerId": "safa",
-          "url": "https://safa.asn.au/event/50th-anniversary-of-free-flight-stanwell-park/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
-          "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
-        }
-      ]
-    },
-    {
-      "id": "event:safa:66182",
-      "title": "Fly From Everest – End Polio Now Movie Event",
-      "startDate": "2026-10-17T19:00:00+11:00",
-      "type": "other",
-      "disciplines": [],
-      "locationText": "Tradies Helensburgh, Helensburgh",
-      "country": "AU",
-      "regionCode": "AU-NSW",
-      "url": "https://safa.asn.au/event/fly-from-everest-end-polio-now-movie-event/",
-      "sources": [
-        {
-          "providerId": "safa",
-          "url": "https://safa.asn.au/event/fly-from-everest-end-polio-now-movie-event/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
-          "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
-        }
-      ]
-    }
-  ],
+  "events": [],
   "notices": [
     {
       "id": "notice:safa:03c49e3efb7a",
@@ -1465,9 +1444,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1482,9 +1461,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1499,9 +1478,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1516,9 +1495,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1533,9 +1512,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1550,9 +1529,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1567,9 +1546,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1584,9 +1563,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1601,9 +1580,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1618,9 +1597,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1635,9 +1614,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1652,9 +1631,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1669,9 +1648,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1686,9 +1665,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1703,9 +1682,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1720,9 +1699,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1737,9 +1716,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1754,9 +1733,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1771,9 +1750,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1788,9 +1767,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1805,9 +1784,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1822,9 +1801,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1839,9 +1818,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1856,9 +1835,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1873,9 +1852,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1890,9 +1869,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1907,9 +1886,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1924,9 +1903,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1941,9 +1920,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1958,9 +1937,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1975,9 +1954,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -1992,9 +1971,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -2009,9 +1988,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -2026,9 +2005,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -2043,9 +2022,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -2060,9 +2039,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -2077,9 +2056,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -2094,9 +2073,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     },
@@ -2111,9 +2090,9 @@
         {
           "providerId": "safa",
           "url": "https://safa.asn.au/pilot-tools/resources/",
-          "fetchedAt": "2026-11-02T23:38:31.670Z",
+          "fetchedAt": "2026-11-17T00:20:34.659Z",
           "licence": "facts",
-          "contentHash": "66391f3ce8849496e39113b1688f13aea560d028fe8cdf0497fa7bc6e30bbecd"
+          "contentHash": "642319933191ea917e93260032259c395087a6a20fae79be210935e4b280aede"
         }
       ]
     }
