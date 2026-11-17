@@ -615,11 +615,11 @@
   },
   "providers": {
     "ansg": {
-      "status": "warning",
-      "startedAt": "2026-11-17T00:24:12.868Z",
-      "finishedAt": "2026-11-17T00:24:18.609Z",
+      "status": "unchanged",
+      "startedAt": "2026-11-17T23:35:28.664Z",
+      "finishedAt": "2026-11-17T23:35:33.234Z",
       "recordsFound": 246,
-      "recordsChanged": 246,
+      "recordsChanged": 0,
       "warnings": [
         "Eucla: wind directions not readable (\"none\")",
         "Barn Hill (The Bluff): wind directions not readable (\"none\")",
@@ -654,7 +654,7 @@
         "Black Cliffs: wind directions not readable (\"none\")"
       ],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-11-17T00:24:18.609Z",
+      "lastSuccessAt": "2026-11-17T23:35:33.234Z",
       "contentHash": "46cd885208021cba1bd79be78c8cd7d7ebcec39a37d2973515259f6141750908",
       "sourceVersion": "4|\"904\""
     },
@@ -671,8 +671,8 @@
     },
     "pge": {
       "status": "failed",
-      "startedAt": "2026-11-17T00:24:18.609Z",
-      "finishedAt": "2026-11-17T00:24:19.250Z",
+      "startedAt": "2026-11-17T23:35:33.235Z",
+      "finishedAt": "2026-11-17T23:35:33.874Z",
       "recordsFound": 0,
       "recordsChanged": 0,
       "warnings": [
@@ -683,8 +683,8 @@
     },
     "club-websites": {
       "status": "unchanged",
-      "startedAt": "2026-11-14T20:49:58.041Z",
-      "finishedAt": "2026-11-14T20:54:52.995Z",
+      "startedAt": "2026-11-17T23:35:33.874Z",
+      "finishedAt": "2026-11-17T23:40:30.330Z",
       "recordsFound": 14,
       "recordsChanged": 0,
       "warnings": [
@@ -695,7 +695,7 @@
         "Hawkes Bay club: website not read (robots.txt does not allow https://www.soarhawkesbay.co.nz)"
       ],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-11-14T20:54:52.995Z",
+      "lastSuccessAt": "2026-11-17T23:40:30.330Z",
       "contentHash": "c369c69484244c2bdcc5e233e7cc5a340e55d2fdea470c0d2944709c807b5968",
       "info": [
         "ACT Hang-gliding and Paragliding Association (ACTHPA): its website names 7 of the 8 sites listed for it",
