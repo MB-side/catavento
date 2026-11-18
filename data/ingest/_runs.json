@@ -1,8 +1,8 @@
 {
   "ansg": {
     "status": "unchanged",
-    "startedAt": "2026-11-17T23:35:28.664Z",
-    "finishedAt": "2026-11-17T23:35:33.234Z",
+    "startedAt": "2026-11-18T22:59:25.618Z",
+    "finishedAt": "2026-11-18T22:59:30.135Z",
     "recordsFound": 246,
     "recordsChanged": 0,
     "warnings": [
@@ -40,7 +40,7 @@
     ],
     "sourceVersion": "4|\"904\"",
     "guardDecision": "accepted",
-    "lastSuccessAt": "2026-11-17T23:35:33.234Z",
+    "lastSuccessAt": "2026-11-18T22:59:30.135Z",
     "contentHash": "46cd885208021cba1bd79be78c8cd7d7ebcec39a37d2973515259f6141750908"
   },
   "safa": {
@@ -56,8 +56,8 @@
   },
   "pge": {
     "status": "failed",
-    "startedAt": "2026-11-17T23:35:33.235Z",
-    "finishedAt": "2026-11-17T23:35:33.874Z",
+    "startedAt": "2026-11-18T22:59:30.135Z",
+    "finishedAt": "2026-11-18T22:59:30.705Z",
     "recordsFound": 0,
     "recordsChanged": 0,
     "warnings": [
@@ -79,6 +79,9 @@
       "Wicked Wings Toowoomba/Killarney HG & PG Club Inc: website not read (robots.txt does not allow https://wickedwings.com.au/)",
       "Hawkes Bay club: website not read (robots.txt does not allow https://www.soarhawkesbay.co.nz)"
     ],
+    "guardDecision": "accepted",
+    "lastSuccessAt": "2026-11-17T23:40:30.330Z",
+    "contentHash": "c369c69484244c2bdcc5e233e7cc5a340e55d2fdea470c0d2944709c807b5968",
     "info": [
       "ACT Hang-gliding and Paragliding Association (ACTHPA): its website names 7 of the 8 sites listed for it",
       "Blue Mountains Hang Gliding Club Inc: nothing to collect",
@@ -112,9 +115,6 @@
       "Southern club: nothing to collect",
       "Tasman club: nothing to collect",
       "Wellington club: nothing to collect"
-    ],
-    "guardDecision": "accepted",
-    "lastSuccessAt": "2026-11-17T23:40:30.330Z",
-    "contentHash": "c369c69484244c2bdcc5e233e7cc5a340e55d2fdea470c0d2944709c807b5968"
+    ]
   }
 }

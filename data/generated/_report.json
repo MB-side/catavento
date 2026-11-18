@@ -616,8 +616,8 @@
   "providers": {
     "ansg": {
       "status": "unchanged",
-      "startedAt": "2026-11-17T23:35:28.664Z",
-      "finishedAt": "2026-11-17T23:35:33.234Z",
+      "startedAt": "2026-11-18T22:59:25.618Z",
+      "finishedAt": "2026-11-18T22:59:30.135Z",
       "recordsFound": 246,
       "recordsChanged": 0,
       "warnings": [
@@ -654,7 +654,7 @@
         "Black Cliffs: wind directions not readable (\"none\")"
       ],
       "guardDecision": "accepted",
-      "lastSuccessAt": "2026-11-17T23:35:33.234Z",
+      "lastSuccessAt": "2026-11-18T22:59:30.135Z",
       "contentHash": "46cd885208021cba1bd79be78c8cd7d7ebcec39a37d2973515259f6141750908",
       "sourceVersion": "4|\"904\""
     },
@@ -671,8 +671,8 @@
     },
     "pge": {
       "status": "failed",
-      "startedAt": "2026-11-17T23:35:33.235Z",
-      "finishedAt": "2026-11-17T23:35:33.874Z",
+      "startedAt": "2026-11-18T22:59:30.135Z",
+      "finishedAt": "2026-11-18T22:59:30.705Z",
       "recordsFound": 0,
       "recordsChanged": 0,
       "warnings": [
