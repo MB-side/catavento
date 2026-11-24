@@ -1,1 +1,107 @@
-[]
+[
+  {
+    "id": "event:safa:71705",
+    "title": "Forbes Flatlands Hang Gliding Championships 2027",
+    "startDate": "2026-12-28",
+    "endDate": "2027-01-05",
+    "type": "competition",
+    "disciplines": [],
+    "locationText": "Bill Moyes International, Forbes, NSW, Forbes",
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "organiserName": "Moyes Delta Gliders",
+    "url": "https://safa.asn.au/event/forbes-flatlands-hang-gliding-championships-2027/",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/event/forbes-flatlands-hang-gliding-championships-2027/",
+        "fetchedAt": "2026-11-24T02:58:12.537Z",
+        "licence": "facts",
+        "contentHash": "b5e992f71af7fdf182e07462bdc60ece459d1c42da4e94e432c9bd8219b127ac"
+      }
+    ],
+    "organiserOrgId": "org:au:moyes-hang-gliding-academy"
+  },
+  {
+    "id": "event:safa:71720",
+    "title": "Corryong Cup Hang Gliding Competition",
+    "startDate": "2027-01-09",
+    "endDate": "2027-01-16",
+    "type": "competition",
+    "disciplines": [],
+    "country": "AU",
+    "regionCode": "AU-NSW",
+    "organiserName": "HG Comps",
+    "url": "https://safa.asn.au/event/corryong-cup-hang-gliding-competition/",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/event/corryong-cup-hang-gliding-competition/",
+        "fetchedAt": "2026-11-24T02:58:12.537Z",
+        "licence": "facts",
+        "contentHash": "b5e992f71af7fdf182e07462bdc60ece459d1c42da4e94e432c9bd8219b127ac"
+      }
+    ]
+  },
+  {
+    "id": "event:safa:71726",
+    "title": "Bright Open 2027 – Paragliding Competition",
+    "startDate": "2027-02-13",
+    "endDate": "2027-02-19",
+    "type": "competition",
+    "disciplines": [],
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "organiserName": "Martin Joyce",
+    "url": "https://safa.asn.au/event/bright-open-2027-paragliding-competition/",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/event/bright-open-2027-paragliding-competition/",
+        "fetchedAt": "2026-11-24T02:58:12.537Z",
+        "licence": "facts",
+        "contentHash": "b5e992f71af7fdf182e07462bdc60ece459d1c42da4e94e432c9bd8219b127ac"
+      }
+    ]
+  },
+  {
+    "id": "event:safa:71732",
+    "title": "Corryong Paragliding Open 2027",
+    "startDate": "2027-02-21",
+    "endDate": "2027-02-27",
+    "type": "competition",
+    "disciplines": [],
+    "locationText": "Mt Elliot",
+    "country": "AU",
+    "regionCode": "AU-VIC",
+    "url": "https://safa.asn.au/event/corryong-paragliding-open-2027/",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/event/corryong-paragliding-open-2027/",
+        "fetchedAt": "2026-11-24T02:58:12.537Z",
+        "licence": "facts",
+        "contentHash": "b5e992f71af7fdf182e07462bdc60ece459d1c42da4e94e432c9bd8219b127ac"
+      }
+    ]
+  },
+  {
+    "id": "event:safa:71739",
+    "title": "Corryong Sports Cup 2027",
+    "startDate": "2027-03-13",
+    "endDate": "2027-03-20",
+    "type": "other",
+    "disciplines": [],
+    "country": "AU",
+    "url": "https://safa.asn.au/event/corryong-sports-cup-2027/",
+    "sources": [
+      {
+        "providerId": "safa",
+        "url": "https://safa.asn.au/event/corryong-sports-cup-2027/",
+        "fetchedAt": "2026-11-24T02:58:12.537Z",
+        "licence": "facts",
+        "contentHash": "b5e992f71af7fdf182e07462bdc60ece459d1c42da4e94e432c9bd8219b127ac"
+      }
+    ]
+  }
+]
